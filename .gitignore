@@ -5,3 +5,21 @@ graphify-out/
 .env
 .env.local
 .env.*.local
+
+# Large / Packaged files
+Preparing for organic chemistry final.pdf
+OChemACSExamPrApp.zip
+
+# AI / Development artifacts
+REVIEW.md
+
+# Development / Generation scripts
+integrate_chapters.py
+show_visual_matches.py
+scan_active_smiles.js
+questions/generate_acs_chapters.py
+questions/generate_chapter12.py
+questions/generate_chapter15.py
+
+# Unused resource folders
+trusted_resources/
