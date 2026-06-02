@@ -1,0 +1,1723 @@
+// Organic Chemistry Exam PrApp - Core Logic
+
+// App State
+let state = {
+  questions: [],          // All loaded questions
+  filteredQuestions: [],  // Questions in selected topic
+  currentQuestionIndex: 0,// Index in current active quiz
+  answersSubmitted: {},   // Maps question index -> selected option_id
+  selectedTopic: 'All Topics',
+  score: 0,
+  stats: {
+    correct: 0,
+    attempted: 0
+  },
+  activeFeedbackTab: 'context', // 'context', 'process', 'result'
+  appMode: 'practice',          // 'practice' or 'mock'
+  mockExam: {
+    active: false,
+    questions: [],
+    currentIndex: 0,
+    answers: {},
+    flags: {},
+    timeRemaining: 110 * 60,
+    timerId: null,
+    completed: false,
+    startTime: null,
+    endTime: null,
+    history: []
+  }
+};
+
+// SmilesDrawer Settings
+let smilesDrawer = null;
+const smilesDrawerOptions = {
+  width: 320,
+  height: 200,
+  bondThickness: 1.6,
+  bondLength: 16,
+  shortBondLength: 0.85,
+  fontSizeLarge: 11,
+  fontSizeSmall: 8,
+  padding: 10,
+  terminalCarbons: true,
+  explicitHydrogens: false
+};
+
+// Initialize App
+document.addEventListener('DOMContentLoaded', () => {
+  // Load Default Questions
+  if (typeof OCHEM_QUESTIONS !== 'undefined') {
+    state.questions = [...OCHEM_QUESTIONS];
+  }
+  if (typeof CHAPTER_1_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_1_QUESTIONS];
+  }
+  if (typeof CHAPTER_2_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_2_QUESTIONS];
+  }
+  if (typeof CHAPTER_3_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_3_QUESTIONS];
+  }
+  if (typeof CHAPTER_4_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_4_QUESTIONS];
+  }
+  if (typeof CHAPTER_5_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_5_QUESTIONS];
+  }
+  if (typeof CHAPTER_6_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_6_QUESTIONS];
+  }
+  if (typeof CHAPTER_7_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_7_QUESTIONS];
+  }
+  if (typeof CHAPTER_8_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_8_QUESTIONS];
+  }
+  if (typeof CHAPTER_9_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_9_QUESTIONS];
+  }
+  if (typeof CHAPTER_10_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_10_QUESTIONS];
+  }
+  if (typeof CHAPTER_11_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_11_QUESTIONS];
+  }
+  if (typeof CHAPTER_12_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_12_QUESTIONS];
+  }
+  if (typeof CHAPTER_13_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_13_QUESTIONS];
+  }
+  if (typeof CHAPTER_14_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_14_QUESTIONS];
+  }
+  if (typeof CHAPTER_15_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_15_QUESTIONS];
+  }
+  if (typeof CHAPTER_16_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_16_QUESTIONS];
+  }
+  if (typeof CHAPTER_17_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_17_QUESTIONS];
+  }
+  if (typeof CHAPTER_18_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_18_QUESTIONS];
+  }
+  if (typeof CHAPTER_19_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_19_QUESTIONS];
+  }
+  if (typeof CHAPTER_20_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_20_QUESTIONS];
+  }
+  if (typeof CHAPTER_21_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_21_QUESTIONS];
+  }
+  if (typeof CHAPTER_22_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_22_QUESTIONS];
+  }
+  if (typeof CHAPTER_23_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_23_QUESTIONS];
+  }
+  if (typeof CHAPTER_24_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_24_QUESTIONS];
+  }
+  if (typeof CHAPTER_25_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_25_QUESTIONS];
+  }
+  if (typeof CHAPTER_26_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_26_QUESTIONS];
+  }
+  if (typeof CHAPTER_27_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_27_QUESTIONS];
+  }
+  if (typeof CHAPTER_28_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_28_QUESTIONS];
+  }
+  if (typeof CHAPTER_29_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_29_QUESTIONS];
+  }
+  if (typeof CHAPTER_30_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_30_QUESTIONS];
+  }
+  if (typeof CHAPTER_31_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_31_QUESTIONS];
+  }
+  if (typeof CHAPTER_32_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_32_QUESTIONS];
+  }
+
+
+
+
+  // Initialize Smiles Drawer
+  if (typeof SmilesDrawer !== 'undefined') {
+    smilesDrawer = new SmilesDrawer.Drawer(smilesDrawerOptions);
+  } else {
+    showToast('SmilesDrawer chemical renderer not loaded', 'error');
+  }
+
+  // Load Saved Stats from LocalStorage if available
+  loadStats();
+  loadMockHistory();
+
+  // Set up Event Listeners
+  setupEventListeners();
+
+  // Build Topic List Sidebar
+  buildTopicList();
+
+  // Select Default Topic
+  selectTopic('All Topics');
+});
+
+// Setup Events
+function setupEventListeners() {
+  // Modal toggle
+  const importBtn = document.getElementById('btn-import');
+  const modal = document.getElementById('import-modal');
+  const modalClose = document.getElementById('modal-close');
+  const importSubmit = document.getElementById('btn-submit-import');
+
+  importBtn.addEventListener('click', () => {
+    modal.classList.add('active');
+  });
+
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+  });
+
+  // Close modal when clicking backdrop
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+    }
+  });
+
+  // Custom JSON submit
+  importSubmit.addEventListener('click', handleCustomImport);
+
+  // Reset Stats button
+  const resetBtn = document.getElementById('btn-reset');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', resetStats);
+  }
+
+  // Mock Exam submit / quit buttons
+  const mockSubmitBtn = document.getElementById('btn-mock-submit');
+  if (mockSubmitBtn) {
+    mockSubmitBtn.addEventListener('click', () => submitMockExam(false));
+  }
+  
+  const mockQuitBtn = document.getElementById('btn-mock-quit');
+  if (mockQuitBtn) {
+    mockQuitBtn.addEventListener('click', quitMockExam);
+  }
+}
+
+// Stats persistence
+function saveStats() {
+  localStorage.setItem('ochem_pr_stats', JSON.stringify(state.stats));
+  updateStatsDisplay();
+}
+
+function loadStats() {
+  const saved = localStorage.getItem('ochem_pr_stats');
+  if (saved) {
+    try {
+      state.stats = JSON.parse(saved);
+    } catch (e) {
+      console.error('Failed to parse saved stats', e);
+    }
+  }
+  updateStatsDisplay();
+}
+
+function resetStats() {
+  state.stats = { correct: 0, attempted: 0 };
+  state.score = 0;
+  saveStats();
+  showToast('Statistics reset successfully', 'success');
+  renderQuestion();
+}
+
+function updateStatsDisplay() {
+  const correctEl = document.getElementById('stat-correct');
+  const attemptedEl = document.getElementById('stat-attempted');
+  const accuracyEl = document.getElementById('stat-accuracy');
+
+  if (correctEl) correctEl.textContent = state.stats.correct;
+  if (attemptedEl) attemptedEl.textContent = state.stats.attempted;
+  
+  if (accuracyEl) {
+    const accuracy = state.stats.attempted > 0 
+      ? Math.round((state.stats.correct / state.stats.attempted) * 100) 
+      : 0;
+    accuracyEl.textContent = `${accuracy}%`;
+  }
+}
+
+// Build Sidebar Topics list
+function buildTopicList() {
+  const listContainer = document.getElementById('topic-list');
+  if (!listContainer) return;
+
+  // Extract unique topics
+  const topics = new Set();
+  state.questions.forEach(q => {
+    if (q.topic) topics.add(q.topic);
+  });
+
+  // Clear list
+  listContainer.innerHTML = '';
+
+  // Add 'All Topics' item
+  const allItem = document.createElement('li');
+  allItem.className = `topic-item ${state.selectedTopic === 'All Topics' ? 'active' : ''}`;
+  allItem.textContent = 'All Topics';
+  allItem.addEventListener('click', () => selectTopic('All Topics'));
+  listContainer.appendChild(allItem);
+
+  // Add individual topics
+  topics.forEach(topic => {
+    const item = document.createElement('li');
+    item.className = `topic-item ${state.selectedTopic === topic ? 'active' : ''}`;
+    item.textContent = topic;
+    item.addEventListener('click', () => selectTopic(topic));
+    listContainer.appendChild(item);
+  });
+}
+
+// Helper to dynamically adjust option letter references in feedback text
+function replaceOptionLettersInText(text, letterMap) {
+  if (!text) return '';
+  let updatedText = text;
+  
+  // Replace "Option [A-D]", "Choice [A-D]", "option [A-D]", "choice [A-D]"
+  updatedText = updatedText.replace(/\b(options?|choices?|correct equation)\s+([A-D])\b/gi, (match, word, letter) => {
+    const upperLetter = letter.toUpperCase();
+    if (letterMap[upperLetter]) {
+      const mappedLetter = letterMap[upperLetter];
+      const isLowercase = (letter === letter.toLowerCase());
+      const finalLetter = isLowercase ? mappedLetter.toLowerCase() : mappedLetter;
+      return `${word} ${finalLetter}`;
+    }
+    return match;
+  });
+  
+  return updatedText;
+}
+
+// Helper to clone a list of questions and shuffle their options, rewriting option_ids and feedback references
+function shuffleQuestionsOptions(questions) {
+  if (!questions || !Array.isArray(questions)) return [];
+  
+  return questions.map(q => {
+    // Deep clone the question structure to avoid side effects on the base dataset
+    const clonedQ = {
+      ...q,
+      options: q.options.map(opt => ({ ...opt }))
+    };
+    
+    const options = clonedQ.options;
+    
+    // Fisher-Yates shuffle the options array
+    let m = options.length;
+    while (m) {
+      const i = Math.floor(Math.random() * m--);
+      const t = options[m];
+      options[m] = options[i];
+      options[i] = t;
+    }
+    
+    // Map original option letters (A, B, C, etc.) to their new randomized positions
+    const optionLetterMap = {};
+    const letters = ['A', 'B', 'C', 'D'];
+    options.forEach((opt, index) => {
+      const newLetter = letters[index] || String.fromCharCode(65 + index);
+      optionLetterMap[opt.option_id] = newLetter;
+      opt.option_id = newLetter;
+    });
+    
+    // If the question has feedback, update option letter references inside feedback strings
+    if (clonedQ.feedback) {
+      clonedQ.feedback = {
+        ...clonedQ.feedback,
+        context: replaceOptionLettersInText(clonedQ.feedback.context, optionLetterMap),
+        process: replaceOptionLettersInText(clonedQ.feedback.process, optionLetterMap),
+        result: replaceOptionLettersInText(clonedQ.feedback.result, optionLetterMap)
+      };
+    }
+    
+    return clonedQ;
+  });
+}
+
+// Select a Topic
+function selectTopic(topic) {
+  state.selectedTopic = topic;
+  
+  // Filter questions and shuffle their options to avoid Choice A always being correct
+  let baseQuestions = [];
+  if (topic === 'All Topics') {
+    baseQuestions = [...state.questions];
+  } else {
+    baseQuestions = state.questions.filter(q => q.topic === topic);
+  }
+  state.filteredQuestions = shuffleQuestionsOptions(baseQuestions);
+
+  // Update active styling in sidebar
+  const items = document.querySelectorAll('.topic-item');
+  items.forEach(item => {
+    if (item.textContent === topic) {
+      item.classList.add('active');
+    } else {
+      item.classList.remove('active');
+    }
+  });
+
+  // Reset quiz progress
+  state.currentQuestionIndex = 0;
+  state.score = 0;
+  state.answersSubmitted = {};
+  
+  // Render
+  renderQuestion();
+  showToast(`Loaded ${state.filteredQuestions.length} questions for: ${topic}`, 'success');
+}
+
+// Render Current Question
+function renderQuestion() {
+  const container = document.getElementById('question-area');
+  if (!container) return;
+
+  if (state.filteredQuestions.length === 0) {
+    container.innerHTML = `
+      <div class="panel-card text-center" style="padding: 3rem;">
+        <i class="fas fa-flask" style="font-size: 3rem; color: var(--text-secondary); margin-bottom: 1rem;"></i>
+        <h3>No Questions Loaded</h3>
+        <p style="color: var(--text-secondary); margin-top: 0.5rem; margin-bottom: 1.5rem;">
+          Import a batch of questions or select a different topic to begin practicing.
+        </p>
+        <button class="btn btn-primary" onclick="document.getElementById('import-modal').classList.add('active')">
+          <i class="fas fa-plus"></i> Import Questions
+        </button>
+      </div>
+    `;
+    updateProgressBar(0);
+    return;
+  }
+
+  const q = state.filteredQuestions[state.currentQuestionIndex];
+  const isAnswered = state.answersSubmitted.hasOwnProperty(state.currentQuestionIndex);
+  const selectedOptionId = state.answersSubmitted[state.currentQuestionIndex];
+
+  // Update Progress
+  updateProgressBar(((state.currentQuestionIndex + 1) / state.filteredQuestions.length) * 100);
+  document.getElementById('progress-desc').textContent = `Question ${state.currentQuestionIndex + 1} of ${state.filteredQuestions.length}`;
+
+  // Assemble HTML Structure
+  let html = `
+    <div class="panel-card question-card">
+      <div class="question-meta">
+        <span class="tag tag-topic">${q.topic}</span>
+        <span class="tag tag-difficulty ${q.difficulty_level}">${q.difficulty_level}</span>
+      </div>
+      
+      <div class="question-text" id="q-text-box">
+        ${formatChemicalText(q.question_text)}
+      </div>
+  `;
+
+  // Include starting material structure panel if present
+  if (q.question_smiles) {
+    html += `
+      <div class="chemical-container">
+        <canvas id="q-smiles-canvas" width="360" height="150"></canvas>
+        <div class="smiles-string-display" title="SMILES Notation">${q.question_smiles}</div>
+      </div>
+    `;
+  }
+
+  // Add Grid of Options
+  html += `
+      <div class="choices-grid">
+  `;
+
+  q.options.forEach(opt => {
+    let optClass = '';
+    let isDisabled = isAnswered ? 'disabled' : '';
+
+    if (isAnswered) {
+      if (opt.is_correct) {
+        optClass = 'correct';
+      } else if (opt.option_id === selectedOptionId) {
+        optClass = 'incorrect';
+      } else {
+        optClass = 'disabled';
+      }
+    }
+
+    html += `
+      <button class="choice-button ${optClass} ${isDisabled}" 
+              onclick="handleOptionSelect('${opt.option_id}')" 
+              ${isAnswered ? 'disabled' : ''}>
+        <div class="choice-header">
+          <span class="choice-letter">${opt.option_id}</span>
+          ${isAnswered && opt.is_correct ? '<i class="fas fa-check" style="color: var(--success-color)"></i>' : ''}
+          ${isAnswered && opt.option_id === selectedOptionId && !opt.is_correct ? '<i class="fas fa-times" style="color: var(--error-color)"></i>' : ''}
+        </div>
+        <div class="choice-text">${formatChemicalText(opt.text)}</div>
+    `;
+
+    if (opt.smiles) {
+      html += `
+        <div class="choice-structure">
+          <canvas id="opt-canvas-${opt.option_id}" width="160" height="85"></canvas>
+        </div>
+      `;
+    }
+
+    html += `
+      </button>
+    `;
+  });
+
+  html += `
+      </div>
+    </div>
+  `;
+
+  // Render Feedback Block if answered
+  if (isAnswered) {
+    const isCorrect = q.options.find(o => o.option_id === selectedOptionId).is_correct;
+    
+    html += `
+      <div class="feedback-panel">
+        <div class="feedback-status ${isCorrect ? 'correct' : 'incorrect'}">
+          <i class="fas ${isCorrect ? 'fa-check-circle' : 'fa-times-circle'}"></i>
+          <span>${isCorrect ? 'Correct Answer!' : 'Incorrect'}</span>
+        </div>
+        
+        <div class="feedback-tabs">
+          <button class="feedback-tab ${state.activeFeedbackTab === 'context' ? 'active' : ''}" 
+                  onclick="setFeedbackTab('context')">Context Understanding</button>
+          <button class="feedback-tab ${state.activeFeedbackTab === 'process' ? 'active' : ''}" 
+                  onclick="setFeedbackTab('process')">Pathway & Mechanism</button>
+          <button class="feedback-tab ${state.activeFeedbackTab === 'result' ? 'active' : ''}" 
+                  onclick="setFeedbackTab('result')">Key Result</button>
+        </div>
+        
+        <div class="feedback-content" id="feedback-content-area">
+          ${getFeedbackContent(q.feedback)}
+        </div>
+        
+        <div class="feedback-actions">
+          ${state.currentQuestionIndex < state.filteredQuestions.length - 1 
+            ? `<button class="btn btn-primary" onclick="nextQuestion()">Next Question <i class="fas fa-arrow-right"></i></button>`
+            : `<button class="btn btn-primary" onclick="finishQuiz()">Finish Set <i class="fas fa-flag-checkered"></i></button>`
+          }
+        </div>
+      </div>
+    `;
+  }
+
+  container.innerHTML = html;
+
+  // Render Chemistry structures and equations on canvases after inserting to DOM
+  setTimeout(() => {
+    // 1. Draw Question Structure
+    if (q.question_smiles && document.getElementById('q-smiles-canvas')) {
+      drawSMILESCanvas(q.question_smiles, 'q-smiles-canvas', 'light');
+    }
+
+    // 2. Draw Options structures
+    q.options.forEach(opt => {
+      const canvasId = `opt-canvas-${opt.option_id}`;
+      if (opt.smiles && document.getElementById(canvasId)) {
+        drawSMILESCanvas(opt.smiles, canvasId, 'light');
+      }
+    });
+
+    // 3. Trigger KaTeX parsing for high-quality mathematical representations
+    if (typeof renderMathInElement !== 'undefined') {
+      renderMathInElement(container, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false },
+          { left: "\\[", right: "\\]", display: true }
+        ],
+        throwOnError: false
+      });
+    }
+  }, 50);
+}
+
+// Wrapper for SmilesDrawer execution with standard checks
+function drawSMILESCanvas(smiles, canvasId, theme = 'light') {
+  if (!smilesDrawer) return;
+  
+  try {
+    SmilesDrawer.parse(smiles, function(tree) {
+      smilesDrawer.draw(tree, canvasId, theme, false);
+    }, function(err) {
+      console.warn(`Could not parse SMILES: ${smiles}`, err);
+    });
+  } catch (e) {
+    console.error(`SMILES parser crash for: ${smiles}`, e);
+  }
+}
+
+// Progress Bar update helper
+function updateProgressBar(percentage) {
+  const bar = document.getElementById('progress-fill');
+  if (bar) {
+    bar.style.width = `${percentage}%`;
+  }
+}
+
+// Parse chemical text formatting helpers (e.g. sub/superscripts if LaTeX is not parsed yet)
+function formatChemicalText(text) {
+  if (!text) return '';
+  // Convert newlines to linebreaks
+  let formatted = text.replace(/\\n/g, '<br>');
+  // Format orbital hybridization (like sp2, sp3) as superscripts
+  formatted = formatted.replace(/\bsp(\d)\b/g, 'sp<sup>$1</sup>');
+  // Format chemical formulas: subscript any number immediately following a letter or closing parenthesis
+  formatted = formatted.replace(/(?<=[A-Za-z)])\d+/g, '<sub>$&</sub>');
+  return formatted;
+}
+
+// Handle Tab Switching in feedback card
+function setFeedbackTab(tabName) {
+  state.activeFeedbackTab = tabName;
+  
+  // Update UI tabs
+  const tabs = document.querySelectorAll('.feedback-tab');
+  tabs.forEach(tab => {
+    if (tab.getAttribute('onclick').includes(tabName)) {
+      tab.classList.add('active');
+    } else {
+      tab.classList.remove('active');
+    }
+  });
+
+  // Update content
+  const contentArea = document.getElementById('feedback-content-area');
+  if (contentArea) {
+    const q = state.filteredQuestions[state.currentQuestionIndex];
+    contentArea.innerHTML = getFeedbackContent(q.feedback);
+
+    // Re-render KaTeX on tab change
+    if (typeof renderMathInElement !== 'undefined') {
+      renderMathInElement(contentArea, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false }
+        ],
+        throwOnError: false
+      });
+    }
+  }
+}
+
+// Get raw/formatted explanation based on active tab
+function getFeedbackContent(feedback) {
+  if (state.activeFeedbackTab === 'context') {
+    return `<p>${feedback.context}</p>`;
+  } else if (state.activeFeedbackTab === 'process') {
+    // Format bullet points / steps
+    const steps = feedback.process.split('\n');
+    let html = '<ul style="list-style-position: inside; display: flex; flex-direction: column; gap: 0.65rem;">';
+    steps.forEach(step => {
+      if (step.trim()) {
+        html += `<li style="line-height: 1.6; color: #cbd5e1;">${step}</li>`;
+      }
+    });
+    html += '</ul>';
+    return html;
+  } else {
+    return `<p><strong>Takeaway:</strong> ${feedback.result}</p>`;
+  }
+}
+
+// Answer Selection Handler
+function handleOptionSelect(optionId) {
+  if (state.answersSubmitted.hasOwnProperty(state.currentQuestionIndex)) return;
+
+  state.answersSubmitted[state.currentQuestionIndex] = optionId;
+  const q = state.filteredQuestions[state.currentQuestionIndex];
+  const selectedOpt = q.options.find(o => o.option_id === optionId);
+  
+  // Track accuracy stats
+  state.stats.attempted++;
+  if (selectedOpt.is_correct) {
+    state.stats.correct++;
+    state.score++;
+  }
+  
+  saveStats();
+  renderQuestion();
+}
+
+// Navigate to Next Question
+function nextQuestion() {
+  if (state.currentQuestionIndex < state.filteredQuestions.length - 1) {
+    state.currentQuestionIndex++;
+    state.activeFeedbackTab = 'context'; // Reset active tab
+    renderQuestion();
+  }
+}
+
+// Finish Quiz Set
+function finishQuiz() {
+  const container = document.getElementById('question-area');
+  const percent = Math.round((state.score / state.filteredQuestions.length) * 100);
+  
+  container.innerHTML = `
+    <div class="panel-card text-center" style="padding: 3.5rem 2rem; animation: fadeIn 0.4s ease-out;">
+      <i class="fas fa-award" style="font-size: 4rem; color: #f59e0b; margin-bottom: 1.5rem;"></i>
+      <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Topic Completed!</h2>
+      <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
+        You answered <strong>${state.score}</strong> out of <strong>${state.filteredQuestions.length}</strong> questions correctly.
+      </p>
+      
+      <div style="max-width: 300px; margin: 0 auto 2.5rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+        <div style="font-size: 2.5rem; font-weight: 800; color: ${percent >= 70 ? 'var(--success-color)' : 'var(--error-color)'}">${percent}%</div>
+        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem; text-transform: uppercase; font-weight: 600;">Accuracy Rate</div>
+      </div>
+      
+      <div style="display: flex; gap: 1rem; justify-content: center;">
+        <button class="btn btn-primary" onclick="restartTopic()"><i class="fas fa-redo"></i> Practice Again</button>
+        <button class="btn" onclick="selectTopic('All Topics')"><i class="fas fa-home"></i> Back to Dashboard</button>
+      </div>
+    </div>
+  `;
+}
+
+function restartTopic() {
+  selectTopic(state.selectedTopic);
+}
+
+// Custom JSON Import parsing
+function handleCustomImport() {
+  const textarea = document.getElementById('custom-json-input');
+  if (!textarea) return;
+
+  const rawVal = textarea.value.trim();
+  if (!rawVal) {
+    showToast('Please enter JSON question data', 'error');
+    return;
+  }
+
+  try {
+    let parsedData = JSON.parse(rawVal);
+    
+    // Normalize into array if single object
+    if (!Array.isArray(parsedData)) {
+      parsedData = [parsedData];
+    }
+
+    // Validate Schema
+    const validatedQuestions = [];
+    parsedData.forEach((q, idx) => {
+      const errors = validateQuestionSchema(q);
+      if (errors.length > 0) {
+        throw new Error(`Question ${idx + 1} validation failed: ${errors.join(', ')}`);
+      }
+      validatedQuestions.push(q);
+    });
+
+    // Merge into local database
+    state.questions = [...state.questions, ...validatedQuestions];
+    
+    // Rebuild topic list and select the newly imported topic
+    buildTopicList();
+    
+    // Close modal
+    document.getElementById('import-modal').classList.remove('active');
+    textarea.value = '';
+    
+    // Select the topic of the first imported question
+    if (validatedQuestions.length > 0) {
+      selectTopic(validatedQuestions[0].topic);
+    }
+    
+    showToast(`Successfully imported ${validatedQuestions.length} ACS-style questions!`, 'success');
+  } catch (err) {
+    console.error('Import error:', err);
+    showToast(`Import Failed: ${err.message}`, 'error');
+  }
+}
+
+// Strict schema validation helper
+function validateQuestionSchema(q) {
+  const errors = [];
+  
+  if (!q.question_id) errors.push('Missing "question_id"');
+  if (!q.topic) errors.push('Missing "topic"');
+  if (!q.difficulty_level) errors.push('Missing "difficulty_level"');
+  if (!q.question_text) errors.push('Missing "question_text"');
+  
+  // Options checks
+  if (!q.options || !Array.isArray(q.options) || q.options.length < 2) {
+    errors.push('"options" must be an array of at least 2 choices');
+  } else {
+    let hasCorrect = false;
+    q.options.forEach((opt, oIdx) => {
+      if (!opt.option_id) errors.push(`Option ${oIdx + 1} is missing "option_id"`);
+      if (!opt.text) errors.push(`Option ${opt.option_id || oIdx + 1} is missing "text"`);
+      if (opt.is_correct === undefined) errors.push(`Option ${opt.option_id || oIdx + 1} is missing "is_correct"`);
+      if (opt.is_correct) hasCorrect = true;
+    });
+    if (!hasCorrect) {
+      errors.push('No correct option designated ("is_correct": true)');
+    }
+  }
+
+  // Feedback checks
+  if (!q.feedback) {
+    errors.push('Missing "feedback" block');
+  } else {
+    if (!q.feedback.context) errors.push('Feedback missing "context"');
+    if (!q.feedback.process) errors.push('Feedback missing "process"');
+    if (!q.feedback.result) errors.push('Feedback missing "result"');
+  }
+
+  return errors;
+}
+
+// Toast notification helper
+function showToast(message, type = 'success') {
+  const container = document.getElementById('toast-container');
+  if (!container) return;
+
+  const toast = document.createElement('div');
+  toast.className = `toast ${type}`;
+  
+  let iconClass = 'fa-info-circle';
+  if (type === 'success') iconClass = 'fa-check-circle';
+  if (type === 'error') iconClass = 'fa-exclamation-circle';
+
+  toast.innerHTML = `
+    <i class="fas ${iconClass}"></i>
+    <span>${message}</span>
+  `;
+
+  container.appendChild(toast);
+
+  // Auto-remove toast after 4s
+  setTimeout(() => {
+    toast.style.animation = 'slideInRight 0.3s reverse forwards';
+    setTimeout(() => {
+      toast.remove();
+    }, 300);
+  }, 4000);
+}
+
+// ==========================================================================
+// Mock Exam Mode Implementation
+// ==========================================================================
+
+// Switch app mode between 'practice' and 'mock'
+function setAppMode(mode) {
+  state.appMode = mode;
+
+  // Toggle active styling on header tab buttons
+  const practiceTab = document.getElementById('tab-btn-practice');
+  const mockTab = document.getElementById('tab-btn-mock');
+  
+  if (practiceTab && mockTab) {
+    if (mode === 'practice') {
+      practiceTab.classList.add('active');
+      mockTab.classList.remove('active');
+    } else {
+      practiceTab.classList.remove('active');
+      mockTab.classList.add('active');
+    }
+  }
+
+  // Toggle visibility of sidebar and workspace panels
+  const practiceSidebar = document.getElementById('sidebar-practice-content');
+  const mockSidebar = document.getElementById('sidebar-mock-content');
+  const practiceWorkspace = document.getElementById('workspace-practice-content');
+  const mockWorkspace = document.getElementById('workspace-mock-content');
+
+  if (practiceSidebar && mockSidebar && practiceWorkspace && mockWorkspace) {
+    if (mode === 'practice') {
+      practiceSidebar.style.display = 'block';
+      mockSidebar.style.display = 'none';
+      practiceWorkspace.style.display = 'block';
+      mockWorkspace.style.display = 'none';
+      
+      // Render normal practice question
+      renderQuestion();
+    } else {
+      practiceSidebar.style.display = 'none';
+      mockSidebar.style.display = 'block';
+      practiceWorkspace.style.display = 'none';
+      mockWorkspace.style.display = 'block';
+      
+      // Show mock exam dashboard or active exam
+      if (state.mockExam.active) {
+        renderMockExamQuestion();
+        renderMockExamGrid();
+      } else if (state.mockExam.completed) {
+        renderMockExamResults();
+      } else {
+        renderMockExamHome();
+      }
+    }
+  }
+}
+
+// Load Mock Exam History from LocalStorage
+function loadMockHistory() {
+  const saved = localStorage.getItem('ochem_mock_history');
+  if (saved) {
+    try {
+      state.mockExam.history = JSON.parse(saved);
+    } catch (e) {
+      console.error('Failed to parse mock history', e);
+    }
+  }
+}
+
+// Save Mock Exam History to LocalStorage
+function saveMockHistory() {
+  localStorage.setItem('ochem_mock_history', JSON.stringify(state.mockExam.history));
+}
+
+// Render Mock Exam Start Screen (Home)
+function renderMockExamHome() {
+  const activeArea = document.getElementById('mock-exam-active-area');
+  const resultsArea = document.getElementById('mock-exam-results-area');
+  if (!activeArea || !resultsArea) return;
+
+  activeArea.style.display = 'block';
+  resultsArea.style.display = 'none';
+
+  loadMockHistory();
+
+  let historyHtml = '';
+  if (state.mockExam.history && state.mockExam.history.length > 0) {
+    historyHtml = `
+      <div class="panel-card" style="margin-top: 2rem; padding: 1.5rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;"><i class="fas fa-history" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Past Attempt History</h3>
+        <div style="overflow-x: auto;">
+          <table class="history-table">
+            <thead>
+              <tr>
+                <th>Date / Time</th>
+                <th>Score</th>
+                <th>Accuracy</th>
+                <th>Time Spent</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+    `;
+
+    // Show history in reverse chronological order (newest first)
+    [...state.mockExam.history].reverse().forEach((attempt, index) => {
+      const actualIndex = state.mockExam.history.length - 1 - index;
+      const formattedDate = new Date(attempt.date).toLocaleString([], { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+      const durationMin = Math.floor(attempt.timeSpent / 60);
+      const durationSec = attempt.timeSpent % 60;
+      const isPassed = attempt.percentage >= 60; // Standard passing score is 60%
+      
+      historyHtml += `
+        <tr>
+          <td>${formattedDate}</td>
+          <td style="font-weight: 600;">${attempt.score} / 70</td>
+          <td style="font-weight: 600; color: ${isPassed ? 'var(--success-color)' : 'var(--error-color)'}">${attempt.percentage}%</td>
+          <td>${durationMin}m ${durationSec}s</td>
+          <td>
+            <span class="history-badge ${isPassed ? 'pass' : 'fail'}">
+              ${isPassed ? 'PASSED' : 'RETRY'}
+            </span>
+          </td>
+          <td>
+            <button class="btn" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;" onclick="viewPastMockAttempt(${actualIndex})">
+              <i class="fas fa-eye"></i> Review
+            </button>
+          </td>
+        </tr>
+      `;
+    });
+
+    historyHtml += `
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+  } else {
+    historyHtml = `
+      <div class="panel-card text-center" style="margin-top: 2rem; padding: 2rem; color: var(--text-secondary);">
+        <i class="fas fa-history" style="font-size: 2rem; margin-bottom: 0.75rem; opacity: 0.5;"></i>
+        <p>No past mock exam attempts recorded yet. Take your first attempt to begin tracking progress!</p>
+      </div>
+    `;
+  }
+
+  activeArea.innerHTML = `
+    <div class="panel-card text-center" style="padding: 3rem 2rem; animation: fadeIn 0.4s ease-out; background: linear-gradient(145deg, var(--bg-card) 0%, rgba(99, 102, 241, 0.03) 100%); border: 1px solid rgba(255,255,255,0.04);">
+      <i class="fas fa-stopwatch" style="font-size: 4.5rem; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem; filter: drop-shadow(0 0 15px rgba(99, 102, 241, 0.2));"></i>
+      <h2 style="font-size: 2.25rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.75rem;">ACS-Style 70-Question Mock Exam</h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6; font-size: 1.05rem;">
+        Test your readiness for the American Chemical Society (ACS) standardized organic chemistry examination. This comprehensive practice exam contains exactly <strong>70 multiple-choice questions</strong> distributed balanced across all chapters, including specialized questions on structural elucidation spectroscopy with <strong>actual spectra from AIST-SDBS & ChemicalBook</strong>.
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; max-width: 750px; margin: 0 auto 2.5rem; text-align: left;">
+        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+            <i class="fas fa-list-ol" style="color: var(--accent-color); font-size: 1.2rem;"></i>
+            <span style="font-weight: 700; font-size: 1rem;">70 Questions</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Comprehensive coverage spanning Nomenclature, Stereochemistry, Mechanisms, Reactions, and Spectroscopy.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+            <i class="fas fa-hourglass-half" style="color: var(--accent-color); font-size: 1.2rem;"></i>
+            <span style="font-weight: 700; font-size: 1rem;">110 Minutes</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Strict countdown timer simulating official testing conditions. Approximately 94 seconds per question.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+            <i class="fas fa-eye-slash" style="color: var(--accent-color); font-size: 1.2rem;"></i>
+            <span style="font-weight: 700; font-size: 1rem;">Blind Feedback</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">No immediate grading or answer reviews. Complete solutions and structural reviews are displayed post-submission.</p>
+        </div>
+      </div>
+      
+      <button class="btn btn-primary" onclick="startMockExam()" style="padding: 0.8rem 2.5rem; font-size: 1.1rem; font-weight: 700; margin: 0 auto; box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4); border-radius: 12px;">
+        <i class="fas fa-play"></i> Begin New Mock Exam
+      </button>
+    </div>
+
+    ${historyHtml}
+  `;
+}
+
+// Start a new 70-question Mock Exam
+function startMockExam() {
+  // 1. Reset Mock Exam State
+  state.mockExam = {
+    active: true,
+    questions: [],
+    currentIndex: 0,
+    answers: {},
+    flags: {},
+    timeRemaining: 110 * 60, // 110 minutes
+    timerId: null,
+    completed: false,
+    startTime: Date.now(),
+    endTime: null,
+    history: state.mockExam.history || []
+  };
+
+  // 2. Select 70 Balanced Questions
+  const questionsByChapter = {};
+  for (let c = 1; c <= 18; c++) {
+    questionsByChapter[c] = [];
+  }
+
+  // Populate bins based on prefix of question_id or metadata
+  state.questions.forEach(q => {
+    let chapterNum = null;
+    const match = q.question_id.match(/^ch(\d+)_/);
+    if (match) {
+      chapterNum = parseInt(match[1]);
+    } else if (q.topic === "Spectroscopy (SDBS/ChemicalBook)") {
+      chapterNum = 18;
+    } else {
+      const fallbackMatch = q.question_id.match(/chapter(\d+)/i) || q.question_id.match(/ch(\d+)/i);
+      if (fallbackMatch) {
+        chapterNum = parseInt(fallbackMatch[1]);
+      }
+    }
+
+    if (chapterNum && chapterNum >= 1 && chapterNum <= 18) {
+      questionsByChapter[chapterNum].push(q);
+    } else {
+      questionsByChapter[1].push(q);
+    }
+  });
+
+  // Fisher-Yates Shuffle helper
+  const shuffle = (array) => {
+    let m = array.length, t, i;
+    while (m) {
+      i = Math.floor(Math.random() * m--);
+      t = array[m];
+      array[m] = array[i];
+      array[i] = t;
+    }
+    return array;
+  };
+
+  // Draw balanced questions
+  const selectedQuestions = [];
+  
+  // Draw 4 questions from chapters 1-17 (17 * 4 = 68 questions)
+  for (let c = 1; c <= 17; c++) {
+    const chapterPool = questionsByChapter[c];
+    if (chapterPool && chapterPool.length > 0) {
+      const chapterPoolCopy = [...chapterPool];
+      shuffle(chapterPoolCopy);
+      const drawCount = Math.min(4, chapterPoolCopy.length);
+      for (let i = 0; i < drawCount; i++) {
+        selectedQuestions.push(chapterPoolCopy[i]);
+      }
+    }
+  }
+
+  // Draw 2 questions from Chapter 18 Spectroscopy (SDBS/ChemicalBook)
+  const specPool = questionsByChapter[18];
+  if (specPool && specPool.length > 0) {
+    const specPoolCopy = [...specPool];
+    shuffle(specPoolCopy);
+    const drawCount = Math.min(2, specPoolCopy.length);
+    for (let i = 0; i < drawCount; i++) {
+      selectedQuestions.push(specPoolCopy[i]);
+    }
+  }
+
+  // Fallback to top off to exactly 70 questions if needed
+  if (selectedQuestions.length < 70) {
+    const allUniqueIds = new Set(selectedQuestions.map(q => q.question_id));
+    const generalPool = state.questions.filter(q => !allUniqueIds.has(q.question_id));
+    shuffle(generalPool);
+    while (selectedQuestions.length < 70 && generalPool.length > 0) {
+      selectedQuestions.push(generalPool.pop());
+    }
+  }
+
+  // Shuffle final 70 questions and then shuffle their options
+  const finalQuestions = shuffle(selectedQuestions).slice(0, 70);
+  state.mockExam.questions = shuffleQuestionsOptions(finalQuestions);
+
+  // 3. Setup Timer
+  document.getElementById('mock-timer-display').textContent = "110:00";
+  document.getElementById('mock-timer-display').classList.remove('warning');
+  state.mockExam.timerId = setInterval(updateMockTimer, 1000);
+
+  // 4. Render Active Exam
+  renderMockExamQuestion();
+  renderMockExamGrid();
+
+  showToast("Mock Exam started! Good luck!", "success");
+}
+
+// Countdown timer function
+function updateMockTimer() {
+  if (!state.mockExam.active) {
+    clearInterval(state.mockExam.timerId);
+    return;
+  }
+
+  state.mockExam.timeRemaining--;
+
+  const display = document.getElementById('mock-timer-display');
+  if (!display) return;
+
+  if (state.mockExam.timeRemaining <= 0) {
+    clearInterval(state.mockExam.timerId);
+    display.textContent = "00:00";
+    showToast("Time's up! Submitting exam...", "error");
+    submitMockExam(true);
+    return;
+  }
+
+  // Format MM:SS
+  const minutes = Math.floor(state.mockExam.timeRemaining / 60);
+  const seconds = state.mockExam.timeRemaining % 60;
+  const formattedTime = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+  display.textContent = formattedTime;
+
+  // Visual warning if less than 10 minutes (600 seconds)
+  if (state.mockExam.timeRemaining < 600) {
+    display.classList.add('warning');
+  }
+}
+
+// Render active mock exam question
+function renderMockExamQuestion() {
+  const container = document.getElementById('mock-exam-active-area');
+  if (!container) return;
+
+  const idx = state.mockExam.currentIndex;
+  const q = state.mockExam.questions[idx];
+  const selectedOptionId = state.mockExam.answers[idx];
+  const isFlagged = state.mockExam.flags[idx] === true;
+
+  let html = `
+    <div class="panel-card question-card" style="animation: fadeIn 0.25s ease-out;">
+      <div class="question-meta">
+        <span class="tag tag-topic" style="background: rgba(99, 102, 241, 0.1); color: var(--accent-color); font-weight: 700;">Question ${idx + 1} of 70</span>
+        <span class="tag tag-difficulty ${q.difficulty_level}">${q.difficulty_level}</span>
+        ${isFlagged ? '<span class="tag" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b; font-weight: 700; display: flex; align-items: center; gap: 0.25rem;"><i class="fas fa-flag"></i> Flagged</span>' : ''}
+      </div>
+      
+      <div class="question-text" id="mock-q-text-box">
+        ${formatChemicalText(q.question_text)}
+      </div>
+  `;
+
+  // Draw 2D chemical structure if available
+  if (q.question_smiles) {
+    html += `
+      <div class="chemical-container">
+        <canvas id="mock-q-smiles-canvas" width="360" height="150"></canvas>
+        <div class="smiles-string-display" title="SMILES Notation">${q.question_smiles}</div>
+      </div>
+    `;
+  }
+
+  // Draw Choices grid (no immediate correctness feedback)
+  html += `
+      <div class="choices-grid">
+  `;
+  
+  q.options.forEach(opt => {
+    const isSelected = opt.option_id === selectedOptionId;
+    const btnClass = isSelected ? 'correct' : ''; 
+    
+    html += `
+      <button class="choice-button ${btnClass}" 
+              onclick="selectMockOption('${opt.option_id}')"
+              style="${isSelected ? 'border-color: var(--border-active); background: rgba(99, 102, 241, 0.05);' : ''}">
+        <div class="choice-header">
+          <span class="choice-letter" style="${isSelected ? 'background: var(--accent-color); color: #fff;' : ''}">${opt.option_id}</span>
+        </div>
+        <div class="choice-text">${formatChemicalText(opt.text)}</div>
+    `;
+
+    if (opt.smiles) {
+      html += `
+        <div class="choice-structure">
+          <canvas id="mock-opt-canvas-${opt.option_id}" width="160" height="85"></canvas>
+        </div>
+      `;
+    }
+
+    html += `</button>`;
+  });
+
+  html += `
+      </div>
+      
+      <!-- Mock Navigation actions -->
+      <div class="mock-nav-actions">
+        <button class="btn" onclick="prevMockQuestion()" ${idx === 0 ? 'disabled' : ''}>
+          <i class="fas fa-chevron-left"></i> Previous
+        </button>
+        
+        <button class="btn" style="border-color: #f59e0b; color: #f59e0b;" onclick="toggleMockFlag()">
+          <i class="fas fa-flag"></i> ${isFlagged ? 'Unflag Question' : 'Flag Question'}
+        </button>
+        
+        <button class="btn btn-primary" onclick="nextMockQuestion()">
+          ${idx === 69 ? 'Go to First' : 'Next <i class="fas fa-chevron-right"></i>'}
+        </button>
+      </div>
+    </div>
+  `;
+
+  container.innerHTML = html;
+
+  // Draw structures on canvas
+  setTimeout(() => {
+    if (q.question_smiles && document.getElementById('mock-q-smiles-canvas')) {
+      drawSMILESCanvas(q.question_smiles, 'mock-q-smiles-canvas', 'light');
+    }
+
+    q.options.forEach(opt => {
+      const canvasId = `mock-opt-canvas-${opt.option_id}`;
+      if (opt.smiles && document.getElementById(canvasId)) {
+        drawSMILESCanvas(opt.smiles, canvasId, 'light');
+      }
+    });
+
+    if (typeof renderMathInElement !== 'undefined') {
+      renderMathInElement(container, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false }
+        ],
+        throwOnError: false
+      });
+    }
+  }, 50);
+}
+
+// Option selection handler in mock exam
+function selectMockOption(optionId) {
+  const idx = state.mockExam.currentIndex;
+  state.mockExam.answers[idx] = optionId;
+  
+  // Re-render to show selection and update status map
+  renderMockExamQuestion();
+  renderMockExamGrid();
+}
+
+// Toggle flagging of current question
+function toggleMockFlag() {
+  const idx = state.mockExam.currentIndex;
+  state.mockExam.flags[idx] = !state.mockExam.flags[idx];
+  
+  renderMockExamQuestion();
+  renderMockExamGrid();
+}
+
+// Next question
+function nextMockQuestion() {
+  if (state.mockExam.currentIndex < 69) {
+    state.mockExam.currentIndex++;
+  } else {
+    state.mockExam.currentIndex = 0; // Wrap around to first
+  }
+  renderMockExamQuestion();
+  renderMockExamGrid();
+}
+
+// Previous question
+function prevMockQuestion() {
+  if (state.mockExam.currentIndex > 0) {
+    state.mockExam.currentIndex--;
+    renderMockExamQuestion();
+    renderMockExamGrid();
+  }
+}
+
+// Select specific question from map grid
+function jumpToMockQuestion(idx) {
+  state.mockExam.currentIndex = idx;
+  renderMockExamQuestion();
+  renderMockExamGrid();
+}
+
+// Render the 70-button question navigator grid in the sidebar
+function renderMockExamGrid() {
+  const grid = document.getElementById('mock-question-grid');
+  if (!grid) return;
+
+  grid.innerHTML = '';
+  
+  for (let i = 0; i < 70; i++) {
+    const btn = document.createElement('button');
+    btn.className = 'mock-grid-btn';
+    btn.textContent = i + 1;
+    
+    // Determine status classes
+    const isCurrent = i === state.mockExam.currentIndex;
+    const isAnswered = state.mockExam.answers.hasOwnProperty(i);
+    const isFlagged = state.mockExam.flags[i] === true;
+    
+    if (isCurrent) btn.classList.add('current');
+    if (isAnswered) btn.classList.add('answered');
+    if (isFlagged) btn.classList.add('flagged');
+    if (!isCurrent && !isAnswered && !isFlagged) btn.classList.add('unvisited');
+    
+    btn.addEventListener('click', () => jumpToMockQuestion(i));
+    grid.appendChild(btn);
+  }
+}
+
+// Quit Mock Exam (with confirmation)
+function quitMockExam() {
+  if (confirm("Are you sure you want to quit the Mock Exam? Your current progress will be lost.")) {
+    clearInterval(state.mockExam.timerId);
+    state.mockExam.active = false;
+    renderMockExamHome();
+  }
+}
+
+// Submit Mock Exam
+function submitMockExam(autoSubmit = false) {
+  if (!autoSubmit && !confirm("Are you sure you want to submit your Mock Exam? You have answered " + Object.keys(state.mockExam.answers).length + " out of 70 questions.")) {
+    return;
+  }
+
+  // Stop Timer
+  clearInterval(state.mockExam.timerId);
+  state.mockExam.active = false;
+  state.mockExam.completed = true;
+  state.mockExam.endTime = Date.now();
+
+  // Calculate scores
+  let correctCount = 0;
+  state.mockExam.questions.forEach((q, idx) => {
+    const selected = state.mockExam.answers[idx];
+    if (selected) {
+      const correctOpt = q.options.find(o => o.is_correct);
+      if (correctOpt && correctOpt.option_id === selected) {
+        correctCount++;
+      }
+    }
+  });
+
+  const percentage = Math.round((correctCount / 70) * 100);
+  const timeSpent = Math.round((state.mockExam.endTime - state.mockExam.startTime) / 1000);
+
+  // Compile topic stats for breakdown
+  const topicStats = {};
+  state.mockExam.questions.forEach((q, idx) => {
+    const topic = q.topic;
+    if (!topicStats[topic]) {
+      topicStats[topic] = { correct: 0, total: 0 };
+    }
+    topicStats[topic].total++;
+    
+    const selected = state.mockExam.answers[idx];
+    if (selected) {
+      const correctOpt = q.options.find(o => o.is_correct);
+      if (correctOpt && correctOpt.option_id === selected) {
+        topicStats[topic].correct++;
+      }
+    }
+  });
+
+  // Create Attempt Object
+  const attempt = {
+    date: Date.now(),
+    score: correctCount,
+    percentage: percentage,
+    timeSpent: timeSpent,
+    topicStats: topicStats,
+    answers: {...state.mockExam.answers},
+    questions: state.mockExam.questions 
+  };
+
+  // Add to History
+  if (!state.mockExam.history) state.mockExam.history = [];
+  state.mockExam.history.push(attempt);
+  saveMockHistory();
+
+  // Set active review attempt
+  state.mockExam.activeReviewAttempt = attempt;
+
+  // Show results view
+  renderMockExamResults();
+}
+
+// Render detailed Mock Exam Results Dashboard
+function renderMockExamResults() {
+  const activeArea = document.getElementById('mock-exam-active-area');
+  const resultsArea = document.getElementById('mock-exam-results-area');
+  if (!activeArea || !resultsArea) return;
+
+  activeArea.style.display = 'none';
+  resultsArea.style.display = 'block';
+
+  // Get active review attempt details
+  const attempt = state.mockExam.activeReviewAttempt;
+  if (!attempt) return;
+
+  const durationMin = Math.floor(attempt.timeSpent / 60);
+  const durationSec = attempt.timeSpent % 60;
+  const isPassed = attempt.percentage >= 60;
+
+  // Metadata summary
+  let sdbsQuestionsCount = attempt.questions.filter(q => q.topic === "Spectroscopy (SDBS/ChemicalBook)").length;
+
+  // Topic breakdown HTML
+  let topicBreakdownHtml = '';
+  Object.keys(attempt.topicStats).forEach(topic => {
+    const stats = attempt.topicStats[topic];
+    const pct = Math.round((stats.correct / stats.total) * 100);
+    topicBreakdownHtml += `
+      <div class="topic-breakdown-item">
+        <div class="topic-breakdown-info">
+          <span style="color: var(--text-primary); font-weight: 500;">${topic}</span>
+          <span style="color: var(--text-secondary);">${stats.correct} / ${stats.total} (${pct}%)</span>
+        </div>
+        <div class="topic-breakdown-track">
+          <div class="topic-breakdown-fill" style="width: ${pct}%; background: ${pct >= 60 ? 'var(--success-color)' : pct >= 40 ? '#f59e0b' : 'var(--error-color)'};"></div>
+        </div>
+      </div>
+    `;
+  });
+
+  // Question navigation list in results
+  let qListHtml = '';
+  attempt.questions.forEach((q, idx) => {
+    const selected = attempt.answers[idx];
+    const correctOpt = q.options.find(o => o.is_correct);
+    let statusClass = 'unanswered';
+    let icon = '<i class="fas fa-minus"></i>';
+
+    if (selected) {
+      if (correctOpt && correctOpt.option_id === selected) {
+        statusClass = 'correct';
+        icon = '<i class="fas fa-check"></i>';
+      } else {
+        statusClass = 'incorrect';
+        icon = '<i class="fas fa-times"></i>';
+      }
+    }
+
+    qListHtml += `
+      <button class="results-q-btn ${statusClass}" onclick="reviewMockQuestion(${idx})">
+        <div style="font-size: 0.7rem; text-transform: uppercase; color: var(--text-secondary);">Q${idx + 1}</div>
+        <div style="font-size: 1.1rem; font-weight: 800; margin: 0.15rem 0;">${icon}</div>
+        <div style="font-size: 0.65rem; color: var(--text-secondary); text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">${q.topic}</div>
+      </button>
+    `;
+  });
+
+  resultsArea.innerHTML = `
+    <div class="panel-card" style="padding: 2.5rem; animation: fadeIn 0.4s ease-out;">
+      
+      <!-- Award title banner -->
+      <div class="text-center" style="margin-bottom: 2rem;">
+        <i class="fas ${isPassed ? 'fa-award' : 'fa-redo-alt'}" style="font-size: 4rem; color: ${isPassed ? '#f59e0b' : 'var(--text-secondary)'}; margin-bottom: 1rem;"></i>
+        <h2 style="font-size: 2rem; font-weight: 800; letter-spacing: -0.02em;">${isPassed ? 'Exam Passed!' : 'Exam Completed'}</h2>
+        <p style="color: var(--text-secondary); margin-top: 0.25rem;">ACS Standard Organic Chemistry Practice Examination</p>
+      </div>
+
+      <!-- Core score metrics grid -->
+      <div class="results-header-summary">
+        <!-- Circular Dial -->
+        <div style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; display: flex; align-items: center; justify-content: center;">
+          <div class="metric-circle ${isPassed ? 'pass' : 'fail'}" style="--percentage: ${attempt.percentage}">
+            <div class="metric-circle-val">${attempt.percentage}%</div>
+            <div class="metric-circle-label">${attempt.score} / 70 Correct</div>
+          </div>
+        </div>
+
+        <!-- Metric Details -->
+        <div style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
+          <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+            <span style="color: var(--text-secondary);"><i class="fas fa-hourglass-half" style="margin-right: 0.5rem;"></i> Time Elapsed:</span>
+            <span style="font-weight: 600; color: var(--text-primary);">${durationMin}m ${durationSec}s</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+            <span style="color: var(--text-secondary);"><i class="fas fa-check-circle" style="margin-right: 0.5rem; color: var(--success-color);"></i> Correct Answers:</span>
+            <span style="font-weight: 600; color: var(--success-color);">${attempt.score}</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+            <span style="color: var(--text-secondary);"><i class="fas fa-times-circle" style="margin-right: 0.5rem; color: var(--error-color);"></i> Incorrect Answers:</span>
+            <span style="font-weight: 600; color: var(--error-color);">${70 - attempt.score}</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem;">
+            <span style="color: var(--text-secondary);"><i class="fas fa-vial" style="margin-right: 0.5rem; color: #a855f7;"></i> Spectroscopy (SDBS):</span>
+            <span style="font-weight: 600; color: #a855f7;">${sdbsQuestionsCount} Questions Taken</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Topic Performance breakdown bar graphs -->
+      <div style="margin-bottom: 2.5rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;"><i class="fas fa-chart-bar" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Performance by Topic</h3>
+        <div class="topic-breakdown-list">
+          ${topicBreakdownHtml}
+        </div>
+      </div>
+
+      <!-- Action buttons -->
+      <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color);">
+        <button class="btn btn-primary" onclick="startMockExam()" style="padding: 0.7rem 1.8rem; border-radius: 10px; font-weight: 600;"><i class="fas fa-redo"></i> Retake Mock Exam</button>
+        <button class="btn" onclick="renderMockExamHome()" style="padding: 0.7rem 1.8rem; border-radius: 10px;"><i class="fas fa-home"></i> Back to Mock Dashboard</button>
+      </div>
+
+      <!-- Individual Question Review Panel -->
+      <div>
+        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;"><i class="fas fa-magnifying-glass" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Detailed Question Review</h3>
+        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1.5rem;">Click on any question below to view the detailed explanation, starting material structure, and correct mechanisms.</p>
+        <div class="results-question-list">
+          ${qListHtml}
+        </div>
+      </div>
+
+      <!-- Placeholder container for question review details when clicked -->
+      <div id="mock-review-question-detail" style="margin-top: 2rem; display: none;"></div>
+
+    </div>
+  `;
+}
+
+// Show a specific question in review mode
+function reviewMockQuestion(idx) {
+  const detailContainer = document.getElementById('mock-review-question-detail');
+  if (!detailContainer) return;
+
+  const attempt = state.mockExam.activeReviewAttempt;
+  if (!attempt) return;
+
+  const q = attempt.questions[idx];
+  const selectedOptionId = attempt.answers[idx];
+  const correctOpt = q.options.find(o => o.is_correct);
+  const isCorrect = selectedOptionId === correctOpt.option_id;
+
+  // Temp state updates to render the question details
+  state.filteredQuestions = attempt.questions;
+  state.currentQuestionIndex = idx;
+  state.answersSubmitted = {[idx]: selectedOptionId};
+
+  let html = `
+    <div class="panel-card" style="border-color: ${isCorrect ? 'var(--success-color)' : selectedOptionId ? 'var(--error-color)' : 'var(--text-secondary)'}; background: rgba(255,255,255,0.01); padding: 1.5rem; margin-top: 1.5rem; animation: slideInUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
+        <span style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem;">Reviewing Question ${idx + 1}</span>
+        <span class="tag" style="background: ${isCorrect ? 'var(--success-bg)' : selectedOptionId ? 'var(--error-bg)' : 'rgba(255,255,255,0.05)'}; color: ${isCorrect ? 'var(--success-color)' : selectedOptionId ? 'var(--error-color)' : 'var(--text-secondary)'}; font-weight: 700;">
+          ${isCorrect ? 'CORRECT' : selectedOptionId ? 'INCORRECT' : 'UNANSWERED'}
+        </span>
+      </div>
+
+      <div class="question-meta" style="margin-bottom: 1rem;">
+        <span class="tag tag-topic">${q.topic}</span>
+        <span class="tag tag-difficulty ${q.difficulty_level}">${q.difficulty_level}</span>
+      </div>
+
+      <div class="question-text" style="font-size: 1.05rem; margin-bottom: 1.25rem; line-height: 1.6;">
+        ${formatChemicalText(q.question_text)}
+      </div>
+  `;
+
+  if (q.question_smiles) {
+    html += `
+      <div class="chemical-container">
+        <canvas id="review-q-smiles-canvas" width="360" height="150"></canvas>
+        <div class="smiles-string-display" title="SMILES Notation">${q.question_smiles}</div>
+      </div>
+    `;
+  }
+
+  html += `<div class="choices-grid">`;
+
+  q.options.forEach(opt => {
+    let optClass = '';
+    
+    if (opt.is_correct) {
+      optClass = 'correct';
+    } else if (opt.option_id === selectedOptionId) {
+      optClass = 'incorrect';
+    } else {
+      optClass = 'disabled';
+    }
+
+    html += `
+      <button class="choice-button ${optClass} disabled" disabled>
+        <div class="choice-header">
+          <span class="choice-letter" style="${opt.is_correct ? 'background: var(--success-color); color: #fff;' : opt.option_id === selectedOptionId ? 'background: var(--error-color); color: #fff;' : ''}">${opt.option_id}</span>
+          ${opt.is_correct ? '<i class="fas fa-check" style="color: var(--success-color)"></i>' : ''}
+          ${opt.option_id === selectedOptionId && !opt.is_correct ? '<i class="fas fa-times" style="color: var(--error-color)"></i>' : ''}
+        </div>
+        <div class="choice-text">${formatChemicalText(opt.text)}</div>
+    `;
+
+    if (opt.smiles) {
+      html += `
+        <div class="choice-structure">
+          <canvas id="review-opt-canvas-${opt.option_id}" width="160" height="85"></canvas>
+        </div>
+      `;
+    }
+
+    html += `</button>`;
+  });
+
+  html += `
+      </div>
+
+      <div class="feedback-panel" style="margin-top: 1.5rem; background: var(--bg-card);">
+        <div class="feedback-tabs">
+          <button class="feedback-tab active" id="review-tab-context" onclick="setReviewFeedbackTab('context', ${idx})">Context Understanding</button>
+          <button class="feedback-tab" id="review-tab-process" onclick="setReviewFeedbackTab('process', ${idx})">Pathway & Mechanism</button>
+          <button class="feedback-tab" id="review-tab-result" onclick="setReviewFeedbackTab('result', ${idx})">Key Result</button>
+        </div>
+        
+        <div class="feedback-content" id="review-feedback-content-area" style="padding: 1.25rem 0.5rem 0;">
+          ${getFeedbackContent(q.feedback)}
+        </div>
+      </div>
+      
+      <div style="display: flex; justify-content: flex-end; margin-top: 1rem;">
+        <button class="btn" onclick="document.getElementById('mock-review-question-detail').style.display='none';"><i class="fas fa-times"></i> Close Review</button>
+      </div>
+    </div>
+  `;
+
+  detailContainer.innerHTML = html;
+  detailContainer.style.display = 'block';
+
+  // Draw Smiley canvases
+  setTimeout(() => {
+    if (q.question_smiles && document.getElementById('review-q-smiles-canvas')) {
+      drawSMILESCanvas(q.question_smiles, 'review-q-smiles-canvas', 'light');
+    }
+
+    q.options.forEach(opt => {
+      const canvasId = `review-opt-canvas-${opt.option_id}`;
+      if (opt.smiles && document.getElementById(canvasId)) {
+        drawSMILESCanvas(opt.smiles, canvasId, 'light');
+      }
+    });
+
+    if (typeof renderMathInElement !== 'undefined') {
+      renderMathInElement(detailContainer, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false }
+        ],
+        throwOnError: false
+      });
+    }
+
+    detailContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 50);
+}
+
+// Tab switcher inside the active question review block
+function setReviewFeedbackTab(tabName, idx) {
+  state.activeFeedbackTab = tabName;
+
+  const tabs = ['context', 'process', 'result'];
+  tabs.forEach(t => {
+    const el = document.getElementById(`review-tab-${t}`);
+    if (el) {
+      if (t === tabName) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    }
+  });
+
+  const contentArea = document.getElementById('review-feedback-content-area');
+  if (contentArea) {
+    const attempt = state.mockExam.activeReviewAttempt;
+    const q = attempt.questions[idx];
+    contentArea.innerHTML = getFeedbackContent(q.feedback);
+
+    if (typeof renderMathInElement !== 'undefined') {
+      renderMathInElement(contentArea, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false }
+        ],
+        throwOnError: false
+      });
+    }
+  }
+}
+
+// Function to view a past mock exam attempt directly from dashboard
+function viewPastMockAttempt(historyIndex) {
+  loadMockHistory();
+  const attempt = state.mockExam.history[historyIndex];
+  if (!attempt) return;
+
+  // Set active review attempt
+  state.mockExam.activeReviewAttempt = attempt;
+  
+  renderMockExamResults();
+}
+
