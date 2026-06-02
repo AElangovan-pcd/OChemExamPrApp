@@ -1172,3 +1172,209 @@ header {
   background: rgba(255, 255, 255, 0.01);
 }
 
+/* Custom Stylesheet Extensions for OChemExamPrApp */
+
+/* Reaction Scheme Layout */
+.reaction-scheme-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow-md);
+}
+
+.reactants-side, .products-side {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.scheme-reactant-tile, .scheme-product-tile {
+  background: var(--bg-structure);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scheme-plus {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.scheme-product-placeholder {
+  width: 160px;
+  height: 110px;
+  background: #1e1e2d;
+  border: 2px dashed var(--accent-color);
+  border-radius: 8px;
+  color: var(--accent-color);
+  font-size: 2.5rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reaction-arrow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+}
+
+.reagents-text, .conditions-text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-align: center;
+  font-weight: 500;
+}
+
+.arrow-line {
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--accent-color);
+}
+
+/* Matching Interface Layouts */
+.matching-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.matching-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.matching-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.matching-structure {
+  background: var(--bg-structure);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.matching-drop {
+  background: #1e1f2e;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+  min-width: 180px;
+}
+
+.matching-drop:focus {
+  border-color: var(--accent-color);
+}
+
+.matching-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.matching-grid-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+}
+
+.matching-grid-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Spectroscopy & Chart Containers */
+.spectroscopy-container, .energy-diagram-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+/* Roadmap Grid Layout */
+.roadmap-container {
+  overflow-x: auto;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.roadmap-grid {
+  display: grid;
+  position: relative;
+}
+
+.roadmap-node {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.roadmap-node-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 0.25rem;
+}
+
+.roadmap-structure {
+  background: var(--bg-structure);
+  border-radius: 6px;
+  padding: 0.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

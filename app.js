@@ -146,8 +146,54 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeof CHAPTER_32_QUESTIONS !== 'undefined') {
     state.questions = [...state.questions, ...CHAPTER_32_QUESTIONS];
   }
-
-
+  if (typeof CHAPTER_33_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_33_QUESTIONS];
+  }
+  if (typeof CHAPTER_34_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_34_QUESTIONS];
+  }
+  if (typeof CHAPTER_35_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_35_QUESTIONS];
+  }
+  if (typeof CHAPTER_36_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_36_QUESTIONS];
+  }
+  if (typeof CHAPTER_37_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_37_QUESTIONS];
+  }
+  if (typeof CHAPTER_38_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_38_QUESTIONS];
+  }
+  if (typeof CHAPTER_39_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_39_QUESTIONS];
+  }
+  if (typeof CHAPTER_40_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_40_QUESTIONS];
+  }
+  if (typeof CHAPTER_41_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_41_QUESTIONS];
+  }
+  if (typeof CHAPTER_42_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_42_QUESTIONS];
+  }
+  if (typeof CHAPTER_43_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_43_QUESTIONS];
+  }
+  if (typeof CHAPTER_44_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_44_QUESTIONS];
+  }
+  if (typeof CHAPTER_45_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_45_QUESTIONS];
+  }
+  if (typeof CHAPTER_46_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_46_QUESTIONS];
+  }
+  if (typeof CHAPTER_47_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_47_QUESTIONS];
+  }
+  if (typeof CHAPTER_48_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_48_QUESTIONS];
+  }
 
 
   // Initialize Smiles Drawer
@@ -429,64 +475,16 @@ function renderQuestion() {
       </div>
   `;
 
-  // Include starting material structure panel if present
-  if (q.question_smiles) {
-    html += `
-      <div class="chemical-container">
-        <canvas id="q-smiles-canvas" width="360" height="150"></canvas>
-        <div class="smiles-string-display" title="SMILES Notation">${q.question_smiles}</div>
-      </div>
-    `;
-  }
+  // Draw 2D chemical structure or reaction schemes
+  html += renderQuestionChemicals(q);
 
-  // Add Grid of Options
-  html += `
-      <div class="choices-grid">
-  `;
+  // Render Visual engines (spectroscopy charts, energy diagrams, roadmaps)
+  html += renderVisualEngines(q);
 
-  q.options.forEach(opt => {
-    let optClass = '';
-    let isDisabled = isAnswered ? 'disabled' : '';
+  // Draw options grid or matching matching-list/matching-grid
+  html += renderChoicesArea(q, selectedOptionId, isAnswered);
 
-    if (isAnswered) {
-      if (opt.is_correct) {
-        optClass = 'correct';
-      } else if (opt.option_id === selectedOptionId) {
-        optClass = 'incorrect';
-      } else {
-        optClass = 'disabled';
-      }
-    }
-
-    html += `
-      <button class="choice-button ${optClass} ${isDisabled}" 
-              onclick="handleOptionSelect('${opt.option_id}')" 
-              ${isAnswered ? 'disabled' : ''}>
-        <div class="choice-header">
-          <span class="choice-letter">${opt.option_id}</span>
-          ${isAnswered && opt.is_correct ? '<i class="fas fa-check" style="color: var(--success-color)"></i>' : ''}
-          ${isAnswered && opt.option_id === selectedOptionId && !opt.is_correct ? '<i class="fas fa-times" style="color: var(--error-color)"></i>' : ''}
-        </div>
-        <div class="choice-text">${formatChemicalText(opt.text)}</div>
-    `;
-
-    if (opt.smiles) {
-      html += `
-        <div class="choice-structure">
-          <canvas id="opt-canvas-${opt.option_id}" width="160" height="85"></canvas>
-        </div>
-      `;
-    }
-
-    html += `
-      </button>
-    `;
-  });
-
-  html += `
-      </div>
-    </div>
-  `;
+  html += `</div>`; // Close panel-card
 
   // Render Feedback Block if answered
   if (isAnswered) {
@@ -524,14 +522,14 @@ function renderQuestion() {
 
   container.innerHTML = html;
 
-  // Render Chemistry structures and equations on canvases after inserting to DOM
+  // Render Chemistry structures, dynamic charts, and KaTeX equations on canvases after inserting to DOM
   setTimeout(() => {
-    // 1. Draw Question Structure
+    // 1. Draw standard question Smiles canvas
     if (q.question_smiles && document.getElementById('q-smiles-canvas')) {
       drawSMILESCanvas(q.question_smiles, 'q-smiles-canvas', 'light');
     }
 
-    // 2. Draw Options structures
+    // 2. Draw standard options Smiles canvases
     q.options.forEach(opt => {
       const canvasId = `opt-canvas-${opt.option_id}`;
       if (opt.smiles && document.getElementById(canvasId)) {
@@ -539,7 +537,10 @@ function renderQuestion() {
       }
     });
 
-    // 3. Trigger KaTeX parsing for high-quality mathematical representations
+    // 3. Initialize visual engines (Charts, roadmaps, reaction schemes, matching structures)
+    initVisualEngines(q);
+
+    // 4. Trigger KaTeX parsing
     if (typeof renderMathInElement !== 'undefined') {
       renderMathInElement(container, {
         delimiters: [
@@ -1021,34 +1022,18 @@ function startMockExam() {
     history: state.mockExam.history || []
   };
 
-  // 2. Select 70 Balanced Questions
+  // 2. Select 70 Balanced Questions across all chapters
   const questionsByChapter = {};
-  for (let c = 1; c <= 18; c++) {
-    questionsByChapter[c] = [];
-  }
-
-  // Populate bins based on prefix of question_id or metadata
   state.questions.forEach(q => {
-    let chapterNum = null;
-    const match = q.question_id.match(/^ch(\d+)_/);
-    if (match) {
-      chapterNum = parseInt(match[1]);
-    } else if (q.topic === "Spectroscopy (SDBS/ChemicalBook)") {
-      chapterNum = 18;
-    } else {
-      const fallbackMatch = q.question_id.match(/chapter(\d+)/i) || q.question_id.match(/ch(\d+)/i);
-      if (fallbackMatch) {
-        chapterNum = parseInt(fallbackMatch[1]);
-      }
+    const ch = q.chapterNum || 1;
+    if (!questionsByChapter[ch]) {
+      questionsByChapter[ch] = [];
     }
-
-    if (chapterNum && chapterNum >= 1 && chapterNum <= 18) {
-      questionsByChapter[chapterNum].push(q);
-    } else {
-      questionsByChapter[1].push(q);
-    }
+    questionsByChapter[ch].push(q);
   });
 
+  const activeChapters = Object.keys(questionsByChapter).map(Number).sort((a,b) => a-b);
+  
   // Fisher-Yates Shuffle helper
   const shuffle = (array) => {
     let m = array.length, t, i;
@@ -1061,30 +1046,24 @@ function startMockExam() {
     return array;
   };
 
-  // Draw balanced questions
-  const selectedQuestions = [];
-  
-  // Draw 4 questions from chapters 1-17 (17 * 4 = 68 questions)
-  for (let c = 1; c <= 17; c++) {
-    const chapterPool = questionsByChapter[c];
-    if (chapterPool && chapterPool.length > 0) {
-      const chapterPoolCopy = [...chapterPool];
-      shuffle(chapterPoolCopy);
-      const drawCount = Math.min(4, chapterPoolCopy.length);
-      for (let i = 0; i < drawCount; i++) {
-        selectedQuestions.push(chapterPoolCopy[i]);
-      }
-    }
-  }
+  // Shuffle pool for each chapter
+  activeChapters.forEach(ch => {
+    shuffle(questionsByChapter[ch]);
+  });
 
-  // Draw 2 questions from Chapter 18 Spectroscopy (SDBS/ChemicalBook)
-  const specPool = questionsByChapter[18];
-  if (specPool && specPool.length > 0) {
-    const specPoolCopy = [...specPool];
-    shuffle(specPoolCopy);
-    const drawCount = Math.min(2, specPoolCopy.length);
-    for (let i = 0; i < drawCount; i++) {
-      selectedQuestions.push(specPoolCopy[i]);
+  const selectedQuestions = [];
+  let addedAny = true;
+
+  // Round-robin selection until we reach 70
+  while (selectedQuestions.length < 70 && addedAny) {
+    addedAny = false;
+    for (let i = 0; i < activeChapters.length; i++) {
+      const ch = activeChapters[i];
+      if (questionsByChapter[ch] && questionsByChapter[ch].length > 0) {
+        selectedQuestions.push(questionsByChapter[ch].pop());
+        addedAny = true;
+        if (selectedQuestions.length === 70) break;
+      }
     }
   }
 
@@ -1110,6 +1089,16 @@ function startMockExam() {
   // 4. Render Active Exam
   renderMockExamQuestion();
   renderMockExamGrid();
+
+  // Show Sidebar and workspace tabs
+  document.getElementById('sidebar-practice-content').style.display = 'none';
+  document.getElementById('sidebar-mock-content').style.display = 'block';
+  document.getElementById('workspace-practice-content').style.display = 'none';
+  document.getElementById('workspace-mock-content').style.display = 'block';
+  
+  // Set tab active
+  document.getElementById('tab-btn-practice').classList.remove('active');
+  document.getElementById('tab-btn-mock').classList.add('active');
 
   showToast("Mock Exam started! Good luck!", "success");
 }
@@ -1169,51 +1158,18 @@ function renderMockExamQuestion() {
       </div>
   `;
 
-  // Draw 2D chemical structure if available
-  if (q.question_smiles) {
-    html += `
-      <div class="chemical-container">
-        <canvas id="mock-q-smiles-canvas" width="360" height="150"></canvas>
-        <div class="smiles-string-display" title="SMILES Notation">${q.question_smiles}</div>
-      </div>
-    `;
-  }
+  // Draw 2D chemical structure or reaction schemes
+  html += renderQuestionChemicals(q, 'mock-');
 
-  // Draw Choices grid (no immediate correctness feedback)
-  html += `
-      <div class="choices-grid">
-  `;
-  
-  q.options.forEach(opt => {
-    const isSelected = opt.option_id === selectedOptionId;
-    const btnClass = isSelected ? 'correct' : ''; 
-    
-    html += `
-      <button class="choice-button ${btnClass}" 
-              onclick="selectMockOption('${opt.option_id}')"
-              style="${isSelected ? 'border-color: var(--border-active); background: rgba(99, 102, 241, 0.05);' : ''}">
-        <div class="choice-header">
-          <span class="choice-letter" style="${isSelected ? 'background: var(--accent-color); color: #fff;' : ''}">${opt.option_id}</span>
-        </div>
-        <div class="choice-text">${formatChemicalText(opt.text)}</div>
-    `;
+  // Render Visual engines (spectroscopy charts, energy diagrams, roadmaps)
+  html += renderVisualEngines(q, 'mock-');
 
-    if (opt.smiles) {
-      html += `
-        <div class="choice-structure">
-          <canvas id="mock-opt-canvas-${opt.option_id}" width="160" height="85"></canvas>
-        </div>
-      `;
-    }
-
-    html += `</button>`;
-  });
+  // Draw options grid or matching matching-list/matching-grid
+  html += renderChoicesArea(q, selectedOptionId, false, 'mock-');
 
   html += `
-      </div>
-      
       <!-- Mock Navigation actions -->
-      <div class="mock-nav-actions">
+      <div class="mock-nav-actions" style="margin-top: 1.5rem;">
         <button class="btn" onclick="prevMockQuestion()" ${idx === 0 ? 'disabled' : ''}>
           <i class="fas fa-chevron-left"></i> Previous
         </button>
@@ -1243,6 +1199,8 @@ function renderMockExamQuestion() {
         drawSMILESCanvas(opt.smiles, canvasId, 'light');
       }
     });
+
+    initVisualEngines(q, 'mock-');
 
     if (typeof renderMathInElement !== 'undefined') {
       renderMathInElement(container, {
@@ -1392,6 +1350,7 @@ function submitMockExam(autoSubmit = false) {
     timeSpent: timeSpent,
     topicStats: topicStats,
     answers: {...state.mockExam.answers},
+    matchingAnswers: {...(state.mockExam.matchingAnswers || {})},
     questions: state.mockExam.questions 
   };
 
@@ -1580,52 +1539,16 @@ function reviewMockQuestion(idx) {
       </div>
   `;
 
-  if (q.question_smiles) {
-    html += `
-      <div class="chemical-container">
-        <canvas id="review-q-smiles-canvas" width="360" height="150"></canvas>
-        <div class="smiles-string-display" title="SMILES Notation">${q.question_smiles}</div>
-      </div>
-    `;
-  }
+  // Draw 2D chemical structure or reaction schemes
+  html += renderQuestionChemicals(q, 'review-');
 
-  html += `<div class="choices-grid">`;
+  // Render Visual engines (spectroscopy charts, energy diagrams, roadmaps)
+  html += renderVisualEngines(q, 'review-');
 
-  q.options.forEach(opt => {
-    let optClass = '';
-    
-    if (opt.is_correct) {
-      optClass = 'correct';
-    } else if (opt.option_id === selectedOptionId) {
-      optClass = 'incorrect';
-    } else {
-      optClass = 'disabled';
-    }
-
-    html += `
-      <button class="choice-button ${optClass} disabled" disabled>
-        <div class="choice-header">
-          <span class="choice-letter" style="${opt.is_correct ? 'background: var(--success-color); color: #fff;' : opt.option_id === selectedOptionId ? 'background: var(--error-color); color: #fff;' : ''}">${opt.option_id}</span>
-          ${opt.is_correct ? '<i class="fas fa-check" style="color: var(--success-color)"></i>' : ''}
-          ${opt.option_id === selectedOptionId && !opt.is_correct ? '<i class="fas fa-times" style="color: var(--error-color)"></i>' : ''}
-        </div>
-        <div class="choice-text">${formatChemicalText(opt.text)}</div>
-    `;
-
-    if (opt.smiles) {
-      html += `
-        <div class="choice-structure">
-          <canvas id="review-opt-canvas-${opt.option_id}" width="160" height="85"></canvas>
-        </div>
-      `;
-    }
-
-    html += `</button>`;
-  });
+  // Draw options grid or matching matching-list/matching-grid
+  html += renderChoicesArea(q, selectedOptionId, true, 'review-');
 
   html += `
-      </div>
-
       <div class="feedback-panel" style="margin-top: 1.5rem; background: var(--bg-card);">
         <div class="feedback-tabs">
           <button class="feedback-tab active" id="review-tab-context" onclick="setReviewFeedbackTab('context', ${idx})">Context Understanding</button>
@@ -1659,6 +1582,8 @@ function reviewMockQuestion(idx) {
         drawSMILESCanvas(opt.smiles, canvasId, 'light');
       }
     });
+
+    initVisualEngines(q, 'review-');
 
     if (typeof renderMathInElement !== 'undefined') {
       renderMathInElement(detailContainer, {
@@ -1719,5 +1644,624 @@ function viewPastMockAttempt(historyIndex) {
   state.mockExam.activeReviewAttempt = attempt;
   
   renderMockExamResults();
+}
+
+// CUSTOM RENDER HELPERS AND DYNAMIC ENGINES FOR NEW QUESTION TYPES
+
+let matchingSelections = {};
+
+function selectMatchOption(index, val) {
+  matchingSelections[index] = val;
+}
+
+function selectMockMatchOption(itemIndex, val) {
+  const idx = state.mockExam.currentIndex;
+  if (!state.mockExam.matchingAnswers) state.mockExam.matchingAnswers = {};
+  if (!state.mockExam.matchingAnswers[idx]) state.mockExam.matchingAnswers[idx] = {};
+  state.mockExam.matchingAnswers[idx][itemIndex] = val;
+  
+  // Update answered status
+  const q = state.mockExam.questions[idx];
+  const allSelected = q.match_items.every((item, i) => {
+    const ans = state.mockExam.matchingAnswers[idx];
+    return ans && ans[i];
+  });
+  
+  if (allSelected) {
+    const isCorrect = q.match_items.every((item, i) => {
+      const chosen = state.mockExam.matchingAnswers[idx][i];
+      return chosen === (item.correctAnswer || item.correct_answer);
+    });
+    state.mockExam.answers[idx] = isCorrect ? 'A' : 'B';
+  } else {
+    delete state.mockExam.answers[idx];
+  }
+  
+  renderMockExamGrid();
+}
+
+function submitMatchingAnswer() {
+  const q = state.filteredQuestions[state.currentQuestionIndex];
+  const allSelected = q.match_items.every((item, i) => matchingSelections[i]);
+  if (!allSelected) {
+    showToast('Please select matches for all items', 'error');
+    return;
+  }
+  
+  const isCorrect = q.match_items.every((item, i) => {
+    const chosen = matchingSelections[i];
+    return chosen === (item.correctAnswer || item.correct_answer);
+  });
+  
+  handleOptionSelect(isCorrect ? 'A' : 'B');
+}
+
+function renderQuestionChemicals(q, prefix = '') {
+  if (q.reaction_scheme) {
+    let rHtml = '';
+    q.reaction_scheme.reactants.forEach((sm, index) => {
+      rHtml += `<div class="scheme-reactant-tile">
+        <canvas id="${prefix}scheme-reactant-${index}" width="160" height="110"></canvas>
+      </div>`;
+      if (index < q.reaction_scheme.reactants.length - 1) {
+        rHtml += `<div class="scheme-plus">+</div>`;
+      }
+    });
+
+    let pHtml = '';
+    const isMockActive = (prefix === 'mock-');
+    const isAnswered = state.answersSubmitted.hasOwnProperty(state.currentQuestionIndex);
+    const showProduct = (!isMockActive && (isAnswered || prefix === 'review-')) || (q.reaction_scheme.products && q.reaction_scheme.products[0] !== '?');
+
+    if (!showProduct) {
+      pHtml = `<div class="scheme-product-placeholder">?</div>`;
+    } else {
+      q.reaction_scheme.products.forEach((sm, index) => {
+        pHtml += `<div class="scheme-product-tile">
+          <canvas id="${prefix}scheme-product-${index}" width="160" height="110"></canvas>
+        </div>`;
+        if (index < q.reaction_scheme.products.length - 1) {
+          pHtml += `<div class="scheme-plus">+</div>`;
+        }
+      });
+    }
+
+    return `
+      <div class="reaction-scheme-container">
+        <div class="reactants-side">${rHtml}</div>
+        <div class="reaction-arrow-container">
+          <div class="reagents-text">${q.reaction_scheme.reagents ? formatChemicalText(q.reaction_scheme.reagents) : ''}</div>
+          <div class="arrow-line">➔</div>
+          <div class="conditions-text">${q.reaction_scheme.conditions ? formatChemicalText(q.reaction_scheme.conditions) : ''}</div>
+        </div>
+        <div class="products-side">${pHtml}</div>
+      </div>
+    `;
+  } else if (q.question_smiles) {
+    return `
+      <div class="chemical-container">
+        <canvas id="${prefix}q-smiles-canvas" width="360" height="150"></canvas>
+        <div class="smiles-string-display" title="SMILES Notation">${q.question_smiles}</div>
+      </div>
+    `;
+  }
+  return '';
+}
+
+function renderVisualEngines(q, prefix = '') {
+  let html = '';
+  if (q.dynamic_spectroscopy) {
+    html += `
+      <div class="spectroscopy-container">
+        <canvas id="${prefix}spec-chart" style="width: 100%; height: 260px; max-height: 260px;"></canvas>
+      </div>
+    `;
+  }
+  if (q.energy_diagram) {
+    html += `
+      <div class="energy-diagram-container">
+        <canvas id="${prefix}energy-chart" style="width: 100%; height: 240px; max-height: 240px;"></canvas>
+      </div>
+    `;
+  }
+  if (q.synthetic_roadmap) {
+    html += `
+      <div class="roadmap-container">
+        <div class="roadmap-grid" id="${prefix}roadmap-grid"></div>
+      </div>
+    `;
+  }
+  return html;
+}
+
+function initVisualEngines(q, prefix = '') {
+  // 1. Draw scheme reactants and products
+  if (q.reaction_scheme) {
+    q.reaction_scheme.reactants.forEach((sm, index) => {
+      drawSMILESCanvas(sm, `${prefix}scheme-reactant-${index}`, 'light');
+    });
+    
+    const isMockActive = (prefix === 'mock-');
+    const isAnswered = state.answersSubmitted.hasOwnProperty(state.currentQuestionIndex);
+    const showProduct = (!isMockActive && (isAnswered || prefix === 'review-')) || (q.reaction_scheme.products && q.reaction_scheme.products[0] !== '?');
+    
+    if (showProduct) {
+      q.reaction_scheme.products.forEach((sm, index) => {
+        drawSMILESCanvas(sm, `${prefix}scheme-product-${index}`, 'light');
+      });
+    }
+  }
+
+  // 2. Draw match item structures
+  if (q.interaction_type === 'matching-list' || q.interaction_type === 'matching-grid') {
+    q.match_items.forEach((item, index) => {
+      drawSMILESCanvas(item.smiles, `${prefix}match-canvas-${index}`, 'light');
+    });
+  }
+
+  // 3. Draw dynamic charts using Chart.js
+  if (q.dynamic_spectroscopy) {
+    const canvas = document.getElementById(`${prefix}spec-chart`);
+    if (canvas) {
+      drawSpectroscopyChart(canvas.getContext('2d'), q.dynamic_spectroscopy);
+    }
+  }
+  
+  if (q.energy_diagram) {
+    const canvas = document.getElementById(`${prefix}energy-chart`);
+    if (canvas) {
+      drawEnergyChart(canvas.getContext('2d'), q.energy_diagram);
+    }
+  }
+  
+  if (q.synthetic_roadmap) {
+    drawSyntheticRoadmap(`${prefix}roadmap-grid`, q.synthetic_roadmap);
+  }
+}
+
+function drawSpectroscopyChart(ctx, spec) {
+  const specType = spec.spec_type;
+  const dataPoints = spec.data_points;
+  
+  if (specType === 'ms') {
+    const maxMass = Math.max(...dataPoints.map(p => p.x)) + 10;
+    const allLabels = [];
+    for (let i = 0; i <= maxMass; i++) allLabels.push(i);
+
+    const dataMap = {};
+    dataPoints.forEach(p => { dataMap[p.x] = p.y; });
+    const fullData = allLabels.map(x => dataMap[x] || 0);
+
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: allLabels,
+        datasets: [{
+          data: fullData,
+          backgroundColor: '#38bdf8',
+          borderColor: '#0284c7',
+          borderWidth: 1,
+          barThickness: 2,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            title: { display: true, text: 'm/z (Mass-to-Charge Ratio)', color: '#94a3b8' },
+            ticks: { color: '#64748b', callback: function(v, i) { return i % 10 === 0 ? i : ''; } },
+            grid: { color: 'rgba(255,255,255,0.03)' }
+          },
+          y: {
+            beginAtZero: true,
+            max: 100,
+            title: { display: true, text: 'Relative Abundance (%)', color: '#94a3b8' },
+            ticks: { color: '#64748b' },
+            grid: { color: 'rgba(255,255,255,0.03)' }
+          }
+        }
+      }
+    });
+  } else if (specType === 'nmr') {
+    const xValues = [];
+    for (let x = 12.0; x >= 0.0; x -= 0.01) {
+      xValues.push(parseFloat(x.toFixed(2)));
+    }
+
+    const yValues = xValues.map(x => {
+      let sum = 0;
+      dataPoints.forEach(sig => {
+        const xc = sig.x;
+        const area = sig.y;
+        const label = sig.label || 'singlet';
+        let peaks = [];
+        const J = 0.05;
+
+        if (label === 'singlet') {
+          peaks.push({ x: xc, h: area });
+        } else if (label === 'doublet') {
+          peaks.push({ x: xc - J/2, h: area/2 });
+          peaks.push({ x: xc + J/2, h: area/2 });
+        } else if (label === 'triplet') {
+          peaks.push({ x: xc - J, h: area*0.25 });
+          peaks.push({ x: xc, h: area*0.5 });
+          peaks.push({ x: xc + J, h: area*0.25 });
+        } else if (label === 'quartet') {
+          peaks.push({ x: xc - 1.5*J, h: area*0.125 });
+          peaks.push({ x: xc - 0.5*J, h: area*0.375 });
+          peaks.push({ x: xc + 0.5*J, h: area*0.375 });
+          peaks.push({ x: xc + 1.5*J, h: area*0.125 });
+        } else {
+          peaks.push({ x: xc, h: area });
+        }
+
+        peaks.forEach(p => {
+          sum += p.h * Math.exp(-0.5 * Math.pow((x - p.x)/0.015, 2));
+        });
+      });
+      return sum;
+    });
+
+    const scatterPoints = dataPoints.map(sig => ({ x: sig.x, y: sig.y + 0.5 }));
+
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        datasets: [
+          {
+            label: 'Spectrum',
+            data: xValues.map((x, i) => ({ x: x, y: yValues[i] })),
+            borderColor: '#6366f1',
+            borderWidth: 2,
+            pointRadius: 0,
+            fill: false
+          },
+          {
+            label: 'Signals',
+            data: scatterPoints,
+            backgroundColor: '#ef4444',
+            borderColor: '#ef4444',
+            pointRadius: 5,
+            showLine: false
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: function(ctx) {
+                if (ctx.datasetIndex === 1) {
+                  const sig = dataPoints[ctx.dataIndex];
+                  return `${sig.label} (${sig.y}H) at ${sig.x} ppm`;
+                }
+                return `Intensity: ${ctx.parsed.y.toFixed(1)}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            type: 'linear',
+            min: 0,
+            max: 12,
+            reverse: true,
+            title: { display: true, text: 'Chemical Shift (ppm)', color: '#94a3b8' },
+            ticks: { color: '#64748b' },
+            grid: { color: 'rgba(255,255,255,0.03)' }
+          },
+          y: {
+            beginAtZero: true,
+            title: { display: true, text: 'Intensity', color: '#94a3b8' },
+            ticks: { color: '#64748b' },
+            grid: { color: 'rgba(255,255,255,0.03)' }
+          }
+        }
+      }
+    });
+  } else if (specType === 'ir') {
+    const xValues = [];
+    for (let x = 4000; x >= 400; x -= 10) {
+      xValues.push(x);
+    }
+
+    const dips = spec.dips || spec.data_points || [
+      { xc: 3300, w: 180, d: 40 },
+      { xc: 2950, w: 40, d: 50 },
+      { xc: 1715, w: 20, d: 80 },
+      { xc: 1600, w: 30, d: 20 }
+    ];
+
+    const yValues = xValues.map(x => {
+      let val = 98;
+      dips.forEach(d => {
+        val -= d.d * Math.exp(-0.5 * Math.pow((x - d.xc) / d.w, 2));
+      });
+      return Math.max(val, 2);
+    });
+
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: xValues,
+        datasets: [{
+          data: xValues.map((x, i) => ({ x: x, y: yValues[i] })),
+          borderColor: '#10b981',
+          borderWidth: 2,
+          pointRadius: 0,
+          fill: false,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            type: 'linear',
+            min: 400,
+            max: 4000,
+            reverse: true,
+            title: { display: true, text: 'Wavenumber (cm-1)', color: '#94a3b8' },
+            ticks: { color: '#64748b' },
+            grid: { color: 'rgba(255,255,255,0.03)' }
+          },
+          y: {
+            min: 0,
+            max: 100,
+            title: { display: true, text: 'Transmittance (%)', color: '#94a3b8' },
+            ticks: { color: '#64748b' },
+            grid: { color: 'rgba(255,255,255,0.03)' }
+          }
+        }
+      }
+    });
+  }
+}
+
+function drawEnergyChart(ctx, diag) {
+  const points = diag.points;
+  const data = points.map((p, i) => ({ x: i, y: p.energy }));
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      datasets: [
+        {
+          data: data,
+          borderColor: '#10b981',
+          backgroundColor: 'rgba(16, 185, 129, 0.05)',
+          fill: true,
+          tension: 0.4,
+          borderWidth: 3,
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            title: function(ctx) { return points[ctx[0].parsed.x].state; },
+            label: function(ctx) { return `Energy: ${ctx.parsed.y} kJ/mol`; }
+          }
+        }
+      },
+      scales: {
+        x: {
+          type: 'linear',
+          min: 0,
+          max: points.length - 1,
+          title: { display: true, text: 'Reaction Progress', color: '#94a3b8' },
+          ticks: {
+            color: '#64748b',
+            callback: function(v) {
+              const val = Math.round(v);
+              if (val === v && points[val]) return points[val].state;
+              return '';
+            }
+          },
+          grid: { color: 'rgba(255,255,255,0.03)' }
+        },
+        y: {
+          title: { display: true, text: 'Potential Energy (kJ/mol)', color: '#94a3b8' },
+          ticks: { color: '#64748b' },
+          grid: { color: 'rgba(255,255,255,0.03)' }
+        }
+      }
+    }
+  });
+}
+
+function drawSyntheticRoadmap(containerId, roadmap) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  container.innerHTML = '';
+
+  const grid = document.createElement('div');
+  grid.className = 'roadmap-grid';
+  
+  const xs = roadmap.nodes.map(n => n.x);
+  const ys = roadmap.nodes.map(n => n.y);
+  const maxX = Math.max(...xs, 1);
+  const maxY = Math.max(...ys, 1);
+  
+  grid.style.gridTemplateColumns = `repeat(${maxX}, 160px)`;
+  grid.style.gridTemplateRows = `repeat(${maxY}, 130px)`;
+  
+  roadmap.nodes.forEach(node => {
+    const nodeEl = document.createElement('div');
+    nodeEl.className = 'roadmap-node';
+    nodeEl.style.gridColumn = node.x;
+    nodeEl.style.gridRow = node.y;
+    
+    let structureHtml = '';
+    if (node.smiles) {
+      structureHtml = `<div class="roadmap-structure"><canvas id="${containerId}-node-${node.id}" width="140" height="80"></canvas></div>`;
+    }
+    
+    nodeEl.innerHTML = `
+      <div class="roadmap-node-label">${node.label}</div>
+      ${structureHtml}
+    `;
+    grid.appendChild(nodeEl);
+  });
+  
+  container.appendChild(grid);
+  
+  setTimeout(() => {
+    roadmap.nodes.forEach(node => {
+      if (node.smiles) {
+        drawSMILESCanvas(node.smiles, `${containerId}-node-${node.id}`, 'light');
+      }
+    });
+  }, 20);
+}
+
+function renderChoicesArea(q, selectedOptionId, isAnswered, prefix = '') {
+  let html = '';
+  
+  if (q.interaction_type === 'matching-list' || q.interaction_type === 'matching-grid') {
+    const isMockActive = (prefix === 'mock-');
+    let matchingAns = {};
+    if (isMockActive) {
+      const idx = state.mockExam.currentIndex;
+      matchingAns = (state.mockExam.matchingAnswers && state.mockExam.matchingAnswers[idx]) ? state.mockExam.matchingAnswers[idx] : {};
+    } else if (prefix === 'review-') {
+      const idx = state.currentQuestionIndex;
+      matchingAns = (state.mockExam.activeReviewAttempt && state.mockExam.activeReviewAttempt.matchingAnswers && state.mockExam.activeReviewAttempt.matchingAnswers[idx]) ? state.mockExam.activeReviewAttempt.matchingAnswers[idx] : {};
+    } else {
+      matchingAns = matchingSelections;
+    }
+    
+    const isGrid = q.interaction_type === 'matching-grid';
+    let itemsHtml = '';
+    
+    q.match_items.forEach((item, index) => {
+      const chosenVal = matchingAns[index] || '';
+      const isCorrectMatch = chosenVal === (item.correctAnswer || item.correct_answer);
+      
+      let itemStyle = '';
+      if (isAnswered) {
+        itemStyle = isCorrectMatch ? 'border-color: var(--success-color); background: rgba(16, 185, 129, 0.05);' : 'border-color: var(--error-color); background: rgba(244, 63, 94, 0.05);';
+      }
+      
+      const selectHtml = `
+        <select class="matching-drop" 
+                data-index="${index}" 
+                onchange="${isMockActive ? `selectMockMatchOption(${index}, this.value)` : `selectMatchOption(${index}, this.value)`}" 
+                ${isAnswered ? 'disabled' : ''}
+                style="${isAnswered ? (isCorrectMatch ? 'border-color: var(--success-color); color: var(--success-color);' : 'border-color: var(--error-color); color: var(--error-color);') : ''}">
+          <option value="">-- Choose Name --</option>
+          ${q.match_options.map(opt => {
+            const isSel = (isAnswered && opt === (item.correctAnswer || item.correct_answer)) || (!isAnswered && chosenVal === opt);
+            return `<option value="${opt}" ${isSel ? 'selected' : ''}>${opt}</option>`;
+          }).join('')}
+        </select>
+      `;
+      
+      if (isGrid) {
+        itemsHtml += `
+          <div class="matching-grid-card" style="${itemStyle}">
+            <div class="matching-structure">
+              <canvas id="${prefix}match-canvas-${index}" width="150" height="90"></canvas>
+            </div>
+            ${selectHtml}
+            ${isAnswered ? `<div style="font-size: 0.8rem; font-weight: 600; color: ${isCorrectMatch ? 'var(--success-color)' : 'var(--error-color)'};">
+              ${isCorrectMatch ? 'Correct' : `Correct: ${item.correctAnswer || item.correct_answer}`}
+            </div>` : ''}
+          </div>
+        `;
+      } else {
+        itemsHtml += `
+          <div class="matching-item" style="${itemStyle}">
+            <div class="matching-structure">
+              <canvas id="${prefix}match-canvas-${index}" width="150" height="90"></canvas>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.25rem; align-items: flex-end;">
+              ${selectHtml}
+              ${isAnswered ? `<div style="font-size: 0.8rem; font-weight: 600; color: ${isCorrectMatch ? 'var(--success-color)' : 'var(--error-color)'};">
+                ${isCorrectMatch ? 'Correct' : `Correct: ${item.correctAnswer || item.correct_answer}`}
+              </div>` : ''}
+            </div>
+          </div>
+        `;
+      }
+    });
+    
+    if (isGrid) {
+      html += `<div class="matching-grid-container" style="grid-template-columns: repeat(${q.grid_columns || 2}, 1fr);">${itemsHtml}</div>`;
+    } else {
+      html += `<div class="matching-container">${itemsHtml}</div>`;
+    }
+    
+    if (!isAnswered && !isMockActive) {
+      html += `
+        <div class="text-center" style="margin-top: 1.5rem;">
+          <button class="btn btn-primary" onclick="submitMatchingAnswer()" style="padding: 0.6rem 2rem; font-weight: 600; border-radius: 8px;">
+            <i class="fas fa-check-double"></i> Submit Matches
+          </button>
+        </div>
+      `;
+    }
+  } else {
+    html += `<div class="choices-grid">`;
+    q.options.forEach(opt => {
+      let optClass = '';
+      let isDisabled = isAnswered ? 'disabled' : '';
+      const isSelected = opt.option_id === selectedOptionId;
+      
+      if (isAnswered) {
+        if (opt.is_correct) {
+          optClass = 'correct';
+        } else if (isSelected) {
+          optClass = 'incorrect';
+        } else {
+          optClass = 'disabled';
+        }
+      } else if (prefix === 'mock-') {
+        optClass = isSelected ? 'correct' : '';
+      }
+      
+      const clickHandler = isAnswered ? '' : (prefix === 'mock-' ? `selectMockOption('${opt.option_id}')` : `handleOptionSelect('${opt.option_id}')`);
+      const btnStyle = (prefix === 'mock-' && isSelected) ? 'border-color: var(--border-active); background: rgba(99, 102, 241, 0.05);' : '';
+      const letterStyle = (prefix === 'mock-' && isSelected) ? 'background: var(--accent-color); color: #fff;' : '';
+      
+      html += `
+        <button class="choice-button ${optClass} ${isDisabled}" 
+                onclick="${clickHandler}" 
+                ${isAnswered ? 'disabled' : ''}
+                style="${btnStyle}">
+          <div class="choice-header">
+            <span class="choice-letter" style="${letterStyle}">${opt.option_id}</span>
+            ${isAnswered && opt.is_correct ? '<i class="fas fa-check" style="color: var(--success-color)"></i>' : ''}
+            ${isAnswered && isSelected && !opt.is_correct ? '<i class="fas fa-times" style="color: var(--error-color)"></i>' : ''}
+          </div>
+          <div class="choice-text">${formatChemicalText(opt.text)}</div>
+      `;
+      
+      if (opt.smiles) {
+        html += `
+          <div class="choice-structure">
+            <canvas id="${prefix}opt-canvas-${opt.option_id}" width="160" height="85"></canvas>
+          </div>
+        `;
+      }
+      
+      html += `</button>`;
+    });
+    html += `</div>`;
+  }
+  
+  return html;
 }
 
