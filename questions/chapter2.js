@@ -1,4 +1,4 @@
-// McMurry Chapter 2: Polar Covalent Bonds; Acids and Bases
+// McMurry Chapter 2 questions
 const CHAPTER_2_QUESTIONS = [
   {
     "question_id": "ch2_q1_electronegativity_trend",
@@ -192,9 +192,9 @@ const CHAPTER_2_QUESTIONS = [
   },
   {
     "question_id": "ch2_q6_bronsted_acid_def",
-    "topic": "Acids and Bases: Brønsted-Lowry Definition",
+    "topic": "Acids and Bases: Br\u00f8nsted-Lowry Definition",
     "difficulty_level": "Easy",
-    "question_text": "According to the Brønsted-Lowry definition, what is an acid?",
+    "question_text": "According to the Br\u00f8nsted-Lowry definition, what is an acid?",
     "question_smiles": "",
     "options": [
       {
@@ -223,9 +223,9 @@ const CHAPTER_2_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Review the definition of Brønsted-Lowry acids.",
-      "process": "Step 1: Brønsted-Lowry theory is based on proton ($H^+$) transfer.\nStep 2: An acid is a substance that donates a proton to another species.\nStep 3: A base is a substance that accepts a proton.",
-      "result": "A Brønsted-Lowry acid is a proton donor."
+      "context": "Review the definition of Br\u00f8nsted-Lowry acids.",
+      "process": "Step 1: Br\u00f8nsted-Lowry theory is based on proton ($H^+$) transfer.\nStep 2: An acid is a substance that donates a proton to another species.\nStep 3: A base is a substance that accepts a proton.",
+      "result": "A Br\u00f8nsted-Lowry acid is a proton donor."
     }
   },
   {
@@ -375,7 +375,7 @@ const CHAPTER_2_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Distinguish between Brønsted-Lowry and Lewis definitions of acids and bases.",
+      "context": "Distinguish between Br\u00f8nsted-Lowry and Lewis definitions of acids and bases.",
       "process": "Step 1: The Lewis definition focuses on electron pairs rather than proton transfer.\nStep 2: A Lewis acid is an electron pair acceptor.\nStep 3: A Lewis base is an electron pair donor.",
       "result": "A Lewis base is an electron pair donor."
     }
@@ -384,7 +384,7 @@ const CHAPTER_2_QUESTIONS = [
     "question_id": "ch2_q11_lewis_acid_identify",
     "topic": "Acids and Bases: Lewis Definition",
     "difficulty_level": "Medium",
-    "question_text": "Which of the following species behaves as a Lewis acid in organic reactions but is not a Brønsted-Lowry acid?",
+    "question_text": "Which of the following species behaves as a Lewis acid in organic reactions but is not a Br\u00f8nsted-Lowry acid?",
     "question_smiles": "",
     "options": [
       {
@@ -414,8 +414,8 @@ const CHAPTER_2_QUESTIONS = [
     ],
     "feedback": {
       "context": "Identify non-protonic Lewis acids.",
-      "process": "Step 1: A Brønsted-Lowry acid must donate a proton ($H^+$).\nStep 2: A Lewis acid accepts an electron pair. Species with vacant orbitals and incomplete valence octets are excellent Lewis acids.\nStep 3: Boron trifluoride ($BF_3$) has a boron atom surrounded by only 6 valence electrons, leaving a vacant $2p$ orbital. It can accept a lone pair but lacks protons to donate.",
-      "result": "Boron trifluoride is a Lewis acid but not a Brønsted acid."
+      "process": "Step 1: A Br\u00f8nsted-Lowry acid must donate a proton ($H^+$).\nStep 2: A Lewis acid accepts an electron pair. Species with vacant orbitals and incomplete valence octets are excellent Lewis acids.\nStep 3: Boron trifluoride ($BF_3$) has a boron atom surrounded by only 6 valence electrons, leaving a vacant $2p$ orbital. It can accept a lone pair but lacks protons to donate.",
+      "result": "Boron trifluoride is a Lewis acid but not a Br\u00f8nsted acid."
     }
   },
   {
@@ -1098,7 +1098,7 @@ const CHAPTER_2_QUESTIONS = [
     ],
     "feedback": {
       "context": "Identify the base in ether protonation.",
-      "process": "Step 1: Diethyl ether ($CH_3CH_2OCH_2CH_3$) has oxygen with 2 lone pairs.\nStep 2: The lone pair acts as a nucleophile (electron pair donor) to attack the proton of $HBr$.\nStep 3: Donating an electron pair makes it a Lewis base (and a Brønsted base).",
+      "process": "Step 1: Diethyl ether ($CH_3CH_2OCH_2CH_3$) has oxygen with 2 lone pairs.\nStep 2: The lone pair acts as a nucleophile (electron pair donor) to attack the proton of $HBr$.\nStep 3: Donating an electron pair makes it a Lewis base (and a Br\u00f8nsted base).",
       "result": "Diethyl ether acts as a Lewis base."
     }
   },
@@ -1440,7 +1440,7 @@ const CHAPTER_2_QUESTIONS = [
     ],
     "feedback": {
       "context": "Understand the physical reality represented by a resonance hybrid.",
-      "process": "Step 1: Formate has two identical resonance contributors where the double bond shifts between the two oxygens.\nStep 2: The actual molecule does not switch between these structures; it exists as a single hybrid layout.\nStep 3: Consequently, both C-O bonds are identical in length (1.27 Å), reflecting a bond order of 1.5.",
+      "process": "Step 1: Formate has two identical resonance contributors where the double bond shifts between the two oxygens.\nStep 2: The actual molecule does not switch between these structures; it exists as a single hybrid layout.\nStep 3: Consequently, both C-O bonds are identical in length (1.27 \u00c5), reflecting a bond order of 1.5.",
       "result": "The two bonds are of equal length."
     }
   },
@@ -1471,7 +1471,7 @@ const CHAPTER_2_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "It is a standard Brønsted-Lowry neutralisation",
+        "text": "It is a standard Br\u00f8nsted-Lowry neutralisation",
         "smiles": "",
         "is_correct": false
       }
@@ -1898,6 +1898,148 @@ const CHAPTER_2_QUESTIONS = [
       "context": "Understand the reaction products of Lewis acids and bases.",
       "process": "Step 1: $BF_3$ is a strong Lewis acid with a vacant orbital. Dimethyl ether is a Lewis base with lone pairs on oxygen.\nStep 2: The oxygen lone pair attacks the vacant orbital on boron.\nStep 3: This forms a stable Lewis acid-base adduct, $(CH_3)_2O^+-B^-F_3$, containing a coordinate bond.",
       "result": "A Lewis acid-base adduct is formed."
+    }
+  },
+  {
+    "question_id": "ch2_q_dynamic_pka_acids",
+    "topic": "Br\u00f8nsted-Lowry Acids & Bases",
+    "difficulty_level": "Hard",
+    "question_text": "Match each acid below to its correct approximate pKa value.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "CC(=O)O",
+        "correctAnswer": "4.76"
+      },
+      {
+        "smiles": "Oc1ccccc1",
+        "correctAnswer": "10"
+      },
+      {
+        "smiles": "CCO",
+        "correctAnswer": "16"
+      },
+      {
+        "smiles": "CC(C)=O",
+        "correctAnswer": "20"
+      }
+    ],
+    "match_options": [
+      "4.76",
+      "10",
+      "16",
+      "20",
+      "25",
+      "-7"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect pKa values",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Evaluating acidities: lower pKa indicates a stronger acid.",
+      "process": "Acetic acid is carboxylic, pKa = 4.76. Phenol is resonance stabilized, pKa = 10. Ethanol is a regular alcohol, pKa = 16. Acetone is a weak carbon acid, pKa = 20.",
+      "result": "Acidity trends depend on conjugate base resonance and electronegativity."
+    }
+  },
+  {
+    "question_id": "ch2_q_dynamic_dipole_moments",
+    "topic": "Polar Covalent Bonds & Electronegativity",
+    "difficulty_level": "Medium",
+    "question_text": "Match each compound to its relative dipole moment status.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "ClCCl",
+        "correctAnswer": "Polar (dipole > 0)"
+      },
+      {
+        "smiles": "ClC(Cl)(Cl)Cl",
+        "correctAnswer": "Nonpolar (dipole = 0)"
+      },
+      {
+        "smiles": "C",
+        "correctAnswer": "Nonpolar (dipole = 0)"
+      },
+      {
+        "smiles": "ClC(Cl)Cl",
+        "correctAnswer": "Polar (dipole > 0)"
+      }
+    ],
+    "match_options": [
+      "Polar (dipole > 0)",
+      "Nonpolar (dipole = 0)"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect dipoles",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Understanding molecular geometry and vector addition of dipole moments.",
+      "process": "Dichloromethane (ClCCl) and Chloroform (ClC(Cl)Cl) are asymmetric and polar. Carbon tetrachloride (ClC(Cl)(Cl)Cl) and Methane (C) are highly symmetric, causing bond dipoles to cancel out completely.",
+      "result": "Molecular symmetry determines net dipole moment."
+    }
+  },
+  {
+    "question_id": "ch2_q_dynamic_acid_base_reaction",
+    "topic": "Br\u00f8nsted-Lowry Acids & Bases",
+    "difficulty_level": "Medium",
+    "question_text": "Consider the following proton-transfer reaction. Identify the role of reactants A and B.",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(=O)O",
+        "CCN"
+      ],
+      "reagents": "proton transfer",
+      "conditions": "equilibrium",
+      "products": [
+        "CC(=O)[O-]",
+        "CC[NH3+]"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Acetic acid is the acid (proton donor), ethylamine is the base (proton acceptor).",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Acetic acid is the base, ethylamine is the acid.",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Both act as acids.",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Both act as bases.",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying Br\u00f8nsted-Lowry acid/base roles in a reaction scheme.",
+      "process": "Acetic acid (CC(=O)O) donates a proton to form acetate (CC(=O)[O-]). Ethylamine (CCN) accepts a proton to form ethylammonium (CC[NH3+]).",
+      "result": "The acid donates a proton, and the base accepts it."
     }
   }
 ];

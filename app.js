@@ -1216,9 +1216,13 @@ function startMockExam() {
     history: state.mockExam.history || []
   };
 
-  // 2. Select 70 Balanced Questions across all chapters
+  // 2. Select 70 Balanced Questions across all chapters (excluding matching lists/grids for Mock Exam)
   const questionsByChapter = {};
   state.questions.forEach(q => {
+    // Exclude matching-list and matching-grid from Mock Exam
+    if (q.interaction_type === 'matching-list' || q.interaction_type === 'matching-grid') {
+      return;
+    }
     const ch = q.chapterNum || 1;
     if (!questionsByChapter[ch]) {
       questionsByChapter[ch] = [];
@@ -1264,7 +1268,11 @@ function startMockExam() {
   // Fallback to top off to exactly 70 questions if needed
   if (selectedQuestions.length < 70) {
     const allUniqueIds = new Set(selectedQuestions.map(q => q.question_id));
-    const generalPool = state.questions.filter(q => !allUniqueIds.has(q.question_id));
+    const generalPool = state.questions.filter(q => {
+      return !allUniqueIds.has(q.question_id) &&
+             q.interaction_type !== 'matching-list' &&
+             q.interaction_type !== 'matching-grid';
+    });
     shuffle(generalPool);
     while (selectedQuestions.length < 70 && generalPool.length > 0) {
       selectedQuestions.push(generalPool.pop());

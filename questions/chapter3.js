@@ -1,4 +1,4 @@
-// McMurry Chapter 3: Organic Compounds: Alkanes and Their Stereochemistry
+// McMurry Chapter 3 questions
 const CHAPTER_3_QUESTIONS = [
   {
     "question_id": "ch3_q1_functional_group_identification",
@@ -1898,6 +1898,158 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Examine point-group symmetry in conformations of butane.",
       "process": "Step 1: A center of inversion ($i$) exists if drawing a line from any atom through the center of the molecule to an equal distance on the other side finds an identical atom.\nStep 2: Look at the anti conformation. The two methyls are $180^circ$ apart, C1 balances C4, and all hydrogens on the front carbon are exactly opposite hydrogens on the back carbon.\nStep 3: Gauche, fully eclipsed, and partially eclipsed conformations lack this center of inversion.",
       "result": "The anti conformation has a center of inversion."
+    }
+  },
+  {
+    "question_id": "ch3_q_dynamic_conformational_energy",
+    "topic": "Alkanes Conformational Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the potential energy curve for rotations around the C2-C3 bond of butane. Identify the correct conformational states for the energy levels.",
+    "energy_diagram": {
+      "points": [
+        {
+          "state": "Anti (180\u00b0)",
+          "energy": 0
+        },
+        {
+          "state": "Eclipsed (120\u00b0)",
+          "energy": 14
+        },
+        {
+          "state": "Gauche (60\u00b0)",
+          "energy": 38
+        },
+        {
+          "state": "Fully Eclipsed (0\u00b0)",
+          "energy": 190
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Anti conformation has the lowest potential energy (0 kJ/mol), while Fully Eclipsed has the highest energy (19 kJ/mol relative to anti).",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Gauche conformation has the highest potential energy.",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Anti and Fully Eclipsed conformations have equal energy.",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Eclipsed conformations are more stable than Gauche.",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Analyzing butane conformational energy profiles.",
+      "process": "Anti conformation has methyl groups furthest apart (180\u00b0), minimizing steric strain (0 kJ/mol). Gauche has methyls at 60\u00b0 (3.8 kJ/mol). Fully eclipsed has methyls eclipsing each other (19 kJ/mol), maximizing steric and torsional strain.",
+      "result": "The order of stability is: Anti > Gauche > Eclipsed > Fully Eclipsed."
+    }
+  },
+  {
+    "question_id": "ch3_q_dynamic_alkane_iupac",
+    "topic": "Alkane Nomenclature & Structure",
+    "difficulty_level": "Medium",
+    "question_text": "Match each branched alkane structure to its correct IUPAC name.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "CC(C)C",
+        "correctAnswer": "2-Methylpropane"
+      },
+      {
+        "smiles": "CC(C)(C)C",
+        "correctAnswer": "2,2-Dimethylpropane"
+      },
+      {
+        "smiles": "CCC(C)CC",
+        "correctAnswer": "3-Methylpentane"
+      },
+      {
+        "smiles": "CC(C)CC(C)C",
+        "correctAnswer": "2,4-Dimethylpentane"
+      }
+    ],
+    "match_options": [
+      "2-Methylpropane",
+      "2,2-Dimethylpropane",
+      "3-Methylpentane",
+      "2,4-Dimethylpentane",
+      "2-Methylbutane",
+      "Neopentane"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect IUPAC names",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Applying IUPAC rules to name branched alkanes.",
+      "process": "Item 1: Isopropane or 2-methylpropane. Item 2: Neopentane or 2,2-dimethylpropane. Item 3: 5-carbon chain with methyl at C3 is 3-methylpentane. Item 4: 5-carbon chain with methyls at C2 and C4 is 2,4-dimethylpentane.",
+      "result": "IUPAC rules ensure unique, unambiguous names for chemical structures."
+    }
+  },
+  {
+    "question_id": "ch3_q_dynamic_ring_strain",
+    "topic": "Cycloalkanes Conformational Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Match each cycloalkane to its relative ring strain level (total ring strain in kJ/mol).",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "C1CC1",
+        "correctAnswer": "High strain (115 kJ/mol)"
+      },
+      {
+        "smiles": "C1CCC1",
+        "correctAnswer": "Medium-High strain (110 kJ/mol)"
+      },
+      {
+        "smiles": "C1CCCC1",
+        "correctAnswer": "Low-Medium strain (26 kJ/mol)"
+      },
+      {
+        "smiles": "C1CCCCC1",
+        "correctAnswer": "Zero strain (0 kJ/mol)"
+      }
+    ],
+    "match_options": [
+      "High strain (115 kJ/mol)",
+      "Medium-High strain (110 kJ/mol)",
+      "Low-Medium strain (26 kJ/mol)",
+      "Zero strain (0 kJ/mol)"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect strain levels",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Assessing ring strain in cycloalkanes based on angle strain and torsional strain.",
+      "process": "Cyclopropanes have severe angle strain (60\u00b0 vs 109.5\u00b0). Cyclobutane is slightly less strained (88\u00b0). Cyclopentane adopts a puckered envelope shape to relieve strain (26 kJ/mol). Cyclohexane adopts the chair conformation, which has zero angle and torsional strain.",
+      "result": "Chair cyclohexane is completely strain-free."
     }
   }
 ];

@@ -1,4 +1,4 @@
-// McMurry Chapter 1: Structure and Bonding
+// McMurry Chapter 1 questions
 const CHAPTER_1_QUESTIONS = [
   {
     "question_id": "ch1_q1_electron_config",
@@ -1898,6 +1898,216 @@ const CHAPTER_1_QUESTIONS = [
       "context": "Introduce the orbital criteria for aromaticity.",
       "process": "Step 1: Check the electronic rules for aromaticity. The system must be cyclic, planar, and fully conjugated (continuous ring of $p$ orbitals).\nStep 2: The number of $\\pi$ electrons in the closed loop of overlapping $p$ orbitals must satisfy Huckel's formula: $4n+2$ where n is an integer (2, 6, 10, 14, etc.).\nStep 3: This allows for complete filling of all bonding molecular orbitals in the $\\pi$ system.",
       "result": "It must have a continuous ring of overlapping $p$ orbitals containing $4n+2$ $\\pi$ electrons."
+    }
+  },
+  {
+    "question_id": "ch1_q_dynamic_hybridization",
+    "topic": "Atomic Structure & Hybridization",
+    "difficulty_level": "Medium",
+    "question_text": "Match each carbon atom structure highlight to its correct orbital hybridization.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "CC#C",
+        "correctAnswer": "sp"
+      },
+      {
+        "smiles": "CC=C",
+        "correctAnswer": "sp2"
+      },
+      {
+        "smiles": "CCC",
+        "correctAnswer": "sp3"
+      },
+      {
+        "smiles": "C#CC#C",
+        "correctAnswer": "sp"
+      }
+    ],
+    "match_options": [
+      "sp",
+      "sp2",
+      "sp3",
+      "sp3d"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect hybridization assignments",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Assigning carbon atom hybridization based on bonds: single bonds are sp3, double bonds are sp2, triple bonds are sp.",
+      "process": "Item 1 (propyne triple-bonded carbon) is sp.\nItem 2 (propene double-bonded carbon) is sp2.\nItem 3 (propane single-bonded carbon) is sp3.\nItem 4 (butadiyne carbon) is sp.",
+      "result": "Hybridization is assigned based on the steric number of each carbon."
+    }
+  },
+  {
+    "question_id": "ch1_q_dynamic_formal_charge",
+    "topic": "Lewis Structures & Formal Charges",
+    "difficulty_level": "Medium",
+    "question_text": "Match each chemical species to its correct central atom formal charge.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "[NH4+]",
+        "correctAnswer": "+1"
+      },
+      {
+        "smiles": "[BH4-]",
+        "correctAnswer": "-1"
+      },
+      {
+        "smiles": "C[C+](C)C",
+        "correctAnswer": "+1"
+      },
+      {
+        "smiles": "[OH-]",
+        "correctAnswer": "-1"
+      }
+    ],
+    "match_options": [
+      "+2",
+      "+1",
+      "0",
+      "-1",
+      "-2"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect formal charges",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Calculating formal charges: FC = Valence electrons - Lone pair electrons - 0.5 * Bonding electrons.",
+      "process": "Ammonium nitrogen: 5 - 0 - 4 = +1.\nBorohydride boron: 3 - 0 - 4 = -1.\nt-Butyl carbocation: 4 - 0 - 3 = +1.\nHydroxide oxygen: 6 - 6 - 1 = -1.",
+      "result": "Formal charge tracking is crucial for mechanism study."
+    }
+  },
+  {
+    "question_id": "ch1_q_dynamic_functional_groups",
+    "topic": "Functional Groups Matching",
+    "difficulty_level": "Medium",
+    "question_text": "Match each structural SMILES configuration below to its correct functional group category.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "CC(=O)C",
+        "correctAnswer": "Ketone"
+      },
+      {
+        "smiles": "CCOC(C)=O",
+        "correctAnswer": "Ester"
+      },
+      {
+        "smiles": "CC(=O)O",
+        "correctAnswer": "Carboxylic Acid"
+      },
+      {
+        "smiles": "CCN",
+        "correctAnswer": "Amine"
+      }
+    ],
+    "match_options": [
+      "Ketone",
+      "Ester",
+      "Carboxylic Acid",
+      "Amine",
+      "Ether",
+      "Amide"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect functional groups",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying functional groups in organic molecules.",
+      "process": "propan-2-one is a Ketone. ethyl acetate is an Ester. acetic acid is a Carboxylic Acid. ethylamine is an Amine.",
+      "result": "Functional group recognition is key to predicting chemical reactivity."
+    }
+  },
+  {
+    "question_id": "ch1_q_dynamic_mo_energy",
+    "topic": "Molecular Orbitals & Bonding",
+    "difficulty_level": "Hard",
+    "question_text": "Consider the molecular orbital (MO) energy diagram for a homonuclear diatomic molecule. Identify the correct energy states for sigma and pi orbitals.",
+    "energy_diagram": {
+      "points": [
+        {
+          "state": "1s",
+          "energy": -200
+        },
+        {
+          "state": "sigma_1s",
+          "energy": -300
+        },
+        {
+          "state": "sigma_star_1s",
+          "energy": -100
+        },
+        {
+          "state": "2s",
+          "energy": -50
+        },
+        {
+          "state": "sigma_2s",
+          "energy": -80
+        },
+        {
+          "state": "sigma_star_2s",
+          "energy": -20
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Bonding orbitals (sigma) are lower in energy than atomic orbitals, while antibonding (sigma*) are higher.",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Bonding and antibonding orbitals have equal energy to atomic orbitals.",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Antibonding orbitals are lower in energy than bonding orbitals.",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Orbital mixing makes bonding orbitals higher in energy.",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Analyzing molecular orbital energy levels relative to the starting atomic orbitals.",
+      "process": "Bonding MOs result from constructive interference and are lower in energy (more stable). Antibonding MOs result from destructive interference and are higher in energy (less stable).",
+      "result": "The energy of sigma_1s is lower than 1s, and sigma_star_1s is higher than 1s."
     }
   }
 ];
