@@ -1378,3 +1378,19 @@ header {
   justify-content: center;
 }
 
+.btn-sort {
+  transition: var(--transition-smooth);
+}
+
+.btn-sort:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: var(--text-primary) !important;
+}
+
+.btn-sort.active {
+  background: var(--accent-color) !important;
+  color: #ffffff !important;
+  border-radius: 6px;
+  box-shadow: var(--shadow-sm);
+}
+

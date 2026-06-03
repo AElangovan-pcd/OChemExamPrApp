@@ -2,15 +2,15 @@
 const CHAPTER_44_QUESTIONS = [
   {
     "question_id": "ch44_q1",
-    "topic": "Electrophilic Aromatic Substitution",
+    "topic": "Aromatic Halogenation",
     "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "c1ccccc1"
       ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "reagents": "Br2, FeBr3",
+      "conditions": "dark",
       "products": [
         "?"
       ]
@@ -18,321 +18,39 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": true
       }
     ],
     "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Nitration of benzene yields nitrobenzene.",
-      "result": "The product is [N+](=O)([O-])c1ccccc1."
+      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
+      "process": "Electrophilic bromination of benzene yields bromobenzene.",
+      "result": "The product is Brc1ccccc1."
     }
   },
   {
     "question_id": "ch44_q2",
-    "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q3",
     "topic": "Electrophilic Aromatic Substitution",
     "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Nitration of benzene yields nitrobenzene.",
-      "result": "The product is [N+](=O)([O-])c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q4",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Nitration of benzene yields nitrobenzene.",
-      "result": "The product is [N+](=O)([O-])c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q5",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(=O)Cl, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q6",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Nitration of benzene yields nitrobenzene.",
-      "result": "The product is [N+](=O)([O-])c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q7",
-    "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q8",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -347,27 +65,27 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": true
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": true
       }
     ],
     "feedback": {
@@ -377,54 +95,7 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q9",
-    "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q10",
+    "question_id": "ch44_q3",
     "topic": "Electrophilic Aromatic Substitution",
     "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -447,8 +118,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
@@ -459,8 +130,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       }
     ],
@@ -471,7 +142,195 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q11",
+    "question_id": "ch44_q4",
+    "topic": "Aromatic Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "Br2, FeBr3",
+      "conditions": "dark",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
+      "process": "Electrophilic bromination of benzene yields bromobenzene.",
+      "result": "The product is Brc1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q5",
+    "topic": "Friedel-Crafts Acylation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(=O)Cl, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
+      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
+      "result": "The product is CC(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q6",
+    "topic": "Aromatic Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "Br2, FeBr3",
+      "conditions": "dark",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
+      "process": "Electrophilic bromination of benzene yields bromobenzene.",
+      "result": "The product is Brc1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q7",
+    "topic": "Aromatic Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "Br2, FeBr3",
+      "conditions": "dark",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
+      "process": "Electrophilic bromination of benzene yields bromobenzene.",
+      "result": "The product is Brc1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q8",
     "topic": "Friedel-Crafts Alkylation",
     "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -488,26 +347,26 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
         "text": "CC(C)c1ccccc1",
         "smiles": "CC(C)c1ccccc1",
         "is_correct": true
       },
       {
-        "option_id": "B",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
         "option_id": "D",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       }
     ],
@@ -518,9 +377,9 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q12",
+    "question_id": "ch44_q9",
     "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -541,20 +400,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       }
     ],
@@ -565,7 +424,7 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q13",
+    "question_id": "ch44_q10",
     "topic": "Electrophilic Aromatic Substitution",
     "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -573,8 +432,8 @@ const CHAPTER_44_QUESTIONS = [
       "reactants": [
         "c1ccccc1"
       ],
-      "reagents": "SO3, H2SO4",
-      "conditions": "heat",
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
       "products": [
         "?"
       ]
@@ -582,131 +441,37 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
-      "result": "The product is OS(=O)(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q14",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(=O)Cl, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q15",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(=O)Cl, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
         "text": "CCCO",
         "smiles": "CCCO",
         "is_correct": false
       },
       {
-        "option_id": "B",
+        "option_id": "D",
         "text": "CC(C)c1ccccc1",
         "smiles": "CC(C)c1ccccc1",
         "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
       }
     ],
     "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
     }
   },
   {
-    "question_id": "ch44_q16",
+    "question_id": "ch44_q11",
     "topic": "Electrophilic Aromatic Substitution",
     "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -714,8 +479,8 @@ const CHAPTER_44_QUESTIONS = [
       "reactants": [
         "c1ccccc1"
       ],
-      "reagents": "SO3, H2SO4",
-      "conditions": "heat",
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
       "products": [
         "?"
       ]
@@ -723,14 +488,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": true
       },
       {
@@ -741,19 +506,19 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
-      "result": "The product is OS(=O)(=O)c1ccccc1."
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
     }
   },
   {
-    "question_id": "ch44_q17",
+    "question_id": "ch44_q12",
     "topic": "Electrophilic Aromatic Substitution",
     "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -770,27 +535,27 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": true
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CCO",
+        "smiles": "CCO",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": true
       }
     ],
     "feedback": {
@@ -800,9 +565,9 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q18",
+    "question_id": "ch44_q13",
     "topic": "Aromatic Halogenation",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -817,20 +582,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       },
       {
@@ -844,6 +609,241 @@ const CHAPTER_44_QUESTIONS = [
       "context": "Studying reaction mechanisms: Aromatic Halogenation.",
       "process": "Electrophilic bromination of benzene yields bromobenzene.",
       "result": "The product is Brc1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q14",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "SO3, H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
+      "result": "The product is OS(=O)(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q15",
+    "topic": "Aromatic Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "Br2, FeBr3",
+      "conditions": "dark",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
+      "process": "Electrophilic bromination of benzene yields bromobenzene.",
+      "result": "The product is Brc1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q16",
+    "topic": "Friedel-Crafts Alkylation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(Cl)C, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
+      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
+      "result": "The product is CC(C)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q17",
+    "topic": "Friedel-Crafts Acylation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(=O)Cl, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
+      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
+      "result": "The product is CC(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q18",
+    "topic": "Friedel-Crafts Acylation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(=O)Cl, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
+      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
+      "result": "The product is CC(=O)c1ccccc1."
     }
   },
   {
@@ -864,8 +864,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
@@ -876,14 +876,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       }
     ],
@@ -895,100 +895,6 @@ const CHAPTER_44_QUESTIONS = [
   },
   {
     "question_id": "ch44_q20",
-    "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q21",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(=O)Cl, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q22",
     "topic": "Electrophilic Aromatic Substitution",
     "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -1005,26 +911,73 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q21",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
         "text": "[N+](=O)([O-])c1ccccc1",
         "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": true
       },
       {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
         "option_id": "C",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
         "is_correct": false
       }
     ],
@@ -1035,15 +988,15 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q23",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Hard",
+    "question_id": "ch44_q22",
+    "topic": "Friedel-Crafts Alkylation",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "c1ccccc1"
       ],
-      "reagents": "CC(=O)Cl, AlCl3",
+      "reagents": "CC(Cl)C, AlCl3",
       "conditions": "CH2Cl2",
       "products": [
         "?"
@@ -1052,33 +1005,80 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": true
       },
       {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
         "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
+      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
+      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
+      "result": "The product is CC(C)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q23",
+    "topic": "Aromatic Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "Br2, FeBr3",
+      "conditions": "dark",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
+      "process": "Electrophilic bromination of benzene yields bromobenzene.",
+      "result": "The product is Brc1ccccc1."
     }
   },
   {
@@ -1090,8 +1090,8 @@ const CHAPTER_44_QUESTIONS = [
       "reactants": [
         "c1ccccc1"
       ],
-      "reagents": "SO3, H2SO4",
-      "conditions": "heat",
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
       "products": [
         "?"
       ]
@@ -1099,9 +1099,9 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": true
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
       },
       {
         "option_id": "B",
@@ -1111,25 +1111,119 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
-      "result": "The product is OS(=O)(=O)c1ccccc1."
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
     }
   },
   {
     "question_id": "ch44_q25",
+    "topic": "Friedel-Crafts Acylation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(=O)Cl, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
+      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
+      "result": "The product is CC(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q26",
+    "topic": "Friedel-Crafts Acylation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(=O)Cl, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
+      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
+      "result": "The product is CC(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q27",
     "topic": "Electrophilic Aromatic Substitution",
     "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -1146,26 +1240,26 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
         "text": "[N+](=O)([O-])c1ccccc1",
         "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": true
       },
       {
+        "option_id": "B",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
         "option_id": "C",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -1176,16 +1270,16 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q26",
-    "topic": "Friedel-Crafts Alkylation",
+    "question_id": "ch44_q28",
+    "topic": "Aromatic Halogenation",
     "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "c1ccccc1"
       ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
+      "reagents": "Br2, FeBr3",
+      "conditions": "dark",
       "products": [
         "?"
       ]
@@ -1193,14 +1287,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       },
       {
@@ -1211,115 +1305,21 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q27",
-    "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q28",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(=O)Cl, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
+      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
+      "process": "Electrophilic bromination of benzene yields bromobenzene.",
+      "result": "The product is Brc1ccccc1."
     }
   },
   {
     "question_id": "ch44_q29",
     "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -1334,14 +1334,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       },
       {
@@ -1352,8 +1352,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -1381,27 +1381,27 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
       }
     ],
     "feedback": {
@@ -1413,7 +1413,7 @@ const CHAPTER_44_QUESTIONS = [
   {
     "question_id": "ch44_q31",
     "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -1428,26 +1428,26 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
         "text": "[N+](=O)([O-])c1ccccc1",
         "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": true
       },
       {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
         "option_id": "D",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       }
     ],
@@ -1459,53 +1459,6 @@ const CHAPTER_44_QUESTIONS = [
   },
   {
     "question_id": "ch44_q32",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "SO3, H2SO4",
-      "conditions": "heat",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
-      "result": "The product is OS(=O)(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q33",
     "topic": "Friedel-Crafts Acylation",
     "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -1522,26 +1475,26 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
         "text": "CC(=O)c1ccccc1",
         "smiles": "CC(=O)c1ccccc1",
         "is_correct": true
       },
       {
-        "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
         "option_id": "D",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       }
     ],
@@ -1549,6 +1502,53 @@ const CHAPTER_44_QUESTIONS = [
       "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
       "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
       "result": "The product is CC(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q33",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
     }
   },
   {
@@ -1569,26 +1569,26 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
         "text": "CC(C)c1ccccc1",
         "smiles": "CC(C)c1ccccc1",
         "is_correct": true
       },
       {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
         "option_id": "D",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       }
     ],
@@ -1600,15 +1600,15 @@ const CHAPTER_44_QUESTIONS = [
   },
   {
     "question_id": "ch44_q35",
-    "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Hard",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "c1ccccc1"
       ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
+      "reagents": "SO3, H2SO4",
+      "conditions": "heat",
       "products": [
         "?"
       ]
@@ -1616,33 +1616,33 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
       }
     ],
     "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
+      "result": "The product is OS(=O)(=O)c1ccccc1."
     }
   },
   {
@@ -1663,14 +1663,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       },
       {
@@ -1681,8 +1681,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       }
     ],
@@ -1710,26 +1710,26 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
         "text": "OS(=O)(=O)c1ccccc1",
         "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": true
       },
       {
-        "option_id": "B",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
         "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -1741,53 +1741,6 @@ const CHAPTER_44_QUESTIONS = [
   },
   {
     "question_id": "ch44_q38",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(=O)Cl, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q39",
     "topic": "Friedel-Crafts Alkylation",
     "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -1804,27 +1757,27 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -1834,56 +1787,9 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q40",
-    "topic": "Aromatic Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "Br2, FeBr3",
-      "conditions": "dark",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
-      "process": "Electrophilic bromination of benzene yields bromobenzene.",
-      "result": "The product is Brc1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q41",
+    "question_id": "ch44_q39",
     "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -1898,26 +1804,26 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
         "text": "[N+](=O)([O-])c1ccccc1",
         "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": true
       },
       {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
         "option_id": "D",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       }
     ],
@@ -1928,7 +1834,7 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q42",
+    "question_id": "ch44_q40",
     "topic": "Electrophilic Aromatic Substitution",
     "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -1936,8 +1842,8 @@ const CHAPTER_44_QUESTIONS = [
       "reactants": [
         "c1ccccc1"
       ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "reagents": "SO3, H2SO4",
+      "conditions": "heat",
       "products": [
         "?"
       ]
@@ -1951,125 +1857,31 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
       },
       {
         "option_id": "C",
         "text": "OS(=O)(=O)c1ccccc1",
         "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
+        "is_correct": true
       },
       {
         "option_id": "D",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Nitration of benzene yields nitrobenzene.",
-      "result": "The product is [N+](=O)([O-])c1ccccc1."
+      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
+      "result": "The product is OS(=O)(=O)c1ccccc1."
     }
   },
   {
-    "question_id": "ch44_q43",
-    "topic": "Aromatic Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "Br2, FeBr3",
-      "conditions": "dark",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
-      "process": "Electrophilic bromination of benzene yields bromobenzene.",
-      "result": "The product is Brc1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q44",
-    "topic": "Aromatic Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "Br2, FeBr3",
-      "conditions": "dark",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
-      "process": "Electrophilic bromination of benzene yields bromobenzene.",
-      "result": "The product is Brc1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q45",
+    "question_id": "ch44_q41",
     "topic": "Friedel-Crafts Acylation",
     "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -2086,8 +1898,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
@@ -2098,14 +1910,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       }
     ],
@@ -2116,7 +1928,54 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q46",
+    "question_id": "ch44_q42",
+    "topic": "Friedel-Crafts Acylation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(=O)Cl, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
+      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
+      "result": "The product is CC(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q43",
     "topic": "Electrophilic Aromatic Substitution",
     "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -2133,26 +1992,26 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
         "text": "OS(=O)(=O)c1ccccc1",
         "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": true
       },
       {
-        "option_id": "B",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
         "option_id": "C",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       }
     ],
@@ -2160,6 +2019,147 @@ const CHAPTER_44_QUESTIONS = [
       "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
       "process": "Sulfonation of benzene yields benzenesulfonic acid.",
       "result": "The product is OS(=O)(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q44",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "SO3, H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
+      "result": "The product is OS(=O)(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q45",
+    "topic": "Aromatic Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "Br2, FeBr3",
+      "conditions": "dark",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
+      "process": "Electrophilic bromination of benzene yields bromobenzene.",
+      "result": "The product is Brc1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q46",
+    "topic": "Friedel-Crafts Acylation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(=O)Cl, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
+      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
+      "result": "The product is CC(=O)c1ccccc1."
     }
   },
   {
@@ -2180,27 +2180,27 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": true
       }
     ],
     "feedback": {
@@ -2211,241 +2211,6 @@ const CHAPTER_44_QUESTIONS = [
   },
   {
     "question_id": "ch44_q48",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Nitration of benzene yields nitrobenzene.",
-      "result": "The product is [N+](=O)([O-])c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q49",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Nitration of benzene yields nitrobenzene.",
-      "result": "The product is [N+](=O)([O-])c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q50",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "SO3, H2SO4",
-      "conditions": "heat",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
-      "result": "The product is OS(=O)(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q51",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "SO3, H2SO4",
-      "conditions": "heat",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
-      "result": "The product is OS(=O)(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q52",
-    "topic": "Aromatic Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "Br2, FeBr3",
-      "conditions": "dark",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
-      "process": "Electrophilic bromination of benzene yields bromobenzene.",
-      "result": "The product is Brc1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q53",
     "topic": "Friedel-Crafts Acylation",
     "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -2462,26 +2227,26 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
         "text": "CC(=O)c1ccccc1",
         "smiles": "CC(=O)c1ccccc1",
         "is_correct": true
       },
       {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
         "option_id": "C",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       }
     ],
@@ -2492,16 +2257,16 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q54",
-    "topic": "Friedel-Crafts Alkylation",
+    "question_id": "ch44_q49",
+    "topic": "Electrophilic Aromatic Substitution",
     "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "c1ccccc1"
       ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
       "products": [
         "?"
       ]
@@ -2509,67 +2274,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q55",
-    "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": true
       },
       {
         "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
         "is_correct": false
       },
       {
@@ -2580,69 +2298,22 @@ const CHAPTER_44_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q56",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
       "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
       "process": "Nitration of benzene yields nitrobenzene.",
       "result": "The product is [N+](=O)([O-])c1ccccc1."
     }
   },
   {
-    "question_id": "ch44_q57",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Medium",
+    "question_id": "ch44_q50",
+    "topic": "Friedel-Crafts Acylation",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "c1ccccc1"
       ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "reagents": "CC(=O)Cl, AlCl3",
+      "conditions": "CH2Cl2",
       "products": [
         "?"
       ]
@@ -2650,37 +2321,37 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
         "text": "CC(C)=C",
         "smiles": "CC(C)=C",
         "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
       }
     ],
     "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Nitration of benzene yields nitrobenzene.",
-      "result": "The product is [N+](=O)([O-])c1ccccc1."
+      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
+      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
+      "result": "The product is CC(=O)c1ccccc1."
     }
   },
   {
-    "question_id": "ch44_q58",
+    "question_id": "ch44_q51",
     "topic": "Electrophilic Aromatic Substitution",
     "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -2697,108 +2368,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
         "text": "OS(=O)(=O)c1ccccc1",
         "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": true
       },
       {
-        "option_id": "C",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
-      "result": "The product is OS(=O)(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q59",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
-      },
-      {
         "option_id": "B",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Nitration of benzene yields nitrobenzene.",
-      "result": "The product is [N+](=O)([O-])c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q60",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
         "is_correct": false
       },
       {
@@ -2809,15 +2386,438 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
+      "result": "The product is OS(=O)(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q52",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
         "text": "[N+](=O)([O-])c1ccccc1",
         "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
       "process": "Nitration of benzene yields nitrobenzene.",
       "result": "The product is [N+](=O)([O-])c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q53",
+    "topic": "Friedel-Crafts Alkylation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(Cl)C, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
+      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
+      "result": "The product is CC(C)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q54",
+    "topic": "Friedel-Crafts Alkylation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(Cl)C, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
+      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
+      "result": "The product is CC(C)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q55",
+    "topic": "Friedel-Crafts Acylation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(=O)Cl, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
+      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
+      "result": "The product is CC(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q56",
+    "topic": "Friedel-Crafts Acylation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(=O)Cl, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
+      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
+      "result": "The product is CC(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q57",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q58",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q59",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "SO3, H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
+      "result": "The product is OS(=O)(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q60",
+    "topic": "Friedel-Crafts Acylation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(=O)Cl, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
+      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
+      "result": "The product is CC(=O)c1ccccc1."
     }
   },
   {
@@ -2838,27 +2838,27 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
         "text": "CC(C)c1ccccc1",
         "smiles": "CC(C)c1ccccc1",
         "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -2870,7 +2870,7 @@ const CHAPTER_44_QUESTIONS = [
   {
     "question_id": "ch44_q62",
     "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -2885,672 +2885,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q63",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Nitration of benzene yields nitrobenzene.",
-      "result": "The product is [N+](=O)([O-])c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q64",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(=O)Cl, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
         "text": "C1CC=CCC1",
         "smiles": "C1CC=CCC1",
         "is_correct": false
       },
       {
-        "option_id": "C",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q65",
-    "topic": "Aromatic Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "Br2, FeBr3",
-      "conditions": "dark",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
+        "option_id": "B",
         "text": "CC1OC1",
         "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
-      "process": "Electrophilic bromination of benzene yields bromobenzene.",
-      "result": "The product is Brc1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q66",
-    "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q67",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "SO3, H2SO4",
-      "conditions": "heat",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
-      "result": "The product is OS(=O)(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q68",
-    "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q69",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Nitration of benzene yields nitrobenzene.",
-      "result": "The product is [N+](=O)([O-])c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q70",
-    "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q71",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(=O)Cl, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q72",
-    "topic": "Aromatic Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "Br2, FeBr3",
-      "conditions": "dark",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
-      "process": "Electrophilic bromination of benzene yields bromobenzene.",
-      "result": "The product is Brc1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q73",
-    "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q74",
-    "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
-      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
-      "result": "The product is CC(C)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q75",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(=O)Cl, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q76",
-    "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(Cl)C, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
@@ -3561,9 +2903,9 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": true
       }
     ],
     "feedback": {
@@ -3573,56 +2915,9 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q77",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(=O)Cl, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q78",
+    "question_id": "ch44_q63",
     "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -3637,14 +2932,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
@@ -3655,8 +2950,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       }
     ],
@@ -3667,242 +2962,7 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q79",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(=O)Cl, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q80",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "CC(=O)Cl, AlCl3",
-      "conditions": "CH2Cl2",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q81",
-    "topic": "Aromatic Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "Br2, FeBr3",
-      "conditions": "dark",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
-      "process": "Electrophilic bromination of benzene yields bromobenzene.",
-      "result": "The product is Brc1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q82",
-    "topic": "Aromatic Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "Br2, FeBr3",
-      "conditions": "dark",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
-      "process": "Electrophilic bromination of benzene yields bromobenzene.",
-      "result": "The product is Brc1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q83",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "SO3, H2SO4",
-      "conditions": "heat",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
-      "result": "The product is OS(=O)(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q84",
+    "question_id": "ch44_q64",
     "topic": "Electrophilic Aromatic Substitution",
     "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -3919,26 +2979,26 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
         "text": "OS(=O)(=O)c1ccccc1",
         "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": true
       },
       {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
         "option_id": "C",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       }
     ],
@@ -3949,103 +3009,9 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q85",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "SO3, H2SO4",
-      "conditions": "heat",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
-      "result": "The product is OS(=O)(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q86",
-    "topic": "Aromatic Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "Br2, FeBr3",
-      "conditions": "dark",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
-      "process": "Electrophilic bromination of benzene yields bromobenzene.",
-      "result": "The product is Brc1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q87",
+    "question_id": "ch44_q65",
     "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -4066,20 +3032,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
         "text": "CC(=O)c1ccccc1",
         "smiles": "CC(=O)c1ccccc1",
         "is_correct": true
       },
       {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
         "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       }
     ],
@@ -4090,103 +3056,9 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q88",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "SO3, H2SO4",
-      "conditions": "heat",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
-      "result": "The product is OS(=O)(=O)c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q89",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "c1ccccc1"
-      ],
-      "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
-      "process": "Nitration of benzene yields nitrobenzene.",
-      "result": "The product is [N+](=O)([O-])c1ccccc1."
-    }
-  },
-  {
-    "question_id": "ch44_q90",
+    "question_id": "ch44_q66",
     "topic": "Friedel-Crafts Alkylation",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -4201,20 +3073,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       },
       {
@@ -4231,7 +3103,618 @@ const CHAPTER_44_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch44_q91",
+    "question_id": "ch44_q67",
+    "topic": "Aromatic Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "Br2, FeBr3",
+      "conditions": "dark",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
+      "process": "Electrophilic bromination of benzene yields bromobenzene.",
+      "result": "The product is Brc1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q68",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q69",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q70",
+    "topic": "Aromatic Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "Br2, FeBr3",
+      "conditions": "dark",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
+      "process": "Electrophilic bromination of benzene yields bromobenzene.",
+      "result": "The product is Brc1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q71",
+    "topic": "Aromatic Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "Br2, FeBr3",
+      "conditions": "dark",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
+      "process": "Electrophilic bromination of benzene yields bromobenzene.",
+      "result": "The product is Brc1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q72",
+    "topic": "Friedel-Crafts Acylation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(=O)Cl, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
+      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
+      "result": "The product is CC(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q73",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "SO3, H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
+      "result": "The product is OS(=O)(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q74",
+    "topic": "Friedel-Crafts Alkylation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(Cl)C, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
+      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
+      "result": "The product is CC(C)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q75",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q76",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q77",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "SO3, H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
+      "result": "The product is OS(=O)(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q78",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "SO3, H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
+      "result": "The product is OS(=O)(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q79",
+    "topic": "Aromatic Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "Br2, FeBr3",
+      "conditions": "dark",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Aromatic Halogenation.",
+      "process": "Electrophilic bromination of benzene yields bromobenzene.",
+      "result": "The product is Brc1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q80",
     "topic": "Friedel-Crafts Acylation",
     "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -4248,26 +3731,543 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
+      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
+      "result": "The product is CC(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q81",
+    "topic": "Friedel-Crafts Alkylation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(Cl)C, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "CC(=O)c1ccccc1",
         "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
+        "is_correct": false
       },
       {
         "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
+      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
+      "result": "The product is CC(C)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q82",
+    "topic": "Friedel-Crafts Alkylation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(Cl)C, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
+      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
+      "result": "The product is CC(C)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q83",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q84",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
         "text": "CC(C)(O)C",
         "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q85",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "SO3, H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Sulfonation of benzene yields benzenesulfonic acid.",
+      "result": "The product is OS(=O)(=O)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q86",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q87",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q88",
+    "topic": "Friedel-Crafts Alkylation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(Cl)C, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
+      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
+      "result": "The product is CC(C)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q89",
+    "topic": "Friedel-Crafts Alkylation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(Cl)C, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
+      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
+      "result": "The product is CC(C)c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q90",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "HNO3, H2SO4",
+      "conditions": "50 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Electrophilic Aromatic Substitution.",
+      "process": "Nitration of benzene yields nitrobenzene.",
+      "result": "The product is [N+](=O)([O-])c1ccccc1."
+    }
+  },
+  {
+    "question_id": "ch44_q91",
+    "topic": "Friedel-Crafts Acylation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "c1ccccc1"
+      ],
+      "reagents": "CC(=O)Cl, AlCl3",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       }
     ],
@@ -4295,26 +4295,26 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
         "text": "Brc1ccccc1",
         "smiles": "Brc1ccccc1",
         "is_correct": true
       },
       {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
         "option_id": "D",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       }
     ],
@@ -4326,14 +4326,14 @@ const CHAPTER_44_QUESTIONS = [
   },
   {
     "question_id": "ch44_q93",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Hard",
+    "topic": "Friedel-Crafts Alkylation",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "c1ccccc1"
       ],
-      "reagents": "CC(=O)Cl, AlCl3",
+      "reagents": "CC(Cl)C, AlCl3",
       "conditions": "CH2Cl2",
       "products": [
         "?"
@@ -4342,33 +4342,33 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": true
       },
       {
         "option_id": "C",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
+      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
+      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
+      "result": "The product is CC(C)c1ccccc1."
     }
   },
   {
@@ -4395,20 +4395,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       }
     ],
@@ -4420,14 +4420,14 @@ const CHAPTER_44_QUESTIONS = [
   },
   {
     "question_id": "ch44_q95",
-    "topic": "Friedel-Crafts Acylation",
-    "difficulty_level": "Medium",
+    "topic": "Friedel-Crafts Alkylation",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "c1ccccc1"
       ],
-      "reagents": "CC(=O)Cl, AlCl3",
+      "reagents": "CC(Cl)C, AlCl3",
       "conditions": "CH2Cl2",
       "products": [
         "?"
@@ -4436,33 +4436,33 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       },
       {
-        "option_id": "C",
+        "option_id": "B",
         "text": "CC(C)c1ccccc1",
         "smiles": "CC(C)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "Studying reaction mechanisms: Friedel-Crafts Acylation.",
-      "process": "Friedel-Crafts acylation of benzene with acetyl chloride yields acetophenone.",
-      "result": "The product is CC(=O)c1ccccc1."
+      "context": "Studying reaction mechanisms: Friedel-Crafts Alkylation.",
+      "process": "Friedel-Crafts alkylation of benzene with isopropyl chloride yields isopropylbenzene (cumene).",
+      "result": "The product is CC(C)c1ccccc1."
     }
   }
 ];

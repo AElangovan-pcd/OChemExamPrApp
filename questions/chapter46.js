@@ -3,15 +3,15 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q1",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=CC=O"
+        "C=C"
       ],
       "reagents": "heat",
-      "conditions": "100 C",
+      "conditions": "150 C",
       "products": [
         "?"
       ]
@@ -19,33 +19,33 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
     }
   },
   {
@@ -56,54 +56,6 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=C"
-      ],
-      "reagents": "heat",
-      "conditions": "150 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q3",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
         "C=CC=O"
       ],
       "reagents": "heat",
@@ -115,27 +67,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
@@ -145,9 +97,9 @@ const CHAPTER_46_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch46_q4",
+    "question_id": "ch46_q3",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -163,27 +115,75 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q4",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=C"
+      ],
+      "reagents": "heat",
+      "conditions": "150 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
@@ -211,26 +211,26 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
         "text": "C1CC=CCC1",
         "smiles": "C1CC=CCC1",
         "is_correct": true
       },
       {
-        "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
         "option_id": "D",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -259,27 +259,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
         "text": "CCCBr",
         "smiles": "CCCBr",
         "is_correct": false
       },
       {
-        "option_id": "B",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
         "option_id": "C",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
@@ -291,55 +291,7 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q7",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=C"
-      ],
-      "reagents": "heat",
-      "conditions": "150 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q8",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -355,26 +307,74 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
         "text": "O=CC1CC=CCC1",
         "smiles": "O=CC1CC=CCC1",
         "is_correct": true
       },
       {
-        "option_id": "B",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      },
-      {
         "option_id": "C",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q8",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       }
     ],
@@ -403,27 +403,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
@@ -440,10 +440,10 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=CC=O"
+        "C=C"
       ],
       "reagents": "heat",
-      "conditions": "100 C",
+      "conditions": "150 C",
       "products": [
         "?"
       ]
@@ -451,14 +451,14 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       },
       {
@@ -469,15 +469,15 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
     }
   },
   {
@@ -499,27 +499,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "C",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -531,7 +531,55 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q12",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q13",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -547,27 +595,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
@@ -577,9 +625,9 @@ const CHAPTER_46_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch46_q13",
+    "question_id": "ch46_q14",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -595,74 +643,26 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
         "text": "O=CC1CC=CCC1",
         "smiles": "O=CC1CC=CCC1",
         "is_correct": true
       },
       {
-        "option_id": "C",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
-        "option_id": "D",
+        "option_id": "C",
         "text": "C(Br)CBr",
         "smiles": "C(Br)CBr",
         "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q14",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       }
     ],
@@ -680,10 +680,10 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=CC=O"
+        "C=C"
       ],
       "reagents": "heat",
-      "conditions": "100 C",
+      "conditions": "150 C",
       "products": [
         "?"
       ]
@@ -697,27 +697,27 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       },
       {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      },
+      {
         "option_id": "D",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
     }
   },
   {
@@ -728,10 +728,10 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=CC=O"
+        "C=C"
       ],
       "reagents": "heat",
-      "conditions": "100 C",
+      "conditions": "150 C",
       "products": [
         "?"
       ]
@@ -739,33 +739,33 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
     }
   },
   {
@@ -787,27 +787,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -819,7 +819,7 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q18",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -835,14 +835,14 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       },
       {
@@ -853,8 +853,8 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -883,20 +883,20 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       },
       {
@@ -915,7 +915,7 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q20",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -931,27 +931,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -963,15 +963,15 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q21",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=CC=O"
+        "C=C"
       ],
       "reagents": "heat",
-      "conditions": "100 C",
+      "conditions": "150 C",
       "products": [
         "?"
       ]
@@ -979,33 +979,33 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
         "is_correct": true
       },
       {
         "option_id": "D",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
     }
   },
   {
@@ -1027,26 +1027,26 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
         "text": "C1CC=CCC1",
         "smiles": "C1CC=CCC1",
         "is_correct": true
       },
       {
+        "option_id": "B",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
         "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       }
     ],
@@ -1059,7 +1059,7 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q23",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -1075,26 +1075,26 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
         "text": "O=CC1CC=CCC1",
         "smiles": "O=CC1CC=CCC1",
         "is_correct": true
       },
       {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
         "option_id": "D",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       }
     ],
@@ -1112,10 +1112,10 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=CC=O"
+        "C=C"
       ],
       "reagents": "heat",
-      "conditions": "100 C",
+      "conditions": "150 C",
       "products": [
         "?"
       ]
@@ -1123,15 +1123,15 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "C",
@@ -1141,15 +1141,15 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
     }
   },
   {
@@ -1171,26 +1171,26 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
         "text": "C1CC=CCC1",
         "smiles": "C1CC=CCC1",
         "is_correct": true
       },
       {
-        "option_id": "C",
+        "option_id": "D",
         "text": "CC(Br)(C)C",
         "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCO",
-        "smiles": "CCO",
         "is_correct": false
       }
     ],
@@ -1204,150 +1204,6 @@ const CHAPTER_46_QUESTIONS = [
     "question_id": "ch46_q26",
     "topic": "Diels-Alder Reaction",
     "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q27",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q28",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q29",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -1369,20 +1225,164 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q27",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
         "text": "OS(=O)(=O)c1ccccc1",
         "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
+        "option_id": "D",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q28",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
         "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q29",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=C"
+      ],
+      "reagents": "heat",
+      "conditions": "150 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
         "is_correct": false
       }
     ],
@@ -1411,14 +1411,14 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CCO",
+        "smiles": "CCO",
         "is_correct": false
       },
       {
@@ -1429,8 +1429,8 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       }
     ],
@@ -1459,26 +1459,26 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
         "text": "C1CC=CCC1",
         "smiles": "C1CC=CCC1",
         "is_correct": true
       },
       {
-        "option_id": "B",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
         "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       }
     ],
@@ -1496,10 +1496,10 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=CC=O"
+        "C=C"
       ],
       "reagents": "heat",
-      "conditions": "100 C",
+      "conditions": "150 C",
       "products": [
         "?"
       ]
@@ -1507,33 +1507,33 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
         "is_correct": true
       },
       {
         "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
         "text": "[N+](=O)([O-])c1ccccc1",
         "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       },
       {
-        "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
         "option_id": "D",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
     }
   },
   {
@@ -1555,26 +1555,26 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
         "text": "O=CC1CC=CCC1",
         "smiles": "O=CC1CC=CCC1",
         "is_correct": true
       },
       {
-        "option_id": "B",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
         "option_id": "D",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -1587,15 +1587,15 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q34",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=CC=O"
+        "C=C"
       ],
       "reagents": "heat",
-      "conditions": "100 C",
+      "conditions": "150 C",
       "products": [
         "?"
       ]
@@ -1603,33 +1603,33 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
         "text": "C1CC=CCC1",
         "smiles": "C1CC=CCC1",
-        "is_correct": false
+        "is_correct": true
       },
       {
         "option_id": "C",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
     }
   },
   {
@@ -1657,20 +1657,20 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       }
     ],
@@ -1699,27 +1699,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
         "text": "CC=O",
         "smiles": "CC=O",
         "is_correct": false
       },
       {
-        "option_id": "B",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
         "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -1736,10 +1736,10 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=C"
+        "C=CC=O"
       ],
       "reagents": "heat",
-      "conditions": "150 C",
+      "conditions": "100 C",
       "products": [
         "?"
       ]
@@ -1747,39 +1747,39 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
     }
   },
   {
     "question_id": "ch46_q38",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -1795,27 +1795,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
@@ -1827,7 +1827,7 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q39",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -1843,26 +1843,26 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
         "text": "C1CC=CCC1",
         "smiles": "C1CC=CCC1",
         "is_correct": true
       },
       {
-        "option_id": "C",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      },
-      {
         "option_id": "D",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       }
     ],
@@ -1880,10 +1880,10 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=C"
+        "C=CC=O"
       ],
       "reagents": "heat",
-      "conditions": "150 C",
+      "conditions": "100 C",
       "products": [
         "?"
       ]
@@ -1893,31 +1893,31 @@ const CHAPTER_46_QUESTIONS = [
         "option_id": "A",
         "text": "C1CC=CCC1",
         "smiles": "C1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
         "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CCO",
+        "smiles": "CCO",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
     }
   },
   {
@@ -1928,10 +1928,10 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=C"
+        "C=CC=O"
       ],
       "reagents": "heat",
-      "conditions": "150 C",
+      "conditions": "100 C",
       "products": [
         "?"
       ]
@@ -1939,33 +1939,33 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
         "text": "OS(=O)(=O)c1ccccc1",
         "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
         "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
     }
   },
   {
@@ -1987,26 +1987,26 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
         "text": "O=CC1CC=CCC1",
         "smiles": "O=CC1CC=CCC1",
         "is_correct": true
       },
       {
-        "option_id": "B",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
-      },
-      {
         "option_id": "C",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       }
     ],
@@ -2019,55 +2019,7 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q43",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=C"
-      ],
-      "reagents": "heat",
-      "conditions": "150 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q44",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -2083,26 +2035,26 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
         "text": "O=CC1CC=CCC1",
         "smiles": "O=CC1CC=CCC1",
         "is_correct": true
       },
       {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
         "option_id": "D",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       }
     ],
@@ -2113,7 +2065,103 @@ const CHAPTER_46_QUESTIONS = [
     }
   },
   {
+    "question_id": "ch46_q44",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
     "question_id": "ch46_q45",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=C"
+      ],
+      "reagents": "heat",
+      "conditions": "150 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q46",
     "topic": "Diels-Alder Reaction",
     "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -2137,75 +2185,27 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
       "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
       "result": "The product is C1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q46",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
     }
   },
   {
@@ -2216,10 +2216,10 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=CC=O"
+        "C=C"
       ],
       "reagents": "heat",
-      "conditions": "100 C",
+      "conditions": "150 C",
       "products": [
         "?"
       ]
@@ -2239,35 +2239,35 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
     }
   },
   {
     "question_id": "ch46_q48",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=C"
+        "C=CC=O"
       ],
       "reagents": "heat",
-      "conditions": "150 C",
+      "conditions": "100 C",
       "products": [
         "?"
       ]
@@ -2275,33 +2275,33 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       },
       {
-        "option_id": "D",
+        "option_id": "C",
         "text": "O=CC1CC=CCC1",
         "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
     }
   },
   {
@@ -2323,27 +2323,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -2355,7 +2355,55 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q50",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q51",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -2377,69 +2425,21 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q51",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
         "text": "CCCBr",
         "smiles": "CCCBr",
         "is_correct": false
       },
       {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
+        "option_id": "D",
         "text": "O=CC1CC=CCC1",
         "smiles": "O=CC1CC=CCC1",
         "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
       }
     ],
     "feedback": {
@@ -2451,15 +2451,15 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q52",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=CC=O"
+        "C=C"
       ],
       "reagents": "heat",
-      "conditions": "100 C",
+      "conditions": "150 C",
       "products": [
         "?"
       ]
@@ -2467,20 +2467,20 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       },
       {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      },
+      {
         "option_id": "C",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       },
       {
@@ -2492,8 +2492,8 @@ const CHAPTER_46_QUESTIONS = [
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
     }
   },
   {
@@ -2521,20 +2521,20 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       }
     ],
@@ -2563,26 +2563,26 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
         "text": "O=CC1CC=CCC1",
         "smiles": "O=CC1CC=CCC1",
         "is_correct": true
       },
       {
-        "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
         "option_id": "C",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       }
     ],
@@ -2595,15 +2595,15 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q55",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=C"
+        "C=CC=O"
       ],
       "reagents": "heat",
-      "conditions": "150 C",
+      "conditions": "100 C",
       "products": [
         "?"
       ]
@@ -2611,33 +2611,33 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
     }
   },
   {
@@ -2659,27 +2659,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
         "text": "CC=O",
         "smiles": "CC=O",
         "is_correct": false
       },
       {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
         "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -2707,27 +2707,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
         "text": "O=CC1CC=CCC1",
         "smiles": "O=CC1CC=CCC1",
         "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -2739,7 +2739,7 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q58",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -2755,27 +2755,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -2792,10 +2792,10 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=C"
+        "C=CC=O"
       ],
       "reagents": "heat",
-      "conditions": "150 C",
+      "conditions": "100 C",
       "products": [
         "?"
       ]
@@ -2803,33 +2803,33 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
     }
   },
   {
@@ -2840,10 +2840,10 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=C"
+        "C=CC=O"
       ],
       "reagents": "heat",
-      "conditions": "150 C",
+      "conditions": "100 C",
       "products": [
         "?"
       ]
@@ -2851,37 +2851,85 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
         "text": "COCC",
         "smiles": "COCC",
         "is_correct": false
       },
       {
-        "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
         "option_id": "D",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
     }
   },
   {
     "question_id": "ch46_q61",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q62",
     "topic": "Diels-Alder Reaction",
     "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -2899,75 +2947,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
         "text": "O=CC1CC=CCC1",
         "smiles": "O=CC1CC=CCC1",
         "is_correct": true
       },
       {
-        "option_id": "C",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
+        "option_id": "B",
         "text": "CC=O",
         "smiles": "CC=O",
         "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q62",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -3001,14 +3001,14 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       },
       {
@@ -3043,686 +3043,14 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q65",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=C"
-      ],
-      "reagents": "heat",
-      "conditions": "150 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q66",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q67",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=C"
-      ],
-      "reagents": "heat",
-      "conditions": "150 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q68",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q69",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=C"
-      ],
-      "reagents": "heat",
-      "conditions": "150 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q70",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q71",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q72",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=C"
-      ],
-      "reagents": "heat",
-      "conditions": "150 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q73",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=C"
-      ],
-      "reagents": "heat",
-      "conditions": "150 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q74",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=C"
-      ],
-      "reagents": "heat",
-      "conditions": "150 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "B",
         "text": "CCCBr",
         "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q75",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q76",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q77",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=C"
-      ],
-      "reagents": "heat",
-      "conditions": "150 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q78",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=C"
-      ],
-      "reagents": "heat",
-      "conditions": "150 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       },
       {
@@ -3745,7 +3073,295 @@ const CHAPTER_46_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch46_q79",
+    "question_id": "ch46_q65",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q66",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=C"
+      ],
+      "reagents": "heat",
+      "conditions": "150 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q67",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=C"
+      ],
+      "reagents": "heat",
+      "conditions": "150 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q68",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=C"
+      ],
+      "reagents": "heat",
+      "conditions": "150 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q69",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q70",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=C"
+      ],
+      "reagents": "heat",
+      "conditions": "150 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q71",
     "topic": "Diels-Alder Reaction",
     "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -3763,8 +3379,296 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q72",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=C"
+      ],
+      "reagents": "heat",
+      "conditions": "150 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q73",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
         "text": "CC1OC1",
         "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q74",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q75",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=C"
+      ],
+      "reagents": "heat",
+      "conditions": "150 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q76",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=C"
+      ],
+      "reagents": "heat",
+      "conditions": "150 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q77",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
@@ -3775,8 +3679,104 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q78",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q79",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       },
       {
@@ -3800,10 +3800,10 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=C"
+        "C=CC=O"
       ],
       "reagents": "heat",
-      "conditions": "150 C",
+      "conditions": "100 C",
       "products": [
         "?"
       ]
@@ -3811,39 +3811,39 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
     }
   },
   {
     "question_id": "ch46_q81",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -3859,27 +3859,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -3891,15 +3891,15 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q82",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=CC=O"
+        "C=C"
       ],
       "reagents": "heat",
-      "conditions": "100 C",
+      "conditions": "150 C",
       "products": [
         "?"
       ]
@@ -3907,33 +3907,33 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       },
       {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      },
+      {
         "option_id": "D",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
     }
   },
   {
@@ -3955,27 +3955,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
@@ -3987,15 +3987,15 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q84",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
+    "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=C"
+        "C=CC=O"
       ],
       "reagents": "heat",
-      "conditions": "150 C",
+      "conditions": "100 C",
       "products": [
         "?"
       ]
@@ -4003,33 +4003,33 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
     }
   },
   {
@@ -4051,27 +4051,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
@@ -4083,7 +4083,7 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q86",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
+    "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
       "reactants": [
@@ -4099,27 +4099,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
         "text": "C1CC=CCC1",
         "smiles": "C1CC=CCC1",
         "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -4130,6 +4130,54 @@ const CHAPTER_46_QUESTIONS = [
   },
   {
     "question_id": "ch46_q87",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=C"
+      ],
+      "reagents": "heat",
+      "conditions": "150 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q88",
     "topic": "Diels-Alder Reaction",
     "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -4147,27 +4195,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "C",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -4177,7 +4225,7 @@ const CHAPTER_46_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch46_q88",
+    "question_id": "ch46_q89",
     "topic": "Diels-Alder Reaction",
     "difficulty_level": "Medium",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -4195,68 +4243,20 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
         "text": "C1CC=CCC1",
         "smiles": "C1CC=CCC1",
         "is_correct": false
       },
       {
-        "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
         "option_id": "C",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
         "text": "CC(Br)C(Br)",
         "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q89",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
@@ -4275,54 +4275,6 @@ const CHAPTER_46_QUESTIONS = [
   {
     "question_id": "ch46_q90",
     "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=CC=O"
-      ],
-      "reagents": "heat",
-      "conditions": "100 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
-      "result": "The product is O=CC1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q91",
-    "topic": "Diels-Alder Reaction",
     "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
     "reaction_scheme": {
@@ -4339,14 +4291,62 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
+      "result": "The product is C1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q91",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=C"
+      ],
+      "reagents": "heat",
+      "conditions": "150 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
         "is_correct": false
       },
       {
@@ -4357,8 +4357,8 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       }
     ],
@@ -4387,27 +4387,27 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "C",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
       }
     ],
     "feedback": {
@@ -4424,10 +4424,10 @@ const CHAPTER_46_QUESTIONS = [
     "reaction_scheme": {
       "reactants": [
         "C=CC=C",
-        "C=C"
+        "C=CC=O"
       ],
       "reagents": "heat",
-      "conditions": "150 C",
+      "conditions": "100 C",
       "products": [
         "?"
       ]
@@ -4435,15 +4435,15 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
       },
       {
         "option_id": "C",
@@ -4453,67 +4453,19 @@ const CHAPTER_46_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
     }
   },
   {
     "question_id": "ch46_q94",
-    "topic": "Diels-Alder Reaction",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "C=CC=C",
-        "C=C"
-      ],
-      "reagents": "heat",
-      "conditions": "150 C",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
-      "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
-      "result": "The product is C1CC=CCC1."
-    }
-  },
-  {
-    "question_id": "ch46_q95",
     "topic": "Diels-Alder Reaction",
     "difficulty_level": "Hard",
     "question_text": "What is the major organic product formed in the following reaction sequence?",
@@ -4531,33 +4483,81 @@ const CHAPTER_46_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": true
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": true
       }
     ],
     "feedback": {
       "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
       "process": "Diels-Alder [4+2] cycloaddition of 1,3-butadiene and ethylene yields cyclohexene.",
       "result": "The product is C1CC=CCC1."
+    }
+  },
+  {
+    "question_id": "ch46_q95",
+    "topic": "Diels-Alder Reaction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "C=CC=O"
+      ],
+      "reagents": "heat",
+      "conditions": "100 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Diels-Alder Reaction.",
+      "process": "Diels-Alder cycloaddition of 1,3-butadiene and acrolein yields cyclohex-3-ene-1-carboxaldehyde.",
+      "result": "The product is O=CC1CC=CCC1."
     }
   }
 ];

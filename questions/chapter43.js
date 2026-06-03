@@ -8,6 +8,786 @@ const CHAPTER_43_QUESTIONS = [
     "interaction_type": "matching-list",
     "match_items": [
       {
+        "smiles": "c1cc(ccc1C[C@@H](C(=O)O)N)O",
+        "correctAnswer": "Tyrosine"
+      },
+      {
+        "smiles": "C1C[C@H](NC1)C(=O)O",
+        "correctAnswer": "Proline"
+      },
+      {
+        "smiles": "CSCC[C@@H](C(=O)O)N",
+        "correctAnswer": "Methionine"
+      },
+      {
+        "smiles": "C[C@@H](O)[C@@H](C(=O)O)N",
+        "correctAnswer": "Threonine"
+      }
+    ],
+    "match_options": [
+      "Threonine",
+      "Isoleucine",
+      "Phenylalanine",
+      "Arginine",
+      "Proline",
+      "Methionine",
+      "Glutamic Acid",
+      "Tyrosine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Tyrosine.\nAmino Acid 2: Proline.\nAmino Acid 3: Methionine.\nAmino Acid 4: Threonine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q2",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "c1ccc(cc1)C[C@@H](C(=O)O)N",
+        "correctAnswer": "Phenylalanine"
+      },
+      {
+        "smiles": "NCCCC[C@@H](C(=O)O)N",
+        "correctAnswer": "Lysine"
+      },
+      {
+        "smiles": "OC[C@@H](C(=O)O)N",
+        "correctAnswer": "Serine"
+      },
+      {
+        "smiles": "C(C(=O)N)[C@@H](C(=O)O)N",
+        "correctAnswer": "Asparagine"
+      }
+    ],
+    "match_options": [
+      "Phenylalanine",
+      "Glycine",
+      "Asparagine",
+      "Lysine",
+      "Valine",
+      "Serine",
+      "Aspartic Acid",
+      "Arginine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Phenylalanine.\nAmino Acid 2: Lysine.\nAmino Acid 3: Serine.\nAmino Acid 4: Asparagine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q3",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "c1c(n[nH]c1)C[C@@H](C(=O)O)N",
+        "correctAnswer": "Histidine"
+      },
+      {
+        "smiles": "CC(C)C[C@@H](C(=O)O)N",
+        "correctAnswer": "Leucine"
+      },
+      {
+        "smiles": "C(CC(=O)N)[C@@H](C(=O)O)N",
+        "correctAnswer": "Glutamine"
+      },
+      {
+        "smiles": "c1ccc(cc1)C[C@@H](C(=O)O)N",
+        "correctAnswer": "Phenylalanine"
+      }
+    ],
+    "match_options": [
+      "Phenylalanine",
+      "Glutamic Acid",
+      "Valine",
+      "Leucine",
+      "Glutamine",
+      "Serine",
+      "Histidine",
+      "Threonine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Histidine.\nAmino Acid 2: Leucine.\nAmino Acid 3: Glutamine.\nAmino Acid 4: Phenylalanine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q4",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "N=C(N)NCCC[C@@H](C(=O)O)N",
+        "correctAnswer": "Arginine"
+      },
+      {
+        "smiles": "CC(C)C[C@@H](C(=O)O)N",
+        "correctAnswer": "Leucine"
+      },
+      {
+        "smiles": "CC(C)[C@@H](C(=O)O)N",
+        "correctAnswer": "Valine"
+      },
+      {
+        "smiles": "c1cc(ccc1C[C@@H](C(=O)O)N)O",
+        "correctAnswer": "Tyrosine"
+      }
+    ],
+    "match_options": [
+      "Tyrosine",
+      "Arginine",
+      "Leucine",
+      "Asparagine",
+      "Methionine",
+      "Glycine",
+      "Proline",
+      "Valine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Arginine.\nAmino Acid 2: Leucine.\nAmino Acid 3: Valine.\nAmino Acid 4: Tyrosine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q5",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "C[C@@H](C(=O)O)N",
+        "correctAnswer": "Alanine"
+      },
+      {
+        "smiles": "NCC(=O)O",
+        "correctAnswer": "Glycine"
+      },
+      {
+        "smiles": "C(C(=O)O)[C@@H](C(=O)O)N",
+        "correctAnswer": "Aspartic Acid"
+      },
+      {
+        "smiles": "C[C@@H](O)[C@@H](C(=O)O)N",
+        "correctAnswer": "Threonine"
+      }
+    ],
+    "match_options": [
+      "Glutamic Acid",
+      "Valine",
+      "Arginine",
+      "Glycine",
+      "Aspartic Acid",
+      "Threonine",
+      "Alanine",
+      "Leucine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Alanine.\nAmino Acid 2: Glycine.\nAmino Acid 3: Aspartic Acid.\nAmino Acid 4: Threonine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q6",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "NCCCC[C@@H](C(=O)O)N",
+        "correctAnswer": "Lysine"
+      },
+      {
+        "smiles": "C(CC(=O)O)[C@@H](C(=O)O)N",
+        "correctAnswer": "Glutamic Acid"
+      },
+      {
+        "smiles": "C(CC(=O)N)[C@@H](C(=O)O)N",
+        "correctAnswer": "Glutamine"
+      },
+      {
+        "smiles": "C(C(=O)N)[C@@H](C(=O)O)N",
+        "correctAnswer": "Asparagine"
+      }
+    ],
+    "match_options": [
+      "Glutamic Acid",
+      "Phenylalanine",
+      "Glutamine",
+      "Lysine",
+      "Glycine",
+      "Aspartic Acid",
+      "Asparagine",
+      "Tryptophan"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Lysine.\nAmino Acid 2: Glutamic Acid.\nAmino Acid 3: Glutamine.\nAmino Acid 4: Asparagine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q7",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "C[C@@H](C(=O)O)N",
+        "correctAnswer": "Alanine"
+      },
+      {
+        "smiles": "CC[C@H](C)[C@@H](C(=O)O)N",
+        "correctAnswer": "Isoleucine"
+      },
+      {
+        "smiles": "CS[C@@H](C(=O)O)N",
+        "correctAnswer": "Cysteine"
+      },
+      {
+        "smiles": "CSCC[C@@H](C(=O)O)N",
+        "correctAnswer": "Methionine"
+      }
+    ],
+    "match_options": [
+      "Cysteine",
+      "Leucine",
+      "Alanine",
+      "Glutamic Acid",
+      "Arginine",
+      "Isoleucine",
+      "Phenylalanine",
+      "Methionine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Alanine.\nAmino Acid 2: Isoleucine.\nAmino Acid 3: Cysteine.\nAmino Acid 4: Methionine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q8",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "CC(C)[C@@H](C(=O)O)N",
+        "correctAnswer": "Valine"
+      },
+      {
+        "smiles": "CC[C@H](C)[C@@H](C(=O)O)N",
+        "correctAnswer": "Isoleucine"
+      },
+      {
+        "smiles": "NCC(=O)O",
+        "correctAnswer": "Glycine"
+      },
+      {
+        "smiles": "C(CC(=O)N)[C@@H](C(=O)O)N",
+        "correctAnswer": "Glutamine"
+      }
+    ],
+    "match_options": [
+      "Glutamine",
+      "Methionine",
+      "Tryptophan",
+      "Threonine",
+      "Valine",
+      "Histidine",
+      "Glycine",
+      "Isoleucine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Valine.\nAmino Acid 2: Isoleucine.\nAmino Acid 3: Glycine.\nAmino Acid 4: Glutamine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q9",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "C(CC(=O)O)[C@@H](C(=O)O)N",
+        "correctAnswer": "Glutamic Acid"
+      },
+      {
+        "smiles": "N=C(N)NCCC[C@@H](C(=O)O)N",
+        "correctAnswer": "Arginine"
+      },
+      {
+        "smiles": "CS[C@@H](C(=O)O)N",
+        "correctAnswer": "Cysteine"
+      },
+      {
+        "smiles": "OC[C@@H](C(=O)O)N",
+        "correctAnswer": "Serine"
+      }
+    ],
+    "match_options": [
+      "Tryptophan",
+      "Lysine",
+      "Threonine",
+      "Cysteine",
+      "Serine",
+      "Phenylalanine",
+      "Glutamic Acid",
+      "Arginine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Glutamic Acid.\nAmino Acid 2: Arginine.\nAmino Acid 3: Cysteine.\nAmino Acid 4: Serine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q10",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "c1ccc(cc1)C[C@@H](C(=O)O)N",
+        "correctAnswer": "Phenylalanine"
+      },
+      {
+        "smiles": "C[C@@H](C(=O)O)N",
+        "correctAnswer": "Alanine"
+      },
+      {
+        "smiles": "C1C[C@H](NC1)C(=O)O",
+        "correctAnswer": "Proline"
+      },
+      {
+        "smiles": "c1cc(ccc1C[C@@H](C(=O)O)N)O",
+        "correctAnswer": "Tyrosine"
+      }
+    ],
+    "match_options": [
+      "Tyrosine",
+      "Phenylalanine",
+      "Asparagine",
+      "Aspartic Acid",
+      "Proline",
+      "Tryptophan",
+      "Glutamine",
+      "Alanine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Phenylalanine.\nAmino Acid 2: Alanine.\nAmino Acid 3: Proline.\nAmino Acid 4: Tyrosine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q11",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "OC[C@@H](C(=O)O)N",
+        "correctAnswer": "Serine"
+      },
+      {
+        "smiles": "C(CC(=O)O)[C@@H](C(=O)O)N",
+        "correctAnswer": "Glutamic Acid"
+      },
+      {
+        "smiles": "C(C(=O)N)[C@@H](C(=O)O)N",
+        "correctAnswer": "Asparagine"
+      },
+      {
+        "smiles": "NCCCC[C@@H](C(=O)O)N",
+        "correctAnswer": "Lysine"
+      }
+    ],
+    "match_options": [
+      "Aspartic Acid",
+      "Valine",
+      "Serine",
+      "Threonine",
+      "Glutamic Acid",
+      "Asparagine",
+      "Lysine",
+      "Glycine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Serine.\nAmino Acid 2: Glutamic Acid.\nAmino Acid 3: Asparagine.\nAmino Acid 4: Lysine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q12",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "c1ccc(cc1)C[C@@H](C(=O)O)N",
+        "correctAnswer": "Phenylalanine"
+      },
+      {
+        "smiles": "c1cc(ccc1C[C@@H](C(=O)O)N)O",
+        "correctAnswer": "Tyrosine"
+      },
+      {
+        "smiles": "C(CC(=O)O)[C@@H](C(=O)O)N",
+        "correctAnswer": "Glutamic Acid"
+      },
+      {
+        "smiles": "C(CC(=O)N)[C@@H](C(=O)O)N",
+        "correctAnswer": "Glutamine"
+      }
+    ],
+    "match_options": [
+      "Cysteine",
+      "Methionine",
+      "Glutamine",
+      "Glutamic Acid",
+      "Leucine",
+      "Tyrosine",
+      "Histidine",
+      "Phenylalanine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Phenylalanine.\nAmino Acid 2: Tyrosine.\nAmino Acid 3: Glutamic Acid.\nAmino Acid 4: Glutamine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q13",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "C[C@@H](C(=O)O)N",
+        "correctAnswer": "Alanine"
+      },
+      {
+        "smiles": "CC(C)[C@@H](C(=O)O)N",
+        "correctAnswer": "Valine"
+      },
+      {
+        "smiles": "C[C@@H](O)[C@@H](C(=O)O)N",
+        "correctAnswer": "Threonine"
+      },
+      {
+        "smiles": "c1c(n[nH]c1)C[C@@H](C(=O)O)N",
+        "correctAnswer": "Histidine"
+      }
+    ],
+    "match_options": [
+      "Proline",
+      "Tyrosine",
+      "Histidine",
+      "Glycine",
+      "Threonine",
+      "Aspartic Acid",
+      "Alanine",
+      "Valine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Alanine.\nAmino Acid 2: Valine.\nAmino Acid 3: Threonine.\nAmino Acid 4: Histidine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q14",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "CC[C@H](C)[C@@H](C(=O)O)N",
+        "correctAnswer": "Isoleucine"
+      },
+      {
+        "smiles": "C(C(=O)O)[C@@H](C(=O)O)N",
+        "correctAnswer": "Aspartic Acid"
+      },
+      {
+        "smiles": "C(CC(=O)N)[C@@H](C(=O)O)N",
+        "correctAnswer": "Glutamine"
+      },
+      {
+        "smiles": "c1ccc2c(c1)[nH]c(c2)C[C@@H](C(=O)O)N",
+        "correctAnswer": "Tryptophan"
+      }
+    ],
+    "match_options": [
+      "Asparagine",
+      "Serine",
+      "Arginine",
+      "Tryptophan",
+      "Cysteine",
+      "Glutamine",
+      "Aspartic Acid",
+      "Isoleucine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Isoleucine.\nAmino Acid 2: Aspartic Acid.\nAmino Acid 3: Glutamine.\nAmino Acid 4: Tryptophan.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q15",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "c1cc(ccc1C[C@@H](C(=O)O)N)O",
+        "correctAnswer": "Tyrosine"
+      },
+      {
+        "smiles": "c1ccc(cc1)C[C@@H](C(=O)O)N",
+        "correctAnswer": "Phenylalanine"
+      },
+      {
+        "smiles": "NCC(=O)O",
+        "correctAnswer": "Glycine"
+      },
+      {
+        "smiles": "N=C(N)NCCC[C@@H](C(=O)O)N",
+        "correctAnswer": "Arginine"
+      }
+    ],
+    "match_options": [
+      "Lysine",
+      "Tyrosine",
+      "Isoleucine",
+      "Phenylalanine",
+      "Proline",
+      "Serine",
+      "Glycine",
+      "Arginine"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acids matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying amino acids by structure and side chains.",
+      "process": "Amino Acid 1: Tyrosine.\nAmino Acid 2: Phenylalanine.\nAmino Acid 3: Glycine.\nAmino Acid 4: Arginine.",
+      "result": "Amino acids matched successfully."
+    }
+  },
+  {
+    "question_id": "ch43_q16",
+    "topic": "Amino Acids & Peptides",
+    "difficulty_level": "Medium",
+    "question_text": "Match each amino acid structure below to its correct name.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
         "smiles": "C(C(=O)N)[C@@H](C(=O)O)N",
         "correctAnswer": "Asparagine"
       },
@@ -26,13 +806,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Glutamine",
+      "Glutamic Acid",
+      "Cysteine",
       "Lysine",
       "Asparagine",
       "Serine",
       "Alanine",
-      "Isoleucine",
-      "Glutamic Acid",
-      "Cysteine"
+      "Isoleucine"
     ],
     "options": [
       {
@@ -53,7 +833,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q2",
+    "question_id": "ch43_q17",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -77,14 +857,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Threonine",
-      "Arginine",
-      "Leucine",
       "Glycine",
       "Lysine",
+      "Threonine",
+      "Arginine",
       "Aspartic Acid",
-      "Histidine",
-      "Phenylalanine"
+      "Phenylalanine",
+      "Leucine",
+      "Histidine"
     ],
     "options": [
       {
@@ -105,7 +885,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q3",
+    "question_id": "ch43_q18",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -129,14 +909,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tryptophan",
-      "Alanine",
       "Proline",
-      "Arginine",
-      "Serine",
+      "Phenylalanine",
       "Glutamic Acid",
+      "Tryptophan",
       "Valine",
-      "Phenylalanine"
+      "Serine",
+      "Alanine",
+      "Arginine"
     ],
     "options": [
       {
@@ -157,7 +937,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q4",
+    "question_id": "ch43_q19",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -181,14 +961,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Asparagine",
-      "Alanine",
-      "Methionine",
-      "Cysteine",
-      "Glycine",
+      "Histidine",
       "Valine",
-      "Leucine",
-      "Histidine"
+      "Asparagine",
+      "Cysteine",
+      "Methionine",
+      "Alanine",
+      "Glycine",
+      "Leucine"
     ],
     "options": [
       {
@@ -209,7 +989,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q5",
+    "question_id": "ch43_q20",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -233,14 +1013,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tyrosine",
-      "Serine",
-      "Glycine",
       "Glutamine",
-      "Histidine",
+      "Tyrosine",
       "Glutamic Acid",
+      "Isoleucine",
+      "Glycine",
+      "Serine",
       "Methionine",
-      "Isoleucine"
+      "Histidine"
     ],
     "options": [
       {
@@ -261,7 +1041,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q6",
+    "question_id": "ch43_q21",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -285,14 +1065,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glycine",
       "Glutamic Acid",
-      "Lysine",
-      "Valine",
       "Histidine",
       "Methionine",
       "Threonine",
-      "Asparagine"
+      "Valine",
+      "Asparagine",
+      "Glycine",
+      "Lysine"
     ],
     "options": [
       {
@@ -313,7 +1093,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q7",
+    "question_id": "ch43_q22",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -337,14 +1117,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Asparagine",
+      "Leucine",
       "Isoleucine",
+      "Histidine",
+      "Tryptophan",
       "Alanine",
       "Glutamic Acid",
-      "Serine",
-      "Asparagine",
-      "Histidine",
-      "Leucine",
-      "Tryptophan"
+      "Serine"
     ],
     "options": [
       {
@@ -365,7 +1145,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q8",
+    "question_id": "ch43_q23",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -389,13 +1169,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tyrosine",
       "Glutamic Acid",
       "Aspartic Acid",
       "Histidine",
-      "Methionine",
-      "Tryptophan",
       "Valine",
+      "Tryptophan",
+      "Tyrosine",
+      "Methionine",
       "Cysteine"
     ],
     "options": [
@@ -417,7 +1197,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q9",
+    "question_id": "ch43_q24",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -441,14 +1221,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Valine",
-      "Phenylalanine",
-      "Isoleucine",
+      "Glutamic Acid",
       "Leucine",
-      "Alanine",
       "Lysine",
       "Glycine",
-      "Glutamic Acid"
+      "Valine",
+      "Alanine",
+      "Isoleucine",
+      "Phenylalanine"
     ],
     "options": [
       {
@@ -469,7 +1249,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q10",
+    "question_id": "ch43_q25",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -493,14 +1273,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tyrosine",
-      "Alanine",
-      "Asparagine",
-      "Serine",
-      "Methionine",
-      "Histidine",
       "Glutamine",
-      "Valine"
+      "Valine",
+      "Histidine",
+      "Tyrosine",
+      "Serine",
+      "Asparagine",
+      "Methionine",
+      "Alanine"
     ],
     "options": [
       {
@@ -521,7 +1301,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q11",
+    "question_id": "ch43_q26",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -545,14 +1325,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Phenylalanine",
       "Arginine",
       "Glutamine",
-      "Isoleucine",
-      "Proline",
+      "Glycine",
       "Asparagine",
-      "Phenylalanine",
+      "Proline",
       "Aspartic Acid",
-      "Glycine"
+      "Isoleucine"
     ],
     "options": [
       {
@@ -573,7 +1353,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q12",
+    "question_id": "ch43_q27",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -597,13 +1377,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Lysine",
-      "Asparagine",
-      "Glutamine",
       "Alanine",
+      "Asparagine",
       "Glutamic Acid",
-      "Tyrosine",
+      "Lysine",
       "Proline",
+      "Tyrosine",
+      "Glutamine",
       "Cysteine"
     ],
     "options": [
@@ -625,7 +1405,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q13",
+    "question_id": "ch43_q28",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -649,14 +1429,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Serine",
-      "Asparagine",
       "Tyrosine",
-      "Glycine",
+      "Arginine",
+      "Serine",
       "Alanine",
+      "Asparagine",
       "Methionine",
-      "Proline",
-      "Arginine"
+      "Glycine",
+      "Proline"
     ],
     "options": [
       {
@@ -677,7 +1457,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q14",
+    "question_id": "ch43_q29",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -701,14 +1481,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tyrosine",
-      "Methionine",
       "Tryptophan",
+      "Methionine",
       "Lysine",
-      "Arginine",
       "Alanine",
-      "Proline",
-      "Histidine"
+      "Histidine",
+      "Tyrosine",
+      "Arginine",
+      "Proline"
     ],
     "options": [
       {
@@ -729,7 +1509,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q15",
+    "question_id": "ch43_q30",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -754,13 +1534,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Cysteine",
+      "Glutamine",
       "Threonine",
       "Tyrosine",
-      "Alanine",
-      "Asparagine",
       "Valine",
-      "Glutamine",
-      "Aspartic Acid"
+      "Alanine",
+      "Aspartic Acid",
+      "Asparagine"
     ],
     "options": [
       {
@@ -781,7 +1561,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q16",
+    "question_id": "ch43_q31",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -808,11 +1588,11 @@ const CHAPTER_43_QUESTIONS = [
       "Arginine",
       "Glycine",
       "Methionine",
-      "Serine",
-      "Aspartic Acid",
       "Glutamine",
+      "Alanine",
       "Glutamic Acid",
-      "Alanine"
+      "Aspartic Acid",
+      "Serine"
     ],
     "options": [
       {
@@ -833,7 +1613,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q17",
+    "question_id": "ch43_q32",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -857,14 +1637,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Valine",
-      "Arginine",
-      "Asparagine",
       "Glycine",
+      "Asparagine",
       "Serine",
       "Glutamic Acid",
-      "Isoleucine",
-      "Lysine"
+      "Lysine",
+      "Arginine",
+      "Valine",
+      "Isoleucine"
     ],
     "options": [
       {
@@ -885,7 +1665,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q18",
+    "question_id": "ch43_q33",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -910,13 +1690,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Phenylalanine",
-      "Threonine",
       "Glycine",
-      "Leucine",
       "Serine",
+      "Threonine",
+      "Leucine",
+      "Tryptophan",
       "Asparagine",
-      "Glutamine",
-      "Tryptophan"
+      "Glutamine"
     ],
     "options": [
       {
@@ -937,7 +1717,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q19",
+    "question_id": "ch43_q34",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -961,14 +1741,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Phenylalanine",
-      "Proline",
       "Arginine",
-      "Glutamine",
+      "Methionine",
+      "Proline",
       "Tryptophan",
       "Tyrosine",
-      "Alanine",
-      "Methionine"
+      "Glutamine",
+      "Phenylalanine",
+      "Alanine"
     ],
     "options": [
       {
@@ -989,7 +1769,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q20",
+    "question_id": "ch43_q35",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1013,14 +1793,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Isoleucine",
+      "Histidine",
       "Tyrosine",
       "Arginine",
-      "Serine",
-      "Cysteine",
-      "Isoleucine",
-      "Threonine",
       "Valine",
-      "Histidine"
+      "Threonine",
+      "Cysteine",
+      "Serine"
     ],
     "options": [
       {
@@ -1041,7 +1821,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q21",
+    "question_id": "ch43_q36",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1066,13 +1846,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Glutamic Acid",
-      "Glycine",
-      "Cysteine",
       "Glutamine",
-      "Methionine",
+      "Isoleucine",
       "Tryptophan",
-      "Serine",
-      "Isoleucine"
+      "Methionine",
+      "Cysteine",
+      "Glycine",
+      "Serine"
     ],
     "options": [
       {
@@ -1093,7 +1873,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q22",
+    "question_id": "ch43_q37",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1117,14 +1897,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Arginine",
-      "Aspartic Acid",
-      "Lysine",
-      "Leucine",
-      "Methionine",
-      "Isoleucine",
       "Valine",
-      "Glycine"
+      "Leucine",
+      "Aspartic Acid",
+      "Glycine",
+      "Arginine",
+      "Lysine",
+      "Isoleucine",
+      "Methionine"
     ],
     "options": [
       {
@@ -1145,7 +1925,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q23",
+    "question_id": "ch43_q38",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1169,14 +1949,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Valine",
-      "Phenylalanine",
-      "Alanine",
       "Glutamine",
-      "Lysine",
       "Histidine",
-      "Arginine",
-      "Methionine"
+      "Lysine",
+      "Alanine",
+      "Methionine",
+      "Phenylalanine",
+      "Valine",
+      "Arginine"
     ],
     "options": [
       {
@@ -1197,7 +1977,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q24",
+    "question_id": "ch43_q39",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1221,13 +2001,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Isoleucine",
+      "Glycine",
       "Lysine",
       "Proline",
-      "Tryptophan",
       "Arginine",
       "Glutamic Acid",
-      "Glycine",
-      "Isoleucine",
+      "Tryptophan",
       "Aspartic Acid"
     ],
     "options": [
@@ -1249,7 +2029,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q25",
+    "question_id": "ch43_q40",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1273,13 +2053,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glutamic Acid",
-      "Isoleucine",
       "Cysteine",
+      "Leucine",
       "Alanine",
       "Lysine",
+      "Isoleucine",
       "Phenylalanine",
-      "Leucine",
+      "Glutamic Acid",
       "Aspartic Acid"
     ],
     "options": [
@@ -1301,7 +2081,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q26",
+    "question_id": "ch43_q41",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1325,14 +2105,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Alanine",
-      "Glutamic Acid",
-      "Serine",
-      "Arginine",
       "Tryptophan",
-      "Isoleucine",
+      "Glutamic Acid",
       "Histidine",
-      "Phenylalanine"
+      "Arginine",
+      "Serine",
+      "Phenylalanine",
+      "Isoleucine",
+      "Alanine"
     ],
     "options": [
       {
@@ -1353,7 +2133,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q27",
+    "question_id": "ch43_q42",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1377,13 +2157,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tyrosine",
-      "Glutamic Acid",
-      "Arginine",
-      "Methionine",
+      "Glutamine",
       "Serine",
       "Glycine",
-      "Glutamine",
+      "Arginine",
+      "Tyrosine",
+      "Glutamic Acid",
+      "Methionine",
       "Cysteine"
     ],
     "options": [
@@ -1405,7 +2185,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q28",
+    "question_id": "ch43_q43",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1429,14 +2209,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Methionine",
+      "Tyrosine",
+      "Alanine",
+      "Threonine",
       "Lysine",
       "Tryptophan",
-      "Tyrosine",
       "Arginine",
-      "Alanine",
-      "Glutamic Acid",
-      "Methionine",
-      "Threonine"
+      "Glutamic Acid"
     ],
     "options": [
       {
@@ -1457,7 +2237,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q29",
+    "question_id": "ch43_q44",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1481,14 +2261,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Aspartic Acid",
-      "Proline",
-      "Cysteine",
-      "Methionine",
-      "Isoleucine",
       "Alanine",
+      "Isoleucine",
+      "Aspartic Acid",
+      "Methionine",
+      "Proline",
       "Asparagine",
-      "Arginine"
+      "Arginine",
+      "Cysteine"
     ],
     "options": [
       {
@@ -1509,7 +2289,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q30",
+    "question_id": "ch43_q45",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1533,14 +2313,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Methionine",
       "Histidine",
       "Alanine",
-      "Methionine",
-      "Valine",
-      "Asparagine",
       "Glutamine",
       "Serine",
-      "Isoleucine"
+      "Isoleucine",
+      "Valine",
+      "Asparagine"
     ],
     "options": [
       {
@@ -1561,7 +2341,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q31",
+    "question_id": "ch43_q46",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1585,14 +2365,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Leucine",
+      "Aspartic Acid",
+      "Histidine",
       "Isoleucine",
       "Arginine",
       "Serine",
-      "Aspartic Acid",
-      "Histidine",
-      "Tryptophan",
-      "Leucine",
-      "Glycine"
+      "Glycine",
+      "Tryptophan"
     ],
     "options": [
       {
@@ -1613,7 +2393,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q32",
+    "question_id": "ch43_q47",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1638,13 +2418,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Tryptophan",
+      "Threonine",
       "Tyrosine",
       "Isoleucine",
-      "Glutamine",
       "Proline",
-      "Threonine",
-      "Glutamic Acid",
-      "Methionine"
+      "Glutamine",
+      "Methionine",
+      "Glutamic Acid"
     ],
     "options": [
       {
@@ -1665,7 +2445,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q33",
+    "question_id": "ch43_q48",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1689,14 +2469,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Proline",
+      "Asparagine",
+      "Glycine",
+      "Isoleucine",
+      "Cysteine",
       "Methionine",
       "Histidine",
-      "Proline",
-      "Valine",
-      "Cysteine",
-      "Glycine",
-      "Asparagine",
-      "Isoleucine"
+      "Valine"
     ],
     "options": [
       {
@@ -1717,7 +2497,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q34",
+    "question_id": "ch43_q49",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1742,13 +2522,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Threonine",
-      "Phenylalanine",
-      "Lysine",
       "Tryptophan",
-      "Aspartic Acid",
       "Isoleucine",
+      "Lysine",
+      "Aspartic Acid",
       "Histidine",
-      "Arginine"
+      "Arginine",
+      "Phenylalanine"
     ],
     "options": [
       {
@@ -1769,7 +2549,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q35",
+    "question_id": "ch43_q50",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1793,14 +2573,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Aspartic Acid",
       "Glycine",
       "Threonine",
-      "Aspartic Acid",
+      "Lysine",
+      "Glutamic Acid",
       "Histidine",
       "Tyrosine",
-      "Glutamic Acid",
-      "Asparagine",
-      "Lysine"
+      "Asparagine"
     ],
     "options": [
       {
@@ -1821,7 +2601,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q36",
+    "question_id": "ch43_q51",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1845,14 +2625,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Phenylalanine",
       "Leucine",
+      "Glycine",
+      "Phenylalanine",
       "Histidine",
+      "Serine",
       "Arginine",
       "Cysteine",
-      "Glycine",
-      "Valine",
-      "Serine"
+      "Valine"
     ],
     "options": [
       {
@@ -1873,7 +2653,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q37",
+    "question_id": "ch43_q52",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1897,14 +2677,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Phenylalanine",
-      "Aspartic Acid",
-      "Methionine",
-      "Glycine",
-      "Asparagine",
+      "Alanine",
       "Isoleucine",
       "Tryptophan",
-      "Alanine"
+      "Glycine",
+      "Methionine",
+      "Asparagine",
+      "Aspartic Acid",
+      "Phenylalanine"
     ],
     "options": [
       {
@@ -1925,7 +2705,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q38",
+    "question_id": "ch43_q53",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -1949,14 +2729,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glutamic Acid",
-      "Threonine",
       "Asparagine",
-      "Leucine",
+      "Threonine",
       "Proline",
       "Isoleucine",
-      "Cysteine",
-      "Aspartic Acid"
+      "Glutamic Acid",
+      "Leucine",
+      "Aspartic Acid",
+      "Cysteine"
     ],
     "options": [
       {
@@ -1977,7 +2757,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q39",
+    "question_id": "ch43_q54",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2001,14 +2781,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Asparagine",
+      "Phenylalanine",
+      "Glutamine",
+      "Glutamic Acid",
       "Leucine",
       "Glycine",
-      "Alanine",
-      "Phenylalanine",
       "Methionine",
-      "Glutamic Acid",
-      "Glutamine"
+      "Asparagine",
+      "Alanine"
     ],
     "options": [
       {
@@ -2029,7 +2809,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q40",
+    "question_id": "ch43_q55",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2053,13 +2833,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Tyrosine",
+      "Leucine",
       "Phenylalanine",
       "Cysteine",
-      "Glycine",
-      "Tyrosine",
-      "Proline",
-      "Leucine",
       "Valine",
+      "Glycine",
+      "Proline",
       "Glutamine"
     ],
     "options": [
@@ -2081,7 +2861,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q41",
+    "question_id": "ch43_q56",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2105,14 +2885,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Leucine",
-      "Lysine",
-      "Aspartic Acid",
-      "Cysteine",
-      "Phenylalanine",
+      "Glutamine",
       "Methionine",
+      "Phenylalanine",
       "Arginine",
-      "Glutamine"
+      "Leucine",
+      "Aspartic Acid",
+      "Lysine",
+      "Cysteine"
     ],
     "options": [
       {
@@ -2133,7 +2913,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q42",
+    "question_id": "ch43_q57",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2157,14 +2937,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Methionine",
-      "Proline",
-      "Valine",
-      "Isoleucine",
-      "Tyrosine",
-      "Histidine",
+      "Asparagine",
       "Glutamine",
-      "Asparagine"
+      "Isoleucine",
+      "Valine",
+      "Tyrosine",
+      "Proline",
+      "Methionine",
+      "Histidine"
     ],
     "options": [
       {
@@ -2185,7 +2965,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q43",
+    "question_id": "ch43_q58",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2209,14 +2989,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glutamine",
-      "Phenylalanine",
-      "Aspartic Acid",
-      "Threonine",
       "Alanine",
-      "Serine",
       "Asparagine",
-      "Glycine"
+      "Aspartic Acid",
+      "Glycine",
+      "Phenylalanine",
+      "Glutamine",
+      "Serine",
+      "Threonine"
     ],
     "options": [
       {
@@ -2237,7 +3017,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q44",
+    "question_id": "ch43_q59",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2261,14 +3041,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Methionine",
-      "Isoleucine",
-      "Phenylalanine",
-      "Tryptophan",
-      "Glycine",
-      "Leucine",
       "Cysteine",
-      "Proline"
+      "Phenylalanine",
+      "Proline",
+      "Leucine",
+      "Isoleucine",
+      "Glycine",
+      "Methionine",
+      "Tryptophan"
     ],
     "options": [
       {
@@ -2289,7 +3069,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q45",
+    "question_id": "ch43_q60",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2313,14 +3093,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Methionine",
-      "Glycine",
-      "Tyrosine",
       "Aspartic Acid",
+      "Methionine",
       "Alanine",
       "Arginine",
       "Leucine",
-      "Serine"
+      "Serine",
+      "Glycine",
+      "Tyrosine"
     ],
     "options": [
       {
@@ -2341,7 +3121,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q46",
+    "question_id": "ch43_q61",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2366,13 +3146,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Asparagine",
-      "Methionine",
-      "Aspartic Acid",
-      "Lysine",
       "Arginine",
       "Cysteine",
-      "Glycine",
-      "Threonine"
+      "Aspartic Acid",
+      "Lysine",
+      "Methionine",
+      "Threonine",
+      "Glycine"
     ],
     "options": [
       {
@@ -2393,7 +3173,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q47",
+    "question_id": "ch43_q62",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2417,14 +3197,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Aspartic Acid",
-      "Cysteine",
-      "Histidine",
       "Leucine",
+      "Serine",
+      "Histidine",
       "Threonine",
       "Glutamine",
-      "Lysine",
-      "Serine"
+      "Aspartic Acid",
+      "Cysteine",
+      "Lysine"
     ],
     "options": [
       {
@@ -2445,7 +3225,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q48",
+    "question_id": "ch43_q63",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2469,14 +3249,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Methionine",
-      "Leucine",
-      "Histidine",
-      "Lysine",
-      "Serine",
-      "Tryptophan",
       "Alanine",
-      "Glycine"
+      "Glycine",
+      "Serine",
+      "Methionine",
+      "Lysine",
+      "Histidine",
+      "Leucine",
+      "Tryptophan"
     ],
     "options": [
       {
@@ -2497,7 +3277,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q49",
+    "question_id": "ch43_q64",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2521,14 +3301,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Proline",
-      "Phenylalanine",
-      "Arginine",
-      "Serine",
-      "Aspartic Acid",
       "Tryptophan",
+      "Proline",
+      "Aspartic Acid",
+      "Phenylalanine",
       "Isoleucine",
-      "Asparagine"
+      "Serine",
+      "Asparagine",
+      "Arginine"
     ],
     "options": [
       {
@@ -2549,7 +3329,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q50",
+    "question_id": "ch43_q65",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2573,14 +3353,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Arginine",
-      "Glycine",
-      "Leucine",
-      "Methionine",
-      "Histidine",
       "Lysine",
+      "Methionine",
+      "Glycine",
       "Asparagine",
-      "Phenylalanine"
+      "Phenylalanine",
+      "Arginine",
+      "Leucine",
+      "Histidine"
     ],
     "options": [
       {
@@ -2601,7 +3381,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q51",
+    "question_id": "ch43_q66",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2626,13 +3406,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Cysteine",
-      "Histidine",
-      "Glutamine",
-      "Proline",
-      "Isoleucine",
       "Asparagine",
+      "Isoleucine",
+      "Proline",
       "Tyrosine",
-      "Threonine"
+      "Histidine",
+      "Threonine",
+      "Glutamine"
     ],
     "options": [
       {
@@ -2653,7 +3433,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q52",
+    "question_id": "ch43_q67",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2677,14 +3457,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Arginine",
       "Aspartic Acid",
-      "Proline",
-      "Phenylalanine",
-      "Asparagine",
       "Threonine",
-      "Histidine",
+      "Phenylalanine",
       "Glutamic Acid",
-      "Arginine"
+      "Proline",
+      "Asparagine",
+      "Histidine"
     ],
     "options": [
       {
@@ -2705,7 +3485,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q53",
+    "question_id": "ch43_q68",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2729,14 +3509,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tryptophan",
-      "Serine",
       "Aspartic Acid",
-      "Methionine",
-      "Glutamine",
-      "Alanine",
       "Phenylalanine",
-      "Isoleucine"
+      "Isoleucine",
+      "Tryptophan",
+      "Glutamine",
+      "Serine",
+      "Methionine",
+      "Alanine"
     ],
     "options": [
       {
@@ -2757,7 +3537,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q54",
+    "question_id": "ch43_q69",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2781,13 +3561,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Histidine",
-      "Tyrosine",
-      "Arginine",
       "Leucine",
+      "Arginine",
+      "Histidine",
+      "Alanine",
       "Aspartic Acid",
       "Threonine",
-      "Alanine",
+      "Tyrosine",
       "Proline"
     ],
     "options": [
@@ -2809,7 +3589,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q55",
+    "question_id": "ch43_q70",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2833,14 +3613,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tryptophan",
-      "Leucine",
-      "Methionine",
-      "Cysteine",
-      "Serine",
-      "Arginine",
       "Proline",
-      "Isoleucine"
+      "Tryptophan",
+      "Cysteine",
+      "Methionine",
+      "Leucine",
+      "Arginine",
+      "Isoleucine",
+      "Serine"
     ],
     "options": [
       {
@@ -2861,7 +3641,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q56",
+    "question_id": "ch43_q71",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2885,14 +3665,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Valine",
-      "Threonine",
-      "Methionine",
-      "Lysine",
       "Alanine",
       "Glycine",
-      "Glutamic Acid",
-      "Leucine"
+      "Leucine",
+      "Threonine",
+      "Lysine",
+      "Methionine",
+      "Valine",
+      "Glutamic Acid"
     ],
     "options": [
       {
@@ -2913,7 +3693,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q57",
+    "question_id": "ch43_q72",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2937,14 +3717,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glutamic Acid",
       "Aspartic Acid",
-      "Cysteine",
       "Arginine",
-      "Isoleucine",
-      "Leucine",
+      "Cysteine",
+      "Histidine",
       "Tyrosine",
-      "Histidine"
+      "Glutamic Acid",
+      "Isoleucine",
+      "Leucine"
     ],
     "options": [
       {
@@ -2965,7 +3745,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q58",
+    "question_id": "ch43_q73",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -2989,14 +3769,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Valine",
-      "Methionine",
-      "Leucine",
-      "Glycine",
-      "Phenylalanine",
-      "Histidine",
+      "Isoleucine",
       "Asparagine",
-      "Isoleucine"
+      "Glycine",
+      "Methionine",
+      "Histidine",
+      "Phenylalanine",
+      "Leucine",
+      "Valine"
     ],
     "options": [
       {
@@ -3017,7 +3797,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q59",
+    "question_id": "ch43_q74",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3041,14 +3821,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Histidine",
       "Tryptophan",
       "Valine",
       "Serine",
-      "Histidine",
-      "Glycine",
       "Methionine",
       "Arginine",
-      "Threonine"
+      "Threonine",
+      "Glycine"
     ],
     "options": [
       {
@@ -3069,7 +3849,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q60",
+    "question_id": "ch43_q75",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3093,14 +3873,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Phenylalanine",
+      "Methionine",
+      "Glycine",
+      "Threonine",
       "Aspartic Acid",
       "Lysine",
-      "Threonine",
-      "Tyrosine",
-      "Methionine",
-      "Phenylalanine",
-      "Glycine",
-      "Alanine"
+      "Alanine",
+      "Tyrosine"
     ],
     "options": [
       {
@@ -3121,7 +3901,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q61",
+    "question_id": "ch43_q76",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3145,14 +3925,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isoleucine",
-      "Proline",
-      "Lysine",
       "Leucine",
-      "Glycine",
-      "Asparagine",
+      "Isoleucine",
       "Cysteine",
-      "Alanine"
+      "Glycine",
+      "Alanine",
+      "Proline",
+      "Asparagine",
+      "Lysine"
     ],
     "options": [
       {
@@ -3173,7 +3953,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q62",
+    "question_id": "ch43_q77",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3197,14 +3977,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cysteine",
-      "Phenylalanine",
-      "Valine",
       "Leucine",
+      "Valine",
+      "Cysteine",
+      "Alanine",
       "Histidine",
-      "Lysine",
+      "Phenylalanine",
       "Threonine",
-      "Alanine"
+      "Lysine"
     ],
     "options": [
       {
@@ -3225,7 +4005,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q63",
+    "question_id": "ch43_q78",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3249,14 +4029,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Asparagine",
-      "Phenylalanine",
-      "Glutamine",
-      "Isoleucine",
       "Leucine",
-      "Aspartic Acid",
+      "Histidine",
+      "Isoleucine",
       "Lysine",
-      "Histidine"
+      "Glutamine",
+      "Asparagine",
+      "Aspartic Acid",
+      "Phenylalanine"
     ],
     "options": [
       {
@@ -3277,7 +4057,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q64",
+    "question_id": "ch43_q79",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3301,13 +4081,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Arginine",
-      "Phenylalanine",
       "Lysine",
-      "Aspartic Acid",
       "Valine",
       "Glutamic Acid",
+      "Arginine",
       "Methionine",
+      "Phenylalanine",
+      "Aspartic Acid",
       "Threonine"
     ],
     "options": [
@@ -3329,7 +4109,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q65",
+    "question_id": "ch43_q80",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3353,14 +4133,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Tyrosine",
       "Serine",
-      "Lysine",
-      "Cysteine",
+      "Leucine",
       "Threonine",
       "Histidine",
-      "Leucine",
       "Isoleucine",
-      "Tyrosine"
+      "Lysine",
+      "Cysteine"
     ],
     "options": [
       {
@@ -3381,7 +4161,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q66",
+    "question_id": "ch43_q81",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3405,14 +4185,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Alanine",
-      "Asparagine",
-      "Phenylalanine",
-      "Glutamic Acid",
       "Tyrosine",
-      "Leucine",
       "Threonine",
-      "Cysteine"
+      "Leucine",
+      "Phenylalanine",
+      "Cysteine",
+      "Alanine",
+      "Glutamic Acid",
+      "Asparagine"
     ],
     "options": [
       {
@@ -3433,7 +4213,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q67",
+    "question_id": "ch43_q82",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3457,14 +4237,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Proline",
-      "Threonine",
-      "Leucine",
-      "Glutamic Acid",
-      "Phenylalanine",
-      "Serine",
+      "Alanine",
       "Glycine",
-      "Alanine"
+      "Glutamic Acid",
+      "Proline",
+      "Phenylalanine",
+      "Leucine",
+      "Serine",
+      "Threonine"
     ],
     "options": [
       {
@@ -3485,7 +4265,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q68",
+    "question_id": "ch43_q83",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3509,14 +4289,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Methionine",
       "Histidine",
-      "Alanine",
-      "Asparagine",
-      "Tryptophan",
-      "Glutamic Acid",
-      "Valine",
       "Arginine",
-      "Methionine"
+      "Valine",
+      "Glutamic Acid",
+      "Tryptophan",
+      "Asparagine",
+      "Alanine"
     ],
     "options": [
       {
@@ -3537,7 +4317,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q69",
+    "question_id": "ch43_q84",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3561,14 +4341,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Proline",
-      "Valine",
+      "Glycine",
       "Glutamic Acid",
-      "Isoleucine",
-      "Arginine",
-      "Asparagine",
       "Cysteine",
-      "Glycine"
+      "Valine",
+      "Proline",
+      "Asparagine",
+      "Arginine",
+      "Isoleucine"
     ],
     "options": [
       {
@@ -3589,7 +4369,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q70",
+    "question_id": "ch43_q85",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3613,14 +4393,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Threonine",
-      "Glutamine",
-      "Tyrosine",
-      "Valine",
-      "Methionine",
       "Glycine",
+      "Serine",
+      "Threonine",
+      "Methionine",
+      "Glutamine",
       "Alanine",
-      "Serine"
+      "Valine",
+      "Tyrosine"
     ],
     "options": [
       {
@@ -3641,7 +4421,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q71",
+    "question_id": "ch43_q86",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3665,14 +4445,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Methionine",
-      "Serine",
-      "Asparagine",
-      "Threonine",
+      "Arginine",
       "Leucine",
-      "Proline",
+      "Serine",
+      "Threonine",
       "Aspartic Acid",
-      "Arginine"
+      "Methionine",
+      "Proline",
+      "Asparagine"
     ],
     "options": [
       {
@@ -3693,7 +4473,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q72",
+    "question_id": "ch43_q87",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3717,14 +4497,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Arginine",
-      "Methionine",
-      "Leucine",
-      "Serine",
       "Phenylalanine",
-      "Asparagine",
+      "Arginine",
+      "Glutamine",
+      "Leucine",
       "Proline",
-      "Glutamine"
+      "Serine",
+      "Methionine",
+      "Asparagine"
     ],
     "options": [
       {
@@ -3745,7 +4525,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q73",
+    "question_id": "ch43_q88",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3769,14 +4549,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Leucine",
-      "Phenylalanine",
-      "Tyrosine",
-      "Cysteine",
-      "Methionine",
-      "Proline",
       "Glutamic Acid",
-      "Isoleucine"
+      "Leucine",
+      "Isoleucine",
+      "Methionine",
+      "Cysteine",
+      "Phenylalanine",
+      "Proline",
+      "Tyrosine"
     ],
     "options": [
       {
@@ -3797,7 +4577,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q74",
+    "question_id": "ch43_q89",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3821,14 +4601,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tryptophan",
       "Proline",
+      "Glycine",
+      "Methionine",
       "Cysteine",
       "Asparagine",
+      "Tryptophan",
       "Phenylalanine",
-      "Glycine",
-      "Serine",
-      "Methionine"
+      "Serine"
     ],
     "options": [
       {
@@ -3849,7 +4629,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q75",
+    "question_id": "ch43_q90",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3874,13 +4654,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Tryptophan",
-      "Histidine",
+      "Serine",
       "Threonine",
       "Aspartic Acid",
-      "Alanine",
+      "Leucine",
       "Cysteine",
-      "Serine",
-      "Leucine"
+      "Histidine",
+      "Alanine"
     ],
     "options": [
       {
@@ -3901,7 +4681,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q76",
+    "question_id": "ch43_q91",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3925,14 +4705,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tryptophan",
-      "Arginine",
-      "Cysteine",
-      "Histidine",
       "Lysine",
-      "Tyrosine",
+      "Histidine",
+      "Cysteine",
+      "Arginine",
+      "Isoleucine",
       "Glycine",
-      "Isoleucine"
+      "Tryptophan",
+      "Tyrosine"
     ],
     "options": [
       {
@@ -3953,7 +4733,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q77",
+    "question_id": "ch43_q92",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -3977,14 +4757,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Phenylalanine",
       "Proline",
+      "Threonine",
+      "Isoleucine",
       "Glutamic Acid",
-      "Tyrosine",
       "Glycine",
       "Lysine",
-      "Threonine",
-      "Phenylalanine",
-      "Isoleucine"
+      "Tyrosine"
     ],
     "options": [
       {
@@ -4005,7 +4785,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q78",
+    "question_id": "ch43_q93",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -4029,14 +4809,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Aspartic Acid",
-      "Cysteine",
       "Leucine",
       "Asparagine",
-      "Valine",
-      "Glutamic Acid",
+      "Glycine",
       "Lysine",
-      "Glycine"
+      "Glutamic Acid",
+      "Valine",
+      "Aspartic Acid",
+      "Cysteine"
     ],
     "options": [
       {
@@ -4057,7 +4837,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q79",
+    "question_id": "ch43_q94",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -4081,14 +4861,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Alanine",
-      "Isoleucine",
-      "Aspartic Acid",
-      "Arginine",
-      "Tryptophan",
       "Tyrosine",
+      "Histidine",
+      "Alanine",
+      "Arginine",
       "Lysine",
-      "Histidine"
+      "Tryptophan",
+      "Isoleucine",
+      "Aspartic Acid"
     ],
     "options": [
       {
@@ -4109,7 +4889,7 @@ const CHAPTER_43_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch43_q80",
+    "question_id": "ch43_q95",
     "topic": "Amino Acids & Peptides",
     "difficulty_level": "Medium",
     "question_text": "Match each amino acid structure below to its correct name.",
@@ -4133,637 +4913,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isoleucine",
-      "Glutamine",
       "Valine",
       "Proline",
       "Serine",
-      "Lysine",
-      "Histidine",
-      "Leucine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Glutamine.\nAmino Acid 2: Isoleucine.\nAmino Acid 3: Lysine.\nAmino Acid 4: Valine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q81",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "N=C(N)NCCC[C@@H](C(=O)O)N",
-        "correctAnswer": "Arginine"
-      },
-      {
-        "smiles": "CS[C@@H](C(=O)O)N",
-        "correctAnswer": "Cysteine"
-      },
-      {
-        "smiles": "NCCCC[C@@H](C(=O)O)N",
-        "correctAnswer": "Lysine"
-      },
-      {
-        "smiles": "CC(C)[C@@H](C(=O)O)N",
-        "correctAnswer": "Valine"
-      }
-    ],
-    "match_options": [
-      "Cysteine",
-      "Valine",
-      "Phenylalanine",
-      "Lysine",
       "Isoleucine",
-      "Aspartic Acid",
-      "Histidine",
-      "Arginine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Arginine.\nAmino Acid 2: Cysteine.\nAmino Acid 3: Lysine.\nAmino Acid 4: Valine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q82",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "C(C(=O)O)[C@@H](C(=O)O)N",
-        "correctAnswer": "Aspartic Acid"
-      },
-      {
-        "smiles": "C1C[C@H](NC1)C(=O)O",
-        "correctAnswer": "Proline"
-      },
-      {
-        "smiles": "CSCC[C@@H](C(=O)O)N",
-        "correctAnswer": "Methionine"
-      },
-      {
-        "smiles": "CS[C@@H](C(=O)O)N",
-        "correctAnswer": "Cysteine"
-      }
-    ],
-    "match_options": [
-      "Threonine",
-      "Aspartic Acid",
-      "Proline",
       "Lysine",
-      "Cysteine",
-      "Arginine",
-      "Methionine",
-      "Glycine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Aspartic Acid.\nAmino Acid 2: Proline.\nAmino Acid 3: Methionine.\nAmino Acid 4: Cysteine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q83",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "C[C@@H](C(=O)O)N",
-        "correctAnswer": "Alanine"
-      },
-      {
-        "smiles": "C(C(=O)O)[C@@H](C(=O)O)N",
-        "correctAnswer": "Aspartic Acid"
-      },
-      {
-        "smiles": "CC[C@H](C)[C@@H](C(=O)O)N",
-        "correctAnswer": "Isoleucine"
-      },
-      {
-        "smiles": "CS[C@@H](C(=O)O)N",
-        "correctAnswer": "Cysteine"
-      }
-    ],
-    "match_options": [
-      "Proline",
-      "Isoleucine",
-      "Methionine",
-      "Cysteine",
-      "Serine",
-      "Alanine",
-      "Aspartic Acid",
-      "Asparagine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Alanine.\nAmino Acid 2: Aspartic Acid.\nAmino Acid 3: Isoleucine.\nAmino Acid 4: Cysteine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q84",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "C(CC(=O)O)[C@@H](C(=O)O)N",
-        "correctAnswer": "Glutamic Acid"
-      },
-      {
-        "smiles": "c1c(n[nH]c1)C[C@@H](C(=O)O)N",
-        "correctAnswer": "Histidine"
-      },
-      {
-        "smiles": "NCC(=O)O",
-        "correctAnswer": "Glycine"
-      },
-      {
-        "smiles": "c1ccc2c(c1)[nH]c(c2)C[C@@H](C(=O)O)N",
-        "correctAnswer": "Tryptophan"
-      }
-    ],
-    "match_options": [
-      "Glycine",
-      "Histidine",
-      "Tryptophan",
-      "Glutamic Acid",
       "Leucine",
-      "Aspartic Acid",
-      "Arginine",
-      "Lysine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Glutamic Acid.\nAmino Acid 2: Histidine.\nAmino Acid 3: Glycine.\nAmino Acid 4: Tryptophan.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q85",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "C(CC(=O)O)[C@@H](C(=O)O)N",
-        "correctAnswer": "Glutamic Acid"
-      },
-      {
-        "smiles": "C(CC(=O)N)[C@@H](C(=O)O)N",
-        "correctAnswer": "Glutamine"
-      },
-      {
-        "smiles": "CC(C)C[C@@H](C(=O)O)N",
-        "correctAnswer": "Leucine"
-      },
-      {
-        "smiles": "CS[C@@H](C(=O)O)N",
-        "correctAnswer": "Cysteine"
-      }
-    ],
-    "match_options": [
-      "Glutamic Acid",
-      "Glutamine",
       "Histidine",
-      "Leucine",
-      "Serine",
-      "Tryptophan",
-      "Cysteine",
-      "Threonine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Glutamic Acid.\nAmino Acid 2: Glutamine.\nAmino Acid 3: Leucine.\nAmino Acid 4: Cysteine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q86",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "CSCC[C@@H](C(=O)O)N",
-        "correctAnswer": "Methionine"
-      },
-      {
-        "smiles": "CS[C@@H](C(=O)O)N",
-        "correctAnswer": "Cysteine"
-      },
-      {
-        "smiles": "CC[C@H](C)[C@@H](C(=O)O)N",
-        "correctAnswer": "Isoleucine"
-      },
-      {
-        "smiles": "CC(C)C[C@@H](C(=O)O)N",
-        "correctAnswer": "Leucine"
-      }
-    ],
-    "match_options": [
-      "Glutamic Acid",
-      "Glycine",
-      "Serine",
-      "Histidine",
-      "Methionine",
-      "Leucine",
-      "Isoleucine",
-      "Cysteine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Methionine.\nAmino Acid 2: Cysteine.\nAmino Acid 3: Isoleucine.\nAmino Acid 4: Leucine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q87",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "CC[C@H](C)[C@@H](C(=O)O)N",
-        "correctAnswer": "Isoleucine"
-      },
-      {
-        "smiles": "NCC(=O)O",
-        "correctAnswer": "Glycine"
-      },
-      {
-        "smiles": "c1ccc2c(c1)[nH]c(c2)C[C@@H](C(=O)O)N",
-        "correctAnswer": "Tryptophan"
-      },
-      {
-        "smiles": "c1c(n[nH]c1)C[C@@H](C(=O)O)N",
-        "correctAnswer": "Histidine"
-      }
-    ],
-    "match_options": [
-      "Arginine",
-      "Asparagine",
-      "Glutamic Acid",
-      "Methionine",
-      "Glycine",
-      "Tryptophan",
-      "Histidine",
-      "Isoleucine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Isoleucine.\nAmino Acid 2: Glycine.\nAmino Acid 3: Tryptophan.\nAmino Acid 4: Histidine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q88",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "CC[C@H](C)[C@@H](C(=O)O)N",
-        "correctAnswer": "Isoleucine"
-      },
-      {
-        "smiles": "CSCC[C@@H](C(=O)O)N",
-        "correctAnswer": "Methionine"
-      },
-      {
-        "smiles": "CC(C)[C@@H](C(=O)O)N",
-        "correctAnswer": "Valine"
-      },
-      {
-        "smiles": "c1cc(ccc1C[C@@H](C(=O)O)N)O",
-        "correctAnswer": "Tyrosine"
-      }
-    ],
-    "match_options": [
-      "Valine",
-      "Glycine",
-      "Cysteine",
-      "Histidine",
-      "Tyrosine",
-      "Isoleucine",
-      "Glutamine",
-      "Methionine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Isoleucine.\nAmino Acid 2: Methionine.\nAmino Acid 3: Valine.\nAmino Acid 4: Tyrosine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q89",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "C[C@@H](C(=O)O)N",
-        "correctAnswer": "Alanine"
-      },
-      {
-        "smiles": "C[C@@H](O)[C@@H](C(=O)O)N",
-        "correctAnswer": "Threonine"
-      },
-      {
-        "smiles": "C(CC(=O)O)[C@@H](C(=O)O)N",
-        "correctAnswer": "Glutamic Acid"
-      },
-      {
-        "smiles": "CS[C@@H](C(=O)O)N",
-        "correctAnswer": "Cysteine"
-      }
-    ],
-    "match_options": [
-      "Glycine",
-      "Isoleucine",
-      "Cysteine",
-      "Threonine",
-      "Glutamic Acid",
-      "Tyrosine",
-      "Tryptophan",
-      "Alanine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Alanine.\nAmino Acid 2: Threonine.\nAmino Acid 3: Glutamic Acid.\nAmino Acid 4: Cysteine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q90",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "C(C(=O)N)[C@@H](C(=O)O)N",
-        "correctAnswer": "Asparagine"
-      },
-      {
-        "smiles": "C(C(=O)O)[C@@H](C(=O)O)N",
-        "correctAnswer": "Aspartic Acid"
-      },
-      {
-        "smiles": "NCCCC[C@@H](C(=O)O)N",
-        "correctAnswer": "Lysine"
-      },
-      {
-        "smiles": "C[C@@H](C(=O)O)N",
-        "correctAnswer": "Alanine"
-      }
-    ],
-    "match_options": [
-      "Arginine",
-      "Leucine",
-      "Cysteine",
-      "Aspartic Acid",
-      "Alanine",
-      "Lysine",
-      "Methionine",
-      "Asparagine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Asparagine.\nAmino Acid 2: Aspartic Acid.\nAmino Acid 3: Lysine.\nAmino Acid 4: Alanine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q91",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "c1c(n[nH]c1)C[C@@H](C(=O)O)N",
-        "correctAnswer": "Histidine"
-      },
-      {
-        "smiles": "C[C@@H](O)[C@@H](C(=O)O)N",
-        "correctAnswer": "Threonine"
-      },
-      {
-        "smiles": "NCCCC[C@@H](C(=O)O)N",
-        "correctAnswer": "Lysine"
-      },
-      {
-        "smiles": "CC[C@H](C)[C@@H](C(=O)O)N",
-        "correctAnswer": "Isoleucine"
-      }
-    ],
-    "match_options": [
-      "Histidine",
-      "Aspartic Acid",
-      "Lysine",
-      "Tryptophan",
-      "Alanine",
-      "Glycine",
-      "Threonine",
-      "Isoleucine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Histidine.\nAmino Acid 2: Threonine.\nAmino Acid 3: Lysine.\nAmino Acid 4: Isoleucine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q92",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "NCC(=O)O",
-        "correctAnswer": "Glycine"
-      },
-      {
-        "smiles": "CC[C@H](C)[C@@H](C(=O)O)N",
-        "correctAnswer": "Isoleucine"
-      },
-      {
-        "smiles": "C(C(=O)N)[C@@H](C(=O)O)N",
-        "correctAnswer": "Asparagine"
-      },
-      {
-        "smiles": "CSCC[C@@H](C(=O)O)N",
-        "correctAnswer": "Methionine"
-      }
-    ],
-    "match_options": [
-      "Histidine",
-      "Isoleucine",
-      "Tyrosine",
-      "Methionine",
-      "Arginine",
-      "Asparagine",
-      "Glycine",
       "Glutamine"
     ],
     "options": [
@@ -4780,163 +4936,7 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "feedback": {
       "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Glycine.\nAmino Acid 2: Isoleucine.\nAmino Acid 3: Asparagine.\nAmino Acid 4: Methionine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q93",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "N=C(N)NCCC[C@@H](C(=O)O)N",
-        "correctAnswer": "Arginine"
-      },
-      {
-        "smiles": "C(C(=O)N)[C@@H](C(=O)O)N",
-        "correctAnswer": "Asparagine"
-      },
-      {
-        "smiles": "c1ccc2c(c1)[nH]c(c2)C[C@@H](C(=O)O)N",
-        "correctAnswer": "Tryptophan"
-      },
-      {
-        "smiles": "C[C@@H](O)[C@@H](C(=O)O)N",
-        "correctAnswer": "Threonine"
-      }
-    ],
-    "match_options": [
-      "Methionine",
-      "Asparagine",
-      "Phenylalanine",
-      "Leucine",
-      "Tryptophan",
-      "Threonine",
-      "Glutamic Acid",
-      "Arginine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Arginine.\nAmino Acid 2: Asparagine.\nAmino Acid 3: Tryptophan.\nAmino Acid 4: Threonine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q94",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "C(CC(=O)O)[C@@H](C(=O)O)N",
-        "correctAnswer": "Glutamic Acid"
-      },
-      {
-        "smiles": "CC[C@H](C)[C@@H](C(=O)O)N",
-        "correctAnswer": "Isoleucine"
-      },
-      {
-        "smiles": "C(C(=O)N)[C@@H](C(=O)O)N",
-        "correctAnswer": "Asparagine"
-      },
-      {
-        "smiles": "CS[C@@H](C(=O)O)N",
-        "correctAnswer": "Cysteine"
-      }
-    ],
-    "match_options": [
-      "Phenylalanine",
-      "Threonine",
-      "Lysine",
-      "Glutamic Acid",
-      "Cysteine",
-      "Asparagine",
-      "Serine",
-      "Isoleucine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Glutamic Acid.\nAmino Acid 2: Isoleucine.\nAmino Acid 3: Asparagine.\nAmino Acid 4: Cysteine.",
-      "result": "Amino acids matched successfully."
-    }
-  },
-  {
-    "question_id": "ch43_q95",
-    "topic": "Amino Acids & Peptides",
-    "difficulty_level": "Medium",
-    "question_text": "Match each amino acid structure below to its correct name.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "CSCC[C@@H](C(=O)O)N",
-        "correctAnswer": "Methionine"
-      },
-      {
-        "smiles": "NCC(=O)O",
-        "correctAnswer": "Glycine"
-      },
-      {
-        "smiles": "C(C(=O)O)[C@@H](C(=O)O)N",
-        "correctAnswer": "Aspartic Acid"
-      },
-      {
-        "smiles": "CC(C)C[C@@H](C(=O)O)N",
-        "correctAnswer": "Leucine"
-      }
-    ],
-    "match_options": [
-      "Alanine",
-      "Arginine",
-      "Leucine",
-      "Aspartic Acid",
-      "Methionine",
-      "Histidine",
-      "Phenylalanine",
-      "Glycine"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect amino acids matching",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying amino acids by structure and side chains.",
-      "process": "Amino Acid 1: Methionine.\nAmino Acid 2: Glycine.\nAmino Acid 3: Aspartic Acid.\nAmino Acid 4: Leucine.",
+      "process": "Amino Acid 1: Glutamine.\nAmino Acid 2: Isoleucine.\nAmino Acid 3: Lysine.\nAmino Acid 4: Valine.",
       "result": "Amino acids matched successfully."
     }
   }

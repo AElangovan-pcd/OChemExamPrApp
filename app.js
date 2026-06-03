@@ -13,7 +13,8 @@ let state = {
     attempted: 0
   },
   activeFeedbackTab: 'context', // 'context', 'process', 'result'
-  appMode: 'practice',          // 'practice' or 'mock'
+  appMode: 'practice',          // 'practice' or 'mock',
+  topicSortMode: 'chapter',     // 'chapter' or 'alpha'
   mockExam: {
     active: false,
     questions: [],
@@ -28,6 +29,118 @@ let state = {
     history: []
   }
 };
+
+// Selections made in matching questions (Practice Mode)
+let matchingSelections = {};
+
+// Preprocess loaded questions to assign consistent OER chapter numbers matching McMurry OpenStax
+const CHAPTER_OER_MAP = {
+  1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10,
+  11: 11, 12: 12, 13: 13, 14: 14, 15: 15, 16: 16, 17: 17, 18: 18,
+  19: 3,   // ACS Nomenclature -> Ch 3
+  20: 1,   // ACS Structure & Hybridization -> Ch 1
+  21: 2,   // ACS Acids & Bases -> Ch 2
+  22: 5,   // ACS Stereochemistry -> Ch 5
+  23: 11,  // ACS Substitutions & Eliminations -> Ch 11
+  24: 8,   // ACS Electrophilic Additions -> Ch 8
+  25: 19,  // ACS Carbonyl Additions -> Ch 19 (Aldehydes and Ketones)
+  26: 21,  // ACS Carbonyl Substitutions -> Ch 21 (Carboxylic Acid Derivatives)
+  27: 22,  // ACS Enols & Enolates -> Ch 22 (Carbonyl Alpha-Substitution)
+  28: 16,  // ACS EAS & NAS -> Ch 16 (Chemistry of Benzene)
+  29: 10,  // ACS Free Radicals -> Ch 10 (Organohalides)
+  30: 17,  // ACS Oxidations & Reductions -> Ch 17 (Alcohols)
+  31: 12,  // ACS Spectroscopy -> Ch 12 (Spectroscopy Basics)
+  32: 9,   // ACS Synthesis & Qual -> Ch 9 (Alkynes)
+  33: 3,   // Nomenclature Matching -> Ch 3
+  34: 5,   // Stereochemistry Grids -> Ch 5
+  35: 13,  // Dynamic Spectroscopy -> Ch 13 (NMR)
+  36: 8,   // Alkenes Reactivity -> Ch 8
+  37: 11,  // Elimination/Substitution -> Ch 11
+  38: 17,  // Alcohols Prep/Reactions -> Ch 17
+  39: 21,  // Esterification -> Ch 21
+  40: 6,   // Thermodynamics -> Ch 6
+  41: 9,   // Synthetic Roadmaps -> Ch 9
+  42: 25,  // Carbohydrates -> Ch 25 (Biomolecules: Carbohydrates)
+  43: 26,  // Amino Acids -> Ch 26 (Biomolecules: Amino Acids & Proteins)
+  44: 16,  // EAS -> Ch 16
+  45: 17,  // Grignard -> Ch 17
+  46: 30,  // Diels-Alder / Pericyclic -> Ch 30 (Orbitals/Pericyclic)
+  47: 10,  // Radical Halogenation -> Ch 10
+  48: 9    // Synthetic Roadmaps -> Ch 9
+};
+
+// McMurry OpenStax Organic Chemistry Textbook Chapter Titles
+const OER_CHAPTER_TOPICS = {
+  1: "Structure and Bonding",
+  2: "Polar Covalent Bonds; Acids and Bases",
+  3: "Organic Compounds: Alkanes and Their Stereochemistry",
+  4: "Organic Compounds: Cycloalkanes and Their Stereochemistry",
+  5: "Stereochemistry at Tetrahedron Centers",
+  6: "An Overview of Organic Reactions",
+  7: "Alkenes: Structure and Reactivity",
+  8: "Alkenes: Reactions and Synthesis",
+  9: "Alkynes: An Introduction to Organic Synthesis",
+  10: "Organohalides",
+  11: "Reactions of Alkyl Halides: Nucleophilic Substitutions and Eliminations",
+  12: "Structure Determination: Mass Spectrometry and Infrared Spectroscopy",
+  13: "Structure Determination: Nuclear Magnetic Resonance Spectroscopy",
+  14: "Conjugated Dienes and Ultraviolet Spectroscopy",
+  15: "Benzene and Aromaticity",
+  16: "Chemistry of Benzene: Electrophilic Aromatic Substitution",
+  17: "Alcohols and Phenols",
+  18: "Ethers and Epoxides; Thiols and Sulfides",
+  19: "Aldehydes and Ketones: Nucleophilic Addition Reactions",
+  20: "Carboxylic Acids and Nitriles",
+  21: "Carboxylic Acid Derivatives: Nucleophilic Acyl Substitution Reactions",
+  22: "Carbonyl Alpha-Substitution Reactions",
+  23: "Carbonyl Condensation Reactions",
+  24: "Amines and Heterocycles",
+  25: "Biomolecules: Carbohydrates",
+  26: "Biomolecules: Amino Acids, Peptides, and Proteins",
+  27: "Biomolecules: Lipids",
+  28: "Biomolecules: Nucleic Acids",
+  29: "The Organic Chemistry of Metabolic Pathways",
+  30: "Orbitals and Organic Chemistry: Pericyclic Reactions",
+  31: "Synthetic Polymers"
+};
+
+function assignOERChapterNumbers() {
+  state.questions.forEach(q => {
+    let origCh = 1;
+    // Extract chapter from question_id: e.g. ch42_q1 or ch19_acs_q1
+    const match = q.question_id.match(/^ch(\d+)_/i);
+    if (match) {
+      origCh = parseInt(match[1]);
+    } else {
+      if (q.question_id.includes('carbocation')) origCh = 7;
+      else if (q.question_id.includes('sn2')) origCh = 11;
+      else if (q.question_id.includes('e2')) origCh = 11;
+      else if (q.question_id.includes('oxymercuration')) origCh = 8;
+      else if (q.question_id.includes('halogenation')) origCh = 8;
+    }
+    q.chapterNum = CHAPTER_OER_MAP[origCh] || 1;
+  });
+}
+
+function setTopicSort(mode) {
+  state.topicSortMode = mode;
+  
+  // Update button active classes
+  const btnChapter = document.getElementById('sort-by-chapter');
+  const btnAlpha = document.getElementById('sort-by-alpha');
+  
+  if (btnChapter && btnAlpha) {
+    if (mode === 'chapter') {
+      btnChapter.classList.add('active');
+      btnAlpha.classList.remove('active');
+    } else {
+      btnChapter.classList.remove('active');
+      btnAlpha.classList.add('active');
+    }
+  }
+  
+  buildTopicList();
+}
 
 // SmilesDrawer Settings
 let smilesDrawer = null;
@@ -195,6 +308,11 @@ document.addEventListener('DOMContentLoaded', () => {
     state.questions = [...state.questions, ...CHAPTER_48_QUESTIONS];
   }
 
+  // Assign OER chapter numbers to all loaded questions
+  assignOERChapterNumbers();
+
+
+
 
   // Initialize Smiles Drawer
   if (typeof SmilesDrawer !== 'undefined') {
@@ -259,6 +377,16 @@ function setupEventListeners() {
   if (mockQuitBtn) {
     mockQuitBtn.addEventListener('click', quitMockExam);
   }
+
+  // Topic sorting buttons
+  const btnChapter = document.getElementById('sort-by-chapter');
+  const btnAlpha = document.getElementById('sort-by-alpha');
+  if (btnChapter) {
+    btnChapter.addEventListener('click', () => setTopicSort('chapter'));
+  }
+  if (btnAlpha) {
+    btnAlpha.addEventListener('click', () => setTopicSort('alpha'));
+  }
 }
 
 // Stats persistence
@@ -308,11 +436,31 @@ function buildTopicList() {
   const listContainer = document.getElementById('topic-list');
   if (!listContainer) return;
 
-  // Extract unique topics
-  const topics = new Set();
+  // Extract unique OER chapters present in the loaded questions
+  const chaptersSet = new Set();
   state.questions.forEach(q => {
-    if (q.topic) topics.add(q.topic);
+    if (q.chapterNum) {
+      chaptersSet.add(q.chapterNum);
+    }
   });
+  const chapters = Array.from(chaptersSet);
+
+  // Map each chapter number to its textbook name
+  const topics = chapters.map(chNum => {
+    return {
+      chNum: chNum,
+      name: OER_CHAPTER_TOPICS[chNum] || `Chapter ${chNum}`
+    };
+  });
+
+  // Sort based on sort mode
+  if (state.topicSortMode === 'alpha') {
+    // Sort topics alphabetically A-Z
+    topics.sort((a, b) => a.name.localeCompare(b.name));
+  } else {
+    // Sort topics by OER Chapter number
+    topics.sort((a, b) => a.chNum - b.chNum);
+  }
 
   // Clear list
   listContainer.innerHTML = '';
@@ -320,16 +468,19 @@ function buildTopicList() {
   // Add 'All Topics' item
   const allItem = document.createElement('li');
   allItem.className = `topic-item ${state.selectedTopic === 'All Topics' ? 'active' : ''}`;
+  allItem.setAttribute('data-topic', 'All Topics');
   allItem.textContent = 'All Topics';
   allItem.addEventListener('click', () => selectTopic('All Topics'));
   listContainer.appendChild(allItem);
 
-  // Add individual topics
+  // Add sorted topics
   topics.forEach(topic => {
     const item = document.createElement('li');
-    item.className = `topic-item ${state.selectedTopic === topic ? 'active' : ''}`;
-    item.textContent = topic;
-    item.addEventListener('click', () => selectTopic(topic));
+    item.className = `topic-item ${state.selectedTopic === topic.name ? 'active' : ''}`;
+    item.setAttribute('data-topic', topic.name);
+    item.textContent = `Ch ${topic.chNum}: ${topic.name}`;
+    
+    item.addEventListener('click', () => selectTopic(topic.name));
     listContainer.appendChild(item);
   });
 }
@@ -408,14 +559,17 @@ function selectTopic(topic) {
   if (topic === 'All Topics') {
     baseQuestions = [...state.questions];
   } else {
-    baseQuestions = state.questions.filter(q => q.topic === topic);
+    baseQuestions = state.questions.filter(q => {
+      const qChapterName = OER_CHAPTER_TOPICS[q.chapterNum] || `Chapter ${q.chapterNum}`;
+      return qChapterName === topic;
+    });
   }
   state.filteredQuestions = shuffleQuestionsOptions(baseQuestions);
 
   // Update active styling in sidebar
   const items = document.querySelectorAll('.topic-item');
   items.forEach(item => {
-    if (item.textContent === topic) {
+    if (item.getAttribute('data-topic') === topic) {
       item.classList.add('active');
     } else {
       item.classList.remove('active');
@@ -437,6 +591,11 @@ function renderQuestion() {
   const container = document.getElementById('question-area');
   if (!container) return;
 
+  const isAnswered = state.answersSubmitted.hasOwnProperty(state.currentQuestionIndex);
+  if (!isAnswered) {
+    matchingSelections = {};
+  }
+
   if (state.filteredQuestions.length === 0) {
     container.innerHTML = `
       <div class="panel-card text-center" style="padding: 3rem;">
@@ -455,7 +614,6 @@ function renderQuestion() {
   }
 
   const q = state.filteredQuestions[state.currentQuestionIndex];
-  const isAnswered = state.answersSubmitted.hasOwnProperty(state.currentQuestionIndex);
   const selectedOptionId = state.answersSubmitted[state.currentQuestionIndex];
 
   // Update Progress
@@ -466,7 +624,8 @@ function renderQuestion() {
   let html = `
     <div class="panel-card question-card">
       <div class="question-meta">
-        <span class="tag tag-topic">${q.topic}</span>
+        <span class="tag tag-topic">Ch ${q.chapterNum}: ${OER_CHAPTER_TOPICS[q.chapterNum] || "General"}</span>
+        <span class="tag tag-subtopic" style="background: rgba(255, 255, 255, 0.04); color: var(--text-secondary); border: 1px solid rgba(255, 255, 255, 0.05);">${q.topic}</span>
         <span class="tag tag-difficulty ${q.difficulty_level}">${q.difficulty_level}</span>
       </div>
       
@@ -540,6 +699,9 @@ function renderQuestion() {
     // 3. Initialize visual engines (Charts, roadmaps, reaction schemes, matching structures)
     initVisualEngines(q);
 
+    // Bind matching events programmatically
+    bindMatchingEvents(container, false);
+
     // 4. Trigger KaTeX parsing
     if (typeof renderMathInElement !== 'undefined') {
       renderMathInElement(container, {
@@ -557,6 +719,37 @@ function renderQuestion() {
 
 // Wrapper for SmilesDrawer execution with standard checks
 function drawSMILESCanvas(smiles, canvasId, theme = 'light') {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+
+  const container = canvas.closest('.matching-structure') || canvas.parentElement;
+
+  if (smiles && smiles.startsWith('FISCHER:')) {
+    if (container) {
+      container.style.background = 'transparent';
+      container.style.border = 'none';
+      container.style.boxShadow = 'none';
+    }
+    drawFischerProjection(canvas, smiles.substring(8));
+    return;
+  }
+
+  if (smiles && smiles.startsWith('HAWORTH:')) {
+    if (container) {
+      container.style.background = 'transparent';
+      container.style.border = 'none';
+      container.style.boxShadow = 'none';
+    }
+    drawHaworthProjection(canvas, smiles.substring(8));
+    return;
+  }
+
+  // Restore defaults for standard SmilesDrawer
+  if (container) {
+    container.style.background = 'var(--bg-structure)';
+    container.style.border = '1px solid rgba(0, 0, 0, 0.1)';
+  }
+
   if (!smilesDrawer) return;
   
   try {
@@ -732,6 +925,7 @@ function handleCustomImport() {
 
     // Merge into local database
     state.questions = [...state.questions, ...validatedQuestions];
+    assignOERChapterNumbers();
     
     // Rebuild topic list and select the newly imported topic
     buildTopicList();
@@ -1202,6 +1396,9 @@ function renderMockExamQuestion() {
 
     initVisualEngines(q, 'mock-');
 
+    // Bind matching events programmatically
+    bindMatchingEvents(container, true);
+
     if (typeof renderMathInElement !== 'undefined') {
       renderMathInElement(container, {
         delimiters: [
@@ -1327,7 +1524,7 @@ function submitMockExam(autoSubmit = false) {
   // Compile topic stats for breakdown
   const topicStats = {};
   state.mockExam.questions.forEach((q, idx) => {
-    const topic = q.topic;
+    const topic = OER_CHAPTER_TOPICS[q.chapterNum] || "General Organic Chemistry";
     if (!topicStats[topic]) {
       topicStats[topic] = { correct: 0, total: 0 };
     }
@@ -1391,10 +1588,17 @@ function renderMockExamResults() {
   Object.keys(attempt.topicStats).forEach(topic => {
     const stats = attempt.topicStats[topic];
     const pct = Math.round((stats.correct / stats.total) * 100);
+    let displayChapter = 1;
+    for (const [chNum, name] of Object.entries(OER_CHAPTER_TOPICS)) {
+      if (name === topic) {
+        displayChapter = chNum;
+        break;
+      }
+    }
     topicBreakdownHtml += `
       <div class="topic-breakdown-item">
         <div class="topic-breakdown-info">
-          <span style="color: var(--text-primary); font-weight: 500;">${topic}</span>
+          <span style="color: var(--text-primary); font-weight: 500;">Ch ${displayChapter}: ${topic}</span>
           <span style="color: var(--text-secondary);">${stats.correct} / ${stats.total} (${pct}%)</span>
         </div>
         <div class="topic-breakdown-track">
@@ -1422,11 +1626,12 @@ function renderMockExamResults() {
       }
     }
 
+    const mainChTopic = OER_CHAPTER_TOPICS[q.chapterNum] || "General";
     qListHtml += `
       <button class="results-q-btn ${statusClass}" onclick="reviewMockQuestion(${idx})">
         <div style="font-size: 0.7rem; text-transform: uppercase; color: var(--text-secondary);">Q${idx + 1}</div>
         <div style="font-size: 1.1rem; font-weight: 800; margin: 0.15rem 0;">${icon}</div>
-        <div style="font-size: 0.65rem; color: var(--text-secondary); text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">${q.topic}</div>
+        <div style="font-size: 0.65rem; color: var(--text-secondary); text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">Ch ${q.chapterNum}: ${mainChTopic}</div>
       </button>
     `;
   });
@@ -1530,7 +1735,8 @@ function reviewMockQuestion(idx) {
       </div>
 
       <div class="question-meta" style="margin-bottom: 1rem;">
-        <span class="tag tag-topic">${q.topic}</span>
+        <span class="tag tag-topic">Ch ${q.chapterNum}: ${OER_CHAPTER_TOPICS[q.chapterNum] || "General"}</span>
+        <span class="tag tag-subtopic" style="background: rgba(255, 255, 255, 0.04); color: var(--text-secondary); border: 1px solid rgba(255, 255, 255, 0.05);">${q.topic}</span>
         <span class="tag tag-difficulty ${q.difficulty_level}">${q.difficulty_level}</span>
       </div>
 
@@ -1647,8 +1853,6 @@ function viewPastMockAttempt(historyIndex) {
 }
 
 // CUSTOM RENDER HELPERS AND DYNAMIC ENGINES FOR NEW QUESTION TYPES
-
-let matchingSelections = {};
 
 function selectMatchOption(index, val) {
   matchingSelections[index] = val;
@@ -2127,6 +2331,25 @@ function drawSyntheticRoadmap(containerId, roadmap) {
   }, 20);
 }
 
+function bindMatchingEvents(container, isMockActive) {
+  const drops = container.querySelectorAll('.matching-drop');
+  drops.forEach(selectEl => {
+    const idx = parseInt(selectEl.getAttribute('data-index'));
+    selectEl.addEventListener('change', (e) => {
+      if (isMockActive) {
+        selectMockMatchOption(idx, e.target.value);
+      } else {
+        selectMatchOption(idx, e.target.value);
+      }
+    });
+  });
+
+  const submitBtn = container.querySelector('#btn-submit-matching');
+  if (submitBtn) {
+    submitBtn.addEventListener('click', submitMatchingAnswer);
+  }
+}
+
 function renderChoicesArea(q, selectedOptionId, isAnswered, prefix = '') {
   let html = '';
   
@@ -2158,7 +2381,6 @@ function renderChoicesArea(q, selectedOptionId, isAnswered, prefix = '') {
       const selectHtml = `
         <select class="matching-drop" 
                 data-index="${index}" 
-                onchange="${isMockActive ? `selectMockMatchOption(${index}, this.value)` : `selectMatchOption(${index}, this.value)`}" 
                 ${isAnswered ? 'disabled' : ''}
                 style="${isAnswered ? (isCorrectMatch ? 'border-color: var(--success-color); color: var(--success-color);' : 'border-color: var(--error-color); color: var(--error-color);') : ''}">
           <option value="">-- Choose Name --</option>
@@ -2207,7 +2429,7 @@ function renderChoicesArea(q, selectedOptionId, isAnswered, prefix = '') {
     if (!isAnswered && !isMockActive) {
       html += `
         <div class="text-center" style="margin-top: 1.5rem;">
-          <button class="btn btn-primary" onclick="submitMatchingAnswer()" style="padding: 0.6rem 2rem; font-weight: 600; border-radius: 8px;">
+          <button class="btn btn-primary" id="btn-submit-matching" style="padding: 0.6rem 2rem; font-weight: 600; border-radius: 8px;">
             <i class="fas fa-check-double"></i> Submit Matches
           </button>
         </div>
@@ -2263,5 +2485,219 @@ function renderChoicesArea(q, selectedOptionId, isAnswered, prefix = '') {
   }
   
   return html;
+}
+
+function drawFischerProjection(canvas, dataStr) {
+  const ctx = canvas.getContext('2d');
+  
+  // Set larger size for Fischer projections
+  canvas.width = 180;
+  canvas.height = 240;
+  
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  
+  // Determine configurations
+  const SUGAR_CONFIGS = {
+    'd-allose': { type: 'hexose', oh: ['R', 'R', 'R', 'R'] },
+    'd-altrose': { type: 'hexose', oh: ['L', 'R', 'R', 'R'] },
+    'd-glucose': { type: 'hexose', oh: ['R', 'L', 'R', 'R'] },
+    'd-mannose': { type: 'hexose', oh: ['L', 'L', 'R', 'R'] },
+    'd-gulose': { type: 'hexose', oh: ['R', 'R', 'L', 'R'] },
+    'd-idose': { type: 'hexose', oh: ['L', 'R', 'L', 'R'] },
+    'd-galactose': { type: 'hexose', oh: ['R', 'L', 'L', 'R'] },
+    'd-talose': { type: 'hexose', oh: ['L', 'L', 'L', 'R'] },
+    'd-ribose': { type: 'pentose', oh: ['R', 'R', 'R'] },
+    'd-arabinose': { type: 'pentose', oh: ['L', 'R', 'R'] },
+    'd-xylose': { type: 'pentose', oh: ['R', 'L', 'R'] },
+    'd-lyxose': { type: 'pentose', oh: ['L', 'L', 'R'] },
+  };
+
+  const key = dataStr.toLowerCase().trim();
+  let ohs = ['R', 'L', 'R', 'R']; // Default to D-Glucose if not found
+  if (SUGAR_CONFIGS[key]) {
+    ohs = SUGAR_CONFIGS[key].oh;
+  } else if (dataStr.includes(',')) {
+    ohs = dataStr.split(',').map(s => s.trim().toUpperCase());
+  }
+
+  const n = ohs.length;
+  
+  // Design spacing
+  const cx = canvas.width / 2;
+  const topY = 30;
+  const bottomY = canvas.height - 30;
+  
+  // Draw vertical line
+  ctx.strokeStyle = '#f8fafc';
+  ctx.lineWidth = 2.5;
+  ctx.beginPath();
+  ctx.moveTo(cx, topY + 12);
+  ctx.lineTo(cx, bottomY - 12);
+  ctx.stroke();
+  
+  // Draw C1 text
+  ctx.fillStyle = '#f8fafc';
+  ctx.font = 'bold 13px Outfit, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('CHO', cx, topY);
+  
+  // Draw C6 text
+  ctx.fillText('CH₂OH', cx, bottomY);
+  
+  // Draw horizontal lines & substituents
+  ctx.font = 'bold 12px Outfit, sans-serif';
+  for (let i = 0; i < n; i++) {
+    const y = topY + (i + 1) * (bottomY - topY) / (n + 1);
+    
+    // Draw horizontal line
+    ctx.beginPath();
+    ctx.moveTo(cx - 24, y);
+    ctx.lineTo(cx + 24, y);
+    ctx.stroke();
+    
+    // Determine configuration at this carbon
+    const config = ohs[i];
+    if (config === 'R') {
+      // H on left, OH on right
+      ctx.textAlign = 'right';
+      ctx.fillText('H', cx - 28, y);
+      ctx.textAlign = 'left';
+      ctx.fillText('OH', cx + 28, y);
+    } else {
+      // OH on left (written as HO), H on right
+      ctx.textAlign = 'right';
+      ctx.fillText('HO', cx - 28, y);
+      ctx.textAlign = 'left';
+      ctx.fillText('H', cx + 28, y);
+    }
+  }
+}
+
+function drawHaworthProjection(canvas, dataStr) {
+  const ctx = canvas.getContext('2d');
+  
+  // Set size for Haworth projections
+  canvas.width = 180;
+  canvas.height = 140;
+  
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  const SUGAR_CONFIGS = {
+    'd-allose': ['R', 'R', 'R', 'R'],
+    'd-altrose': ['L', 'R', 'R', 'R'],
+    'd-glucose': ['R', 'L', 'R', 'R'],
+    'd-mannose': ['L', 'L', 'R', 'R'],
+    'd-gulose': ['R', 'R', 'L', 'R'],
+    'd-idose': ['L', 'R', 'L', 'R'],
+    'd-galactose': ['R', 'L', 'L', 'R'],
+    'd-talose': ['L', 'L', 'L', 'R']
+  };
+
+  // Parse: e.g. "alpha-D-Glucose" or "beta-D-Idose"
+  let anomer = 'alpha';
+  let sugarName = 'd-glucose';
+  
+  const parts = dataStr.split('-');
+  if (parts.length >= 3) {
+    anomer = parts[0].toLowerCase().trim();
+    sugarName = (parts[1] + '-' + parts[2]).toLowerCase().trim();
+  } else if (parts.length === 2) {
+    anomer = parts[0].toLowerCase().trim();
+    sugarName = parts[1].toLowerCase().trim();
+  }
+
+  let config = SUGAR_CONFIGS[sugarName] || SUGAR_CONFIGS['d-glucose'];
+  
+  // Calculate center of drawing
+  const cx = canvas.width / 2;
+  const cy = canvas.height / 2 - 5;
+  
+  // Define vertices of the pyranose ring
+  const vO = { x: cx + 30, y: cy - 20 };
+  const v1 = { x: cx + 55, y: cy };
+  const v2 = { x: cx + 30, y: cy + 20 };
+  const v3 = { x: cx - 30, y: cy + 20 };
+  const v4 = { x: cx - 55, y: cy };
+  const v5 = { x: cx - 30, y: cy - 20 };
+  
+  // 1. Draw back lines (thin)
+  ctx.strokeStyle = '#f8fafc';
+  ctx.lineWidth = 1.5;
+  
+  // V4 -> V5
+  ctx.beginPath();
+  ctx.moveTo(v4.x, v4.y);
+  ctx.lineTo(v5.x, v5.y);
+  ctx.stroke();
+  
+  // V5 -> V_O (stop before O text)
+  ctx.beginPath();
+  ctx.moveTo(v5.x, v5.y);
+  ctx.lineTo(vO.x - 10, vO.y);
+  ctx.stroke();
+  
+  // V_O -> V1 (start after O text)
+  ctx.beginPath();
+  ctx.moveTo(vO.x + 3, vO.y + 6);
+  ctx.lineTo(v1.x, v1.y);
+  ctx.stroke();
+  
+  // 2. Draw front lines (thick)
+  ctx.lineWidth = 4;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  
+  // V4 -> V3 -> V2 -> V1
+  ctx.beginPath();
+  ctx.moveTo(v4.x, v4.y);
+  ctx.lineTo(v3.x, v3.y);
+  ctx.lineTo(v2.x, v2.y);
+  ctx.lineTo(v1.x, v1.y);
+  ctx.stroke();
+  
+  // 3. Draw Oxygen label
+  ctx.fillStyle = '#f8fafc';
+  ctx.font = 'bold 14px Outfit, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('O', vO.x, vO.y);
+  
+  // 4. Draw substituents at C1 - C5
+  const subs = {
+    c1: anomer === 'alpha' ? { up: 'H', down: 'OH' } : { up: 'OH', down: 'H' },
+    c2: config[0] === 'L' ? { up: 'OH', down: 'H' } : { up: 'H', down: 'OH' },
+    c3: config[1] === 'L' ? { up: 'OH', down: 'H' } : { up: 'H', down: 'OH' },
+    c4: config[2] === 'L' ? { up: 'OH', down: 'H' } : { up: 'H', down: 'OH' },
+    c5: { up: 'CH₂OH', down: 'H' }
+  };
+  
+  const vertices = [
+    { v: v1, labels: subs.c1 },
+    { v: v2, labels: subs.c2 },
+    { v: v3, labels: subs.c3 },
+    { v: v4, labels: subs.c4 },
+    { v: v5, labels: subs.c5 }
+  ];
+  
+  ctx.lineWidth = 1.25;
+  ctx.font = 'bold 11px Outfit, sans-serif';
+  
+  vertices.forEach(({ v, labels }) => {
+    // Draw vertical substituent line
+    ctx.beginPath();
+    ctx.moveTo(v.x, v.y - 18);
+    ctx.lineTo(v.x, v.y + 18);
+    ctx.stroke();
+    
+    // Draw UP substituent
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText(labels.up, v.x, v.y - 21);
+    
+    // Draw DOWN substituent
+    ctx.textBaseline = 'top';
+    ctx.fillText(labels.down, v.x, v.y + 21);
+  });
 }
 

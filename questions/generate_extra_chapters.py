@@ -96,6 +96,41 @@ sugars = [
     {"name": "D-Lyxose", "smiles": "OC[C@@H](O)[C@H](O)[C@H](O)C=O"}
 ]
 
+fischer_sugars = [
+    {"name": "D-Allose", "smiles": "FISCHER:D-Allose"},
+    {"name": "D-Altrose", "smiles": "FISCHER:D-Altrose"},
+    {"name": "D-Glucose", "smiles": "FISCHER:D-Glucose"},
+    {"name": "D-Mannose", "smiles": "FISCHER:D-Mannose"},
+    {"name": "D-Gulose", "smiles": "FISCHER:D-Gulose"},
+    {"name": "D-Idose", "smiles": "FISCHER:D-Idose"},
+    {"name": "D-Galactose", "smiles": "FISCHER:D-Galactose"},
+    {"name": "D-Talose", "smiles": "FISCHER:D-Talose"},
+    {"name": "D-Ribose", "smiles": "FISCHER:D-Ribose"},
+    {"name": "D-Xylose", "smiles": "FISCHER:D-Xylose"},
+    {"name": "D-Arabinose", "smiles": "FISCHER:D-Arabinose"},
+    {"name": "D-Lyxose", "smiles": "FISCHER:D-Lyxose"}
+]
+
+haworth_sugars = [
+    {"name": "α-D-Allopyranose", "smiles": "HAWORTH:alpha-D-Allose"},
+    {"name": "β-D-Allopyranose", "smiles": "HAWORTH:beta-D-Allose"},
+    {"name": "α-D-Altropyranose", "smiles": "HAWORTH:alpha-D-Altrose"},
+    {"name": "β-D-Altropyranose", "smiles": "HAWORTH:beta-D-Altrose"},
+    {"name": "α-D-Glucopyranose", "smiles": "HAWORTH:alpha-D-Glucose"},
+    {"name": "β-D-Glucopyranose", "smiles": "HAWORTH:beta-D-Glucose"},
+    {"name": "α-D-Mannopyranose", "smiles": "HAWORTH:alpha-D-Mannose"},
+    {"name": "β-D-Mannopyranose", "smiles": "HAWORTH:beta-D-Mannose"},
+    {"name": "α-D-Gulopyranose", "smiles": "HAWORTH:alpha-D-Gulose"},
+    {"name": "β-D-Gulopyranose", "smiles": "HAWORTH:beta-D-Gulose"},
+    {"name": "α-D-Idopyranose", "smiles": "HAWORTH:alpha-D-Idose"},
+    {"name": "β-D-Idopyranose", "smiles": "HAWORTH:beta-D-Idose"},
+    {"name": "α-D-Galactopyranose", "smiles": "HAWORTH:alpha-D-Galactose"},
+    {"name": "β-D-Galactopyranose", "smiles": "HAWORTH:beta-D-Galactose"},
+    {"name": "α-D-Talopyranose", "smiles": "HAWORTH:alpha-D-Talose"},
+    {"name": "β-D-Talopyranose", "smiles": "HAWORTH:beta-D-Talose"}
+]
+
+
 reaction_templates = [
     # Addition
     {"type": "addition", "reactants": ["CC=C"], "reagents": "H2O, H2SO4", "conditions": "dil. H2SO4", "products": ["CC(O)C"], "topic": "Alkenes: Hydration", "desc": "Acid-catalyzed hydration of propene yields propan-2-ol (Markovnikov addition)."},
@@ -620,35 +655,68 @@ def generate_all_extra_chapters():
             # Chapter 42: Fischer Projections & Carbohydrates Grids
             # -------------------------------------------------------------
             elif ch == 42:
-                items = random.sample(sugars, 4)
-                match_items = [{"smiles": it["smiles"], "correctAnswer": it["name"]} for it in items]
-                
-                correct_names = [it["name"] for it in items]
-                distractors = get_distractors(correct_names, [s["name"] for s in sugars], 4)
-                match_options = list(set(correct_names + distractors))
-                random.shuffle(match_options)
-                
-                q_text = "Match each carbohydrate Fischer projection below to its correct D-sugar name."
-                
-                questions.append({
-                    "question_id": q_id,
-                    "topic": "Carbohydrates & Fischer Projections",
-                    "difficulty_level": "Hard",
-                    "question_text": q_text,
-                    "interaction_type": "matching-grid",
-                    "grid_columns": 2,
-                    "match_items": match_items,
-                    "match_options": match_options,
-                    "options": [
-                        {"option_id": "A", "text": "All matched correctly", "is_correct": True},
-                        {"option_id": "B", "text": "Incorrect carbohydrate matching", "is_correct": False}
-                    ],
-                    "feedback": {
-                        "context": "Distinguishing carbohydrate configurations (D-aldohexoses) using Fischer projection diagrams.",
-                        "process": "\n".join([f"Sugar {i+1}: {it['name']}." for i, it in enumerate(items)]),
-                        "result": "All carbohydrate configurations matched."
-                    }
-                })
+                if q_idx % 2 == 1:
+                    # Fischer projection grid matching (4 items)
+                    items = random.sample(fischer_sugars, 4)
+                    match_items = [{"smiles": it["smiles"], "correctAnswer": it["name"]} for it in items]
+                    
+                    correct_names = [it["name"] for it in items]
+                    distractors = get_distractors(correct_names, [s["name"] for s in fischer_sugars], 4)
+                    match_options = list(set(correct_names + distractors))
+                    random.shuffle(match_options)
+                    
+                    q_text = "Identify each D-aldohexose/aldopentose Fischer projection by selecting its name from the dropdown."
+                    
+                    questions.append({
+                        "question_id": q_id,
+                        "topic": "Carbohydrates & Fischer Projections",
+                        "difficulty_level": "Hard",
+                        "question_text": q_text,
+                        "interaction_type": "matching-grid",
+                        "grid_columns": 4,
+                        "match_items": match_items,
+                        "match_options": match_options,
+                        "options": [
+                            {"option_id": "A", "text": "All matched correctly", "is_correct": True},
+                            {"option_id": "B", "text": "Incorrect carbohydrate matching", "is_correct": False}
+                        ],
+                        "feedback": {
+                            "context": "Distinguishing carbohydrate configurations (D-aldohexoses and aldopentoses) using Fischer projection diagrams.",
+                            "process": "\n".join([f"Sugar {i+1}: {it['name']}." for i, it in enumerate(items)]),
+                            "result": "All carbohydrate configurations matched."
+                        }
+                    })
+                else:
+                    # Haworth projection grid matching (2 items)
+                    items = random.sample(haworth_sugars, 2)
+                    match_items = [{"smiles": it["smiles"], "correctAnswer": it["name"]} for it in items]
+                    
+                    correct_names = [it["name"] for it in items]
+                    distractors = get_distractors(correct_names, [s["name"] for s in haworth_sugars], 4)
+                    match_options = list(set(correct_names + distractors))
+                    random.shuffle(match_options)
+                    
+                    q_text = "Identify each D-aldohexose Haworth projection by selecting its correct name from the dropdown."
+                    
+                    questions.append({
+                        "question_id": q_id,
+                        "topic": "Carbohydrates & Haworth Projections",
+                        "difficulty_level": "Hard",
+                        "question_text": q_text,
+                        "interaction_type": "matching-grid",
+                        "grid_columns": 2,
+                        "match_items": match_items,
+                        "match_options": match_options,
+                        "options": [
+                            {"option_id": "A", "text": "All matched correctly", "is_correct": True},
+                            {"option_id": "B", "text": "Incorrect carbohydrate matching", "is_correct": False}
+                        ],
+                        "feedback": {
+                            "context": "Analyzing stereocenter configurations in Haworth projections of pyranose rings.",
+                            "process": "\n".join([f"Sugar {i+1}: {it['name']}." for i, it in enumerate(items)]),
+                            "result": "All Haworth structures matched correctly."
+                        }
+                    })
                 
             # -------------------------------------------------------------
             # Chapter 43: Amino Acids Matching Lists
