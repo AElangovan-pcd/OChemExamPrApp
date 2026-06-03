@@ -1,4 +1,4 @@
-// ACS Organic Chemistry Exam Preparation - ACS: Substitutions & Eliminations
+// McMurry Chapter 23 questions
 const CHAPTER_23_QUESTIONS = [
   {
     "question_id": "ch23_acs_q1_sn2_rate",
@@ -353,6 +353,49 @@ const CHAPTER_23_QUESTIONS = [
       "context": "Understanding conformational control and anti-periplanar requirements in cyclic E2 eliminations.",
       "process": "Step 1: E2 elimination in cyclohexanes requires the leaving group (Cl) and the beta-hydrogen to be trans-diaxial (anti-periplanar).\nStep 2: Menthyl chloride has Cl equatorial in its most stable conformation. To eliminate, it must ring-flip to a high-energy chair conformation where Cl is axial.\nStep 3: Neomenthyl chloride has Cl axial in its most stable chair conformer, allowing rapid E2 elimination.",
       "result": "Neomenthyl chloride reacts much faster because Cl is already axial."
+    }
+  },
+  {
+    "question_id": "ch23_q_dynamic_aldol_condensation",
+    "topic": "Carbonyl Condensation Reactions",
+    "difficulty_level": "Medium",
+    "question_text": "Determine the product of the base-catalyzed self-condensation of acetaldehyde followed by dehydration.",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) NaOH, H2O\n2) Heat (dehydration)",
+      "conditions": "Aldol Condensation",
+      "products": [
+        "CC=CC=O"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Self-condensation yields crotonaldehyde (2-butenal), a conjugated enone.",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "The reaction produces 3-hydroxybutanal (without heat).",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Ethyl acetate is formed.",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "No condensation occurs.",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Analyzing aldol addition and dehydration pathways.",
+      "process": "NaOH deprotonates acetaldehyde to form enolate. Enolate attacks another neutral acetaldehyde: forms 3-hydroxybutanal (aldol addition). Heating drives elimination of water to yield the conjugated 2-butenal (crotonaldehyde).",
+      "result": "The final product is crotonaldehyde."
     }
   }
 ];

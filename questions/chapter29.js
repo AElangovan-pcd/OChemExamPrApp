@@ -1,4 +1,4 @@
-// ACS Organic Chemistry Exam Preparation - ACS: Free Radicals
+// McMurry Chapter 29 questions
 const CHAPTER_29_QUESTIONS = [
   {
     "question_id": "ch29_acs_q1_radical",
@@ -349,6 +349,46 @@ const CHAPTER_29_QUESTIONS = [
       "context": "Investigating kinetic control in intramolecular radical additions.",
       "process": "Step 1: The 5-hexenyl radical can cyclize via 5-hex-endo attack or 5-hex-exo attack.\nStep 2: The 5-exo-trig cyclization is kinetically faster because of better orbital overlap in the transition state.\nStep 3: This results in the preferential formation of the five-membered ring.",
       "result": "The five-membered ring is kinetically favored."
+    }
+  },
+  {
+    "question_id": "ch29_q_dynamic_metabolism_steps",
+    "topic": "Organic Chemistry of Metabolic Pathways",
+    "difficulty_level": "Hard",
+    "question_text": "Match the biological conversion to its organic chemistry classification.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "COP(=O)(O)O",
+        "correctAnswer": "Nucleophilic Substitution (Phosphoryl transfer)"
+      },
+      {
+        "smiles": "CC(=O)C(=O)O",
+        "correctAnswer": "Decarboxylation (Beta-keto cleavage)"
+      }
+    ],
+    "match_options": [
+      "Nucleophilic Substitution (Phosphoryl transfer)",
+      "Decarboxylation (Beta-keto cleavage)",
+      "Aldol Cleavage",
+      "Reduction"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect pathways classifications",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Mapping biochemical conversions to classic organic reaction mechanisms.",
+      "process": "Glucose phosphorylation is nucleophilic substitution at phosphorus. Decarboxylation of pyruvate is standard decarboxylation.",
+      "result": "Metabolic reactions classified."
     }
   }
 ];

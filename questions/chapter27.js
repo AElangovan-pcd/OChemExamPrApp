@@ -1,4 +1,4 @@
-// ACS Organic Chemistry Exam Preparation - ACS: Enols & Enolate Reactions
+// McMurry Chapter 27 questions
 const CHAPTER_27_QUESTIONS = [
   {
     "question_id": "ch27_acs_q1_enolate_alkylation",
@@ -300,12 +300,12 @@ const CHAPTER_27_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "1) LDA, THF, -78 °C; 2) CH3I",
+        "text": "1) LDA, THF, -78 \u00b0C; 2) CH3I",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "1) KH, THF, 25 °C; 2) CH3I",
+        "text": "1) KH, THF, 25 \u00b0C; 2) CH3I",
         "is_correct": false
       },
       {
@@ -321,8 +321,8 @@ const CHAPTER_27_QUESTIONS = [
     ],
     "feedback": {
       "context": "Distinguishing kinetic vs thermodynamic enolates.",
-      "process": "Step 1: The less hindered carbon (C6) is deprotonated faster (kinetic enolate).\nStep 2: Kinetic conditions require a strong, bulky base (LDA) at low temperatures (-78 °C) to prevent equilibration.\nStep 3: Subsequent addition of iodomethane alkylates C6.",
-      "result": "LDA at -78 °C is the standard condition for kinetic enolate formation."
+      "process": "Step 1: The less hindered carbon (C6) is deprotonated faster (kinetic enolate).\nStep 2: Kinetic conditions require a strong, bulky base (LDA) at low temperatures (-78 \u00b0C) to prevent equilibration.\nStep 3: Subsequent addition of iodomethane alkylates C6.",
+      "result": "LDA at -78 \u00b0C is the standard condition for kinetic enolate formation."
     }
   },
   {
@@ -357,6 +357,45 @@ const CHAPTER_27_QUESTIONS = [
       "context": "Investigating decarboxylation mechanisms of beta-keto acids.",
       "process": "Step 1: Beta-keto acids undergo thermal decarboxylation via a concerted, cyclic six-membered transition state.\nStep 2: The acid proton is transferred to the ketone, and CO2 is expelled.\nStep 3: This directly forms the enol of the ketone, which rapidly tautomerizes.",
       "result": "The reaction proceeds via an enol intermediate."
+    }
+  },
+  {
+    "question_id": "ch27_q_dynamic_lipids_melting",
+    "topic": "Biomolecules: Lipids",
+    "difficulty_level": "Hard",
+    "question_text": "Match each fatty acid structure to its melting point characteristics.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "CCCCCCCCCCCCCCCC(=O)O",
+        "correctAnswer": "High Melting Point (Saturated C16)"
+      },
+      {
+        "smiles": "CCCC/C=C\\C/C=C\\CCCCCCCC(=O)O",
+        "correctAnswer": "Low Melting Point (Polyunsaturated C18)"
+      }
+    ],
+    "match_options": [
+      "High Melting Point (Saturated C16)",
+      "Low Melting Point (Polyunsaturated C18)",
+      "Medium Melting Point (Unsaturated C18)"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect lipid mapping",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Evaluating melting points based on fatty acid saturation and packing.",
+      "process": "Saturated fatty acids (like palmitic acid) pack tightly: high melting point (63\u00b0C). Polyunsaturated fatty acids (like linoleic acid) have cis-kinks preventing packing: liquid at room temp.",
+      "result": "Lipid properties mapped."
     }
   }
 ];

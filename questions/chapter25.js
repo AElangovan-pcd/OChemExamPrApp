@@ -1,4 +1,4 @@
-// ACS Organic Chemistry Exam Preparation - ACS: Nucleophilic Additions at Carbonyls
+// McMurry Chapter 25 questions
 const CHAPTER_25_QUESTIONS = [
   {
     "question_id": "ch25_acs_q1_grignard",
@@ -357,6 +357,46 @@ const CHAPTER_25_QUESTIONS = [
       "context": "Comparing imine vs enamine formation from primary vs secondary amines.",
       "process": "Step 1: Pyrrolidine is a secondary amine.\nStep 2: Attack on the ketone carbonyl forms a carbinolamine.\nStep 3: Dehydration cannot form a stable neutral C=N double bond. Instead, elimination of water occurs by abstracting an alpha-proton, forming a C=C double bond conjugated to nitrogen (an enamine).",
       "result": "The product is the enamine, 1-(1-pyrrolidinyl)cyclohexene."
+    }
+  },
+  {
+    "question_id": "ch25_q_dynamic_monosaccharides",
+    "topic": "Biomolecules: Carbohydrates",
+    "difficulty_level": "Hard",
+    "question_text": "Identify each cyclic D-aldohexose anomeric form from its structure.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "HAWORTH:alpha-D-Glucose",
+        "correctAnswer": "alpha-D-Glucopyranose"
+      },
+      {
+        "smiles": "HAWORTH:beta-D-Glucose",
+        "correctAnswer": "beta-D-Glucopyranose"
+      }
+    ],
+    "match_options": [
+      "alpha-D-Glucopyranose",
+      "beta-D-Glucopyranose",
+      "alpha-D-Galactopyranose"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect anomer mapping",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Distinguishing alpha/beta pyranose conformations.",
+      "process": "Alpha has the C1 anomeric hydroxyl down (trans to C6). Beta has the C1 hydroxyl up (cis to C6).",
+      "result": "Anomers mapped successfully."
     }
   }
 ];

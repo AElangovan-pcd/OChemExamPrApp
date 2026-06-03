@@ -1,4 +1,4 @@
-// ACS Organic Chemistry Exam Preparation - ACS: Structure & Hybridization
+// McMurry Chapter 20 questions
 const CHAPTER_20_QUESTIONS = [
   {
     "question_id": "ch20_acs_q1_benzonitrile",
@@ -317,7 +317,7 @@ const CHAPTER_20_QUESTIONS = [
     "question_id": "ch20_acs_q10_boiling_point",
     "topic": "ACS: Structure & Hybridization",
     "difficulty_level": "Easy",
-    "question_text": "Why is the boiling point of ethanol (78 °C) significantly higher than that of its constitutional isomer, dimethyl ether (-24 °C)?",
+    "question_text": "Why is the boiling point of ethanol (78 \u00b0C) significantly higher than that of its constitutional isomer, dimethyl ether (-24 \u00b0C)?",
     "question_smiles": "CCO.COC",
     "options": [
       {
@@ -345,6 +345,54 @@ const CHAPTER_20_QUESTIONS = [
       "context": "Understanding intermolecular forces and their effects on physical properties.",
       "process": "Step 1: Both isomers have the same molecular formula (C2H6O) and molecular weight (46 g/mol).\nStep 2: Ethanol contains an O-H bond, which enables it to participate in hydrogen bonding with neighboring molecules.\nStep 3: Dimethyl ether contains C-O-C bonds with no hydrogen attached to oxygen, preventing hydrogen bonding.",
       "result": "Hydrogen bonding in ethanol results in a much higher boiling point."
+    }
+  },
+  {
+    "question_id": "ch20_q_dynamic_inductive_acidity",
+    "topic": "Carboxylic Acids: Acidities",
+    "difficulty_level": "Medium",
+    "question_text": "Match each carboxylic acid to its relative acidity based on inductive electron-withdrawing effects.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "CC(=O)O",
+        "correctAnswer": "pKa = 4.76 (Weakest Acid)"
+      },
+      {
+        "smiles": "ClCC(=O)O",
+        "correctAnswer": "pKa = 2.86 (Medium Acid)"
+      },
+      {
+        "smiles": "FC(F)(F)C(=O)O",
+        "correctAnswer": "pKa = 0.23 (Strongest Acid)"
+      },
+      {
+        "smiles": "CCC(=O)O",
+        "correctAnswer": "pKa = 4.88 (Extremely Weak Acid)"
+      }
+    ],
+    "match_options": [
+      "pKa = 4.76 (Weakest Acid)",
+      "pKa = 2.86 (Medium Acid)",
+      "pKa = 0.23 (Strongest Acid)",
+      "pKa = 4.88 (Extremely Weak Acid)"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect pKa relative mapping",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Evaluating inductive stabilization of conjugate bases.",
+      "process": "Electronegative atoms (like fluorine or chlorine) pull electron density away from the carboxylate group, stabilizing the negative charge of the conjugate base. More halogens and higher electronegativity increase acidity.",
+      "result": "TFA (trifluoroacetic acid) is the strongest."
     }
   }
 ];

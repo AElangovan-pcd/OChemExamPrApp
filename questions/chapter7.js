@@ -1,4 +1,4 @@
-// OpenStax Organic Chemistry Chapter 7: Alkenes: Structure and Reactivity
+// McMurry Chapter 7 questions
 const CHAPTER_7_QUESTIONS = [
   {
     "question_id": "ch7_q1_ethylene_hybridization",
@@ -110,7 +110,7 @@ const CHAPTER_7_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question relates hybridization and bond order to bond length and strength.",
-      "process": "Step 1: Ethane (\\(C_2H_6\\)) has a single carbon-carbon bond (bond order 1) with a length of 1.54 Å and BDE of ~376 kJ/mol.\nStep 2: Ethylene (\\(C_2H_4\\)) has a double carbon-carbon bond (bond order 2) consisting of a \\(\\sigma\\) and a \\(\\pi\\) bond, with a length of 1.34 Å and BDE of ~611 kJ/mol.\nStep 3: Higher bond order and greater s-character of the \\(sp^2\\) hybrid orbitals in ethylene pull the nuclei closer together, making the bond shorter and stronger.",
+      "process": "Step 1: Ethane (\\(C_2H_6\\)) has a single carbon-carbon bond (bond order 1) with a length of 1.54 \u00c5 and BDE of ~376 kJ/mol.\nStep 2: Ethylene (\\(C_2H_4\\)) has a double carbon-carbon bond (bond order 2) consisting of a \\(\\sigma\\) and a \\(\\pi\\) bond, with a length of 1.34 \u00c5 and BDE of ~611 kJ/mol.\nStep 3: Higher bond order and greater s-character of the \\(sp^2\\) hybrid orbitals in ethylene pull the nuclei closer together, making the bond shorter and stronger.",
       "result": "Ethylene's double bond is shorter and stronger than ethane's single bond."
     }
   },
@@ -1898,6 +1898,56 @@ const CHAPTER_7_QUESTIONS = [
       "context": "This question tests mechanistic understanding of regioselective deuteration during electrophilic addition.",
       "process": "Step 1: Deuterium (\\(D\\)) acts as an isotope of hydrogen (\\(H\\)) and behaves as the electrophile (\\(D^+\\)).\nStep 2: According to Markovnikov's rule, the electrophile (\\(D^+\\)) adds to the less-substituted carbon (C1) of propene to form the more stable secondary carbocation intermediate: \\(CH_3-C^+H-CH_2D\\).\nStep 3: The chloride nucleophile (\\(Cl^-\\)) then attacks the carbocation at C2 to form 2-chloro-1-deuteriopropane. The deuterium is located exclusively at C1.",
       "result": "Deuterium adds to the terminal C1, yielding 2-chloro-1-deuteriopropane as the major product."
+    }
+  },
+  {
+    "question_id": "ch7_q_dynamic_ez_alkene",
+    "topic": "Alkene Stereochemistry: E/Z",
+    "difficulty_level": "Medium",
+    "question_text": "Match each alkene structure to its correct stereochemical description.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "C/C=C/C",
+        "correctAnswer": "(E)-2-butene"
+      },
+      {
+        "smiles": "C/C=C\\C",
+        "correctAnswer": "(Z)-2-butene"
+      },
+      {
+        "smiles": "C/C(C)=C/Cl",
+        "correctAnswer": "(E)-1-chloro-2-methylpropene"
+      },
+      {
+        "smiles": "C/C(C)=C\\Cl",
+        "correctAnswer": "(Z)-1-chloro-2-methylpropene"
+      }
+    ],
+    "match_options": [
+      "(E)-2-butene",
+      "(Z)-2-butene",
+      "(E)-1-chloro-2-methylpropene",
+      "(Z)-1-chloro-2-methylpropene",
+      "Isobutene"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect E/Z mapping",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Applying E/Z rules based on priority of substituents on double bonds.",
+      "process": "In 2-butene, methyls are on opposite sides for E, and same side for Z. In 1-chloro-2-methylpropene, Cl (priority 1) vs H (priority 2) on C1, and Methyl (priority 1) vs Methyl (priority 2) on C2 determines configuration.",
+      "result": "E/Z nomenclature resolved."
     }
   }
 ];

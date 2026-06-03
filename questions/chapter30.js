@@ -1,4 +1,4 @@
-// ACS Organic Chemistry Exam Preparation - ACS: Oxidations & Reductions
+// McMurry Chapter 30 questions
 const CHAPTER_30_QUESTIONS = [
   {
     "question_id": "ch30_acs_q1_ozonolysis",
@@ -242,7 +242,7 @@ const CHAPTER_30_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "DIBAL-H at -78 °C",
+        "text": "DIBAL-H at -78 \u00b0C",
         "is_correct": false
       },
       {
@@ -261,7 +261,7 @@ const CHAPTER_30_QUESTIONS = [
     "question_id": "ch30_acs_q8_dibal_esters",
     "topic": "ACS: Oxidations & Reductions",
     "difficulty_level": "Hard",
-    "question_text": "What is the product when methyl benzoate is treated with one equivalent of DIBAL-H at -78 °C, followed by water workup?",
+    "question_text": "What is the product when methyl benzoate is treated with one equivalent of DIBAL-H at -78 \u00b0C, followed by water workup?",
     "question_smiles": "COC(=O)c1ccccc1",
     "options": [
       {
@@ -287,7 +287,7 @@ const CHAPTER_30_QUESTIONS = [
     ],
     "feedback": {
       "context": "Understanding DIBAL-H reduction of esters.",
-      "process": "Step 1: DIBAL-H is a bulky hydride donor.\nStep 2: At -78 °C, it adds one hydride to the ester carbonyl, forming a stable aluminum complex.\nStep 3: This complex does not collapse until water is added during workup, preventing further reduction to the alcohol.",
+      "process": "Step 1: DIBAL-H is a bulky hydride donor.\nStep 2: At -78 \u00b0C, it adds one hydride to the ester carbonyl, forming a stable aluminum complex.\nStep 3: This complex does not collapse until water is added during workup, preventing further reduction to the alcohol.",
       "result": "The product is benzaldehyde."
     }
   },
@@ -357,6 +357,50 @@ const CHAPTER_30_QUESTIONS = [
       "context": "Selecting appropriate deoxygenation reactions based on functional group compatibility.",
       "process": "Step 1: Both Clemmensen and Wolff-Kishner reduce ketones to alkanes.\nStep 2: Clemmensen uses strong acid (HCl), which would hydrolyze the acid-sensitive acetal group.\nStep 3: Wolff-Kishner uses strongly basic conditions, which do not affect acetals.",
       "result": "Wolff-Kishner reduction is used under basic conditions."
+    }
+  },
+  {
+    "question_id": "ch30_q_dynamic_diels_alder",
+    "topic": "Orbitals & Pericyclic Reactions",
+    "difficulty_level": "Hard",
+    "question_text": "Predict the product of the thermal [4+2] cycloaddition (Diels-Alder reaction) of 1,3-butadiene and maleic anhydride.",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C",
+        "O=C1C=CC(=O)O1"
+      ],
+      "reagents": "Diels-Alder Reaction",
+      "conditions": "thermal heat",
+      "products": [
+        "O=C1[C@@H]2CC=CC[C@@H]2C(=O)O1"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "The [4+2] cycloaddition occurs in a concerted, stereospecific manner to yield the cis-anhydride cyclohexene derivative.",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "The reaction yields a polymer.",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A substitution product is formed.",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A [2+2] cyclobutane ring is formed.",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Analyzing thermal Diels-Alder cycloadditions.",
+      "process": "thermal [4+2] cycloadditions are symmetry-allowed. Conjugated diene (4 pi electrons) reacts with dienophile (2 pi electrons) to form a new six-membered ring with stereochemical retention of the cis dienophile.",
+      "result": "The final product is a cis-fused cyclohexene anhydride."
     }
   }
 ];

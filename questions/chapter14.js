@@ -1,10 +1,10 @@
-// OpenStax Organic Chemistry Chapter 14: Conjugated Compounds and Ultraviolet Spectroscopy
+// McMurry Chapter 14 questions
 const CHAPTER_14_QUESTIONS = [
   {
     "question_id": "ch14_q1_bond_lengths",
     "topic": "Conjugated Dienes: Structure and Hybridization",
     "difficulty_level": "Medium",
-    "question_text": "The C2-C3 single bond in 1,3-butadiene is experimentally determined to be 1.48 Å, which is significantly shorter than the C-C single bond in butane (1.54 Å). Which of the following factors best accounts for this bond shortening?",
+    "question_text": "The C2-C3 single bond in 1,3-butadiene is experimentally determined to be 1.48 \u00c5, which is significantly shorter than the C-C single bond in butane (1.54 \u00c5). Which of the following factors best accounts for this bond shortening?",
     "question_smiles": "",
     "options": [
       {
@@ -1790,7 +1790,7 @@ const CHAPTER_14_QUESTIONS = [
     "question_id": "ch14_q48_uv_electronic_transitions",
     "topic": "Ultraviolet Spectroscopy: Principles",
     "difficulty_level": "Easy",
-    "question_text": "Which type of electronic transition is primarily responsible for the UV-Vis absorption band observed in conjugated dienes in the 200–400 nm region?",
+    "question_text": "Which type of electronic transition is primarily responsible for the UV-Vis absorption band observed in conjugated dienes in the 200\u2013400 nm region?",
     "question_smiles": "",
     "options": [
       {
@@ -1898,6 +1898,50 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question explores the physical organic reasoning behind the different base values of homoannular vs heteroannular dienes in Woodward-Fieser rules.",
       "process": "Step 1: Understand the geometries. A homoannular diene has both double bonds in the same ring, forcing it into a cisoid conformation. A heteroannular diene has double bonds in different rings (transoid).\nStep 2: Evaluate thermodynamics. The cisoid conformation is less stable (higher in energy) than the transoid conformation due to steric repulsion between the ends of the diene.\nStep 3: Relate to transition energy. This higher ground-state energy narrows the HOMO-LUMO energy gap compared to the more stable transoid conformation. A smaller energy gap means absorption shifts to a longer wavelength (253 nm vs 217 nm).",
       "result": "The cisoid conformation of homoannular dienes has a smaller HOMO-LUMO gap due to its higher ground-state energy, leading to a higher base absorption wavelength (253 nm)."
+    }
+  },
+  {
+    "question_id": "ch14_q_dynamic_addition_14",
+    "topic": "Conjugated Dienes: Electrophilic Additions",
+    "difficulty_level": "Hard",
+    "question_text": "Identify the major products of the reaction of 1,3-butadiene with 1 equivalent of HBr.",
+    "reaction_scheme": {
+      "reactants": [
+        "C=CC=C"
+      ],
+      "reagents": "HBr (1 eq)",
+      "conditions": "0\u00b0C vs 40\u00b0C",
+      "products": [
+        "CC(Br)C=C",
+        "CC=CCC"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "At 0\u00b0C, the 1,2-addition kinetic product is favored; at 40\u00b0C, the 1,4-addition thermodynamic product is favored.",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Only 1,2-addition occurs at both temperatures.",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Only 1,4-addition occurs at both temperatures.",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "No reaction occurs under these conditions.",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Evaluating thermodynamic vs kinetic control in conjugated systems.",
+      "process": "Protonation yields an allylic carbocation. At low temperature (0\u00b0C), nucleophilic attack occurs rapidly at C2 (closer to charge) to give the kinetic 1,2-product. At high temperature (40\u00b0C), equilibrium is reached, yielding the more substituted, stable internal alkene (thermodynamic 1,4-product).",
+      "result": "Product distributions are temperature-dependent."
     }
   }
 ];

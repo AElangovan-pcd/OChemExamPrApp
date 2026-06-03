@@ -1,4 +1,4 @@
-// ACS Organic Chemistry Exam Preparation - ACS: Acids and Bases
+// McMurry Chapter 21 questions
 const CHAPTER_21_QUESTIONS = [
   {
     "question_id": "ch21_acs_q1_acidity",
@@ -174,7 +174,7 @@ const CHAPTER_21_QUESTIONS = [
     "question_id": "ch21_acs_q6_lewis",
     "topic": "ACS: Acids and Bases",
     "difficulty_level": "Easy",
-    "question_text": "Which of the following acts as a Lewis acid but not a Brønsted-Lowry acid?",
+    "question_text": "Which of the following acts as a Lewis acid but not a Br\u00f8nsted-Lowry acid?",
     "question_smiles": "",
     "options": [
       {
@@ -199,8 +199,8 @@ const CHAPTER_21_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Distinguishing Lewis acids (electron pair acceptors) from Brønsted-Lowry acids (proton donors).",
-      "process": "Step 1: BF3 has a boron atom with an empty p-orbital and only 6 valence electrons, allowing it to accept an electron pair (Lewis acid).\nStep 2: It has no protons to donate, so it cannot be a Brønsted-Lowry acid.\nStep 3: NH4+ and CH3COOH are proton donors.",
+      "context": "Distinguishing Lewis acids (electron pair acceptors) from Br\u00f8nsted-Lowry acids (proton donors).",
+      "process": "Step 1: BF3 has a boron atom with an empty p-orbital and only 6 valence electrons, allowing it to accept an electron pair (Lewis acid).\nStep 2: It has no protons to donate, so it cannot be a Br\u00f8nsted-Lowry acid.\nStep 3: NH4+ and CH3COOH are proton donors.",
       "result": "BF3 is a Lewis acid only."
     }
   },
@@ -338,6 +338,54 @@ const CHAPTER_21_QUESTIONS = [
       "context": "Evaluating acidity of active methylene compounds (1,3-dicarbonyls).",
       "process": "Step 1: Protons flanked by two carbonyls are highly acidic due to delocalization over both carbonyl oxygens.\nStep 2: Ketones are more electron-withdrawing than esters because esters undergo resonance donation from the alkoxy oxygen.\nStep 3: Thus, ethyl acetoacetate (one ketone, one ester, III) is more acidic than diethyl malonate (two esters, II), and both are far more acidic than acetone (one ketone, I).",
       "result": "The acidity ranking is III > II > I."
+    }
+  },
+  {
+    "question_id": "ch21_q_dynamic_acyl_substitution",
+    "topic": "Nucleophilic Acyl Substitutions",
+    "difficulty_level": "Hard",
+    "question_text": "Match each carboxylic acid derivative to its relative reactivity towards nucleophiles.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "CC(=O)Cl",
+        "correctAnswer": "Most Reactive (Acid Chloride)"
+      },
+      {
+        "smiles": "CC(=O)OC(C)=O",
+        "correctAnswer": "Highly Reactive (Anhydride)"
+      },
+      {
+        "smiles": "CC(=O)OC",
+        "correctAnswer": "Moderately Reactive (Ester)"
+      },
+      {
+        "smiles": "CC(=O)N",
+        "correctAnswer": "Least Reactive (Amide)"
+      }
+    ],
+    "match_options": [
+      "Most Reactive (Acid Chloride)",
+      "Highly Reactive (Anhydride)",
+      "Moderately Reactive (Ester)",
+      "Least Reactive (Amide)"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect derivative reactivity mapping",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Assessing leaving group ability and resonance stabilization in acyl derivatives.",
+      "process": "Chloride is an excellent leaving group with minimal resonance: most reactive. Carboxylate in anhydrides is good. Alkoxide in esters is poor. Amide nitrogen donates electron density strongly via resonance, stabilizing the carbonyl: least reactive.",
+      "result": "Reactivity order: Acid Chloride > Anhydride > Ester > Amide."
     }
   }
 ];

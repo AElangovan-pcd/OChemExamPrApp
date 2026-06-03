@@ -1,4 +1,4 @@
-// OpenStax Organic Chemistry Chapter 9: Alkynes: An Introduction to Organic Synthesis
+// McMurry Chapter 9 questions
 const CHAPTER_9_QUESTIONS = [
   {
     "question_id": "ch9_q1_hybridization",
@@ -15,26 +15,26 @@ const CHAPTER_9_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "sp², trigonal planar",
+        "text": "sp\u00b2, trigonal planar",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "sp³, tetrahedral",
+        "text": "sp\u00b3, tetrahedral",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "sp³d, linear",
+        "text": "sp\u00b3d, linear",
         "smiles": "",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "This question tests the understanding of orbital hybridization and geometry in alkynes.",
-      "process": "Step 1: Identify that each carbon in acetylene is bonded to one hydrogen and one other carbon.\nStep 2: Carbon needs two hybrid orbitals to form two sigma (σ) bonds. This requires the mixing of one s and one p orbital, resulting in sp hybridization.\nStep 3: The two sp hybrid orbitals are oriented 180° apart to minimize electron repulsion, leading to a linear geometry. The remaining two unhybridized p orbitals on each carbon overlap to form two pi (π) bonds.",
+      "process": "Step 1: Identify that each carbon in acetylene is bonded to one hydrogen and one other carbon.\nStep 2: Carbon needs two hybrid orbitals to form two sigma (\u03c3) bonds. This requires the mixing of one s and one p orbital, resulting in sp hybridization.\nStep 3: The two sp hybrid orbitals are oriented 180\u00b0 apart to minimize electron repulsion, leading to a linear geometry. The remaining two unhybridized p orbitals on each carbon overlap to form two pi (\u03c0) bonds.",
       "result": "The carbon atoms are sp-hybridized and the geometry is linear."
     }
   },
@@ -72,7 +72,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the correlation between bond order, orbital hybridization, and bond properties (length/strength).",
-      "process": "Step 1: Analyze the hybridization of the carbons in each bond. In propyne, the triple-bonded carbons are sp-hybridized (50% s-character). In propene, the double-bonded carbons are sp²-hybridized (33.3% s-character).\nStep 2: Higher s-character means the hybrid orbitals are held closer to the nucleus, resulting in a shorter bond.\nStep 3: A triple bond consists of one sigma and two pi bonds (bond energy ~837 kJ/mol), which is much stronger than a double bond consisting of one sigma and one pi bond (bond energy ~611 kJ/mol).",
+      "process": "Step 1: Analyze the hybridization of the carbons in each bond. In propyne, the triple-bonded carbons are sp-hybridized (50% s-character). In propene, the double-bonded carbons are sp\u00b2-hybridized (33.3% s-character).\nStep 2: Higher s-character means the hybrid orbitals are held closer to the nucleus, resulting in a shorter bond.\nStep 3: A triple bond consists of one sigma and two pi bonds (bond energy ~837 kJ/mol), which is much stronger than a double bond consisting of one sigma and one pi bond (bond energy ~611 kJ/mol).",
       "result": "The carbon-carbon triple bond is shorter and stronger than the double bond."
     }
   },
@@ -80,7 +80,7 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q3_orbital_overlap",
     "topic": "Alkyne Structure & Bonding",
     "difficulty_level": "Medium",
-    "question_text": "What is the geometric relationship and origin of the two pi (π) bonds in a carbon-carbon triple bond?",
+    "question_text": "What is the geometric relationship and origin of the two pi (\u03c0) bonds in a carbon-carbon triple bond?",
     "question_smiles": "C#C",
     "options": [
       {
@@ -97,13 +97,13 @@ const CHAPTER_9_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "They are coplanar with the C-H sigma bonds, formed by sp² hybrid orbitals.",
+        "text": "They are coplanar with the C-H sigma bonds, formed by sp\u00b2 hybrid orbitals.",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "They are oriented at 120° relative to each other, formed by unhybridized d orbitals.",
+        "text": "They are oriented at 120\u00b0 relative to each other, formed by unhybridized d orbitals.",
         "smiles": "",
         "is_correct": false
       }
@@ -384,12 +384,12 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q11_base_selection",
     "topic": "Alkyne Acidity & Acetylide Anions",
     "difficulty_level": "Medium",
-    "question_text": "Which of the following bases is strong enough to quantitatively deprotonate a terminal alkyne (pKa ≈ 25) in liquid ammonia?",
+    "question_text": "Which of the following bases is strong enough to quantitatively deprotonate a terminal alkyne (pKa \u2248 25) in liquid ammonia?",
     "question_smiles": "CC#C",
     "options": [
       {
         "option_id": "A",
-        "text": "Sodium amide (NaNH₂)",
+        "text": "Sodium amide (NaNH\u2082)",
         "smiles": "",
         "is_correct": true
       },
@@ -414,8 +414,8 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the selection of a suitable base for the deprotonation of terminal alkynes based on pKa values.",
-      "process": "Step 1: The pKa of a terminal alkyne is approximately 25. To deprotonate it quantitatively, the conjugate acid of the base must have a pKa greater than 25 (preferably by several units).\nStep 2: Evaluate the pKa values of the conjugate acids of each option:\n- NaNH₂: conjugate acid is NH₃, pKa ≈ 36.\n- NaOH: conjugate acid is H₂O, pKa ≈ 15.7.\n- NaOEt: conjugate acid is EtOH, pKa ≈ 16.\n- KOtBu: conjugate acid is tBuOH, pKa ≈ 18.\nStep 3: Only NH₃ has a pKa (36) greater than 25, meaning sodium amide is strong enough to shift the equilibrium completely to the deprotonated acetylide form.",
-      "result": "Sodium amide (NaNH₂) is the only base listed capable of quantitatively deprotonating a terminal alkyne."
+      "process": "Step 1: The pKa of a terminal alkyne is approximately 25. To deprotonate it quantitatively, the conjugate acid of the base must have a pKa greater than 25 (preferably by several units).\nStep 2: Evaluate the pKa values of the conjugate acids of each option:\n- NaNH\u2082: conjugate acid is NH\u2083, pKa \u2248 36.\n- NaOH: conjugate acid is H\u2082O, pKa \u2248 15.7.\n- NaOEt: conjugate acid is EtOH, pKa \u2248 16.\n- KOtBu: conjugate acid is tBuOH, pKa \u2248 18.\nStep 3: Only NH\u2083 has a pKa (36) greater than 25, meaning sodium amide is strong enough to shift the equilibrium completely to the deprotonated acetylide form.",
+      "result": "Sodium amide (NaNH\u2082) is the only base listed capable of quantitatively deprotonating a terminal alkyne."
     }
   },
   {
@@ -452,7 +452,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the alkylation of terminal alkynes via an SN2 substitution.",
-      "process": "Step 1: Propyne (CH₃-C≡C-H) is treated with NaNH₂ to form the propynyl anion (CH₃-C≡C⁻).\nStep 2: The propynyl anion acts as a nucleophile in an SN2 reaction, attacking the primary carbon of 1-bromobutane (Br-CH₂-CH₂-CH₂-CH₃) and displacing bromide.\nStep 3: The resulting product has a 7-carbon chain with a triple bond starting at C2: hept-2-yne (CH₃-C≡C-CH₂-CH₂-CH₂-CH₃).",
+      "process": "Step 1: Propyne (CH\u2083-C\u2261C-H) is treated with NaNH\u2082 to form the propynyl anion (CH\u2083-C\u2261C\u207b).\nStep 2: The propynyl anion acts as a nucleophile in an SN2 reaction, attacking the primary carbon of 1-bromobutane (Br-CH\u2082-CH\u2082-CH\u2082-CH\u2083) and displacing bromide.\nStep 3: The resulting product has a 7-carbon chain with a triple bond starting at C2: hept-2-yne (CH\u2083-C\u2261C-CH\u2082-CH\u2082-CH\u2082-CH\u2083).",
       "result": "The major product is hept-2-yne."
     }
   },
@@ -490,7 +490,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question highlights the limitations of acetylide alkylation when using tertiary alkyl halides.",
-      "process": "Step 1: Sodium acetylide (HC≡C⁻ Na⁺) is both a strong nucleophile and a strong base.\nStep 2: 2-bromo-2-methylpropane is a tertiary alkyl halide, which is highly sterically hindered and cannot undergo back-side attack (SN2 is blocked).\nStep 3: Because SN2 is prevented, the highly basic acetylide anion acts as a base and undergoes an E2 elimination reaction with the tertiary halide.\nStep 4: Elimination of HBr from tert-butyl bromide produces 2-methylpropene (isobutylene) and regenerates acetylene.",
+      "process": "Step 1: Sodium acetylide (HC\u2261C\u207b Na\u207a) is both a strong nucleophile and a strong base.\nStep 2: 2-bromo-2-methylpropane is a tertiary alkyl halide, which is highly sterically hindered and cannot undergo back-side attack (SN2 is blocked).\nStep 3: Because SN2 is prevented, the highly basic acetylide anion acts as a base and undergoes an E2 elimination reaction with the tertiary halide.\nStep 4: Elimination of HBr from tert-butyl bromide produces 2-methylpropene (isobutylene) and regenerates acetylene.",
       "result": "The products are acetylene and 2-methylpropene."
     }
   },
@@ -528,7 +528,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the nucleophilic addition of acetylide anions to carbonyl compounds (ketones).",
-      "process": "Step 1: The acetylide anion (HC≡C⁻) attacks the electrophilic carbonyl carbon of acetone (CH₃COCH₃).\nStep 2: This forms an alkoxide intermediate: (CH₃)₂C(O⁻)C≡CH.\nStep 3: Protonation of the alkoxide with aqueous acid during workup yields the tertiary alcohol 2-methylbut-3-yn-2-ol.",
+      "process": "Step 1: The acetylide anion (HC\u2261C\u207b) attacks the electrophilic carbonyl carbon of acetone (CH\u2083COCH\u2083).\nStep 2: This forms an alkoxide intermediate: (CH\u2083)\u2082C(O\u207b)C\u2261CH.\nStep 3: Protonation of the alkoxide with aqueous acid during workup yields the tertiary alcohol 2-methylbut-3-yn-2-ol.",
       "result": "The reaction yields the alkynyl alcohol 2-methylbut-3-yn-2-ol."
     }
   },
@@ -566,7 +566,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the nucleophilic ring opening of epoxides by acetylide anions.",
-      "process": "Step 1: The propynyl anion (CH₃-C≡C⁻) attacks the less hindered carbon of the epoxide (oxirane is symmetric, so either carbon is equivalent).\nStep 2: Ring-opening occurs via an SN2 mechanism, producing an alkoxide intermediate: CH₃-C≡C-CH₂-CH₂-O⁻.\nStep 3: Acidic workup protonates the alkoxide to give the corresponding alcohol, pent-3-yn-1-ol.",
+      "process": "Step 1: The propynyl anion (CH\u2083-C\u2261C\u207b) attacks the less hindered carbon of the epoxide (oxirane is symmetric, so either carbon is equivalent).\nStep 2: Ring-opening occurs via an SN2 mechanism, producing an alkoxide intermediate: CH\u2083-C\u2261C-CH\u2082-CH\u2082-O\u207b.\nStep 3: Acidic workup protonates the alkoxide to give the corresponding alcohol, pent-3-yn-1-ol.",
       "result": "The final product is pent-3-yn-1-ol."
     }
   },
@@ -574,7 +574,7 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q16_elimination_vicinal",
     "topic": "Alkyne Synthesis via Elimination",
     "difficulty_level": "Medium",
-    "question_text": "What is the major organic product when 1,2-dibromobutane is treated with excess sodium amide (NaNH₂) in liquid ammonia, followed by a water workup?",
+    "question_text": "What is the major organic product when 1,2-dibromobutane is treated with excess sodium amide (NaNH\u2082) in liquid ammonia, followed by a water workup?",
     "question_smiles": "CCC(Br)CBr",
     "options": [
       {
@@ -604,7 +604,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the double dehydrohalogenation of vicinal dihalides to form terminal alkynes.",
-      "process": "Step 1: 1,2-dibromobutane is treated with a strong base (NaNH₂).\nStep 2: The first E2 elimination removes a proton from C1 or C2 to form a vinyl halide intermediate.\nStep 3: The second E2 elimination removes another proton and bromide to form the terminal alkyne but-1-yne.\nStep 4: Because terminal alkynes have an acidic proton (pKa ~ 25) and NaNH₂ is present in excess, the but-1-yne is immediately deprotonated to form sodium but-1-yn-1-ylide. This drives the reaction to completion.\nStep 5: Water workup protonates the acetylide salt to yield neutral but-1-yne.",
+      "process": "Step 1: 1,2-dibromobutane is treated with a strong base (NaNH\u2082).\nStep 2: The first E2 elimination removes a proton from C1 or C2 to form a vinyl halide intermediate.\nStep 3: The second E2 elimination removes another proton and bromide to form the terminal alkyne but-1-yne.\nStep 4: Because terminal alkynes have an acidic proton (pKa ~ 25) and NaNH\u2082 is present in excess, the but-1-yne is immediately deprotonated to form sodium but-1-yn-1-ylide. This drives the reaction to completion.\nStep 5: Water workup protonates the acetylide salt to yield neutral but-1-yne.",
       "result": "The major product is but-1-yne."
     }
   },
@@ -612,7 +612,7 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q17_elimination_geminal",
     "topic": "Alkyne Synthesis via Elimination",
     "difficulty_level": "Hard",
-    "question_text": "Predict the major product when 2,2-dichloropentane is treated with excess sodium amide (NaNH₂) in liquid ammonia, followed by water workup.",
+    "question_text": "Predict the major product when 2,2-dichloropentane is treated with excess sodium amide (NaNH\u2082) in liquid ammonia, followed by water workup.",
     "question_smiles": "CCCC(Cl)(Cl)C",
     "options": [
       {
@@ -655,33 +655,33 @@ const CHAPTER_9_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "Molten KOH at high temperature (200 °C) or NaNH₂ (2 equivalents) in mineral oil with heat",
+        "text": "Molten KOH at high temperature (200 \u00b0C) or NaNH\u2082 (2 equivalents) in mineral oil with heat",
         "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "Sodium bicarbonate (NaHCO₃) in water at room temperature",
+        "text": "Sodium bicarbonate (NaHCO\u2083) in water at room temperature",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "Sodium metal in liquid ammonia (Na / NH₃)",
+        "text": "Sodium metal in liquid ammonia (Na / NH\u2083)",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "Dilute sulfuric acid in water (H₂SO₄ / H₂O)",
+        "text": "Dilute sulfuric acid in water (H\u2082SO\u2084 / H\u2082O)",
         "smiles": "",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "This question covers the specific reagents and conditions required for the double dehydrohalogenation to form internal alkynes.",
-      "process": "Step 1: Internal alkynes do not have an acidic terminal proton, so we do not have the thermodynamic sink of acetylide formation to drive the reaction at room temperature.\nStep 2: The second elimination (from a vinyl halide intermediate) has a high activation energy.\nStep 3: Therefore, very strong bases (like KOH or NaNH₂) and high heat (e.g. 200 °C) are required to force the double elimination to completion and obtain the internal alkyne.",
-      "result": "Molten KOH at high temperatures or NaNH₂ in mineral oil with heat is the correct answer."
+      "process": "Step 1: Internal alkynes do not have an acidic terminal proton, so we do not have the thermodynamic sink of acetylide formation to drive the reaction at room temperature.\nStep 2: The second elimination (from a vinyl halide intermediate) has a high activation energy.\nStep 3: Therefore, very strong bases (like KOH or NaNH\u2082) and high heat (e.g. 200 \u00b0C) are required to force the double elimination to completion and obtain the internal alkyne.",
+      "result": "Molten KOH at high temperatures or NaNH\u2082 in mineral oil with heat is the correct answer."
     }
   },
   {
@@ -840,7 +840,7 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q23_halogenation_one_eq",
     "topic": "Electrophilic Additions",
     "difficulty_level": "Hard",
-    "question_text": "What is the major organic product when but-2-yne is treated with 1 equivalent of bromine (Br₂) in CH₂Cl₂ at low temperature?",
+    "question_text": "What is the major organic product when but-2-yne is treated with 1 equivalent of bromine (Br\u2082) in CH\u2082Cl\u2082 at low temperature?",
     "question_smiles": "CC#CC",
     "options": [
       {
@@ -878,7 +878,7 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q24_halogenation_excess",
     "topic": "Electrophilic Additions",
     "difficulty_level": "Easy",
-    "question_text": "What is the major product when hex-3-yne is treated with excess chlorine gas (Cl₂)?",
+    "question_text": "What is the major product when hex-3-yne is treated with excess chlorine gas (Cl\u2082)?",
     "question_smiles": "CCC#CCC",
     "options": [
       {
@@ -908,7 +908,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the reaction of alkynes with excess halogen.",
-      "process": "Step 1: One equivalent of Cl₂ adds across the triple bond of hex-3-yne to form 3,4-dichlorohex-3-ene.\nStep 2: The remaining double bond of 3,4-dichlorohex-3-ene reacts with a second equivalent of Cl₂.\nStep 3: Chlorine addition across the double bond yields the tetrahalogenated alkane, 3,3,4,4-tetrachlorohexane.",
+      "process": "Step 1: One equivalent of Cl\u2082 adds across the triple bond of hex-3-yne to form 3,4-dichlorohex-3-ene.\nStep 2: The remaining double bond of 3,4-dichlorohex-3-ene reacts with a second equivalent of Cl\u2082.\nStep 3: Chlorine addition across the double bond yields the tetrahalogenated alkane, 3,3,4,4-tetrachlorohexane.",
       "result": "The product is 3,3,4,4-tetrachlorohexane."
     }
   },
@@ -946,7 +946,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the conceptual understanding of the relative rates of electrophilic additions to alkynes versus alkenes.",
-      "process": "Step 1: Electrophilic addition to an alkyne goes through a vinylic carbocation intermediate (R-C⁺=CH₂), where the positive charge is on an sp-hybridized carbon.\nStep 2: An sp-hybridized carbon has 50% s-character and is more electronegative than an sp²-hybridized carbon (33.3% s-character). Therefore, an sp carbon does not stabilize a positive charge well.\nStep 3: Since the intermediate vinylic carbocation is highly unstable (high energy), the transition state leading to it is also high in energy, resulting in a slower reaction rate compared to alkenes.",
+      "process": "Step 1: Electrophilic addition to an alkyne goes through a vinylic carbocation intermediate (R-C\u207a=CH\u2082), where the positive charge is on an sp-hybridized carbon.\nStep 2: An sp-hybridized carbon has 50% s-character and is more electronegative than an sp\u00b2-hybridized carbon (33.3% s-character). Therefore, an sp carbon does not stabilize a positive charge well.\nStep 3: Since the intermediate vinylic carbocation is highly unstable (high energy), the transition state leading to it is also high in energy, resulting in a slower reaction rate compared to alkenes.",
       "result": "The instability of the vinylic carbocation intermediate is the primary reason for the lower reactivity of alkynes."
     }
   },
@@ -954,7 +954,7 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q26_hydration_terminal",
     "topic": "Hydration",
     "difficulty_level": "Medium",
-    "question_text": "What is the major organic product when hex-1-yne is treated with aqueous sulfuric acid in the presence of mercuric sulfate (HgSO₄)?",
+    "question_text": "What is the major organic product when hex-1-yne is treated with aqueous sulfuric acid in the presence of mercuric sulfate (HgSO\u2084)?",
     "question_smiles": "CCCCC#C",
     "options": [
       {
@@ -984,7 +984,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the acid-catalyzed hydration of terminal alkynes, which yields ketones via Markovnikov addition.",
-      "process": "Step 1: Hg²⁺ coordinates to the triple bond of hex-1-yne, activating it towards nucleophilic attack by water.\nStep 2: Water attacks the more substituted carbon (C2), forming a mercurinium-enol intermediate.\nStep 3: Protonolysis of the C-Hg bond gives the enol intermediate hex-1-en-2-ol.\nStep 4: Under the acidic conditions, the enol rapidly tautomerizes to its more stable keto form, hexan-2-one.",
+      "process": "Step 1: Hg\u00b2\u207a coordinates to the triple bond of hex-1-yne, activating it towards nucleophilic attack by water.\nStep 2: Water attacks the more substituted carbon (C2), forming a mercurinium-enol intermediate.\nStep 3: Protonolysis of the C-Hg bond gives the enol intermediate hex-1-en-2-ol.\nStep 4: Under the acidic conditions, the enol rapidly tautomerizes to its more stable keto form, hexan-2-one.",
       "result": "The major product is hexan-2-one."
     }
   },
@@ -1098,7 +1098,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the hydroboration-oxidation of terminal alkynes, which yields aldehydes.",
-      "process": "Step 1: Disiamylborane is a sterically hindered borane. It adds to the terminal carbon of hex-1-yne (anti-Markovnikov addition) to form a vinylborane intermediate.\nStep 2: Oxidation of the vinylborane with H₂O₂ and NaOH replaces the boron atom with a hydroxyl group, forming a terminal enol intermediate.\nStep 3: The terminal enol rapidly tautomerizes to the more stable aldehyde form, hexanal.",
+      "process": "Step 1: Disiamylborane is a sterically hindered borane. It adds to the terminal carbon of hex-1-yne (anti-Markovnikov addition) to form a vinylborane intermediate.\nStep 2: Oxidation of the vinylborane with H\u2082O\u2082 and NaOH replaces the boron atom with a hydroxyl group, forming a terminal enol intermediate.\nStep 3: The terminal enol rapidly tautomerizes to the more stable aldehyde form, hexanal.",
       "result": "The final product is hexanal."
     }
   },
@@ -1136,7 +1136,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the structural and stereochemical details of the enol intermediate in alkyne hydroboration.",
-      "process": "Step 1: Hydroboration of propyne (CH₃-C≡C-H) involves the syn-addition of H-B across the triple bond. The bulky boron atom adds to the less hindered terminal carbon (C1) and the hydrogen adds to C2.\nStep 2: In the syn-addition transition state, the hydrogen and boron add to the same side of the triple bond, placing the methyl group (C3) and boron trans to each other.\nStep 3: Oxidation with basic H₂O₂ replaces the boron atom with OH with retention of configuration, resulting in (E)-prop-1-en-1-ol.",
+      "process": "Step 1: Hydroboration of propyne (CH\u2083-C\u2261C-H) involves the syn-addition of H-B across the triple bond. The bulky boron atom adds to the less hindered terminal carbon (C1) and the hydrogen adds to C2.\nStep 2: In the syn-addition transition state, the hydrogen and boron add to the same side of the triple bond, placing the methyl group (C3) and boron trans to each other.\nStep 3: Oxidation with basic H\u2082O\u2082 replaces the boron atom with OH with retention of configuration, resulting in (E)-prop-1-en-1-ol.",
       "result": "The intermediate is (E)-prop-1-en-1-ol."
     }
   },
@@ -1149,7 +1149,7 @@ const CHAPTER_9_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "Protonation of the double bond carbon (CH₂) to form a resonance-stabilized oxocarbocation.",
+        "text": "Protonation of the double bond carbon (CH\u2082) to form a resonance-stabilized oxocarbocation.",
         "smiles": "",
         "is_correct": true
       },
@@ -1174,7 +1174,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the mechanistic details of acid-catalyzed keto-enol tautomerism.",
-      "process": "Step 1: In acidic solution, the double bond of the enol acts as a nucleophile. It is protonated at the terminal carbon (CH₂) to generate a carbocation at the carbon bearing the hydroxyl group (C2).\nStep 2: The positive charge at C2 is stabilized by resonance from the lone pair of the oxygen atom, forming a highly stable oxocarbocation.\nStep 3: Subsequent deprotonation of the oxygen by water yields acetone.",
+      "process": "Step 1: In acidic solution, the double bond of the enol acts as a nucleophile. It is protonated at the terminal carbon (CH\u2082) to generate a carbocation at the carbon bearing the hydroxyl group (C2).\nStep 2: The positive charge at C2 is stabilized by resonance from the lone pair of the oxygen atom, forming a highly stable oxocarbocation.\nStep 3: Subsequent deprotonation of the oxygen by water yields acetone.",
       "result": "The first step is protonation of the double bond carbon."
     }
   },
@@ -1212,7 +1212,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the base-catalyzed mechanism of keto-enol tautomerism.",
-      "process": "Step 1: Under basic conditions, the base removes the acidic proton from the hydroxyl group (-OH) of the enol.\nStep 2: This deprotonation yields a resonance-stabilized enolate anion (CH₂=C(O⁻)-CH₃ ↔ ⁻CH₂-C(=O)-CH₃).\nStep 3: Protonation of the enolate carbon by water then yields the keto form (acetone).",
+      "process": "Step 1: Under basic conditions, the base removes the acidic proton from the hydroxyl group (-OH) of the enol.\nStep 2: This deprotonation yields a resonance-stabilized enolate anion (CH\u2082=C(O\u207b)-CH\u2083 \u2194 \u207bCH\u2082-C(=O)-CH\u2083).\nStep 3: Protonation of the enolate carbon by water then yields the keto form (acetone).",
       "result": "The intermediate is the enolate anion."
     }
   },
@@ -1220,7 +1220,7 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q33_complete_hydrogenation",
     "topic": "Reduction",
     "difficulty_level": "Easy",
-    "question_text": "What is the major organic product when dec-4-yne is treated with excess hydrogen gas (H₂) in the presence of a palladium on carbon (Pd/C) catalyst?",
+    "question_text": "What is the major organic product when dec-4-yne is treated with excess hydrogen gas (H\u2082) in the presence of a palladium on carbon (Pd/C) catalyst?",
     "question_smiles": "CCCCCC#CCC",
     "options": [
       {
@@ -1296,7 +1296,7 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q35_dissolving_metal_reduction",
     "topic": "Reduction",
     "difficulty_level": "Medium",
-    "question_text": "What is the major organic product when hex-3-yne is treated with sodium metal in liquid ammonia (Na / NH₃)?",
+    "question_text": "What is the major organic product when hex-3-yne is treated with sodium metal in liquid ammonia (Na / NH\u2083)?",
     "question_smiles": "CCC#CCC",
     "options": [
       {
@@ -1372,7 +1372,7 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q37_terminal_alkyne_metal_reduction",
     "topic": "Reduction",
     "difficulty_level": "Hard",
-    "question_text": "What is the outcome when the terminal alkyne 1-hexyne is treated with sodium in liquid ammonia (Na / NH₃), followed by an aqueous workup?",
+    "question_text": "What is the outcome when the terminal alkyne 1-hexyne is treated with sodium in liquid ammonia (Na / NH\u2083), followed by an aqueous workup?",
     "question_smiles": "",
     "options": [
       {
@@ -1402,7 +1402,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the acid-base side reaction that competes in dissolving metal reductions of terminal alkynes.",
-      "process": "Step 1: Terminal alkynes are relatively acidic (pKa ≈ 25).\nStep 2: Sodium metal in liquid ammonia generates solvated electrons and amide ions, which are highly basic.\nStep 3: Instead of undergoing reduction, the terminal alkyne is deprotonated by the basic medium to form a sodium acetylide salt.\nStep 4: The acetylide anion has a negative charge, which makes it resistant to accepting another electron (since like charges repel). Thus, reduction is arrested.\nStep 5: During aqueous workup, the acetylide salt is protonated back to recover the terminal alkyne, 1-hexyne.",
+      "process": "Step 1: Terminal alkynes are relatively acidic (pKa \u2248 25).\nStep 2: Sodium metal in liquid ammonia generates solvated electrons and amide ions, which are highly basic.\nStep 3: Instead of undergoing reduction, the terminal alkyne is deprotonated by the basic medium to form a sodium acetylide salt.\nStep 4: The acetylide anion has a negative charge, which makes it resistant to accepting another electron (since like charges repel). Thus, reduction is arrested.\nStep 5: During aqueous workup, the acetylide salt is protonated back to recover the terminal alkyne, 1-hexyne.",
       "result": "The terminal alkyne is not reduced; starting material is recovered."
     }
   },
@@ -1410,7 +1410,7 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q38_ozonolysis_internal",
     "topic": "Oxidative Cleavage",
     "difficulty_level": "Medium",
-    "question_text": "What are the major organic products when oct-4-yne is treated with ozone (O₃), followed by a water workup (H₂O)?",
+    "question_text": "What are the major organic products when oct-4-yne is treated with ozone (O\u2083), followed by a water workup (H\u2082O)?",
     "question_smiles": "CCCC#CCCC",
     "options": [
       {
@@ -1448,12 +1448,12 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q39_ozonolysis_terminal",
     "topic": "Oxidative Cleavage",
     "difficulty_level": "Hard",
-    "question_text": "What are the major organic products when hex-1-yne is treated with ozone (O₃), followed by a water workup?",
+    "question_text": "What are the major organic products when hex-1-yne is treated with ozone (O\u2083), followed by a water workup?",
     "question_smiles": "CCCCC#C",
     "options": [
       {
         "option_id": "A",
-        "text": "Pentanoic acid and carbon dioxide (CO₂)",
+        "text": "Pentanoic acid and carbon dioxide (CO\u2082)",
         "smiles": "CCCCC(=O)O",
         "is_correct": true
       },
@@ -1478,7 +1478,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the ozonolysis of terminal alkynes.",
-      "process": "Step 1: Ozonolysis cleaves the triple bond of hex-1-yne between C1 and C2.\nStep 2: The C2 carbon (bearing the alkyl chain) is oxidized to a carboxylic acid, pentanoic acid (5 carbons).\nStep 3: The terminal C1 carbon is oxidized to carbonic acid, which is unstable and decomposes into carbon dioxide (CO₂) and water.",
+      "process": "Step 1: Ozonolysis cleaves the triple bond of hex-1-yne between C1 and C2.\nStep 2: The C2 carbon (bearing the alkyl chain) is oxidized to a carboxylic acid, pentanoic acid (5 carbons).\nStep 3: The terminal C1 carbon is oxidized to carbonic acid, which is unstable and decomposes into carbon dioxide (CO\u2082) and water.",
       "result": "The products are pentanoic acid and carbon dioxide."
     }
   },
@@ -1486,7 +1486,7 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q40_kmno4_harsh",
     "topic": "Oxidative Cleavage",
     "difficulty_level": "Medium",
-    "question_text": "What are the major organic products when hept-3-yne is treated with hot, basic potassium permanganate (KMnO₄, NaOH, heat), followed by acid workup?",
+    "question_text": "What are the major organic products when hept-3-yne is treated with hot, basic potassium permanganate (KMnO\u2084, NaOH, heat), followed by acid workup?",
     "question_smiles": "CCCC#CCC",
     "options": [
       {
@@ -1515,8 +1515,8 @@ const CHAPTER_9_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the harsh oxidative cleavage of internal alkynes using hot KMnO₄.",
-      "process": "Step 1: Hot, basic KMnO₄ cleaves the triple bond of hept-3-yne.\nStep 2: The alkyne carbons are oxidized to carboxylate salts.\nStep 3: Acid workup protonates the carboxylate salts to yield carboxylic acids.\nStep 4: Cleavage of hept-3-yne (which has a 3-carbon ethyl group on one side and a 4-carbon propyl group on the other) yields propanoic acid and butanoic acid.",
+      "context": "This question tests the harsh oxidative cleavage of internal alkynes using hot KMnO\u2084.",
+      "process": "Step 1: Hot, basic KMnO\u2084 cleaves the triple bond of hept-3-yne.\nStep 2: The alkyne carbons are oxidized to carboxylate salts.\nStep 3: Acid workup protonates the carboxylate salts to yield carboxylic acids.\nStep 4: Cleavage of hept-3-yne (which has a 3-carbon ethyl group on one side and a 4-carbon propyl group on the other) yields propanoic acid and butanoic acid.",
       "result": "The reaction yields propanoic acid and butanoic acid."
     }
   },
@@ -1524,7 +1524,7 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q41_kmno4_mild",
     "topic": "Oxidative Cleavage",
     "difficulty_level": "Hard",
-    "question_text": "What is the major organic product when oct-4-yne is treated with aqueous potassium permanganate (KMnO₄) under mild, neutral conditions?",
+    "question_text": "What is the major organic product when oct-4-yne is treated with aqueous potassium permanganate (KMnO\u2084) under mild, neutral conditions?",
     "question_smiles": "CCCC#CCCC",
     "options": [
       {
@@ -1553,8 +1553,8 @@ const CHAPTER_9_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the oxidation of alkynes under mild, neutral KMnO₄ conditions.",
-      "process": "Step 1: Under mild, neutral conditions (neutral pH, dilute, cool KMnO₄), potassium permanganate does not cleave the carbon-carbon sigma bond of the alkyne.\nStep 2: Instead, the triple bond is oxidized to a 1,2-diketone (vicinal diketone).\nStep 3: For the symmetrical alkyne oct-4-yne, this oxidation yields octane-4,5-dione.",
+      "context": "This question tests the oxidation of alkynes under mild, neutral KMnO\u2084 conditions.",
+      "process": "Step 1: Under mild, neutral conditions (neutral pH, dilute, cool KMnO\u2084), potassium permanganate does not cleave the carbon-carbon sigma bond of the alkyne.\nStep 2: Instead, the triple bond is oxidized to a 1,2-diketone (vicinal diketone).\nStep 3: For the symmetrical alkyne oct-4-yne, this oxidation yields octane-4,5-dione.",
       "result": "The major product is octane-4,5-dione."
     }
   },
@@ -1564,9 +1564,9 @@ const CHAPTER_9_QUESTIONS = [
     "difficulty_level": "Medium",
     "question_text": "What is the final major product of the following reaction sequence?",
     "question_text_list": [
-      "1. propyne + NaNH₂ in NH₃(l)",
+      "1. propyne + NaNH\u2082 in NH\u2083(l)",
       "2. 1-bromopropane",
-      "3. H₂ / Lindlar's catalyst"
+      "3. H\u2082 / Lindlar's catalyst"
     ],
     "question_smiles": "CC#C",
     "options": [
@@ -1597,7 +1597,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests a multi-step synthesis combining acetylide alkylation with a stereoselective alkyne reduction.",
-      "process": "Step 1: Propyne is deprotonated by NaNH₂ to form the propynyl anion (CH₃-C≡C⁻).\nStep 2: Alkylation of the propynyl anion with 1-bromopropane via an SN2 reaction yields the internal alkyne hex-2-yne (CH₃-C≡C-CH₂-CH₂-CH₃).\nStep 3: Reduction of hex-2-yne with hydrogen gas in the presence of Lindlar's catalyst undergoes syn-addition to yield the cis-alkene, (Z)-hex-2-ene.",
+      "process": "Step 1: Propyne is deprotonated by NaNH\u2082 to form the propynyl anion (CH\u2083-C\u2261C\u207b).\nStep 2: Alkylation of the propynyl anion with 1-bromopropane via an SN2 reaction yields the internal alkyne hex-2-yne (CH\u2083-C\u2261C-CH\u2082-CH\u2082-CH\u2083).\nStep 3: Reduction of hex-2-yne with hydrogen gas in the presence of Lindlar's catalyst undergoes syn-addition to yield the cis-alkene, (Z)-hex-2-ene.",
       "result": "The major product is (Z)-hex-2-ene."
     }
   },
@@ -1607,9 +1607,9 @@ const CHAPTER_9_QUESTIONS = [
     "difficulty_level": "Medium",
     "question_text": "What is the final major product of the following reaction sequence?",
     "question_text_list": [
-      "1. 1-butyne + NaNH₂ in NH₃(l)",
+      "1. 1-butyne + NaNH\u2082 in NH\u2083(l)",
       "2. 1-bromopropane",
-      "3. Na / liquid NH₃"
+      "3. Na / liquid NH\u2083"
     ],
     "question_smiles": "CCC#C",
     "options": [
@@ -1640,7 +1640,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests a multi-step synthesis involving acetylide alkylation and stereoselective reduction to a trans-alkene.",
-      "process": "Step 1: 1-butyne is deprotonated by NaNH₂ to form the butynyl anion (CH₃-CH₂-C≡C⁻).\nStep 2: Alkylation with 1-bromopropane via SN2 yields hept-3-yne (CH₃-CH₂-C≡C-CH₂-CH₂-CH₃).\nStep 3: Reduction of hept-3-yne with Na in liquid NH₃ performs an anti-addition of hydrogen to yield the trans-alkene, (E)-hept-3-ene.",
+      "process": "Step 1: 1-butyne is deprotonated by NaNH\u2082 to form the butynyl anion (CH\u2083-CH\u2082-C\u2261C\u207b).\nStep 2: Alkylation with 1-bromopropane via SN2 yields hept-3-yne (CH\u2083-CH\u2082-C\u2261C-CH\u2082-CH\u2082-CH\u2083).\nStep 3: Reduction of hept-3-yne with Na in liquid NH\u2083 performs an anti-addition of hydrogen to yield the trans-alkene, (E)-hept-3-ene.",
       "result": "The major product is (E)-hept-3-ene."
     }
   },
@@ -1650,9 +1650,9 @@ const CHAPTER_9_QUESTIONS = [
     "difficulty_level": "Medium",
     "question_text": "What is the final major organic product of the following reaction sequence?",
     "question_text_list": [
-      "1. propyne + NaNH₂ in NH₃(l)",
+      "1. propyne + NaNH\u2082 in NH\u2083(l)",
       "2. iodomethane",
-      "3. H₂O, H₂SO₄, HgSO₄"
+      "3. H\u2082O, H\u2082SO\u2084, HgSO\u2084"
     ],
     "question_smiles": "CC#C",
     "options": [
@@ -1683,7 +1683,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests a multi-step synthesis combining alkylation of a terminal alkyne with hydration.",
-      "process": "Step 1: Propyne is deprotonated to the propynyl anion and alkylated with iodomethane to yield the symmetrical alkyne but-2-yne (CH₃-C≡C-CH₃).\nStep 2: Hydration of but-2-yne with aqueous H₂SO₄/HgSO₄ yields the enol but-2-en-2-ol.\nStep 3: Tautomerization of the enol yields the ketone butan-2-one.",
+      "process": "Step 1: Propyne is deprotonated to the propynyl anion and alkylated with iodomethane to yield the symmetrical alkyne but-2-yne (CH\u2083-C\u2261C-CH\u2083).\nStep 2: Hydration of but-2-yne with aqueous H\u2082SO\u2084/HgSO\u2084 yields the enol but-2-en-2-ol.\nStep 3: Tautomerization of the enol yields the ketone butan-2-one.",
       "result": "The final product is butan-2-one."
     }
   },
@@ -1693,9 +1693,9 @@ const CHAPTER_9_QUESTIONS = [
     "difficulty_level": "Hard",
     "question_text": "What is the final major organic product of the following reaction sequence?",
     "question_text_list": [
-      "1. acetylene + NaNH₂ in NH₃(l)",
+      "1. acetylene + NaNH\u2082 in NH\u2083(l)",
       "2. 1-bromobutane",
-      "3. disiamylborane, then H₂O₂, NaOH"
+      "3. disiamylborane, then H\u2082O\u2082, NaOH"
     ],
     "question_smiles": "C#C",
     "options": [
@@ -1726,7 +1726,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests a multi-step synthesis combining monoalkylation of acetylene with hydroboration-oxidation to yield an aldehyde.",
-      "process": "Step 1: Acetylene is treated with 1 equivalent of NaNH₂ to form sodium acetylide, which is then alkylated with 1-bromobutane to yield the terminal alkyne hex-1-yne.\nStep 2: Hydroboration of hex-1-yne with disiamylborane results in anti-Markovnikov addition of boron to C1.\nStep 3: Basic peroxide oxidation replaces boron with a hydroxyl group, giving the terminal enol hex-1-en-1-ol.\nStep 4: Tautomerization of this enol yields the aldehyde, hexanal.",
+      "process": "Step 1: Acetylene is treated with 1 equivalent of NaNH\u2082 to form sodium acetylide, which is then alkylated with 1-bromobutane to yield the terminal alkyne hex-1-yne.\nStep 2: Hydroboration of hex-1-yne with disiamylborane results in anti-Markovnikov addition of boron to C1.\nStep 3: Basic peroxide oxidation replaces boron with a hydroxyl group, giving the terminal enol hex-1-en-1-ol.\nStep 4: Tautomerization of this enol yields the aldehyde, hexanal.",
       "result": "The final major product is hexanal."
     }
   },
@@ -1734,7 +1734,7 @@ const CHAPTER_9_QUESTIONS = [
     "question_id": "ch9_q46_chemoselectivity_halogenation",
     "topic": "Electrophilic Additions",
     "difficulty_level": "Hard",
-    "question_text": "What is the major organic product when 1-hexen-5-yne is treated with 1 equivalent of bromine (Br₂) in CH₂Cl₂ at low temperature?",
+    "question_text": "What is the major organic product when 1-hexen-5-yne is treated with 1 equivalent of bromine (Br\u2082) in CH\u2082Cl\u2082 at low temperature?",
     "question_smiles": "C=CCCC#C",
     "options": [
       {
@@ -1764,7 +1764,7 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the chemoselectivity of electrophilic addition to compounds containing both alkene and alkyne functional groups.",
-      "process": "Step 1: Alkenes are generally more reactive than alkynes toward electrophilic addition because the carbocation (or bromonium ion) intermediate from an alkene is much more stable than that from an alkyne.\nStep 2: Therefore, 1 equivalent of Br₂ will add selectively to the double bond, leaving the triple bond intact.\nStep 3: The double bond at C1-C2 of 1-hexen-5-yne reacts to form a dibromo alkane, while the C5-C6 triple bond remains unchanged.\nStep 4: To name the product, we number the chain from the end closer to the remaining unsaturation (the triple bond at C1). The bromines are thus at C5 and C6, yielding 5,6-dibromohex-1-yne.",
+      "process": "Step 1: Alkenes are generally more reactive than alkynes toward electrophilic addition because the carbocation (or bromonium ion) intermediate from an alkene is much more stable than that from an alkyne.\nStep 2: Therefore, 1 equivalent of Br\u2082 will add selectively to the double bond, leaving the triple bond intact.\nStep 3: The double bond at C1-C2 of 1-hexen-5-yne reacts to form a dibromo alkane, while the C5-C6 triple bond remains unchanged.\nStep 4: To name the product, we number the chain from the end closer to the remaining unsaturation (the triple bond at C1). The bromines are thus at C5 and C6, yielding 5,6-dibromohex-1-yne.",
       "result": "The major product is 5,6-dibromohex-1-yne."
     }
   },
@@ -1853,33 +1853,33 @@ const CHAPTER_9_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "1. NaNH₂ (2 eq); 2. bromoethane (2 eq); 3. H₂ / Lindlar's catalyst",
+        "text": "1. NaNH\u2082 (2 eq); 2. bromoethane (2 eq); 3. H\u2082 / Lindlar's catalyst",
         "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "1. NaNH₂ (2 eq); 2. bromoethane (2 eq); 3. Na / liquid NH₃",
+        "text": "1. NaNH\u2082 (2 eq); 2. bromoethane (2 eq); 3. Na / liquid NH\u2083",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "1. NaNH₂ (1 eq); 2. bromoethane (1 eq); 3. H₂ / Lindlar's catalyst",
+        "text": "1. NaNH\u2082 (1 eq); 2. bromoethane (1 eq); 3. H\u2082 / Lindlar's catalyst",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "1. bromoethane (2 eq); 2. H₂ / Pd-C",
+        "text": "1. bromoethane (2 eq); 2. H\u2082 / Pd-C",
         "smiles": "",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "This question tests retrosynthetic planning for a cis-alkene.",
-      "process": "Step 1: Disconnect the target molecule (Z)-hex-3-ene. The cis-alkene is best prepared by the partial hydrogenation of the corresponding internal alkyne, hex-3-yne, using H₂ and Lindlar's catalyst.\nStep 2: Hex-3-yne can be synthesized by the double alkylation of acetylene.\nStep 3: Treat acetylene with 2 equivalents of sodium amide (NaNH₂) to deprotonate both ends, and react with 2 equivalents of bromoethane to form hex-3-yne.\nStep 4: Finally, reduce hex-3-yne with H₂/Lindlar to get the (Z) product.",
-      "result": "The correct sequence is: NaNH₂ (2 eq), bromoethane (2 eq), then H₂ / Lindlar's catalyst."
+      "process": "Step 1: Disconnect the target molecule (Z)-hex-3-ene. The cis-alkene is best prepared by the partial hydrogenation of the corresponding internal alkyne, hex-3-yne, using H\u2082 and Lindlar's catalyst.\nStep 2: Hex-3-yne can be synthesized by the double alkylation of acetylene.\nStep 3: Treat acetylene with 2 equivalents of sodium amide (NaNH\u2082) to deprotonate both ends, and react with 2 equivalents of bromoethane to form hex-3-yne.\nStep 4: Finally, reduce hex-3-yne with H\u2082/Lindlar to get the (Z) product.",
+      "result": "The correct sequence is: NaNH\u2082 (2 eq), bromoethane (2 eq), then H\u2082 / Lindlar's catalyst."
     }
   },
   {
@@ -1916,8 +1916,51 @@ const CHAPTER_9_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests retrosynthetic analysis of an alkyne based on oxidative cleavage products.",
-      "process": "Step 1: Ozonolysis cleaves the C≡C triple bond of the starting alkyne, converting each alkyne carbon to a carboxylic acid group (-COOH).\nStep 2: The products are:\n- Propanoic acid: CH₃-CH₂-COOH (a 3-carbon straight chain fragment).\n- 2-Methylpropanoic acid: (CH₃)₂CH-COOH (a 4-carbon branched fragment).\nStep 3: Join the carboxyl carbons of these two acids via a triple bond to reassemble the starting alkyne: CH₃-CH₂-C≡C-CH(CH₃)₂.\nStep 4: Name the resulting alkyne: the longest chain containing the triple bond has 6 carbons. We must number from the end that gives substituents the lowest possible numbers. Numbering from right-to-left puts the methyl group at C2 and the triple bond at C3, yielding 2-methylhex-3-yne. Numbering from left-to-right would yield 5-methylhex-3-yne, which is incorrect because 2 is lower than 5.",
+      "process": "Step 1: Ozonolysis cleaves the C\u2261C triple bond of the starting alkyne, converting each alkyne carbon to a carboxylic acid group (-COOH).\nStep 2: The products are:\n- Propanoic acid: CH\u2083-CH\u2082-COOH (a 3-carbon straight chain fragment).\n- 2-Methylpropanoic acid: (CH\u2083)\u2082CH-COOH (a 4-carbon branched fragment).\nStep 3: Join the carboxyl carbons of these two acids via a triple bond to reassemble the starting alkyne: CH\u2083-CH\u2082-C\u2261C-CH(CH\u2083)\u2082.\nStep 4: Name the resulting alkyne: the longest chain containing the triple bond has 6 carbons. We must number from the end that gives substituents the lowest possible numbers. Numbering from right-to-left puts the methyl group at C2 and the triple bond at C3, yielding 2-methylhex-3-yne. Numbering from left-to-right would yield 5-methylhex-3-yne, which is incorrect because 2 is lower than 5.",
       "result": "The starting alkyne is 2-methylhex-3-yne."
+    }
+  },
+  {
+    "question_id": "ch9_q_dynamic_alkyne_hydration",
+    "topic": "Alkynes: Electrophilic Additions",
+    "difficulty_level": "Medium",
+    "question_text": "Predict the correct products from the hydration of propyne.",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "H2O, H2SO4, HgSO4",
+      "conditions": "sulfuric acid / Hg(II) catalyst",
+      "products": [
+        "CC(C)=O"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Propyne undergoes Markovnikov addition of water to yield an enol intermediate, which tautomerizes to acetone.",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Propyne yields propionaldehyde under these conditions.",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "The reaction produces propane-1,2-diol.",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "The reaction leads to alkene reduction.",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Analyzing alkyne hydration mechanisms.",
+      "process": "Addition of water occurs with Markovnikov selectivity, forming 2-propenol (enol). The enol quickly tautomerizes to the more stable ketone form, acetone.",
+      "result": "The final product is acetone."
     }
   }
 ];

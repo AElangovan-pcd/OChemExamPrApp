@@ -1,4 +1,4 @@
-// Chapter 18: Spectroscopy (SDBS & ChemicalBook Data)
+// McMurry Chapter 18 questions
 const CHAPTER_18_QUESTIONS = [
   {
     "question_id": "ch18_q1_ethanol_1hnmr",
@@ -568,6 +568,50 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question tests the analysis of 13C NMR signals based on molecular symmetry and chemical shielding.",
       "process": "Step 1: Analyze symmetry. Phenol has a plane of symmetry passing through C1 and C4. This makes C2/C6 equivalent and C3/C5 equivalent. Therefore, there are 4 unique carbon environments in the aromatic ring: C1, C2/6, C3/5, and C4.\nStep 2: Analyze chemical shielding. The oxygen atom attached to C1 is highly electronegative and deshields the C1 carbon via induction, shifting it downfield. Resonance electron-donation also occurs (oxygen lone pairs donate into the ring, shielding ortho/para positions), but the inductive effect dominates at the C1 position, shifting it to $~155\\text{ ppm}$.\nStep 3: Combine: 4 signals, with the C1 carbon being the most deshielded and shifted downfield.",
       "result": "Phenol exhibits 4 signals in the 13C NMR spectrum due to symmetry, and the oxygen-bearing carbon (C1) is furthest downfield at ~155 ppm."
+    }
+  },
+  {
+    "question_id": "ch18_q_dynamic_epoxide_opening",
+    "topic": "Epoxide Ring Opening Reactions",
+    "difficulty_level": "Hard",
+    "question_text": "Determine the regiochemical outcome of epoxide ring opening under acidic vs basic conditions.",
+    "reaction_scheme": {
+      "reactants": [
+        "CC1(C)OC1"
+      ],
+      "reagents": "1) Acidic (H3O+) vs 2) Basic (NaOCH3/CH3OH)",
+      "conditions": "regioselectivity paths",
+      "products": [
+        "CC(C)(O)CO",
+        "CC(C)(OCH3)CO"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Under acidic conditions, nucleophiles attack the more substituted carbon; under basic conditions, nucleophiles attack the less substituted carbon.",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Nucleophiles attack the more substituted carbon under all conditions.",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Nucleophiles attack the less substituted carbon under all conditions.",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "No ring opening occurs in base.",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Analyzing transition states of epoxide ring openings.",
+      "process": "In acid, protonation of oxygen creates carbocation-like character at the carbon most able to stabilize positive charge (more substituted). In base, steric hindrance dominates, directing the nucleophile to the less substituted carbon (backside attack).",
+      "result": "Regiochemical pathways identified."
     }
   }
 ];

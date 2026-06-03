@@ -1,4 +1,4 @@
-// OpenStax Organic Chemistry Chapter 10: Organohalides
+// McMurry Chapter 10 questions
 const CHAPTER_10_QUESTIONS = [
   {
     "question_id": "ch10_q1_iupac_branched",
@@ -292,7 +292,7 @@ const CHAPTER_10_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the physical principles governing molecular polarity and dipole moments in halomethanes.",
-      "process": "Step 1: Dipole moment ($\\mu$) is mathematically defined as $\\mu = q \\times d$, where $q$ is the magnitude of the separated charge and $d$ is the distance (bond length).\nStep 2: Fluorine is more electronegative than chlorine, meaning $q$ is larger for the C-F bond.\nStep 3: However, the C-Cl bond (1.78 Å) is significantly longer than the C-F bond (1.39 Å). The greater bond distance $d$ in $CH_3Cl$ outweighs the larger charge separation $q$ in $CH_3F$, resulting in a slightly higher dipole moment for $CH_3Cl$.",
+      "process": "Step 1: Dipole moment ($\\mu$) is mathematically defined as $\\mu = q \\times d$, where $q$ is the magnitude of the separated charge and $d$ is the distance (bond length).\nStep 2: Fluorine is more electronegative than chlorine, meaning $q$ is larger for the C-F bond.\nStep 3: However, the C-Cl bond (1.78 \u00c5) is significantly longer than the C-F bond (1.39 \u00c5). The greater bond distance $d$ in $CH_3Cl$ outweighs the larger charge separation $q$ in $CH_3F$, resulting in a slightly higher dipole moment for $CH_3Cl$.",
       "result": "The longer C-Cl bond length increases the distance factor of the dipole moment equation, outweighing the electronegativity difference."
     }
   },
@@ -1826,6 +1826,49 @@ const CHAPTER_10_QUESTIONS = [
       "context": "This question tests the addition of Grignard reagents to ketones to synthesize tertiary alcohols.",
       "process": "Step 1: Phenylmagnesium bromide acts as a phenyl nucleophile ($Ph^-$).\nStep 2: Nucleophilic attack occurs at the carbonyl carbon of pentan-2-one, yielding an alkoxide intermediate.\nStep 3: Protonation of the alkoxide during acidic workup yields the tertiary alcohol 2-phenylpentan-2-ol.",
       "result": "The product is 2-phenylpentan-2-ol."
+    }
+  },
+  {
+    "question_id": "ch10_q_dynamic_radical_bromination",
+    "topic": "Radical Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "Identify the major monobromination product of propane under light.",
+    "reaction_scheme": {
+      "reactants": [
+        "CCC"
+      ],
+      "reagents": "Br2, light",
+      "conditions": "radical pathway",
+      "products": [
+        "CC(Br)C"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "2-Bromopropane is the major product due to the higher stability of secondary radicals.",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "1-Bromopropane is the major product due to statistical probability.",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "1,2-Dibromopropane is the primary product.",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Propene is formed via elimination.",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Assessing regiochemistry of radical halogenations.",
+      "process": "Bromine radicals are highly selective. Propane contains primary and secondary hydrogens. Abstraction of secondary hydrogen yields a secondary radical (stable), which reacts with Br2 to give 2-bromopropane.",
+      "result": "The major product is 2-bromopropane."
     }
   }
 ];

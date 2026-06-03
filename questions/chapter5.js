@@ -1,4 +1,4 @@
-// OpenStax Organic Chemistry Chapter 5: Stereochemistry at Tetrahedral Centers
+// McMurry Chapter 5 questions
 const CHAPTER_5_QUESTIONS = [
   {
     "question_id": "ch5_q1_allene_chirality",
@@ -840,30 +840,30 @@ const CHAPTER_5_QUESTIONS = [
     "question_id": "ch5_q23_rs_vinyl_vs_isopropyl",
     "topic": "R/S Assignment",
     "difficulty_level": "Hard",
-    "question_text": "Under Cahn-Ingold-Prelog rules, what is the correct priority order (highest to lowest) for the following groups?\n-C≡CH, -CH=CH2, -CH(CH3)2, -CH2CH2CH3",
+    "question_text": "Under Cahn-Ingold-Prelog rules, what is the correct priority order (highest to lowest) for the following groups?\n-C\u2261CH, -CH=CH2, -CH(CH3)2, -CH2CH2CH3",
     "question_smiles": "C[C@@H](C#C)C=C",
     "options": [
       {
         "option_id": "A",
-        "text": "-C≡CH > -CH=CH2 > -CH(CH3)2 > -CH2CH2CH3",
+        "text": "-C\u2261CH > -CH=CH2 > -CH(CH3)2 > -CH2CH2CH3",
         "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "-C≡CH > -CH(CH3)2 > -CH=CH2 > -CH2CH2CH3",
+        "text": "-C\u2261CH > -CH(CH3)2 > -CH=CH2 > -CH2CH2CH3",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "-CH=CH2 > -C≡CH > -CH(CH3)2 > -CH2CH2CH3",
+        "text": "-CH=CH2 > -C\u2261CH > -CH(CH3)2 > -CH2CH2CH3",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "-CH(CH3)2 > -C≡CH > -CH=CH2 > -CH2CH2CH3",
+        "text": "-CH(CH3)2 > -C\u2261CH > -CH=CH2 > -CH2CH2CH3",
         "smiles": "",
         "is_correct": false
       }
@@ -871,7 +871,7 @@ const CHAPTER_5_QUESTIONS = [
     "feedback": {
       "context": "This question tests how double and triple bonds are treated when assigning CIP priorities.",
       "process": "Step 1: Convert multiple bonds to equivalent single bonds. A triple bond carbon $-C\\equiv CH$ is treated as bonded to three carbons: (C, C, C). A double bond carbon $-CH=CH_2$ is treated as bonded to two carbons and one hydrogen: (C, C, H).\nStep 2: Compare C1 atoms: $-C\\equiv CH$ is (C,C,C) vs. $-CH=CH_2$ which is (C,C,H) vs. $-CH(CH_3)_2$ which is (C,C,H) vs. $-CH_2CH_2CH_3$ which is (C,H,H).\nStep 3: Comparing: (C,C,C) wins immediately, so $-C\\equiv CH$ is priority 1. $-CH_2CH_2CH_3$ is (C,H,H), so it is priority 4.\nStep 4: Now compare $-CH=CH_2$ (vinyl) and $-CH(CH_3)_2$ (isopropyl). Both have C1 bonded to (C,C,H). Go to the next atoms: for vinyl, the next carbon is double bonded, treated as bonded to (C,H,H). For isopropyl, the methyl carbons are bonded to (H,H,H). Since (C,H,H) beats (H,H,H), vinyl has higher priority than isopropyl. Thus, priority is $-C\\equiv CH > -CH=CH_2 > -CH(CH_3)_2 > -CH_2CH_2CH_3$.",
-      "result": "The priority order is -C≡CH > -CH=CH2 > -CH(CH3)2 > -CH2CH2CH3. Double and triple bonds are treated as multiple single bonds to phantom carbons."
+      "result": "The priority order is -C\u2261CH > -CH=CH2 > -CH(CH3)2 > -CH2CH2CH3. Double and triple bonds are treated as multiple single bonds to phantom carbons."
     }
   },
   {
@@ -1592,7 +1592,7 @@ const CHAPTER_5_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the chemical mechanism of resolving enantiomers via salt formation.",
-      "process": "Step 1: Enantiomers cannot be separated by standard physical methods because they have identical physical properties.\nStep 2: Reacting a racemic mixture of amines, (±)-A, with a pure enantiomer of an acid, (+)-B, results in the formation of two salts: ((+)-A·(+)-B) and ((-)-A·(+)-B).\nStep 3: These two salts are diastereomers of each other (not mirror images). Because they are diastereomers, they have different solubilities, allowing them to be separated by selective recrystallization. The free amines are then recovered by adding a base.",
+      "process": "Step 1: Enantiomers cannot be separated by standard physical methods because they have identical physical properties.\nStep 2: Reacting a racemic mixture of amines, (\u00b1)-A, with a pure enantiomer of an acid, (+)-B, results in the formation of two salts: ((+)-A\u00b7(+)-B) and ((-)-A\u00b7(+)-B).\nStep 3: These two salts are diastereomers of each other (not mirror images). Because they are diastereomers, they have different solubilities, allowing them to be separated by selective recrystallization. The free amines are then recovered by adding a base.",
       "result": "Chiral resolving agents work by converting enantiomers into diastereomeric salts which possess different solubilities and can be separated by recrystallization."
     }
   },
@@ -1782,7 +1782,7 @@ const CHAPTER_5_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests how temperature-dependent conformational mobility affects chirality and resolution.",
-      "process": "Step 1: At room temperature, the two chair conformations of cis-1,2-dimethylcyclohexane interconvert rapidly. These conformations are enantiomers of each other.\nStep 2: At very low temperatures (like -100 °C), the thermal energy is insufficient to overcome the barrier for the chair flip, freezing the conformations.\nStep 3: This stops the interconversion, locking the molecules into their individual chiral chair forms. Under these conditions, the two enantiomers can theoretically be resolved and would rotate plane-polarized light.",
+      "process": "Step 1: At room temperature, the two chair conformations of cis-1,2-dimethylcyclohexane interconvert rapidly. These conformations are enantiomers of each other.\nStep 2: At very low temperatures (like -100 \u00b0C), the thermal energy is insufficient to overcome the barrier for the chair flip, freezing the conformations.\nStep 3: This stops the interconversion, locking the molecules into their individual chiral chair forms. Under these conditions, the two enantiomers can theoretically be resolved and would rotate plane-polarized light.",
       "result": "Freezing the ring flip of cis-1,2-dimethylcyclohexane at low temperatures allows the isolation of the two stable, chiral chair conformers as enantiomers."
     }
   },
@@ -1898,6 +1898,56 @@ const CHAPTER_5_QUESTIONS = [
       "context": "This question tests the number of stereoisomers for an unsymmetrically disubstituted cyclic system.",
       "process": "Step 1: Identify the stereocenters. The stereocenters are C1 (bonded to Br, H, and ring paths) and C2 (bonded to Cl, H, and ring paths).\nStep 2: Evaluate the symmetry of the molecule. Because the two substituents are different (Br and Cl), the molecule is unsymmetrical. There is no plane of symmetry in any isomer (neither cis nor trans).\nStep 3: Apply the $2^n$ rule where $n = 2$: $2^2 = 4$ stereoisomers. This corresponds to a pair of cis enantiomers: ((1R,2S) and (1S,2R)) and a pair of trans enantiomers: ((1R,2R) and (1S,2S)).",
       "result": "There are 4 stereoisomers of 1-bromo-2-chlorocyclopropane since there are two stereocenters and no internal symmetry is possible."
+    }
+  },
+  {
+    "question_id": "ch5_q_dynamic_rs_assign",
+    "topic": "Stereochemistry: R/S Configurations",
+    "difficulty_level": "Hard",
+    "question_text": "Identify the stereocenter configurations for the following chiral molecules.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "C[C@@H](O)C(=O)O",
+        "correctAnswer": "S-Lactic Acid"
+      },
+      {
+        "smiles": "C[C@H](O)C(=O)O",
+        "correctAnswer": "R-Lactic Acid"
+      },
+      {
+        "smiles": "N[C@@H](C)C(=O)O",
+        "correctAnswer": "S-Alanine"
+      },
+      {
+        "smiles": "N[C@H](C)C(=O)O",
+        "correctAnswer": "R-Alanine"
+      }
+    ],
+    "match_options": [
+      "S-Lactic Acid",
+      "R-Lactic Acid",
+      "S-Alanine",
+      "R-Alanine",
+      "Meso-Tartaric Acid"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect R/S assignments",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Assigning Cahn-Ingold-Prelog priorities to configure stereocenters.",
+      "process": "For lactic acid, -OH is 1, -COOH is 2, -CH3 is 3, -H is 4. If the lowest priority group H is on a wedge, reverse configuration. This correctly yields S for C@@H and R for C@H.",
+      "result": "Stereocenter configurations assigned."
     }
   }
 ];

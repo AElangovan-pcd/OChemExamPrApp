@@ -1,4 +1,4 @@
-// ACS Organic Chemistry Exam Preparation - ACS: Nucleophilic Substitution at Carbonyls
+// McMurry Chapter 26 questions
 const CHAPTER_26_QUESTIONS = [
   {
     "question_id": "ch26_acs_q1_carbonyl_substitution",
@@ -284,7 +284,7 @@ const CHAPTER_26_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "1) DIBAL-H, toluene, -78 °C; 2) H2O",
+        "text": "1) DIBAL-H, toluene, -78 \u00b0C; 2) H2O",
         "is_correct": true
       },
       {
@@ -305,8 +305,8 @@ const CHAPTER_26_QUESTIONS = [
     ],
     "feedback": {
       "context": "Selecting selective reducing agents for partial reduction of esters.",
-      "process": "Step 1: LiAlH4 reduces esters completely to primary alcohols. NaBH4 does not reduce esters.\nStep 2: DIBAL-H is a bulky, mild reducing agent.\nStep 3: At -78 °C, DIBAL-H reduces the ester to a stable aluminum complex that does not collapse until water is added, yielding the aldehyde.",
-      "result": "DIBAL-H at -78 °C is the reagent of choice for ester-to-aldehyde reduction."
+      "process": "Step 1: LiAlH4 reduces esters completely to primary alcohols. NaBH4 does not reduce esters.\nStep 2: DIBAL-H is a bulky, mild reducing agent.\nStep 3: At -78 \u00b0C, DIBAL-H reduces the ester to a stable aluminum complex that does not collapse until water is added, yielding the aldehyde.",
+      "result": "DIBAL-H at -78 \u00b0C is the reagent of choice for ester-to-aldehyde reduction."
     }
   },
   {
@@ -341,6 +341,49 @@ const CHAPTER_26_QUESTIONS = [
       "context": "Synthesizing acid anhydrides via nucleophilic acyl substitution.",
       "process": "Step 1: Acetate ion is a good nucleophile.\nStep 2: It attacks the highly reactive carbonyl of acetyl chloride.\nStep 3: Collapse of the tetrahedral intermediate expels chloride to yield acetic anhydride.",
       "result": "The reaction yields acetic anhydride."
+    }
+  },
+  {
+    "question_id": "ch26_q_dynamic_isoelectric_points",
+    "topic": "Biomolecules: Amino Acids",
+    "difficulty_level": "Hard",
+    "question_text": "Match each amino acid to its general classification and isoelectric point (pI).",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "C(C(=O)O)[C@@H](C(=O)O)N",
+        "correctAnswer": "Acidic Side Chain (pI ~ 3.0)"
+      },
+      {
+        "smiles": "NCCCC[C@@H](C(=O)O)N",
+        "correctAnswer": "Basic Side Chain (pI ~ 9.7)"
+      },
+      {
+        "smiles": "C[C@@H](C(=O)O)N",
+        "correctAnswer": "Neutral Side Chain (pI ~ 6.0)"
+      }
+    ],
+    "match_options": [
+      "Acidic Side Chain (pI ~ 3.0)",
+      "Basic Side Chain (pI ~ 9.7)",
+      "Neutral Side Chain (pI ~ 6.0)"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect amino acid properties",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Assessing isoelectric points of acidic, basic, and neutral amino acids.",
+      "process": "Aspartic Acid has carboxylic side chain: acidic (low pI). Lysine has amine side chain: basic (high pI). Alanine has hydrocarbon side chain: neutral (middle pI).",
+      "result": "Amino acids classified."
     }
   }
 ];

@@ -1,4 +1,4 @@
-// OpenStax Organic Chemistry Chapter 11: Reactions of Alkyl Halides: Nucleophilic Substitutions and Eliminations
+// McMurry Chapter 11 questions
 const CHAPTER_11_QUESTIONS = [
   {
     "question_id": "ch11_q1_sn2_kinetics_rate_law",
@@ -427,25 +427,25 @@ const CHAPTER_11_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "HS⁻, because sulfur is larger and more polarizable than oxygen, and is less tightly solvated by the protic solvent methanol.",
+        "text": "HS\u207b, because sulfur is larger and more polarizable than oxygen, and is less tightly solvated by the protic solvent methanol.",
         "smiles": "CCS",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "HO⁻, because oxygen is more electronegative and has a higher concentration of negative charge.",
+        "text": "HO\u207b, because oxygen is more electronegative and has a higher concentration of negative charge.",
         "smiles": "CCO",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "F⁻, because it is the smallest anion and can coordinate closest to the carbon atom.",
+        "text": "F\u207b, because it is the smallest anion and can coordinate closest to the carbon atom.",
         "smiles": "CCF",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "Cl⁻, because chloride has a lower pKa than fluoride, making it more stable.",
+        "text": "Cl\u207b, because chloride has a lower pKa than fluoride, making it more stable.",
         "smiles": "CCCl",
         "is_correct": false
       }
@@ -490,7 +490,7 @@ const CHAPTER_11_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests how steric hindrance in the nucleophile can decouple basicity from nucleophilicity.",
-      "process": "Step 1: Identify that basicity is a thermodynamic property (equilibrium constant), while nucleophilicity is a kinetic property (reaction rate).\nStep 2: Note that tert-butoxide is a stronger base than ethoxide (pKa of conjugate acids: tBuOH ≈ 18 vs. EtOH ≈ 16). However, the three methyl groups on tert-butoxide create severe steric bulk around the anionic oxygen.\nStep 3: This steric hindrance hinders backside attack on the carbon of 1-bromobutane, making tert-butoxide a poor nucleophile for substitution. Instead, it deprotonates a beta-hydrogen to undergo E2 elimination. Ethoxide is relatively unhindered and readily performs backside attack (SN2).",
+      "process": "Step 1: Identify that basicity is a thermodynamic property (equilibrium constant), while nucleophilicity is a kinetic property (reaction rate).\nStep 2: Note that tert-butoxide is a stronger base than ethoxide (pKa of conjugate acids: tBuOH \u2248 18 vs. EtOH \u2248 16). However, the three methyl groups on tert-butoxide create severe steric bulk around the anionic oxygen.\nStep 3: This steric hindrance hinders backside attack on the carbon of 1-bromobutane, making tert-butoxide a poor nucleophile for substitution. Instead, it deprotonates a beta-hydrogen to undergo E2 elimination. Ethoxide is relatively unhindered and readily performs backside attack (SN2).",
       "result": "Ethoxide is the faster nucleophile because it lacks the steric bulk of tert-butoxide."
     }
   },
@@ -541,25 +541,25 @@ const CHAPTER_11_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "In water, the order is I⁻ > Br⁻ > Cl⁻ > F⁻; in acetonitrile, the order reverses to F⁻ > Cl⁻ > Br⁻ > I⁻.",
+        "text": "In water, the order is I\u207b > Br\u207b > Cl\u207b > F\u207b; in acetonitrile, the order reverses to F\u207b > Cl\u207b > Br\u207b > I\u207b.",
         "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "In water, the order is F⁻ > Cl⁻ > Br⁻ > I⁻; in acetonitrile, the order reverses to I⁻ > Br⁻ > Cl⁻ > F⁻.",
+        "text": "In water, the order is F\u207b > Cl\u207b > Br\u207b > I\u207b; in acetonitrile, the order reverses to I\u207b > Br\u207b > Cl\u207b > F\u207b.",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "The nucleophilicity order is I⁻ > Br⁻ > Cl⁻ > F⁻ in both solvents.",
+        "text": "The nucleophilicity order is I\u207b > Br\u207b > Cl\u207b > F\u207b in both solvents.",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "The nucleophilicity order is F⁻ > Cl⁻ > Br⁻ > I⁻ in both solvents.",
+        "text": "The nucleophilicity order is F\u207b > Cl\u207b > Br\u207b > I\u207b in both solvents.",
         "smiles": "",
         "is_correct": false
       }
@@ -605,14 +605,14 @@ const CHAPTER_11_QUESTIONS = [
     "feedback": {
       "context": "This question tests the effect of steric hindrance at the alpha-carbon on the rate of SN2 reactions.",
       "process": "Step 1: Recall that the SN2 mechanism requires a backside attack at 180 degrees relative to the carbon-leaving group bond.\nStep 2: As the number of alkyl substituents on the alpha-carbon increases, steric hindrance in the transition state increases dramatically.\nStep 3: Relative rates: methyl (bromomethane, ~30) > primary (bromoethane, ~1) >> secondary (2-bromopropane, ~0.03) >>> tertiary (2-bromo-2-methylpropane, ~0, which is essentially unreactive via SN2).",
-      "result": "Reactivity decreases in the order: methyl > 1° > 2° > 3°."
+      "result": "Reactivity decreases in the order: methyl > 1\u00b0 > 2\u00b0 > 3\u00b0."
     }
   },
   {
     "question_id": "ch11_q17_substrate_beta_branching",
     "topic": "SN2 Mechanism: Substrate Effects",
     "difficulty_level": "Medium",
-    "question_text": "Neopentyl bromide (1-bromo-2,2-dimethylpropane) is a primary alkyl halide, yet it reacts with sodium iodide in acetone at a rate that is extremely slow—slower even than the secondary halide 2-bromopropane. What is the explanation for this low reactivity?",
+    "question_text": "Neopentyl bromide (1-bromo-2,2-dimethylpropane) is a primary alkyl halide, yet it reacts with sodium iodide in acetone at a rate that is extremely slow\u2014slower even than the secondary halide 2-bromopropane. What is the explanation for this low reactivity?",
     "question_smiles": "CC(C)(C)CBr",
     "options": [
       {
@@ -731,7 +731,7 @@ const CHAPTER_11_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "The carbonyl group is strongly electron-withdrawing, making the alpha-carbon more electrophilic; additionally, the transition state is stabilized by overlap of the forming/breaking bonds with the carbonyl π* orbital.",
+        "text": "The carbonyl group is strongly electron-withdrawing, making the alpha-carbon more electrophilic; additionally, the transition state is stabilized by overlap of the forming/breaking bonds with the carbonyl \u03c0* orbital.",
         "smiles": "O=C(CN)c1ccccc1",
         "is_correct": true
       },
@@ -769,7 +769,7 @@ const CHAPTER_11_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "It complexes the potassium cation (K⁺), which solubilizes the salt in acetonitrile and leaves the fluoride anion (F⁻) 'naked' and highly nucleophilic.",
+        "text": "It complexes the potassium cation (K\u207a), which solubilizes the salt in acetonitrile and leaves the fluoride anion (F\u207b) 'naked' and highly nucleophilic.",
         "smiles": "CCCCCCCCF",
         "is_correct": true
       },
@@ -933,7 +933,7 @@ const CHAPTER_11_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "Steric relief that occurs when the bond angles expand from 109.5° to 120°.",
+        "text": "Steric relief that occurs when the bond angles expand from 109.5\u00b0 to 120\u00b0.",
         "smiles": "",
         "is_correct": false
       },
@@ -1060,7 +1060,7 @@ const CHAPTER_11_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the geometric constraints of carbocation stability in bicyclic systems.",
-      "process": "Step 1: In an SN1 reaction, the carbocation intermediate prefers a planar, sp2-hybridized geometry with 120° bond angles.\nStep 2: In 1-bromonorbornane, the bridgehead carbon is locked at the apex of a rigid bicyclic cage.\nStep 3: For the bridgehead carbon to become planar, the ring system would have to distort, which is prevented by extreme angle and ring strain (Bredt's rule). Since a planar carbocation cannot form, the activation energy for ionization is prohibitively high.",
+      "process": "Step 1: In an SN1 reaction, the carbocation intermediate prefers a planar, sp2-hybridized geometry with 120\u00b0 bond angles.\nStep 2: In 1-bromonorbornane, the bridgehead carbon is locked at the apex of a rigid bicyclic cage.\nStep 3: For the bridgehead carbon to become planar, the ring system would have to distort, which is prevented by extreme angle and ring strain (Bredt's rule). Since a planar carbocation cannot form, the activation energy for ionization is prohibitively high.",
       "result": "The rigid bicyclic cage prevents the bridgehead carbon from adopting the planar geometry required to stabilize a carbocation."
     }
   },
@@ -1174,7 +1174,7 @@ const CHAPTER_11_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests ring expansion rearrangements driven by the relief of ring strain.",
-      "process": "Step 1: (Bromomethyl)cyclobutane ionizes to form a highly unstable primary carbocation adjacent to the cyclobutane ring: c-C4H7-CH2+.\nStep 2: The cyclobutane ring possesses significant angle strain (~90° vs 109.5°) and torsional strain.\nStep 3: A 1,2-alkyl shift occurs: one of the ring C-C bonds adjacent to the CH2+ carbon migrates to the positive carbon. This expands the 4-membered ring to a 5-membered ring, forming a secondary cyclopentyl carbocation.\nStep 4: Water attacks the cyclopentyl carbocation, followed by deprotonation to yield cyclopentanol.",
+      "process": "Step 1: (Bromomethyl)cyclobutane ionizes to form a highly unstable primary carbocation adjacent to the cyclobutane ring: c-C4H7-CH2+.\nStep 2: The cyclobutane ring possesses significant angle strain (~90\u00b0 vs 109.5\u00b0) and torsional strain.\nStep 3: A 1,2-alkyl shift occurs: one of the ring C-C bonds adjacent to the CH2+ carbon migrates to the positive carbon. This expands the 4-membered ring to a 5-membered ring, forming a secondary cyclopentyl carbocation.\nStep 4: Water attacks the cyclopentyl carbocation, followed by deprotonation to yield cyclopentanol.",
       "result": "A 1,2-alkyl shift (ring expansion) occurs to relieve ring strain, yielding cyclopentanol after water attack."
     }
   },
@@ -1478,7 +1478,7 @@ const CHAPTER_11_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the stereospecificity of the E2 mechanism, which requires an anti-periplanar transition state.",
-      "process": "Step 1: The E2 reaction requires the beta-hydrogen on C3 and the bromine on C2 to align anti-periplanar (180° dihedral angle) in the transition state.\nStep 2: Draw the Newman projection of the (2R,3R) diastereomer looking down the C2-C3 bond.\nStep 3: Rotate the projection so that the H on C3 and the Br on C2 are anti-periplanar.\nStep 4: Observe the spatial positions of the remaining groups: the methyl group on C2 and the methyl group on C3 are on the same side of the molecule (cis to each other), while the phenyl group on C3 and the methyl group on C2 are on opposite sides. This geometry yields the (Z) alkene: (Z)-2-phenylbut-2-ene.",
+      "process": "Step 1: The E2 reaction requires the beta-hydrogen on C3 and the bromine on C2 to align anti-periplanar (180\u00b0 dihedral angle) in the transition state.\nStep 2: Draw the Newman projection of the (2R,3R) diastereomer looking down the C2-C3 bond.\nStep 3: Rotate the projection so that the H on C3 and the Br on C2 are anti-periplanar.\nStep 4: Observe the spatial positions of the remaining groups: the methyl group on C2 and the methyl group on C3 are on the same side of the molecule (cis to each other), while the phenyl group on C3 and the methyl group on C2 are on opposite sides. This geometry yields the (Z) alkene: (Z)-2-phenylbut-2-ene.",
       "result": "(Z)-2-phenylbut-2-ene is the exclusive product due to the anti-periplanar transition state requirement."
     }
   },
@@ -1516,7 +1516,7 @@ const CHAPTER_11_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question demonstrates how diastereomeric starting materials yield different stereoisomeric products in E2 reactions.",
-      "process": "Step 1: Set up the anti-periplanar conformation for the (2R,3S) isomer looking down the C2-C3 bond.\nStep 2: In this conformation, the hydrogen on C3 and the bromine on C2 are at 180°.\nStep 3: Observe the relative positions of the remaining groups: the two methyl groups are on opposite sides (trans to each other), and the phenyl group is on the opposite side of the methyl group on C2. This geometry concerted elimination yields (E)-2-phenylbut-2-ene.",
+      "process": "Step 1: Set up the anti-periplanar conformation for the (2R,3S) isomer looking down the C2-C3 bond.\nStep 2: In this conformation, the hydrogen on C3 and the bromine on C2 are at 180\u00b0.\nStep 3: Observe the relative positions of the remaining groups: the two methyl groups are on opposite sides (trans to each other), and the phenyl group is on the opposite side of the methyl group on C2. This geometry concerted elimination yields (E)-2-phenylbut-2-ene.",
       "result": "(E)-2-phenylbut-2-ene is formed stereospecifically from the (2R,3S) diastereomer."
     }
   },
@@ -1600,7 +1600,7 @@ const CHAPTER_11_QUESTIONS = [
     "question_id": "ch11_q43_primary_kie_e2",
     "topic": "E2 Mechanism: Kinetics",
     "difficulty_level": "Medium",
-    "question_text": "An E2 elimination reaction of 2-bromopropane with sodium hydroxide in water exhibits a primary kinetic isotope effect (kH/kD ≈ 6.7) when the beta-hydrogens are replaced with deuterium. What does this value indicate?",
+    "question_text": "An E2 elimination reaction of 2-bromopropane with sodium hydroxide in water exhibits a primary kinetic isotope effect (kH/kD \u2248 6.7) when the beta-hydrogens are replaced with deuterium. What does this value indicate?",
     "question_smiles": "CC(Br)C",
     "options": [
       {
@@ -1630,7 +1630,7 @@ const CHAPTER_11_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the interpretation of primary kinetic isotope effects (KIE) in elimination mechanisms.",
-      "process": "Step 1: A primary KIE (typically 2 to 8) occurs when a bond to the isotope is broken during the rate-determining step.\nStep 2: In the concerted E2 mechanism, proton abstraction by the base and leaving group departure occur simultaneously. The rate-determining step involves breaking the beta-C-H bond.\nStep 3: The C-H bond has a lower zero-point energy and is cleaved faster than the C-D bond, resulting in the observed rate difference (kH/kD ≈ 6.7).",
+      "process": "Step 1: A primary KIE (typically 2 to 8) occurs when a bond to the isotope is broken during the rate-determining step.\nStep 2: In the concerted E2 mechanism, proton abstraction by the base and leaving group departure occur simultaneously. The rate-determining step involves breaking the beta-C-H bond.\nStep 3: The C-H bond has a lower zero-point energy and is cleaved faster than the C-D bond, resulting in the observed rate difference (kH/kD \u2248 6.7).",
       "result": "The primary KIE confirms that beta-proton transfer is part of the rate-determining step."
     }
   },
@@ -1790,7 +1790,7 @@ const CHAPTER_11_QUESTIONS = [
     "question_id": "ch11_q48_competition_secondary_strong",
     "topic": "Substitution vs. Elimination Competition",
     "difficulty_level": "Medium",
-    "question_text": "Predict the major organic product when 2-chlorobutane is treated with sodium ethoxide in ethanol at 60 °C.",
+    "question_text": "Predict the major organic product when 2-chlorobutane is treated with sodium ethoxide in ethanol at 60 \u00b0C.",
     "question_smiles": "CCC(Cl)C",
     "options": [
       {
@@ -1820,7 +1820,7 @@ const CHAPTER_11_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the competition between SN2 and E2 pathways for secondary substrates with strong, unhindered bases at elevated temperatures.",
-      "process": "Step 1: 2-chlorobutane is a secondary substrate. Ethoxide (EtO-) is a strong base and a strong nucleophile.\nStep 2: With secondary substrates, strong bases promote both SN2 and E2.\nStep 3: Elevated temperatures (60 °C) favor elimination over substitution because elimination increases the number of particles (entropy is positive). The major product of the E2 elimination is the thermodynamically most stable alkene, trans-but-2-ene.",
+      "process": "Step 1: 2-chlorobutane is a secondary substrate. Ethoxide (EtO-) is a strong base and a strong nucleophile.\nStep 2: With secondary substrates, strong bases promote both SN2 and E2.\nStep 3: Elevated temperatures (60 \u00b0C) favor elimination over substitution because elimination increases the number of particles (entropy is positive). The major product of the E2 elimination is the thermodynamically most stable alkene, trans-but-2-ene.",
       "result": "trans-But-2-ene is the major product formed via E2 at high temperatures."
     }
   },
@@ -1858,7 +1858,7 @@ const CHAPTER_11_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests reaction pathways for tertiary alkyl halides with strong nucleophiles that are weak bases.",
-      "process": "Step 1: 2-iodo-2-methylpropane is a tertiary alkyl halide. Steric hindrance blocks backside attack, making SN2 impossible.\nStep 2: Azide (N3-) is a strong nucleophile but a weak base (conjugate acid HN3 pKa ≈ 4.7). Therefore, it does not promote E2 elimination.\nStep 3: The tertiary halide undergoes ionization to form a stable tertiary carbocation (SN1/E1 pathway).\nStep 4: Once the carbocation is formed, it is attacked by the solvent (ethanol) to give 2-ethoxy-2-methylpropane (SN1) and undergoes minor deprotonation to yield 2-methylpropene (E1).",
+      "process": "Step 1: 2-iodo-2-methylpropane is a tertiary alkyl halide. Steric hindrance blocks backside attack, making SN2 impossible.\nStep 2: Azide (N3-) is a strong nucleophile but a weak base (conjugate acid HN3 pKa \u2248 4.7). Therefore, it does not promote E2 elimination.\nStep 3: The tertiary halide undergoes ionization to form a stable tertiary carbocation (SN1/E1 pathway).\nStep 4: Once the carbocation is formed, it is attacked by the solvent (ethanol) to give 2-ethoxy-2-methylpropane (SN1) and undergoes minor deprotonation to yield 2-methylpropene (E1).",
       "result": "The reaction proceeds via SN1/E1 pathways because SN2 and E2 are blocked."
     }
   },
@@ -1871,7 +1871,7 @@ const CHAPTER_11_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "Elimination reactions yield more molecules of product than reactants, leading to a positive change in entropy (ΔS > 0); the -TΔS term makes the free energy (ΔG) of elimination more favorable at higher temperatures.",
+        "text": "Elimination reactions yield more molecules of product than reactants, leading to a positive change in entropy (\u0394S > 0); the -T\u0394S term makes the free energy (\u0394G) of elimination more favorable at higher temperatures.",
         "smiles": "",
         "is_correct": true
       },
@@ -1896,8 +1896,56 @@ const CHAPTER_11_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question explores the thermodynamic and entropic differences between substitution and elimination reactions.",
-      "process": "Step 1: An SN2 substitution reaction is bimolecular: two reactant molecules yield two product molecules. The change in entropy (ΔS) is close to zero.\nStep 2: An E2 elimination reaction is also bimolecular but yields three product molecules (alkene + protonated base + leaving group). The change in entropy (ΔS) is positive because there is an increase in molecular disorder.\nStep 3: Analyze the Gibbs free energy equation: ΔG = ΔH - TΔS. As the temperature (T) increases, the negative -TΔS term for elimination becomes larger and more dominant, making the overall ΔG for E2 more favorable than SN2.",
+      "process": "Step 1: An SN2 substitution reaction is bimolecular: two reactant molecules yield two product molecules. The change in entropy (\u0394S) is close to zero.\nStep 2: An E2 elimination reaction is also bimolecular but yields three product molecules (alkene + protonated base + leaving group). The change in entropy (\u0394S) is positive because there is an increase in molecular disorder.\nStep 3: Analyze the Gibbs free energy equation: \u0394G = \u0394H - T\u0394S. As the temperature (T) increases, the negative -T\u0394S term for elimination becomes larger and more dominant, making the overall \u0394G for E2 more favorable than SN2.",
       "result": "Higher temperature favors elimination due to its positive entropy change."
+    }
+  },
+  {
+    "question_id": "ch11_q_dynamic_sn1_sn2",
+    "topic": "Nucleophilic Substitution Mechanisms",
+    "difficulty_level": "Hard",
+    "question_text": "Match each substrate to its primary mechanism route with strong nucleophiles (like NaCN/DMF) or weak nucleophiles (like H2O).",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "CBr",
+        "correctAnswer": "SN2 (Methyl substrate)"
+      },
+      {
+        "smiles": "CC(C)(C)Br",
+        "correctAnswer": "SN1 (Tertiary substrate)"
+      },
+      {
+        "smiles": "CC(Br)C",
+        "correctAnswer": "SN2 / E2 competitive"
+      },
+      {
+        "smiles": "CC=CBr",
+        "correctAnswer": "Unreactive to normal SN1/SN2 (Vinylic)"
+      }
+    ],
+    "match_options": [
+      "SN2 (Methyl substrate)",
+      "SN1 (Tertiary substrate)",
+      "SN2 / E2 competitive",
+      "Unreactive to normal SN1/SN2 (Vinylic)"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect pathway mapping",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Analyzing steric and electronic factors in SN1 vs SN2.",
+      "process": "Bromomethane (CBr) is sterically unhindered: SN2. t-Butyl bromide is tertiary, sterically blocked: SN1. 2-bromopropane is secondary: competitive. Vinyl bromide has sp2 carbon which doesn't undergo backside attack or form stable carbocations: unreactive.",
+      "result": "Substrates matched to their preferred substitution route."
     }
   }
 ];

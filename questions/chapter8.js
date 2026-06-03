@@ -1,4 +1,4 @@
-// OpenStax Organic Chemistry Chapter 8: Alkenes: Reactions and Synthesis
+// McMurry Chapter 8 questions
 const CHAPTER_8_QUESTIONS = [
   {
     "question_id": "ch8_q1_halogen_addition_cis",
@@ -1220,18 +1220,18 @@ const CHAPTER_8_QUESTIONS = [
     "question_id": "ch8_q33_dihydroxylation_woodward_prevost",
     "topic": "Oxidation - Dihydroxylation",
     "difficulty_level": "Hard",
-    "question_text": "In organic synthesis, Woodward dihydroxylation and Prévost dihydroxylation are methods used to synthesize diols from alkenes using iodine and silver carboxylates. Which of the following statements correctly distinguishes their outcomes?",
+    "question_text": "In organic synthesis, Woodward dihydroxylation and Pr\u00e9vost dihydroxylation are methods used to synthesize diols from alkenes using iodine and silver carboxylates. Which of the following statements correctly distinguishes their outcomes?",
     "question_smiles": "C1=CCCCC1",
     "options": [
       {
         "option_id": "A",
-        "text": "Woodward dihydroxylation yields trans-diols via dry conditions, while Prévost dihydroxylation yields cis-diols via wet conditions.",
+        "text": "Woodward dihydroxylation yields trans-diols via dry conditions, while Pr\u00e9vost dihydroxylation yields cis-diols via wet conditions.",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "Woodward dihydroxylation yields cis-diols using wet conditions ($I_2$, $CH_3COOAg$, $H_2O$), while Prévost dihydroxylation yields trans-diols using dry conditions ($I_2$, $CH_3COOAg$).",
+        "text": "Woodward dihydroxylation yields cis-diols using wet conditions ($I_2$, $CH_3COOAg$, $H_2O$), while Pr\u00e9vost dihydroxylation yields trans-diols using dry conditions ($I_2$, $CH_3COOAg$).",
         "smiles": "",
         "is_correct": true
       },
@@ -1243,15 +1243,15 @@ const CHAPTER_8_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "Both methods yield trans-diols, but Prévost uses acidic conditions.",
+        "text": "Both methods yield trans-diols, but Pr\u00e9vost uses acidic conditions.",
         "smiles": "",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests the ability to distinguish between the classical Woodward and Prévost dihydroxylation reactions.",
-      "process": "Step 1: Both reactions start with the reaction of an alkene with $I_2$ and silver acetate to form a cyclic iodonium ion, which is opened by acetate to form a trans-iodoacetate intermediate.\nStep 2: The adjacent acetate group acts as an internal nucleophile to displace iodide, forming a cyclic acetoxonium ion intermediate.\nStep 3: Under Woodward (wet) conditions, water attacks the acetoxonium ion to yield a cis-monoacetate, which is hydrolyzed to a cis-diol. Under Prévost (dry) conditions, a second acetate molecule attacks the acetoxonium ion to yield a trans-diacetate, which is hydrolyzed to a trans-diol.",
-      "result": "Woodward yields cis-diols under wet conditions, whereas Prévost yields trans-diols under dry conditions."
+      "context": "This question tests the ability to distinguish between the classical Woodward and Pr\u00e9vost dihydroxylation reactions.",
+      "process": "Step 1: Both reactions start with the reaction of an alkene with $I_2$ and silver acetate to form a cyclic iodonium ion, which is opened by acetate to form a trans-iodoacetate intermediate.\nStep 2: The adjacent acetate group acts as an internal nucleophile to displace iodide, forming a cyclic acetoxonium ion intermediate.\nStep 3: Under Woodward (wet) conditions, water attacks the acetoxonium ion to yield a cis-monoacetate, which is hydrolyzed to a cis-diol. Under Pr\u00e9vost (dry) conditions, a second acetate molecule attacks the acetoxonium ion to yield a trans-diacetate, which is hydrolyzed to a trans-diol.",
+      "result": "Woodward yields cis-diols under wet conditions, whereas Pr\u00e9vost yields trans-diols under dry conditions."
     }
   },
   {
@@ -1898,6 +1898,56 @@ const CHAPTER_8_QUESTIONS = [
       "context": "This question tests the stereoregularity (tacticity) of polymers obtained through coordination polymerization.",
       "process": "Step 1: Ziegler-Natta catalysts are heterogeneous coordination catalysts that dictate the orientation of the monomer as it inserts into the growing polymer chain.\nStep 2: Tacticity refers to the stereochemical arrangement of substituents along the polymer backbone.\nStep 3: In isotactic polypropylene, all methyl groups are on the same side of the polymer chain. In syndiotactic, they alternate. In atactic, they are random.",
       "result": "Isotactic polypropylene has all methyl groups positioned on the same side of the backbone."
+    }
+  },
+  {
+    "question_id": "ch8_q_dynamic_alkene_rxns",
+    "topic": "Alkenes: Electrophilic Additions",
+    "difficulty_level": "Medium",
+    "question_text": "Identify the major products of the electrophilic addition reactions below.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "CC=C.H2O.H2SO4",
+        "correctAnswer": "CC(O)C"
+      },
+      {
+        "smiles": "CC=C.BH3.H2O2.NaOH",
+        "correctAnswer": "CCCO"
+      },
+      {
+        "smiles": "CC=C.Br2.CH2Cl2",
+        "correctAnswer": "CC(Br)C(Br)"
+      },
+      {
+        "smiles": "CC=C.mCPBA",
+        "correctAnswer": "CC1OC1"
+      }
+    ],
+    "match_options": [
+      "CC(O)C",
+      "CCCO",
+      "CC(Br)C(Br)",
+      "CC1OC1",
+      "CCC"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect product mapping",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Predicting alkene addition products: hydration (Markovnikov vs anti-Markovnikov), halogenation, epoxidation.",
+      "process": "Item 1: Markovnikov acid-catalyzed hydration yields propan-2-ol. Item 2: Hydroboration-oxidation yields 1-propanol. Item 3: Bromination yields 1,2-dibromopropane. Item 4: Epoxidation yields propylene oxide.",
+      "result": "Alkene reaction products identified."
     }
   }
 ];

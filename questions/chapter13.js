@@ -1,4 +1,4 @@
-// OpenStax Organic Chemistry Chapter 13: Structure Determination: Nuclear Magnetic Resonance Spectroscopy
+// McMurry Chapter 13 questions
 const CHAPTER_13_QUESTIONS = [
   {
     "question_id": "ch13_q1_equivalence_2_bromobutane",
@@ -1898,6 +1898,56 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question requires solving a multi-spectral problem for a para-substituted phenyl ether.",
       "process": "Step 1: Degree of unsaturation = 4. The 4H aromatic doublets confirm a para-disubstituted benzene ring.\nStep 2: Analyze substituents from 1H NMR:\n- 9H singlet at 1.30 ppm indicates a tert-butyl group, -C(CH3)3.\n- 3H singlet at 3.78 ppm represents a methoxy group, -OCH3. The downfield shift is typical for an aryl ether.\n- The two doublets at 6.82 and 7.30 ppm confirm a para-disubstituted benzene ring.\nStep 3: Check IR bands: 1250 and 1040 cm-1 are characteristic of aryl-alkyl ether C-O stretches. No OH band exists, ruling out phenol (2-tert-butyl-5-methylphenol) and alcohol (4-tert-butylbenzyl alcohol) derivatives. Thus, the structure is 1-tert-butyl-4-methoxybenzene (4-tert-butylanisole).",
       "result": "The spectral data matches 1-tert-butyl-4-methoxybenzene."
+    }
+  },
+  {
+    "question_id": "ch13_q_dynamic_nmr_shifts",
+    "topic": "NMR Spectroscopy",
+    "difficulty_level": "Hard",
+    "question_text": "Match each proton highlight in the structures to its approximate 1H-NMR chemical shift.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "CCO",
+        "correctAnswer": "3.5 - 4.5 ppm (adjacent to O)"
+      },
+      {
+        "smiles": "Cc1ccccc1",
+        "correctAnswer": "7.2 ppm (aromatic ring protons)"
+      },
+      {
+        "smiles": "CC(C)=O",
+        "correctAnswer": "2.1 ppm (adjacent to C=O)"
+      },
+      {
+        "smiles": "CCC",
+        "correctAnswer": "0.9 ppm (sp3 alkyl methyl)"
+      }
+    ],
+    "match_options": [
+      "3.5 - 4.5 ppm (adjacent to O)",
+      "7.2 ppm (aromatic ring protons)",
+      "2.1 ppm (adjacent to C=O)",
+      "0.9 ppm (sp3 alkyl methyl)",
+      "9.8 ppm (aldehyde)"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect chemical shifts",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Assessing shielding/deshielding effects on proton chemical shifts.",
+      "process": "Alkoxy protons are deshielded by electronegative oxygen (3.5-4.5). Aromatic ring currents shift protons downfield (7.2). Carbonyl allylic/alpha protons are slightly deshielded (2.1). Regular alkane sp3 protons are shielded (0.9).",
+      "result": "Protons matched to expected NMR shift ranges."
     }
   }
 ];

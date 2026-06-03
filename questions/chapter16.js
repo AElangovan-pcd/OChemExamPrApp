@@ -1,3 +1,4 @@
+// McMurry Chapter 16 questions
 const CHAPTER_16_QUESTIONS = [
   {
     "question_id": "ch16_q1_eas_rds",
@@ -148,7 +149,7 @@ const CHAPTER_16_QUESTIONS = [
     "feedback": {
       "context": "This question tests the role of the acid catalyst in nitronium ion generation.",
       "process": "Step 1: H2SO4 is a stronger acid than HNO3 and protonates the hydroxyl group of nitric acid.\nStep 2: The protonated nitric acid intermediate (H2O+-NO2) undergoes dehydration, yielding water and the highly electrophilic nitronium ion (NO2+).",
-      "result": "H2SO4 acts as a Brønsted acid catalyst to protonate and dehydrate HNO3, generating the NO2+ electrophile."
+      "result": "H2SO4 acts as a Br\u00f8nsted acid catalyst to protonate and dehydrate HNO3, generating the NO2+ electrophile."
     }
   },
   {
@@ -376,7 +377,7 @@ const CHAPTER_16_QUESTIONS = [
     "feedback": {
       "context": "This question explores alternative methods for generating carbocations in EAS.",
       "process": "Step 1: Strong acids like HF or H3PO4 can protonate alkenes.\nStep 2: Protonation of cyclohexene yields the cyclohexyl carbocation.\nStep 3: This carbocation acts as the electrophile in a Friedel-Crafts alkylation with benzene to form cyclohexylbenzene.",
-      "result": "Alkenes treated with strong Brønsted acids generate carbocations that can alkylate aromatic rings."
+      "result": "Alkenes treated with strong Br\u00f8nsted acids generate carbocations that can alkylate aromatic rings."
     }
   },
   {
@@ -540,7 +541,7 @@ const CHAPTER_16_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "The acylium ion (CH3-C≡O+), which is resonance-stabilized with the positive charge shared by the oxygen atom, making it highly stable.",
+        "text": "The acylium ion (CH3-C\u2261O+), which is resonance-stabilized with the positive charge shared by the oxygen atom, making it highly stable.",
         "smiles": "",
         "is_correct": true
       },
@@ -565,7 +566,7 @@ const CHAPTER_16_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the mechanism and intermediate stability in Friedel-Crafts acylation.",
-      "process": "Step 1: Acetyl chloride complexes with AlCl3 and loses chloride to form the acylium ion (CH3-C+=O).\nStep 2: The acylium ion is stabilized by resonance: CH3-C+=O <-> CH3-C≡O+ (where all atoms have complete octets).\nStep 3: Because of this significant resonance stabilization, it does not rearrange.",
+      "process": "Step 1: Acetyl chloride complexes with AlCl3 and loses chloride to form the acylium ion (CH3-C+=O).\nStep 2: The acylium ion is stabilized by resonance: CH3-C+=O <-> CH3-C\u2261O+ (where all atoms have complete octets).\nStep 3: Because of this significant resonance stabilization, it does not rearrange.",
       "result": "The acylium ion is resonance-stabilized and does not undergo skeletal rearrangements."
     }
   },
@@ -687,7 +688,7 @@ const CHAPTER_16_QUESTIONS = [
     "question_id": "ch16_q19_substituent_cyano",
     "topic": "Substituent Effects",
     "difficulty_level": "Medium",
-    "question_text": "Why is the cyano group (-C≡N) a meta-directing deactivator in electrophilic aromatic substitution?",
+    "question_text": "Why is the cyano group (-C\u2261N) a meta-directing deactivator in electrophilic aromatic substitution?",
     "question_smiles": "N#Cc1ccccc1",
     "options": [
       {
@@ -1105,7 +1106,7 @@ const CHAPTER_16_QUESTIONS = [
     "question_id": "ch16_q30_nas_benzyne_chlorobenzene",
     "topic": "Nucleophilic Aromatic Substitution (Elimination-Addition)",
     "difficulty_level": "Medium",
-    "question_text": "When chlorobenzene is treated with sodium amide (NaNH2) in liquid ammonia at -33 °C, aniline is formed. What is the key intermediate in this reaction?",
+    "question_text": "When chlorobenzene is treated with sodium amide (NaNH2) in liquid ammonia at -33 \u00b0C, aniline is formed. What is the key intermediate in this reaction?",
     "question_smiles": "Clc1ccccc1",
     "options": [
       {
@@ -1832,7 +1833,7 @@ const CHAPTER_16_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "NaNH2 in liquid NH3 at -33 °C; Nucleophilic Aromatic Substitution",
+        "text": "NaNH2 in liquid NH3 at -33 \u00b0C; Nucleophilic Aromatic Substitution",
         "smiles": "",
         "is_correct": true
       },
@@ -1897,6 +1898,54 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests sulfonation of toluene and nomenclature.",
       "process": "Step 1: The methyl group in toluene is ortho/para-directing.\nStep 2: Sulfonation is steric-sensitive, making the para product the major isomer.\nStep 3: The parent is benzenesulfonic acid, giving 4-methylbenzenesulfonic acid.",
       "result": "Toluene undergoes sulfonation to yield 4-methylbenzenesulfonic acid, showing ortho/para direction."
+    }
+  },
+  {
+    "question_id": "ch16_q_dynamic_directing_effects",
+    "topic": "Electrophilic Aromatic Substitution",
+    "difficulty_level": "Medium",
+    "question_text": "Match each benzene substituent to its directing and activating/deactivating status in Electrophilic Aromatic Substitution.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "Oc1ccccc1",
+        "correctAnswer": "Ortho/Para Directing - Activator"
+      },
+      {
+        "smiles": "Cc1ccccc1",
+        "correctAnswer": "Ortho/Para Directing - Weak Activator"
+      },
+      {
+        "smiles": "O=[N+]([O-])c1ccccc1",
+        "correctAnswer": "Meta Directing - Deactivator"
+      },
+      {
+        "smiles": "Clc1ccccc1",
+        "correctAnswer": "Ortho/Para Directing - Deactivator"
+      }
+    ],
+    "match_options": [
+      "Ortho/Para Directing - Activator",
+      "Ortho/Para Directing - Weak Activator",
+      "Meta Directing - Deactivator",
+      "Ortho/Para Directing - Deactivator"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect directing effect mapping",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Predicting directing effects of substituents on a benzene ring.",
+      "process": "Phenol (-OH) donates electrons by resonance: strong o/p activator. Toluene (-CH3) donates via hyperconjugation: weak o/p activator. Nitrobenzene (-NO2) is highly electron-withdrawing: m deactivator. Chlorobenzene (-Cl) has competing induction vs resonance: o/p deactivator.",
+      "result": "Substituents matched to directing effects."
     }
   }
 ];

@@ -1,4 +1,4 @@
-// OpenStax Organic Chemistry Chapter 17: Alcohols and Phenols
+// McMurry Chapter 17 questions
 const CHAPTER_17_QUESTIONS = [
   {
     "question_id": "ch17_q1_iupac_stereochem",
@@ -726,7 +726,7 @@ const CHAPTER_17_QUESTIONS = [
     "question_id": "ch17_q20_dibal_ester_reduction",
     "topic": "preparation of alcohols (reduction of aldehydes/ketones/esters/carboxylic acids, Grignard reaction mechanisms and synthesis)",
     "difficulty_level": "Hard",
-    "question_text": "If ethyl hexanoate is treated with exactly one equivalent of diisobutylaluminum hydride (DIBAL-H) at -78 °C, followed by careful aqueous workup, what is the major organic product?",
+    "question_text": "If ethyl hexanoate is treated with exactly one equivalent of diisobutylaluminum hydride (DIBAL-H) at -78 \u00b0C, followed by careful aqueous workup, what is the major organic product?",
     "question_smiles": "CCCCCC(=O)OCC",
     "options": [
       {
@@ -756,7 +756,7 @@ const CHAPTER_17_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the controlled reduction of esters to aldehydes using DIBAL-H at low temperature.",
-      "process": "Step 1: DIBAL-H is a bulky, electrophilic reducing agent. At -78 °C, it reacts with the ester carbonyl to form a stable tetrahedral hemiacetal-like intermediate.\nStep 2: The low temperature prevents the collapse of this intermediate, meaning no aldehyde is free in solution to be further reduced.\nStep 3: During the aqueous workup, the intermediate is hydrolyzed to release the aldehyde (hexanal) and ethanol.",
+      "process": "Step 1: DIBAL-H is a bulky, electrophilic reducing agent. At -78 \u00b0C, it reacts with the ester carbonyl to form a stable tetrahedral hemiacetal-like intermediate.\nStep 2: The low temperature prevents the collapse of this intermediate, meaning no aldehyde is free in solution to be further reduced.\nStep 3: During the aqueous workup, the intermediate is hydrolyzed to release the aldehyde (hexanal) and ethanol.",
       "result": "The reaction yields hexanal."
     }
   },
@@ -787,7 +787,7 @@ const CHAPTER_17_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "1. BH3·THF / 2. H2O2, NaOH",
+        "text": "1. BH3\u00b7THF / 2. H2O2, NaOH",
         "smiles": "OC1CCCCC1",
         "is_correct": false
       }
@@ -901,7 +901,7 @@ const CHAPTER_17_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "DIBAL-H at 0 °C",
+        "text": "DIBAL-H at 0 \u00b0C",
         "smiles": "OC1C=CCCCC1",
         "is_correct": false
       }
@@ -1524,7 +1524,7 @@ const CHAPTER_17_QUESTIONS = [
     "question_id": "ch17_q41_pocl3_dehydration",
     "topic": "reactions of alcohols (dehydration to alkenes, oxidation to aldehydes/ketones/carboxylic acids with PCC/DMP/chromic acid, conversion to alkyl halides via SOCl2/PBr3/HX, conversion to tosylates/mesylates)",
     "difficulty_level": "Hard",
-    "question_text": "What is the major alkene product when 3,3-dimethylbutan-2-ol is treated with phosphorus oxychloride (POCl3) in pyridine at 0 °C?",
+    "question_text": "What is the major alkene product when 3,3-dimethylbutan-2-ol is treated with phosphorus oxychloride (POCl3) in pyridine at 0 \u00b0C?",
     "question_smiles": "CC(C)(C)C(O)C",
     "options": [
       {
@@ -1866,7 +1866,7 @@ const CHAPTER_17_QUESTIONS = [
     "question_id": "ch17_q50_claisen_rearrangement",
     "topic": "chemistry of phenols (preparation, oxidation to quinones, Kolbe-Schmitt reaction, Claisen rearrangement)",
     "difficulty_level": "Hard",
-    "question_text": "What is the mechanism and major organic product when allyl phenyl ether is heated to 200 °C?",
+    "question_text": "What is the mechanism and major organic product when allyl phenyl ether is heated to 200 \u00b0C?",
     "question_smiles": "C=CCOc1ccccc1",
     "options": [
       {
@@ -1898,6 +1898,55 @@ const CHAPTER_17_QUESTIONS = [
       "context": "This question tests the Claisen rearrangement of allyl aryl ethers.",
       "process": "Step 1: Heating allyl phenyl ether initiates a concerted pericyclic [3,3]-sigmatropic rearrangement.\nStep 2: The migration of the allyl group to the ortho position of the benzene ring forms a non-aromatic cyclohexadienone intermediate.\nStep 3: This intermediate rapidly tautomerizes (keto-enol tautomerism) to restore aromaticity, yielding o-allylphenol.",
       "result": "The Claisen rearrangement proceeds via a [3,3]-sigmatropic mechanism to yield o-allylphenol."
+    }
+  },
+  {
+    "question_id": "ch17_q_dynamic_alcohol_oxidation",
+    "topic": "Alcohols: Oxidation Reactions",
+    "difficulty_level": "Medium",
+    "question_text": "Predict the correct products of the following alcohol oxidation reactions.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "CCCO.O=C=[Cr](=O)(O)O",
+        "correctAnswer": "CCC(=O)O (Primary alcohol + Chromic acid)"
+      },
+      {
+        "smiles": "CCCO.C1=CC=C[NH+]=C1.Cl[Cr](=O)(=O)[O-]",
+        "correctAnswer": "CCC=O (Primary alcohol + PCC)"
+      },
+      {
+        "smiles": "CC(O)C.O=C=[Cr](=O)(O)O",
+        "correctAnswer": "CC(C)=O (Secondary alcohol + Chromic acid)"
+      },
+      {
+        "smiles": "CC(C)(O)C.O=C=[Cr](=O)(O)O",
+        "correctAnswer": "No Reaction (Tertiary alcohol)"
+      }
+    ],
+    "match_options": [
+      "CCC(=O)O (Primary alcohol + Chromic acid)",
+      "CCC=O (Primary alcohol + PCC)",
+      "CC(C)=O (Secondary alcohol + Chromic acid)",
+      "No Reaction (Tertiary alcohol)"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect oxidation products",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Analyzing oxidation levels of primary, secondary, and tertiary alcohols.",
+      "process": "Primary alcohols oxidize to carboxylic acids with strong oxidizers (Chromic acid) and aldehydes with mild ones (PCC). Secondary alcohols oxidize to ketones. Tertiary alcohols have no alpha-hydrogens and do not oxidize.",
+      "result": "Oxidation products mapped."
     }
   }
 ];

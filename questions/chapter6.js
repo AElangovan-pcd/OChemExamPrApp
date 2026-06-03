@@ -1,4 +1,4 @@
-// McMurry Chapter 6: An Overview of Organic Reactions
+// McMurry Chapter 6 questions
 const CHAPTER_6_QUESTIONS = [
   {
     "question_id": "ch6_q1_pericyclic_mechanism",
@@ -346,7 +346,7 @@ const CHAPTER_6_QUESTIONS = [
     "question_id": "ch6_q10_radical_stability_bde",
     "topic": "Homolytic vs Heterolytic Cleavage",
     "difficulty_level": "Hard",
-    "question_text": "Based on carbon-hydrogen bond dissociation energies, which of the following hydrocarbons has the lowest BDE for homolytic cleavage of a C–H bond?",
+    "question_text": "Based on carbon-hydrogen bond dissociation energies, which of the following hydrocarbons has the lowest BDE for homolytic cleavage of a C\u2013H bond?",
     "question_smiles": "CC(C)C1=CC=CC=C1",
     "options": [
       {
@@ -375,9 +375,9 @@ const CHAPTER_6_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question relates C–H bond dissociation energy to the stability of the resulting radical intermediate.",
-      "process": "Step 1: Recall that the weaker the C–H bond (lower BDE), the more stable the resulting radical.\nStep 2: Compare the radicals formed: primary ethyl radical (from ethane), secondary propyl radical (from propane), tertiary tert-butyl radical (from isobutane), and tertiary benzylic radical (from isopropylbenzene).\nStep 3: The tertiary benzylic radical is exceptionally stable because the unpaired electron is delocalized over the aromatic ring via resonance, in addition to being stabilized by two alkyl groups. Therefore, the benzylic C–H bond of cumene has the lowest BDE.",
-      "result": "Isopropylbenzene (cumene) has the lowest C–H BDE at the benzylic position."
+      "context": "This question relates C\u2013H bond dissociation energy to the stability of the resulting radical intermediate.",
+      "process": "Step 1: Recall that the weaker the C\u2013H bond (lower BDE), the more stable the resulting radical.\nStep 2: Compare the radicals formed: primary ethyl radical (from ethane), secondary propyl radical (from propane), tertiary tert-butyl radical (from isobutane), and tertiary benzylic radical (from isopropylbenzene).\nStep 3: The tertiary benzylic radical is exceptionally stable because the unpaired electron is delocalized over the aromatic ring via resonance, in addition to being stabilized by two alkyl groups. Therefore, the benzylic C\u2013H bond of cumene has the lowest BDE.",
+      "result": "Isopropylbenzene (cumene) has the lowest C\u2013H BDE at the benzylic position."
     }
   },
   {
@@ -688,7 +688,7 @@ const CHAPTER_6_QUESTIONS = [
     "question_id": "ch6_q19_deltaH_bde_calculation",
     "topic": "Thermodynamics",
     "difficulty_level": "Hard",
-    "question_text": "For the addition of $HBr$ to ethene to form bromoethane ($CH_2=CH_2 + HBr \\rightarrow CH_3CH_2Br$), estimate the enthalpy of the reaction ($\\Delta H^\\circ$) using the following average BDE values: C=C $\\pi$ bond only (240 kJ/mol), H–Br (366 kJ/mol), C–H (410 kJ/mol), C–Br (285 kJ/mol). Note: The carbon-carbon $\\sigma$ bond remains intact; only the $\\pi$ bond is broken.",
+    "question_text": "For the addition of $HBr$ to ethene to form bromoethane ($CH_2=CH_2 + HBr \\rightarrow CH_3CH_2Br$), estimate the enthalpy of the reaction ($\\Delta H^\\circ$) using the following average BDE values: C=C $\\pi$ bond only (240 kJ/mol), H\u2013Br (366 kJ/mol), C\u2013H (410 kJ/mol), C\u2013Br (285 kJ/mol). Note: The carbon-carbon $\\sigma$ bond remains intact; only the $\\pi$ bond is broken.",
     "question_smiles": "C=C",
     "options": [
       {
@@ -718,7 +718,7 @@ const CHAPTER_6_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests how to calculate reaction enthalpy using bond dissociation energies for addition reactions.",
-      "process": "Step 1: Identify bonds broken and bonds formed.\nStep 2: Bonds broken: C=C $\\pi$ bond (240 kJ/mol) + H–Br bond (366 kJ/mol) = 606 kJ/mol.\nStep 3: Bonds formed: C–H bond (410 kJ/mol) + C–Br bond (285 kJ/mol) = 695 kJ/mol.\nStep 4: Calculate enthalpy: $\\Delta H^\\circ = \\sum \\text{BDE(broken)} - \\sum \\text{BDE(formed)} = 606 - 695 = -89\\text{ kJ/mol}$.",
+      "process": "Step 1: Identify bonds broken and bonds formed.\nStep 2: Bonds broken: C=C $\\pi$ bond (240 kJ/mol) + H\u2013Br bond (366 kJ/mol) = 606 kJ/mol.\nStep 3: Bonds formed: C\u2013H bond (410 kJ/mol) + C\u2013Br bond (285 kJ/mol) = 695 kJ/mol.\nStep 4: Calculate enthalpy: $\\Delta H^\\circ = \\sum \\text{BDE(broken)} - \\sum \\text{BDE(formed)} = 606 - 695 = -89\\text{ kJ/mol}$.",
       "result": "The estimated reaction enthalpy is $-89\\text{ kJ/mol}$."
     }
   },
@@ -1193,7 +1193,7 @@ const CHAPTER_6_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "Inductive effect (polarization of electron density through $\\sigma$ bonds) and hyperconjugation (orbital overlap of adjacent filled C–H or C–C $\\sigma$ bonds with the empty $p$ orbital).",
+        "text": "Inductive effect (polarization of electron density through $\\sigma$ bonds) and hyperconjugation (orbital overlap of adjacent filled C\u2013H or C\u2013C $\\sigma$ bonds with the empty $p$ orbital).",
         "smiles": "",
         "is_correct": true
       },
@@ -1212,7 +1212,7 @@ const CHAPTER_6_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the physical organic principles behind carbocation stability.",
-      "process": "Step 1: Alkyl groups are electron-donating relative to hydrogen. They polarize electron density through $\\sigma$ bonds toward the positive carbon, which is the inductive effect.\nStep 2: Alkyl groups also stabilize carbocations via hyperconjugation: the filled C–H (or C–C) $\\sigma$ bond on an adjacent carbon can overlap with the vacant, unhybridized $p$ orbital of the carbocation.\nStep 3: Together, these factors explain why tertiary carbocations are much more stable than secondary, primary, or methyl carbocations.",
+      "process": "Step 1: Alkyl groups are electron-donating relative to hydrogen. They polarize electron density through $\\sigma$ bonds toward the positive carbon, which is the inductive effect.\nStep 2: Alkyl groups also stabilize carbocations via hyperconjugation: the filled C\u2013H (or C\u2013C) $\\sigma$ bond on an adjacent carbon can overlap with the vacant, unhybridized $p$ orbital of the carbocation.\nStep 3: Together, these factors explain why tertiary carbocations are much more stable than secondary, primary, or methyl carbocations.",
       "result": "Inductive effect and hyperconjugation stabilize carbocations."
     }
   },
@@ -1554,8 +1554,8 @@ const CHAPTER_6_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the role of initiators in radical mechanisms.",
-      "process": "Step 1: Radical reactions require an initiation step to generate free radicals from neutral molecules.\nStep 2: Peroxides have an O–O single bond with a very low bond dissociation energy (about 150 kJ/mol compared to ~410 kJ/mol for C–H).\nStep 3: This weak bond undergoes homolytic cleavage easily upon heating or exposure to light, generating alkoxy radicals that initiate the chain.",
-      "result": "Peroxides possess a weak O–O bond that undergoes homolytic cleavage easily."
+      "process": "Step 1: Radical reactions require an initiation step to generate free radicals from neutral molecules.\nStep 2: Peroxides have an O\u2013O single bond with a very low bond dissociation energy (about 150 kJ/mol compared to ~410 kJ/mol for C\u2013H).\nStep 3: This weak bond undergoes homolytic cleavage easily upon heating or exposure to light, generating alkoxy radicals that initiate the chain.",
+      "result": "Peroxides possess a weak O\u2013O bond that undergoes homolytic cleavage easily."
     }
   },
   {
@@ -1801,7 +1801,7 @@ const CHAPTER_6_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "The carbon atom is electrophilic because the electronegative chlorine polarizes the C–Cl bond, and the carbon becomes more reactive toward polarizable nucleophiles.",
+        "text": "The carbon atom is electrophilic because the electronegative chlorine polarizes the C\u2013Cl bond, and the carbon becomes more reactive toward polarizable nucleophiles.",
         "smiles": "",
         "is_correct": true
       },
@@ -1858,7 +1858,7 @@ const CHAPTER_6_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the thermodynamic basis of addition reactions.",
-      "process": "Step 1: Enthalpy change ($\\Delta H^\\circ$) depends on the relative strengths of bonds broken and bonds formed.\nStep 2: Bonds broken: C=C $\\pi$ bond and Br–Br $sigma$ bond.\nStep 3: Bonds formed: two C–Br $\\sigma$ bonds.\nStep 4: $\\sigma$ bonds are significantly stronger than $\\pi$ bonds. Thus, forming two strong $\\sigma$ bonds at the expense of a weak $\\pi$ bond and a weak Br–Br bond is highly exothermic.",
+      "process": "Step 1: Enthalpy change ($\\Delta H^\\circ$) depends on the relative strengths of bonds broken and bonds formed.\nStep 2: Bonds broken: C=C $\\pi$ bond and Br\u2013Br $sigma$ bond.\nStep 3: Bonds formed: two C\u2013Br $\\sigma$ bonds.\nStep 4: $\\sigma$ bonds are significantly stronger than $\\pi$ bonds. Thus, forming two strong $\\sigma$ bonds at the expense of a weak $\\pi$ bond and a weak Br\u2013Br bond is highly exothermic.",
       "result": "The conversion of weaker bonds to stronger $\\sigma$ bonds makes the reaction highly exothermic."
     }
   },
@@ -1898,6 +1898,63 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the identification of steps and intermediates in multi-step energy diagrams.",
       "process": "Step 1: Each peak represents a transition state, which corresponds to one step in the mechanism. Therefore, three peaks mean there are three steps.\nStep 2: Each valley between the peaks represents a stable intermediate. For three steps, there are two valleys between them, indicating two reaction intermediates.\nStep 3: Thus, a reaction with three peaks and two valleys is a three-step reaction with two intermediates.",
       "result": "The reaction has three steps and two intermediates."
+    }
+  },
+  {
+    "question_id": "ch6_q_dynamic_reaction_energy",
+    "topic": "Reaction Energetics & Kinetics",
+    "difficulty_level": "Medium",
+    "question_text": "Consider the potential energy diagram of an addition reaction. Match the states to their corresponding kinetic features.",
+    "energy_diagram": {
+      "points": [
+        {
+          "state": "Reactants",
+          "energy": 10
+        },
+        {
+          "state": "Transition State 1",
+          "energy": 80
+        },
+        {
+          "state": "Intermediate (Carbocation)",
+          "energy": 40
+        },
+        {
+          "state": "Transition State 2",
+          "energy": 60
+        },
+        {
+          "state": "Products",
+          "energy": -30
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "The reaction is exergonic (delta H = -40 kJ/mol) with the first step being rate-limiting (Ea = 70 kJ/mol).",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "The reaction is endergonic with a single transition state.",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "The second step is rate-determining.",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "The intermediate is more stable than the product.",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Analyzing two-step reaction coordinates.",
+      "process": "Reactant energy = 10. TS1 = 80. Ea1 = 80 - 10 = 70 kJ/mol. TS2 = 60. Ea2 = 60 - 40 = 20 kJ/mol. Since Ea1 > Ea2, the first step is rate-limiting. Product energy = -30. delta H = -30 - 10 = -40 kJ/mol (exergonic).",
+      "result": "Exergonic reaction with rate-determining first step."
     }
   }
 ];

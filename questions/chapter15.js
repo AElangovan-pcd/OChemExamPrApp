@@ -1,3 +1,4 @@
+// McMurry Chapter 15 questions
 const CHAPTER_15_QUESTIONS = [
   {
     "question_id": "ch15_q1_nomenclature_priority",
@@ -280,7 +281,7 @@ const CHAPTER_15_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "It is the activation energy barrier that must be overcome to interconvert the two Kekulé structures of benzene.",
+        "text": "It is the activation energy barrier that must be overcome to interconvert the two Kekul\u00e9 structures of benzene.",
         "smiles": "",
         "is_correct": false
       },
@@ -299,7 +300,7 @@ const CHAPTER_15_QUESTIONS = [
     ],
     "feedback": {
       "context": "Understanding what resonance energy physically represents.",
-      "process": "Step 1: Resonance energy is a thermodynamic term comparing a real molecule with a hypothetical model.\nStep 2: The real molecule has delocalized electrons, whereas the hypothetical Kekulé structure has localized double bonds.\nStep 3: This difference in energy represents the stabilization due to electron delocalization.",
+      "process": "Step 1: Resonance energy is a thermodynamic term comparing a real molecule with a hypothetical model.\nStep 2: The real molecule has delocalized electrons, whereas the hypothetical Kekul\u00e9 structure has localized double bonds.\nStep 3: This difference in energy represents the stabilization due to electron delocalization.",
       "result": "Resonance energy is the extra stability of the delocalized system."
     }
   },
@@ -717,7 +718,7 @@ const CHAPTER_15_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question covers the four criteria of aromaticity.",
-      "process": "Step 1: Cyclic - allows continuous loop of orbitals.\nStep 2: Planar - allows parallel alignment of p orbitals for overlap.\nStep 3: Completely conjugated - every ring atom must have a p orbital.\nStep 4: Hückel's Rule - the number of $\\pi$ electrons must equal $4n+2$, where $n = 0, 1, 2, \\dots$.",
+      "process": "Step 1: Cyclic - allows continuous loop of orbitals.\nStep 2: Planar - allows parallel alignment of p orbitals for overlap.\nStep 3: Completely conjugated - every ring atom must have a p orbital.\nStep 4: H\u00fcckel's Rule - the number of $\\pi$ electrons must equal $4n+2$, where $n = 0, 1, 2, \\dots$.",
       "result": "The correct criteria are cyclic, planar, completely conjugated, and $(4n+2)$ $\\pi$ electrons."
     }
   },
@@ -725,7 +726,7 @@ const CHAPTER_15_QUESTIONS = [
     "question_id": "ch15_q20_annulene_10",
     "topic": "Aromaticity Criteria",
     "difficulty_level": "Medium",
-    "question_text": "Why is [10]annulene (cyclodeca-1,3,5,7,9-pentaene) non-aromatic despite having 10 $\\pi$ electrons, which fits Hückel's $(4n+2)$ rule for $n=2$?",
+    "question_text": "Why is [10]annulene (cyclodeca-1,3,5,7,9-pentaene) non-aromatic despite having 10 $\\pi$ electrons, which fits H\u00fcckel's $(4n+2)$ rule for $n=2$?",
     "question_smiles": "C1=CC=CC=CC=CC=C1",
     "options": [
       {
@@ -736,7 +737,7 @@ const CHAPTER_15_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "It violates Hückel's rule because 10 $\\pi$ electrons is not a Hückel number.",
+        "text": "It violates H\u00fcckel's rule because 10 $\\pi$ electrons is not a H\u00fcckel number.",
         "smiles": "",
         "is_correct": false
       },
@@ -755,7 +756,7 @@ const CHAPTER_15_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question highlights the planarity requirement for aromaticity.",
-      "process": "Step 1: [10]annulene has 10 $\\pi$ electrons, satisfying Hückel's rule ($4(2)+2 = 10$).\nStep 2: In its monocyclic cis/trans isomer, two hydrogen atoms point inside the ring.\nStep 3: The steric clash between these internal hydrogens prevents the molecule from adopting a flat, planar conformation.\nStep 4: Without planarity, p-orbitals cannot align parallelly, and the compound is non-aromatic.",
+      "process": "Step 1: [10]annulene has 10 $\\pi$ electrons, satisfying H\u00fcckel's rule ($4(2)+2 = 10$).\nStep 2: In its monocyclic cis/trans isomer, two hydrogen atoms point inside the ring.\nStep 3: The steric clash between these internal hydrogens prevents the molecule from adopting a flat, planar conformation.\nStep 4: Without planarity, p-orbitals cannot align parallelly, and the compound is non-aromatic.",
       "result": "Steric clash of internal hydrogens forces a non-planar conformation, making it non-aromatic."
     }
   },
@@ -839,7 +840,7 @@ const CHAPTER_15_QUESTIONS = [
     "question_id": "ch15_q23_huckel_definition_limits",
     "topic": "Aromaticity Criteria",
     "difficulty_level": "Easy",
-    "question_text": "Hückel's $(4n+2)$ rule strictly applies to which class of compounds?",
+    "question_text": "H\u00fcckel's $(4n+2)$ rule strictly applies to which class of compounds?",
     "question_smiles": "c1ccccc1",
     "options": [
       {
@@ -868,9 +869,9 @@ const CHAPTER_15_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understanding the theoretical boundary conditions of Hückel's rule.",
-      "process": "Step 1: Hückel's rule was derived using Hückel Molecular Orbital (HMO) theory specifically for monocyclic planar rings.\nStep 2: Polycyclic systems (like naphthalene) and heterocycles can be aromatic, but Hückel's rule is not strictly rigorous for them (though it often works qualitatively for polycyclics by counting the total $\\pi$ electrons).",
-      "result": "Hückel's rule strictly applies to monocyclic, planar, fully conjugated systems."
+      "context": "Understanding the theoretical boundary conditions of H\u00fcckel's rule.",
+      "process": "Step 1: H\u00fcckel's rule was derived using H\u00fcckel Molecular Orbital (HMO) theory specifically for monocyclic planar rings.\nStep 2: Polycyclic systems (like naphthalene) and heterocycles can be aromatic, but H\u00fcckel's rule is not strictly rigorous for them (though it often works qualitatively for polycyclics by counting the total $\\pi$ electrons).",
+      "result": "H\u00fcckel's rule strictly applies to monocyclic, planar, fully conjugated systems."
     }
   },
   {
@@ -945,7 +946,7 @@ const CHAPTER_15_QUESTIONS = [
     ],
     "feedback": {
       "context": "Evaluating large annulenes.",
-      "process": "Step 1: [18]annulene has 18 $\\pi$ electrons, satisfying Hückel's rule for $n=4$.\nStep 2: The ring is large and has negligible steric hindrance from internal hydrogens, allowing it to be planar.\nStep 3: NMR shows distinct interior and exterior hydrogen chemical shifts, confirming a ring current (aromaticity).",
+      "process": "Step 1: [18]annulene has 18 $\\pi$ electrons, satisfying H\u00fcckel's rule for $n=4$.\nStep 2: The ring is large and has negligible steric hindrance from internal hydrogens, allowing it to be planar.\nStep 3: NMR shows distinct interior and exterior hydrogen chemical shifts, confirming a ring current (aromaticity).",
       "result": "[18]annulene is aromatic."
     }
   },
@@ -1084,7 +1085,7 @@ const CHAPTER_15_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "It has 4 $\\pi$ electrons, satisfying Hückel's rule.",
+        "text": "It has 4 $\\pi$ electrons, satisfying H\u00fcckel's rule.",
         "smiles": "",
         "is_correct": false
       },
@@ -1097,7 +1098,7 @@ const CHAPTER_15_QUESTIONS = [
     ],
     "feedback": {
       "context": "Understanding the cyclopropenyl cation.",
-      "process": "Step 1: The cyclopropenyl cation is a three-membered ring.\nStep 2: Two carbons are $sp^2$ hybridized (double bond), and the third is a carbocation (also $sp^2$ hybridized, with an empty p orbital).\nStep 3: This allows a continuous loop of three p orbitals.\nStep 4: The double bond contributes 2 $\\pi$ electrons. 2 is a Hückel number ($4(0)+2 = 2$). Thus, it is aromatic.",
+      "process": "Step 1: The cyclopropenyl cation is a three-membered ring.\nStep 2: Two carbons are $sp^2$ hybridized (double bond), and the third is a carbocation (also $sp^2$ hybridized, with an empty p orbital).\nStep 3: This allows a continuous loop of three p orbitals.\nStep 4: The double bond contributes 2 $\\pi$ electrons. 2 is a H\u00fcckel number ($4(0)+2 = 2$). Thus, it is aromatic.",
       "result": "The cyclopropenyl cation is aromatic with 2 $\\pi$ electrons."
     }
   },
@@ -1325,7 +1326,7 @@ const CHAPTER_15_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question addresses the conversion of a non-aromatic molecule into an aromatic ion.",
-      "process": "Step 1: Neutral COT has 8 $\\pi$ electrons and is non-planar (non-aromatic).\nStep 2: Treatment with potassium metal (a strong reducing agent) adds two electrons, giving a dianion with 10 $\\pi$ electrons.\nStep 3: 10 $\\pi$ electrons satisfies Hückel's rule ($4n+2$ where $n=2$).\nStep 4: The ring flattens into a planar conformation to gain aromatic stabilization.",
+      "process": "Step 1: Neutral COT has 8 $\\pi$ electrons and is non-planar (non-aromatic).\nStep 2: Treatment with potassium metal (a strong reducing agent) adds two electrons, giving a dianion with 10 $\\pi$ electrons.\nStep 3: 10 $\\pi$ electrons satisfies H\u00fcckel's rule ($4n+2$ where $n=2$).\nStep 4: The ring flattens into a planar conformation to gain aromatic stabilization.",
       "result": "The COT dianion is planar and aromatic with 10 $\\pi$ electrons."
     }
   },
@@ -1865,24 +1866,24 @@ const CHAPTER_15_QUESTIONS = [
     "question_id": "ch15_q50_huckel_rule_polycyclic",
     "topic": "Polycyclic Aromatic Hydrocarbons",
     "difficulty_level": "Medium",
-    "question_text": "Does Hückel's $(4n+2)$ rule strictly apply to polycyclic aromatic hydrocarbons like naphthalene, anthracene, and phenanthrene?",
+    "question_text": "Does H\u00fcckel's $(4n+2)$ rule strictly apply to polycyclic aromatic hydrocarbons like naphthalene, anthracene, and phenanthrene?",
     "question_smiles": "c1ccc2ccccc2c1",
     "options": [
       {
         "option_id": "A",
-        "text": "No, Hückel's rule strictly applies only to monocyclic systems, although naphthalene (10 $\\pi$ electrons) and anthracene (14 $\\pi$ electrons) happen to fit the $(4n+2)$ formula numerically.",
+        "text": "No, H\u00fcckel's rule strictly applies only to monocyclic systems, although naphthalene (10 $\\pi$ electrons) and anthracene (14 $\\pi$ electrons) happen to fit the $(4n+2)$ formula numerically.",
         "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "Yes, Hückel's rule is a universal law that applies to all planar conjugated systems, regardless of the number of rings.",
+        "text": "Yes, H\u00fcckel's rule is a universal law that applies to all planar conjugated systems, regardless of the number of rings.",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "No, Hückel's rule applies only to heterocyclic systems.",
+        "text": "No, H\u00fcckel's rule applies only to heterocyclic systems.",
         "smiles": "",
         "is_correct": false
       },
@@ -1894,9 +1895,57 @@ const CHAPTER_15_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question clarifies the limits of Hückel's rule.",
-      "process": "Step 1: Hückel's $(4n+2)$ rule is derived specifically for monocyclic conjugated systems.\nStep 2: For polycyclic aromatic hydrocarbons, the rules for aromaticity are more complex (e.g., Platt's perimeter rule or Clar's sextet rule).\nStep 3: Naphthalene (10 $\\pi$ electrons) and anthracene (14 $\\pi$ electrons) fit the $4n+2$ pattern, but pyrene (16 $\\pi$ electrons) is also aromatic despite having a non-Hückel number of electrons for a monocycle. This proves that Hückel's rule does not strictly apply to polycyclic systems.",
-      "result": "Hückel's rule is strictly for monocyclic systems, even though some polycyclic systems numerically fit it."
+      "context": "This question clarifies the limits of H\u00fcckel's rule.",
+      "process": "Step 1: H\u00fcckel's $(4n+2)$ rule is derived specifically for monocyclic conjugated systems.\nStep 2: For polycyclic aromatic hydrocarbons, the rules for aromaticity are more complex (e.g., Platt's perimeter rule or Clar's sextet rule).\nStep 3: Naphthalene (10 $\\pi$ electrons) and anthracene (14 $\\pi$ electrons) fit the $4n+2$ pattern, but pyrene (16 $\\pi$ electrons) is also aromatic despite having a non-H\u00fcckel number of electrons for a monocycle. This proves that H\u00fcckel's rule does not strictly apply to polycyclic systems.",
+      "result": "H\u00fcckel's rule is strictly for monocyclic systems, even though some polycyclic systems numerically fit it."
+    }
+  },
+  {
+    "question_id": "ch15_q_dynamic_aromaticity_check",
+    "topic": "Benzene and Aromaticity",
+    "difficulty_level": "Medium",
+    "question_text": "Match each cyclic structure to its aromaticity classification based on Huckel's rules.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "c1ccccc1",
+        "correctAnswer": "Aromatic (6 pi)"
+      },
+      {
+        "smiles": "C1=CC=CC=C1",
+        "correctAnswer": "Non-aromatic (sp3 C present)"
+      },
+      {
+        "smiles": "C1=CC=CC=CC=C1",
+        "correctAnswer": "Antiaromatic / Non-aromatic tub (8 pi)"
+      },
+      {
+        "smiles": "[c-]-1cccc1",
+        "correctAnswer": "Aromatic (6 pi)"
+      }
+    ],
+    "match_options": [
+      "Aromatic (6 pi)",
+      "Non-aromatic (sp3 C present)",
+      "Antiaromatic / Non-aromatic tub (8 pi)"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect classification",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Analyzing Huckel's rules (planar, cyclic, fully conjugated, 4n+2 pi electrons).",
+      "process": "Benzene has 6 pi electrons, fully conjugated: Aromatic. 1,3-cyclohexadiene has sp3 carbons: Non-aromatic. Cyclooctatetraene has 8 pi electrons, adopts non-planar tub shape: Non-aromatic. Cyclopentadienyl anion has lone pair conjugated: Aromatic (6 pi).",
+      "result": "Aromaticity determined successfully."
     }
   }
 ];

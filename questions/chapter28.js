@@ -1,4 +1,4 @@
-// ACS Organic Chemistry Exam Preparation - ACS: EAS & NAS (Aromatics)
+// McMurry Chapter 28 questions
 const CHAPTER_28_QUESTIONS = [
   {
     "question_id": "ch28_acs_q1_eas",
@@ -353,6 +353,50 @@ const CHAPTER_28_QUESTIONS = [
       "context": "Understanding the Gattermann-Koch formylation reaction.",
       "process": "Step 1: The Gattermann-Koch reaction uses carbon monoxide (CO), hydrogen chloride (HCl), and an AlCl3 catalyst.\nStep 2: These reagents generate a formyl cation source.\nStep 3: EAS of benzene with this formyl source yields benzaldehyde.",
       "result": "The product is benzaldehyde."
+    }
+  },
+  {
+    "question_id": "ch28_q_dynamic_base_pairing",
+    "topic": "Biomolecules: Nucleic Acids",
+    "difficulty_level": "Medium",
+    "question_text": "Match each purine/pyrimidine base to its complementary hydrogen-bonding partner in double-stranded DNA.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "Nc1cccc2[nH]cnc12",
+        "correctAnswer": "Thymine (Adenine pairs with Thymine)"
+      },
+      {
+        "smiles": "O=c1[nH]c(=O)c(C)[nH]1",
+        "correctAnswer": "Adenine (Thymine pairs with Adenine)"
+      },
+      {
+        "smiles": "Nc1cc(=O)[nH]c(=O)n1",
+        "correctAnswer": "Guanine (Cytosine pairs with Guanine)"
+      }
+    ],
+    "match_options": [
+      "Thymine (Adenine pairs with Thymine)",
+      "Adenine (Thymine pairs with Adenine)",
+      "Guanine (Cytosine pairs with Guanine)",
+      "Uracil"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect base pairing",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying Watson-Crick hydrogen-bonding base pairs.",
+      "process": "Adenine (purine) forms 2 hydrogen bonds with Thymine (pyrimidine). Cytosine forms 3 hydrogen bonds with Guanine.",
+      "result": "Complementary base pairs identified."
     }
   }
 ];

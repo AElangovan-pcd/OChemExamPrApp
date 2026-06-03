@@ -1,4 +1,4 @@
-// Chapter 12: Structure Determination: Mass Spectrometry and Infrared Spectroscopy
+// McMurry Chapter 12 questions
 const CHAPTER_12_QUESTIONS = [
   {
     "question_id": "ch12_q1_ei_energy",
@@ -34,7 +34,7 @@ const CHAPTER_12_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question covers the fundamental ionization mechanism of Electron Ionization (EI).",
-      "process": "Step 1: The typical ionization potential of organic molecules is around 9–12 eV.\nStep 2: A 70 eV electron beam provides sufficient energy to not only ionize the molecule but also leave it with significant excess internal energy, promoting reproducible fragmentation patterns.\nStep 3: This energy is standard because it maximizes the probability of ionization (ionization cross-section).",
+      "process": "Step 1: The typical ionization potential of organic molecules is around 9\u201312 eV.\nStep 2: A 70 eV electron beam provides sufficient energy to not only ionize the molecule but also leave it with significant excess internal energy, promoting reproducible fragmentation patterns.\nStep 3: This energy is standard because it maximizes the probability of ionization (ionization cross-section).",
       "result": "Therefore, 70 eV is the standard energy used to achieve stable, reproducible mass spectra with rich fragmentation details."
     }
   },
@@ -186,7 +186,7 @@ const CHAPTER_12_QUESTIONS = [
     ],
     "feedback": {
       "context": "Understand the mechanism of Chemical Ionization (CI), a soft ionization technique.",
-      "process": "Step 1: Methane reagent gas is present in high excess and is ionized by electron impact: $CH_4 + e^- \\rightarrow CH_4^{\\bullet+} + 2e^-$.\nStep 2: The $CH_4^{\\bullet+}$ ion reacts with neutral methane: $CH_4^{\\bullet+} + CH_4 \\rightarrow CH_5^+ + \\cdot CH_3$.\nStep 3: The reactive Brønsted-Lowry acid $CH_5^+$ then transfers a proton to the analyte $M$: $M + CH_5^+ \\rightarrow [M+H]^+ + CH_4$.\nStep 4: This proton transfer is exothermic but low-energy, resulting in very little fragmentation.",
+      "process": "Step 1: Methane reagent gas is present in high excess and is ionized by electron impact: $CH_4 + e^- \\rightarrow CH_4^{\\bullet+} + 2e^-$.\nStep 2: The $CH_4^{\\bullet+}$ ion reacts with neutral methane: $CH_4^{\\bullet+} + CH_4 \\rightarrow CH_5^+ + \\cdot CH_3$.\nStep 3: The reactive Br\u00f8nsted-Lowry acid $CH_5^+$ then transfers a proton to the analyte $M$: $M + CH_5^+ \\rightarrow [M+H]^+ + CH_4$.\nStep 4: This proton transfer is exothermic but low-energy, resulting in very little fragmentation.",
       "result": "CI-MS generates the protonated molecular ion $[M+H]^+$ via proton transfer from a reagent ion like $CH_5^+$."
     }
   },
@@ -1782,7 +1782,7 @@ const CHAPTER_12_QUESTIONS = [
     ],
     "feedback": {
       "context": "Assess the impact of conjugation and electron-donating substituents on ester carbonyl stretching frequencies.",
-      "process": "Step 1: Normal aliphatic esters (methyl acetate, methyl cyclohexanecarboxylate) stretch at ~1735–1740 cm$^{-1}$.\nStep 2: Conjugated esters (methyl benzoate) show a lower frequency (~1720 cm$^{-1}$) due to conjugation with the benzene ring.\nStep 3: Methyl 4-aminobenzoate has an amino group ($-NH_2$) para to the ester. The nitrogen lone pair is strongly electron-donating by resonance and can delocalize all the way into the carbonyl oxygen:\n$H_2N-C_6H_4-C(=O)OCH_3 \\leftrightarrow H_2N^+=C_6H_4=C(O^-)OCH_3$.\nStep 4: This greatly increases the single-bond character of the carbonyl C-O, lowering the force constant and shifting the wavenumber to ~1700–1705 cm$^{-1}$.",
+      "process": "Step 1: Normal aliphatic esters (methyl acetate, methyl cyclohexanecarboxylate) stretch at ~1735\u20131740 cm$^{-1}$.\nStep 2: Conjugated esters (methyl benzoate) show a lower frequency (~1720 cm$^{-1}$) due to conjugation with the benzene ring.\nStep 3: Methyl 4-aminobenzoate has an amino group ($-NH_2$) para to the ester. The nitrogen lone pair is strongly electron-donating by resonance and can delocalize all the way into the carbonyl oxygen:\n$H_2N-C_6H_4-C(=O)OCH_3 \\leftrightarrow H_2N^+=C_6H_4=C(O^-)OCH_3$.\nStep 4: This greatly increases the single-bond character of the carbonyl C-O, lowering the force constant and shifting the wavenumber to ~1700\u20131705 cm$^{-1}$.",
       "result": "Methyl 4-aminobenzoate has the lowest carbonyl stretching frequency due to strong para-resonance donation."
     }
   },
@@ -1898,6 +1898,55 @@ const CHAPTER_12_QUESTIONS = [
       "context": "Use complementary spectroscopic techniques (IR and MS) to distinguish structural isomers.",
       "process": "Step 1: Analyze 3-pentanone ($CH_3CH_2COCH_2CH_3$):\n- IR: ketone carbonyl stretch at $1715\\text{ cm}^{-1}$, no O-H or C=C stretches.\n- MS: alpha-cleavage of ethyl radical ($M-29$) gives a propanoyl acylium ion ($[CH_3CH_2CO]^+$) at $m/z = 57$.\nStep 2: Analyze 3-penten-1-ol ($HO-CH_2CH_2CH=CHCH_3$):\n- IR: broad alcohol O-H stretch at $3300\\text{ cm}^{-1}$, weak alkene C=C stretch at $1650\\text{ cm}^{-1}$.\n- MS: undergoes dehydration to lose water ($M-18$), giving $m/z = 70$. Alpha-cleavage of the $CH_2-OH$ bond yields $[H_2C=OH]^+$ at $m/z = 31$.",
       "result": "Comparing carbonyl vs. hydroxyl stretches in IR, and acylium ion vs. dehydration/alpha-cleavage in MS, distinguishes these isomers."
+    }
+  },
+  {
+    "question_id": "ch12_q_dynamic_ir_dips",
+    "topic": "Infrared Spectroscopy",
+    "difficulty_level": "Medium",
+    "question_text": "Match each functional group to its characteristic IR absorption wavenumber.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "CCO",
+        "correctAnswer": "Broad 3300 cm-1 (O-H stretch)"
+      },
+      {
+        "smiles": "CC(C)=O",
+        "correctAnswer": "Sharp 1715 cm-1 (C=O stretch)"
+      },
+      {
+        "smiles": "CC#N",
+        "correctAnswer": "Sharp 2250 cm-1 (C#N stretch)"
+      },
+      {
+        "smiles": "CC#C",
+        "correctAnswer": "Sharp 2120 cm-1 (C#C stretch)"
+      }
+    ],
+    "match_options": [
+      "Broad 3300 cm-1 (O-H stretch)",
+      "Sharp 1715 cm-1 (C=O stretch)",
+      "Sharp 2250 cm-1 (C#N stretch)",
+      "Sharp 2120 cm-1 (C#C stretch)",
+      "Broad 1100 cm-1 (C-O stretch)"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect IR bands",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Identifying functional groups via IR key frequencies.",
+      "process": "Alcohols exhibit broad O-H stretch at 3300. Ketones show strong, sharp carbonyl stretch at 1715. Nitriles absorb around 2250 (triple bond). Terminal alkynes absorb around 2120.",
+      "result": "Wavenumbers correctly mapped."
     }
   }
 ];

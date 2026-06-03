@@ -1,4 +1,4 @@
-// ACS Organic Chemistry Exam Preparation - ACS: Electrophilic Additions
+// McMurry Chapter 24 questions
 const CHAPTER_24_QUESTIONS = [
   {
     "question_id": "ch24_acs_q1_bromination",
@@ -328,7 +328,7 @@ const CHAPTER_24_QUESTIONS = [
     "question_id": "ch24_acs_q10_dienes_addition",
     "topic": "ACS: Electrophilic Additions",
     "difficulty_level": "Hard",
-    "question_text": "Reaction of 1,3-butadiene with 1 equivalent of HBr at -80 °C yields 3-bromo-1-butene, whereas at 40 °C, the major product is 1-bromo-2-butene. Why?",
+    "question_text": "Reaction of 1,3-butadiene with 1 equivalent of HBr at -80 \u00b0C yields 3-bromo-1-butene, whereas at 40 \u00b0C, the major product is 1-bromo-2-butene. Why?",
     "question_smiles": "C=CC=C",
     "options": [
       {
@@ -355,7 +355,55 @@ const CHAPTER_24_QUESTIONS = [
     "feedback": {
       "context": "Analyzing kinetic vs thermodynamic control in additions to conjugated dienes.",
       "process": "Step 1: Protonation of 1,3-butadiene yields a resonance-stabilized allylic carbocation.\nStep 2: Attack at C2 (1,2-addition) has a lower activation energy, yielding the kinetic product 3-bromo-1-butene.\nStep 3: Attack at C4 (1,4-addition) yields 1-bromo-2-butene, which is a disubstituted alkene and thermodynamically more stable. High temperature allows equilibration.",
-      "result": "The temperature determines whether the reaction is under kinetic (-80 °C) or thermodynamic (40 °C) control."
+      "result": "The temperature determines whether the reaction is under kinetic (-80 \u00b0C) or thermodynamic (40 \u00b0C) control."
+    }
+  },
+  {
+    "question_id": "ch24_q_dynamic_amine_basicity",
+    "topic": "Amines: Basicities",
+    "difficulty_level": "Hard",
+    "question_text": "Match each amine structure to its relative basicity level (pKb of conjugate acid).",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "CCN",
+        "correctAnswer": "Strong Base (pKa of CA ~ 10.8)"
+      },
+      {
+        "smiles": "Nc1ccccc1",
+        "correctAnswer": "Weak Base (pKa of CA ~ 4.6)"
+      },
+      {
+        "smiles": "c1cc[nH]c1",
+        "correctAnswer": "Extremely Weak Base (pKa of CA ~ -3.8)"
+      },
+      {
+        "smiles": "C1=CC=NC=C1",
+        "correctAnswer": "Moderate Base (pKa of CA ~ 5.25)"
+      }
+    ],
+    "match_options": [
+      "Strong Base (pKa of CA ~ 10.8)",
+      "Weak Base (pKa of CA ~ 4.6)",
+      "Extremely Weak Base (pKa of CA ~ -3.8)",
+      "Moderate Base (pKa of CA ~ 5.25)"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect basicities",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Assessing amine basicity based on hybridization and resonance.",
+      "process": "Ethylamine has localized lone pair: strong base. Aniline lone pair is delocalized into benzene ring: weak base. Pyrrole lone pair is part of aromatic sextet; protonation destroys aromaticity: extremely weak. Pyridine lone pair is in sp2 orbital outside aromatic ring: moderate base.",
+      "result": "Amine basicity trends mapped."
     }
   }
 ];

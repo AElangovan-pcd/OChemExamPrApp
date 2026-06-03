@@ -1,4 +1,4 @@
-// McMurry Chapter 4: Organic Compounds: Cycloalkanes and Their Stereochemistry
+// McMurry Chapter 4 questions
 const CHAPTER_4_QUESTIONS = [
   {
     "question_id": "ch4_q1_iupac_lowest_locant",
@@ -414,7 +414,7 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests basic understanding of total ring strain in small and common rings.",
-      "process": "Step 1: Review total ring strain values: Cyclopropane (~115 kJ/mol), Cyclobutane (~110 kJ/mol), Cyclopentane (~26 kJ/mol), Cyclohexane (~0 kJ/mol).\nStep 2: Compare values. Cyclopropane has the highest total ring strain due to extreme angle strain (60° bond angles) and high torsional strain (eclipsed C-H bonds).",
+      "process": "Step 1: Review total ring strain values: Cyclopropane (~115 kJ/mol), Cyclobutane (~110 kJ/mol), Cyclopentane (~26 kJ/mol), Cyclohexane (~0 kJ/mol).\nStep 2: Compare values. Cyclopropane has the highest total ring strain due to extreme angle strain (60\u00b0 bond angles) and high torsional strain (eclipsed C-H bonds).",
       "result": "Cyclopropane has the highest total ring strain."
     }
   },
@@ -490,7 +490,7 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the relationship between ring strain and the heat of combustion.",
-      "process": "Step 1: Recall that the heat of combustion per CH2 group is a measure of thermodynamic stability. The lower the heat of combustion, the more stable the cycloalkane.\nStep 2: Cyclohexane is non-planar and adopts a chair conformation.\nStep 3: In the chair conformation, C-C-C bond angles are 111.5° (nearly 109.5°), eliminating angle strain, and all adjacent C-H bonds are fully staggered, eliminating torsional strain.",
+      "process": "Step 1: Recall that the heat of combustion per CH2 group is a measure of thermodynamic stability. The lower the heat of combustion, the more stable the cycloalkane.\nStep 2: Cyclohexane is non-planar and adopts a chair conformation.\nStep 3: In the chair conformation, C-C-C bond angles are 111.5\u00b0 (nearly 109.5\u00b0), eliminating angle strain, and all adjacent C-H bonds are fully staggered, eliminating torsional strain.",
       "result": "Cyclohexane has the lowest heat of combustion because it is virtually strain-free."
     }
   },
@@ -536,7 +536,7 @@ const CHAPTER_4_QUESTIONS = [
     "question_id": "ch4_q15_baeyer_theory_flaw",
     "topic": "Ring Strain & Heats of Combustion",
     "difficulty_level": "Medium",
-    "question_text": "Adolf von Baeyer proposed that cyclopentane would be the most stable cycloalkane because its internal angles (108°) are closest to the tetrahedral angle (109.5°). Why was his theory fundamentally flawed?",
+    "question_text": "Adolf von Baeyer proposed that cyclopentane would be the most stable cycloalkane because its internal angles (108\u00b0) are closest to the tetrahedral angle (109.5\u00b0). Why was his theory fundamentally flawed?",
     "question_smiles": "C1CCCC1",
     "options": [
       {
@@ -566,7 +566,7 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question examines the historical development and limitations of Baeyer's strain theory.",
-      "process": "Step 1: Recall Baeyer's hypothesis: Cycloalkanes are planar polygons.\nStep 2: Under this assumption, cyclopentane would have little angle strain, while cyclohexane (120°) and larger rings would have significant angle strain.\nStep 3: However, rings larger than cyclopropane pucker out of plane to relieve torsional strain, which Baeyer's planar model completely ignored.",
+      "process": "Step 1: Recall Baeyer's hypothesis: Cycloalkanes are planar polygons.\nStep 2: Under this assumption, cyclopentane would have little angle strain, while cyclohexane (120\u00b0) and larger rings would have significant angle strain.\nStep 3: However, rings larger than cyclopropane pucker out of plane to relieve torsional strain, which Baeyer's planar model completely ignored.",
       "result": "The flaw in Baeyer's theory was the assumption that all rings are planar."
     }
   },
@@ -642,7 +642,7 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the structural conformation of cyclobutane and how it balances different components of ring strain.",
-      "process": "Step 1: If cyclobutane were planar, its internal C-C-C angles would be 90° and all 8 C-H bonds would be eclipsed.\nStep 2: To minimize this severe torsional strain, the molecule adopts a puckered (non-planar) conformation.\nStep 3: Puckering reduces the eclipsing of C-H bonds (dihedral angles become ~25°), but compresses the C-C-C angles to ~88°, which increases angle strain. The final shape is a thermodynamic compromise.",
+      "process": "Step 1: If cyclobutane were planar, its internal C-C-C angles would be 90\u00b0 and all 8 C-H bonds would be eclipsed.\nStep 2: To minimize this severe torsional strain, the molecule adopts a puckered (non-planar) conformation.\nStep 3: Puckering reduces the eclipsing of C-H bonds (dihedral angles become ~25\u00b0), but compresses the C-C-C angles to ~88\u00b0, which increases angle strain. The final shape is a thermodynamic compromise.",
       "result": "Cyclobutane puckers to trade off a significant reduction in torsional strain for a minor increase in angle strain."
     }
   },
@@ -726,7 +726,7 @@ const CHAPTER_4_QUESTIONS = [
     "question_id": "ch4_q20_cyclopropane_ring_opening",
     "topic": "Ring Strain & Heats of Combustion",
     "difficulty_level": "Hard",
-    "question_text": "Cyclopropane reacts with H2 in the presence of a Pd/C catalyst at 80 °C to yield propane, whereas cyclohexane remains unreactive under these conditions. What drives this difference in chemical reactivity?",
+    "question_text": "Cyclopropane reacts with H2 in the presence of a Pd/C catalyst at 80 \u00b0C to yield propane, whereas cyclohexane remains unreactive under these conditions. What drives this difference in chemical reactivity?",
     "question_smiles": "",
     "options": [
       {
@@ -756,7 +756,7 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question relates physical ring strain to chemical reactivity and ring-opening reactions.",
-      "process": "Step 1: Recognize that the C-C bonds in cyclopropane are weak and under immense angle strain (60° compared to the tetrahedral 109.5°).\nStep 2: Ring opening releases this 115 kJ/mol of strain energy, acting as a powerful thermodynamic driving force.\nStep 3: Cyclohexane lacks ring strain, so there is no thermodynamic driving force for it to undergo ring-opening hydrogenation under mild conditions.",
+      "process": "Step 1: Recognize that the C-C bonds in cyclopropane are weak and under immense angle strain (60\u00b0 compared to the tetrahedral 109.5\u00b0).\nStep 2: Ring opening releases this 115 kJ/mol of strain energy, acting as a powerful thermodynamic driving force.\nStep 3: Cyclohexane lacks ring strain, so there is no thermodynamic driving force for it to undergo ring-opening hydrogenation under mild conditions.",
       "result": "The high ring strain in cyclopropane drives its ring-opening reactivity."
     }
   },
@@ -794,7 +794,7 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the molecular orbital description of the C-C bonds in cyclopropane.",
-      "process": "Step 1: In a regular equilateral triangle, the C-C-C angles are 60°.\nStep 2: If the sp3 orbitals pointed directly at each other, the angle would have to be 109.5°.\nStep 3: The orbitals instead compromise: they point outward at a larger angle (~104°), overlap at an angle, and create 'bent bonds' that are weaker and have more p-character than normal sp3-sp3 sigma bonds.",
+      "process": "Step 1: In a regular equilateral triangle, the C-C-C angles are 60\u00b0.\nStep 2: If the sp3 orbitals pointed directly at each other, the angle would have to be 109.5\u00b0.\nStep 3: The orbitals instead compromise: they point outward at a larger angle (~104\u00b0), overlap at an angle, and create 'bent bonds' that are weaker and have more p-character than normal sp3-sp3 sigma bonds.",
       "result": "Bent bonds result from the inability of hybrid orbitals to overlap directly along the internuclear axis."
     }
   },
@@ -870,8 +870,8 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests quantitative details of cyclobutane's puckered conformation.",
-      "process": "Step 1: In a planar cyclobutane, the dihedral angle is 0°.\nStep 2: When cyclobutane puckers, one carbon is bent out of the plane of the other three by about 25°.\nStep 3: This value represents the optimal balance between minimizing torsional strain and keeping angle strain manageable.",
-      "result": "The dihedral angle of puckered cyclobutane is approximately 25°."
+      "process": "Step 1: In a planar cyclobutane, the dihedral angle is 0\u00b0.\nStep 2: When cyclobutane puckers, one carbon is bent out of the plane of the other three by about 25\u00b0.\nStep 3: This value represents the optimal balance between minimizing torsional strain and keeping angle strain manageable.",
+      "result": "The dihedral angle of puckered cyclobutane is approximately 25\u00b0."
     }
   },
   {
@@ -908,7 +908,7 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the geometric description of the envelope conformation of cyclopentane.",
-      "process": "Step 1: Planar cyclopentane has internal angles of 108° (very close to 109.5°), but suffers from severe torsional strain because all 10 hydrogens are eclipsed.\nStep 2: To relieve this, it puckers into the 'envelope' conformation.\nStep 3: In the envelope conformation, four carbons form a plane, and the fifth carbon is out of that plane, resembling the flap of an envelope. This reduces eclipsing of C-H bonds.",
+      "process": "Step 1: Planar cyclopentane has internal angles of 108\u00b0 (very close to 109.5\u00b0), but suffers from severe torsional strain because all 10 hydrogens are eclipsed.\nStep 2: To relieve this, it puckers into the 'envelope' conformation.\nStep 3: In the envelope conformation, four carbons form a plane, and the fifth carbon is out of that plane, resembling the flap of an envelope. This reduces eclipsing of C-H bonds.",
       "result": "The envelope conformation consists of four coplanar carbons and one out-of-plane carbon."
     }
   },
@@ -916,7 +916,7 @@ const CHAPTER_4_QUESTIONS = [
     "question_id": "ch4_q25_cyclobutane_bond_angles",
     "topic": "Conformations of Small Rings",
     "difficulty_level": "Hard",
-    "question_text": "Why are the internal C-C-C bond angles in the puckered conformation of cyclobutane (~88°) smaller than those in a planar cyclobutane (90°)?",
+    "question_text": "Why are the internal C-C-C bond angles in the puckered conformation of cyclobutane (~88\u00b0) smaller than those in a planar cyclobutane (90\u00b0)?",
     "question_smiles": "C1CCC1",
     "options": [
       {
@@ -946,8 +946,8 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question addresses the energetic trade-off between angle strain and torsional strain in cyclobutane.",
-      "process": "Step 1: Start with a flat square (planar cyclobutane, angles = 90°).\nStep 2: Bend one corner out of plane. The internal angles must decrease slightly to maintain C-C bond lengths (compressing to ~88°).\nStep 3: This compression increases angle strain. However, the non-planar dihedral angle of ~25° staggers the adjacent C-H bonds, significantly lowering torsional strain. The system lowers its overall free energy.",
-      "result": "The C-C-C angles are smaller than 90° because the system trades increased angle strain for a larger reduction in torsional strain."
+      "process": "Step 1: Start with a flat square (planar cyclobutane, angles = 90\u00b0).\nStep 2: Bend one corner out of plane. The internal angles must decrease slightly to maintain C-C bond lengths (compressing to ~88\u00b0).\nStep 3: This compression increases angle strain. However, the non-planar dihedral angle of ~25\u00b0 staggers the adjacent C-H bonds, significantly lowering torsional strain. The system lowers its overall free energy.",
+      "result": "The C-C-C angles are smaller than 90\u00b0 because the system trades increased angle strain for a larger reduction in torsional strain."
     }
   },
   {
@@ -984,7 +984,7 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the primary source of instability in a planar cyclopentane model.",
-      "process": "Step 1: A planar cyclopentane has internal C-C-C angles of 108°, which is extremely close to the ideal 109.5° tetrahedral angle. Therefore, angle strain is virtually zero in the planar form.\nStep 2: However, planarity forces all 5 C-C bonds to be fully eclipsed, resulting in 10 pairs of eclipsing H-H interactions.\nStep 3: This creates a large amount of torsional strain (~40 kJ/mol), which forces the ring to pucker.",
+      "process": "Step 1: A planar cyclopentane has internal C-C-C angles of 108\u00b0, which is extremely close to the ideal 109.5\u00b0 tetrahedral angle. Therefore, angle strain is virtually zero in the planar form.\nStep 2: However, planarity forces all 5 C-C bonds to be fully eclipsed, resulting in 10 pairs of eclipsing H-H interactions.\nStep 3: This creates a large amount of torsional strain (~40 kJ/mol), which forces the ring to pucker.",
       "result": "Torsional strain would be at its maximum in a planar cyclopentane."
     }
   },
@@ -1060,7 +1060,7 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the geometric constraint of the three-membered ring.",
-      "process": "Step 1: Any three points in space define a flat plane. Therefore, the three carbon atoms of cyclopropane must lie in a single plane.\nStep 2: In a planar system, all substituents on adjacent carbons are locked in an eclipsed conformation.\nStep 3: Consequently, cyclopropane cannot pucker to relieve torsional strain, locking its dihedral angles at 0°.",
+      "process": "Step 1: Any three points in space define a flat plane. Therefore, the three carbon atoms of cyclopropane must lie in a single plane.\nStep 2: In a planar system, all substituents on adjacent carbons are locked in an eclipsed conformation.\nStep 3: Consequently, cyclopropane cannot pucker to relieve torsional strain, locking its dihedral angles at 0\u00b0.",
       "result": "The planar constraint of a three-carbon ring makes eclipsing unavoidable."
     }
   },
@@ -1250,8 +1250,8 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the conformational basis for cyclohexane's stability.",
-      "process": "Step 1: Look down any C-C bond of a chair cyclohexane in a Newman projection.\nStep 2: Observe that all C-H and C-C bonds on adjacent carbons are perfectly staggered.\nStep 3: Staggered bonds have dihedral angles of 60° (gauche or anti), which minimizes electron-electron repulsion between bond orbitals, resulting in zero torsional strain.",
-      "result": "Staggered C-H bonds with 60° dihedral angles eliminate torsional strain."
+      "process": "Step 1: Look down any C-C bond of a chair cyclohexane in a Newman projection.\nStep 2: Observe that all C-H and C-C bonds on adjacent carbons are perfectly staggered.\nStep 3: Staggered bonds have dihedral angles of 60\u00b0 (gauche or anti), which minimizes electron-electron repulsion between bond orbitals, resulting in zero torsional strain.",
+      "result": "Staggered C-H bonds with 60\u00b0 dihedral angles eliminate torsional strain."
     }
   },
   {
@@ -1296,7 +1296,7 @@ const CHAPTER_4_QUESTIONS = [
     "question_id": "ch4_q35_cyclohexane_angle_strain",
     "topic": "Cyclohexane Conformations",
     "difficulty_level": "Medium",
-    "question_text": "The C-C-C bond angles in the chair conformation of cyclohexane are measured to be 111.5°. Why does this not cause significant angle strain?",
+    "question_text": "The C-C-C bond angles in the chair conformation of cyclohexane are measured to be 111.5\u00b0. Why does this not cause significant angle strain?",
     "question_smiles": "",
     "options": [
       {
@@ -1326,8 +1326,8 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the relationship between bond angle deviation and angle strain in cyclohexane.",
-      "process": "Step 1: The ideal tetrahedral bond angle for sp3-hybridized carbon is 109.5°.\nStep 2: In chair cyclohexane, the angle is 111.5°, representing a deviation of only 2°.\nStep 3: This minor deviation results in a virtually undetectable amount of angle strain (< 1 kJ/mol), which is why cyclohexane is considered essentially free of angle strain.",
-      "result": "An angle of 111.5° is close enough to 109.5° to result in negligible angle strain."
+      "process": "Step 1: The ideal tetrahedral bond angle for sp3-hybridized carbon is 109.5\u00b0.\nStep 2: In chair cyclohexane, the angle is 111.5\u00b0, representing a deviation of only 2\u00b0.\nStep 3: This minor deviation results in a virtually undetectable amount of angle strain (< 1 kJ/mol), which is why cyclohexane is considered essentially free of angle strain.",
+      "result": "An angle of 111.5\u00b0 is close enough to 109.5\u00b0 to result in negligible angle strain."
     }
   },
   {
@@ -1440,7 +1440,7 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question applies the thermodynamic equation delta G = -RT * ln(K) to calculate the equilibrium ratio of cyclohexane chair conformers.",
-      "process": "Step 1: Identify the values: delta G° (axial -> equatorial) = -7300 J/mol. Temperature T = 298 K. R = 8.314 J/(mol*K).\nStep 2: Set up the equation: K = exp(-delta G° / RT) = exp(7300 / (8.314 * 298)).\nStep 3: Calculate the exponent: 7300 / 2477.57 = 2.946.\nStep 4: Calculate K: K = exp(2.946) ≈ 19.0.\nStep 5: The ratio is 19:1 equatorial:axial. Expressed as percentages: 19/(19+1) = 95% equatorial, 5% axial.",
+      "process": "Step 1: Identify the values: delta G\u00b0 (axial -> equatorial) = -7300 J/mol. Temperature T = 298 K. R = 8.314 J/(mol*K).\nStep 2: Set up the equation: K = exp(-delta G\u00b0 / RT) = exp(7300 / (8.314 * 298)).\nStep 3: Calculate the exponent: 7300 / 2477.57 = 2.946.\nStep 4: Calculate K: K = exp(2.946) \u2248 19.0.\nStep 5: The ratio is 19:1 equatorial:axial. Expressed as percentages: 19/(19+1) = 95% equatorial, 5% axial.",
       "result": "The equilibrium ratio is approximately 95% equatorial to 5% axial."
     }
   },
@@ -1516,7 +1516,7 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question correlates the steric strain in cyclohexane chairs to acyclic alkane conformations (butane).",
-      "process": "Step 1: Trace the carbon path in axial methylcyclohexane. The methyl carbon (C_methyl), C1, C2, and C3 form a four-carbon butane unit.\nStep 2: In the axial conformation, the dihedral angle between C_methyl and C3 is 60°, which matches a gauche relationship in butane (3.8 kJ/mol of strain).\nStep 3: Trace the other pathway: C_methyl, C1, C6, and C5 also form a butane unit with a 60° dihedral angle (another gauche interaction).\nStep 4: Thus, the axial methyl group is destabilized by two gauche-butane interactions (2 * 3.8 kJ/mol = 7.6 kJ/mol, which is very close to the measured A-value of 7.3 kJ/mol).",
+      "process": "Step 1: Trace the carbon path in axial methylcyclohexane. The methyl carbon (C_methyl), C1, C2, and C3 form a four-carbon butane unit.\nStep 2: In the axial conformation, the dihedral angle between C_methyl and C3 is 60\u00b0, which matches a gauche relationship in butane (3.8 kJ/mol of strain).\nStep 3: Trace the other pathway: C_methyl, C1, C6, and C5 also form a butane unit with a 60\u00b0 dihedral angle (another gauche interaction).\nStep 4: Thus, the axial methyl group is destabilized by two gauche-butane interactions (2 * 3.8 kJ/mol = 7.6 kJ/mol, which is very close to the measured A-value of 7.3 kJ/mol).",
       "result": "An axial methyl group experiences steric strain equivalent to two gauche-butane interactions."
     }
   },
@@ -1554,7 +1554,7 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the impact of substituent geometry (hybridization and shape) on steric strain in chair conformations.",
-      "process": "Step 1: Consider the structure of the cyano group: -C≡N. Both the carbon and nitrogen are sp-hybridized.\nStep 2: This hybridization dictates a linear geometry (180° bond angle).\nStep 3: When in the axial position, the cyano group is oriented vertically, pointing straight away from the ring. This narrow, linear shape prevents it from projecting over the ring toward the C3 and C5 axial hydrogens, resulting in very little steric clash.",
+      "process": "Step 1: Consider the structure of the cyano group: -C\u2261N. Both the carbon and nitrogen are sp-hybridized.\nStep 2: This hybridization dictates a linear geometry (180\u00b0 bond angle).\nStep 3: When in the axial position, the cyano group is oriented vertically, pointing straight away from the ring. This narrow, linear shape prevents it from projecting over the ring toward the C3 and C5 axial hydrogens, resulting in very little steric clash.",
       "result": "The linear geometry of the cyano group minimizes 1,3-diaxial interactions, resulting in a very low A-value."
     }
   },
@@ -1592,7 +1592,7 @@ const CHAPTER_4_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question addresses the counter-intuitive trend in halogen A-values by looking at bond length effects.",
-      "process": "Step 1: Identify two competing factors as you go down Group 17: atomic radius increases (increases steric size), and C-X bond length increases (moves the atom further from the ring).\nStep 2: From Cl to Br to I, the bond length increases significantly (C-Cl = 1.78 Å, C-Br = 1.93 Å, C-I = 2.14 Å).\nStep 3: The longer C-I bond places the bulky iodine atom far enough away from the axial hydrogens on C3 and C5 to decrease the steric overlap, resulting in a slightly lower A-value for iodine than for chlorine or bromine.",
+      "process": "Step 1: Identify two competing factors as you go down Group 17: atomic radius increases (increases steric size), and C-X bond length increases (moves the atom further from the ring).\nStep 2: From Cl to Br to I, the bond length increases significantly (C-Cl = 1.78 \u00c5, C-Br = 1.93 \u00c5, C-I = 2.14 \u00c5).\nStep 3: The longer C-I bond places the bulky iodine atom far enough away from the axial hydrogens on C3 and C5 to decrease the steric overlap, resulting in a slightly lower A-value for iodine than for chlorine or bromine.",
       "result": "The longer C-I bond length projects the iodine atom further away from the ring, reducing steric clash."
     }
   },
@@ -1898,6 +1898,109 @@ const CHAPTER_4_QUESTIONS = [
       "context": "This question applies conformational analysis to a biologically important trisubstituted cyclohexane molecule.",
       "process": "Step 1: Analyze the structure of menthol. The cyclohexane ring has an -OH group at C1, an isopropyl group at C2, and a methyl group at C5.\nStep 2: Note the stereochemical relationships:\n- The -OH at C1 and the isopropyl at C2 are trans (trans-1,2).\n- The -OH at C1 and the methyl at C5 are trans (trans-1,3, which translates to C1-C5 cis? Let's check: C1-C2-C3-C4-C5 is a 1,3-relationship if we count C1 as 1, C5 as 3. In (1R,2S,5R)-menthol, the substituents are arranged such that all three can simultaneously occupy equatorial positions).\nStep 3: Let's verify: C1-OH (equatorial, e.g., down-equatorial). C2-isopropyl (trans to OH, so it must be up-equatorial). C5-methyl is trans to OH? If OH is down-equatorial, then C5 is C3 if numbering from C1 in opposite direction. Let's trace: C1 (down) -> C6 -> C5 (up is axial, down is equatorial). So if C5 is down, it is down-equatorial. Thus C1-OH (down) and C5-methyl (down) are cis.\nStep 4: Indeed, in this configuration, all three groups (hydroxyl, isopropyl, and methyl) can be equatorial at the same time, making this conformation exceptionally stable.",
       "result": "In its most stable chair conformation, all three substituents are in equatorial positions."
+    }
+  },
+  {
+    "question_id": "ch4_q_dynamic_chair_energy",
+    "topic": "Cycloalkanes Conformational Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Consider the potential energy diagram of cyclohexane conformations during a ring flip. Match each point to its corresponding conformation.",
+    "energy_diagram": {
+      "points": [
+        {
+          "state": "Chair (lowest energy)",
+          "energy": 0
+        },
+        {
+          "state": "Half-Chair (highest energy transition)",
+          "energy": 45
+        },
+        {
+          "state": "Twist-Boat (local minimum)",
+          "energy": 23
+        },
+        {
+          "state": "Boat (local maximum transition)",
+          "energy": 30
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Chair conformation is the most stable (0 kJ/mol), Half-Chair is the least stable transition state (45 kJ/mol), and Twist-Boat is a stable intermediate (23 kJ/mol).",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Boat conformation is more stable than Chair.",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Half-chair is a stable intermediate state.",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "All conformations have equal energy.",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Understanding cyclohexane ring-flip energetics.",
+      "process": "Chair is the ground state. Half-chair requires severe angle and torsional strain (45 kJ/mol). Twist-boat relieves some eclipsing strain (23 kJ/mol). Boat is a transition state between twist-boats (30 kJ/mol).",
+      "result": "Order of stability: Chair > Twist-Boat > Boat > Half-Chair."
+    }
+  },
+  {
+    "question_id": "ch4_q_dynamic_cis_trans_cyclo",
+    "topic": "Cycloalkane Stereochemistry",
+    "difficulty_level": "Medium",
+    "question_text": "Match each cycloalkane configuration to its correct stereochemical description.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "C1[C@@H](C)C[C@@H](C)CC1",
+        "correctAnswer": "cis-1,3-Dimethylcyclohexane"
+      },
+      {
+        "smiles": "C1[C@@H](C)C[C@H](C)CC1",
+        "correctAnswer": "trans-1,3-Dimethylcyclohexane"
+      },
+      {
+        "smiles": "C1[C@@H](C)[C@@H](C)CCC1",
+        "correctAnswer": "cis-1,2-Dimethylcyclohexane"
+      },
+      {
+        "smiles": "C1[C@@H](C)[C@H](C)CCC1",
+        "correctAnswer": "trans-1,2-Dimethylcyclohexane"
+      }
+    ],
+    "match_options": [
+      "cis-1,3-Dimethylcyclohexane",
+      "trans-1,3-Dimethylcyclohexane",
+      "cis-1,2-Dimethylcyclohexane",
+      "trans-1,2-Dimethylcyclohexane",
+      "1,1-Dimethylcyclohexane"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect cis/trans mapping",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Distinguishing cis/trans isomers in dimethylcyclohexanes.",
+      "process": "Item 1 has both methyls on the same face (wedges/wedges) at 1,3 positions: cis. Item 2 has one wedge and one dash at 1,3: trans. Item 3 has both wedges at 1,2: cis. Item 4 has wedge/dash at 1,2: trans.",
+      "result": "Cis/trans naming depends on whether substituents point to same or opposite faces."
     }
   }
 ];

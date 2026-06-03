@@ -1,4 +1,4 @@
-// ACS Organic Chemistry Exam Preparation - ACS: Stereochemistry
+// McMurry Chapter 22 questions
 const CHAPTER_22_QUESTIONS = [
   {
     "question_id": "ch22_acs_q1_stereochemistry",
@@ -342,6 +342,45 @@ const CHAPTER_22_QUESTIONS = [
       "context": "Understanding the chemical process of enantiomer resolution.",
       "process": "Step 1: Enantiomers have identical physical properties in achiral environments, making physical separation impossible.\nStep 2: Diastereomers have different physical properties.\nStep 3: Reacting the racemate with a chiral resolving agent creates a pair of diastereomers, which can be separated and converted back to pure enantiomers.",
       "result": "Enantiomers are separated by temporary conversion into diastereomers."
+    }
+  },
+  {
+    "question_id": "ch22_q_dynamic_kinetic_enolates",
+    "topic": "Enols and Enolates",
+    "difficulty_level": "Hard",
+    "question_text": "Match the reaction conditions to the preferred enolate form (kinetic vs thermodynamic).",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "CC(=O)C(C)C.C1COCCN1",
+        "correctAnswer": "Kinetic Enolate (LDA, THF, -78\u00b0C)"
+      },
+      {
+        "smiles": "CC(=O)C(C)C.O=C([O-])C",
+        "correctAnswer": "Thermodynamic Enolate (NaOEt, EtOH, 25\u00b0C)"
+      }
+    ],
+    "match_options": [
+      "Kinetic Enolate (LDA, THF, -78\u00b0C)",
+      "Thermodynamic Enolate (NaOEt, EtOH, 25\u00b0C)"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect enolate conditions",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Distinguishing kinetic and thermodynamic enolate formation.",
+      "process": "Kinetic enolates are formed by rapid, irreversible deprotonation at the less hindered carbon using a strong, bulky base (LDA) at low temperatures (-78\u00b0C). Thermodynamic enolates are formed under equilibrating conditions (NaOEt, room temp) favoring the more substituted, stable double bond.",
+      "result": "Enolates matched."
     }
   }
 ];
