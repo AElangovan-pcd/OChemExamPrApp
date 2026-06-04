@@ -649,8 +649,8 @@ chapter_questions = {
             "interaction_type": "matching-list",
             "match_items": [
                 {"smiles": "Nc1ncnc2[nH]cnc12", "correctAnswer": "Thymine (Adenine pairs with Thymine)"},
-                {"smiles": "Cc1c[nH]c(=O)[nH]c1=O", "correctAnswer": "Adenine (Thymine pairs with Adenine)"},
-                {"smiles": "Nc1cc[nH]c(=O)n1", "correctAnswer": "Guanine (Cytosine pairs with Guanine)"}
+                {"smiles": "O=C1NC(=O)C(C)=CN1", "correctAnswer": "Adenine (Thymine pairs with Adenine)"},
+                {"smiles": "O=C1NC=CC(N)=N1", "correctAnswer": "Guanine (Cytosine pairs with Guanine)"}
             ],
             "match_options": ["Thymine (Adenine pairs with Thymine)", "Adenine (Thymine pairs with Adenine)", "Guanine (Cytosine pairs with Guanine)", "Uracil"],
             "options": [

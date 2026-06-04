@@ -881,7 +881,7 @@ def generate_all_extra_chapters():
                         "topic": "Biomolecules: Nucleic Acids",
                         "difficulty_level": "Medium",
                         "question_text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-                        "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+                        "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
                         "options": options,
                         "feedback": {
                             "context": "Watson-Crick base pairing hydrogen bonds.",

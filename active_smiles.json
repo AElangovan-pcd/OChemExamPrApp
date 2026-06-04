@@ -23572,7 +23572,7 @@
     "file": "chapter50.js",
     "id": "ch50_q5",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "C",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -23720,7 +23720,7 @@
     "file": "chapter50.js",
     "id": "ch50_q10",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "A",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -23868,7 +23868,7 @@
     "file": "chapter50.js",
     "id": "ch50_q15",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "B",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -24016,7 +24016,7 @@
     "file": "chapter50.js",
     "id": "ch50_q20",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "C",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -24164,7 +24164,7 @@
     "file": "chapter50.js",
     "id": "ch50_q25",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "C",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -24312,7 +24312,7 @@
     "file": "chapter50.js",
     "id": "ch50_q30",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "A",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -24460,7 +24460,7 @@
     "file": "chapter50.js",
     "id": "ch50_q35",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "A",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -24608,7 +24608,7 @@
     "file": "chapter50.js",
     "id": "ch50_q40",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "A",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -24756,7 +24756,7 @@
     "file": "chapter50.js",
     "id": "ch50_q45",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "A",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -24904,7 +24904,7 @@
     "file": "chapter50.js",
     "id": "ch50_q50",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "A",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -25052,7 +25052,7 @@
     "file": "chapter50.js",
     "id": "ch50_q55",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "D",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -25200,7 +25200,7 @@
     "file": "chapter50.js",
     "id": "ch50_q60",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "B",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -25348,7 +25348,7 @@
     "file": "chapter50.js",
     "id": "ch50_q65",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "A",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -25496,7 +25496,7 @@
     "file": "chapter50.js",
     "id": "ch50_q70",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "D",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -25644,7 +25644,7 @@
     "file": "chapter50.js",
     "id": "ch50_q75",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "C",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -25792,7 +25792,7 @@
     "file": "chapter50.js",
     "id": "ch50_q80",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "C",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -25940,7 +25940,7 @@
     "file": "chapter50.js",
     "id": "ch50_q85",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "C",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -26088,7 +26088,7 @@
     "file": "chapter50.js",
     "id": "ch50_q90",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "A",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",
@@ -26236,7 +26236,7 @@
     "file": "chapter50.js",
     "id": "ch50_q95",
     "text": "Determine the correct Watson-Crick base-pairing partners and their corresponding hydrogen bond counts in a DNA double helix.",
-    "question_smiles": "Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O",
+    "question_smiles": "Nc1ncnc2[nH]cnc12.O=C1NC(=O)C(C)=CN1",
     "correct_option": {
       "option_id": "A",
       "text": "Adenine pairs with Thymine via 2 hydrogen bonds; Guanine pairs with Cytosine via 3 hydrogen bonds.",

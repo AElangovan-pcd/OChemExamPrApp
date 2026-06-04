@@ -197,11 +197,11 @@ const CHAPTER_28_QUESTIONS = [
         "correctAnswer": "Thymine (Adenine pairs with Thymine)"
       },
       {
-        "smiles": "Cc1c[nH]c(=O)[nH]c1=O",
+        "smiles": "O=C1NC(=O)C(C)=CN1",
         "correctAnswer": "Adenine (Thymine pairs with Adenine)"
       },
       {
-        "smiles": "Nc1cc[nH]c(=O)n1",
+        "smiles": "O=C1NC=CC(N)=N1",
         "correctAnswer": "Guanine (Cytosine pairs with Guanine)"
       }
     ],

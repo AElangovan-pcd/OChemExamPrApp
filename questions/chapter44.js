@@ -18,20 +18,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
@@ -65,20 +65,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
@@ -112,14 +112,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
@@ -130,8 +130,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -165,20 +165,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       }
     ],
@@ -206,8 +206,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       },
       {
@@ -218,14 +218,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       }
     ],
@@ -253,8 +253,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
         "is_correct": false
       },
       {
@@ -265,14 +265,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
         "is_correct": false
       }
     ],
@@ -300,20 +300,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       },
       {
@@ -347,14 +347,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "CCO",
+        "smiles": "CCO",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
@@ -365,8 +365,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
         "is_correct": false
       }
     ],
@@ -400,20 +400,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       }
     ],
@@ -447,20 +447,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
         "is_correct": false
       }
     ],
@@ -488,8 +488,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
@@ -500,14 +500,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
         "is_correct": false
       }
     ],
@@ -535,20 +535,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
+        "text": "CCO",
+        "smiles": "CCO",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       },
       {
@@ -582,20 +582,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       },
       {
@@ -629,8 +629,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
         "is_correct": false
       },
       {
@@ -641,14 +641,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -676,8 +676,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
@@ -688,14 +688,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       }
     ],
@@ -723,14 +723,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
         "is_correct": false
       },
       {
@@ -741,8 +741,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       }
     ],
@@ -770,14 +770,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
+        "text": "CCO",
+        "smiles": "CCO",
         "is_correct": false
       },
       {
@@ -788,8 +788,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       }
     ],
@@ -817,20 +817,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
@@ -864,8 +864,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
@@ -876,14 +876,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       }
     ],
@@ -911,20 +911,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
@@ -964,20 +964,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -1005,8 +1005,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
         "is_correct": false
       },
       {
@@ -1017,14 +1017,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       }
     ],
@@ -1052,8 +1052,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
@@ -1064,14 +1064,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -1099,20 +1099,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       },
       {
@@ -1146,20 +1146,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
         "text": "[N+](=O)([O-])c1ccccc1",
         "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       },
       {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
         "option_id": "C",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
@@ -1193,20 +1193,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       },
       {
@@ -1246,20 +1246,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       }
     ],
@@ -1293,20 +1293,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
+        "text": "CCO",
+        "smiles": "CCO",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -1334,14 +1334,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
@@ -1352,8 +1352,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       }
     ],
@@ -1381,20 +1381,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
@@ -1434,20 +1434,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       }
     ],
@@ -1475,14 +1475,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
@@ -1493,8 +1493,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
+        "text": "CCO",
+        "smiles": "CCO",
         "is_correct": false
       }
     ],
@@ -1522,14 +1522,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       },
       {
@@ -1540,8 +1540,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       }
     ],
@@ -1569,8 +1569,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       },
       {
@@ -1581,14 +1581,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       }
     ],
@@ -1622,20 +1622,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       }
     ],
@@ -1663,14 +1663,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "CCO",
+        "smiles": "CCO",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
@@ -1681,8 +1681,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       }
     ],
@@ -1710,14 +1710,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       },
       {
@@ -1728,8 +1728,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       }
     ],
@@ -1763,20 +1763,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       }
     ],
@@ -1810,20 +1810,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
         "is_correct": false
       }
     ],
@@ -1851,14 +1851,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       },
       {
@@ -1869,8 +1869,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       }
     ],
@@ -1898,8 +1898,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
@@ -1910,14 +1910,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       }
     ],
@@ -1945,20 +1945,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       },
       {
@@ -1992,8 +1992,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
@@ -2004,14 +2004,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       }
     ],
@@ -2039,8 +2039,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
@@ -2051,14 +2051,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       }
     ],
@@ -2086,20 +2086,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       },
       {
@@ -2133,8 +2133,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
@@ -2145,14 +2145,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       }
     ],
@@ -2180,20 +2180,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
@@ -2233,20 +2233,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       }
     ],
@@ -2274,8 +2274,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
@@ -2286,14 +2286,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       }
     ],
@@ -2321,14 +2321,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
@@ -2339,8 +2339,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
         "is_correct": false
       }
     ],
@@ -2374,20 +2374,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       }
     ],
@@ -2415,8 +2415,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
@@ -2427,14 +2427,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       }
     ],
@@ -2462,20 +2462,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
@@ -2509,8 +2509,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       },
       {
@@ -2521,14 +2521,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
         "is_correct": false
       }
     ],
@@ -2562,20 +2562,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       }
     ],
@@ -2603,14 +2603,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
+        "text": "CCO",
+        "smiles": "CCO",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       },
       {
@@ -2621,8 +2621,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       }
     ],
@@ -2650,14 +2650,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
+        "text": "CCO",
+        "smiles": "CCO",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       },
       {
@@ -2668,8 +2668,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       }
     ],
@@ -2697,14 +2697,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
@@ -2715,8 +2715,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       }
     ],
@@ -2744,20 +2744,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       },
       {
@@ -2797,20 +2797,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       }
     ],
@@ -2838,14 +2838,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       },
       {
@@ -2856,8 +2856,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       }
     ],
@@ -2885,20 +2885,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       },
       {
@@ -2932,14 +2932,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       },
       {
@@ -2950,8 +2950,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -2985,20 +2985,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       }
     ],
@@ -3026,8 +3026,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
@@ -3038,14 +3038,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
         "is_correct": false
       }
     ],
@@ -3073,20 +3073,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       },
       {
@@ -3126,20 +3126,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       }
     ],
@@ -3167,14 +3167,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       },
       {
@@ -3185,8 +3185,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       }
     ],
@@ -3214,8 +3214,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       },
       {
@@ -3226,14 +3226,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       }
     ],
@@ -3261,14 +3261,14 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
@@ -3279,8 +3279,8 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       }
     ],
@@ -3308,20 +3308,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       },
       {
@@ -3355,8 +3355,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       },
       {
@@ -3367,14 +3367,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       }
     ],
@@ -3408,20 +3408,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       }
     ],
@@ -3455,20 +3455,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
         "is_correct": false
       }
     ],
@@ -3496,20 +3496,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
@@ -3549,20 +3549,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
         "is_correct": false
       }
     ],
@@ -3590,8 +3590,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
@@ -3602,14 +3602,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -3637,20 +3637,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       },
       {
@@ -3684,20 +3684,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCO",
-        "smiles": "CCO",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       },
       {
@@ -3731,8 +3731,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "CC=O",
+        "smiles": "CC=O",
         "is_correct": false
       },
       {
@@ -3743,14 +3743,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       }
     ],
@@ -3784,20 +3784,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       }
     ],
@@ -3825,8 +3825,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
+        "text": "CCC",
+        "smiles": "CCC",
         "is_correct": false
       },
       {
@@ -3837,14 +3837,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
+        "text": "COCC",
+        "smiles": "COCC",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       }
     ],
@@ -3872,20 +3872,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCCO",
-        "smiles": "CCCO",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
         "is_correct": false
       },
       {
@@ -3919,20 +3919,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       },
       {
@@ -3966,8 +3966,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       },
       {
@@ -3978,14 +3978,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       }
     ],
@@ -4019,20 +4019,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       }
     ],
@@ -4060,20 +4060,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
+        "text": "CCCO",
+        "smiles": "CCCO",
         "is_correct": false
       },
       {
@@ -4107,20 +4107,20 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
@@ -4160,20 +4160,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
         "is_correct": false
       }
     ],
@@ -4201,8 +4201,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
@@ -4213,14 +4213,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CCC",
-        "smiles": "CCC",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
         "is_correct": false
       }
     ],
@@ -4254,20 +4254,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
         "is_correct": false
       }
     ],
@@ -4295,8 +4295,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
@@ -4307,14 +4307,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -4342,8 +4342,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       },
       {
@@ -4354,14 +4354,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       }
     ],
@@ -4395,20 +4395,20 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC=C",
-        "smiles": "CC=C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
         "is_correct": false
       }
     ],
@@ -4436,8 +4436,8 @@ const CHAPTER_44_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
+        "text": "CC=C",
+        "smiles": "CC=C",
         "is_correct": false
       },
       {
@@ -4448,14 +4448,14 @@ const CHAPTER_44_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "CC=O",
-        "smiles": "CC=O",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
         "is_correct": false
       }
     ],
