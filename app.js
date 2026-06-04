@@ -324,9 +324,8 @@ document.addEventListener('DOMContentLoaded', () => {
     state.questions = [...state.questions, ...CHAPTER_50_QUESTIONS];
   }
 
-
-
-
+  // Assign OER chapter numbers to all loaded questions
+  assignOERChapterNumbers();
 
   // Initialize Smiles Drawer
   if (typeof SmilesDrawer !== 'undefined') {
