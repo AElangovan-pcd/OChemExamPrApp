@@ -403,4 +403,95 @@ const CHAPTER_30_QUESTIONS = [
       "result": "The final product is a cis-fused cyclohexene anhydride."
     }
   }
+,
+  {
+    "question_id": "ch30_acs_q11_steroid_oxidation",
+    "topic": "ACS: Oxidations & Reductions",
+    "difficulty_level": "Medium",
+    "question_text": "Which reagent would be best for carrying out this transformation?",
+    "image": "images/or1_steroid_scheme.png",
+    "options": [
+      {"option_id": "A", "text": "KOH(aq) / heat", "is_correct": false},
+      {"option_id": "B", "text": "K2Cr2O7(aq), H2SO4", "is_correct": true},
+      {"option_id": "C", "text": "LiAlH4 in ether", "is_correct": false},
+      {"option_id": "D", "text": "H3O+, heat", "is_correct": false}
+    ],
+    "feedback": {
+      "context": "Selecting mild vs strong oxidizing reagents to oxidize secondary alcohols to ketones.",
+      "process": "Step 1: Examine the starting material and product structures. The substrate has two secondary alcohol groups on a steroid skeleton.\nStep 2: The product shows both secondary alcohols oxidized to ketone groups.\nStep 3: Aqueous potassium dichromate in acid (K2Cr2O7/H2SO4, Jones conditions) is a strong oxidizing agent that will cleanly convert secondary alcohols to ketones without skeletal degradation.",
+      "result": "The best reagent is aqueous potassium dichromate in sulfuric acid (K2Cr2O7, H2SO4)."
+    }
+  },
+  {
+    "question_id": "ch30_acs_q12_chemoselective_pcc",
+    "topic": "ACS: Oxidations & Reductions",
+    "difficulty_level": "Hard",
+    "question_text": "Which reagent would be best for carrying out this transformation?",
+    "image": "images/or2_oxidation_scheme.png",
+    "options": [
+      {"option_id": "A", "text": "KMnO4, -OH", "is_correct": false},
+      {"option_id": "B", "text": "H3O+, heat", "is_correct": false},
+      {"option_id": "C", "text": "HIO4", "is_correct": false},
+      {"option_id": "D", "text": "PCC (pyridinium chlorochromate) in CH2Cl2", "is_correct": true}
+    ],
+    "feedback": {
+      "context": "Selecting a chemoselective oxidizing agent that oxidizes secondary alcohols without reacting with alkenes.",
+      "process": "Step 1: The starting material contains two functional groups: a secondary alcohol and an isolated alkene.\nStep 2: The product shows the secondary alcohol oxidized to a ketone, while the double bond remains completely untouched.\nStep 3: Potassium permanganate (KMnO4) is a strong oxidizer that would rapidly dihydroxylate or cleave the alkene. Periodic acid (HIO4) cleaves 1,2-diols. Aqueous acid (H3O+) causes hydration of the alkene.\nStep 4: Pyridinium chlorochromate (PCC) in anhydrous dichloromethane (CH2Cl2) selectively oxidizes secondary alcohols to ketones without affecting carbon-carbon double (or triple) bonds.",
+      "result": "The correct reagent is PCC (pyridinium chlorochromate)."
+    }
+  },
+  {
+    "question_id": "ch30_acs_q13_deuterated_reduction",
+    "topic": "ACS: Oxidations & Reductions",
+    "difficulty_level": "Hard",
+    "question_text": "Which of these reagents would be best to accomplish this conversion?",
+    "image": "images/or_q12_deuterated_reduction.png",
+    "options": [
+      {"option_id": "A", "text": "D2O, catalytic HCl", "is_correct": false},
+      {"option_id": "B", "text": "D2O2 in CH3COOH", "is_correct": false},
+      {"option_id": "C", "text": "NaOD in CH3CH2OD, then aqueous work-up", "is_correct": false},
+      {"option_id": "D", "text": "NaBD4 in CH3CH2OH, then aqueous work-up", "is_correct": true}
+    ],
+    "feedback": {
+      "context": "Understanding nucleophilic hydride delivery and deuterium incorporation during carbonyl reduction.",
+      "process": "Step 1: The reaction converts an aldehyde (-CHO) into a deuterated secondary alcohol (-CD(OH)-) attached to a cyclopentyl ring.\nStep 2: The carbon atom of the alcohol carries a deuterium atom, indicating that the nucleophilic species delivering the hydride equivalent must be deuterated (D-).\nStep 3: Sodium borodeuteride (NaBD4) acts as a source of nucleophilic deuteride (D-), which attacks the carbonyl carbon. Subsequent aqueous workup protonates the alkoxide oxygen (O-) to yield the neutral deuterated alcohol.",
+      "result": "The best reagent is NaBD4 followed by aqueous work-up."
+    }
+  },
+  {
+    "question_id": "ch30_acs_q14_dihydroxylation",
+    "topic": "ACS: Oxidations & Reductions",
+    "difficulty_level": "Medium",
+    "question_text": "Which set of reagents could be used to effect this conversion?",
+    "image": "images/or_q13_dihydroxylation.png",
+    "options": [
+      {"option_id": "A", "text": "BH3, then H2O2 and NaOH", "is_correct": false},
+      {"option_id": "B", "text": "HIO4", "is_correct": false},
+      {"option_id": "C", "text": "cold KMnO4, NaOH", "is_correct": true},
+      {"option_id": "D", "text": "H2O2, NaOH", "is_correct": false}
+    ],
+    "feedback": {
+      "context": "Recognizing syn-dihydroxylation reagents that convert alkenes to cis-1,2-diols.",
+      "process": "Step 1: The reaction converts cis-2-butene (or a symmetric cis-alkene) into a cis-1,2-diol (syn-addition of two hydroxyl groups).\nStep 2: Hydroboration-oxidation (BH3, then H2O2/NaOH) adds water across a double bond to form a mono-alcohol, not a diol.\nStep 3: Cold, alkaline potassium permanganate (cold KMnO4, NaOH) or osmium tetroxide (OsO4) achieves stereospecific syn-dihydroxylation of alkenes to yield cis-1,2-diols.",
+      "result": "The correct set of reagents is cold KMnO4, NaOH."
+    }
+  },
+  {
+    "question_id": "ch30_acs_q15_triol_cleavage",
+    "topic": "ACS: Oxidations & Reductions",
+    "difficulty_level": "Hard",
+    "question_text": "What are the products when the triol shown is treated with excess HIO4?",
+    "image": "images/or_q14_triol_cleavage.png",
+    "options": [
+      {"option_id": "A", "text": "CH3CH(OH)CH2COCH3 + HCHO", "is_correct": true},
+      {"option_id": "B", "text": "CH3CH(OH)CH2COCH3 + HCOOH", "is_correct": false},
+      {"option_id": "C", "text": "CH3CHO + CH3COCH3 + HCHO", "is_correct": false},
+      {"option_id": "D", "text": "CH3CHO + CH3COCH3 + HCOOH", "is_correct": false}
+    ],
+    "feedback": {
+      "context": "Analyzing the regioselectivity and requirements of periodic acid (HIO4) cleavage of polyols.",
+      "process": "Step 1: Periodic acid (HIO4) specifically cleaves carbon-carbon bonds between adjacent carbons that both bear hydroxyl (-OH) groups (vicinal diols).\nStep 2: Identify the hydroxyl locations in the triol CH3-CH(OH)-CH2-C(OH)(CH3)-CH2OH. The adjacent hydroxyl groups are located on the tertiary carbon C4 and the primary carbon C5 (CH2OH). The secondary alcohol at C2 is separated from the tertiary alcohol by an unsubstituted methylene group (CH2), so it is not vicinal and will not be cleaved.\nStep 3: Cleavage of the C4-C5 bond oxidizes the tertiary alcohol at C4 to a ketone (CH3CH(OH)CH2COCH3) and the primary alcohol at C5 to formaldehyde (HCHO).",
+      "result": "The products are CH3CH(OH)CH2COCH3 and HCHO."
+    }
+  }
 ];

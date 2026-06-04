@@ -391,4 +391,23 @@ const CHAPTER_29_QUESTIONS = [
       "result": "Metabolic reactions classified."
     }
   }
+,
+  {
+    "question_id": "ch29_acs_q11_bromination_fastest",
+    "topic": "ACS: Free Radicals",
+    "difficulty_level": "Hard",
+    "question_text": "At which of the indicated positions would the bromine radical react at the fastest rate?",
+    "image": "images/rad10_benzene_positions.png",
+    "options": [
+      {"option_id": "A", "text": "1", "is_correct": false},
+      {"option_id": "B", "text": "2", "is_correct": true},
+      {"option_id": "C", "text": "3", "is_correct": false},
+      {"option_id": "D", "text": "4", "is_correct": false}
+    ],
+    "feedback": {
+      "context": "Comparing carbon-hydrogen bond dissociation energies and radical stability (benzylic vs aliphatic/aromatic).",
+      "process": "Step 1: Free radical bromination proceeds via hydrogen abstraction by a bromine radical to form a carbon radical.\nStep 2: Identify the types of C-H bonds in propylbenzene: position 1 (aromatic sp2 C-H, extremely strong), position 2 (benzylic sp3 C-H, very weak), position 3 (secondary aliphatic sp3 C-H, medium), and position 4 (primary aliphatic sp3 C-H, strong).\nStep 3: The benzylic radical formed by abstraction at position 2 is stabilized by resonance with the aromatic ring, making this C-H bond the weakest and the abstraction step the fastest.",
+      "result": "Bromine radical reacts fastest at position 2 (benzylic)."
+    }
+  }
 ];

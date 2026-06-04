@@ -1909,6 +1909,13 @@ function submitMatchingAnswer() {
 }
 
 function renderQuestionChemicals(q, prefix = '') {
+  if (q.image) {
+    return `
+      <div class="question-image-container" style="text-align: center; margin: 1.5rem 0; padding: 1rem; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; display: flex; justify-content: center; align-items: center;">
+        <img src="${q.image}" alt="Exam Figure / Spectrum" style="max-width: 100%; max-height: 280px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); background: #fdfdfd; padding: 6px; box-shadow: var(--shadow-md);">
+      </div>
+    `;
+  }
   if (q.reaction_scheme) {
     let rHtml = '';
     q.reaction_scheme.reactants.forEach((sm, index) => {

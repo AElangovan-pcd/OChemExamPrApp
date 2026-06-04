@@ -348,4 +348,23 @@ const CHAPTER_32_QUESTIONS = [
       "result": "A tertiary alcohol is not consistent with a positive chromic acid test."
     }
   }
-];
+,
+  {
+    "question_id": "ch32_acs_q11_alkyne_alkylation",
+    "topic": "ACS: Synthesis & Qual",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major product of this reaction sequence?",
+    "image": "images/sa1_synthesis_scheme.png",
+    "options": [
+      {"option_id": "A", "text": "(Z)-1-phenyl-1-pentene", "is_correct": true},
+      {"option_id": "B", "text": "1-phenylpentane", "is_correct": false},
+      {"option_id": "C", "text": "(E)-1-phenyl-1-pentene", "is_correct": false},
+      {"option_id": "D", "text": "(Z)-4-methyl-1-phenyl-1-pentene", "is_correct": false}
+    ],
+    "feedback": {
+      "context": "Analyzing multi-step synthesis pathways involving alkyne alkylation and stereoselective reduction.",
+      "process": "Step 1: Phenylacetylene (C6H5-C#CH) is treated with a strong base, sodium amide (NaNH2), to deprotonate the terminal alkyne, forming a nucleophilic sodium acetylide organometallic species.\nStep 2: The acetylide anion undergoes an SN2 substitution with 1-bromopropane (CH3CH2CH2Br) to yield 1-phenyl-1-pentyne (C6H5-C#C-CH2CH2CH3).\nStep 3: The internal alkyne is reduced via catalytic hydrogenation in the presence of Lindlar's catalyst (a deactivated palladium catalyst). Lindlar's catalyst selectively reduces alkynes to alkenes via a stereospecific syn-addition of hydrogen, resulting in the cis-alkene, (Z)-1-phenyl-1-pentene.",
+      "result": "The major product is (Z)-1-phenyl-1-pentene."
+    }
+  }
+]];

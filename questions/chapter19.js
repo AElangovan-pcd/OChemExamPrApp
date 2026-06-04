@@ -2,6 +2,7 @@
 const CHAPTER_19_QUESTIONS = [
   {
     "question_id": "ch19_acs_q1_propyl_ethanoate",
+    "image": "images/nm6_propyl_ethanoate.png",
     "topic": "ACS: Nomenclature",
     "difficulty_level": "Easy",
     "question_text": "What is the IUPAC name for this compound?",
@@ -402,6 +403,43 @@ const CHAPTER_19_QUESTIONS = [
       "context": "Converting carbonyl groups to alkenes using phosphorus ylides.",
       "process": "The nucleophilic ylide carbon attacks the carbonyl carbon to form a betaine, which collapses into an oxaphosphetane intermediate. This collapses to release triphenylphosphine oxide (Ph3P=O) and form the carbon-carbon double bond (styrene).",
       "result": "Styrene is synthesized."
+    }
+  }
+,
+  {
+    "question_id": "ch19_acs_q11_cis_bromocyclohexanol",
+    "topic": "ACS: Nomenclature",
+    "difficulty_level": "Medium",
+    "question_text": "What is the IUPAC name for this compound?",
+    "image": "images/nm9_chair_cyclohexanol.png",
+    "options": [
+      {"option_id": "A", "text": "ortho-bromocyclohexanol", "is_correct": false},
+      {"option_id": "B", "text": "endo-2-bromocyclohexanol", "is_correct": false},
+      {"option_id": "C", "text": "cis-2-bromocyclohexanol", "is_correct": true},
+      {"option_id": "D", "text": "trans-2-bromocyclohexanol", "is_correct": false}
+    ],
+    "feedback": {
+      "context": "Assigning stereochemical descriptors (cis/trans) to disubstituted cyclohexane systems in chair conformations.",
+      "process": "Step 1: Identify the main functional group, which is the alcohol (-OH), receiving carbon C1. The bromine substituent is at C2.\nStep 2: Determine the relative stereochemical relationship. Both the hydroxyl group (at C1) and the bromine group (at C2) are on the same face of the ring (both point 'up' relative to the ring plane).\nStep 3: Since both substituents are on the same face, they are in a cis relationship, making the name cis-2-bromocyclohexanol.",
+      "result": "The correct name is cis-2-bromocyclohexanol."
+    }
+  },
+  {
+    "question_id": "ch19_acs_q12_alkene_stereochemistry",
+    "topic": "ACS: Nomenclature",
+    "difficulty_level": "Medium",
+    "question_text": "What is the IUPAC name for this compound?",
+    "image": "images/nm10_alkene.png",
+    "options": [
+      {"option_id": "A", "text": "(E)-3,5-dimethyl-2-hexene", "is_correct": true},
+      {"option_id": "B", "text": "(Z)-3,5-dimethyl-2-hexene", "is_correct": false},
+      {"option_id": "C", "text": "(Z)-1,2-dimethyl-2-isobutylethylene", "is_correct": false},
+      {"option_id": "D", "text": "(E)-3,5,5-trimethyl-2-pentene", "is_correct": false}
+    ],
+    "feedback": {
+      "context": "Naming alkenes and determining E/Z configuration of double bonds using Cahn-Ingold-Prelog priority rules.",
+      "process": "Step 1: Identify the longest carbon chain containing the double bond. A six-carbon chain (hexene) starts at C1, includes the double bond between C2 and C3, and branches at C5.\nStep 2: Identify substituents: methyl groups are at C3 and C5, making it a 3,5-dimethyl-2-hexene.\nStep 3: Assign priority at C2: methyl (priority 1) vs hydrogen (priority 2). Assign priority at C3: isobutyl (priority 1) vs methyl (priority 2).\nStep 4: The high-priority groups (methyl on C2 and isobutyl on C3) are trans to each other, which corresponds to the (E) configuration.",
+      "result": "The correct name is (E)-3,5-dimethyl-2-hexene."
     }
   }
 ];

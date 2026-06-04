@@ -40,6 +40,7 @@ const CHAPTER_31_QUESTIONS = [
   },
   {
     "question_id": "ch31_acs_q2_c13_signals",
+    "image": "images/sp5_methylacetophenone.png",
     "topic": "ACS: Spectroscopy",
     "difficulty_level": "Medium",
     "question_text": "How many signals would you expect in the proton-decoupled 13C NMR spectrum for 4-methylacetophenone?",
@@ -352,4 +353,113 @@ const CHAPTER_31_QUESTIONS = [
       "result": "The pattern consists of a 6H doublet and a 1H septet."
     }
   }
-];
+,
+  {
+    "question_id": "ch31_acs_q11_ir_pentanone",
+    "topic": "ACS: Spectroscopy",
+    "difficulty_level": "Medium",
+    "question_text": "Which compound is consistent with this IR spectrum?",
+    "image": "images/sp2_ir_spectrum.png",
+    "options": [
+      {"option_id": "A", "text": "2-butanol", "is_correct": false},
+      {"option_id": "B", "text": "2-pentanone", "is_correct": true},
+      {"option_id": "C", "text": "butanamide", "is_correct": false},
+      {"option_id": "D", "text": "propanoic acid", "is_correct": false}
+    ],
+    "feedback": {
+      "context": "Identifying functional groups and structural features from Infrared (IR) absorption spectra.",
+      "process": "Step 1: Analyze the IR spectrum. There is a strong, sharp absorption band at approximately 1720 cm-1, which is characteristic of a carbonyl group (C=O stretch).\nStep 2: Check for other distinctive bands. There is no broad hydroxyl (O-H) band in the 3200-3600 cm-1 region, which rules out the alcohol (2-butanol) and the carboxylic acid (propanoic acid).\nStep 3: There are no N-H stretching bands (typically doublets or medium bands near 3400 cm-1), which rules out the amide (butanamide).\nStep 4: This leaves 2-pentanone, a ketone, which is consistent with having only a carbonyl stretch and aliphatic C-H stretches just below 3000 cm-1.",
+      "result": "The correct compound is 2-pentanone."
+    }
+  },
+  {
+    "question_id": "ch31_acs_q12_ethoxybenzene_signals",
+    "topic": "ACS: Spectroscopy",
+    "difficulty_level": "Medium",
+    "question_text": "Signals from how many sets of protons would be observed in the 1H NMR spectrum for this compound?",
+    "image": "images/sp3_ethoxybenzene.png",
+    "options": [
+      {"option_id": "A", "text": "3", "is_correct": false},
+      {"option_id": "B", "text": "4", "is_correct": false},
+      {"option_id": "C", "text": "5", "is_correct": false},
+      {"option_id": "D", "text": "6", "is_correct": true}
+    ],
+    "feedback": {
+      "context": "Determining chemical equivalence and the number of distinct proton environments in Proton NMR.",
+      "process": "Step 1: Identify the structure of the molecule: 1-ethyl-4-ethoxybenzene (CH3CH2-C6H4-OCH2CH3).\nStep 2: Count the proton environments in the substituents. The ethyl group has a methyl (CH3) group (set 1) and a methylene (CH2) group (set 2). The ethoxy group has a methyl (CH3) group (set 3) and a methylene (CH2) group (set 4). Because the two substituents are different, these four sets are all non-equivalent.\nStep 3: Count the proton environments on the benzene ring. Due to the vertical plane of symmetry, the two protons ortho to the ethoxy group are equivalent to each other (set 5), and the two protons ortho to the ethyl group are equivalent to each other (set 6).\nStep 4: Summing all environments: 4 sets from substituents + 2 sets from the ring = 6 total sets of protons.",
+      "result": "The compound will show 6 proton signals."
+    }
+  },
+  {
+    "question_id": "ch31_acs_q13_nmr_ester_structure",
+    "topic": "ACS: Spectroscopy",
+    "difficulty_level": "Hard",
+    "question_text": "Which structure is consistent with this 1H NMR spectrum?",
+    "image": "images/sp4_nmr_spectrum.png",
+    "options": [
+      {"option_id": "A", "text": "CH3CH2OCH2CHCl2", "is_correct": false},
+      {"option_id": "B", "text": "ClCH2CH2COCH2CH3", "is_correct": false},
+      {"option_id": "C", "text": "ClCH2CH2COOCH2CH3", "is_correct": true},
+      {"option_id": "D", "text": "ClCH2CH2OOCCH2CH3", "is_correct": false}
+    ],
+    "feedback": {
+      "context": "Using chemical shifts, integration, and splitting patterns to determine molecular structure in 1H NMR.",
+      "process": "Step 1: Examine the splitting patterns in the spectrum. From left to right (downfield to upfield), we see a quartet (2H), two triplets of equal intensity (2H each), and a triplet (3H).\nStep 2: The quartet and triplet form an ethyl pattern (CH3CH2-X). The quartet is shifted downfield near delta 4.2 ppm, which indicates it is directly attached to an electronegative oxygen atom (as in an ethyl ester, -COOCH2CH3). This rules out options A and B.\nStep 3: The remaining signals are two coupled methylene groups (two triplets at delta 3.8 and 2.8 ppm). The triplet at delta 3.8 ppm is shifted downfield due to an electronegative chlorine atom (-CH2Cl), and the triplet at delta 2.8 ppm is adjacent to the carbonyl (-CH2CO2-). This corresponds to the ClCH2CH2CO- fragment, which is consistent with ethyl 3-chloropropanoate (option C).",
+      "result": "The correct structure is ethyl 3-chloropropanoate (option C)."
+    }
+  },
+  {
+    "question_id": "ch31_acs_q14_diethyl_malonate",
+    "topic": "ACS: Spectroscopy",
+    "difficulty_level": "Hard",
+    "question_text": "Which structure is consistent with this 1H NMR spectrum?",
+    "image": "images/sp6_nmr_spectrum.png",
+    "options": [
+      {"option_id": "A", "text": "CH3OC(=O)CH2CH3", "is_correct": false},
+      {"option_id": "B", "text": "CH3CH2OC(=O)CH2C(=O)OCH2CH3", "is_correct": true},
+      {"option_id": "C", "text": "CH3C(=O)CH2C(=O)OCH2CH3", "is_correct": false},
+      {"option_id": "D", "text": "CH3C(=O)CH2CH3", "is_correct": false}
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures containing carbonyl groups using 1H NMR spectroscopy.",
+      "process": "Step 1: Examine the spectrum. We observe three signals: a quartet (4H) at delta 4.2 ppm, a singlet (2H) at delta 3.4 ppm, and a triplet (6H) at delta 1.3 ppm.\nStep 2: The quartet (4H) and triplet (6H) represent two equivalent ethyl ester groups (-OCH2CH3). This rules out options A, C, and D, which only contain a single ethyl group or have non-equivalent ethyl environments.\nStep 3: The singlet (2H) at delta 3.4 ppm represents a methylene group between two electron-withdrawing ester carbonyl groups (-CO-CH2-CO-), which is highly characteristic of diethyl malonate (option B).",
+      "result": "The correct structure is diethyl malonate (option B)."
+    }
+  },
+  {
+    "question_id": "ch31_acs_q15_c13_methoxybenzyl",
+    "topic": "ACS: Spectroscopy",
+    "difficulty_level": "Hard",
+    "question_text": "Which structure is consistent with this 13C NMR spectrum?",
+    "image": "images/sp8_c13_spectrum.png",
+    "options": [
+      {"option_id": "A", "text": "4-methoxybenzyl alcohol", "is_correct": true},
+      {"option_id": "B", "text": "4-methoxyacetophenone", "is_correct": false},
+      {"option_id": "C", "text": "1-ethyl-4-methoxybenzene", "is_correct": false},
+      {"option_id": "D", "text": "4-methoxyphenyl acetate", "is_correct": false}
+    ],
+    "feedback": {
+      "context": "Interpreting Carbon-13 NMR spectra (chemical shifts and number of signals) to identify benzene derivatives.",
+      "process": "Step 1: Count the number of signals in the spectrum. We see six distinct carbon signals: 159 ppm (singlet, quaternary aromatic C-O), 133.5 ppm (singlet, quaternary aromatic C-C), 129 ppm (doublet, 2 equivalent aromatic C-H), 114 ppm (doublet, 2 equivalent aromatic C-H), 64 ppm (triplet, -CH2O-), and 55 ppm (quartet, -OCH3).\nStep 2: The absence of any carbonyl signal in the 180-220 ppm region rules out 4-methoxyacetophenone (option B) and 4-methoxyphenyl acetate (option D).\nStep 3: The signal at 64 ppm is characteristic of a carbon bonded to a hydroxyl group (-CH2OH), which is present in 4-methoxybenzyl alcohol but not in 1-ethyl-4-methoxybenzene (which would have aliphatic signals below 30 ppm for the ethyl group).",
+      "result": "The correct structure is 4-methoxybenzyl alcohol (option A)."
+    }
+  },
+  {
+    "question_id": "ch31_acs_q16_ir_tertiary_alcohol",
+    "topic": "ACS: Spectroscopy",
+    "difficulty_level": "Hard",
+    "question_text": "An unknown compound was found to be unreactive towards chromic acid and gave this IR spectrum. Which is a likely structure for the unknown?",
+    "image": "images/sp_q22_ir_spectrum.png",
+    "options": [
+      {"option_id": "A", "text": "benzyl methyl ether", "is_correct": false},
+      {"option_id": "B", "text": "benzyl alcohol", "is_correct": false},
+      {"option_id": "C", "text": "1-phenylethanol", "is_correct": false},
+      {"option_id": "D", "text": "2-phenyl-2-propanol", "is_correct": true}
+    ],
+    "feedback": {
+      "context": "Combining chemical reactivity tests and Infrared (IR) spectroscopy to determine structure.",
+      "process": "Step 1: A compound that is unreactive towards chromic acid (Jones reagent) cannot be a primary or secondary alcohol, nor an aldehyde. It must be either an ether or a tertiary alcohol.\nStep 2: Analyze the IR spectrum. The very strong, broad absorption band at approximately 3300 cm-1 is characteristic of an O-H stretch, which confirms the presence of a hydroxyl group (alcohol). This rules out the ether (benzyl methyl ether).\nStep 3: Among the remaining alcohol choices, benzyl alcohol is primary, and 1-phenylethanol is secondary. Both would be readily oxidized by chromic acid. 2-phenyl-2-propanol is a tertiary alcohol and is resistant to chromic acid oxidation, matching all the given clues.",
+      "result": "The correct structure is 2-phenyl-2-propanol (option D)."
+    }
+  }
+]];
