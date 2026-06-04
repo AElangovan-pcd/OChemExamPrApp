@@ -9,33 +9,33 @@ const CHAPTER_4_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "4-Ethyl-1,2-dimethylcyclohexane",
+        "text": "1-Ethyl-2,4-dimethylcyclohexane",
         "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "1-Ethyl-3,4-dimethylcyclohexane",
+        "text": "4-Ethyl-1,2-dimethylcyclohexane",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "5-Ethyl-1,2-dimethylcyclohexane",
+        "text": "1-Ethyl-3,4-dimethylcyclohexane",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "4-Ethyl-2,3-dimethylcyclohexane",
+        "text": "5-Ethyl-1,2-dimethylcyclohexane",
         "smiles": "",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests the lowest-locant rule for naming cycloalkanes with three or more substituents.",
-      "process": "Step 1: Identify all substituents on the cyclohexane ring: two methyl groups and one ethyl group.\nStep 2: Determine the numbering path that gives the lowest set of locants at the first point of difference. The possible sets are 1,2,4 and 1,3,4. Comparing these, 1,2,4 is lower because 2 is lower than 3.\nStep 3: Number the ring to assign locants 1, 2, and 4. Starting at one methyl gives 1,2-dimethyl and 4-ethyl. Starting at the other methyl gives 1,2-dimethyl and 5-ethyl (locants 1,2,5, which is higher). Thus, the locants are 1,2-dimethyl and 4-ethyl.\nStep 4: Assemble alphabetically. Ethyl comes before methyl, giving 4-ethyl-1,2-dimethylcyclohexane.",
-      "result": "The correct IUPAC name is 4-ethyl-1,2-dimethylcyclohexane."
+      "context": "This question tests the lowest-locant and alphabetical tie-breaker rules for naming cycloalkanes with three or more substituents.",
+      "process": "Step 1: Identify all substituents on the cyclohexane ring: two methyl groups and one ethyl group.\nStep 2: Compare possible numbering schemes to obtain the lowest locant set. Starting at either the ethyl group or the C1-methyl group yields an identical set of locants: (1, 2, 4). Other schemes like (1, 2, 5) or (1, 3, 4) are numerically higher and eliminated.\nStep 3: Apply the tie-breaker rule. When two numbering schemes yield the same set of locants, the lower locant is assigned to the substituent cited first alphabetically. Since 'ethyl' comes before 'methyl' alphabetically, the ethyl group receives locant 1.\nStep 4: Numbering starts at the ethyl group (C1) and proceeds towards the closer methyl group (C2), placing the second methyl at C4. This yields 1-ethyl-2,4-dimethylcyclohexane.",
+      "result": "The correct IUPAC name is 1-ethyl-2,4-dimethylcyclohexane."
     }
   },
   {

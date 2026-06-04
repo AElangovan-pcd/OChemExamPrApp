@@ -18469,31 +18469,31 @@
     "question_smiles": "CC1CCC(CC)C(C)C1",
     "correct_option": {
       "option_id": "A",
-      "text": "4-Ethyl-1,2-dimethylcyclohexane",
+      "text": "1-Ethyl-2,4-dimethylcyclohexane",
       "smiles": ""
     },
     "all_options": [
       {
         "option_id": "A",
-        "text": "4-Ethyl-1,2-dimethylcyclohexane",
+        "text": "1-Ethyl-2,4-dimethylcyclohexane",
         "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "1-Ethyl-3,4-dimethylcyclohexane",
+        "text": "4-Ethyl-1,2-dimethylcyclohexane",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "5-Ethyl-1,2-dimethylcyclohexane",
+        "text": "1-Ethyl-3,4-dimethylcyclohexane",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "4-Ethyl-2,3-dimethylcyclohexane",
+        "text": "5-Ethyl-1,2-dimethylcyclohexane",
         "smiles": "",
         "is_correct": false
       }
