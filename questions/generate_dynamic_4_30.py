@@ -626,7 +626,7 @@ chapter_questions = {
             "interaction_type": "matching-list",
             "match_items": [
                 {"smiles": "CCCCCCCCCCCCCCCC(=O)O", "correctAnswer": "High Melting Point (Saturated C16)"},
-                {"smiles": "CCCC/C=C\\C/C=C\\CCCCCCCC(=O)O", "correctAnswer": "Low Melting Point (Polyunsaturated C18)"}
+                {"smiles": "CCCCC/C=C\\C/C=C\\CCCCCCCC(=O)O", "correctAnswer": "Low Melting Point (Polyunsaturated C18)"}
             ],
             "match_options": ["High Melting Point (Saturated C16)", "Low Melting Point (Polyunsaturated C18)", "Medium Melting Point (Unsaturated C18)"],
             "options": [

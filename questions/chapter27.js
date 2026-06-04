@@ -201,7 +201,7 @@ const CHAPTER_27_QUESTIONS = [
         "correctAnswer": "High Melting Point (Saturated C16)"
       },
       {
-        "smiles": "CCCC/C=C\\C/C=C\\CCCCCCCC(=O)O",
+        "smiles": "CCCCC/C=C\\C/C=C\\CCCCCCCC(=O)O",
         "correctAnswer": "Low Melting Point (Polyunsaturated C18)"
       }
     ],
