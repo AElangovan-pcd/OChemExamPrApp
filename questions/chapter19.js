@@ -1,8 +1,7 @@
-// McMurry Chapter 19 questions
+// ACS Organic Chemistry Exam Preparation - ACS: Nomenclature
 const CHAPTER_19_QUESTIONS = [
   {
     "question_id": "ch19_acs_q1_propyl_ethanoate",
-    "image": "images/nm6_propyl_ethanoate.png",
     "topic": "ACS: Nomenclature",
     "difficulty_level": "Easy",
     "question_text": "What is the IUPAC name for this compound?",
@@ -11,25 +10,25 @@ const CHAPTER_19_QUESTIONS = [
       {
         "option_id": "A",
         "text": "methyl butanoate",
-        "smiles": "",
+        "smiles": "CCCC(=O)OC",
         "is_correct": false
       },
       {
         "option_id": "B",
         "text": "methyl propanoate",
-        "smiles": "",
+        "smiles": "CCC(=O)OC",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "propyl methanoate",
-        "smiles": "",
+        "smiles": "C(=O)OCCC",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "propyl ethanoate",
-        "smiles": "",
+        "smiles": "CC(=O)OCCC",
         "is_correct": true
       }
     ],
@@ -49,25 +48,25 @@ const CHAPTER_19_QUESTIONS = [
       {
         "option_id": "A",
         "text": "4-methyl-2-pentenoic acid",
-        "smiles": "",
+        "smiles": "CC(C)C=CC(=O)O",
         "is_correct": false
       },
       {
         "option_id": "B",
         "text": "2-methyl-3-pentenoic acid",
-        "smiles": "",
+        "smiles": "CC=CC(C)C(=O)O",
         "is_correct": true
       },
       {
         "option_id": "C",
         "text": "5-hydroxy-4-methyl-2-penten-5-one",
-        "smiles": "",
+        "smiles": "CC=CC(C)C(=O)O",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "1-hydroxy-2-methyl-3-penten-1-one",
-        "smiles": "",
+        "smiles": "CC=CC(C)C(=O)O",
         "is_correct": false
       }
     ],
@@ -82,7 +81,7 @@ const CHAPTER_19_QUESTIONS = [
     "topic": "ACS: Nomenclature",
     "difficulty_level": "Medium",
     "question_text": "Which is the structure of N-benzylethanamide?",
-    "question_smiles": "",
+    "question_smiles": "CC(=O)NCC1=CC=CC=C1",
     "options": [
       {
         "option_id": "A",
@@ -125,25 +124,25 @@ const CHAPTER_19_QUESTIONS = [
       {
         "option_id": "A",
         "text": "bicyclo[2.2.1]heptane",
-        "smiles": "",
+        "smiles": "C1CC2CCC1C2",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "bicyclo[2.1.1]hexane",
-        "smiles": "",
+        "smiles": "C1CC2CC1C2",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "bicyclo[3.2.0]heptane",
-        "smiles": "",
+        "smiles": "C1CC2CCC2C1",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "bicyclo[3.1.1]heptane",
-        "smiles": "",
+        "smiles": "C1CC2CC(C1)C2",
         "is_correct": false
       }
     ],
@@ -158,30 +157,30 @@ const CHAPTER_19_QUESTIONS = [
     "topic": "ACS: Nomenclature",
     "difficulty_level": "Medium",
     "question_text": "Assign the stereochemical configuration and name this alkene.",
-    "question_smiles": "CC/C(=CC)/C",
+    "question_smiles": "CC/C(=C\C)/C",
     "options": [
       {
         "option_id": "A",
         "text": "(E)-3-methyl-2-pentene",
-        "smiles": "",
+        "smiles": "CC/C(=C\C)/C",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "(Z)-3-methyl-2-pentene",
-        "smiles": "",
+        "smiles": "CC/C(=C/C)/C",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "(E)-2-methyl-2-pentene",
-        "smiles": "",
+        "smiles": "CCC=C(C)C",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "(Z)-2-methyl-2-pentene",
-        "smiles": "",
+        "smiles": "CCC=C(C)C",
         "is_correct": false
       }
     ],
@@ -190,256 +189,50 @@ const CHAPTER_19_QUESTIONS = [
       "process": "Step 1: Assign priorities to groups on C2: methyl (priority 1) vs hydrogen (priority 2).\nStep 2: Assign priorities to groups on C3: ethyl (priority 1) vs methyl (priority 2).\nStep 3: The high-priority groups (ethyl on C3 and methyl on C2) are on opposite sides of the double bond, which corresponds to the (E) configuration.",
       "result": "The correct name is (E)-3-methyl-2-pentene."
     }
-  },
-  {
-    "question_id": "ch19_acs_q6_ether",
-    "topic": "ACS: Nomenclature",
-    "difficulty_level": "Medium",
-    "question_text": "What is the IUPAC name for this compound?",
-    "question_smiles": "CC(C)(C)OCC",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "2-ethoxy-2-methylpropane",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "ethyl tert-butyl ether",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "1,1-dimethyl-1-ethoxyethane",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "3-oxa-4,4-dimethylpentane",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "IUPAC naming of ethers, identifying the alkoxy group and parent alkane.",
-      "process": "Step 1: Find the longest carbon chain (3 carbons: propane).\nStep 2: Identify substituents on the chain: a methyl group at C2 and an ethoxy group at C2.\nStep 3: Combine alphabetically: 2-ethoxy-2-methylpropane.",
-      "result": "The IUPAC name is 2-ethoxy-2-methylpropane."
-    }
-  },
-  {
-    "question_id": "ch19_acs_q7_amine",
-    "topic": "ACS: Nomenclature",
-    "difficulty_level": "Medium",
-    "question_text": "Identify the correct IUPAC name for this compound.",
-    "question_smiles": "CC(C)C(C)N",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "3-methyl-2-butanamine",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "1,2-dimethylpropanamine",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "isopropylmethylamine",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "2-amino-3-methylbutane",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Amine nomenclature under IUPAC rules.",
-      "process": "Step 1: Find the longest carbon chain containing the amine nitrogen (4 carbons: butane).\nStep 2: Number starting from the end closest to the nitrogen (C2 carries the amine: 2-butanamine).\nStep 3: C3 carries a methyl group. Combine to get 3-methyl-2-butanamine.",
-      "result": "The correct name is 3-methyl-2-butanamine."
-    }
-  },
-  {
-    "question_id": "ch19_acs_q8_ketoaldehyde",
-    "topic": "ACS: Nomenclature",
-    "difficulty_level": "Medium",
-    "question_text": "What is the correct IUPAC name for the following compound?",
-    "question_smiles": "CC(=O)CC=O",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "3-oxobutanal",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "2-oxobutanal",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "3-ketobutanal",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "butanal-3-one",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Naming compounds containing multiple functional groups (aldehyde vs ketone).",
-      "process": "Step 1: Aldehyde has priority over ketone, so the principal suffix is -al, and the aldehyde carbon is C1.\nStep 2: The ketone carbonyl at C3 is named using the prefix 'oxo'.\nStep 3: The 4-carbon chain is 3-oxobutanal.",
-      "result": "The correct name is 3-oxobutanal."
-    }
-  },
-  {
-    "question_id": "ch19_acs_q9_hydroxyketone",
-    "topic": "ACS: Nomenclature",
-    "difficulty_level": "Medium",
-    "question_text": "Name this compound according to IUPAC rules.",
-    "question_smiles": "CC(O)CCC(=O)C",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "5-hydroxy-2-hexanone",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "2-hydroxy-5-hexanone",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "5-hydroxyhexan-2-one",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "2-oxohexan-5-ol",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Priority rules for naming compounds with hydroxyl and carbonyl groups.",
-      "process": "Step 1: Ketones have higher priority than alcohols. The parent suffix is -one and numbering begins from the end closer to the ketone carbonyl (C2).\nStep 2: The chain length is 6 carbons.\nStep 3: The hydroxyl group at C5 is named as a 'hydroxy' prefix: 5-hydroxy-2-hexanone.",
-      "result": "The correct IUPAC name is 5-hydroxy-2-hexanone."
-    }
-  },
-  {
-    "question_id": "ch19_acs_q10_cyclopentylethanone",
-    "topic": "ACS: Nomenclature",
-    "difficulty_level": "Medium",
-    "question_text": "What is the correct IUPAC name for this compound?",
-    "question_smiles": "CC(=O)C1CCCC1",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "1-cyclopentylethan-1-one",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "cyclopentyl methyl ketone",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "cyclopentylethanone",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "1-cyclopentylethanone",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Nomenclature of ketones containing cyclic substituents.",
-      "process": "Step 1: The parent chain is the acyclic portion containing the carbonyl (ethanone).\nStep 2: The ring is named as a substituent (cyclopentyl) on C1.\nStep 3: Combine to get 1-cyclopentylethan-1-one.",
-      "result": "The correct name is 1-cyclopentylethan-1-one."
-    }
-  },
-  {
-    "question_id": "ch19_q_dynamic_wittig_reaction",
-    "topic": "Aldehydes & Ketones: Nucleophilic Additions",
-    "difficulty_level": "Hard",
-    "question_text": "Predict the alkene product formed in the Wittig reaction of benzaldehyde and methylenetriphenylphosphorane.",
-    "reaction_scheme": {
-      "reactants": [
-        "O=Cc1ccccc1",
-        "C=P(c2ccccc2)(c3ccccc3)c4ccccc4"
-      ],
-      "reagents": " Wittig Reaction",
-      "conditions": "THF",
-      "products": [
-        "C=Cc1ccccc1"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "The Wittig reaction converts the C=O carbonyl double bond directly into a C=C alkene double bond, yielding styrene.",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "The reaction yields benzyl alcohol.",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Stilbene (C/C=C/c1ccccc1) is formed.",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "No reaction occurs due to steric hindrance.",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Converting carbonyl groups to alkenes using phosphorus ylides.",
-      "process": "The nucleophilic ylide carbon attacks the carbonyl carbon to form a betaine, which collapses into an oxaphosphetane intermediate. This collapses to release triphenylphosphine oxide (Ph3P=O) and form the carbon-carbon double bond (styrene).",
-      "result": "Styrene is synthesized."
-    }
   }
 ,
-  {
-    "question_id": "ch19_acs_q11_cis_bromocyclohexanol",
-    "topic": "ACS: Nomenclature",
-    "difficulty_level": "Medium",
-    "question_text": "What is the IUPAC name for this compound?",
-    "image": "images/nm9_chair_cyclohexanol.png",
-    "options": [
-      {"option_id": "A", "text": "ortho-bromocyclohexanol", "is_correct": false},
-      {"option_id": "B", "text": "endo-2-bromocyclohexanol", "is_correct": false},
-      {"option_id": "C", "text": "cis-2-bromocyclohexanol", "is_correct": true},
-      {"option_id": "D", "text": "trans-2-bromocyclohexanol", "is_correct": false}
+{
+  "question_id": "ch19_q_dynamic_wittig_reaction",
+  "topic": "Aldehydes & Ketones: Nucleophilic Additions",
+  "difficulty_level": "Hard",
+  "question_text": "Predict the alkene product formed in the Wittig reaction of benzaldehyde and methylenetriphenylphosphorane.",
+  "reaction_scheme": {
+    "reactants": [
+      "O=Cc1ccccc1",
+      "C=P(c2ccccc2)(c3ccccc3)c4ccccc4"
     ],
-    "feedback": {
-      "context": "Assigning stereochemical descriptors (cis/trans) to disubstituted cyclohexane systems in chair conformations.",
-      "process": "Step 1: Identify the main functional group, which is the alcohol (-OH), receiving carbon C1. The bromine substituent is at C2.\nStep 2: Determine the relative stereochemical relationship. Both the hydroxyl group (at C1) and the bromine group (at C2) are on the same face of the ring (both point 'up' relative to the ring plane).\nStep 3: Since both substituents are on the same face, they are in a cis relationship, making the name cis-2-bromocyclohexanol.",
-      "result": "The correct name is cis-2-bromocyclohexanol."
-    }
+    "reagents": " Wittig Reaction",
+    "conditions": "THF",
+    "products": [
+      "C=Cc1ccccc1"
+    ]
   },
-  {
-    "question_id": "ch19_acs_q12_alkene_stereochemistry",
-    "topic": "ACS: Nomenclature",
-    "difficulty_level": "Medium",
-    "question_text": "What is the IUPAC name for this compound?",
-    "image": "images/nm10_alkene.png",
-    "options": [
-      {"option_id": "A", "text": "(E)-3,5-dimethyl-2-hexene", "is_correct": true},
-      {"option_id": "B", "text": "(Z)-3,5-dimethyl-2-hexene", "is_correct": false},
-      {"option_id": "C", "text": "(Z)-1,2-dimethyl-2-isobutylethylene", "is_correct": false},
-      {"option_id": "D", "text": "(E)-3,5,5-trimethyl-2-pentene", "is_correct": false}
-    ],
-    "feedback": {
-      "context": "Naming alkenes and determining E/Z configuration of double bonds using Cahn-Ingold-Prelog priority rules.",
-      "process": "Step 1: Identify the longest carbon chain containing the double bond. A six-carbon chain (hexene) starts at C1, includes the double bond between C2 and C3, and branches at C5.\nStep 2: Identify substituents: methyl groups are at C3 and C5, making it a 3,5-dimethyl-2-hexene.\nStep 3: Assign priority at C2: methyl (priority 1) vs hydrogen (priority 2). Assign priority at C3: isobutyl (priority 1) vs methyl (priority 2).\nStep 4: The high-priority groups (methyl on C2 and isobutyl on C3) are trans to each other, which corresponds to the (E) configuration.",
-      "result": "The correct name is (E)-3,5-dimethyl-2-hexene."
+  "options": [
+    {
+      "option_id": "A",
+      "text": "The Wittig reaction converts the C=O carbonyl double bond directly into a C=C alkene double bond, yielding styrene.",
+      "is_correct": true
+    },
+    {
+      "option_id": "B",
+      "text": "The reaction yields benzyl alcohol.",
+      "is_correct": false
+    },
+    {
+      "option_id": "C",
+      "text": "Stilbene (C/C=C/c1ccccc1) is formed.",
+      "is_correct": false
+    },
+    {
+      "option_id": "D",
+      "text": "No reaction occurs due to steric hindrance.",
+      "is_correct": false
     }
+  ],
+  "feedback": {
+    "context": "Converting carbonyl groups to alkenes using phosphorus ylides.",
+    "process": "The nucleophilic ylide carbon attacks the carbonyl carbon to form a betaine, which collapses into an oxaphosphetane intermediate. This collapses to release triphenylphosphine oxide (Ph3P=O) and form the carbon-carbon double bond (styrene).",
+    "result": "Styrene is synthesized."
   }
+}
 ];

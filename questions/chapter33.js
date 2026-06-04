@@ -25,14 +25,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isobutylene",
-      "Benzoyl chloride",
-      "Chlorobenzene",
-      "1-Bromopropane",
-      "Cyclohexanone",
-      "2-Pentanone",
       "1-Propanol",
-      "3-Pentanone"
+      "Cyclohexanone",
+      "1-Bromopropane",
+      "Benzoyl chloride",
+      "3-Pentanone",
+      "Isobutylene",
+      "Chlorobenzene",
+      "2-Pentanone"
     ],
     "options": [
       {
@@ -77,14 +77,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Ethyl benzoate",
-      "3-Pentanone",
       "Ethylbenzene",
-      "Diethyl ether",
-      "Butanone",
-      "1-Butanol",
+      "3-Pentanone",
       "Propene",
-      "Propanoic acid"
+      "Ethyl benzoate",
+      "1-Butanol",
+      "Propanoic acid",
+      "Diethyl ether",
+      "Butanone"
     ],
     "options": [
       {
@@ -129,14 +129,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Aniline",
-      "Acetonitrile",
-      "Cyclopentanone",
-      "Chloroform",
       "1-Butanol",
-      "Cyclohexane",
       "1-Bromopropane",
-      "Cyclopentene"
+      "Chloroform",
+      "Cyclohexane",
+      "Acetonitrile",
+      "Cyclopentene",
+      "Aniline",
+      "Cyclopentanone"
     ],
     "options": [
       {
@@ -181,13 +181,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cyclohexane",
-      "Propan-2-ol",
-      "3-Pentanone",
-      "Cyclopentene",
-      "Dimethyl sulfoxide",
       "Acetic acid",
+      "3-Pentanone",
       "Methanol",
+      "Cyclohexane",
+      "Dimethyl sulfoxide",
+      "Propan-2-ol",
+      "Cyclopentene",
       "Toluene"
     ],
     "options": [
@@ -233,14 +233,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Ethyl benzoate",
-      "2-Bromopropane",
-      "3-Pentanone",
-      "Formic acid",
-      "Phenol",
       "Butyraldehyde",
+      "Phenol",
+      "3-Pentanone",
       "Cyclopentanone",
-      "Ethylbenzene"
+      "Ethyl benzoate",
+      "Ethylbenzene",
+      "2-Bromopropane",
+      "Formic acid"
     ],
     "options": [
       {
@@ -285,14 +285,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "1-Butanol",
-      "1-Propanol",
-      "Isobutylene",
-      "2-Pentanone",
       "Dichloromethane",
-      "t-Butyl alcohol",
+      "2-Pentanone",
+      "Isobutylene",
+      "Benzene",
       "Bromobenzene",
-      "Benzene"
+      "t-Butyl alcohol",
+      "1-Propanol",
+      "1-Butanol"
     ],
     "options": [
       {
@@ -337,14 +337,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isobutylene",
-      "Propionaldehyde",
-      "Acetone",
       "Dimethyl sulfoxide",
-      "Methanol",
       "Benzyl alcohol",
       "Benzaldehyde",
-      "2-Pentanone"
+      "Acetone",
+      "Isobutylene",
+      "Methanol",
+      "2-Pentanone",
+      "Propionaldehyde"
     ],
     "options": [
       {
@@ -389,14 +389,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Ethyl benzoate",
       "Diethyl ether",
-      "Formic acid",
       "Benzene",
-      "3-Pentanone",
       "Tetrahydrofuran",
-      "Acetophenone",
+      "3-Pentanone",
+      "Formic acid",
       "Chlorobenzene",
-      "Ethyl benzoate"
+      "Acetophenone"
     ],
     "options": [
       {
@@ -441,14 +441,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Acetophenone",
-      "1-Bromopropane",
       "Cyclopentene",
       "Ethylbenzene",
+      "Acetic acid",
+      "1-Bromopropane",
       "Benzyl alcohol",
       "Benzaldehyde",
-      "Butyraldehyde",
-      "Acetic acid"
+      "Acetophenone",
+      "Butyraldehyde"
     ],
     "options": [
       {
@@ -493,14 +493,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Benzoyl chloride",
-      "Tetrahydrofuran",
       "Cyclohexanone",
       "Isobutylene",
-      "Acetic acid",
-      "1-Propanol",
+      "Tetrahydrofuran",
       "Ethyl acetate",
-      "Propan-2-ol"
+      "1-Propanol",
+      "Acetic acid",
+      "Propan-2-ol",
+      "Benzoyl chloride"
     ],
     "options": [
       {
@@ -545,13 +545,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Butyraldehyde",
       "3-Pentanone",
-      "Propionaldehyde",
-      "Benzaldehyde",
-      "Acetophenone",
       "Propyne",
       "2-Pentanone",
+      "Acetophenone",
+      "Butyraldehyde",
+      "Propionaldehyde",
+      "Benzaldehyde",
       "Aniline"
     ],
     "options": [
@@ -597,14 +597,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Ethylbenzene",
       "1-Propanol",
       "Methyl acetate",
-      "Acetophenone",
-      "t-Butyl alcohol",
+      "Ethylbenzene",
       "Ethyl acetate",
-      "Cyclopentanone",
-      "Propyne"
+      "t-Butyl alcohol",
+      "Propyne",
+      "Acetophenone",
+      "Cyclopentanone"
     ],
     "options": [
       {
@@ -636,7 +636,7 @@ const CHAPTER_33_QUESTIONS = [
         "correctAnswer": "Benzoyl chloride"
       },
       {
-        "smiles": "HC(=O)O",
+        "smiles": "C(=O)O",
         "correctAnswer": "Formic acid"
       },
       {
@@ -651,12 +651,12 @@ const CHAPTER_33_QUESTIONS = [
     "match_options": [
       "3-Pentanone",
       "Chlorobenzene",
-      "Aniline",
-      "Formic acid",
       "Benzoyl chloride",
+      "Aniline",
+      "Isobutylene",
       "Propanoic acid",
       "Benzene",
-      "Isobutylene"
+      "Formic acid"
     ],
     "options": [
       {
@@ -672,7 +672,7 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "feedback": {
       "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 2: HC(=O)O corresponds to Formic acid.\nStructure 3: c1ccccc1 corresponds to Benzene.\nStructure 4: CC(C)=C corresponds to Isobutylene.",
+      "process": "Structure 1: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 2: C(=O)O corresponds to Formic acid.\nStructure 3: c1ccccc1 corresponds to Benzene.\nStructure 4: CC(C)=C corresponds to Isobutylene.",
       "result": "All structures are correctly matched."
     }
   },
@@ -701,14 +701,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Acetaldehyde",
+      "Tetrahydrofuran",
+      "Cyclopentene",
       "Propionaldehyde",
       "Propan-2-ol",
       "Isobutylene",
       "Chloroform",
-      "Cyclopentanone",
-      "Cyclopentene",
-      "Tetrahydrofuran",
-      "Acetaldehyde"
+      "Cyclopentanone"
     ],
     "options": [
       {
@@ -753,14 +753,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cyclopentene",
-      "Propan-2-ol",
-      "Propene",
-      "Phenol",
       "Benzoyl chloride",
+      "Tetrahydrofuran",
       "1-Butanol",
+      "Phenol",
+      "Cyclopentene",
       "Cyclohexane",
-      "Tetrahydrofuran"
+      "Propene",
+      "Propan-2-ol"
     ],
     "options": [
       {
@@ -805,14 +805,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "3-Pentanone",
-      "Propanoic acid",
-      "Cyclohexene",
+      "Dimethyl ether",
       "Methanol",
-      "Acetic acid",
       "1-Bromopropane",
+      "Acetic acid",
+      "Propanoic acid",
+      "3-Pentanone",
       "Acetaldehyde",
-      "Dimethyl ether"
+      "Cyclohexene"
     ],
     "options": [
       {
@@ -857,14 +857,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Chloroform",
-      "Ethylbenzene",
-      "Cyclopentene",
-      "Diethyl ether",
-      "Cyclohexanone",
       "Propyne",
+      "Dichloromethane",
+      "Ethylbenzene",
+      "Diethyl ether",
+      "Chloroform",
       "Methanol",
-      "Dichloromethane"
+      "Cyclohexanone",
+      "Cyclopentene"
     ],
     "options": [
       {
@@ -909,14 +909,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Acetonitrile",
-      "Cyclopentene",
-      "Benzoyl chloride",
       "Benzoic acid",
+      "Benzoyl chloride",
+      "Cyclopentene",
       "Ethanol",
-      "Propionaldehyde",
+      "Acetonitrile",
       "Acetone",
-      "1-Propanol"
+      "1-Propanol",
+      "Propionaldehyde"
     ],
     "options": [
       {
@@ -961,14 +961,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Chlorobenzene",
-      "Phenol",
+      "Dichloromethane",
       "Ethyl benzoate",
       "Benzene",
-      "Dichloromethane",
+      "Cyclohexene",
+      "Phenol",
+      "Chlorobenzene",
       "Ethanol",
-      "Ethyl acetate",
-      "Cyclohexene"
+      "Ethyl acetate"
     ],
     "options": [
       {
@@ -1013,14 +1013,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Dimethyl sulfoxide",
-      "Acetic acid",
-      "Formic acid",
-      "Ethanol",
-      "Dimethyl ether",
       "Dichloromethane",
       "2-Bromopropane",
-      "Acetaldehyde"
+      "Dimethyl sulfoxide",
+      "Dimethyl ether",
+      "Acetaldehyde",
+      "Acetic acid",
+      "Formic acid",
+      "Ethanol"
     ],
     "options": [
       {
@@ -1065,14 +1065,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Acetic acid",
       "Dimethyl sulfoxide",
+      "Acetic acid",
+      "2-Bromopropane",
+      "Chloroform",
+      "1-Propanol",
       "Propan-2-ol",
       "Benzoic acid",
-      "Butanone",
-      "1-Propanol",
-      "2-Bromopropane",
-      "Chloroform"
+      "Butanone"
     ],
     "options": [
       {
@@ -1117,14 +1117,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Propan-2-ol",
       "3-Pentanone",
       "Dimethyl ether",
-      "Acetic acid",
-      "Butyraldehyde",
-      "Cyclohexane",
+      "Acetophenone",
       "Chlorobenzene",
-      "Acetophenone"
+      "Propan-2-ol",
+      "Acetic acid",
+      "Cyclohexane",
+      "Butyraldehyde"
     ],
     "options": [
       {
@@ -1169,14 +1169,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Ethyl acetate",
-      "Dimethyl sulfoxide",
-      "Cyclopentanone",
-      "Dimethyl ether",
-      "Ethanol",
       "Chloroform",
-      "Cyclopentene",
-      "Propene"
+      "Ethyl acetate",
+      "Dimethyl ether",
+      "Cyclopentanone",
+      "Ethanol",
+      "Dimethyl sulfoxide",
+      "Propene",
+      "Cyclopentene"
     ],
     "options": [
       {
@@ -1221,14 +1221,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tetrahydrofuran",
-      "Propionaldehyde",
-      "Cyclopentene",
-      "Chlorobenzene",
-      "Ethyl acetate",
-      "Butyraldehyde",
+      "Propanoic acid",
       "Benzoic acid",
-      "Propanoic acid"
+      "Ethyl acetate",
+      "Cyclopentene",
+      "Tetrahydrofuran",
+      "Chlorobenzene",
+      "Propionaldehyde",
+      "Butyraldehyde"
     ],
     "options": [
       {
@@ -1273,14 +1273,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Acetic acid",
-      "Dimethyl sulfoxide",
-      "2-Bromopropane",
-      "Propyne",
+      "Acetophenone",
       "Diethyl ether",
       "Cyclopentene",
-      "Acetophenone",
-      "Cyclohexanone"
+      "2-Bromopropane",
+      "Cyclohexanone",
+      "Dimethyl sulfoxide",
+      "Acetic acid",
+      "Propyne"
     ],
     "options": [
       {
@@ -1320,19 +1320,19 @@ const CHAPTER_33_QUESTIONS = [
         "correctAnswer": "1-Butanol"
       },
       {
-        "smiles": "HC(=O)O",
+        "smiles": "C(=O)O",
         "correctAnswer": "Formic acid"
       }
     ],
     "match_options": [
-      "Butyraldehyde",
-      "Formic acid",
-      "Ethyl benzoate",
+      "Dimethyl ether",
       "1-Bromopropane",
-      "1-Butanol",
-      "Propanoic acid",
+      "Formic acid",
+      "Butyraldehyde",
       "2-Bromopropane",
-      "Dimethyl ether"
+      "Propanoic acid",
+      "Ethyl benzoate",
+      "1-Butanol"
     ],
     "options": [
       {
@@ -1348,7 +1348,7 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "feedback": {
       "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: CCOC(=O)c1ccccc1 corresponds to Ethyl benzoate.\nStructure 2: CCC(=O)O corresponds to Propanoic acid.\nStructure 3: CCCCO corresponds to 1-Butanol.\nStructure 4: HC(=O)O corresponds to Formic acid.",
+      "process": "Structure 1: CCOC(=O)c1ccccc1 corresponds to Ethyl benzoate.\nStructure 2: CCC(=O)O corresponds to Propanoic acid.\nStructure 3: CCCCO corresponds to 1-Butanol.\nStructure 4: C(=O)O corresponds to Formic acid.",
       "result": "All structures are correctly matched."
     }
   },
@@ -1377,14 +1377,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Cyclohexene",
       "Methanol",
-      "Anisole",
       "Ethylbenzene",
       "Phenol",
-      "Cyclohexene",
+      "Cyclopentene",
       "Diethyl ether",
       "Dimethyl sulfoxide",
-      "Cyclopentene"
+      "Anisole"
     ],
     "options": [
       {
@@ -1429,14 +1429,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "t-Butyl alcohol",
-      "Acetone",
       "Phenol",
       "Cyclohexene",
-      "Benzoic acid",
-      "Benzaldehyde",
       "Bromobenzene",
-      "Toluene"
+      "t-Butyl alcohol",
+      "Toluene",
+      "Acetone",
+      "Benzoic acid",
+      "Benzaldehyde"
     ],
     "options": [
       {
@@ -1481,14 +1481,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cyclohexanone",
       "Anisole",
-      "2-Pentanone",
-      "Acetaldehyde",
-      "Aniline",
       "Bromobenzene",
+      "Aniline",
+      "Cyclopentanone",
       "Ethyl acetate",
-      "Cyclopentanone"
+      "Cyclohexanone",
+      "2-Pentanone",
+      "Acetaldehyde"
     ],
     "options": [
       {
@@ -1533,14 +1533,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "1-Propanol",
-      "Diethyl ether",
-      "t-Butyl alcohol",
-      "Acetophenone",
-      "Propan-2-ol",
+      "Dimethyl sulfoxide",
       "Ethyl benzoate",
-      "1-Bromopropane",
-      "Dimethyl sulfoxide"
+      "t-Butyl alcohol",
+      "1-Propanol",
+      "Propan-2-ol",
+      "Diethyl ether",
+      "Acetophenone",
+      "1-Bromopropane"
     ],
     "options": [
       {
@@ -1585,14 +1585,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Benzoyl chloride",
-      "Propene",
-      "Anisole",
       "Benzoic acid",
-      "Benzyl alcohol",
-      "Methyl acetate",
       "Acetophenone",
-      "2-Bromopropane"
+      "Methyl acetate",
+      "Benzyl alcohol",
+      "Anisole",
+      "2-Bromopropane",
+      "Propene",
+      "Benzoyl chloride"
     ],
     "options": [
       {
@@ -1637,13 +1637,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "2-Bromopropane",
-      "Tetrahydrofuran",
-      "Dimethyl ether",
-      "2-Pentanone",
       "1-Bromopropane",
+      "Dimethyl ether",
       "Methyl acetate",
       "Propanoic acid",
+      "2-Pentanone",
+      "Tetrahydrofuran",
+      "2-Bromopropane",
       "Propene"
     ],
     "options": [
@@ -1689,14 +1689,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Phenol",
       "Isobutylene",
-      "Ethylbenzene",
-      "Propyne",
-      "Propanoic acid",
-      "Cyclohexene",
       "Butyraldehyde",
-      "Propan-2-ol"
+      "Cyclohexene",
+      "Ethylbenzene",
+      "Propanoic acid",
+      "Phenol",
+      "Propan-2-ol",
+      "Propyne"
     ],
     "options": [
       {
@@ -1741,14 +1741,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Ethyl acetate",
-      "Acetone",
       "Propan-2-ol",
+      "Benzoyl chloride",
+      "Acetone",
       "Bromobenzene",
-      "Diethyl ether",
-      "Cyclopentanone",
       "Acetic acid",
-      "Benzoyl chloride"
+      "Cyclopentanone",
+      "Diethyl ether",
+      "Ethyl acetate"
     ],
     "options": [
       {
@@ -1793,14 +1793,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cyclohexanone",
-      "Phenol",
-      "1-Propanol",
       "Cyclohexane",
+      "1-Propanol",
       "Chlorobenzene",
+      "Benzoyl chloride",
       "Butanone",
       "Cyclohexene",
-      "Benzoyl chloride"
+      "Cyclohexanone",
+      "Phenol"
     ],
     "options": [
       {
@@ -1845,13 +1845,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Cyclopentene",
+      "Benzyl alcohol",
+      "Acetic acid",
+      "Acetonitrile",
       "Diethyl ether",
       "Ethanol",
-      "Acetonitrile",
       "1-Butanol",
-      "Acetic acid",
-      "Benzyl alcohol",
-      "Cyclopentene",
       "Propene"
     ],
     "options": [
@@ -1897,13 +1897,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isobutylene",
       "Diethyl ether",
-      "Ethanol",
-      "Dimethyl sulfoxide",
-      "3-Pentanone",
-      "Aniline",
       "Ethyl acetate",
+      "Dimethyl sulfoxide",
+      "Aniline",
+      "3-Pentanone",
+      "Isobutylene",
+      "Ethanol",
       "Benzene"
     ],
     "options": [
@@ -1949,14 +1949,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Ethanol",
-      "Acetic acid",
-      "Butyraldehyde",
-      "Cyclohexene",
-      "Phenol",
       "Acetone",
       "Ethylbenzene",
-      "3-Pentanone"
+      "3-Pentanone",
+      "Acetic acid",
+      "Phenol",
+      "Butyraldehyde",
+      "Cyclohexene",
+      "Ethanol"
     ],
     "options": [
       {
@@ -2001,14 +2001,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Dichloromethane",
       "Bromobenzene",
-      "Benzoic acid",
-      "Propene",
       "Ethyl acetate",
-      "1-Propanol",
+      "Dichloromethane",
+      "Propene",
+      "Acetonitrile",
       "Ethylbenzene",
-      "Acetonitrile"
+      "1-Propanol",
+      "Benzoic acid"
     ],
     "options": [
       {
@@ -2053,14 +2053,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "2-Pentanone",
-      "Tetrahydrofuran",
-      "Cyclopentanone",
-      "Benzyl alcohol",
       "Propene",
+      "2-Pentanone",
+      "Cyclopentanone",
+      "Tetrahydrofuran",
       "Isobutylene",
       "Phenol",
-      "Benzoic acid"
+      "Benzoic acid",
+      "Benzyl alcohol"
     ],
     "options": [
       {
@@ -2105,14 +2105,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Benzaldehyde",
-      "Propene",
       "Propanoic acid",
       "Ethylbenzene",
-      "2-Bromopropane",
-      "Aniline",
       "Acetonitrile",
-      "Butyraldehyde"
+      "Benzaldehyde",
+      "Propene",
+      "Aniline",
+      "Butyraldehyde",
+      "2-Bromopropane"
     ],
     "options": [
       {
@@ -2148,7 +2148,7 @@ const CHAPTER_33_QUESTIONS = [
         "correctAnswer": "Toluene"
       },
       {
-        "smiles": "HC(=O)O",
+        "smiles": "C(=O)O",
         "correctAnswer": "Formic acid"
       },
       {
@@ -2157,13 +2157,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Acetic acid",
+      "Isobutylene",
+      "Toluene",
+      "Bromobenzene",
       "Formic acid",
       "Ethylbenzene",
       "1-Butanol",
-      "Bromobenzene",
-      "Isobutylene",
-      "Acetic acid",
-      "Toluene",
       "Benzaldehyde"
     ],
     "options": [
@@ -2180,7 +2180,7 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "feedback": {
       "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: CCc1ccccc1 corresponds to Ethylbenzene.\nStructure 2: Cc1ccccc1 corresponds to Toluene.\nStructure 3: HC(=O)O corresponds to Formic acid.\nStructure 4: Brc1ccccc1 corresponds to Bromobenzene.",
+      "process": "Structure 1: CCc1ccccc1 corresponds to Ethylbenzene.\nStructure 2: Cc1ccccc1 corresponds to Toluene.\nStructure 3: C(=O)O corresponds to Formic acid.\nStructure 4: Brc1ccccc1 corresponds to Bromobenzene.",
       "result": "All structures are correctly matched."
     }
   },
@@ -2210,13 +2210,13 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "match_options": [
       "Ethanol",
-      "Chloroform",
-      "Ethyl benzoate",
+      "Anisole",
+      "Benzoic acid",
       "Acetic acid",
       "Chlorobenzene",
-      "Benzoic acid",
-      "Anisole",
-      "Cyclopentene"
+      "Chloroform",
+      "Cyclopentene",
+      "Ethyl benzoate"
     ],
     "options": [
       {
@@ -2262,13 +2262,13 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "match_options": [
       "Propanoic acid",
-      "Benzaldehyde",
-      "Isobutylene",
       "Cyclohexane",
-      "Nitrobenzene",
+      "Dichloromethane",
+      "Benzaldehyde",
       "Tetrahydrofuran",
-      "Phenol",
-      "Dichloromethane"
+      "Nitrobenzene",
+      "Isobutylene",
+      "Phenol"
     ],
     "options": [
       {
@@ -2313,13 +2313,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Propanoic acid",
       "1-Bromopropane",
-      "Methanol",
+      "Methyl acetate",
       "Acetic acid",
       "Cyclohexene",
       "Anisole",
-      "Propanoic acid",
-      "Methyl acetate",
+      "Methanol",
       "Propionaldehyde"
     ],
     "options": [
@@ -2365,14 +2365,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Propan-2-ol",
+      "Butanone",
       "Bromobenzene",
-      "Cyclohexanone",
-      "Formic acid",
+      "Propan-2-ol",
       "Phenol",
+      "Cyclohexanone",
       "Isobutylene",
       "Benzaldehyde",
-      "Butanone"
+      "Formic acid"
     ],
     "options": [
       {
@@ -2417,14 +2417,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Butanone",
       "Dichloromethane",
-      "Tetrahydrofuran",
-      "Benzoyl chloride",
+      "Aniline",
       "Chloroform",
-      "Methyl acetate",
+      "Benzoyl chloride",
       "Dimethyl ether",
-      "Aniline"
+      "Tetrahydrofuran",
+      "Butanone",
+      "Methyl acetate"
     ],
     "options": [
       {
@@ -2469,14 +2469,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cyclohexene",
-      "Nitrobenzene",
-      "2-Bromopropane",
-      "Diethyl ether",
       "Cyclohexanone",
-      "1-Butanol",
+      "2-Bromopropane",
+      "Cyclohexene",
+      "1-Bromopropane",
+      "Nitrobenzene",
       "Ethylbenzene",
-      "1-Bromopropane"
+      "1-Butanol",
+      "Diethyl ether"
     ],
     "options": [
       {
@@ -2522,13 +2522,13 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "match_options": [
       "Isobutylene",
-      "Dimethyl sulfoxide",
-      "Cyclohexane",
-      "Ethanol",
-      "Acetic acid",
       "Propene",
       "1-Propanol",
-      "Benzene"
+      "Cyclohexane",
+      "Benzene",
+      "Acetic acid",
+      "Ethanol",
+      "Dimethyl sulfoxide"
     ],
     "options": [
       {
@@ -2564,7 +2564,7 @@ const CHAPTER_33_QUESTIONS = [
         "correctAnswer": "Benzaldehyde"
       },
       {
-        "smiles": "HC(=O)O",
+        "smiles": "C(=O)O",
         "correctAnswer": "Formic acid"
       },
       {
@@ -2573,14 +2573,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Chlorobenzene",
-      "Isobutylene",
-      "Benzaldehyde",
-      "Benzene",
       "Dimethyl ether",
       "Formic acid",
-      "2-Pentanone",
-      "Propionaldehyde"
+      "Benzaldehyde",
+      "Chlorobenzene",
+      "Benzene",
+      "Isobutylene",
+      "Propionaldehyde",
+      "2-Pentanone"
     ],
     "options": [
       {
@@ -2596,7 +2596,7 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "feedback": {
       "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: c1ccccc1 corresponds to Benzene.\nStructure 2: O=Cc1ccccc1 corresponds to Benzaldehyde.\nStructure 3: HC(=O)O corresponds to Formic acid.\nStructure 4: CCC=O corresponds to Propionaldehyde.",
+      "process": "Structure 1: c1ccccc1 corresponds to Benzene.\nStructure 2: O=Cc1ccccc1 corresponds to Benzaldehyde.\nStructure 3: C(=O)O corresponds to Formic acid.\nStructure 4: CCC=O corresponds to Propionaldehyde.",
       "result": "All structures are correctly matched."
     }
   },
@@ -2625,14 +2625,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Butyraldehyde",
-      "1-Butanol",
       "Toluene",
       "Cyclohexane",
-      "Benzene",
+      "Butyraldehyde",
       "1-Bromopropane",
+      "Benzene",
+      "Acetone",
       "t-Butyl alcohol",
-      "Acetone"
+      "1-Butanol"
     ],
     "options": [
       {
@@ -2672,19 +2672,19 @@ const CHAPTER_33_QUESTIONS = [
         "correctAnswer": "Acetic acid"
       },
       {
-        "smiles": "HC(=O)O",
+        "smiles": "C(=O)O",
         "correctAnswer": "Formic acid"
       }
     ],
     "match_options": [
-      "Acetic acid",
-      "Aniline",
-      "3-Pentanone",
       "1-Bromopropane",
+      "1-Propanol",
       "Propyne",
       "Formic acid",
-      "Propan-2-ol",
-      "1-Propanol"
+      "Aniline",
+      "Acetic acid",
+      "3-Pentanone",
+      "Propan-2-ol"
     ],
     "options": [
       {
@@ -2700,7 +2700,7 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "feedback": {
       "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: CC#C corresponds to Propyne.\nStructure 2: CCCBr corresponds to 1-Bromopropane.\nStructure 3: CC(=O)O corresponds to Acetic acid.\nStructure 4: HC(=O)O corresponds to Formic acid.",
+      "process": "Structure 1: CC#C corresponds to Propyne.\nStructure 2: CCCBr corresponds to 1-Bromopropane.\nStructure 3: CC(=O)O corresponds to Acetic acid.\nStructure 4: C(=O)O corresponds to Formic acid.",
       "result": "All structures are correctly matched."
     }
   },
@@ -2729,14 +2729,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Phenol",
-      "Toluene",
-      "Anisole",
-      "Propene",
-      "t-Butyl alcohol",
       "Ethyl acetate",
+      "Toluene",
+      "Propene",
       "Aniline",
-      "Chloroform"
+      "t-Butyl alcohol",
+      "Chloroform",
+      "Phenol",
+      "Anisole"
     ],
     "options": [
       {
@@ -2781,14 +2781,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tetrahydrofuran",
-      "Acetophenone",
       "Benzyl alcohol",
+      "t-Butyl alcohol",
       "Propyne",
       "Butyraldehyde",
-      "t-Butyl alcohol",
+      "Acetophenone",
+      "Cyclohexanone",
       "Propan-2-ol",
-      "Cyclohexanone"
+      "Tetrahydrofuran"
     ],
     "options": [
       {
@@ -2833,14 +2833,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Chloroform",
-      "Acetic acid",
       "Toluene",
-      "Benzoic acid",
       "Benzene",
-      "Tetrahydrofuran",
       "Dichloromethane",
-      "Acetone"
+      "Tetrahydrofuran",
+      "Acetone",
+      "Chloroform",
+      "Benzoic acid",
+      "Acetic acid"
     ],
     "options": [
       {
@@ -2885,13 +2885,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cyclohexane",
-      "Acetic acid",
       "Ethylbenzene",
-      "Aniline",
-      "Acetaldehyde",
-      "Acetonitrile",
+      "Cyclohexane",
       "Chlorobenzene",
+      "Aniline",
+      "Acetonitrile",
+      "Acetic acid",
+      "Acetaldehyde",
       "t-Butyl alcohol"
     ],
     "options": [
@@ -2937,14 +2937,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "1-Propanol",
-      "3-Pentanone",
-      "Benzoic acid",
-      "Benzaldehyde",
-      "Propionaldehyde",
-      "Propene",
       "2-Bromopropane",
-      "Chloroform"
+      "Chloroform",
+      "3-Pentanone",
+      "Propene",
+      "Benzaldehyde",
+      "1-Propanol",
+      "Benzoic acid",
+      "Propionaldehyde"
     ],
     "options": [
       {
@@ -2989,14 +2989,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Butanone",
+      "Ethylbenzene",
       "Tetrahydrofuran",
       "Bromobenzene",
-      "1-Butanol",
-      "Ethylbenzene",
+      "2-Pentanone",
       "Benzene",
-      "Acetonitrile",
-      "2-Pentanone"
+      "Butanone",
+      "1-Butanol",
+      "Acetonitrile"
     ],
     "options": [
       {
@@ -3041,14 +3041,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Propanoic acid",
-      "1-Bromopropane",
+      "Toluene",
       "Acetaldehyde",
-      "Ethyl benzoate",
-      "Isobutylene",
+      "Propanoic acid",
       "Cyclohexane",
+      "Isobutylene",
+      "Ethyl benzoate",
       "Tetrahydrofuran",
-      "Toluene"
+      "1-Bromopropane"
     ],
     "options": [
       {
@@ -3093,13 +3093,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Propyne",
       "Nitrobenzene",
-      "Acetonitrile",
+      "Propyne",
       "Cyclopentene",
-      "Acetic acid",
-      "Chlorobenzene",
       "Ethylbenzene",
+      "Chlorobenzene",
+      "Acetonitrile",
+      "Acetic acid",
       "Toluene"
     ],
     "options": [
@@ -3145,14 +3145,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Benzoyl chloride",
       "Cyclopentene",
       "Methyl acetate",
-      "Propyne",
+      "Propan-2-ol",
       "Acetaldehyde",
       "Ethylbenzene",
-      "Benzyl alcohol",
-      "Propan-2-ol"
+      "Benzoyl chloride",
+      "Propyne",
+      "Benzyl alcohol"
     ],
     "options": [
       {
@@ -3188,7 +3188,7 @@ const CHAPTER_33_QUESTIONS = [
         "correctAnswer": "Ethanol"
       },
       {
-        "smiles": "HC(=O)O",
+        "smiles": "C(=O)O",
         "correctAnswer": "Formic acid"
       },
       {
@@ -3198,12 +3198,12 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "match_options": [
       "Benzaldehyde",
-      "Butyraldehyde",
-      "Cyclopentanone",
-      "Acetophenone",
-      "Ethanol",
       "Cyclohexane",
+      "Ethanol",
+      "Butyraldehyde",
+      "Acetophenone",
       "Formic acid",
+      "Cyclopentanone",
       "Cyclohexene"
     ],
     "options": [
@@ -3220,7 +3220,7 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "feedback": {
       "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: C1CCC=CC1 corresponds to Cyclohexene.\nStructure 2: CCO corresponds to Ethanol.\nStructure 3: HC(=O)O corresponds to Formic acid.\nStructure 4: C1CCCCC1 corresponds to Cyclohexane.",
+      "process": "Structure 1: C1CCC=CC1 corresponds to Cyclohexene.\nStructure 2: CCO corresponds to Ethanol.\nStructure 3: C(=O)O corresponds to Formic acid.\nStructure 4: C1CCCCC1 corresponds to Cyclohexane.",
       "result": "All structures are correctly matched."
     }
   },
@@ -3249,13 +3249,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Propan-2-ol",
-      "Acetaldehyde",
-      "Benzaldehyde",
-      "Propionaldehyde",
-      "Acetophenone",
-      "Ethylbenzene",
       "Propyne",
+      "Acetaldehyde",
+      "Acetophenone",
+      "Propionaldehyde",
+      "Ethylbenzene",
+      "Benzaldehyde",
+      "Propan-2-ol",
       "Butanone"
     ],
     "options": [
@@ -3301,13 +3301,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "1-Bromopropane",
       "2-Bromopropane",
-      "Nitrobenzene",
-      "Benzoyl chloride",
-      "Bromobenzene",
+      "1-Bromopropane",
       "Dimethyl ether",
+      "Bromobenzene",
       "Benzoic acid",
+      "Benzoyl chloride",
+      "Nitrobenzene",
       "Benzaldehyde"
     ],
     "options": [
@@ -3353,14 +3353,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Benzoyl chloride",
-      "Propan-2-ol",
-      "Propyne",
-      "Cyclopentanone",
-      "Dimethyl sulfoxide",
       "Cyclohexene",
-      "3-Pentanone",
-      "Tetrahydrofuran"
+      "Propyne",
+      "Dimethyl sulfoxide",
+      "Propan-2-ol",
+      "Cyclopentanone",
+      "Benzoyl chloride",
+      "Tetrahydrofuran",
+      "3-Pentanone"
     ],
     "options": [
       {
@@ -3405,14 +3405,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Nitrobenzene",
-      "Phenol",
-      "Cyclopentene",
-      "Ethyl acetate",
-      "Aniline",
       "Propyne",
+      "Ethyl acetate",
+      "Cyclopentene",
       "Benzyl alcohol",
-      "Ethyl benzoate"
+      "Ethyl benzoate",
+      "Aniline",
+      "Nitrobenzene",
+      "Phenol"
     ],
     "options": [
       {
@@ -3457,14 +3457,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Chlorobenzene",
       "Acetonitrile",
-      "2-Bromopropane",
       "Aniline",
+      "Isobutylene",
       "1-Butanol",
-      "Benzaldehyde",
+      "2-Bromopropane",
+      "Chlorobenzene",
       "3-Pentanone",
-      "Isobutylene"
+      "Benzaldehyde"
     ],
     "options": [
       {
@@ -3509,14 +3509,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Propene",
-      "Propanoic acid",
       "Butanone",
-      "1-Propanol",
-      "Tetrahydrofuran",
-      "Benzyl alcohol",
+      "Propanoic acid",
+      "Propene",
       "Acetaldehyde",
-      "Acetone"
+      "Benzyl alcohol",
+      "Tetrahydrofuran",
+      "Acetone",
+      "1-Propanol"
     ],
     "options": [
       {
@@ -3561,14 +3561,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Benzoic acid",
-      "Cyclohexane",
-      "Benzaldehyde",
+      "Nitrobenzene",
       "Cyclopentanone",
       "Benzene",
+      "Cyclohexane",
+      "Benzaldehyde",
+      "Benzoic acid",
       "t-Butyl alcohol",
-      "Methanol",
-      "Nitrobenzene"
+      "Methanol"
     ],
     "options": [
       {
@@ -3613,14 +3613,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isobutylene",
-      "Diethyl ether",
-      "Propionaldehyde",
       "Ethyl benzoate",
       "Ethyl acetate",
-      "Formic acid",
+      "Acetone",
+      "Diethyl ether",
       "3-Pentanone",
-      "Acetone"
+      "Formic acid",
+      "Propionaldehyde",
+      "Isobutylene"
     ],
     "options": [
       {
@@ -3665,14 +3665,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Phenol",
-      "1-Butanol",
+      "Cyclopentene",
       "Butanone",
-      "3-Pentanone",
-      "Benzyl alcohol",
-      "Tetrahydrofuran",
       "Acetophenone",
-      "Cyclopentene"
+      "3-Pentanone",
+      "Tetrahydrofuran",
+      "Benzyl alcohol",
+      "Phenol",
+      "1-Butanol"
     ],
     "options": [
       {
@@ -3717,14 +3717,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Methanol",
-      "t-Butyl alcohol",
       "1-Propanol",
-      "Benzoyl chloride",
-      "Acetophenone",
       "Phenol",
+      "Methyl acetate",
+      "t-Butyl alcohol",
+      "Benzoyl chloride",
       "Cyclohexanone",
-      "Methyl acetate"
+      "Methanol",
+      "Acetophenone"
     ],
     "options": [
       {
@@ -3760,7 +3760,7 @@ const CHAPTER_33_QUESTIONS = [
         "correctAnswer": "Nitrobenzene"
       },
       {
-        "smiles": "HC(=O)O",
+        "smiles": "C(=O)O",
         "correctAnswer": "Formic acid"
       },
       {
@@ -3770,13 +3770,13 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "match_options": [
       "Chlorobenzene",
-      "Acetic acid",
       "Dimethyl sulfoxide",
       "Formic acid",
       "Propene",
-      "Acetonitrile",
+      "Methyl acetate",
+      "Acetic acid",
       "Nitrobenzene",
-      "Methyl acetate"
+      "Acetonitrile"
     ],
     "options": [
       {
@@ -3792,7 +3792,7 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "feedback": {
       "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: CC=C corresponds to Propene.\nStructure 2: [N+](=O)([O-])c1ccccc1 corresponds to Nitrobenzene.\nStructure 3: HC(=O)O corresponds to Formic acid.\nStructure 4: Clc1ccccc1 corresponds to Chlorobenzene.",
+      "process": "Structure 1: CC=C corresponds to Propene.\nStructure 2: [N+](=O)([O-])c1ccccc1 corresponds to Nitrobenzene.\nStructure 3: C(=O)O corresponds to Formic acid.\nStructure 4: Clc1ccccc1 corresponds to Chlorobenzene.",
       "result": "All structures are correctly matched."
     }
   },
@@ -3821,14 +3821,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cyclohexene",
       "Cyclopentene",
-      "Ethanol",
-      "Chloroform",
-      "Propan-2-ol",
-      "Acetone",
       "Cyclohexane",
-      "Tetrahydrofuran"
+      "Ethanol",
+      "Propan-2-ol",
+      "Tetrahydrofuran",
+      "Acetone",
+      "Cyclohexene",
+      "Chloroform"
     ],
     "options": [
       {
@@ -3873,14 +3873,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Ethyl benzoate",
-      "Cyclohexene",
-      "Benzoyl chloride",
       "Aniline",
       "t-Butyl alcohol",
-      "1-Propanol",
       "Bromobenzene",
-      "Cyclohexane"
+      "Cyclohexene",
+      "Ethyl benzoate",
+      "Cyclohexane",
+      "1-Propanol",
+      "Benzoyl chloride"
     ],
     "options": [
       {
@@ -3925,14 +3925,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Butyraldehyde",
       "Nitrobenzene",
-      "Cyclohexene",
       "Chloroform",
-      "Benzene",
       "t-Butyl alcohol",
       "2-Pentanone",
-      "Cyclopentene"
+      "Butyraldehyde",
+      "Cyclopentene",
+      "Benzene",
+      "Cyclohexene"
     ],
     "options": [
       {
@@ -3977,14 +3977,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Dimethyl sulfoxide",
-      "Propanoic acid",
-      "Cyclohexane",
       "3-Pentanone",
       "Acetonitrile",
       "Propene",
       "Anisole",
-      "Acetophenone"
+      "Acetophenone",
+      "Propanoic acid",
+      "Cyclohexane",
+      "Dimethyl sulfoxide"
     ],
     "options": [
       {
@@ -4029,13 +4029,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Benzene",
-      "Methanol",
+      "Dimethyl sulfoxide",
       "Ethyl acetate",
-      "Cyclopentanone",
+      "Methanol",
       "Acetaldehyde",
       "Acetonitrile",
-      "Dimethyl sulfoxide",
+      "Cyclopentanone",
+      "Benzene",
       "Benzaldehyde"
     ],
     "options": [
@@ -4081,14 +4081,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tetrahydrofuran",
-      "Benzoic acid",
-      "Isobutylene",
-      "Phenol",
-      "Formic acid",
       "Acetaldehyde",
+      "Tetrahydrofuran",
+      "Phenol",
+      "Benzoic acid",
+      "Formic acid",
       "1-Butanol",
-      "Acetone"
+      "Acetone",
+      "Isobutylene"
     ],
     "options": [
       {
@@ -4133,14 +4133,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Nitrobenzene",
-      "Ethyl benzoate",
-      "Ethyl acetate",
-      "Dimethyl ether",
+      "Butyraldehyde",
       "2-Bromopropane",
       "Tetrahydrofuran",
       "Acetone",
-      "Butyraldehyde"
+      "Ethyl acetate",
+      "Dimethyl ether",
+      "Ethyl benzoate",
+      "Nitrobenzene"
     ],
     "options": [
       {
@@ -4185,14 +4185,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "2-Bromopropane",
       "Benzene",
+      "2-Bromopropane",
       "Toluene",
-      "Chloroform",
       "3-Pentanone",
-      "Ethylbenzene",
       "Propyne",
-      "Nitrobenzene"
+      "Ethylbenzene",
+      "Nitrobenzene",
+      "Chloroform"
     ],
     "options": [
       {
@@ -4238,13 +4238,13 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "match_options": [
       "Propan-2-ol",
-      "Butyraldehyde",
-      "Chlorobenzene",
       "Toluene",
+      "Chlorobenzene",
       "Benzene",
-      "Diethyl ether",
+      "Dimethyl sulfoxide",
+      "Butyraldehyde",
       "Nitrobenzene",
-      "Dimethyl sulfoxide"
+      "Diethyl ether"
     ],
     "options": [
       {
@@ -4284,19 +4284,19 @@ const CHAPTER_33_QUESTIONS = [
         "correctAnswer": "Dimethyl ether"
       },
       {
-        "smiles": "HC(=O)O",
+        "smiles": "C(=O)O",
         "correctAnswer": "Formic acid"
       }
     ],
     "match_options": [
-      "Dimethyl ether",
-      "Formic acid",
-      "Tetrahydrofuran",
-      "Chloroform",
+      "Propanoic acid",
       "Cyclopentene",
-      "Dimethyl sulfoxide",
+      "Tetrahydrofuran",
+      "Dimethyl ether",
       "Ethylbenzene",
-      "Propanoic acid"
+      "Formic acid",
+      "Dimethyl sulfoxide",
+      "Chloroform"
     ],
     "options": [
       {
@@ -4312,7 +4312,7 @@ const CHAPTER_33_QUESTIONS = [
     ],
     "feedback": {
       "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: CCc1ccccc1 corresponds to Ethylbenzene.\nStructure 2: ClC(Cl)Cl corresponds to Chloroform.\nStructure 3: COC corresponds to Dimethyl ether.\nStructure 4: HC(=O)O corresponds to Formic acid.",
+      "process": "Structure 1: CCc1ccccc1 corresponds to Ethylbenzene.\nStructure 2: ClC(Cl)Cl corresponds to Chloroform.\nStructure 3: COC corresponds to Dimethyl ether.\nStructure 4: C(=O)O corresponds to Formic acid.",
       "result": "All structures are correctly matched."
     }
   },
@@ -4341,14 +4341,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "2-Bromopropane",
-      "Ethyl acetate",
+      "Phenol",
       "Ethanol",
-      "1-Bromopropane",
-      "Diethyl ether",
-      "Dimethyl sulfoxide",
+      "2-Bromopropane",
       "Acetonitrile",
-      "Phenol"
+      "1-Bromopropane",
+      "Dimethyl sulfoxide",
+      "Diethyl ether",
+      "Ethyl acetate"
     ],
     "options": [
       {
@@ -4393,14 +4393,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Anisole",
-      "Acetic acid",
+      "Methyl acetate",
       "Propanoic acid",
-      "Propionaldehyde",
-      "2-Bromopropane",
-      "Phenol",
       "Propan-2-ol",
-      "Methyl acetate"
+      "Propionaldehyde",
+      "Acetic acid",
+      "Phenol",
+      "2-Bromopropane",
+      "Anisole"
     ],
     "options": [
       {
@@ -4445,14 +4445,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cyclohexene",
-      "Formic acid",
-      "Acetophenone",
-      "Ethanol",
-      "Benzoyl chloride",
       "Cyclohexanone",
+      "Acetophenone",
+      "Formic acid",
+      "Methanol",
+      "Benzoyl chloride",
+      "Ethanol",
       "Propionaldehyde",
-      "Methanol"
+      "Cyclohexene"
     ],
     "options": [
       {
@@ -4497,13 +4497,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Propyne",
-      "Isobutylene",
-      "Propene",
-      "1-Propanol",
-      "Dimethyl ether",
-      "Propanoic acid",
       "Butanone",
+      "1-Propanol",
+      "Propene",
+      "Dimethyl ether",
+      "Propyne",
+      "Propanoic acid",
+      "Isobutylene",
       "Bromobenzene"
     ],
     "options": [
@@ -4551,10 +4551,10 @@ const CHAPTER_33_QUESTIONS = [
     "match_options": [
       "3-Pentanone",
       "Diethyl ether",
-      "Cyclohexane",
-      "Propanoic acid",
       "Methyl acetate",
+      "Cyclohexane",
       "Propan-2-ol",
+      "Propanoic acid",
       "Phenol",
       "Butanone"
     ],
@@ -4601,13 +4601,13 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Propan-2-ol",
-      "t-Butyl alcohol",
+      "Nitrobenzene",
+      "1-Butanol",
       "Propanoic acid",
       "Benzaldehyde",
-      "1-Butanol",
+      "Propan-2-ol",
+      "t-Butyl alcohol",
       "Methanol",
-      "Nitrobenzene",
       "Dichloromethane"
     ],
     "options": [
@@ -4653,14 +4653,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Chlorobenzene",
       "Butyraldehyde",
-      "Benzene",
       "Benzoyl chloride",
-      "2-Pentanone",
-      "1-Butanol",
-      "Benzaldehyde",
       "Cyclopentanone",
-      "Chlorobenzene"
+      "Benzaldehyde",
+      "1-Butanol",
+      "2-Pentanone",
+      "Benzene"
     ],
     "options": [
       {
@@ -4705,14 +4705,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Phenol",
-      "Benzaldehyde",
-      "Toluene",
-      "1-Bromopropane",
-      "3-Pentanone",
       "Cyclohexanone",
       "Ethylbenzene",
-      "Methanol"
+      "Benzaldehyde",
+      "Toluene",
+      "3-Pentanone",
+      "Methanol",
+      "1-Bromopropane",
+      "Phenol"
     ],
     "options": [
       {
@@ -4757,14 +4757,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Dimethyl ether",
       "3-Pentanone",
       "Chlorobenzene",
-      "Dimethyl ether",
+      "Acetonitrile",
       "Acetic acid",
-      "Benzoyl chloride",
       "Ethanol",
       "Aniline",
-      "Acetonitrile"
+      "Benzoyl chloride"
     ],
     "options": [
       {
@@ -4809,12 +4809,12 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Dichloromethane",
+      "Cyclopentanone",
       "Benzene",
       "Benzoyl chloride",
-      "Chlorobenzene",
+      "Dichloromethane",
       "Aniline",
-      "Cyclopentanone",
+      "Chlorobenzene",
       "Benzyl alcohol",
       "Butyraldehyde"
     ],
@@ -4861,14 +4861,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Diethyl ether",
+      "Benzoic acid",
+      "1-Butanol",
       "Acetophenone",
       "Benzene",
-      "Toluene",
-      "Dimethyl ether",
+      "Diethyl ether",
       "Ethanol",
-      "1-Butanol",
-      "Benzoic acid"
+      "Toluene",
+      "Dimethyl ether"
     ],
     "options": [
       {
@@ -4913,14 +4913,14 @@ const CHAPTER_33_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Benzyl alcohol",
-      "2-Pentanone",
-      "Benzoyl chloride",
-      "Acetone",
-      "Isobutylene",
       "Chloroform",
+      "2-Pentanone",
+      "Isobutylene",
       "Cyclohexene",
-      "Cyclopentene"
+      "Benzoyl chloride",
+      "Benzyl alcohol",
+      "Cyclopentene",
+      "Acetone"
     ],
     "options": [
       {

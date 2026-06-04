@@ -1,4 +1,4 @@
-// McMurry Chapter 20 questions
+// ACS Organic Chemistry Exam Preparation - ACS: Structure & Hybridization
 const CHAPTER_20_QUESTIONS = [
   {
     "question_id": "ch20_acs_q1_benzonitrile",
@@ -39,7 +39,7 @@ const CHAPTER_20_QUESTIONS = [
     "topic": "ACS: Structure & Hybridization",
     "difficulty_level": "Medium",
     "question_text": "Which resonance structure of the acetamide anion contributes most significantly to the hybrid structure?",
-    "question_smiles": "CC(=O)[NH-].CC([O-])=NH",
+    "question_smiles": "CC(=O)[NH-].CC([O-])=[NH]",
     "options": [
       {
         "option_id": "A",
@@ -73,7 +73,7 @@ const CHAPTER_20_QUESTIONS = [
     "topic": "ACS: Structure & Hybridization",
     "difficulty_level": "Medium",
     "question_text": "Which of the following monocyclic compounds is antiaromatic according to Huckel's rule?",
-    "question_smiles": "",
+    "question_smiles": "C1=CC=C1.[C-]1C=CC=C1.C1=CC=CC=C1.C1=CNC=C1",
     "options": [
       {
         "option_id": "A",
@@ -145,7 +145,7 @@ const CHAPTER_20_QUESTIONS = [
     "topic": "ACS: Structure & Hybridization",
     "difficulty_level": "Medium",
     "question_text": "Which of the following isomers of difluoroethylene has a net dipole moment of zero?",
-    "question_smiles": "F/C=CF.F/C=C/F.C=C(F)F",
+    "question_smiles": "F/C=C\F.F/C=C/F.C=C(F)F",
     "options": [
       {
         "option_id": "A",
@@ -156,7 +156,7 @@ const CHAPTER_20_QUESTIONS = [
       {
         "option_id": "B",
         "text": "(cis)-1,2-difluoroethylene",
-        "smiles": "F/C=CF",
+        "smiles": "F/C=C\F",
         "is_correct": false
       },
       {
@@ -176,223 +176,54 @@ const CHAPTER_20_QUESTIONS = [
       "process": "Step 1: Draw the structure of the isomers. Both C-F bonds are highly polar.\nStep 2: In trans-1,2-difluoroethylene, the two C-F bond dipoles point in exactly opposite directions.\nStep 3: Because of the molecular symmetry (C2h point group), these vectors cancel out, resulting in a net dipole moment of zero.",
       "result": "The trans isomer has a net dipole moment of zero."
     }
-  },
-  {
-    "question_id": "ch20_acs_q6_butadiene_mos",
-    "topic": "ACS: Structure & Hybridization",
-    "difficulty_level": "Hard",
-    "question_text": "In the molecular orbital description of 1,3-butadiene, how many pi molecular orbitals exist, and how many nodes does the HOMO (Highest Occupied Molecular Orbital) have in its ground state?",
-    "question_smiles": "",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "4 pi MOs, 1 node",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "4 pi MOs, 2 nodes",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "2 pi MOs, 1 node",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "8 pi MOs, 2 nodes",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Applying Molecular Orbital (MO) theory to conjugated dienes.",
-      "process": "Step 1: The number of molecular orbitals equals the number of atomic p-orbitals contributing to the system (4 carbons = 4 pi MOs).\nStep 2: In the ground state, the 4 pi electrons occupy the two lowest energy levels. The HOMO is the second orbital (Psi-2).\nStep 3: The number of nodes in orbital Psi-n is n-1. For Psi-2, it is 2-1 = 1 node.",
-      "result": "There are 4 pi MOs and the HOMO has 1 node."
-    }
-  },
-  {
-    "question_id": "ch20_acs_q7_alkene_stability",
-    "topic": "ACS: Structure & Hybridization",
-    "difficulty_level": "Medium",
-    "question_text": "Rank the following isomeric alkenes in order of decreasing stability (most stable to least stable):\nI. cis-2-butene\nII. trans-2-butene\nIII. 2-methyl-2-butene\nIV. 1-butene",
-    "question_smiles": "",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "III > II > I > IV",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "II > III > I > IV",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "III > II > IV > I",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "IV > I > II > III",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Evaluating alkene stability based on substitution degree and stereochemical steric strain.",
-      "process": "Step 1: More substituted alkenes are more stable due to hyperconjugation. 2-methyl-2-butene (trisubstituted, III) is the most stable.\nStep 2: Disubstituted alkenes are next: trans-2-butene (II) is more stable than cis-2-butene (I) because trans minimizes steric clash between methyl groups.\nStep 3: Monosubstituted alkenes (1-butene, IV) are the least stable.",
-      "result": "The stability order is III > II > I > IV."
-    }
-  },
-  {
-    "question_id": "ch20_acs_q8_furan_aromaticity",
-    "topic": "ACS: Structure & Hybridization",
-    "difficulty_level": "Medium",
-    "question_text": "Explain why furan is aromatic according to Huckel's rule.",
-    "question_smiles": "",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "One of the lone pairs on the oxygen atom resides in a p-orbital and participates in the 6 pi-electron aromatic system.",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Both lone pairs on the oxygen atom participate in the pi system, giving 8 pi-electrons.",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "The oxygen atom is sp3 hybridized, preventing conjugation.",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Furan is not aromatic because oxygen is highly electronegative.",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Understanding aromaticity in heterocyclic compounds.",
-      "process": "Step 1: For furan to be aromatic, it must be planar, cyclic, fully conjugated, and have 4n+2 pi electrons.\nStep 2: The ring contains two double bonds (4 pi electrons).\nStep 3: One of oxygen's lone pairs resides in a p-orbital conjugated with the ring, contributing 2 electrons to make a total of 6 pi electrons (aromatic). The other lone pair resides in an sp2 orbital in the plane of the ring.",
-      "result": "Furan is aromatic with 6 pi electrons, utilizing one oxygen lone pair."
-    }
-  },
-  {
-    "question_id": "ch20_acs_q9_tautomerism",
-    "topic": "ACS: Structure & Hybridization",
-    "difficulty_level": "Medium",
-    "question_text": "Which of the following compounds contains the highest percentage of enol tautomer at equilibrium?",
-    "question_smiles": "CC(=O)CC(=O)C",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "2,4-pentanedione (acetylacetone)",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Acetone",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Cyclohexanone",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Ethyl acetate",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Evaluating keto-enol tautomerism stability.",
-      "process": "Step 1: Standard monocarbonyls exist almost entirely in the keto form (>99.9%).\nStep 2: 2,4-pentanedione is a beta-dicarbonyl.\nStep 3: Its enol form is stabilized by a conjugated pi system (double bond conjugated with carbonyl) and a strong intramolecular hydrogen bond, making it comprise about 76% of the mixture at room temperature.",
-      "result": "2,4-pentanedione has the highest enol percentage."
-    }
-  },
-  {
-    "question_id": "ch20_acs_q10_boiling_point",
-    "topic": "ACS: Structure & Hybridization",
-    "difficulty_level": "Easy",
-    "question_text": "Why is the boiling point of ethanol (78 \u00b0C) significantly higher than that of its constitutional isomer, dimethyl ether (-24 \u00b0C)?",
-    "question_smiles": "CCO.COC",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Ethanol forms strong intermolecular hydrogen bonds, whereas dimethyl ether only forms weak dipole-dipole interactions.",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Ethanol is more symmetric than dimethyl ether.",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Dimethyl ether undergoes intramolecular hydrogen bonding.",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Ethanol has a much higher molecular weight than dimethyl ether.",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Understanding intermolecular forces and their effects on physical properties.",
-      "process": "Step 1: Both isomers have the same molecular formula (C2H6O) and molecular weight (46 g/mol).\nStep 2: Ethanol contains an O-H bond, which enables it to participate in hydrogen bonding with neighboring molecules.\nStep 3: Dimethyl ether contains C-O-C bonds with no hydrogen attached to oxygen, preventing hydrogen bonding.",
-      "result": "Hydrogen bonding in ethanol results in a much higher boiling point."
-    }
-  },
-  {
-    "question_id": "ch20_q_dynamic_inductive_acidity",
-    "topic": "Carboxylic Acids: Acidities",
-    "difficulty_level": "Medium",
-    "question_text": "Match each carboxylic acid to its relative acidity based on inductive electron-withdrawing effects.",
-    "interaction_type": "matching-list",
-    "match_items": [
-      {
-        "smiles": "CC(=O)O",
-        "correctAnswer": "pKa = 4.76 (Weakest Acid)"
-      },
-      {
-        "smiles": "ClCC(=O)O",
-        "correctAnswer": "pKa = 2.86 (Medium Acid)"
-      },
-      {
-        "smiles": "FC(F)(F)C(=O)O",
-        "correctAnswer": "pKa = 0.23 (Strongest Acid)"
-      },
-      {
-        "smiles": "CCC(=O)O",
-        "correctAnswer": "pKa = 4.88 (Extremely Weak Acid)"
-      }
-    ],
-    "match_options": [
-      "pKa = 4.76 (Weakest Acid)",
-      "pKa = 2.86 (Medium Acid)",
-      "pKa = 0.23 (Strongest Acid)",
-      "pKa = 4.88 (Extremely Weak Acid)"
-    ],
-    "options": [
-      {
-        "option_id": "A",
-        "text": "All matched correctly",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Incorrect pKa relative mapping",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Evaluating inductive stabilization of conjugate bases.",
-      "process": "Electronegative atoms (like fluorine or chlorine) pull electron density away from the carboxylate group, stabilizing the negative charge of the conjugate base. More halogens and higher electronegativity increase acidity.",
-      "result": "TFA (trifluoroacetic acid) is the strongest."
-    }
   }
+,
+{
+  "question_id": "ch20_q_dynamic_inductive_acidity",
+  "topic": "Carboxylic Acids: Acidities",
+  "difficulty_level": "Medium",
+  "question_text": "Match each carboxylic acid to its relative acidity based on inductive electron-withdrawing effects.",
+  "interaction_type": "matching-list",
+  "match_items": [
+    {
+      "smiles": "CC(=O)O",
+      "correctAnswer": "pKa = 4.76 (Weakest Acid)"
+    },
+    {
+      "smiles": "ClCC(=O)O",
+      "correctAnswer": "pKa = 2.86 (Medium Acid)"
+    },
+    {
+      "smiles": "FC(F)(F)C(=O)O",
+      "correctAnswer": "pKa = 0.23 (Strongest Acid)"
+    },
+    {
+      "smiles": "CCC(=O)O",
+      "correctAnswer": "pKa = 4.88 (Extremely Weak Acid)"
+    }
+  ],
+  "match_options": [
+    "pKa = 4.76 (Weakest Acid)",
+    "pKa = 2.86 (Medium Acid)",
+    "pKa = 0.23 (Strongest Acid)",
+    "pKa = 4.88 (Extremely Weak Acid)"
+  ],
+  "options": [
+    {
+      "option_id": "A",
+      "text": "All matched correctly",
+      "is_correct": true
+    },
+    {
+      "option_id": "B",
+      "text": "Incorrect pKa relative mapping",
+      "is_correct": false
+    }
+  ],
+  "feedback": {
+    "context": "Evaluating inductive stabilization of conjugate bases.",
+    "process": "Electronegative atoms (like fluorine or chlorine) pull electron density away from the carboxylate group, stabilizing the negative charge of the conjugate base. More halogens and higher electronegativity increase acidity.",
+    "result": "TFA (trifluoroacetic acid) is the strongest."
+  }
+}
 ];

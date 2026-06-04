@@ -66,7 +66,9 @@ const CHAPTER_OER_MAP = {
   45: 17,  // Grignard -> Ch 17
   46: 30,  // Diels-Alder / Pericyclic -> Ch 30 (Orbitals/Pericyclic)
   47: 10,  // Radical Halogenation -> Ch 10
-  48: 9    // Synthetic Roadmaps -> Ch 9
+  48: 9,   // Synthetic Roadmaps -> Ch 9
+  49: 27,  // Biomolecules: Lipids -> Ch 27
+  50: 28   // Biomolecules: Nucleic Acids -> Ch 28
 };
 
 // McMurry OpenStax Organic Chemistry Textbook Chapter Titles
@@ -118,7 +120,15 @@ function assignOERChapterNumbers() {
       else if (q.question_id.includes('oxymercuration')) origCh = 8;
       else if (q.question_id.includes('halogenation')) origCh = 8;
     }
-    q.chapterNum = CHAPTER_OER_MAP[origCh] || 1;
+    
+    // Distinguish actual Lipids and Nucleic Acids from ACS chapters 27/28
+    if (q.topic === "Biomolecules: Lipids" || q.topic === "Lipids" || q.question_id.includes("lipid")) {
+      q.chapterNum = 27;
+    } else if (q.topic === "Biomolecules: Nucleic Acids" || q.topic === "Nucleic Acids" || q.question_id.includes("base_pairing")) {
+      q.chapterNum = 28;
+    } else {
+      q.chapterNum = CHAPTER_OER_MAP[origCh] || 1;
+    }
   });
 }
 
@@ -307,9 +317,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeof CHAPTER_48_QUESTIONS !== 'undefined') {
     state.questions = [...state.questions, ...CHAPTER_48_QUESTIONS];
   }
+  if (typeof CHAPTER_49_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_49_QUESTIONS];
+  }
+  if (typeof CHAPTER_50_QUESTIONS !== 'undefined') {
+    state.questions = [...state.questions, ...CHAPTER_50_QUESTIONS];
+  }
 
-  // Assign OER chapter numbers to all loaded questions
-  assignOERChapterNumbers();
 
 
 
@@ -550,6 +564,67 @@ function shuffleQuestionsOptions(questions) {
   });
 }
 
+// Helper to extract a bag of words from question text to perform Jaccard similarity comparison
+function getQuestionWords(text) {
+  if (!text) return new Set();
+  // Normalize text: lowercase, remove HTML, LaTeX, KaTeX formulas, and non-alphabetic chars
+  const norm = text.toLowerCase()
+    .replace(/<\/?[^>]+(>|$)/g, " ")                  // Remove HTML tags
+    .replace(/\$\$[\s\S]*?\$\$/g, " ")                // Remove display LaTeX
+    .replace(/\$[\s\S]*?\$/g, " ")                    // Remove inline LaTeX
+    .replace(/\\\(.*?\\\)/g, " ")                     // Remove KaTeX \( ... \)
+    .replace(/\\\[.*?\\\]/g, " ")                     // Remove KaTeX \[ ... \]
+    .replace(/[^a-z\s]/g, " ")                        // Remove numbers and punctuation, keep only letters
+    .replace(/\s+/g, " ")                             // Collapse multiple spaces
+    .trim();
+  
+  const words = norm.split(" ").filter(w => w.length > 0);
+  return new Set(words);
+}
+
+// Calculate Jaccard similarity between two sets of words
+function calculateJaccardSimilarity(setA, setB) {
+  if (setA.size === 0 || setB.size === 0) return 0;
+  let intersectionSize = 0;
+  for (const elem of setA) {
+    if (setB.has(elem)) {
+      intersectionSize++;
+    }
+  }
+  const unionSize = setA.size + setB.size - intersectionSize;
+  return intersectionSize / unionSize;
+}
+
+// Filters a list of questions to ensure we do not present the same kind of problem more than once
+function filterUniqueProblemKinds(questions) {
+  if (!questions || !Array.isArray(questions)) return [];
+  const uniqueQuestions = [];
+  const representatives = []; // Array of { topic: string, words: Set }
+
+  for (const q of questions) {
+    const topic = q.topic || "";
+    const words = getQuestionWords(q.question_text || "");
+
+    let isDuplicate = false;
+    for (const rep of representatives) {
+      if (rep.topic === topic) {
+        const similarity = calculateJaccardSimilarity(words, rep.words);
+        if (similarity >= 0.60) {
+          isDuplicate = true;
+          break;
+        }
+      }
+    }
+
+    if (!isDuplicate) {
+      uniqueQuestions.push(q);
+      representatives.push({ topic, words });
+    }
+  }
+
+  return uniqueQuestions;
+}
+
 // Select a Topic
 function selectTopic(topic) {
   state.selectedTopic = topic;
@@ -564,6 +639,10 @@ function selectTopic(topic) {
       return qChapterName === topic;
     });
   }
+  
+  // Deduplicate to not present one kind of problem more than once
+  baseQuestions = filterUniqueProblemKinds(baseQuestions);
+  
   state.filteredQuestions = shuffleQuestionsOptions(baseQuestions);
 
   // Update active styling in sidebar
@@ -1218,7 +1297,8 @@ function startMockExam() {
 
   // 2. Select 70 Balanced Questions across all chapters (excluding matching lists/grids for Mock Exam)
   const questionsByChapter = {};
-  state.questions.forEach(q => {
+  const deduplicatedPool = filterUniqueProblemKinds(state.questions);
+  deduplicatedPool.forEach(q => {
     // Exclude matching-list and matching-grid from Mock Exam
     if (q.interaction_type === 'matching-list' || q.interaction_type === 'matching-grid') {
       return;
@@ -1268,7 +1348,7 @@ function startMockExam() {
   // Fallback to top off to exactly 70 questions if needed
   if (selectedQuestions.length < 70) {
     const allUniqueIds = new Set(selectedQuestions.map(q => q.question_id));
-    const generalPool = state.questions.filter(q => {
+    const generalPool = deduplicatedPool.filter(q => {
       return !allUniqueIds.has(q.question_id) &&
              q.interaction_type !== 'matching-list' &&
              q.interaction_type !== 'matching-grid';

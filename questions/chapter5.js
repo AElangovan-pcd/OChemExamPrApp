@@ -803,7 +803,7 @@ const CHAPTER_5_QUESTIONS = [
     "topic": "R/S Assignment",
     "difficulty_level": "Medium",
     "question_text": "Assign the R/S configuration to the chiral center in the deuterated compound shown below: (R)-1-deuterioethanol.",
-    "question_smiles": "O[C@@H](D)C",
+    "question_smiles": "O[C@@H]([2H])C",
     "options": [
       {
         "option_id": "A",

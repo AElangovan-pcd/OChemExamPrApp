@@ -746,19 +746,19 @@ const CHAPTER_10_QUESTIONS = [
       {
         "option_id": "A",
         "text": "A carbon radical at the tertiary carbon adjacent to the oxygen atom",
-        "smiles": "CC(C)O[C.](C)C",
+        "smiles": "CC(C)O[C](C)C",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "A carbon radical at one of the primary methyl carbons",
-        "smiles": "CC(C)OC(C)[CH2.]",
+        "smiles": "CC(C)OC(C)[CH2]",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "An oxygen radical formed by homolytic cleavage of the C-O ether bond",
-        "smiles": "CC(C)[O.]",
+        "smiles": "CC(C)[O]",
         "is_correct": false
       },
       {
@@ -1219,7 +1219,7 @@ const CHAPTER_10_QUESTIONS = [
     "topic": "Organometallic reagents",
     "difficulty_level": "Easy",
     "question_text": "Treatment of cyclopentylmagnesium bromide with deuterium oxide ($D_2O$) yields which of the following compounds?",
-    "question_smiles": "C1CCC(C1)[MgBr]",
+    "question_smiles": "C1CCC(C1)[Mg]Br",
     "options": [
       {
         "option_id": "A",
@@ -1723,7 +1723,7 @@ const CHAPTER_10_QUESTIONS = [
     "topic": "Organometallic reagents",
     "difficulty_level": "Medium",
     "question_text": "Reaction of ethylmagnesium bromide with carbon dioxide ($CO_2$), followed by acidic workup, yields which of the following compounds?",
-    "question_smiles": "CC[MgBr]",
+    "question_smiles": "CC[Mg]Br",
     "options": [
       {
         "option_id": "A",

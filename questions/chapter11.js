@@ -993,7 +993,7 @@ const CHAPTER_11_QUESTIONS = [
     "topic": "SN1 Mechanism: Carbocations",
     "difficulty_level": "Hard",
     "question_text": "Chloromethyl methyl ether (ClCH2OCH3) undergoes solvolysis in ethanol at a rate that is 10^14 times faster than chloromethane. What is the reason for this massive rate acceleration?",
-    "question_smiles": "COCCL",
+    "question_smiles": "COCCl",
     "options": [
       {
         "option_id": "A",

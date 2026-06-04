@@ -1921,7 +1921,7 @@ const CHAPTER_15_QUESTIONS = [
         "correctAnswer": "Antiaromatic / Non-aromatic tub (8 pi)"
       },
       {
-        "smiles": "[c-]-1cccc1",
+        "smiles": "[cH-]1cccc1",
         "correctAnswer": "Aromatic (6 pi)"
       }
     ],

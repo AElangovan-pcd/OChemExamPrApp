@@ -25,14 +25,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Glutamic Acid",
+      "Tyrosine",
       "Threonine",
       "Isoleucine",
-      "Phenylalanine",
-      "Arginine",
-      "Proline",
       "Methionine",
-      "Glutamic Acid",
-      "Tyrosine"
+      "Proline",
+      "Phenylalanine",
+      "Arginine"
     ],
     "options": [
       {
@@ -77,14 +77,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Phenylalanine",
-      "Glycine",
-      "Asparagine",
       "Lysine",
       "Valine",
-      "Serine",
+      "Phenylalanine",
       "Aspartic Acid",
-      "Arginine"
+      "Arginine",
+      "Glycine",
+      "Asparagine",
+      "Serine"
     ],
     "options": [
       {
@@ -129,14 +129,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Phenylalanine",
-      "Glutamic Acid",
-      "Valine",
       "Leucine",
       "Glutamine",
-      "Serine",
+      "Threonine",
       "Histidine",
-      "Threonine"
+      "Glutamic Acid",
+      "Serine",
+      "Phenylalanine",
+      "Valine"
     ],
     "options": [
       {
@@ -181,14 +181,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tyrosine",
       "Arginine",
-      "Leucine",
-      "Asparagine",
-      "Methionine",
       "Glycine",
       "Proline",
-      "Valine"
+      "Tyrosine",
+      "Asparagine",
+      "Valine",
+      "Leucine",
+      "Methionine"
     ],
     "options": [
       {
@@ -233,14 +233,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glutamic Acid",
       "Valine",
-      "Arginine",
-      "Glycine",
       "Aspartic Acid",
+      "Glycine",
+      "Glutamic Acid",
+      "Arginine",
       "Threonine",
-      "Alanine",
-      "Leucine"
+      "Leucine",
+      "Alanine"
     ],
     "options": [
       {
@@ -285,14 +285,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glutamic Acid",
-      "Phenylalanine",
       "Glutamine",
       "Lysine",
-      "Glycine",
+      "Glutamic Acid",
       "Aspartic Acid",
+      "Tryptophan",
       "Asparagine",
-      "Tryptophan"
+      "Phenylalanine",
+      "Glycine"
     ],
     "options": [
       {
@@ -328,7 +328,7 @@ const CHAPTER_43_QUESTIONS = [
         "correctAnswer": "Isoleucine"
       },
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       },
       {
@@ -337,14 +337,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cysteine",
-      "Leucine",
+      "Methionine",
       "Alanine",
-      "Glutamic Acid",
-      "Arginine",
-      "Isoleucine",
       "Phenylalanine",
-      "Methionine"
+      "Glutamic Acid",
+      "Isoleucine",
+      "Cysteine",
+      "Arginine",
+      "Leucine"
     ],
     "options": [
       {
@@ -389,14 +389,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glutamine",
-      "Methionine",
-      "Tryptophan",
-      "Threonine",
       "Valine",
       "Histidine",
-      "Glycine",
-      "Isoleucine"
+      "Isoleucine",
+      "Glutamine",
+      "Tryptophan",
+      "Threonine",
+      "Methionine",
+      "Glycine"
     ],
     "options": [
       {
@@ -432,7 +432,7 @@ const CHAPTER_43_QUESTIONS = [
         "correctAnswer": "Arginine"
       },
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       },
       {
@@ -441,14 +441,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Arginine",
       "Tryptophan",
+      "Glutamic Acid",
       "Lysine",
+      "Phenylalanine",
       "Threonine",
       "Cysteine",
-      "Serine",
-      "Phenylalanine",
-      "Glutamic Acid",
-      "Arginine"
+      "Serine"
     ],
     "options": [
       {
@@ -493,14 +493,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tyrosine",
+      "Aspartic Acid",
+      "Alanine",
+      "Tryptophan",
+      "Proline",
       "Phenylalanine",
       "Asparagine",
-      "Aspartic Acid",
-      "Proline",
-      "Tryptophan",
       "Glutamine",
-      "Alanine"
+      "Tyrosine"
     ],
     "options": [
       {
@@ -545,14 +545,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Aspartic Acid",
-      "Valine",
       "Serine",
       "Threonine",
-      "Glutamic Acid",
       "Asparagine",
       "Lysine",
-      "Glycine"
+      "Valine",
+      "Glycine",
+      "Aspartic Acid",
+      "Glutamic Acid"
     ],
     "options": [
       {
@@ -597,14 +597,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cysteine",
-      "Methionine",
+      "Leucine",
       "Glutamine",
       "Glutamic Acid",
-      "Leucine",
-      "Tyrosine",
+      "Cysteine",
       "Histidine",
-      "Phenylalanine"
+      "Phenylalanine",
+      "Methionine",
+      "Tyrosine"
     ],
     "options": [
       {
@@ -650,13 +650,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Proline",
-      "Tyrosine",
-      "Histidine",
-      "Glycine",
-      "Threonine",
       "Aspartic Acid",
-      "Alanine",
-      "Valine"
+      "Threonine",
+      "Valine",
+      "Glycine",
+      "Histidine",
+      "Tyrosine",
+      "Alanine"
     ],
     "options": [
       {
@@ -701,14 +701,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Asparagine",
-      "Serine",
-      "Arginine",
-      "Tryptophan",
-      "Cysteine",
-      "Glutamine",
       "Aspartic Acid",
-      "Isoleucine"
+      "Tryptophan",
+      "Asparagine",
+      "Glutamine",
+      "Isoleucine",
+      "Cysteine",
+      "Arginine",
+      "Serine"
     ],
     "options": [
       {
@@ -753,14 +753,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Lysine",
-      "Tyrosine",
-      "Isoleucine",
       "Phenylalanine",
+      "Arginine",
+      "Glycine",
+      "Lysine",
+      "Isoleucine",
       "Proline",
       "Serine",
-      "Glycine",
-      "Arginine"
+      "Tyrosine"
     ],
     "options": [
       {
@@ -805,14 +805,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glutamine",
       "Glutamic Acid",
       "Cysteine",
-      "Lysine",
       "Asparagine",
-      "Serine",
       "Alanine",
-      "Isoleucine"
+      "Lysine",
+      "Isoleucine",
+      "Serine",
+      "Glutamine"
     ],
     "options": [
       {
@@ -857,14 +857,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glycine",
-      "Lysine",
-      "Threonine",
-      "Arginine",
-      "Aspartic Acid",
-      "Phenylalanine",
       "Leucine",
-      "Histidine"
+      "Aspartic Acid",
+      "Glycine",
+      "Histidine",
+      "Phenylalanine",
+      "Threonine",
+      "Lysine",
+      "Arginine"
     ],
     "options": [
       {
@@ -909,14 +909,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Proline",
-      "Phenylalanine",
-      "Glutamic Acid",
+      "Arginine",
       "Tryptophan",
-      "Valine",
-      "Serine",
+      "Glutamic Acid",
+      "Phenylalanine",
       "Alanine",
-      "Arginine"
+      "Serine",
+      "Valine",
+      "Proline"
     ],
     "options": [
       {
@@ -961,14 +961,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Histidine",
-      "Valine",
-      "Asparagine",
-      "Cysteine",
       "Methionine",
       "Alanine",
       "Glycine",
-      "Leucine"
+      "Leucine",
+      "Asparagine",
+      "Cysteine",
+      "Valine",
+      "Histidine"
     ],
     "options": [
       {
@@ -1013,14 +1013,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glutamine",
-      "Tyrosine",
       "Glutamic Acid",
-      "Isoleucine",
-      "Glycine",
-      "Serine",
       "Methionine",
-      "Histidine"
+      "Glutamine",
+      "Serine",
+      "Histidine",
+      "Tyrosine",
+      "Glycine",
+      "Isoleucine"
     ],
     "options": [
       {
@@ -1065,14 +1065,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glutamic Acid",
-      "Histidine",
-      "Methionine",
-      "Threonine",
-      "Valine",
       "Asparagine",
+      "Lysine",
       "Glycine",
-      "Lysine"
+      "Valine",
+      "Methionine",
+      "Histidine",
+      "Glutamic Acid",
+      "Threonine"
     ],
     "options": [
       {
@@ -1117,14 +1117,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Asparagine",
-      "Leucine",
       "Isoleucine",
-      "Histidine",
       "Tryptophan",
+      "Serine",
       "Alanine",
+      "Leucine",
+      "Asparagine",
       "Glutamic Acid",
-      "Serine"
+      "Histidine"
     ],
     "options": [
       {
@@ -1152,7 +1152,7 @@ const CHAPTER_43_QUESTIONS = [
     "interaction_type": "matching-list",
     "match_items": [
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       },
       {
@@ -1170,13 +1170,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Glutamic Acid",
-      "Aspartic Acid",
-      "Histidine",
-      "Valine",
+      "Cysteine",
+      "Methionine",
       "Tryptophan",
       "Tyrosine",
-      "Methionine",
-      "Cysteine"
+      "Aspartic Acid",
+      "Valine",
+      "Histidine"
     ],
     "options": [
       {
@@ -1221,13 +1221,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Valine",
+      "Isoleucine",
+      "Alanine",
       "Glutamic Acid",
-      "Leucine",
       "Lysine",
       "Glycine",
-      "Valine",
-      "Alanine",
-      "Isoleucine",
+      "Leucine",
       "Phenylalanine"
     ],
     "options": [
@@ -1273,14 +1273,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glutamine",
       "Valine",
+      "Methionine",
       "Histidine",
+      "Alanine",
+      "Asparagine",
       "Tyrosine",
       "Serine",
-      "Asparagine",
-      "Methionine",
-      "Alanine"
+      "Glutamine"
     ],
     "options": [
       {
@@ -1325,14 +1325,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Phenylalanine",
       "Arginine",
-      "Glutamine",
       "Glycine",
-      "Asparagine",
-      "Proline",
       "Aspartic Acid",
-      "Isoleucine"
+      "Glutamine",
+      "Isoleucine",
+      "Phenylalanine",
+      "Proline",
+      "Asparagine"
     ],
     "options": [
       {
@@ -1372,19 +1372,19 @@ const CHAPTER_43_QUESTIONS = [
         "correctAnswer": "Alanine"
       },
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       }
     ],
     "match_options": [
-      "Alanine",
-      "Asparagine",
-      "Glutamic Acid",
-      "Lysine",
-      "Proline",
-      "Tyrosine",
       "Glutamine",
-      "Cysteine"
+      "Proline",
+      "Cysteine",
+      "Lysine",
+      "Tyrosine",
+      "Alanine",
+      "Glutamic Acid",
+      "Asparagine"
     ],
     "options": [
       {
@@ -1429,13 +1429,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tyrosine",
-      "Arginine",
-      "Serine",
       "Alanine",
-      "Asparagine",
+      "Tyrosine",
       "Methionine",
+      "Asparagine",
+      "Arginine",
       "Glycine",
+      "Serine",
       "Proline"
     ],
     "options": [
@@ -1481,14 +1481,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tryptophan",
-      "Methionine",
-      "Lysine",
-      "Alanine",
-      "Histidine",
       "Tyrosine",
+      "Proline",
+      "Tryptophan",
+      "Histidine",
       "Arginine",
-      "Proline"
+      "Alanine",
+      "Lysine",
+      "Methionine"
     ],
     "options": [
       {
@@ -1520,7 +1520,7 @@ const CHAPTER_43_QUESTIONS = [
         "correctAnswer": "Alanine"
       },
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       },
       {
@@ -1533,14 +1533,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cysteine",
-      "Glutamine",
-      "Threonine",
       "Tyrosine",
       "Valine",
-      "Alanine",
+      "Cysteine",
       "Aspartic Acid",
-      "Asparagine"
+      "Alanine",
+      "Glutamine",
+      "Asparagine",
+      "Threonine"
     ],
     "options": [
       {
@@ -1586,13 +1586,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Arginine",
-      "Glycine",
-      "Methionine",
-      "Glutamine",
-      "Alanine",
       "Glutamic Acid",
+      "Serine",
       "Aspartic Acid",
-      "Serine"
+      "Glycine",
+      "Glutamine",
+      "Methionine",
+      "Alanine"
     ],
     "options": [
       {
@@ -1637,14 +1637,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glycine",
-      "Asparagine",
-      "Serine",
       "Glutamic Acid",
-      "Lysine",
-      "Arginine",
+      "Isoleucine",
+      "Glycine",
       "Valine",
-      "Isoleucine"
+      "Arginine",
+      "Asparagine",
+      "Lysine",
+      "Serine"
     ],
     "options": [
       {
@@ -1690,13 +1690,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Phenylalanine",
-      "Glycine",
-      "Serine",
-      "Threonine",
-      "Leucine",
-      "Tryptophan",
+      "Glutamine",
       "Asparagine",
-      "Glutamine"
+      "Serine",
+      "Tryptophan",
+      "Glycine",
+      "Leucine",
+      "Threonine"
     ],
     "options": [
       {
@@ -1741,14 +1741,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Arginine",
       "Methionine",
-      "Proline",
-      "Tryptophan",
-      "Tyrosine",
-      "Glutamine",
       "Phenylalanine",
-      "Alanine"
+      "Arginine",
+      "Tyrosine",
+      "Alanine",
+      "Glutamine",
+      "Tryptophan",
+      "Proline"
     ],
     "options": [
       {
@@ -1793,14 +1793,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isoleucine",
-      "Histidine",
-      "Tyrosine",
-      "Arginine",
-      "Valine",
-      "Threonine",
       "Cysteine",
-      "Serine"
+      "Isoleucine",
+      "Arginine",
+      "Histidine",
+      "Threonine",
+      "Valine",
+      "Serine",
+      "Tyrosine"
     ],
     "options": [
       {
@@ -1845,14 +1845,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Glycine",
       "Glutamic Acid",
       "Glutamine",
+      "Cysteine",
+      "Serine",
       "Isoleucine",
       "Tryptophan",
-      "Methionine",
-      "Cysteine",
-      "Glycine",
-      "Serine"
+      "Methionine"
     ],
     "options": [
       {
@@ -1897,14 +1897,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Valine",
-      "Leucine",
-      "Aspartic Acid",
-      "Glycine",
       "Arginine",
+      "Methionine",
       "Lysine",
+      "Valine",
       "Isoleucine",
-      "Methionine"
+      "Aspartic Acid",
+      "Leucine",
+      "Glycine"
     ],
     "options": [
       {
@@ -1949,14 +1949,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Valine",
+      "Phenylalanine",
+      "Alanine",
       "Glutamine",
       "Histidine",
-      "Lysine",
-      "Alanine",
       "Methionine",
-      "Phenylalanine",
-      "Valine",
-      "Arginine"
+      "Arginine",
+      "Lysine"
     ],
     "options": [
       {
@@ -2001,14 +2001,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Proline",
+      "Glutamic Acid",
+      "Aspartic Acid",
+      "Arginine",
       "Isoleucine",
       "Glycine",
-      "Lysine",
-      "Proline",
-      "Arginine",
-      "Glutamic Acid",
       "Tryptophan",
-      "Aspartic Acid"
+      "Lysine"
     ],
     "options": [
       {
@@ -2053,14 +2053,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cysteine",
-      "Leucine",
-      "Alanine",
       "Lysine",
-      "Isoleucine",
+      "Alanine",
+      "Leucine",
+      "Aspartic Acid",
+      "Cysteine",
       "Phenylalanine",
       "Glutamic Acid",
-      "Aspartic Acid"
+      "Isoleucine"
     ],
     "options": [
       {
@@ -2105,14 +2105,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tryptophan",
-      "Glutamic Acid",
-      "Histidine",
       "Arginine",
-      "Serine",
-      "Phenylalanine",
+      "Glutamic Acid",
+      "Alanine",
       "Isoleucine",
-      "Alanine"
+      "Phenylalanine",
+      "Tryptophan",
+      "Serine",
+      "Histidine"
     ],
     "options": [
       {
@@ -2148,7 +2148,7 @@ const CHAPTER_43_QUESTIONS = [
         "correctAnswer": "Methionine"
       },
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       },
       {
@@ -2157,14 +2157,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glutamine",
-      "Serine",
+      "Glutamic Acid",
+      "Tyrosine",
+      "Methionine",
       "Glycine",
       "Arginine",
-      "Tyrosine",
-      "Glutamic Acid",
-      "Methionine",
-      "Cysteine"
+      "Cysteine",
+      "Glutamine",
+      "Serine"
     ],
     "options": [
       {
@@ -2209,13 +2209,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Methionine",
-      "Tyrosine",
-      "Alanine",
-      "Threonine",
-      "Lysine",
-      "Tryptophan",
       "Arginine",
+      "Alanine",
+      "Tyrosine",
+      "Threonine",
+      "Tryptophan",
+      "Methionine",
+      "Lysine",
       "Glutamic Acid"
     ],
     "options": [
@@ -2256,19 +2256,19 @@ const CHAPTER_43_QUESTIONS = [
         "correctAnswer": "Arginine"
       },
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       }
     ],
     "match_options": [
-      "Alanine",
       "Isoleucine",
+      "Cysteine",
+      "Asparagine",
+      "Proline",
+      "Alanine",
       "Aspartic Acid",
       "Methionine",
-      "Proline",
-      "Asparagine",
-      "Arginine",
-      "Cysteine"
+      "Arginine"
     ],
     "options": [
       {
@@ -2313,14 +2313,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Asparagine",
       "Methionine",
-      "Histidine",
-      "Alanine",
-      "Glutamine",
       "Serine",
-      "Isoleucine",
       "Valine",
-      "Asparagine"
+      "Histidine",
+      "Glutamine",
+      "Alanine",
+      "Isoleucine"
     ],
     "options": [
       {
@@ -2365,14 +2365,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Leucine",
-      "Aspartic Acid",
-      "Histidine",
+      "Tryptophan",
       "Isoleucine",
+      "Aspartic Acid",
+      "Glycine",
+      "Histidine",
       "Arginine",
       "Serine",
-      "Glycine",
-      "Tryptophan"
+      "Leucine"
     ],
     "options": [
       {
@@ -2417,14 +2417,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tryptophan",
       "Threonine",
-      "Tyrosine",
-      "Isoleucine",
-      "Proline",
       "Glutamine",
+      "Tryptophan",
+      "Tyrosine",
       "Methionine",
-      "Glutamic Acid"
+      "Glutamic Acid",
+      "Isoleucine",
+      "Proline"
     ],
     "options": [
       {
@@ -2469,14 +2469,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Proline",
-      "Asparagine",
-      "Glycine",
-      "Isoleucine",
-      "Cysteine",
-      "Methionine",
       "Histidine",
-      "Valine"
+      "Proline",
+      "Valine",
+      "Cysteine",
+      "Glycine",
+      "Asparagine",
+      "Isoleucine",
+      "Methionine"
     ],
     "options": [
       {
@@ -2521,14 +2521,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Threonine",
-      "Tryptophan",
-      "Isoleucine",
-      "Lysine",
-      "Aspartic Acid",
       "Histidine",
       "Arginine",
-      "Phenylalanine"
+      "Isoleucine",
+      "Aspartic Acid",
+      "Lysine",
+      "Tryptophan",
+      "Phenylalanine",
+      "Threonine"
     ],
     "options": [
       {
@@ -2573,14 +2573,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Aspartic Acid",
       "Glycine",
-      "Threonine",
-      "Lysine",
       "Glutamic Acid",
       "Histidine",
-      "Tyrosine",
-      "Asparagine"
+      "Threonine",
+      "Asparagine",
+      "Lysine",
+      "Aspartic Acid",
+      "Tyrosine"
     ],
     "options": [
       {
@@ -2625,14 +2625,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Leucine",
+      "Histidine",
+      "Valine",
       "Glycine",
       "Phenylalanine",
-      "Histidine",
+      "Leucine",
       "Serine",
-      "Arginine",
       "Cysteine",
-      "Valine"
+      "Arginine"
     ],
     "options": [
       {
@@ -2677,14 +2677,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Alanine",
-      "Isoleucine",
-      "Tryptophan",
-      "Glycine",
       "Methionine",
+      "Isoleucine",
+      "Glycine",
       "Asparagine",
-      "Aspartic Acid",
-      "Phenylalanine"
+      "Phenylalanine",
+      "Alanine",
+      "Tryptophan",
+      "Aspartic Acid"
     ],
     "options": [
       {
@@ -2724,19 +2724,19 @@ const CHAPTER_43_QUESTIONS = [
         "correctAnswer": "Threonine"
       },
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       }
     ],
     "match_options": [
-      "Asparagine",
-      "Threonine",
-      "Proline",
       "Isoleucine",
       "Glutamic Acid",
-      "Leucine",
+      "Threonine",
+      "Cysteine",
+      "Asparagine",
       "Aspartic Acid",
-      "Cysteine"
+      "Leucine",
+      "Proline"
     ],
     "options": [
       {
@@ -2782,13 +2782,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Phenylalanine",
-      "Glutamine",
       "Glutamic Acid",
-      "Leucine",
-      "Glycine",
+      "Glutamine",
+      "Alanine",
       "Methionine",
-      "Asparagine",
-      "Alanine"
+      "Glycine",
+      "Leucine",
+      "Asparagine"
     ],
     "options": [
       {
@@ -2828,19 +2828,19 @@ const CHAPTER_43_QUESTIONS = [
         "correctAnswer": "Glycine"
       },
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       }
     ],
     "match_options": [
+      "Phenylalanine",
       "Tyrosine",
       "Leucine",
-      "Phenylalanine",
       "Cysteine",
-      "Valine",
-      "Glycine",
       "Proline",
-      "Glutamine"
+      "Valine",
+      "Glutamine",
+      "Glycine"
     ],
     "options": [
       {
@@ -2885,14 +2885,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glutamine",
-      "Methionine",
-      "Phenylalanine",
-      "Arginine",
+      "Cysteine",
       "Leucine",
-      "Aspartic Acid",
       "Lysine",
-      "Cysteine"
+      "Methionine",
+      "Arginine",
+      "Phenylalanine",
+      "Aspartic Acid",
+      "Glutamine"
     ],
     "options": [
       {
@@ -2937,14 +2937,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Asparagine",
+      "Tyrosine",
+      "Valine",
       "Glutamine",
       "Isoleucine",
-      "Valine",
-      "Tyrosine",
-      "Proline",
       "Methionine",
-      "Histidine"
+      "Histidine",
+      "Asparagine",
+      "Proline"
     ],
     "options": [
       {
@@ -2989,14 +2989,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Alanine",
       "Asparagine",
-      "Aspartic Acid",
+      "Threonine",
       "Glycine",
-      "Phenylalanine",
       "Glutamine",
-      "Serine",
-      "Threonine"
+      "Alanine",
+      "Aspartic Acid",
+      "Phenylalanine",
+      "Serine"
     ],
     "options": [
       {
@@ -3041,14 +3041,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cysteine",
-      "Phenylalanine",
-      "Proline",
-      "Leucine",
-      "Isoleucine",
-      "Glycine",
       "Methionine",
-      "Tryptophan"
+      "Phenylalanine",
+      "Isoleucine",
+      "Tryptophan",
+      "Glycine",
+      "Cysteine",
+      "Proline",
+      "Leucine"
     ],
     "options": [
       {
@@ -3093,14 +3093,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Aspartic Acid",
+      "Tyrosine",
+      "Glycine",
+      "Leucine",
       "Methionine",
       "Alanine",
       "Arginine",
-      "Leucine",
       "Serine",
-      "Glycine",
-      "Tyrosine"
+      "Aspartic Acid"
     ],
     "options": [
       {
@@ -3136,7 +3136,7 @@ const CHAPTER_43_QUESTIONS = [
         "correctAnswer": "Arginine"
       },
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       },
       {
@@ -3145,14 +3145,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Asparagine",
       "Arginine",
-      "Cysteine",
-      "Aspartic Acid",
       "Lysine",
-      "Methionine",
       "Threonine",
-      "Glycine"
+      "Glycine",
+      "Aspartic Acid",
+      "Methionine",
+      "Asparagine",
+      "Cysteine"
     ],
     "options": [
       {
@@ -3180,7 +3180,7 @@ const CHAPTER_43_QUESTIONS = [
     "interaction_type": "matching-list",
     "match_items": [
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       },
       {
@@ -3197,14 +3197,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Leucine",
-      "Serine",
+      "Lysine",
       "Histidine",
       "Threonine",
       "Glutamine",
-      "Aspartic Acid",
       "Cysteine",
-      "Lysine"
+      "Serine",
+      "Leucine",
+      "Aspartic Acid"
     ],
     "options": [
       {
@@ -3249,14 +3249,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Alanine",
-      "Glycine",
-      "Serine",
-      "Methionine",
-      "Lysine",
       "Histidine",
-      "Leucine",
-      "Tryptophan"
+      "Serine",
+      "Lysine",
+      "Glycine",
+      "Alanine",
+      "Tryptophan",
+      "Methionine",
+      "Leucine"
     ],
     "options": [
       {
@@ -3301,14 +3301,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tryptophan",
-      "Proline",
-      "Aspartic Acid",
-      "Phenylalanine",
-      "Isoleucine",
       "Serine",
+      "Isoleucine",
+      "Phenylalanine",
+      "Aspartic Acid",
       "Asparagine",
-      "Arginine"
+      "Arginine",
+      "Tryptophan",
+      "Proline"
     ],
     "options": [
       {
@@ -3353,14 +3353,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Lysine",
-      "Methionine",
+      "Arginine",
       "Glycine",
       "Asparagine",
-      "Phenylalanine",
-      "Arginine",
+      "Histidine",
+      "Lysine",
       "Leucine",
-      "Histidine"
+      "Phenylalanine",
+      "Methionine"
     ],
     "options": [
       {
@@ -3405,14 +3405,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Cysteine",
-      "Asparagine",
-      "Isoleucine",
-      "Proline",
-      "Tyrosine",
       "Histidine",
+      "Proline",
+      "Asparagine",
+      "Tyrosine",
       "Threonine",
-      "Glutamine"
+      "Isoleucine",
+      "Glutamine",
+      "Cysteine"
     ],
     "options": [
       {
@@ -3457,14 +3457,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Histidine",
+      "Asparagine",
       "Arginine",
-      "Aspartic Acid",
-      "Threonine",
       "Phenylalanine",
       "Glutamic Acid",
+      "Threonine",
       "Proline",
-      "Asparagine",
-      "Histidine"
+      "Aspartic Acid"
     ],
     "options": [
       {
@@ -3509,14 +3509,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Tryptophan",
       "Aspartic Acid",
       "Phenylalanine",
-      "Isoleucine",
-      "Tryptophan",
-      "Glutamine",
       "Serine",
-      "Methionine",
-      "Alanine"
+      "Glutamine",
+      "Alanine",
+      "Isoleucine",
+      "Methionine"
     ],
     "options": [
       {
@@ -3561,14 +3561,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Leucine",
       "Arginine",
       "Histidine",
       "Alanine",
-      "Aspartic Acid",
-      "Threonine",
       "Tyrosine",
-      "Proline"
+      "Proline",
+      "Leucine",
+      "Aspartic Acid",
+      "Threonine"
     ],
     "options": [
       {
@@ -3613,14 +3613,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Proline",
-      "Tryptophan",
-      "Cysteine",
-      "Methionine",
-      "Leucine",
       "Arginine",
+      "Cysteine",
+      "Proline",
+      "Leucine",
+      "Tryptophan",
       "Isoleucine",
-      "Serine"
+      "Serine",
+      "Methionine"
     ],
     "options": [
       {
@@ -3665,14 +3665,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Leucine",
+      "Glutamic Acid",
+      "Methionine",
+      "Lysine",
       "Alanine",
       "Glycine",
-      "Leucine",
       "Threonine",
-      "Lysine",
-      "Methionine",
-      "Valine",
-      "Glutamic Acid"
+      "Valine"
     ],
     "options": [
       {
@@ -3717,14 +3717,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Aspartic Acid",
-      "Arginine",
-      "Cysteine",
       "Histidine",
       "Tyrosine",
+      "Leucine",
+      "Arginine",
+      "Aspartic Acid",
       "Glutamic Acid",
-      "Isoleucine",
-      "Leucine"
+      "Cysteine",
+      "Isoleucine"
     ],
     "options": [
       {
@@ -3769,14 +3769,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isoleucine",
       "Asparagine",
-      "Glycine",
-      "Methionine",
-      "Histidine",
-      "Phenylalanine",
       "Leucine",
-      "Valine"
+      "Valine",
+      "Glycine",
+      "Isoleucine",
+      "Histidine",
+      "Methionine",
+      "Phenylalanine"
     ],
     "options": [
       {
@@ -3821,14 +3821,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Histidine",
-      "Tryptophan",
-      "Valine",
-      "Serine",
-      "Methionine",
       "Arginine",
+      "Serine",
+      "Tryptophan",
       "Threonine",
-      "Glycine"
+      "Glycine",
+      "Histidine",
+      "Methionine",
+      "Valine"
     ],
     "options": [
       {
@@ -3873,14 +3873,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Phenylalanine",
+      "Threonine",
       "Methionine",
       "Glycine",
-      "Threonine",
-      "Aspartic Acid",
-      "Lysine",
+      "Tyrosine",
+      "Phenylalanine",
       "Alanine",
-      "Tyrosine"
+      "Lysine",
+      "Aspartic Acid"
     ],
     "options": [
       {
@@ -3925,14 +3925,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Lysine",
+      "Asparagine",
+      "Glycine",
+      "Cysteine",
       "Leucine",
       "Isoleucine",
-      "Cysteine",
-      "Glycine",
-      "Alanine",
       "Proline",
-      "Asparagine",
-      "Lysine"
+      "Alanine"
     ],
     "options": [
       {
@@ -3977,14 +3977,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Leucine",
-      "Valine",
-      "Cysteine",
-      "Alanine",
-      "Histidine",
-      "Phenylalanine",
+      "Lysine",
       "Threonine",
-      "Lysine"
+      "Leucine",
+      "Cysteine",
+      "Phenylalanine",
+      "Histidine",
+      "Valine",
+      "Alanine"
     ],
     "options": [
       {
@@ -4029,13 +4029,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Leucine",
-      "Histidine",
       "Isoleucine",
       "Lysine",
-      "Glutamine",
       "Asparagine",
       "Aspartic Acid",
+      "Glutamine",
+      "Histidine",
+      "Leucine",
       "Phenylalanine"
     ],
     "options": [
@@ -4081,14 +4081,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Lysine",
-      "Valine",
-      "Glutamic Acid",
+      "Aspartic Acid",
       "Arginine",
       "Methionine",
+      "Threonine",
+      "Valine",
+      "Lysine",
       "Phenylalanine",
-      "Aspartic Acid",
-      "Threonine"
+      "Glutamic Acid"
     ],
     "options": [
       {
@@ -4128,19 +4128,19 @@ const CHAPTER_43_QUESTIONS = [
         "correctAnswer": "Leucine"
       },
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       }
     ],
     "match_options": [
-      "Tyrosine",
-      "Serine",
-      "Leucine",
       "Threonine",
       "Histidine",
+      "Tyrosine",
+      "Cysteine",
       "Isoleucine",
+      "Serine",
       "Lysine",
-      "Cysteine"
+      "Leucine"
     ],
     "options": [
       {
@@ -4176,7 +4176,7 @@ const CHAPTER_43_QUESTIONS = [
         "correctAnswer": "Phenylalanine"
       },
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       },
       {
@@ -4185,14 +4185,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tyrosine",
-      "Threonine",
-      "Leucine",
-      "Phenylalanine",
-      "Cysteine",
       "Alanine",
+      "Phenylalanine",
+      "Threonine",
+      "Tyrosine",
+      "Asparagine",
+      "Cysteine",
       "Glutamic Acid",
-      "Asparagine"
+      "Leucine"
     ],
     "options": [
       {
@@ -4237,13 +4237,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Alanine",
-      "Glycine",
+      "Leucine",
       "Glutamic Acid",
+      "Serine",
       "Proline",
       "Phenylalanine",
-      "Leucine",
-      "Serine",
+      "Alanine",
+      "Glycine",
       "Threonine"
     ],
     "options": [
@@ -4289,14 +4289,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Methionine",
       "Histidine",
-      "Arginine",
-      "Valine",
-      "Glutamic Acid",
       "Tryptophan",
+      "Methionine",
+      "Alanine",
       "Asparagine",
-      "Alanine"
+      "Glutamic Acid",
+      "Arginine",
+      "Valine"
     ],
     "options": [
       {
@@ -4341,14 +4341,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glycine",
       "Glutamic Acid",
-      "Cysteine",
       "Valine",
+      "Glycine",
+      "Arginine",
+      "Isoleucine",
       "Proline",
       "Asparagine",
-      "Arginine",
-      "Isoleucine"
+      "Cysteine"
     ],
     "options": [
       {
@@ -4393,14 +4393,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Glycine",
-      "Serine",
-      "Threonine",
-      "Methionine",
-      "Glutamine",
-      "Alanine",
       "Valine",
-      "Tyrosine"
+      "Tyrosine",
+      "Glutamine",
+      "Serine",
+      "Methionine",
+      "Glycine",
+      "Threonine",
+      "Alanine"
     ],
     "options": [
       {
@@ -4445,14 +4445,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Arginine",
-      "Leucine",
-      "Serine",
-      "Threonine",
+      "Proline",
       "Aspartic Acid",
       "Methionine",
-      "Proline",
-      "Asparagine"
+      "Serine",
+      "Asparagine",
+      "Leucine",
+      "Arginine",
+      "Threonine"
     ],
     "options": [
       {
@@ -4497,13 +4497,13 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Phenylalanine",
-      "Arginine",
-      "Glutamine",
+      "Methionine",
       "Leucine",
+      "Glutamine",
+      "Arginine",
+      "Phenylalanine",
       "Proline",
       "Serine",
-      "Methionine",
       "Asparagine"
     ],
     "options": [
@@ -4550,13 +4550,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Glutamic Acid",
-      "Leucine",
       "Isoleucine",
-      "Methionine",
       "Cysteine",
-      "Phenylalanine",
+      "Leucine",
+      "Tyrosine",
+      "Methionine",
       "Proline",
-      "Tyrosine"
+      "Phenylalanine"
     ],
     "options": [
       {
@@ -4584,7 +4584,7 @@ const CHAPTER_43_QUESTIONS = [
     "interaction_type": "matching-list",
     "match_items": [
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       },
       {
@@ -4601,14 +4601,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Proline",
-      "Glycine",
       "Methionine",
       "Cysteine",
       "Asparagine",
-      "Tryptophan",
+      "Proline",
       "Phenylalanine",
-      "Serine"
+      "Serine",
+      "Tryptophan",
+      "Glycine"
     ],
     "options": [
       {
@@ -4640,7 +4640,7 @@ const CHAPTER_43_QUESTIONS = [
         "correctAnswer": "Aspartic Acid"
       },
       {
-        "smiles": "CS[C@@H](C(=O)O)N",
+        "smiles": "SC[C@@H](C(=O)O)N",
         "correctAnswer": "Cysteine"
       },
       {
@@ -4654,13 +4654,13 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Tryptophan",
-      "Serine",
       "Threonine",
-      "Aspartic Acid",
-      "Leucine",
       "Cysteine",
       "Histidine",
-      "Alanine"
+      "Alanine",
+      "Leucine",
+      "Aspartic Acid",
+      "Serine"
     ],
     "options": [
       {
@@ -4705,14 +4705,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
+      "Arginine",
       "Lysine",
+      "Tyrosine",
+      "Isoleucine",
       "Histidine",
       "Cysteine",
-      "Arginine",
-      "Isoleucine",
       "Glycine",
-      "Tryptophan",
-      "Tyrosine"
+      "Tryptophan"
     ],
     "options": [
       {
@@ -4757,14 +4757,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Phenylalanine",
-      "Proline",
-      "Threonine",
       "Isoleucine",
-      "Glutamic Acid",
-      "Glycine",
       "Lysine",
-      "Tyrosine"
+      "Glycine",
+      "Tyrosine",
+      "Proline",
+      "Glutamic Acid",
+      "Phenylalanine",
+      "Threonine"
     ],
     "options": [
       {
@@ -4810,12 +4810,12 @@ const CHAPTER_43_QUESTIONS = [
     ],
     "match_options": [
       "Leucine",
-      "Asparagine",
       "Glycine",
-      "Lysine",
       "Glutamic Acid",
-      "Valine",
       "Aspartic Acid",
+      "Valine",
+      "Lysine",
+      "Asparagine",
       "Cysteine"
     ],
     "options": [
@@ -4861,14 +4861,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Tyrosine",
-      "Histidine",
-      "Alanine",
-      "Arginine",
-      "Lysine",
+      "Aspartic Acid",
       "Tryptophan",
       "Isoleucine",
-      "Aspartic Acid"
+      "Arginine",
+      "Alanine",
+      "Histidine",
+      "Tyrosine",
+      "Lysine"
     ],
     "options": [
       {
@@ -4913,14 +4913,14 @@ const CHAPTER_43_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Valine",
-      "Proline",
-      "Serine",
       "Isoleucine",
-      "Lysine",
       "Leucine",
+      "Serine",
+      "Glutamine",
+      "Lysine",
       "Histidine",
-      "Glutamine"
+      "Proline",
+      "Valine"
     ],
     "options": [
       {

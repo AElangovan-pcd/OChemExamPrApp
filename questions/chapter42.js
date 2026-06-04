@@ -26,14 +26,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "D-Allose",
+      "D-Glucose",
+      "D-Idose",
+      "D-Altrose",
+      "D-Arabinose",
       "D-Gulose",
       "D-Xylose",
-      "D-Allose",
-      "D-Galactose",
-      "D-Altrose",
-      "D-Idose",
-      "D-Glucose",
-      "D-Arabinose"
+      "D-Galactose"
     ],
     "options": [
       {
@@ -71,12 +71,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b1-D-Altropyranose",
-      "\u03b2-D-Gulopyranose",
-      "\u03b2-D-Talopyranose",
-      "\u03b1-D-Galactopyranose",
       "\u03b2-D-Glucopyranose",
-      "\u03b2-D-Altropyranose"
+      "\u03b1-D-Altropyranose",
+      "\u03b2-D-Altropyranose",
+      "\u03b2-D-Gulopyranose",
+      "\u03b1-D-Galactopyranose",
+      "\u03b2-D-Talopyranose"
     ],
     "options": [
       {
@@ -122,14 +122,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Xylose",
-      "D-Lyxose",
-      "D-Allose",
-      "D-Arabinose",
-      "D-Glucose",
       "D-Altrose",
+      "D-Xylose",
       "D-Talose",
-      "D-Gulose"
+      "D-Gulose",
+      "D-Lyxose",
+      "D-Glucose",
+      "D-Arabinose",
+      "D-Allose"
     ],
     "options": [
       {
@@ -167,12 +167,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "\u03b2-D-Idopyranose",
+      "\u03b2-D-Talopyranose",
       "\u03b2-D-Allopyranose",
       "\u03b2-D-Mannopyranose",
-      "\u03b2-D-Glucopyranose",
       "\u03b1-D-Altropyranose",
-      "\u03b2-D-Idopyranose",
-      "\u03b2-D-Talopyranose"
+      "\u03b2-D-Glucopyranose"
     ],
     "options": [
       {
@@ -218,14 +218,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Mannose",
-      "D-Gulose",
+      "D-Arabinose",
+      "D-Talose",
+      "D-Idose",
       "D-Glucose",
       "D-Altrose",
       "D-Galactose",
-      "D-Arabinose",
-      "D-Idose",
-      "D-Talose"
+      "D-Gulose",
+      "D-Mannose"
     ],
     "options": [
       {
@@ -263,12 +263,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Altropyranose",
       "\u03b2-D-Glucopyranose",
+      "\u03b2-D-Allopyranose",
       "\u03b1-D-Mannopyranose",
-      "\u03b1-D-Idopyranose",
       "\u03b1-D-Glucopyranose",
-      "\u03b2-D-Allopyranose"
+      "\u03b2-D-Altropyranose",
+      "\u03b1-D-Idopyranose"
     ],
     "options": [
       {
@@ -315,13 +315,13 @@ const CHAPTER_42_QUESTIONS = [
     ],
     "match_options": [
       "D-Idose",
+      "D-Arabinose",
+      "D-Lyxose",
+      "D-Gulose",
+      "D-Ribose",
       "D-Altrose",
       "D-Allose",
-      "D-Ribose",
-      "D-Arabinose",
-      "D-Gulose",
-      "D-Glucose",
-      "D-Lyxose"
+      "D-Glucose"
     ],
     "options": [
       {
@@ -359,12 +359,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "\u03b2-D-Allopyranose",
       "\u03b1-D-Gulopyranose",
-      "\u03b1-D-Galactopyranose",
-      "\u03b2-D-Mannopyranose",
       "\u03b2-D-Altropyranose",
       "\u03b1-D-Mannopyranose",
-      "\u03b2-D-Allopyranose"
+      "\u03b2-D-Mannopyranose",
+      "\u03b1-D-Galactopyranose"
     ],
     "options": [
       {
@@ -410,14 +410,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Ribose",
-      "D-Galactose",
-      "D-Arabinose",
+      "D-Gulose",
       "D-Altrose",
-      "D-Talose",
-      "D-Allose",
+      "D-Galactose",
       "D-Glucose",
-      "D-Gulose"
+      "D-Arabinose",
+      "D-Talose",
+      "D-Ribose",
+      "D-Allose"
     ],
     "options": [
       {
@@ -456,10 +456,10 @@ const CHAPTER_42_QUESTIONS = [
     ],
     "match_options": [
       "\u03b1-D-Galactopyranose",
+      "\u03b1-D-Altropyranose",
+      "\u03b2-D-Idopyranose",
       "\u03b2-D-Altropyranose",
       "\u03b1-D-Gulopyranose",
-      "\u03b2-D-Idopyranose",
-      "\u03b1-D-Altropyranose",
       "\u03b1-D-Mannopyranose"
     ],
     "options": [
@@ -506,14 +506,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Ribose",
       "D-Gulose",
-      "D-Altrose",
       "D-Talose",
+      "D-Altrose",
+      "D-Mannose",
       "D-Xylose",
-      "D-Arabinose",
       "D-Galactose",
-      "D-Mannose"
+      "D-Ribose",
+      "D-Arabinose"
     ],
     "options": [
       {
@@ -551,12 +551,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Talopyranose",
       "\u03b1-D-Galactopyranose",
       "\u03b2-D-Allopyranose",
-      "\u03b2-D-Galactopyranose",
       "\u03b2-D-Idopyranose",
-      "\u03b2-D-Mannopyranose"
+      "\u03b2-D-Mannopyranose",
+      "\u03b2-D-Galactopyranose",
+      "\u03b2-D-Talopyranose"
     ],
     "options": [
       {
@@ -602,14 +602,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "D-Talose",
       "D-Allose",
       "D-Gulose",
       "D-Idose",
       "D-Arabinose",
-      "D-Mannose",
-      "D-Glucose",
       "D-Xylose",
-      "D-Talose"
+      "D-Glucose",
+      "D-Mannose"
     ],
     "options": [
       {
@@ -647,12 +647,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Allopyranose",
-      "\u03b2-D-Glucopyranose",
-      "\u03b1-D-Allopyranose",
-      "\u03b1-D-Galactopyranose",
       "\u03b2-D-Idopyranose",
-      "\u03b1-D-Talopyranose"
+      "\u03b1-D-Talopyranose",
+      "\u03b1-D-Galactopyranose",
+      "\u03b2-D-Allopyranose",
+      "\u03b1-D-Allopyranose",
+      "\u03b2-D-Glucopyranose"
     ],
     "options": [
       {
@@ -698,14 +698,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "D-Gulose",
+      "D-Allose",
+      "D-Idose",
+      "D-Glucose",
       "D-Ribose",
       "D-Xylose",
-      "D-Allose",
       "D-Talose",
-      "D-Gulose",
-      "D-Galactose",
-      "D-Glucose",
-      "D-Idose"
+      "D-Galactose"
     ],
     "options": [
       {
@@ -743,12 +743,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b1-D-Gulopyranose",
       "\u03b2-D-Idopyranose",
-      "\u03b2-D-Talopyranose",
-      "\u03b1-D-Allopyranose",
       "\u03b2-D-Altropyranose",
-      "\u03b1-D-Idopyranose"
+      "\u03b1-D-Gulopyranose",
+      "\u03b1-D-Idopyranose",
+      "\u03b2-D-Talopyranose",
+      "\u03b1-D-Allopyranose"
     ],
     "options": [
       {
@@ -794,13 +794,13 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Talose",
-      "D-Xylose",
-      "D-Galactose",
-      "D-Allose",
-      "D-Ribose",
-      "D-Altrose",
       "D-Glucose",
+      "D-Allose",
+      "D-Xylose",
+      "D-Talose",
+      "D-Galactose",
+      "D-Altrose",
+      "D-Ribose",
       "D-Idose"
     ],
     "options": [
@@ -839,12 +839,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Galactopyranose",
-      "\u03b1-D-Glucopyranose",
-      "\u03b1-D-Gulopyranose",
       "\u03b1-D-Altropyranose",
+      "\u03b1-D-Glucopyranose",
       "\u03b2-D-Gulopyranose",
-      "\u03b2-D-Glucopyranose"
+      "\u03b2-D-Glucopyranose",
+      "\u03b2-D-Galactopyranose",
+      "\u03b1-D-Gulopyranose"
     ],
     "options": [
       {
@@ -890,13 +890,13 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Xylose",
-      "D-Ribose",
-      "D-Galactose",
-      "D-Allose",
-      "D-Arabinose",
       "D-Altrose",
       "D-Gulose",
+      "D-Allose",
+      "D-Ribose",
+      "D-Galactose",
+      "D-Arabinose",
+      "D-Xylose",
       "D-Lyxose"
     ],
     "options": [
@@ -935,12 +935,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b1-D-Altropyranose",
-      "\u03b2-D-Altropyranose",
-      "\u03b2-D-Allopyranose",
+      "\u03b2-D-Gulopyranose",
       "\u03b1-D-Glucopyranose",
+      "\u03b2-D-Allopyranose",
       "\u03b2-D-Mannopyranose",
-      "\u03b2-D-Gulopyranose"
+      "\u03b1-D-Altropyranose",
+      "\u03b2-D-Altropyranose"
     ],
     "options": [
       {
@@ -986,14 +986,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Talose",
-      "D-Galactose",
-      "D-Allose",
+      "D-Altrose",
+      "D-Lyxose",
       "D-Idose",
+      "D-Galactose",
       "D-Xylose",
       "D-Mannose",
-      "D-Lyxose",
-      "D-Altrose"
+      "D-Talose",
+      "D-Allose"
     ],
     "options": [
       {
@@ -1031,12 +1031,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Idopyranose",
-      "\u03b2-D-Allopyranose",
-      "\u03b2-D-Mannopyranose",
       "\u03b2-D-Gulopyranose",
-      "\u03b2-D-Talopyranose",
-      "\u03b1-D-Idopyranose"
+      "\u03b2-D-Idopyranose",
+      "\u03b2-D-Mannopyranose",
+      "\u03b2-D-Allopyranose",
+      "\u03b1-D-Idopyranose",
+      "\u03b2-D-Talopyranose"
     ],
     "options": [
       {
@@ -1083,12 +1083,12 @@ const CHAPTER_42_QUESTIONS = [
     ],
     "match_options": [
       "D-Xylose",
+      "D-Arabinose",
       "D-Mannose",
       "D-Talose",
-      "D-Lyxose",
-      "D-Ribose",
-      "D-Arabinose",
       "D-Galactose",
+      "D-Ribose",
+      "D-Lyxose",
       "D-Idose"
     ],
     "options": [
@@ -1128,11 +1128,11 @@ const CHAPTER_42_QUESTIONS = [
     ],
     "match_options": [
       "\u03b1-D-Galactopyranose",
-      "\u03b2-D-Altropyranose",
-      "\u03b2-D-Glucopyranose",
       "\u03b1-D-Altropyranose",
       "\u03b2-D-Idopyranose",
-      "\u03b2-D-Gulopyranose"
+      "\u03b2-D-Gulopyranose",
+      "\u03b2-D-Glucopyranose",
+      "\u03b2-D-Altropyranose"
     ],
     "options": [
       {
@@ -1178,13 +1178,13 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Lyxose",
       "D-Talose",
-      "D-Ribose",
-      "D-Gulose",
       "D-Arabinose",
+      "D-Gulose",
+      "D-Lyxose",
       "D-Idose",
       "D-Galactose",
+      "D-Ribose",
       "D-Xylose"
     ],
     "options": [
@@ -1223,12 +1223,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Gulopyranose",
-      "\u03b2-D-Galactopyranose",
-      "\u03b2-D-Allopyranose",
       "\u03b1-D-Glucopyranose",
+      "\u03b2-D-Galactopyranose",
+      "\u03b2-D-Gulopyranose",
       "\u03b2-D-Talopyranose",
-      "\u03b1-D-Gulopyranose"
+      "\u03b1-D-Gulopyranose",
+      "\u03b2-D-Allopyranose"
     ],
     "options": [
       {
@@ -1276,12 +1276,12 @@ const CHAPTER_42_QUESTIONS = [
     "match_options": [
       "D-Mannose",
       "D-Altrose",
-      "D-Talose",
-      "D-Idose",
-      "D-Lyxose",
-      "D-Ribose",
       "D-Glucose",
-      "D-Galactose"
+      "D-Idose",
+      "D-Ribose",
+      "D-Galactose",
+      "D-Talose",
+      "D-Lyxose"
     ],
     "options": [
       {
@@ -1319,12 +1319,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Allopyranose",
-      "\u03b2-D-Altropyranose",
       "\u03b2-D-Idopyranose",
-      "\u03b1-D-Talopyranose",
+      "\u03b2-D-Altropyranose",
+      "\u03b2-D-Allopyranose",
       "\u03b1-D-Idopyranose",
-      "\u03b1-D-Altropyranose"
+      "\u03b1-D-Altropyranose",
+      "\u03b1-D-Talopyranose"
     ],
     "options": [
       {
@@ -1370,14 +1370,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Ribose",
-      "D-Glucose",
-      "D-Galactose",
       "D-Gulose",
+      "D-Ribose",
+      "D-Altrose",
       "D-Xylose",
-      "D-Mannose",
+      "D-Glucose",
       "D-Arabinose",
-      "D-Altrose"
+      "D-Galactose",
+      "D-Mannose"
     ],
     "options": [
       {
@@ -1415,12 +1415,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Gulopyranose",
-      "\u03b2-D-Talopyranose",
       "\u03b2-D-Galactopyranose",
-      "\u03b1-D-Talopyranose",
+      "\u03b1-D-Idopyranose",
       "\u03b1-D-Gulopyranose",
-      "\u03b1-D-Idopyranose"
+      "\u03b2-D-Gulopyranose",
+      "\u03b1-D-Talopyranose",
+      "\u03b2-D-Talopyranose"
     ],
     "options": [
       {
@@ -1466,14 +1466,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Ribose",
       "D-Gulose",
+      "D-Ribose",
       "D-Mannose",
-      "D-Galactose",
-      "D-Idose",
       "D-Lyxose",
+      "D-Galactose",
       "D-Xylose",
-      "D-Glucose"
+      "D-Glucose",
+      "D-Idose"
     ],
     "options": [
       {
@@ -1511,12 +1511,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b1-D-Gulopyranose",
-      "\u03b1-D-Glucopyranose",
       "\u03b1-D-Idopyranose",
-      "\u03b2-D-Talopyranose",
       "\u03b1-D-Altropyranose",
-      "\u03b2-D-Altropyranose"
+      "\u03b1-D-Glucopyranose",
+      "\u03b1-D-Gulopyranose",
+      "\u03b2-D-Altropyranose",
+      "\u03b2-D-Talopyranose"
     ],
     "options": [
       {
@@ -1562,13 +1562,13 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Idose",
-      "D-Lyxose",
-      "D-Gulose",
       "D-Galactose",
-      "D-Arabinose",
       "D-Talose",
+      "D-Lyxose",
       "D-Ribose",
+      "D-Idose",
+      "D-Arabinose",
+      "D-Gulose",
       "D-Xylose"
     ],
     "options": [
@@ -1607,12 +1607,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Mannopyranose",
-      "\u03b2-D-Gulopyranose",
       "\u03b2-D-Talopyranose",
-      "\u03b1-D-Gulopyranose",
       "\u03b2-D-Galactopyranose",
-      "\u03b1-D-Altropyranose"
+      "\u03b1-D-Gulopyranose",
+      "\u03b2-D-Gulopyranose",
+      "\u03b1-D-Altropyranose",
+      "\u03b2-D-Mannopyranose"
     ],
     "options": [
       {
@@ -1658,14 +1658,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "D-Altrose",
       "D-Gulose",
       "D-Ribose",
-      "D-Glucose",
-      "D-Altrose",
       "D-Mannose",
-      "D-Galactose",
       "D-Arabinose",
-      "D-Idose"
+      "D-Glucose",
+      "D-Idose",
+      "D-Galactose"
     ],
     "options": [
       {
@@ -1703,12 +1703,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Idopyranose",
+      "\u03b2-D-Altropyranose",
       "\u03b2-D-Gulopyranose",
-      "\u03b1-D-Allopyranose",
       "\u03b1-D-Galactopyranose",
-      "\u03b1-D-Mannopyranose",
-      "\u03b2-D-Altropyranose"
+      "\u03b2-D-Idopyranose",
+      "\u03b1-D-Allopyranose",
+      "\u03b1-D-Mannopyranose"
     ],
     "options": [
       {
@@ -1755,13 +1755,13 @@ const CHAPTER_42_QUESTIONS = [
     ],
     "match_options": [
       "D-Idose",
-      "D-Gulose",
+      "D-Allose",
       "D-Mannose",
-      "D-Talose",
-      "D-Altrose",
-      "D-Ribose",
       "D-Glucose",
-      "D-Allose"
+      "D-Altrose",
+      "D-Gulose",
+      "D-Ribose",
+      "D-Talose"
     ],
     "options": [
       {
@@ -1799,12 +1799,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Glucopyranose",
-      "\u03b1-D-Mannopyranose",
-      "\u03b1-D-Allopyranose",
       "\u03b1-D-Galactopyranose",
-      "\u03b1-D-Talopyranose",
-      "\u03b1-D-Gulopyranose"
+      "\u03b1-D-Mannopyranose",
+      "\u03b2-D-Glucopyranose",
+      "\u03b1-D-Gulopyranose",
+      "\u03b1-D-Allopyranose",
+      "\u03b1-D-Talopyranose"
     ],
     "options": [
       {
@@ -1850,14 +1850,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Galactose",
-      "D-Allose",
       "D-Lyxose",
-      "D-Talose",
-      "D-Glucose",
+      "D-Galactose",
       "D-Xylose",
+      "D-Glucose",
       "D-Idose",
-      "D-Gulose"
+      "D-Allose",
+      "D-Gulose",
+      "D-Talose"
     ],
     "options": [
       {
@@ -1895,12 +1895,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Mannopyranose",
-      "\u03b2-D-Gulopyranose",
-      "\u03b1-D-Gulopyranose",
       "\u03b1-D-Mannopyranose",
+      "\u03b2-D-Mannopyranose",
       "\u03b2-D-Allopyranose",
-      "\u03b1-D-Altropyranose"
+      "\u03b1-D-Altropyranose",
+      "\u03b2-D-Gulopyranose",
+      "\u03b1-D-Gulopyranose"
     ],
     "options": [
       {
@@ -1946,14 +1946,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Xylose",
       "D-Altrose",
-      "D-Arabinose",
-      "D-Allose",
-      "D-Mannose",
-      "D-Talose",
       "D-Glucose",
-      "D-Galactose"
+      "D-Galactose",
+      "D-Talose",
+      "D-Arabinose",
+      "D-Mannose",
+      "D-Xylose",
+      "D-Allose"
     ],
     "options": [
       {
@@ -1991,12 +1991,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Mannopyranose",
-      "\u03b1-D-Talopyranose",
-      "\u03b1-D-Idopyranose",
-      "\u03b2-D-Gulopyranose",
       "\u03b1-D-Gulopyranose",
-      "\u03b2-D-Idopyranose"
+      "\u03b1-D-Talopyranose",
+      "\u03b2-D-Mannopyranose",
+      "\u03b1-D-Idopyranose",
+      "\u03b2-D-Idopyranose",
+      "\u03b2-D-Gulopyranose"
     ],
     "options": [
       {
@@ -2042,14 +2042,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "D-Talose",
+      "D-Ribose",
+      "D-Lyxose",
       "D-Idose",
       "D-Arabinose",
-      "D-Allose",
-      "D-Ribose",
-      "D-Mannose",
       "D-Altrose",
-      "D-Talose",
-      "D-Lyxose"
+      "D-Mannose",
+      "D-Allose"
     ],
     "options": [
       {
@@ -2087,12 +2087,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "\u03b1-D-Gulopyranose",
+      "\u03b2-D-Gulopyranose",
       "\u03b1-D-Galactopyranose",
       "\u03b2-D-Glucopyranose",
-      "\u03b2-D-Allopyranose",
       "\u03b2-D-Altropyranose",
-      "\u03b2-D-Gulopyranose",
-      "\u03b1-D-Gulopyranose"
+      "\u03b2-D-Allopyranose"
     ],
     "options": [
       {
@@ -2138,14 +2138,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Lyxose",
-      "D-Glucose",
-      "D-Mannose",
       "D-Altrose",
-      "D-Allose",
+      "D-Lyxose",
+      "D-Mannose",
+      "D-Glucose",
+      "D-Ribose",
       "D-Idose",
-      "D-Gulose",
-      "D-Ribose"
+      "D-Allose",
+      "D-Gulose"
     ],
     "options": [
       {
@@ -2183,12 +2183,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Altropyranose",
       "\u03b2-D-Talopyranose",
-      "\u03b1-D-Mannopyranose",
-      "\u03b1-D-Gulopyranose",
       "\u03b2-D-Glucopyranose",
-      "\u03b2-D-Galactopyranose"
+      "\u03b2-D-Galactopyranose",
+      "\u03b1-D-Gulopyranose",
+      "\u03b2-D-Altropyranose",
+      "\u03b1-D-Mannopyranose"
     ],
     "options": [
       {
@@ -2234,14 +2234,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Galactose",
-      "D-Arabinose",
-      "D-Allose",
-      "D-Ribose",
       "D-Glucose",
-      "D-Idose",
+      "D-Ribose",
+      "D-Allose",
+      "D-Galactose",
       "D-Altrose",
-      "D-Mannose"
+      "D-Idose",
+      "D-Mannose",
+      "D-Arabinose"
     ],
     "options": [
       {
@@ -2279,12 +2279,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Talopyranose",
       "\u03b2-D-Idopyranose",
+      "\u03b2-D-Mannopyranose",
+      "\u03b2-D-Altropyranose",
       "\u03b2-D-Galactopyranose",
       "\u03b1-D-Mannopyranose",
-      "\u03b2-D-Mannopyranose",
-      "\u03b2-D-Altropyranose"
+      "\u03b2-D-Talopyranose"
     ],
     "options": [
       {
@@ -2330,14 +2330,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Arabinose",
-      "D-Altrose",
-      "D-Idose",
-      "D-Xylose",
       "D-Talose",
+      "D-Glucose",
+      "D-Idose",
+      "D-Altrose",
       "D-Mannose",
-      "D-Lyxose",
-      "D-Glucose"
+      "D-Arabinose",
+      "D-Xylose",
+      "D-Lyxose"
     ],
     "options": [
       {
@@ -2375,12 +2375,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Allopyranose",
-      "\u03b2-D-Talopyranose",
-      "\u03b1-D-Idopyranose",
       "\u03b2-D-Idopyranose",
-      "\u03b2-D-Altropyranose",
-      "\u03b2-D-Mannopyranose"
+      "\u03b1-D-Idopyranose",
+      "\u03b2-D-Talopyranose",
+      "\u03b2-D-Allopyranose",
+      "\u03b2-D-Mannopyranose",
+      "\u03b2-D-Altropyranose"
     ],
     "options": [
       {
@@ -2426,14 +2426,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Allose",
-      "D-Glucose",
-      "D-Idose",
-      "D-Galactose",
-      "D-Gulose",
       "D-Ribose",
       "D-Xylose",
-      "D-Arabinose"
+      "D-Galactose",
+      "D-Glucose",
+      "D-Allose",
+      "D-Gulose",
+      "D-Arabinose",
+      "D-Idose"
     ],
     "options": [
       {
@@ -2471,12 +2471,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b1-D-Altropyranose",
       "\u03b2-D-Altropyranose",
       "\u03b2-D-Galactopyranose",
-      "\u03b2-D-Allopyranose",
+      "\u03b1-D-Altropyranose",
       "\u03b1-D-Idopyranose",
-      "\u03b2-D-Talopyranose"
+      "\u03b2-D-Talopyranose",
+      "\u03b2-D-Allopyranose"
     ],
     "options": [
       {
@@ -2523,13 +2523,13 @@ const CHAPTER_42_QUESTIONS = [
     ],
     "match_options": [
       "D-Xylose",
-      "D-Lyxose",
+      "D-Ribose",
       "D-Altrose",
       "D-Idose",
-      "D-Talose",
-      "D-Ribose",
+      "D-Arabinose",
       "D-Galactose",
-      "D-Arabinose"
+      "D-Lyxose",
+      "D-Talose"
     ],
     "options": [
       {
@@ -2567,12 +2567,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Allopyranose",
-      "\u03b2-D-Glucopyranose",
       "\u03b1-D-Idopyranose",
+      "\u03b2-D-Allopyranose",
       "\u03b2-D-Talopyranose",
-      "\u03b2-D-Mannopyranose",
-      "\u03b2-D-Galactopyranose"
+      "\u03b2-D-Glucopyranose",
+      "\u03b2-D-Galactopyranose",
+      "\u03b2-D-Mannopyranose"
     ],
     "options": [
       {
@@ -2618,14 +2618,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Glucose",
+      "D-Talose",
+      "D-Galactose",
+      "D-Ribose",
+      "D-Lyxose",
+      "D-Mannose",
       "D-Arabinose",
       "D-Gulose",
-      "D-Galactose",
-      "D-Talose",
-      "D-Mannose",
-      "D-Ribose",
-      "D-Lyxose"
+      "D-Glucose"
     ],
     "options": [
       {
@@ -2663,12 +2663,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b1-D-Idopyranose",
-      "\u03b2-D-Galactopyranose",
-      "\u03b2-D-Idopyranose",
+      "\u03b2-D-Talopyranose",
       "\u03b1-D-Allopyranose",
+      "\u03b2-D-Galactopyranose",
       "\u03b2-D-Allopyranose",
-      "\u03b2-D-Talopyranose"
+      "\u03b2-D-Idopyranose",
+      "\u03b1-D-Idopyranose"
     ],
     "options": [
       {
@@ -2714,14 +2714,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Galactose",
-      "D-Arabinose",
       "D-Allose",
-      "D-Gulose",
-      "D-Lyxose",
-      "D-Glucose",
+      "D-Galactose",
+      "D-Ribose",
       "D-Xylose",
-      "D-Ribose"
+      "D-Glucose",
+      "D-Lyxose",
+      "D-Arabinose",
+      "D-Gulose"
     ],
     "options": [
       {
@@ -2759,12 +2759,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b1-D-Talopyranose",
-      "\u03b2-D-Idopyranose",
-      "\u03b2-D-Mannopyranose",
       "\u03b2-D-Glucopyranose",
+      "\u03b2-D-Mannopyranose",
       "\u03b2-D-Talopyranose",
-      "\u03b1-D-Gulopyranose"
+      "\u03b1-D-Talopyranose",
+      "\u03b1-D-Gulopyranose",
+      "\u03b2-D-Idopyranose"
     ],
     "options": [
       {
@@ -2810,14 +2810,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "D-Allose",
+      "D-Arabinose",
       "D-Gulose",
       "D-Xylose",
-      "D-Ribose",
-      "D-Glucose",
-      "D-Allose",
       "D-Lyxose",
+      "D-Glucose",
       "D-Idose",
-      "D-Arabinose"
+      "D-Ribose"
     ],
     "options": [
       {
@@ -2857,9 +2857,9 @@ const CHAPTER_42_QUESTIONS = [
     "match_options": [
       "\u03b2-D-Allopyranose",
       "\u03b1-D-Mannopyranose",
-      "\u03b2-D-Galactopyranose",
       "\u03b1-D-Gulopyranose",
       "\u03b1-D-Idopyranose",
+      "\u03b2-D-Galactopyranose",
       "\u03b1-D-Galactopyranose"
     ],
     "options": [
@@ -2906,13 +2906,13 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Mannose",
-      "D-Altrose",
-      "D-Allose",
       "D-Arabinose",
+      "D-Altrose",
+      "D-Talose",
       "D-Galactose",
       "D-Xylose",
-      "D-Talose",
+      "D-Allose",
+      "D-Mannose",
       "D-Lyxose"
     ],
     "options": [
@@ -2951,12 +2951,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b1-D-Altropyranose",
-      "\u03b2-D-Gulopyranose",
-      "\u03b1-D-Idopyranose",
       "\u03b1-D-Talopyranose",
-      "\u03b2-D-Altropyranose",
-      "\u03b2-D-Mannopyranose"
+      "\u03b2-D-Gulopyranose",
+      "\u03b2-D-Mannopyranose",
+      "\u03b1-D-Idopyranose",
+      "\u03b1-D-Altropyranose",
+      "\u03b2-D-Altropyranose"
     ],
     "options": [
       {
@@ -3002,14 +3002,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Xylose",
-      "D-Idose",
       "D-Arabinose",
-      "D-Glucose",
+      "D-Idose",
       "D-Ribose",
-      "D-Allose",
+      "D-Xylose",
+      "D-Gulose",
       "D-Lyxose",
-      "D-Gulose"
+      "D-Allose",
+      "D-Glucose"
     ],
     "options": [
       {
@@ -3047,12 +3047,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "\u03b1-D-Galactopyranose",
       "\u03b1-D-Gulopyranose",
-      "\u03b1-D-Allopyranose",
-      "\u03b2-D-Talopyranose",
       "\u03b1-D-Mannopyranose",
+      "\u03b2-D-Talopyranose",
       "\u03b1-D-Glucopyranose",
-      "\u03b1-D-Galactopyranose"
+      "\u03b1-D-Allopyranose"
     ],
     "options": [
       {
@@ -3098,14 +3098,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Galactose",
       "D-Xylose",
-      "D-Talose",
-      "D-Altrose",
-      "D-Glucose",
       "D-Allose",
+      "D-Glucose",
+      "D-Altrose",
+      "D-Ribose",
+      "D-Talose",
       "D-Lyxose",
-      "D-Ribose"
+      "D-Galactose"
     ],
     "options": [
       {
@@ -3143,12 +3143,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Allopyranose",
-      "\u03b2-D-Glucopyranose",
-      "\u03b2-D-Gulopyranose",
+      "\u03b2-D-Idopyranose",
       "\u03b1-D-Idopyranose",
+      "\u03b2-D-Gulopyranose",
       "\u03b1-D-Allopyranose",
-      "\u03b2-D-Idopyranose"
+      "\u03b2-D-Allopyranose",
+      "\u03b2-D-Glucopyranose"
     ],
     "options": [
       {
@@ -3195,13 +3195,13 @@ const CHAPTER_42_QUESTIONS = [
     ],
     "match_options": [
       "D-Altrose",
+      "D-Xylose",
+      "D-Glucose",
+      "D-Mannose",
       "D-Galactose",
       "D-Talose",
-      "D-Mannose",
       "D-Ribose",
-      "D-Glucose",
-      "D-Allose",
-      "D-Xylose"
+      "D-Allose"
     ],
     "options": [
       {
@@ -3240,11 +3240,11 @@ const CHAPTER_42_QUESTIONS = [
     ],
     "match_options": [
       "\u03b2-D-Gulopyranose",
-      "\u03b1-D-Talopyranose",
-      "\u03b2-D-Mannopyranose",
       "\u03b2-D-Idopyranose",
+      "\u03b2-D-Mannopyranose",
       "\u03b2-D-Altropyranose",
-      "\u03b1-D-Altropyranose"
+      "\u03b1-D-Altropyranose",
+      "\u03b1-D-Talopyranose"
     ],
     "options": [
       {
@@ -3290,14 +3290,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Gulose",
       "D-Talose",
+      "D-Arabinose",
       "D-Altrose",
-      "D-Allose",
-      "D-Xylose",
       "D-Idose",
-      "D-Galactose",
-      "D-Arabinose"
+      "D-Allose",
+      "D-Gulose",
+      "D-Xylose",
+      "D-Galactose"
     ],
     "options": [
       {
@@ -3335,12 +3335,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b1-D-Gulopyranose",
-      "\u03b2-D-Galactopyranose",
-      "\u03b2-D-Talopyranose",
-      "\u03b1-D-Glucopyranose",
       "\u03b2-D-Gulopyranose",
-      "\u03b1-D-Mannopyranose"
+      "\u03b1-D-Mannopyranose",
+      "\u03b1-D-Gulopyranose",
+      "\u03b1-D-Glucopyranose",
+      "\u03b2-D-Galactopyranose",
+      "\u03b2-D-Talopyranose"
     ],
     "options": [
       {
@@ -3387,13 +3387,13 @@ const CHAPTER_42_QUESTIONS = [
     ],
     "match_options": [
       "D-Mannose",
-      "D-Glucose",
-      "D-Lyxose",
-      "D-Galactose",
-      "D-Allose",
       "D-Ribose",
+      "D-Lyxose",
+      "D-Allose",
+      "D-Talose",
+      "D-Galactose",
       "D-Altrose",
-      "D-Talose"
+      "D-Glucose"
     ],
     "options": [
       {
@@ -3431,12 +3431,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b1-D-Mannopyranose",
-      "\u03b2-D-Mannopyranose",
       "\u03b1-D-Altropyranose",
-      "\u03b2-D-Galactopyranose",
+      "\u03b1-D-Mannopyranose",
+      "\u03b2-D-Altropyranose",
+      "\u03b2-D-Mannopyranose",
       "\u03b2-D-Allopyranose",
-      "\u03b2-D-Altropyranose"
+      "\u03b2-D-Galactopyranose"
     ],
     "options": [
       {
@@ -3482,14 +3482,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Glucose",
-      "D-Idose",
       "D-Talose",
-      "D-Gulose",
       "D-Galactose",
-      "D-Mannose",
+      "D-Glucose",
       "D-Ribose",
-      "D-Allose"
+      "D-Allose",
+      "D-Mannose",
+      "D-Gulose",
+      "D-Idose"
     ],
     "options": [
       {
@@ -3527,12 +3527,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Altropyranose",
-      "\u03b1-D-Glucopyranose",
       "\u03b2-D-Talopyranose",
-      "\u03b1-D-Gulopyranose",
       "\u03b2-D-Mannopyranose",
-      "\u03b1-D-Talopyranose"
+      "\u03b1-D-Gulopyranose",
+      "\u03b1-D-Talopyranose",
+      "\u03b1-D-Glucopyranose",
+      "\u03b2-D-Altropyranose"
     ],
     "options": [
       {
@@ -3578,14 +3578,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Altrose",
-      "D-Xylose",
       "D-Mannose",
-      "D-Allose",
-      "D-Ribose",
+      "D-Altrose",
+      "D-Arabinose",
       "D-Lyxose",
       "D-Galactose",
-      "D-Arabinose"
+      "D-Xylose",
+      "D-Allose",
+      "D-Ribose"
     ],
     "options": [
       {
@@ -3623,11 +3623,11 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Talopyranose",
-      "\u03b2-D-Gulopyranose",
-      "\u03b1-D-Glucopyranose",
       "\u03b1-D-Idopyranose",
+      "\u03b2-D-Gulopyranose",
       "\u03b2-D-Altropyranose",
+      "\u03b2-D-Talopyranose",
+      "\u03b1-D-Glucopyranose",
       "\u03b2-D-Mannopyranose"
     ],
     "options": [
@@ -3674,13 +3674,13 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Allose",
-      "D-Arabinose",
+      "D-Lyxose",
       "D-Talose",
       "D-Mannose",
-      "D-Glucose",
+      "D-Arabinose",
       "D-Xylose",
-      "D-Lyxose",
+      "D-Glucose",
+      "D-Allose",
       "D-Idose"
     ],
     "options": [
@@ -3719,12 +3719,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b1-D-Gulopyranose",
       "\u03b1-D-Idopyranose",
-      "\u03b2-D-Glucopyranose",
-      "\u03b2-D-Galactopyranose",
       "\u03b1-D-Altropyranose",
-      "\u03b2-D-Mannopyranose"
+      "\u03b1-D-Gulopyranose",
+      "\u03b2-D-Mannopyranose",
+      "\u03b2-D-Glucopyranose",
+      "\u03b2-D-Galactopyranose"
     ],
     "options": [
       {
@@ -3770,14 +3770,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Gulose",
-      "D-Talose",
-      "D-Glucose",
       "D-Lyxose",
-      "D-Arabinose",
       "D-Mannose",
+      "D-Talose",
       "D-Xylose",
-      "D-Ribose"
+      "D-Ribose",
+      "D-Arabinose",
+      "D-Glucose",
+      "D-Gulose"
     ],
     "options": [
       {
@@ -3815,12 +3815,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "\u03b1-D-Allopyranose",
+      "\u03b1-D-Galactopyranose",
       "\u03b1-D-Glucopyranose",
       "\u03b2-D-Glucopyranose",
-      "\u03b2-D-Altropyranose",
-      "\u03b1-D-Allopyranose",
       "\u03b2-D-Mannopyranose",
-      "\u03b1-D-Galactopyranose"
+      "\u03b2-D-Altropyranose"
     ],
     "options": [
       {
@@ -3866,14 +3866,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Gulose",
-      "D-Glucose",
-      "D-Arabinose",
-      "D-Talose",
-      "D-Ribose",
+      "D-Altrose",
       "D-Allose",
+      "D-Talose",
+      "D-Arabinose",
+      "D-Gulose",
+      "D-Ribose",
       "D-Idose",
-      "D-Altrose"
+      "D-Glucose"
     ],
     "options": [
       {
@@ -3912,11 +3912,11 @@ const CHAPTER_42_QUESTIONS = [
     ],
     "match_options": [
       "\u03b1-D-Galactopyranose",
+      "\u03b2-D-Talopyranose",
       "\u03b2-D-Mannopyranose",
       "\u03b1-D-Allopyranose",
       "\u03b2-D-Galactopyranose",
-      "\u03b2-D-Gulopyranose",
-      "\u03b2-D-Talopyranose"
+      "\u03b2-D-Gulopyranose"
     ],
     "options": [
       {
@@ -3962,14 +3962,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "D-Xylose",
+      "D-Ribose",
+      "D-Gulose",
+      "D-Mannose",
+      "D-Glucose",
       "D-Allose",
       "D-Arabinose",
-      "D-Ribose",
-      "D-Altrose",
-      "D-Xylose",
-      "D-Glucose",
-      "D-Mannose",
-      "D-Gulose"
+      "D-Altrose"
     ],
     "options": [
       {
@@ -4007,12 +4007,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Mannopyranose",
       "\u03b1-D-Allopyranose",
-      "\u03b2-D-Gulopyranose",
-      "\u03b1-D-Mannopyranose",
       "\u03b1-D-Gulopyranose",
-      "\u03b1-D-Galactopyranose"
+      "\u03b2-D-Mannopyranose",
+      "\u03b1-D-Mannopyranose",
+      "\u03b1-D-Galactopyranose",
+      "\u03b2-D-Gulopyranose"
     ],
     "options": [
       {
@@ -4058,14 +4058,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Gulose",
       "D-Xylose",
       "D-Altrose",
       "D-Arabinose",
       "D-Idose",
-      "D-Allose",
       "D-Galactose",
-      "D-Ribose"
+      "D-Ribose",
+      "D-Allose",
+      "D-Gulose"
     ],
     "options": [
       {
@@ -4104,11 +4104,11 @@ const CHAPTER_42_QUESTIONS = [
     ],
     "match_options": [
       "\u03b2-D-Mannopyranose",
-      "\u03b1-D-Idopyranose",
-      "\u03b1-D-Mannopyranose",
       "\u03b1-D-Altropyranose",
-      "\u03b1-D-Galactopyranose",
-      "\u03b1-D-Talopyranose"
+      "\u03b1-D-Mannopyranose",
+      "\u03b1-D-Idopyranose",
+      "\u03b1-D-Talopyranose",
+      "\u03b1-D-Galactopyranose"
     ],
     "options": [
       {
@@ -4154,14 +4154,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Xylose",
+      "D-Allose",
       "D-Mannose",
+      "D-Lyxose",
+      "D-Ribose",
       "D-Glucose",
       "D-Idose",
-      "D-Talose",
-      "D-Ribose",
-      "D-Lyxose",
-      "D-Allose"
+      "D-Xylose",
+      "D-Talose"
     ],
     "options": [
       {
@@ -4199,12 +4199,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b1-D-Gulopyranose",
-      "\u03b2-D-Altropyranose",
+      "\u03b1-D-Talopyranose",
+      "\u03b1-D-Altropyranose",
       "\u03b1-D-Galactopyranose",
       "\u03b2-D-Allopyranose",
-      "\u03b1-D-Talopyranose",
-      "\u03b1-D-Altropyranose"
+      "\u03b2-D-Altropyranose",
+      "\u03b1-D-Gulopyranose"
     ],
     "options": [
       {
@@ -4250,14 +4250,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Gulose",
+      "D-Ribose",
       "D-Lyxose",
       "D-Altrose",
-      "D-Arabinose",
       "D-Idose",
-      "D-Talose",
-      "D-Ribose",
-      "D-Galactose"
+      "D-Galactose",
+      "D-Arabinose",
+      "D-Gulose",
+      "D-Talose"
     ],
     "options": [
       {
@@ -4296,11 +4296,11 @@ const CHAPTER_42_QUESTIONS = [
     ],
     "match_options": [
       "\u03b1-D-Galactopyranose",
-      "\u03b1-D-Gulopyranose",
       "\u03b2-D-Idopyranose",
-      "\u03b1-D-Glucopyranose",
       "\u03b2-D-Altropyranose",
-      "\u03b1-D-Altropyranose"
+      "\u03b1-D-Altropyranose",
+      "\u03b1-D-Glucopyranose",
+      "\u03b1-D-Gulopyranose"
     ],
     "options": [
       {
@@ -4346,12 +4346,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "D-Glucose",
       "D-Talose",
-      "D-Galactose",
+      "D-Gulose",
       "D-Ribose",
       "D-Lyxose",
-      "D-Gulose",
-      "D-Glucose",
+      "D-Galactose",
       "D-Altrose",
       "D-Mannose"
     ],
@@ -4391,12 +4391,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "\u03b2-D-Mannopyranose",
-      "\u03b2-D-Talopyranose",
-      "\u03b1-D-Idopyranose",
       "\u03b1-D-Allopyranose",
-      "\u03b2-D-Altropyranose",
-      "\u03b2-D-Gulopyranose"
+      "\u03b1-D-Idopyranose",
+      "\u03b2-D-Mannopyranose",
+      "\u03b2-D-Gulopyranose",
+      "\u03b2-D-Talopyranose",
+      "\u03b2-D-Altropyranose"
     ],
     "options": [
       {
@@ -4442,13 +4442,13 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Xylose",
       "D-Allose",
       "D-Galactose",
-      "D-Mannose",
-      "D-Idose",
       "D-Lyxose",
+      "D-Mannose",
       "D-Gulose",
+      "D-Idose",
+      "D-Xylose",
       "D-Altrose"
     ],
     "options": [
@@ -4487,12 +4487,12 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
+      "\u03b1-D-Glucopyranose",
+      "\u03b1-D-Gulopyranose",
+      "\u03b2-D-Talopyranose",
       "\u03b1-D-Altropyranose",
       "\u03b1-D-Galactopyranose",
-      "\u03b1-D-Glucopyranose",
-      "\u03b2-D-Talopyranose",
-      "\u03b2-D-Allopyranose",
-      "\u03b1-D-Gulopyranose"
+      "\u03b2-D-Allopyranose"
     ],
     "options": [
       {
@@ -4538,14 +4538,14 @@ const CHAPTER_42_QUESTIONS = [
       }
     ],
     "match_options": [
-      "D-Talose",
-      "D-Ribose",
-      "D-Gulose",
-      "D-Lyxose",
-      "D-Altrose",
       "D-Arabinose",
+      "D-Gulose",
+      "D-Altrose",
+      "D-Lyxose",
+      "D-Glucose",
+      "D-Talose",
       "D-Idose",
-      "D-Glucose"
+      "D-Ribose"
     ],
     "options": [
       {

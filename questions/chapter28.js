@@ -186,176 +186,6 @@ const CHAPTER_28_QUESTIONS = [
     }
   },
   {
-    "question_id": "ch28_acs_q6_acylation",
-    "topic": "ACS: EAS & NAS (Aromatics)",
-    "difficulty_level": "Easy",
-    "question_text": "What is the product when benzene is reacted with acetyl chloride in the presence of AlCl3?",
-    "question_smiles": "c1ccccc1.CC(=O)Cl",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Acetophenone",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Ethylbenzene",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Chlorobenzene",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Benzaldehyde",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Understanding Friedel-Crafts acylation of benzene.",
-      "process": "Step 1: Acetyl chloride complexes with AlCl3 to generate the stable electrophilic acylium ion.\nStep 2: Benzene attacks the acylium ion.\nStep 3: Deprotonation restores aromaticity, yielding acetophenone. Unlike alkylation, acylation does not undergo rearrangement.",
-      "result": "The product is acetophenone."
-    }
-  },
-  {
-    "question_id": "ch28_acs_q7_relative_rates",
-    "topic": "ACS: EAS & NAS (Aromatics)",
-    "difficulty_level": "Medium",
-    "question_text": "Rank the following compounds in order of decreasing reactivity toward Electrophilic Aromatic Substitution (EAS) (fastest to slowest):\nI. Benzene\nII. Toluene\nIII. Chlorobenzene\nIV. Nitrobenzene",
-    "question_smiles": "c1ccccc1.Cc1ccccc1.Clc1ccccc1.[O-][N+](=O)c1ccccc1",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "II > I > III > IV",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "I > II > III > IV",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "II > I > IV > III",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "IV > III > I > II",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Evaluating substituent effects on benzene reactivity in EAS.",
-      "process": "Step 1: Toluene (II) has a methyl group (activating). It reacts faster than benzene (I).\nStep 2: Chlorobenzene (III) has a chlorine atom (deactivating), so it reacts slower than benzene.\nStep 3: Nitrobenzene (IV) has a nitro group (strongly deactivating), making it the least reactive.",
-      "result": "The reactivity order is II > I > III > IV."
-    }
-  },
-  {
-    "question_id": "ch28_acs_q8_sulfonation",
-    "topic": "ACS: EAS & NAS (Aromatics)",
-    "difficulty_level": "Medium",
-    "question_text": "What is the active electrophile in the sulfonation of benzene using fuming sulfuric acid?",
-    "question_smiles": "",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Sulfur trioxide (SO3)",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "HSO4-",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "H3O+",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "SO2",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Identifying electrophiles in EAS reactions.",
-      "process": "Step 1: Fuming sulfuric acid contains dissolved sulfur trioxide (SO3).\nStep 2: The sulfur atom in SO3 is highly electrophilic due to three highly electronegative oxygen atoms.\nStep 3: Benzene attacks the sulfur atom directly. Sulfonation is unique because it is fully reversible.",
-      "result": "The active electrophile is SO3."
-    }
-  },
-  {
-    "question_id": "ch28_acs_q9_heterocycles",
-    "topic": "ACS: EAS & NAS (Aromatics)",
-    "difficulty_level": "Hard",
-    "question_text": "Which heterocyclic aromatic compound undergoes Electrophilic Aromatic Substitution (EAS) at the fastest rate?",
-    "question_smiles": "c1cc[nH]c1.c1ccncc1",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Pyrrole",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Pyridine",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Furan",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Thiophene",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Comparing EAS reactivity of heterocyclic rings.",
-      "process": "Step 1: Pyrrole is a 5-membered pi-rich heterocycle. Pyridine is a 6-membered pi-deficient heterocycle.\nStep 2: In pyrrole, the nitrogen lone pair is delocalized into the ring, making it extremely electron-rich.\nStep 3: Pyrrole is more reactive than furan and thiophene because nitrogen is less electronegative than oxygen or sulfur, sharing its lone pair more readily.",
-      "result": "Pyrrole is the most reactive toward EAS."
-    }
-  },
-  {
-    "question_id": "ch28_acs_q10_gattermann",
-    "topic": "ACS: EAS & NAS (Aromatics)",
-    "difficulty_level": "Medium",
-    "question_text": "What is the product of the Gattermann-Koch reaction applied to benzene?",
-    "question_smiles": "c1ccccc1",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Benzaldehyde",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Benzoic acid",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Toluene",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Chlorobenzene",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Understanding the Gattermann-Koch formylation reaction.",
-      "process": "Step 1: The Gattermann-Koch reaction uses carbon monoxide (CO), hydrogen chloride (HCl), and an AlCl3 catalyst.\nStep 2: These reagents generate a formyl cation source.\nStep 3: EAS of benzene with this formyl source yields benzaldehyde.",
-      "result": "The product is benzaldehyde."
-    }
-  },
-  {
     "question_id": "ch28_q_dynamic_base_pairing",
     "topic": "Biomolecules: Nucleic Acids",
     "difficulty_level": "Medium",
@@ -363,15 +193,15 @@ const CHAPTER_28_QUESTIONS = [
     "interaction_type": "matching-list",
     "match_items": [
       {
-        "smiles": "Nc1cccc2[nH]cnc12",
+        "smiles": "Nc1ncnc2[nH]cnc12",
         "correctAnswer": "Thymine (Adenine pairs with Thymine)"
       },
       {
-        "smiles": "O=c1[nH]c(=O)c(C)[nH]1",
+        "smiles": "Cc1c[nH]c(=O)[nH]c1=O",
         "correctAnswer": "Adenine (Thymine pairs with Adenine)"
       },
       {
-        "smiles": "Nc1cc(=O)[nH]c(=O)n1",
+        "smiles": "Nc1cc[nH]c(=O)n1",
         "correctAnswer": "Guanine (Cytosine pairs with Guanine)"
       }
     ],

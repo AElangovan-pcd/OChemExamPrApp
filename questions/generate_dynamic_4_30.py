@@ -145,10 +145,10 @@ chapter_questions = {
             "interaction_type": "matching-grid",
             "grid_columns": 2,
             "match_items": [
-                {"smiles": "CC=C.H2O.H2SO4", "correctAnswer": "CC(O)C"},
-                {"smiles": "CC=C.BH3.H2O2.NaOH", "correctAnswer": "CCCO"},
-                {"smiles": "CC=C.Br2.CH2Cl2", "correctAnswer": "CC(Br)C(Br)"},
-                {"smiles": "CC=C.mCPBA", "correctAnswer": "CC1OC1"}
+                {"smiles": "CC=C.O.OS(=O)(=O)O", "correctAnswer": "CC(O)C"},
+                {"smiles": "CC=C.B.OO.[Na+].[OH-]", "correctAnswer": "CCCO"},
+                {"smiles": "CC=C.BrBr.ClCCl", "correctAnswer": "CC(Br)C(Br)"},
+                {"smiles": "CC=C.O=C(OO)c1cccc(Cl)c1", "correctAnswer": "CC1OC1"}
             ],
             "match_options": ["CC(O)C", "CCCO", "CC(Br)C(Br)", "CC1OC1", "CCC"],
             "options": [
@@ -325,7 +325,7 @@ chapter_questions = {
                 {"smiles": "c1ccccc1", "correctAnswer": "Aromatic (6 pi)"},
                 {"smiles": "C1=CC=CC=C1", "correctAnswer": "Non-aromatic (sp3 C present)"},
                 {"smiles": "C1=CC=CC=CC=C1", "correctAnswer": "Antiaromatic / Non-aromatic tub (8 pi)"},
-                {"smiles": "[c-]-1cccc1", "correctAnswer": "Aromatic (6 pi)"}
+                {"smiles": "[cH-]1cccc1", "correctAnswer": "Aromatic (6 pi)"}
             ],
             "match_options": ["Aromatic (6 pi)", "Non-aromatic (sp3 C present)", "Antiaromatic / Non-aromatic tub (8 pi)"],
             "options": [
@@ -648,9 +648,9 @@ chapter_questions = {
             "question_text": "Match each purine/pyrimidine base to its complementary hydrogen-bonding partner in double-stranded DNA.",
             "interaction_type": "matching-list",
             "match_items": [
-                {"smiles": "Nc1cccc2[nH]cnc12", "correctAnswer": "Thymine (Adenine pairs with Thymine)"},
-                {"smiles": "O=c1[nH]c(=O)c(C)[nH]1", "correctAnswer": "Adenine (Thymine pairs with Adenine)"},
-                {"smiles": "Nc1cc(=O)[nH]c(=O)n1", "correctAnswer": "Guanine (Cytosine pairs with Guanine)"}
+                {"smiles": "Nc1ncnc2[nH]cnc12", "correctAnswer": "Thymine (Adenine pairs with Thymine)"},
+                {"smiles": "Cc1c[nH]c(=O)[nH]c1=O", "correctAnswer": "Adenine (Thymine pairs with Adenine)"},
+                {"smiles": "Nc1cc[nH]c(=O)n1", "correctAnswer": "Guanine (Cytosine pairs with Guanine)"}
             ],
             "match_options": ["Thymine (Adenine pairs with Thymine)", "Adenine (Thymine pairs with Adenine)", "Guanine (Cytosine pairs with Guanine)", "Uracil"],
             "options": [

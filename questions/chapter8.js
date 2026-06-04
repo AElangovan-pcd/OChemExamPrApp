@@ -1909,19 +1909,19 @@ const CHAPTER_8_QUESTIONS = [
     "grid_columns": 2,
     "match_items": [
       {
-        "smiles": "CC=C.H2O.H2SO4",
+        "smiles": "CC=C.O.OS(=O)(=O)O",
         "correctAnswer": "CC(O)C"
       },
       {
-        "smiles": "CC=C.BH3.H2O2.NaOH",
+        "smiles": "CC=C.B.OO.[Na+].[OH-]",
         "correctAnswer": "CCCO"
       },
       {
-        "smiles": "CC=C.Br2.CH2Cl2",
+        "smiles": "CC=C.BrBr.ClCCl",
         "correctAnswer": "CC(Br)C(Br)"
       },
       {
-        "smiles": "CC=C.mCPBA",
+        "smiles": "CC=C.O=C(OO)c1cccc(Cl)c1",
         "correctAnswer": "CC1OC1"
       }
     ],

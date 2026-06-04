@@ -1,11 +1,11 @@
-// McMurry Chapter 23 questions
+// ACS Organic Chemistry Exam Preparation - ACS: Substitutions & Eliminations
 const CHAPTER_23_QUESTIONS = [
   {
     "question_id": "ch23_acs_q1_sn2_rate",
     "topic": "ACS: Substitutions & Eliminations",
     "difficulty_level": "Medium",
     "question_text": "Which of the following alkyl halides undergoes nucleophilic substitution via the SN2 mechanism at the fastest rate when reacted with sodium iodide in acetone?",
-    "question_smiles": "",
+    "question_smiles": "CCCBr",
     "options": [
       {
         "option_id": "A",
@@ -48,7 +48,7 @@ const CHAPTER_23_QUESTIONS = [
       {
         "option_id": "A",
         "text": "(E)-1,2-diphenylpropene",
-        "smiles": "C/C(=Cc1ccccc1)/c2ccccc2",
+        "smiles": "C/C(=C\c1ccccc1)/c2ccccc2",
         "is_correct": true
       },
       {
@@ -184,218 +184,49 @@ const CHAPTER_23_QUESTIONS = [
       "process": "Step 1: Identify substrate: Cyclohexyl bromide is a secondary alkyl halide.\nStep 2: Identify reagent: Sodium ethoxide is a strong, unhindered base/nucleophile. High temperatures promote elimination.\nStep 3: For secondary substrates, strong bases strongly favor E2 elimination over SN2 substitution. Deprotonation yields cyclohexene.",
       "result": "Cyclohexene is the major product formed via E2."
     }
-  },
-  {
-    "question_id": "ch23_acs_q6_nucleophilicity",
-    "topic": "ACS: Substitutions & Eliminations",
-    "difficulty_level": "Medium",
-    "question_text": "Which of the following lists the nucleophiles in order of decreasing reactivity in an SN2 reaction in a polar protic solvent like methanol?",
-    "question_smiles": "",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "I- > Br- > Cl- > F-",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "F- > Cl- > Br- > I-",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Cl- > Br- > I- > F-",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "I- > F- > Br- > Cl-",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Evaluating nucleophilicity trends in protic vs aprotic solvents.",
-      "process": "Step 1: In a polar protic solvent, hydrogen bonding stabilizes smaller, more electronegative anions (like F-), shielding them from attack.\nStep 2: Larger anions (like I-) are less solvated and more polarizable.\nStep 3: Therefore, nucleophilicity increases down the group in protic solvents: I- > Br- > Cl- > F-.",
-      "result": "The correct order is I- > Br- > Cl- > F-."
-    }
-  },
-  {
-    "question_id": "ch23_acs_q7_stereochemistry",
-    "topic": "ACS: Substitutions & Eliminations",
-    "difficulty_level": "Medium",
-    "question_text": "Which of the following describes the stereochemical outcome of an SN1 reaction on a chiral starting material?",
-    "question_smiles": "",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Nearly complete racemization with a slight excess of inversion due to ion pairing.",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Complete inversion of configuration.",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Complete retention of configuration.",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Equal 1:1 mixture of inversion and retention with no exceptions.",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Understanding the stereochemistry of unimolecular nucleophilic substitution.",
-      "process": "Step 1: SN1 proceeds through a planar carbocation intermediate.\nStep 2: The nucleophile can attack from either face, leading to racemization.\nStep 3: In reality, the leaving group often remains close as a solvated ion pair, shielding the front side and making backside attack slightly favored.",
-      "result": "The outcome is racemization with a slight excess of inversion."
-    }
-  },
-  {
-    "question_id": "ch23_acs_q8_leaving_group",
-    "topic": "ACS: Substitutions & Eliminations",
-    "difficulty_level": "Medium",
-    "question_text": "Rank the following leaving groups in order of decreasing leaving ability (best to worst):\nI. Iodide (-I)\nII. Fluoride (-F)\nIII. Tosylate (-OTs)\nIV. Acetate (-OAc)",
-    "question_smiles": "",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "III > I > IV > II",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "I > III > IV > II",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "III > I > II > IV",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "I > III > II > IV",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Evaluating leaving group ability based on conjugate base stability.",
-      "process": "Step 1: Good leaving groups are weak bases.\nStep 2: Tosylate (OTs) is a very weak base due to resonance. Iodide (I-) is also excellent.\nStep 3: Acetate (OAc-) is a weak base, while fluoride (F-) is relatively basic and holds its charge tightly, making it a very poor leaving group.",
-      "result": "The order of decreasing leaving group ability is OTs > I > OAc > F."
-    }
-  },
-  {
-    "question_id": "ch23_acs_q9_e1_rate",
-    "topic": "ACS: Substitutions & Eliminations",
-    "difficulty_level": "Easy",
-    "question_text": "Which of the following alcohols undergoes acid-catalyzed dehydration via the E1 mechanism at the fastest rate?",
-    "question_smiles": "CC(C)(O)C.CC(C)O.CCCO",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "t-Butyl alcohol",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Isopropyl alcohol",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "1-propanol",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Ethanol",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Assessing alcohol dehydration rates via carbocation intermediates.",
-      "process": "Step 1: Dehydration occurs via protonation of -OH to form -OH2+, which leaves as water to form a carbocation (E1).\nStep 2: The rate-determining step is carbocation formation.\nStep 3: Tertiary carbocations are much more stable than secondary or primary, so t-butyl alcohol reacts fastest.",
-      "result": "t-Butyl alcohol reacts at the fastest rate."
-    }
-  },
-  {
-    "question_id": "ch23_acs_q10_e2_stereospecificity",
-    "topic": "ACS: Substitutions & Eliminations",
-    "difficulty_level": "Hard",
-    "question_text": "Why does neomenthyl chloride undergo E2 elimination 200 times faster than menthyl chloride when reacted with sodium ethoxide?",
-    "question_smiles": "",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "In neomenthyl chloride, the chlorine is axial in the stable conformation, allowing an anti-periplanar alignment with adjacent hydrogens.",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Neomenthyl chloride is a tertiary alkyl halide.",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Menthyl chloride experiences more steric hindrance from the ethoxide base.",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Neomenthyl chloride undergoes elimination via E1.",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Understanding conformational control and anti-periplanar requirements in cyclic E2 eliminations.",
-      "process": "Step 1: E2 elimination in cyclohexanes requires the leaving group (Cl) and the beta-hydrogen to be trans-diaxial (anti-periplanar).\nStep 2: Menthyl chloride has Cl equatorial in its most stable conformation. To eliminate, it must ring-flip to a high-energy chair conformation where Cl is axial.\nStep 3: Neomenthyl chloride has Cl axial in its most stable chair conformer, allowing rapid E2 elimination.",
-      "result": "Neomenthyl chloride reacts much faster because Cl is already axial."
-    }
-  },
-  {
-    "question_id": "ch23_q_dynamic_aldol_condensation",
-    "topic": "Carbonyl Condensation Reactions",
-    "difficulty_level": "Medium",
-    "question_text": "Determine the product of the base-catalyzed self-condensation of acetaldehyde followed by dehydration.",
-    "reaction_scheme": {
-      "reactants": [
-        "CC=O"
-      ],
-      "reagents": "1) NaOH, H2O\n2) Heat (dehydration)",
-      "conditions": "Aldol Condensation",
-      "products": [
-        "CC=CC=O"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Self-condensation yields crotonaldehyde (2-butenal), a conjugated enone.",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "The reaction produces 3-hydroxybutanal (without heat).",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Ethyl acetate is formed.",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "No condensation occurs.",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Analyzing aldol addition and dehydration pathways.",
-      "process": "NaOH deprotonates acetaldehyde to form enolate. Enolate attacks another neutral acetaldehyde: forms 3-hydroxybutanal (aldol addition). Heating drives elimination of water to yield the conjugated 2-butenal (crotonaldehyde).",
-      "result": "The final product is crotonaldehyde."
-    }
   }
+,
+{
+  "question_id": "ch23_q_dynamic_aldol_condensation",
+  "topic": "Carbonyl Condensation Reactions",
+  "difficulty_level": "Medium",
+  "question_text": "Determine the product of the base-catalyzed self-condensation of acetaldehyde followed by dehydration.",
+  "reaction_scheme": {
+    "reactants": [
+      "CC=O"
+    ],
+    "reagents": "1) NaOH, H2O\n2) Heat (dehydration)",
+    "conditions": "Aldol Condensation",
+    "products": [
+      "CC=CC=O"
+    ]
+  },
+  "options": [
+    {
+      "option_id": "A",
+      "text": "Self-condensation yields crotonaldehyde (2-butenal), a conjugated enone.",
+      "is_correct": true
+    },
+    {
+      "option_id": "B",
+      "text": "The reaction produces 3-hydroxybutanal (without heat).",
+      "is_correct": false
+    },
+    {
+      "option_id": "C",
+      "text": "Ethyl acetate is formed.",
+      "is_correct": false
+    },
+    {
+      "option_id": "D",
+      "text": "No condensation occurs.",
+      "is_correct": false
+    }
+  ],
+  "feedback": {
+    "context": "Analyzing aldol addition and dehydration pathways.",
+    "process": "NaOH deprotonates acetaldehyde to form enolate. Enolate attacks another neutral acetaldehyde: forms 3-hydroxybutanal (aldol addition). Heating drives elimination of water to yield the conjugated 2-butenal (crotonaldehyde).",
+    "result": "The final product is crotonaldehyde."
+  }
+}
 ];

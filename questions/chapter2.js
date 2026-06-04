@@ -1872,7 +1872,7 @@ const CHAPTER_2_QUESTIONS = [
       {
         "option_id": "A",
         "text": "A Lewis acid-base complex (adduct) with a boron-oxygen coordinate bond.",
-        "smiles": "CO[C+]B(F)(F)F",
+        "smiles": "CO[C+][B-](F)(F)F",
         "is_correct": true
       },
       {

@@ -841,7 +841,7 @@ const CHAPTER_7_QUESTIONS = [
     "topic": "Naming Alkenes",
     "difficulty_level": "Hard",
     "question_text": "Determine the correct IUPAC name and configuration for the compound represented by the SMILES \\(CC/C(C)=C(\\\\CO)H\\).",
-    "question_smiles": "CC/C(C)=C(\\CO)H",
+    "question_smiles": "CC/C(C)=C(/CO)",
     "options": [
       {
         "option_id": "A",
@@ -1872,13 +1872,13 @@ const CHAPTER_7_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Exclusively at C1 (yielding 2-chloro-1-deuteriopropane)",
-        "smiles": "CC(Cl)CD",
+        "smiles": "CC(Cl)C[2H]",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Exclusively at C2 (yielding 2-chloro-2-deuteriopropane)",
-        "smiles": "CC(Cl)(D)C",
+        "smiles": "CC(Cl)([2H])C",
         "is_correct": false
       },
       {
@@ -1890,7 +1890,7 @@ const CHAPTER_7_QUESTIONS = [
       {
         "option_id": "D",
         "text": "Exclusively at C3",
-        "smiles": "DCC(Cl)C",
+        "smiles": "[2H]CC(Cl)C",
         "is_correct": false
       }
     ],
