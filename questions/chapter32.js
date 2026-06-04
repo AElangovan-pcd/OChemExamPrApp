@@ -367,4 +367,4 @@ const CHAPTER_32_QUESTIONS = [
       "result": "The major product is (Z)-1-phenyl-1-pentene."
     }
   }
-]];
+];

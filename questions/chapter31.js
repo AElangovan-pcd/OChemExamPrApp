@@ -462,4 +462,4 @@ const CHAPTER_31_QUESTIONS = [
       "result": "The correct structure is 2-phenyl-2-propanol (option D)."
     }
   }
-]];
+];
