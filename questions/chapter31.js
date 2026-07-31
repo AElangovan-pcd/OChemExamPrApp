@@ -5,7 +5,7 @@ const CHAPTER_31_QUESTIONS = [
     "topic": "ACS: Spectroscopy",
     "difficulty_level": "Hard",
     "question_text": "An organic compound shows a 1H NMR spectrum consisting of: \n- A quartet at delta 4.2 ppm (2H) \n- A triplet at delta 3.8 ppm (2H) \n- A triplet at delta 2.8 ppm (2H) \n- A triplet at delta 1.3 ppm (3H)\nWhich structure is consistent with this spectrum?",
-    "question_smiles": "ClCCC(=O)OCC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -77,7 +77,7 @@ const CHAPTER_31_QUESTIONS = [
     "topic": "ACS: Spectroscopy",
     "difficulty_level": "Hard",
     "question_text": "An organic compound has a 1H NMR spectrum with three signals: a quartet at delta 4.1, a singlet at delta 3.4, and a triplet at delta 1.25. Which compound matches this spectrum?",
-    "question_smiles": "CCOC(=O)CC(=O)OCC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -115,7 +115,7 @@ const CHAPTER_31_QUESTIONS = [
     "topic": "ACS: Spectroscopy",
     "difficulty_level": "Medium",
     "question_text": "Which compound would show a molecular ion at m/z 114 and a major fragment ion at m/z 71?",
-    "question_smiles": "CCCC(=O)CCC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",

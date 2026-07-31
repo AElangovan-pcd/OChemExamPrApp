@@ -13025,43 +13025,6 @@
   },
   {
     "file": "chapter19.js",
-    "id": "ch19_acs_q3_benzylethanamide",
-    "text": "Which is the structure of N-benzylethanamide?",
-    "question_smiles": "CC(=O)NCC1=CC=CC=C1",
-    "correct_option": {
-      "option_id": "A",
-      "text": "Structure A",
-      "smiles": "CC(=O)NCC1=CC=CC=C1"
-    },
-    "all_options": [
-      {
-        "option_id": "A",
-        "text": "Structure A",
-        "smiles": "CC(=O)NCC1=CC=CC=C1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Structure B",
-        "smiles": "CCNCC1=CC=CC=C1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Structure C",
-        "smiles": "CCNC1=CC=CC=C1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Structure D",
-        "smiles": "CC(=O)NC1=CC=CC=C1",
-        "is_correct": false
-      }
-    ]
-  },
-  {
-    "file": "chapter19.js",
     "id": "ch19_acs_q4_bicyclo",
     "text": "Determine the correct IUPAC name for the bicyclic alkane shown below.",
     "question_smiles": "C1CC2CCC1C2",
@@ -17095,43 +17058,6 @@
   },
   {
     "file": "chapter31.js",
-    "id": "ch31_acs_q1_nmr_ester",
-    "text": "An organic compound shows a 1H NMR spectrum consisting of: \n- A quartet at delta 4.2 ppm (2H) \n- A triplet at delta 3.8 ppm (2H) \n- A triplet at delta 2.8 ppm (2H) \n- A triplet at delta 1.3 ppm (3H)\nWhich structure is consistent with this spectrum?",
-    "question_smiles": "ClCCC(=O)OCC",
-    "correct_option": {
-      "option_id": "A",
-      "text": "Ethyl 3-chloropropanoate",
-      "smiles": "ClCCC(=O)OCC"
-    },
-    "all_options": [
-      {
-        "option_id": "A",
-        "text": "Ethyl 3-chloropropanoate",
-        "smiles": "ClCCC(=O)OCC",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "1-chloro-3-pentanone",
-        "smiles": "ClCCC(=O)CC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "2-chloroethyl propanoate",
-        "smiles": "ClCCOC(=O)CC",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "3-chloropropyl acetate",
-        "smiles": "ClCCCOC(=O)C",
-        "is_correct": false
-      }
-    ]
-  },
-  {
-    "file": "chapter31.js",
     "id": "ch31_acs_q2_c13_signals",
     "text": "How many signals would you expect in the proton-decoupled 13C NMR spectrum for 4-methylacetophenone?",
     "question_smiles": "CC(=O)C1=CC=C(C)C=C1",
@@ -17163,80 +17089,6 @@
         "option_id": "D",
         "text": "9",
         "smiles": "",
-        "is_correct": false
-      }
-    ]
-  },
-  {
-    "file": "chapter31.js",
-    "id": "ch31_acs_q3_diethy_malonate",
-    "text": "An organic compound has a 1H NMR spectrum with three signals: a quartet at delta 4.1, a singlet at delta 3.4, and a triplet at delta 1.25. Which compound matches this spectrum?",
-    "question_smiles": "CCOC(=O)CC(=O)OCC",
-    "correct_option": {
-      "option_id": "A",
-      "text": "Diethyl malonate",
-      "smiles": "CCOC(=O)CC(=O)OCC"
-    },
-    "all_options": [
-      {
-        "option_id": "A",
-        "text": "Diethyl malonate",
-        "smiles": "CCOC(=O)CC(=O)OCC",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Methyl propanoate",
-        "smiles": "CCC(=O)OC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Ethyl acetoacetate",
-        "smiles": "CCOC(=O)CC(=O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Butanone",
-        "smiles": "CCC(=O)C",
-        "is_correct": false
-      }
-    ]
-  },
-  {
-    "file": "chapter31.js",
-    "id": "ch31_acs_q4_ms_heptanone",
-    "text": "Which compound would show a molecular ion at m/z 114 and a major fragment ion at m/z 71?",
-    "question_smiles": "CCCC(=O)CCC",
-    "correct_option": {
-      "option_id": "A",
-      "text": "4-heptanone",
-      "smiles": "CCCC(=O)CCC"
-    },
-    "all_options": [
-      {
-        "option_id": "A",
-        "text": "4-heptanone",
-        "smiles": "CCCC(=O)CCC",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "3-heptanone",
-        "smiles": "CCCCC(=O)CC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "2-hexanone",
-        "smiles": "CCCCC(=O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "4-heptanol",
-        "smiles": "CCCC(O)CCC",
         "is_correct": false
       }
     ]

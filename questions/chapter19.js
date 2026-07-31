@@ -81,7 +81,7 @@ const CHAPTER_19_QUESTIONS = [
     "topic": "ACS: Nomenclature",
     "difficulty_level": "Medium",
     "question_text": "Which is the structure of N-benzylethanamide?",
-    "question_smiles": "CC(=O)NCC1=CC=CC=C1",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",

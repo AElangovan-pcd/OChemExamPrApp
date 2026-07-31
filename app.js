@@ -329,6 +329,88 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize Smiles Drawer
   if (typeof SmilesDrawer !== 'undefined') {
+    if (SmilesDrawer.SvgDrawer && !SmilesDrawer.SvgDrawer.prototype._customLayoutPatchApplied) {
+      SmilesDrawer.SvgDrawer.prototype._customLayoutPatchApplied = true;
+
+      // 1. Skip drawing disconnected '.' pseudo-bonds
+      const origDrawEdge = SmilesDrawer.SvgDrawer.prototype.drawEdge;
+      SmilesDrawer.SvgDrawer.prototype.drawEdge = function(edgeId, debug) {
+        const edge = this.preprocessor && this.preprocessor.graph && this.preprocessor.graph.edges[edgeId];
+        if (edge && edge.bondType === '.') {
+          return;
+        }
+        return origDrawEdge.call(this, edgeId, debug);
+      };
+
+      // 2. Mark explicit charges and separate multi-component molecules (e.g. A.B) horizontally
+      const origDrawVertices = SmilesDrawer.SvgDrawer.prototype.drawVertices;
+      SmilesDrawer.SvgDrawer.prototype.drawVertices = function(debug) {
+        if (this.preprocessor && this.preprocessor.graph && this.preprocessor.graph.vertices) {
+          const graph = this.preprocessor.graph;
+
+          // Mark explicit charges for carbocations/ions
+          graph.vertices.forEach(v => {
+            const atom = v.value;
+            const hasCharge = (atom && ((atom.charge && atom.charge !== 0) || (atom.bracket && atom.bracket.charge && atom.bracket.charge !== 0)));
+            if (hasCharge) {
+              atom.drawExplicit = true;
+            }
+          });
+
+          // Detect disconnected subgraphs separated by '.' bonds
+          const visited = new Set();
+          const subgraphs = [];
+
+          graph.vertices.forEach(v => {
+            if (visited.has(v.id)) return;
+            const comp = [];
+            const q = [v];
+            visited.add(v.id);
+
+            while (q.length > 0) {
+              const curr = q.shift();
+              comp.push(curr);
+              const connectedEdges = graph.edges.filter(e => (e.sourceId === curr.id || e.targetId === curr.id) && e.bondType !== '.');
+              connectedEdges.forEach(e => {
+                const nextId = (e.sourceId === curr.id) ? e.targetId : e.sourceId;
+                if (!visited.has(nextId)) {
+                  visited.add(nextId);
+                  q.push(graph.vertices[nextId]);
+                }
+              });
+            }
+            subgraphs.push(comp);
+          });
+
+          // Layout disconnected subgraphs horizontally with clean spacing
+          if (subgraphs.length > 1) {
+            const spacing = 45;
+            subgraphs.forEach((sg, idx) => {
+              if (idx === 0) return;
+              const prevSg = subgraphs[idx - 1];
+              const prevMaxX = Math.max(...prevSg.map(v => v.position.x));
+              const currMinX = Math.min(...sg.map(v => v.position.x));
+              const shiftX = (prevMaxX + spacing) - currMinX;
+
+              const prevMinY = Math.min(...prevSg.map(v => v.position.y));
+              const prevMaxY = Math.max(...prevSg.map(v => v.position.y));
+              const prevCenterY = (prevMinY + prevMaxY) / 2;
+
+              const currMinY = Math.min(...sg.map(v => v.position.y));
+              const currMaxY = Math.max(...sg.map(v => v.position.y));
+              const currCenterY = (currMinY + currMaxY) / 2;
+              const shiftY = prevCenterY - currCenterY;
+
+              sg.forEach(v => {
+                v.position.x += shiftX;
+                v.position.y += shiftY;
+              });
+            });
+          }
+        }
+        return origDrawVertices.call(this, debug);
+      };
+    }
     smilesDrawer = new SmilesDrawer.Drawer(smilesDrawerOptions);
   } else {
     showToast('SmilesDrawer chemical renderer not loaded', 'error');
@@ -854,11 +936,18 @@ function formatChemicalText(text) {
   if (!text) return '';
   // Convert newlines to linebreaks
   let formatted = text.replace(/\\n/g, '<br>');
-  // Format orbital hybridization (like sp2, sp3) as superscripts
-  formatted = formatted.replace(/\bsp(\d)\b/g, 'sp<sup>$1</sup>');
-  // Format chemical formulas: subscript any number immediately following a letter or closing parenthesis
-  formatted = formatted.replace(/(?<=[A-Za-z)])\d+/g, '<sub>$&</sub>');
-  return formatted;
+  // Protect LaTeX math blocks ($$...$$, $...$, \(...\), \[...\]) from HTML sub/sup tag injection
+  const mathRegex = /(\$\$.*?\$\$|\$.*?\$|\\\(.*?\\\)|\\\[.*?\\\])/gs;
+  const parts = formatted.split(mathRegex);
+  return parts.map(part => {
+    if (/^(\$\$.*?\$\$|\$.*?\$|\\\(.*?\\\)|\\\[.*?\\\])$/s.test(part)) {
+      return part;
+    } else {
+      let res = part.replace(/\bsp(\d)\b/g, 'sp<sup>$1</sup>');
+      res = res.replace(/(?<=[A-Za-z)])\d+/g, '<sub>$&</sub>');
+      return res;
+    }
+  }).join('');
 }
 
 // Handle Tab Switching in feedback card
@@ -1491,7 +1580,8 @@ function renderMockExamQuestion() {
         delimiters: [
           { left: "$$", right: "$$", display: true },
           { left: "$", right: "$", display: false },
-          { left: "\\(", right: "\\)", display: false }
+          { left: "\\(", right: "\\)", display: false },
+          { left: "\\[", right: "\\]", display: true }
         ],
         throwOnError: false
       });
@@ -1883,7 +1973,8 @@ function reviewMockQuestion(idx) {
         delimiters: [
           { left: "$$", right: "$$", display: true },
           { left: "$", right: "$", display: false },
-          { left: "\\(", right: "\\)", display: false }
+          { left: "\\(", right: "\\)", display: false },
+          { left: "\\[", right: "\\]", display: true }
         ],
         throwOnError: false
       });
@@ -1919,7 +2010,9 @@ function setReviewFeedbackTab(tabName, idx) {
       renderMathInElement(contentArea, {
         delimiters: [
           { left: "$$", right: "$$", display: true },
-          { left: "$", right: "$", display: false }
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false },
+          { left: "\\[", right: "\\]", display: true }
         ],
         throwOnError: false
       });
