@@ -48,25 +48,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "HOMO ($\\psi_2$) has 1 node; LUMO ($\\psi_3$) has 2 nodes.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "HOMO ($\\psi_2$) has 2 nodes; LUMO ($\\psi_3$) has 3 nodes.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "HOMO ($\\psi_1$) has 0 nodes; LUMO ($\\psi_2$) has 1 node.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "HOMO ($\\psi_3$) has 2 nodes; LUMO ($\\psi_4$) has 3 nodes.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -86,25 +86,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Bonding between C1-C2 and C3-C4; antibonding between C2-C3.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Antibonding between C1-C2 and C3-C4; bonding between C2-C3.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Bonding between C1-C2, C2-C3, and C3-C4 with no antibonding interactions.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Antibonding between C1-C2, C2-C3, and C3-C4.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -162,25 +162,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The s-trans conformation is more stable than the s-cis conformation by approximately 12 kJ/mol due to steric repulsion between the C1 and C4 hydrogens in the s-cis form.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The s-cis conformation is more stable because it allows better overlap of the $p$ orbitals.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The transition state for rotation about the C2-C3 single bond has a planar geometry where conjugation is maximized.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The 's' in s-cis and s-trans refers to the stereochemical configuration (R/S) of the stereocenter at C2.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -276,25 +276,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "1,2-pentadiene > 1,4-pentadiene > (E)-1,3-pentadiene",
-        "smiles": "CC=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "(E)-1,3-pentadiene > 1,4-pentadiene > 1,2-pentadiene",
-        "smiles": "CC=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "1,4-pentadiene > 1,2-pentadiene > (E)-1,3-pentadiene",
-        "smiles": "CC=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "1,2-pentadiene > (E)-1,3-pentadiene > 1,4-pentadiene",
-        "smiles": "CC=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -314,25 +314,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "18 kJ/mol",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "490 kJ/mol",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "0 kJ/mol",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "36 kJ/mol",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -352,25 +352,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Delocalization of the positive charge over two carbon atoms via $\\pi$-orbital resonance overlap.",
-        "smiles": "C=CC",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Inductive donation of electron density from the adjacent $sp^3$-hybridized carbon atom.",
-        "smiles": "C=CC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Hyperconjugation from adjacent C-H bonds to the vacant $sp^2$ hybridized orbital.",
-        "smiles": "C=CC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The presence of a highly electronegative atom that stabilizes the positive charge.",
-        "smiles": "C=CC",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -428,25 +428,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "2 electrons; the non-bonding molecular orbital ($\\psi_2$) is the LUMO.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "3 electrons; the antibonding molecular orbital ($\\psi_3$) is the LUMO.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "2 electrons; the bonding molecular orbital ($\\psi_1$) is the LUMO.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "4 electrons; the non-bonding molecular orbital ($\\psi_2$) is the LUMO.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -466,25 +466,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "It is weaker than both primary (410 kJ/mol) and tertiary (381 kJ/mol) alkyl C-H bonds because the resulting allyl radical is resonance-stabilized.",
-        "smiles": "CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "It is stronger than primary C-H bonds but weaker than tertiary C-H bonds because of $sp^2$ hybridization of the adjacent carbons.",
-        "smiles": "CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "It is stronger than both primary and tertiary C-H bonds because $sp^2$-hybridized carbons hold hydrogens more tightly.",
-        "smiles": "CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "It has the exact same strength as a primary alkyl C-H bond because both homolytic cleavages generate a primary radical.",
-        "smiles": "CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -504,25 +504,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The energy gap decreases, shifting the absorption to longer wavelengths (bathochromic shift).",
-        "smiles": "C=CC=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The energy gap increases, shifting the absorption to shorter wavelengths (hypsochromic shift).",
-        "smiles": "C=CC=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The energy gap decreases, shifting the absorption to shorter wavelengths (hypsochromic shift).",
-        "smiles": "C=CC=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The energy gap remains constant, but the intensity of the absorption (molar absorptivity) increases.",
-        "smiles": "C=CC=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -618,25 +618,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The allylic carbocation formed by protonation at C1, because it possesses a resonance contributor that is a tertiary carbocation.",
-        "smiles": "CC(=C)C=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The allylic carbocation formed by protonation at C4, because it possesses a resonance contributor that is a secondary carbocation.",
-        "smiles": "CC(=C)C=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The non-allylic carbocation formed by protonation at C2, because it is tertiary.",
-        "smiles": "CC(=C)C=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The allylic carbocation formed by protonation at C3, because it minimizes steric hindrance.",
-        "smiles": "CC(=C)C=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -694,25 +694,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The reaction proceeds through a cyclic halonium ion (bromonium ion) intermediate that is in resonance with an allylic carbocation, allowing nucleophilic attack of bromide at either the C2 or C4 positions.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The reaction is a concerted [2+2] cycloaddition followed by a thermal ring-opening rearrangement.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Free radical intermediates are formed that undergo fast regioselective coupling with bromine atoms.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The thermodynamic product is cis-1,4-dibromo-2-butene because cis double bonds have less steric strain than trans double bonds.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -808,25 +808,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "At C1, because it generates an allylic carbocation with a tertiary carbocation resonance contributor at C4.",
-        "smiles": "CC(C)=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "At C4, because it forms a tertiary carbocation directly.",
-        "smiles": "CC(C)=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "At C3, because it forms a secondary carbocation.",
-        "smiles": "CC(C)=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "At C2, because it forms a secondary carbocation.",
-        "smiles": "CC(C)=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -846,25 +846,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Both substrates dissociate to form the same resonance-stabilized allylic carbocation intermediate.",
-        "smiles": "CC(Cl)C=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The reaction proceeds via a concerted $S_N2'$ mechanism where no intermediate is formed.",
-        "smiles": "CC(Cl)C=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Both compounds undergo rapid thermal tautomerization prior to nucleophilic substitution.",
-        "smiles": "CC(Cl)C=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "They are enantiomers of each other and behave identically under chiral conditions.",
-        "smiles": "CC(Cl)C=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -884,25 +884,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The halide ion is closer to C2 immediately after C1 protonation (the proximity effect), leading to a lower activation energy for the second step.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The 1,2-addition product has a more substituted double bond and is therefore more stable.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The 1,2-addition transition state is stabilized by hyperconjugation from the nucleophile.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The 1,4-addition product requires a higher activation energy for the initial protonation step.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -922,25 +922,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The reaction is reversible; the product ratio depends only on the relative free energy ($\\Delta G^\\circ$) of the products, regardless of the transition state energies.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The product ratio depends only on the relative energies of the transition states ($TS_{1,2}$ vs $TS_{1,4}$).",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The kinetic product must always be less stable than the thermodynamic product.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Equilibrium is reached because the kinetic transition state is higher in energy than the thermodynamic transition state.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -998,25 +998,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Higher temperature provides the thermal energy required for the 1,2-addition product to eliminate bromide and revert to the carbocation intermediate, driving the reaction toward the thermodynamic product.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Higher temperature changes the rate-determining step to the protonation step.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Raising the temperature selectively lowers the activation barrier of the 1,4-addition transition state.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The 1,4-addition is endothermic, so it is favored at higher temperatures according to Le Chatelier's principle.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1074,25 +1074,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "There is a single allylic carbocation intermediate. The transition state leading to 1,2-addition ($TS_{1,2}$) is lower in energy than the transition state leading to 1,4-addition ($TS_{1,4}$), while the 1,4-product is lower in energy than the 1,2-product.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "There are two separate carbocation intermediates. The intermediate leading to 1,2-addition is lower in energy than the one leading to 1,4-addition.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The transition state for the first step (protonation) is lower in energy than both transition states for the second step (nucleophilic attack).",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The transition state leading to 1,4-addition ($TS_{1,4}$) is lower in energy than $TS_{1,2}$, but the 1,2-product is lower in energy than the 1,4-product.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1112,25 +1112,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Protonation of the diene to form the allylic carbocation intermediate.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Attack of the bromide ion on the allylic carbocation.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Deprotonation of the carbocation to regenerate the acid catalyst.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Heterolytic dissociation of the H-Br bond to form free ions.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1226,25 +1226,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Concerted, [4+2] pericyclic cycloaddition reaction.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Stepwise, radical-mediated addition reaction.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Nucleophilic substitution reaction at a vinyl carbon.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Concerted, [2+2] photochemical cycloaddition reaction.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1606,25 +1606,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The HOMO of the diene and the LUMO of the dienophile.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The LUMO of the diene and the HOMO of the dienophile.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The HOMO of the diene and the HOMO of the dienophile.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The LUMO of the diene and the LUMO of the dienophile.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1682,25 +1682,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "$-\\text{CH}_2-\\text{CH}=\\text{CH}-\\text{CH}_2-$ (trans); because the trans configuration is thermodynamically more stable than the cis configuration.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "$-\\text{CH}_2-\\text{CH}(\\text{CH}=\\text{CH}_2)-$ (1,2-addition); because the secondary radical intermediate is more reactive.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "$-\\text{CH}_2-\\text{CH}=\\text{CH}-\\text{CH}_2-$ (cis); because cis is favored by steric factors.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "$-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-$ (completely reduced); because of the high concentration of radical initiator.",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1720,25 +1720,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Natural rubber is cis-1,4-polyisoprene, which is highly elastic; gutta-percha is trans-1,4-polyisoprene, which is crystalline and non-elastic.",
-        "smiles": "CC(=C)C=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Natural rubber is trans-1,4-polyisoprene; gutta-percha is cis-1,4-polyisoprene.",
-        "smiles": "CC(=C)C=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Natural rubber is a 1,2-addition polymer; gutta-percha is a 1,4-addition polymer.",
-        "smiles": "CC(=C)C=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Natural rubber is synthesized via anionic polymerization; gutta-percha is synthesized via radical polymerization.",
-        "smiles": "CC(=C)C=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1758,25 +1758,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Heating with elemental sulfur introduces disulfide or polysulfide cross-links between the polymer chains, converting a sticky elastomer into a durable material.",
-        "smiles": "CC(=C)C=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Treating rubber with oxygen to break the double bonds and form diols, making it more soluble in water.",
-        "smiles": "CC(=C)C=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Adding plasticizers to make the rubber more flexible and fluid.",
-        "smiles": "CC(=C)C=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Undergoing acid-catalyzed hydration to convert the alkene groups to tertiary alcohols.",
-        "smiles": "CC(=C)C=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1796,25 +1796,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "$\\pi \\rightarrow \\pi^*$ transition",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "$n \\rightarrow \\pi^*$ transition",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "$\\sigma \\rightarrow \\sigma^*$ transition",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "$d \\rightarrow d$ orbital transition",
-        "smiles": "C=CC=C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1834,25 +1834,25 @@ const CHAPTER_14_QUESTIONS = [
       {
         "option_id": "A",
         "text": "237 nm",
-        "smiles": "C=C1CCCCC1=C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "227 nm",
-        "smiles": "C=C1CCCCC1=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "247 nm",
-        "smiles": "C=C1CCCCC1=C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "253 nm",
-        "smiles": "C=C1CCCCC1=C",
+        "smiles": "",
         "is_correct": false
       }
     ],

@@ -43,18 +43,18 @@ const OCHEM_QUESTIONS = [
     "topic": "Nucleophilic Substitution (SN2)",
     "difficulty_level": "Medium",
     "question_text": "Predict the major organic product of the reaction between (S)-2-bromobutane and sodium cyanide (NaCN) in dimethylformamide (DMF) solvent.",
-    "question_smiles": "CC[C@@H](C)Br",
+    "question_smiles": "CC[C@H](C)Br",
     "options": [
       {
         "option_id": "A",
         "text": "(R)-2-Methylbutanenitrile (concerted backside attack)",
-        "smiles": "CC[C@H](C)C#N",
+        "smiles": "CC[C@@H](C)C#N",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "(S)-2-Methylbutanenitrile (retention of configuration)",
-        "smiles": "CC[C@@H](C)C#N",
+        "smiles": "CC[C@H](C)C#N",
         "is_correct": false
       },
       {

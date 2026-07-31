@@ -1746,7 +1746,7 @@ const CHAPTER_9_QUESTIONS = [
       {
         "option_id": "B",
         "text": "1,2-dibromohex-5-yne",
-        "smiles": "C=CCCC(Br)CBr",
+        "smiles": "BrCC(Br)CCC#C",
         "is_correct": false
       },
       {

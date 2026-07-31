@@ -314,25 +314,25 @@ const CHAPTER_18_QUESTIONS = [
       {
         "option_id": "A",
         "text": "$C=O$ carbonyl stretching vibration",
-        "smiles": "O=C1CCCCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "$C-H$ stretching vibration",
-        "smiles": "O=C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "$C-C$ skeletal ring breathing vibration",
-        "smiles": "O=C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "$C-O$ single bond stretching vibration",
-        "smiles": "O=C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -352,25 +352,25 @@ const CHAPTER_18_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The nitrogen-14 nucleus ($I=1$) and the ortho/para/amino protons ($I=1/2$)",
-        "smiles": "Nc1ccccc1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The carbon-12 nuclei ($I=0$) and nitrogen-14 nucleus",
-        "smiles": "Nc1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The oxygen-16 nuclei ($I=0$)",
-        "smiles": "Nc1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The meta protons only ($I=1/2$)",
-        "smiles": "Nc1ccccc1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -428,25 +428,25 @@ const CHAPTER_18_QUESTIONS = [
       {
         "option_id": "A",
         "text": "A singlet at $2.3\\text{ ppm}$ ($3\\text{H}$) and a multiplet at $7.2\\text{ ppm}$ ($5\\text{H}$)",
-        "smiles": "Cc1ccccc1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "A doublet at $2.3\\text{ ppm}$ ($3\\text{H}$) and a triplet at $7.2\\text{ ppm}$ ($5\\text{H}$)",
-        "smiles": "Cc1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "A singlet at $1.5\\text{ ppm}$ ($6\\text{H}$) and a multiplet at $7.2\\text{ ppm}$ ($2\\text{H}$)",
-        "smiles": "Cc1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "A triplet at $2.3\\text{ ppm}$ ($3\\text{H}$) and a quartet at $7.2\\text{ ppm}$ ($5\\text{H}$)",
-        "smiles": "Cc1ccccc1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -466,25 +466,25 @@ const CHAPTER_18_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Conjugation with the aromatic ring increases single-bond character of the carbonyl bond, lowering its force constant.",
-        "smiles": "CC(=O)c1ccccc1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Conjugation increases the double-bond character of the carbonyl bond, increasing its force constant.",
-        "smiles": "CC(=O)c1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The methyl group acts as a strong inductive electron-withdrawing group.",
-        "smiles": "CC(=O)c1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Ring strain in the six-membered ring shifts the wavenumber to lower values.",
-        "smiles": "CC(=O)c1ccccc1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -504,25 +504,25 @@ const CHAPTER_18_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The acidic hydroxyl ($OH$) proton undergoing rapid chemical exchange with deuterium",
-        "smiles": "Oc1ccccc1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The para proton of the aromatic ring",
-        "smiles": "Oc1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The meta protons of the aromatic ring",
-        "smiles": "Oc1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The carbon-bonded aldehyde proton",
-        "smiles": "Oc1ccccc1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -542,25 +542,25 @@ const CHAPTER_18_QUESTIONS = [
       {
         "option_id": "A",
         "text": "4 signals; the C1 carbon bonded to the oxygen atom (~155 ppm)",
-        "smiles": "Oc1ccccc1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "6 signals; the C4 para carbon (~120 ppm)",
-        "smiles": "Oc1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "4 signals; the C4 para carbon (~120 ppm)",
-        "smiles": "Oc1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "6 signals; the C1 carbon bonded to the oxygen atom (~155 ppm)",
-        "smiles": "Oc1ccccc1",
+        "smiles": "",
         "is_correct": false
       }
     ],

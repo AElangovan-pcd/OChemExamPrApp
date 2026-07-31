@@ -10,25 +10,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The initial rate increases by a factor of 6.",
-        "smiles": "CC[C@H](C#N)C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The initial rate increases by a factor of 2.",
-        "smiles": "CC[C@H](C#N)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The initial rate increases by a factor of 3.",
-        "smiles": "CC[C@H](C#N)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The initial rate remains unchanged.",
-        "smiles": "CC[C@H](C#N)C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -48,25 +48,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The precipitation of sodium chloride (NaCl) as a solid byproduct, which is insoluble in acetone.",
-        "smiles": "CCCI",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The superior nucleophilicity of the iodide ion relative to the chloride ion in all organic solvents.",
-        "smiles": "CCCI",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The significantly higher bond dissociation energy of the carbon-iodine bond compared to the carbon-chlorine bond.",
-        "smiles": "CCCI",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The rapid thermal decomposition of acetone which destabilizes the alkyl chloride starting material.",
-        "smiles": "CCCI",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -86,25 +86,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The reaction rate increases dramatically because DMSO, a polar aprotic solvent, cannot form hydrogen bonds to the nucleophile, leaving the azide ion 'naked' and highly reactive.",
-        "smiles": "CCN=[N+]=[N-]",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The reaction rate decreases because methanol is more polar and stabilizes the partial charges of the transition state.",
-        "smiles": "CCN=[N+]=[N-]",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The reaction rate remains unchanged because the solvent only stabilizes the starting material and does not interact with the transition state.",
-        "smiles": "CCN=[N+]=[N-]",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The reaction rate decreases because DMSO coordinates to the bromoethane, sterically blocking the backside attack of azide.",
-        "smiles": "CCN=[N+]=[N-]",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -157,18 +157,18 @@ const CHAPTER_11_QUESTIONS = [
     "topic": "SN2 Mechanism: Stereochemistry",
     "difficulty_level": "Hard",
     "question_text": "Predict the major organic product formed when (S)-1-deuteriopropan-1-ol is treated with p-toluenesulfonyl chloride in pyridine, followed by reaction with sodium cyanide in DMSO.",
-    "question_smiles": "CCC[C@@H]([2H])O",
+    "question_smiles": "CCC[C@H]([2H])O",
     "options": [
       {
         "option_id": "A",
         "text": "(R)-2-deuteriobutanenitrile",
-        "smiles": "CCC[C@H]([2H])C#N",
+        "smiles": "CCC[C@@H]([2H])C#N",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "(S)-2-deuteriobutanenitrile",
-        "smiles": "CCC[C@@H]([2H])C#N",
+        "smiles": "CCC[C@H]([2H])C#N",
         "is_correct": false
       },
       {
@@ -180,7 +180,7 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "D",
         "text": "(R)-1-deuteriopropan-1-amine",
-        "smiles": "CCC[C@H]([2H])N",
+        "smiles": "CCC[C@@H]([2H])N",
         "is_correct": false
       }
     ],
@@ -233,7 +233,7 @@ const CHAPTER_11_QUESTIONS = [
     "topic": "SN2 Mechanism: Stereochemistry",
     "difficulty_level": "Hard",
     "question_text": "When (S)-2-bromopropanoic acid is treated with a very dilute solution of sodium hydroxide, (S)-2-hydroxypropanoic acid (lactic acid) is formed with complete retention of configuration. What accounts for this stereochemical outcome?",
-    "question_smiles": "C[C@@H](Br)C(=O)O",
+    "question_smiles": "C[C@H](Br)C(=O)O",
     "options": [
       {
         "option_id": "A",
@@ -352,25 +352,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The acid protonates the hydroxyl group, converting a poor leaving group (-OH) into an excellent leaving group (H2O).",
-        "smiles": "CCCBr",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The acid acts as a dehydrating agent that removes water from the reaction, pushing the equilibrium forward.",
-        "smiles": "CCCBr",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The acid protonates the halide ion, making it a stronger, more electrophilic nucleophile.",
-        "smiles": "CCCBr",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The acid reacts with the carbon atom to form a carbocation intermediate which is then attacked by bromide.",
-        "smiles": "CCCBr",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -504,25 +504,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Nitrite is an ambident nucleophile; the less electronegative nitrogen atom is more polarizable and attacks the electrophilic carbon preferentially in polar aprotic DMF.",
-        "smiles": "CCCC[N+](=O)[O-]",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The reaction proceeds through a carbocation intermediate that is preferentially trapped by the nitrogen atom.",
-        "smiles": "CCCC[N+](=O)[O-]",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Butyl nitrite is the thermodynamic product and isomerizes to 1-nitrobutane under the reaction conditions.",
-        "smiles": "CCCC[N+](=O)[O-]",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "DMF coordinates to the oxygen atoms of nitrite, blocking them and forcing nitrogen to attack.",
-        "smiles": "CCCC[N+](=O)[O-]",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -618,25 +618,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The three methyl groups on the beta-carbon create severe steric hindrance that physically blocks the backside approach of the nucleophile.",
-        "smiles": "CC(C)(C)CI",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The neopentyl carbocation is highly unstable, preventing the reaction from taking place.",
-        "smiles": "CC(C)(C)CI",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The carbon-bromine bond in neopentyl bromide is strengthened by hyperconjugation from the adjacent methyl groups.",
-        "smiles": "CC(C)(C)CI",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The molecule undergoes rapid E2 elimination instead of substitution.",
-        "smiles": "CC(C)(C)CI",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -656,25 +656,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The transition state of the allylic SN2 reaction is stabilized by conjugation of the reacting carbon's developing p-orbital with the adjacent double bond's pi-system.",
-        "smiles": "C=CCI",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The double bond acts as an internal nucleophile that coordinates to the sodium cation.",
-        "smiles": "C=CCI",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Allylic C-Cl bonds are weaker because the carbon is sp2-hybridized, making the bond easier to break.",
-        "smiles": "C=CCI",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Allylic halides undergo a rapid rearrangement to form a tertiary halide prior to substitution.",
-        "smiles": "C=CCI",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -694,25 +694,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The reaction exhibits first-order kinetics; it is much faster than the intermolecular reaction because the intramolecular process is entropically favored.",
-        "smiles": "C1CCOC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The reaction exhibits second-order kinetics; it is slower than the intermolecular reaction due to ring strain in forming a 5-membered ring.",
-        "smiles": "C1CCOC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The reaction exhibits zero-order kinetics; the rate is governed solely by the rate of hydrogen gas release.",
-        "smiles": "C1CCOC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The reaction exhibits second-order kinetics; the rate is identical to the intermolecular reaction because the same functional groups are involved.",
-        "smiles": "C1CCOC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -732,25 +732,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The carbonyl group is strongly electron-withdrawing, making the alpha-carbon more electrophilic; additionally, the transition state is stabilized by overlap of the forming/breaking bonds with the carbonyl \u03c0* orbital.",
-        "smiles": "O=C(CN)c1ccccc1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The aromatic ring stabilizes a carbocation intermediate, switching the mechanism to a rapid SN1 pathway.",
-        "smiles": "O=C(CN)c1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The carbonyl oxygen coordinates to the nucleophile, performing intramolecular catalysis.",
-        "smiles": "O=C(CN)c1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Steric hindrance is reduced because the carbonyl group is planar.",
-        "smiles": "O=C(CN)c1ccccc1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -770,25 +770,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "It complexes the potassium cation (K\u207a), which solubilizes the salt in acetonitrile and leaves the fluoride anion (F\u207b) 'naked' and highly nucleophilic.",
-        "smiles": "CCCCCCCCF",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "It reacts directly with 1-bromooctane to form a highly reactive crown-ether intermediate.",
-        "smiles": "CCCCCCCCF",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "It acts as a protic co-solvent that stabilizes the leaving group through hydrogen bonding.",
-        "smiles": "CCCCCCCCF",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "It oxidizes the bromide ion to bromine gas, shifting the equilibrium forward.",
-        "smiles": "CCCCCCCCF",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -808,25 +808,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The rate of the reaction remains unchanged.",
-        "smiles": "CC(C)(OC)C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The rate of the reaction is doubled.",
-        "smiles": "CC(C)(OC)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The rate of the reaction is halved.",
-        "smiles": "CC(C)(OC)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The rate of the reaction increases by a factor of 4.",
-        "smiles": "CC(C)(OC)C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -846,25 +846,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The rate increases because water is more polar and has a higher dielectric constant, which stabilizes the polar transition state of the rate-determining step.",
-        "smiles": "CC(C)(O)C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The rate decreases because water is a poorer nucleophile than ethanol.",
-        "smiles": "CC(C)(O)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The rate remains unchanged because the rate-determining step is unimolecular and independent of the solvent.",
-        "smiles": "CC(C)(O)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The rate decreases because water forms strong hydrogen bonds to the alkyl chloride, preventing its ionization.",
-        "smiles": "CC(C)(O)C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -884,25 +884,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The C-H (and C-D) bonds are involved in hyperconjugative stabilization of the developing carbocation in the transition state.",
-        "smiles": "CC(C)(O)C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "A C-H (or C-D) bond is broken in the rate-determining step.",
-        "smiles": "CC(C)(O)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The reaction proceeds via an E2 elimination rather than an SN1 substitution.",
-        "smiles": "CC(C)(O)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Deuterium acts as a steric shield that blocks water from approaching the central carbon.",
-        "smiles": "CC(C)(O)C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -960,25 +960,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Ionization of 3-bromoprop-1-ene yields a resonance-stabilized allylic carbocation, which stabilizes the rate-determining transition state.",
-        "smiles": "C=CCO",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The double bond in 3-bromoprop-1-ene stericly forces the leaving group to depart.",
-        "smiles": "C=CCO",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The alkene carbon-carbon double bond is directly attacked by water to displace the bromine.",
-        "smiles": "C=CCO",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Water is a stronger nucleophile toward sp2-hybridized systems.",
-        "smiles": "C=CCO",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -998,25 +998,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The carbocation intermediate is stabilized by resonance donation of a lone pair from the adjacent oxygen atom, forming a stable oxocarbenium ion.",
-        "smiles": "COCCOCC",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The highly electronegative oxygen atom inductively pulls electron density away, destabilizing the starting material.",
-        "smiles": "COCCOCC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The chlorine atom is a better leaving group when it is adjacent to an oxygen atom.",
-        "smiles": "COCCOCC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The reaction proceeds via a concerted SN2 pathway facilitated by ethanol coordinating to the oxygen.",
-        "smiles": "COCCOCC",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1074,25 +1074,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "A 1,2-hydride shift converts the initial secondary carbocation into a more stable tertiary carbocation.",
-        "smiles": "CCC(C)(OCC)C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "A 1,2-methyl shift converts the initial secondary carbocation into a more stable tertiary carbocation.",
-        "smiles": "CCC(C)(OCC)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The reaction proceeds via a concerted SN2 pathway with rearrangement.",
-        "smiles": "CCC(C)(OCC)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The product is formed via an E1 elimination followed by Markovnikov addition of ethanol.",
-        "smiles": "CCC(C)(OCC)C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1112,25 +1112,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "A 1,2-methyl shift.",
-        "smiles": "CC(C)C(C)(O)C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "A 1,2-hydride shift.",
-        "smiles": "CC(C)C(C)(O)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "A 1,3-methyl shift.",
-        "smiles": "CC(C)C(C)(O)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "A ring expansion.",
-        "smiles": "CC(C)C(C)(O)C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1150,25 +1150,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Ionization of the bromide is followed by a 1,2-alkyl shift that expands the 4-membered ring to a less-strained 5-membered ring carbocation.",
-        "smiles": "C1CCCC1O",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The reaction is an SN2 displacement that is assisted by the steric strain of the ring.",
-        "smiles": "C1CCCC1O",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "A 1,2-hydride shift occurs on the cyclobutane ring, followed by ring opening and re-cyclization.",
-        "smiles": "C1CCCC1O",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Cyclobutane decomposes to cyclopentane under the acidic reaction conditions.",
-        "smiles": "C1CCCC1O",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1221,7 +1221,7 @@ const CHAPTER_11_QUESTIONS = [
     "topic": "SN1 Mechanism: Stereochemistry",
     "difficulty_level": "Medium",
     "question_text": "The solvolysis of chiral (S)-3-bromo-3-methylhexane in methanol yields 3-methoxy-3-methylhexane. The product is found to be mostly racemic, but contains a slight excess of the (R)-enantiomer (net inversion). What is the molecular explanation for this partial inversion?",
-    "question_smiles": "CCCC[C@](C)(Br)CC",
+    "question_smiles": "CCCC[C@@](C)(Br)CC",
     "options": [
       {
         "option_id": "A",
@@ -1302,25 +1302,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The rate increases by a factor of 4.",
-        "smiles": "C=CC",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The rate increases by a factor of 2.",
-        "smiles": "C=CC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The rate remains unchanged.",
-        "smiles": "C=CC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The rate increases by a factor of 8.",
-        "smiles": "C=CC",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1606,25 +1606,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The C-H bond is broken in the rate-determining step of the reaction.",
-        "smiles": "C=CC",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The reaction proceeds via a carbocation intermediate.",
-        "smiles": "C=CC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "C-Br bond cleavage is the only rate-determining step.",
-        "smiles": "C=CC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The base is not involved in the rate-determining step.",
-        "smiles": "C=CC",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1644,25 +1644,25 @@ const CHAPTER_11_QUESTIONS = [
       {
         "option_id": "A",
         "text": "E1 pathway; the carbocation intermediate loses a beta-proton to the weak base ethanol in the fast step.",
-        "smiles": "CC(C)=CC",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "E2 pathway; ethanol acts as a strong base to remove the beta-proton in a concerted step.",
-        "smiles": "CC(C)=CC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "SN1 pathway followed by dehydration of the resulting alcohol.",
-        "smiles": "CC(C)=CC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "A free-radical elimination process.",
-        "smiles": "CC(C)=CC",
+        "smiles": "",
         "is_correct": false
       }
     ],

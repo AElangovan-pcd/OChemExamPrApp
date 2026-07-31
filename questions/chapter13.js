@@ -10,25 +10,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Diastereotopic; 5 signals",
-        "smiles": "CC(Br)CC",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Enantiotopic; 4 signals",
-        "smiles": "CC(Br)CC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Homotopic; 4 signals",
-        "smiles": "CC(Br)CC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Diastereotopic; 4 signals",
-        "smiles": "CC(Br)CC",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -48,25 +48,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "2 signals",
-        "smiles": "Cl[C@@H]1C[C@@H]1Cl",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "B",
         "text": "3 signals",
-        "smiles": "Cl[C@@H]1C[C@@H]1Cl",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "C",
         "text": "4 signals",
-        "smiles": "Cl[C@@H]1C[C@@H]1Cl",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "5 signals",
-        "smiles": "Cl[C@@H]1C[C@@H]1Cl",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -466,25 +466,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "2 : 3",
-        "smiles": "COc1ccc(OC)cc1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "1 : 1",
-        "smiles": "COc1ccc(OC)cc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "3 : 2",
-        "smiles": "COc1ccc(OC)cc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "4 : 3",
-        "smiles": "COc1ccc(OC)cc1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -618,25 +618,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "A doublet integrating for 6H, and a septet integrating for 1H.",
-        "smiles": "CC(Cl)C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "A triplet integrating for 6H, and a quartet integrating for 1H.",
-        "smiles": "CC(Cl)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Two doublets, each integrating for 3H, and a multiplet integrating for 1H.",
-        "smiles": "CC(Cl)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "A singlet integrating for 6H, and a singlet integrating for 1H.",
-        "smiles": "CC(Cl)C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -694,25 +694,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Doublet of doublet of triplets (ddt)",
-        "smiles": "C=CCCl",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Triplet of triplets (tt)",
-        "smiles": "C=CCCl",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Multiplet of 16 lines with 1:1:1:1:1:1:1:1:1:1:1:1:1:1:1:1 intensity ratios",
-        "smiles": "C=CCCl",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Doublet of doublets of doublets (ddd)",
-        "smiles": "C=CCCl",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -846,25 +846,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Allylic coupling ($^4J$)",
-        "smiles": "CC(=C)C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Vicinal coupling ($^3J$)",
-        "smiles": "CC(=C)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Geminal coupling ($^2J$)",
-        "smiles": "CC(=C)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Homoallylic coupling ($^5J$)",
-        "smiles": "CC(=C)C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -922,25 +922,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "3 signals",
-        "smiles": "Cc1ccc(C)cc1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "4 signals",
-        "smiles": "Cc1ccc(C)cc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "5 signals",
-        "smiles": "Cc1ccc(C)cc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "8 signals",
-        "smiles": "Cc1ccc(C)cc1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -960,25 +960,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "3 signals",
-        "smiles": "Cc1cccc(C)c1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "B",
         "text": "4 signals",
-        "smiles": "Cc1cccc(C)c1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "5 signals",
-        "smiles": "Cc1cccc(C)c1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "D",
         "text": "6 signals",
-        "smiles": "Cc1cccc(C)c1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -998,25 +998,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "3 signals",
-        "smiles": "C1CC2CCC1C2",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "4 signals",
-        "smiles": "C1CC2CCC1C2",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "5 signals",
-        "smiles": "C1CC2CCC1C2",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "7 signals",
-        "smiles": "C1CC2CCC1C2",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1074,25 +1074,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "10 signals",
-        "smiles": "CC1=CCC(CC1)C(=C)C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "8 signals",
-        "smiles": "CC1=CCC(CC1)C(=C)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "6 signals",
-        "smiles": "CC1=CCC(CC1)C(=C)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "9 signals",
-        "smiles": "CC1=CCC(CC1)C(=C)C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1112,25 +1112,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "2 signals",
-        "smiles": "C1CC1C2CC2",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "3 signals",
-        "smiles": "C1CC1C2CC2",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "4 signals",
-        "smiles": "C1CC1C2CC2",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "6 signals",
-        "smiles": "C1CC1C2CC2",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1150,25 +1150,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "$\\delta \\approx 200\\text{-}220\\text{ ppm}$",
-        "smiles": "CCC(=O)C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "$\\delta \\approx 160\\text{-}180\\text{ ppm}$",
-        "smiles": "CCC(=O)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "$\\delta \\approx 110\\text{-}140\\text{ ppm}$",
-        "smiles": "CCC(=O)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "$\\delta \\approx 50\\text{-}80\\text{ ppm}$",
-        "smiles": "CCC(=O)C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1264,25 +1264,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "$\\delta \\approx 110\\text{-}160\\text{ ppm}$",
-        "smiles": "c1ccccc1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "$\\delta \\approx 60\\text{-}90\\text{ ppm}$",
-        "smiles": "c1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "$\\delta \\approx 10\\text{-}50\\text{ ppm}$",
-        "smiles": "c1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "$\\delta \\approx 180\\text{-}220\\text{ ppm}$",
-        "smiles": "c1ccccc1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1416,25 +1416,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The methyl signal ($\\delta \\approx 31\\text{ ppm}$) is positive in DEPT-135 and absent in DEPT-90; the quaternary carbon signal ($\\delta \\approx 69\\text{ ppm}$) is absent in both.",
-        "smiles": "CC(C)(C)O",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The methyl signal is positive in both DEPT-135 and DEPT-90; the quaternary carbon signal is negative in DEPT-135.",
-        "smiles": "CC(C)(C)O",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The quaternary carbon signal is positive in DEPT-90; the methyl signal is absent in DEPT-135.",
-        "smiles": "CC(C)(C)O",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Both signals are absent in DEPT-135 but present in DEPT-90.",
-        "smiles": "CC(C)(C)O",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1454,25 +1454,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "3 signals: 2 positive and 1 negative.",
-        "smiles": "CCC(=O)C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "4 signals: 3 positive and 1 negative.",
-        "smiles": "CCC(=O)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "2 signals: 1 positive and 1 negative.",
-        "smiles": "CCC(=O)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "3 signals: all positive.",
-        "smiles": "CCC(=O)C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1492,25 +1492,25 @@ const CHAPTER_13_QUESTIONS = [
       {
         "option_id": "A",
         "text": "$^{13}\\text{C}$ decoupled: 4 signals; DEPT-90: 0 signals; DEPT-135: 3 negative signals.",
-        "smiles": "O=C1CCCCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "$^{13}\\text{C}$ decoupled: 4 signals; DEPT-90: 1 signal; DEPT-135: 3 positive signals.",
-        "smiles": "O=C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "$^{13}\\text{C}$ decoupled: 6 signals; DEPT-90: 0 signals; DEPT-135: 5 negative signals.",
-        "smiles": "O=C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "$^{13}\\text{C}$ decoupled: 4 signals; DEPT-90: 0 signals; DEPT-135: 4 negative signals.",
-        "smiles": "O=C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],

@@ -233,7 +233,7 @@ const CHAPTER_5_QUESTIONS = [
     "topic": "Enantiomers",
     "difficulty_level": "Easy",
     "question_text": "If a pure sample of the enantiomer (S)-lactic acid has a specific rotation of +3.8 degrees, what is the specific rotation of pure (R)-lactic acid under identical experimental conditions?",
-    "question_smiles": "C[C@@H](O)C(=O)O",
+    "question_smiles": "C[C@H](O)C(=O)O",
     "options": [
       {
         "option_id": "A",

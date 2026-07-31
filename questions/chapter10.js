@@ -162,25 +162,25 @@ const CHAPTER_10_QUESTIONS = [
       {
         "option_id": "A",
         "text": "I < II < III < IV",
-        "smiles": "CCCCCl",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "IV < III < II < I",
-        "smiles": "CCCCCl",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "I < III < II < IV",
-        "smiles": "CCCCCl",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "II < I < III < IV",
-        "smiles": "CCCCCl",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -450,25 +450,25 @@ const CHAPTER_10_QUESTIONS = [
       {
         "option_id": "A",
         "text": "24%",
-        "smiles": "CCC(Cl)(C)C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "41%",
-        "smiles": "CCC(Cl)(C)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "50%",
-        "smiles": "CCC(Cl)(C)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "8%",
-        "smiles": "CCC(Cl)(C)C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -784,25 +784,25 @@ const CHAPTER_10_QUESTIONS = [
       {
         "option_id": "A",
         "text": "All 12 hydrogens in the molecule are chemically equivalent.",
-        "smiles": "CC(C)(C)C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The intermediate radical is too sterically hindered to react at other positions.",
-        "smiles": "CC(C)(C)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Chlorine radicals are highly selective and only target the central carbon.",
-        "smiles": "CC(C)(C)C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The central carbon lacks any C-H bonds, preventing substitution there.",
-        "smiles": "CC(C)(C)C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1004,7 +1004,7 @@ const CHAPTER_10_QUESTIONS = [
       {
         "option_id": "A",
         "text": "1-(bromomethyl)cyclohexene",
-        "smiles": "ClCC1=CCCCC1",
+        "smiles": "BrCC1=CCCCC1",
         "is_correct": true
       },
       {
@@ -1512,25 +1512,25 @@ const CHAPTER_10_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Lithium dimethylcopper and iodobenzene",
-        "smiles": "Cc1ccccc1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Methylmagnesium bromide and chlorobenzene (without catalyst)",
-        "smiles": "Cc1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Bromomethane and chlorobenzene in aqueous base",
-        "smiles": "Cc1ccccc1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Methyllithium and bromobenzene",
-        "smiles": "Cc1ccccc1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1588,25 +1588,25 @@ const CHAPTER_10_QUESTIONS = [
       {
         "option_id": "A",
         "text": "It is butane, which is achiral and optically inactive.",
-        "smiles": "CCCC",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "It is optically active (R)-butane.",
-        "smiles": "CCCC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "It is optically active (S)-butane.",
-        "smiles": "CCCC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "It is a racemic mixture of (R)- and (S)-butane.",
-        "smiles": "CCCC",
+        "smiles": "",
         "is_correct": false
       }
     ],

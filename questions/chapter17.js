@@ -1221,18 +1221,18 @@ const CHAPTER_17_QUESTIONS = [
     "topic": "reactions of alcohols (dehydration to alkenes, oxidation to aldehydes/ketones/carboxylic acids with PCC/DMP/chromic acid, conversion to alkyl halides via SOCl2/PBr3/HX, conversion to tosylates/mesylates)",
     "difficulty_level": "Hard",
     "question_text": "What is the stereochemical outcome of the reaction of (R)-butan-2-ol with thionyl chloride (SOCl2) in the presence of pyridine?",
-    "question_smiles": "CC[C@@H](O)C",
+    "question_smiles": "CC[C@H](O)C",
     "options": [
       {
         "option_id": "A",
         "text": "Inversion of configuration, yielding (S)-2-chlorobutane",
-        "smiles": "CC[C@H](Cl)C",
+        "smiles": "CC[C@@H](Cl)C",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Retention of configuration, yielding (R)-2-chlorobutane",
-        "smiles": "CC[C@@H](Cl)C",
+        "smiles": "CC[C@H](Cl)C",
         "is_correct": false
       },
       {
@@ -1644,25 +1644,25 @@ const CHAPTER_17_QUESTIONS = [
       {
         "option_id": "A",
         "text": "DMP reactions are run under milder, non-acidic conditions, avoiding acid-catalyzed side reactions.",
-        "smiles": "CC(C)CCO",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "DMP is a chromium-based reagent that is highly toxic but highly efficient.",
-        "smiles": "CC(C)CCO",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "DMP can oxidize tertiary alcohols to ketones.",
-        "smiles": "CC(C)CCO",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "DMP does not require any organic solvents and is performed in water.",
-        "smiles": "CC(C)CCO",
+        "smiles": "",
         "is_correct": false
       }
     ],

@@ -466,25 +466,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "It is virtually free of both angle strain and torsional strain.",
-        "smiles": "C1CCCCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "It has planar geometry which maximizes orbital overlap.",
-        "smiles": "C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Its C-C-C angles are forced to be exactly 120 degrees.",
-        "smiles": "C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "It has significant transannular strain which stabilizes the C-C bonds.",
-        "smiles": "C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -618,25 +618,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "It puckers to decrease torsional strain, which slightly increases angle strain.",
-        "smiles": "C1CCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "It is completely planar, which minimizes all angle strain.",
-        "smiles": "C1CCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "It has no torsional strain because all C-H bonds are staggered.",
-        "smiles": "C1CCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "It has less angle strain than cyclopentane.",
-        "smiles": "C1CCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -770,25 +770,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The sp3 hybrid orbitals cannot point directly at each other, resulting in less effective, non-linear overlap.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The carbon atoms undergo sp2 hybridization to form pi-like bonds.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The hydrogen atoms push the C-C bonds inward via steric repulsion.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The bonds are bent to accommodate the ring flip of cyclopropane.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -808,25 +808,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The carbons are sp3 hybridized, but the C-C bonds have increased p-character while the C-H bonds have increased s-character.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The carbons are sp2 hybridized, leaving a perpendicular unhybridized p-orbital on each carbon.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The carbons are sp3 hybridized, and all orbital overlaps are identical to those in propane.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The C-C bonds are pure p-p overlaps, while C-H bonds are sp2 hybrid overlaps.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -846,25 +846,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "25 degrees",
-        "smiles": "C1CCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "0 degrees",
-        "smiles": "C1CCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "45 degrees",
-        "smiles": "C1CCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "60 degrees",
-        "smiles": "C1CCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -884,25 +884,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Four carbon atoms are coplanar, and one carbon atom is bent out of the plane.",
-        "smiles": "C1CCCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Three carbon atoms are coplanar, and two adjacent carbon atoms are bent in opposite directions.",
-        "smiles": "C1CCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "All five carbon atoms lie in a single plane, but the bonds are bent.",
-        "smiles": "C1CCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Five carbon atoms form a chair-like conformation with axial and equatorial positions.",
-        "smiles": "C1CCCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -922,25 +922,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Puckering the ring pulls the bridgehead carbons closer, sacrificing angle strain to minimize torsional strain.",
-        "smiles": "C1CCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The sp3 orbitals are compressed by transannular hydrogen interactions.",
-        "smiles": "C1CCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The ring carbon atoms undergo sp-hybridization.",
-        "smiles": "C1CCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Angle strain is minimized when the internal angle is exactly 88 degrees.",
-        "smiles": "C1CCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -960,25 +960,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Torsional strain",
-        "smiles": "C1CCCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Angle strain",
-        "smiles": "C1CCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Steric strain",
-        "smiles": "C1CCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Transannular strain",
-        "smiles": "C1CCCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -998,25 +998,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "10 pairs",
-        "smiles": "C1CCCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "5 pairs",
-        "smiles": "C1CCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "8 pairs",
-        "smiles": "C1CCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "20 pairs",
-        "smiles": "C1CCCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1036,25 +1036,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The ring is geometrically constrained to be planar because three points define a plane.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The bent C-C bonds force the C-H bonds to align to maximize orbital overlap.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The hydrogens are hydrogen-bonded to each other across the ring.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "A ring flip in cyclopropane dynamically eclipses the C-H bonds.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1226,25 +1226,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "All adjacent C-H bonds are staggered with dihedral angles of approximately 60 degrees.",
-        "smiles": "C1CCCCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The ring is planar, allowing the bonds to spread out.",
-        "smiles": "C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The C-C-C bond angles are compressed to exactly 90 degrees.",
-        "smiles": "C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The axial and equatorial positions undergo rapid degenerate exchange.",
-        "smiles": "C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1302,25 +1302,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "It is extremely close to the ideal tetrahedral angle of 109.5 degrees, causing negligible strain.",
-        "smiles": "C1CCCCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The carbon atoms are sp2-hybridized, making 111.5 degrees very stable.",
-        "smiles": "C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The angle strain is offset by a strong intramolecular hydrogen bond.",
-        "smiles": "C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The bond angles are dynamic and average to exactly 90 degrees over time.",
-        "smiles": "C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1340,25 +1340,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "An equatorial methyl group becomes axial, but remains on the same face (up/down) of the ring.",
-        "smiles": "CC1CCCCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "An equatorial methyl group becomes axial and switches from the top face to the bottom face.",
-        "smiles": "CC1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "An equatorial methyl group remains equatorial, but changes its carbon location.",
-        "smiles": "CC1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The methyl group detaches and reattaches on the opposite face.",
-        "smiles": "CC1CCCCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1492,25 +1492,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Two gauche-butane interactions",
-        "smiles": "CCCC",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Two anti-butane interactions",
-        "smiles": "CCCC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "One eclipsed butane interaction",
-        "smiles": "CCCC",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "One gauche and one anti interaction",
-        "smiles": "CCCC",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1530,25 +1530,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The cyano group is linear and points straight up and away from the ring, minimizing steric clash with C3/C5 axial hydrogens.",
-        "smiles": "N#CC1CCCCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The nitrogen atom forms a hydrogen bond with the axial C3 hydrogen.",
-        "smiles": "N#CC1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The cyano group undergoes a rapid chemical reaction with the solvent.",
-        "smiles": "N#CC1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The sp-hybridized carbon has no steric radius.",
-        "smiles": "N#CC1CCCCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1568,25 +1568,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The C-I bond length is significantly longer, placing the iodine atom further away from the C3/C5 axial hydrogens.",
-        "smiles": "IC1CCCCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Iodine is highly polarizable and forms attractive London dispersion forces with the ring.",
-        "smiles": "IC1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Iodine is less electronegative and does not repel the electron density of the C-H bonds.",
-        "smiles": "IC1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The C-I bond is unstable and undergoes rapid homolytic cleavage.",
-        "smiles": "IC1CCCCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1606,25 +1606,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Both methyl groups are equatorial (diequatorial).",
-        "smiles": "C[C@@H]1CCCC[C@@H]1C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Both methyl groups are axial (diaxial).",
-        "smiles": "C[C@@H]1CCCC[C@@H]1C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "One methyl group is axial and the other is equatorial.",
-        "smiles": "C[C@@H]1CCCC[C@@H]1C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "One methyl group is axial and the other is in a flagpole position.",
-        "smiles": "C[C@@H]1CCCC[C@@H]1C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1644,25 +1644,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Both chair conformations have one axial methyl group and one equatorial methyl group, and are equal in energy.",
-        "smiles": "C[C@H]1CCCC[C@@H]1C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The most stable chair conformation has both methyl groups equatorial.",
-        "smiles": "C[C@H]1CCCC[C@@H]1C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The most stable chair conformation has both methyl groups axial.",
-        "smiles": "C[C@H]1CCCC[C@@H]1C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "One chair conformation is diequatorial and is more stable than the other which is diaxial.",
-        "smiles": "C[C@H]1CCCC[C@@H]1C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1720,25 +1720,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Both methyl groups are equatorial (diequatorial).",
-        "smiles": "C[C@@H]1CC[C@@H](C)CC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Both methyl groups are axial (diaxial).",
-        "smiles": "C[C@@H]1CC[C@@H](C)CC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "One methyl group is axial and the other is equatorial.",
-        "smiles": "C[C@@H]1CC[C@@H](C)CC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "One methyl group is equatorial and the other is in a twist-boat conformation.",
-        "smiles": "C[C@@H]1CC[C@@H](C)CC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1758,25 +1758,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "15.2 kJ/mol (3.6 kcal/mol)",
-        "smiles": "C1CC[C@H](C)CC[C@@H]1C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "7.6 kJ/mol (1.8 kcal/mol)",
-        "smiles": "C1CC[C@H](C)CC[C@@H]1C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "0 kJ/mol (degenerate conformations)",
-        "smiles": "C1CC[C@H](C)CC[C@@H]1C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "11.4 kJ/mol (2.7 kcal/mol)",
-        "smiles": "C1CC[C@H](C)CC[C@@H]1C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1796,25 +1796,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The tert-butyl group is equatorial and the methyl group is axial.",
-        "smiles": "CC(C)(C)C1CC(C)CCC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The tert-butyl group is axial and the methyl group is equatorial.",
-        "smiles": "CC(C)(C)C1CC(C)CCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Both the tert-butyl and methyl groups are equatorial.",
-        "smiles": "CC(C)(C)C1CC(C)CCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Both the tert-butyl and methyl groups are axial.",
-        "smiles": "CC(C)(C)C1CC(C)CCC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1834,25 +1834,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The isopropyl group is equatorial and the methyl group is axial.",
-        "smiles": "CC(C)C1CCC(C)CC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The isopropyl group is axial and the methyl group is equatorial.",
-        "smiles": "CC(C)C1CCC(C)CC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Both substituents are equatorial.",
-        "smiles": "CC(C)C1CCC(C)CC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Both substituents are axial.",
-        "smiles": "CC(C)C1CCC(C)CC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -1872,25 +1872,25 @@ const CHAPTER_4_QUESTIONS = [
       {
         "option_id": "A",
         "text": "All three substituents are equatorial.",
-        "smiles": "CC(C)[C@@H]1CC[C@@H](C)C[C@H]1O",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The isopropyl and methyl groups are equatorial, while the hydroxyl group is axial.",
-        "smiles": "CC(C)[C@@H]1CC[C@@H](C)C[C@H]1O",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The isopropyl group is equatorial, while the methyl and hydroxyl groups are axial.",
-        "smiles": "CC(C)[C@@H]1CC[C@@H](C)C[C@H]1O",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "All three substituents are axial.",
-        "smiles": "CC(C)[C@@H]1CC[C@@H](C)C[C@H]1O",
+        "smiles": "",
         "is_correct": false
       }
     ],
