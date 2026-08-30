@@ -1,25 +1,31 @@
+# Dependencies & Build artifacts
 node_modules/
+package.json
+package-lock.json
+
+# Local Data, Images & Resources
+active_smiles.json
+images/
+trusted_resources/
 graphify-out/
+
+# Large / Packaged / Reference files
+*.pdf
+*.zip
+
+# Documentation & AI / Development artifacts
+README.md
+REVIEW.md
+
+# Local scripts & generation utilities
+*.py
+questions/*.py
+scan_active_smiles.js
+
+# OS & Environment files
 .DS_Store
 *.log
 .env
 .env.local
 .env.*.local
 
-# Large / Packaged files
-Preparing for organic chemistry final.pdf
-OChemACSExamPrApp.zip
-
-# AI / Development artifacts
-REVIEW.md
-
-# Development / Generation scripts
-integrate_chapters.py
-show_visual_matches.py
-scan_active_smiles.js
-questions/generate_acs_chapters.py
-questions/generate_chapter12.py
-questions/generate_chapter15.py
-
-# Unused resource folders
-trusted_resources/
