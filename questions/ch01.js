@@ -1087,13 +1087,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Explain how hybridization affects C-H bond length and strength.",
-      "process": "Step 1: Carbon in acetylene is $sp$ hybridized (50% $s$-character). Carbon in ethane is $sp^3$ hybridized (25% $s$-character).\nStep 2: $s$ orbitals are closer to the nucleus than $p$ orbitals. Higher $s$-character means valence electrons are held closer to the carbon nucleus.\nStep 3: This results in a shorter, tighter, and stronger covalent C-H bond in acetylene compared to ethane.",
-      "result": "The correct choice is A."
+      "context": "An s orbital has its greatest electron density at the nucleus, while a p orbital has a node there. A hybrid orbital's s character therefore controls how close to the nucleus it holds its electrons - and that distance is what bond length measures.",
+      "approach": "Step 1: Assign the carbons. Acetylene's carbon is sp, built from one s and one p orbital, so it is 50 percent s in character. Ethane's is sp3, one s and three p, so 25 percent.\nStep 2: More s character means the bonding electrons sit closer to the carbon nucleus.\nStep 3: A shorter bond puts the nuclei nearer to the shared electrons and to each other, which also makes the bond harder to break. Both the shorter length and the greater strength follow from the same cause.",
+      "note": "The same s character has a second consequence that pulls in a different direction: it makes the sp carbon effectively more electronegative, so it stabilises a negative charge left behind if the hydrogen leaves. That is why a terminal alkyne is far more acidic than an alkane despite having the stronger C-H bond.",
+      "options": {
+        "A": "Correct. An sp orbital is 50 percent s against sp3's 25 percent, so it holds the bonding electrons closer to the nucleus - a shorter and stronger bond.",
+        "B": "Steric hindrance around a hydrogen atom is negligible in both molecules, and hybridization is not a steric effect. The difference here is in where the orbital holds its electrons.",
+        "C": "This reverses the trend. The sp carbon of acetylene is the more electronegative of the two, precisely because of its higher s character.",
+        "D": "The acetylenic hydrogen is indeed relatively acidic, but that is a consequence of the same s character rather than the cause of the short bond. A partial positive charge on hydrogen does not shorten a bond."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two carbon atoms joined by a triple bond, with one hydrogen atom on each carbon."
   },
   {
     "question_id": "ch01_q24_pi_bond_nature",
@@ -1128,12 +1135,18 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Review the definition and properties of a $\\pi$ bond.",
-      "process": "Step 1: Check how a $\\pi$ bond is formed: parallel side-to-side overlap of unhybridized $p$ orbitals.\nStep 2: Identify where electron density is located: above and below the line connecting the nuclei (internuclear axis).\nStep 3: Compare with $\\sigma$ bonds: $\\pi$ bonds are weaker due to less effective side-to-side overlap and restrict rotation.",
-      "result": "The correct definition is A."
+      "context": "Sigma and pi bonds are distinguished by the geometry of the orbital overlap that forms them. Sigma overlap is head-on along the line joining the nuclei; pi overlap is sideways between orbitals parallel to each other and perpendicular to that line.",
+      "approach": "Step 1: Recall where a pi bond comes from - two unhybridized p orbitals, one on each atom, left over after hybridization.\nStep 2: Those p orbitals stand parallel to each other and perpendicular to the internuclear axis, so they can only meet sideways.\nStep 3: Sideways overlap puts electron density in two lobes, one above and one below the axis, with a nodal plane containing the two nuclei.",
+      "note": "That sideways geometry explains the properties as well as the shape. The overlap is poorer than head-on, so a pi bond is weaker; and twisting about the axis destroys the overlap, so rotation is blocked rather than free.",
+      "options": {
+        "A": "Correct. Two parallel p orbitals overlap sideways, placing electron density above and below the internuclear axis with a node along it.",
+        "B": "This describes a sigma bond. Head-on overlap along the internuclear axis is exactly what distinguishes sigma from pi.",
+        "C": "A pi bond is the weaker of the two. Sideways overlap is less effective than head-on, which is why the first bond between two atoms is always the sigma bond.",
+        "D": "The opposite is true. Rotation would break the sideways overlap, so a pi bond restricts rotation - the basis of cis-trans isomerism."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1217,13 +1230,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Calculate the formal charge on nitrogen in $NH_4^+$.",
-      "process": "Step 1: Formal charge formula: $FC = (valence \\ e^-) - (nonbonding \\ e^-) - 0.5 * (bonding \\ e^-)$.\nStep 2: Nitrogen has 5 valence electrons. In $NH_4^+$, it has 0 nonbonding electrons (no lone pairs) and 8 bonding electrons (4 single bonds).\nStep 3: Calculate: $5 - 0 - 4 = +1$.",
-      "result": "The formal charge is +1."
+      "context": "Formal charge compares the electrons an atom actually has in a structure with the number it would own as a free atom. The arithmetic is: valence electrons, minus nonbonding electrons, minus the number of bonds.",
+      "approach": "Step 1: Nitrogen's valence electron count is 5.\nStep 2: In the ammonium ion the nitrogen has no lone pairs, so its nonbonding electron count is 0.\nStep 3: It forms four N-H bonds. So the formal charge is 5 minus 0 minus 4, which is plus 1.",
+      "note": "Worth committing to memory as a pattern rather than recomputing: a nitrogen with four bonds and no lone pair is always plus 1. Every quaternary ammonium salt and every protonated amine in this course shows it.",
+      "options": {
+        "A": "Correct. Five valence electrons, no lone pairs and four bonds give 5 minus 0 minus 4, which is plus 1.",
+        "B": "A neutral nitrogen has three bonds and one lone pair. Adding a fourth bond and removing the lone pair changes the count, so this structure cannot be neutral.",
+        "C": "A negative formal charge would require the nitrogen to hold more electrons than a free atom, which means lone pairs. This nitrogen has none.",
+        "D": "Plus 2 would need a fifth bond or the loss of further electrons. Nitrogen cannot form five bonds; it has no d orbitals to expand its octet."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A nitrogen atom bonded to four hydrogen atoms, the whole ion drawn with a positive charge."
   },
   {
     "question_id": "ch01_q27_formal_charge_hydronium",
@@ -1258,13 +1278,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Determine oxygen's formal charge in $H_3O^+$.",
-      "process": "Step 1: Oxygen has 6 valence electrons.\nStep 2: In $H_3O^+$, oxygen has 1 lone pair (2 nonbonding $e^-$) and 3 single bonds (6 bonding $e^-$).\nStep 3: Calculate: $6 - 2 - 3 = +1$.",
-      "result": "The formal charge is +1."
+      "context": "The same formal-charge arithmetic applies to every atom: valence electrons minus nonbonding electrons minus bonds. What changes from atom to atom is the valence count and how many lone pairs survive in the structure.",
+      "approach": "Step 1: Oxygen's valence electron count is 6.\nStep 2: In the hydronium ion the oxygen keeps one lone pair, which is 2 nonbonding electrons.\nStep 3: It forms three O-H bonds. The formal charge is 6 minus 2 minus 3, which is plus 1.",
+      "note": "This is what a protonated alcohol or ether looks like too - an oxygen with three bonds and one lone pair carries plus 1. Recognising it on sight matters, because that is the intermediate in every acid-catalysed reaction of an alcohol you will meet.",
+      "options": {
+        "A": "Correct. Six valence electrons, one lone pair and three bonds give 6 minus 2 minus 3, which is plus 1.",
+        "B": "Neutral oxygen has two bonds and two lone pairs. Here it has gained a third bond at the cost of a lone pair, so the count no longer balances at zero.",
+        "C": "Plus 2 would require a fourth bond, leaving oxygen with no lone pairs at all. The structure shown has three bonds and retains one lone pair.",
+        "D": "A negative charge would mean extra electrons relative to a free oxygen atom - three lone pairs and one bond, as in hydroxide. This oxygen has fewer, not more."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An oxygen atom bonded to three hydrogen atoms, the whole ion drawn with a positive charge."
   },
   {
     "question_id": "ch01_q28_formal_charge_nitromethane_N",
@@ -1299,13 +1326,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Analyze formal charges in nitromethane ($CH_3NO_2$).",
-      "process": "Step 1: Draw the Lewis structure of nitromethane. Nitrogen forms 4 bonds (one single bond to methyl C, one single bond to a negative oxygen, and one double bond to a neutral oxygen). It has 0 lone pairs.\nStep 2: Nitrogen valence = 5.\nStep 3: Calculate: $5 - 0 - 4 = +1$.",
-      "result": "The nitrogen carries a +1 formal charge."
+      "context": "Formal charge is assigned per atom from that atom's own bonds and lone pairs, independently of what the rest of the molecule is doing. A double bond counts as two bonds in the tally.",
+      "approach": "Step 1: Nitrogen's valence electron count is 5.\nStep 2: In the nitro group the nitrogen carries no lone pair.\nStep 3: Count its bonds: one to the methyl carbon, two to the doubly bonded oxygen, and one to the singly bonded oxygen, making four. The formal charge is 5 minus 0 minus 4, which is plus 1.",
+      "note": "There is no way to draw a nitro group with a neutral nitrogen. Giving it a second double bond would put ten electrons around a second-row atom, so the charge-separated form is not a stylistic choice but the only legitimate Lewis structure.",
+      "options": {
+        "A": "Correct. Four bonds and no lone pair on a five-valence-electron atom give 5 minus 0 minus 4, which is plus 1.",
+        "B": "A neutral nitrogen needs three bonds and a lone pair. The nitro nitrogen has four bonds and none, and cannot be drawn otherwise without exceeding an octet.",
+        "C": "A negative formal charge requires nonbonding electrons on the atom. This nitrogen has no lone pair to give it one.",
+        "D": "Plus 2 would need five bonds to nitrogen, which a second-row element cannot form."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A methyl carbon bonded to a nitrogen, which is double bonded to one oxygen and single bonded to another; the nitrogen is drawn with a positive charge and the singly bonded oxygen with a negative charge."
   },
   {
     "question_id": "ch01_q29_formal_charge_nitromethane_O",
@@ -1340,13 +1374,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Find the formal charge on the single-bonded oxygen in a nitro group.",
-      "process": "Step 1: Oxygen valence = 6.\nStep 2: The single-bonded oxygen has 3 lone pairs (6 nonbonding electrons) and 1 single bond (2 bonding electrons).\nStep 3: Calculate: $6 - 6 - 1 = -1$.",
-      "result": "The single-bonded oxygen carries a -1 formal charge."
+      "context": "The two oxygens of a nitro group are drawn differently in any single Lewis structure - one doubly bonded, one singly bonded - and they carry different formal charges. The question names the singly bonded one specifically.",
+      "approach": "Step 1: Oxygen's valence electron count is 6.\nStep 2: The singly bonded oxygen carries three lone pairs, which is 6 nonbonding electrons.\nStep 3: It forms one bond to nitrogen. The formal charge is 6 minus 6 minus 1, which is minus 1. For comparison, the doubly bonded oxygen has two lone pairs and two bonds, giving 6 minus 4 minus 2, or zero.",
+      "note": "In reality the two oxygens are identical: resonance exchanges the double bond between them, and measurement finds two equal N-O distances. Formal charge is bookkeeping on one contributor, not a claim that one oxygen truly carries a whole unit of negative charge.",
+      "options": {
+        "A": "Correct. Three lone pairs and one bond on a six-valence-electron atom give 6 minus 6 minus 1, which is minus 1.",
+        "B": "Zero is the formal charge on the other oxygen, the doubly bonded one, which has two lone pairs and two bonds. The question asks about the singly bonded oxygen.",
+        "C": "A positive formal charge on oxygen would require three bonds, as in hydronium. This oxygen has only one.",
+        "D": "Minus 2 would mean four lone pairs and no bonds - a free oxide ion. This oxygen is bonded to the nitrogen."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A methyl carbon bonded to a nitrogen, which is double bonded to one oxygen and single bonded to another; the nitrogen is drawn with a positive charge and the singly bonded oxygen with a negative charge."
   },
   {
     "question_id": "ch01_q30_formal_charge_carbocation",
@@ -1381,13 +1422,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Determine carbon's formal charge in a carbocation.",
-      "process": "Step 1: Carbon valence = 4.\nStep 2: In a carbocation ($CH_3^+$), carbon has 0 lone pairs and 3 single bonds (6 bonding electrons).\nStep 3: Calculate: $4 - 0 - 3 = +1$.",
-      "result": "The central carbon has a formal charge of +1."
+      "context": "Carbon normally has four bonds and no lone pairs, which gives it a formal charge of zero. Any departure from that pattern - a missing bond, or a lone pair in place of one - shows up as a formal charge.",
+      "approach": "Step 1: Carbon's valence electron count is 4.\nStep 2: The methyl cation has no lone pair, so its nonbonding electron count is 0.\nStep 3: It forms three C-H bonds. The formal charge is 4 minus 0 minus 3, which is plus 1.",
+      "note": "Three groups and no lone pair make this carbon sp2 and trigonal planar, with an empty p orbital standing perpendicular to that plane. That empty orbital is the whole reason carbocations are electrophilic, and it is where a nucleophile attacks in every SN1 reaction.",
+      "options": {
+        "A": "Correct. Four valence electrons, no lone pairs and three bonds give 4 minus 0 minus 3, which is plus 1.",
+        "B": "A neutral carbon has four bonds. This one has three and no lone pair to make up the difference, so it is short of electrons relative to a free atom.",
+        "C": "Minus 1 is the methyl carbanion, where the carbon keeps a lone pair alongside its three bonds. The cation has no such pair.",
+        "D": "Plus 2 would require only two bonds and no lone pairs. The structure shown has three C-H bonds."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A carbon atom bonded to three hydrogen atoms, drawn with a positive charge and no lone pair."
   },
   {
     "question_id": "ch01_q31_formal_charge_carbanion",
@@ -1422,13 +1470,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Determine carbon's formal charge in a carbanion.",
-      "process": "Step 1: Carbon valence = 4.\nStep 2: In a carbanion ($CH_3^-$), carbon has 1 lone pair (2 nonbonding electrons) and 3 single bonds (6 bonding electrons).\nStep 3: Calculate: $4 - 2 - 3 = -1$.",
-      "result": "The carbon atom has a formal charge of -1."
+      "context": "A lone pair contributes two nonbonding electrons to the formal-charge tally, and those electrons belong entirely to the atom holding them. That is what makes an atom with an unexpected lone pair carry negative charge.",
+      "approach": "Step 1: Carbon's valence electron count is 4.\nStep 2: The methyl anion carries one lone pair, which is 2 nonbonding electrons.\nStep 3: It forms three C-H bonds. The formal charge is 4 minus 2 minus 3, which is minus 1.",
+      "note": "With three bonds and a lone pair this carbon has four groups, so it is sp3 and pyramidal rather than planar - the geometry of ammonia rather than of the cation. The exposed lone pair is what makes carbanions strong nucleophiles and strong bases.",
+      "options": {
+        "A": "Correct. Four valence electrons minus two nonbonding electrons minus three bonds gives minus 1.",
+        "B": "Zero would require four bonds and no lone pair. Here one of carbon's four groups is a lone pair rather than a bond.",
+        "C": "Plus 1 is the methyl cation, which has three bonds and no lone pair. The lone pair drawn here is exactly what makes the difference.",
+        "D": "Minus 2 would need two lone pairs alongside the three bonds, giving carbon ten electrons and breaking the octet rule."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A carbon atom bonded to three hydrogen atoms and carrying a lone pair, drawn with a negative charge."
   },
   {
     "question_id": "ch01_q32_formal_charge_radical",
@@ -1463,13 +1518,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Analyze formal charges in radicals.",
-      "process": "Step 1: Carbon valence = 4.\nStep 2: In a methyl radical ($CH_3^\\bullet$), carbon has 1 unpaired electron (1 nonbonding electron) and 3 single bonds (6 bonding electrons).\nStep 3: Calculate: $4 - 1 - 3 = 0$.",
-      "result": "The carbon has a formal charge of 0."
+      "context": "The formal-charge formula subtracts the number of nonbonding electrons, not the number of nonbonding pairs. A single unpaired electron therefore contributes one to that subtraction, not two.",
+      "approach": "Step 1: Carbon's valence electron count is 4.\nStep 2: The methyl radical carries one unpaired electron, so its nonbonding electron count is 1.\nStep 3: It forms three C-H bonds. The formal charge is 4 minus 1 minus 3, which is zero. The species is neutral even though it has an incomplete octet.",
+      "note": "Neutral but electron-deficient is the combination that makes radicals distinctive. They are not attracted to charge the way ions are, which is why radical reactions follow chain mechanisms driven by making and breaking bonds rather than by electrostatic attraction, as Chapter 10 shows for halogenation.",
+      "options": {
+        "A": "Correct. Four valence electrons minus one nonbonding electron minus three bonds gives zero, so the radical is neutral despite having only seven electrons around carbon.",
+        "B": "Plus 1 is the methyl cation, which has no nonbonding electron at all. The radical's single electron is what brings the count back to neutral.",
+        "C": "Minus 1 is the methyl anion, which carries a full lone pair - two electrons - rather than one.",
+        "D": "Formal charges are whole numbers by construction; the formula subtracts integers. A half-integer cannot result from it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A carbon atom bonded to three hydrogen atoms and carrying a single unpaired electron."
   },
   {
     "question_id": "ch01_q33_formal_charge_diazomethane",
@@ -1504,13 +1566,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Find formal charges in the cumulene-like resonance contributor of diazomethane ($CH_2N_2$).",
-      "process": "Step 1: Carbon has 2 bonds to hydrogen and double-bonded to nitrogen (4 total bonds, 0 lone pairs). $FC = 4 - 0 - 4 = 0$.\nStep 2: Central nitrogen has double bonds to carbon and terminal nitrogen (4 total bonds, 0 lone pairs). $FC = 5 - 0 - 4 = +1$.\nStep 3: Terminal nitrogen has a double bond to central nitrogen and 2 lone pairs (4 nonbonding electrons). $FC = 5 - 4 - 2 = -1$.",
-      "result": "The formal charges are 0, +1, and -1, respectively."
+      "context": "For a structure with several charged atoms, assign each one separately and then apply the check that the formal charges must sum to the overall charge on the species - zero for a neutral molecule.",
+      "approach": "Step 1: The carbon has 4 valence electrons, no lone pair, and four bonds - two to hydrogen and two to the central nitrogen. That is 4 minus 0 minus 4, or zero.\nStep 2: The central nitrogen has 5 valence electrons, no lone pair, and four bonds - two to carbon and two to the terminal nitrogen. That is 5 minus 0 minus 4, or plus 1.\nStep 3: The terminal nitrogen has 5 valence electrons, two lone pairs, and two bonds. That is 5 minus 4 minus 2, or minus 1. The three sum to zero, matching a neutral molecule.",
+      "note": "That summation is the check worth carrying forward: if the formal charges you assign do not add up to the overall charge, the Lewis structure is wrong somewhere and no amount of rechecking a single atom will find it.",
+      "options": {
+        "A": "Correct. Carbon comes out zero with four bonds, the central nitrogen plus 1 with four bonds and no lone pair, and the terminal nitrogen minus 1 with two bonds and two lone pairs.",
+        "B": "This puts minus 1 on carbon, which would require it to hold a lone pair. The carbon here has four bonds and none, so it is neutral.",
+        "C": "All-neutral would need three bonds on the central nitrogen rather than four. As drawn it has four, which forces a positive formal charge on it.",
+        "D": "These sum to zero, so the check passes, but the individual assignments do not. Nitrogen cannot carry plus 2 here, and carbon with four bonds is neutral rather than negative."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A carbon atom with two hydrogens, double bonded to a nitrogen, which is in turn double bonded to a second nitrogen; the central nitrogen is drawn with a positive charge and the terminal nitrogen with a negative charge."
   },
   {
     "question_id": "ch01_q34_formal_charge_co",
