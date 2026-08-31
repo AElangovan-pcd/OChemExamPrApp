@@ -34,13 +34,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the lowest-locant and alphabetical tie-breaker rules for naming cycloalkanes with three or more substituents.",
-      "process": "Step 1: Identify all substituents on the cyclohexane ring: two methyl groups and one ethyl group.\nStep 2: Compare possible numbering schemes to obtain the lowest locant set. Starting at either the ethyl group or the C1-methyl group yields an identical set of locants: (1, 2, 4). Other schemes like (1, 2, 5) or (1, 3, 4) are numerically higher and eliminated.\nStep 3: Apply the tie-breaker rule. When two numbering schemes yield the same set of locants, the lower locant is assigned to the substituent cited first alphabetically. Since 'ethyl' comes before 'methyl' alphabetically, the ethyl group receives locant 1.\nStep 4: Numbering starts at the ethyl group (C1) and proceeds towards the closer methyl group (C2), placing the second methyl at C4. This yields 1-ethyl-2,4-dimethylcyclohexane.",
-      "result": "The correct IUPAC name is 1-ethyl-2,4-dimethylcyclohexane."
+      "context": "A ring has no ends, so numbering can start at any substituted carbon and run in either direction. Every one of those options must be compared, and the lowest locant set as a whole decides - not the lowest first number.",
+      "approach": "Step 1: Identify the substituents and their relative spacing round the ring: an ethyl, a methyl adjacent to it, and a second methyl two carbons further on.\nStep 2: Work through the numberings. Starting at each substituted carbon and going both ways gives sets including 1,4,5 and 1,3,4 and 1,2,5 - and, starting at the ethyl and running toward the nearer methyl, 1,2,4.\nStep 3: Compare term by term. 1,2,4 wins at the second term against every alternative, so the ethyl takes C1, one methyl C2 and the other C4. Cite alphabetically: 1-ethyl-2,4-dimethylcyclohexane.",
+      "note": "Twelve numberings exist for a trisubstituted six-ring - six starting points times two directions - and it is worth writing out the plausible ones rather than trusting the first that looks small. A set beginning 1,2 always beats one beginning 1,3, whatever the third number turns out to be.",
+      "options": {
+        "A": "Correct. The locant set 1,2,4 is the lowest available, and ethyl precedes methyl alphabetically in the citation.",
+        "B": "The right molecule under the wrong name. The set 1,2,4 was available but this numbering produces 1,2,4 assigned to the wrong carbons, placing the ethyl at C4 rather than taking the set that starts at the ethyl.",
+        "C": "The right molecule under the wrong name, numbered to give 1,3,4. Compared with 1,2,4 it loses at the second term.",
+        "D": "The right molecule under the wrong name, numbered to give 1,2,5 - which ties 1,2,4 for two terms and then loses at the third."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring carrying an ethyl group, with a methyl group on the ring carbon next to it and a second methyl two positions further round."
   },
   {
     "question_id": "ch04_q2_ring_vs_chain_priority",
@@ -75,13 +82,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the IUPAC naming convention when a cycloalkyl group is attached to an open-chain alkane.",
-      "process": "Step 1: Count the number of carbons in the ring (4 carbons) and the longest continuous carbon chain (6 carbons).\nStep 2: Since the alkyl chain has more carbons than the ring (6 vs 4), the chain is the parent alkane (hexane) and the ring is named as a substituent (cyclobutyl).\nStep 3: Number the chain from the end closer to the substituent to give the lowest locant. Numbering from right to left gives the substituent at C3 (3-cyclobutylhexane), whereas from left to right gives it at C4.",
-      "result": "The correct name is 3-cyclobutylhexane."
+      "context": "When a molecule contains both a ring and a chain, one becomes the parent and the other a substituent. The choice is made by size: whichever has more carbons is the parent.",
+      "approach": "Step 1: Count both. The chain runs to six carbons and the ring has four.\nStep 2: Six beats four, so the chain is the parent - hexane - and the ring becomes a cyclobutyl substituent.\nStep 3: Number the chain for the lowest locant. The ring sits on the third carbon counting from the nearer end, giving 3-cyclobutylhexane.",
+      "note": "The convention differs between sources and older texts sometimes made the ring the parent regardless. The modern rule is the size comparison, so a small ring on a long chain is a substituent, while the same ring carrying a short chain would be the parent instead.",
+      "options": {
+        "A": "Correct. The six-carbon chain outranks the four-membered ring, so hexane is the parent and the ring is a cyclobutyl substituent at C3.",
+        "B": "This makes the smaller ring the parent, which reverses the size rule. It would also require a hexyl substituent, and the chain here attaches through an internal carbon rather than an end.",
+        "C": "This too treats the ring as parent. The chain attaches through its third carbon, so naming it as a 1-ethylbutyl substituent is both awkward and the wrong way round.",
+        "D": "The right molecule under the wrong name. Numbering the chain from the far end gives locant 4 where 3 is available."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-carbon chain with a four-membered carbon ring attached to its third carbon."
   },
   {
     "question_id": "ch04_q3_alphabetical_numbering_tiebreaker",
@@ -116,13 +130,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the tiebreaker rule for numbering disubstituted cycloalkanes when the locant set is identical from either direction.",
-      "process": "Step 1: Numbering from either substituent gives the locant set 1,3.\nStep 2: In a tiebreaker scenario, assign the lower number (1) to the substituent that comes first alphabetically.\nStep 3: Compare 'isopropyl' (alphabetized under 'i') and 'methyl' (alphabetized under 'm'). Since 'i' precedes 'm', the isopropyl group gets C1 and the methyl group gets C3.\nStep 4: Assemble the name as 1-isopropyl-3-methylcyclohexane.",
-      "result": "The correct name is 1-isopropyl-3-methylcyclohexane."
+      "context": "When two substituents can be given the same pair of locants either way round, the locant set cannot decide between them. IUPAC breaks that tie alphabetically: the substituent cited first gets the lower number.",
+      "approach": "Step 1: Establish the locants. The two groups sit in a 1,3 relationship, and that set is the same whichever substituent is called C1.\nStep 2: Since the sets tie, apply the alphabetical tiebreaker.\nStep 3: Isopropyl files under i and methyl under m, so isopropyl is cited first and takes C1, giving 1-isopropyl-3-methylcyclohexane.",
+      "note": "Option C is not simply wrong. It uses the older systematic substituent name 1-methylethyl, which alphabetises under m - and since methyl sorts before methylethyl, that name legitimately assigns C1 to the methyl instead. Both describe the same compound and each is internally consistent; this item expects the retained name isopropyl, and current IUPAC would prefer propan-2-yl over either.",
+      "options": {
+        "A": "Correct. With the locant set tied at 1,3, the alphabetical tiebreaker gives C1 to isopropyl, which precedes methyl.",
+        "B": "The right molecule under the wrong name. The locants are the correct pair but assigned the wrong way round, giving the lower number to methyl rather than to the alphabetically earlier isopropyl.",
+        "C": "Defensible rather than wrong: written as 1-methylethyl the substituent alphabetises under m, and methyl then sorts first and takes C1. The name expected here uses the retained form isopropyl.",
+        "D": "The right molecule under the wrong name. A 1,5 relationship on a six-membered ring is the same as 1,3 counted the other way, and 1,3 is the lower set."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring carrying a methyl group and, two ring carbons away, a three-carbon branched substituent."
   },
   {
     "question_id": "ch04_q4_lowest_locant_dimethyl",
@@ -157,13 +178,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question addresses numbering rules when multiple substituents are present on a single carbon atom of a cycloalkane.",
-      "process": "Step 1: Identify substituents: two methyls at one carbon, one methyl at another carbon. The ring is a cyclopentane.\nStep 2: Compare numbering options. Starting at the carbon with two methyls gives the locant set 1,1,3. Starting at the carbon with one methyl gives 1,3,3.\nStep 3: Compare the sets 1,1,3 and 1,3,3 term-by-term. At the second term, 1 is lower than 3. Thus, 1,1,3-trimethylcyclopentane is the correct locant set.",
-      "result": "The IUPAC name is 1,1,3-trimethylcyclopentane."
+      "context": "Two substituents on the same ring carbon both take that carbon's number, so the locant appears twice. The numbering is still chosen to make the whole set as low as possible.",
+      "approach": "Step 1: Note the arrangement - a carbon bearing two methyls, and a third methyl two positions away round a five-membered ring.\nStep 2: Start numbering at the doubly substituted carbon, since giving it C1 puts two of the three locants at their minimum immediately.\nStep 3: Choose the direction. Going toward the lone methyl reaches it at C3; going the other way reaches it at C4. The set 1,1,3 beats 1,1,4, giving 1,1,3-trimethylcyclopentane.",
+      "note": "Starting at the doubly substituted carbon is not itself a rule - it happens to produce the lowest set here because two locants are fixed at once. The rule remains to compare complete sets, and a case with substituents at 1,1,4 against 2,2,3 would need that comparison made properly rather than assumed.",
+      "options": {
+        "A": "Correct. Numbering from the doubly substituted carbon toward the nearer lone methyl gives the set 1,1,3.",
+        "B": "The right molecule under the wrong name. This starts at the lone methyl, pushing the pair to C3 and giving 1,3,3, which loses at the second term.",
+        "C": "The right molecule under the wrong name. Beginning at an unsubstituted ring carbon wastes C1 entirely, and no substituent should carry a locant higher than necessary.",
+        "D": "The right molecule under the wrong name. Numbering from the doubly substituted carbon in the other direction reaches the lone methyl at C4 rather than C3."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-membered carbon ring with two methyl groups on one ring carbon and a third methyl two carbons away."
   },
   {
     "question_id": "ch04_q5_bicyclo_heptane_norbornane",
@@ -198,12 +226,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the IUPAC rules for naming bridged bicyclic alkanes.",
-      "process": "Step 1: Identify the bridgehead carbon atoms (the two carbons where the rings join). They are C1 and C4 in this 7-carbon system.\nStep 2: Count the number of carbons in each of the three bridges connecting the bridgeheads. The bridges contain 2, 2, and 1 carbon atoms.\nStep 3: Write the name format: Bicyclo[x.y.z]alkane, where x, y, and z are the bridge lengths ordered from largest to smallest. Here, it is [2.2.1].\nStep 4: Count the total number of carbon atoms in the bicyclic system (7 carbons), which corresponds to the parent alkane name 'heptane'. Combine to get Bicyclo[2.2.1]heptane.",
-      "result": "The IUPAC name is Bicyclo[2.2.1]heptane."
+      "context": "A bicyclic name has two parts to get right: the bracketed numbers count the carbons in each bridge between the two bridgehead atoms, and the parent name counts every carbon in the system.",
+      "approach": "Step 1: Count the total carbons. Norbornane has seven, so the parent is heptane and the name ends in heptane.\nStep 2: Identify the bridgeheads - the two carbons shared by both rings - and count the carbons in each bridge connecting them, ignoring the bridgeheads themselves.\nStep 3: The three bridges hold two, two and one carbon, cited in decreasing order, giving bicyclo[2.2.1]heptane. Check the arithmetic: 2 plus 2 plus 1 plus the two bridgeheads is seven.",
+      "note": "That arithmetic check catches most errors: the bracketed numbers plus 2 for the bridgeheads must equal the parent's carbon count. Norbornane's rigid bicyclic cage also makes it a favourite substrate in mechanism studies, since its geometry blocks reaction pathways that are open to ordinary rings.",
+      "options": {
+        "A": "Correct. Bridges of two, two and one carbon plus two bridgeheads gives seven carbons, matching the heptane parent.",
+        "B": "Bicyclo[2.2.2]octane has bridges summing to six, which with two bridgeheads makes eight carbons - one more than norbornane.",
+        "C": "Bicyclo[3.2.0]heptane has the right carbon count but a different arrangement: a zero bridge means the rings are fused at adjacent carbons rather than bridged.",
+        "D": "Bicyclo[2.1.1]hexane sums to four bridge carbons plus two bridgeheads, giving six rather than seven."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -239,13 +273,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests how prefix names like 'tert-' are treated when determining alphabetical priority for numbering cycloalkanes.",
-      "process": "Step 1: Identify the substituents: 'tert-butyl' and 'methyl'.\nStep 2: In alphabetizing, prefixes like 'sec-' and 'tert-' are ignored (except in 'isobutyl', 'isopropyl', etc., where 'iso' is part of the name). Thus, 'tert-butyl' is alphabetized under 'b' for butyl.\nStep 3: Compare 'b' (butyl) and 'm' (methyl). Since 'b' comes first, the carbon bearing the tert-butyl group is numbered C1 and the carbon bearing the methyl group is numbered C3.",
-      "result": "The correct name is 1-tert-butyl-3-methylcyclopentane."
+      "context": "Italicised structural prefixes such as tert- and sec- are ignored when alphabetising, so a tert-butyl group files under b. That is what decides which substituent takes the lower locant when the sets tie.",
+      "approach": "Step 1: Fix the locants. The two groups sit 1,3 to each other on the five-membered ring, and that set is the same either way round.\nStep 2: Alphabetise. Strip the italicised tert- and the group files under b for butyl; methyl files under m. So b precedes m.\nStep 3: The alphabetically earlier substituent takes C1, giving 1-tert-butyl-3-methylcyclopentane.",
+      "note": "Contrast this with isobutyl, where the iso prefix is not italicised and does count, filing the group under i. The distinction is that tert- and sec- describe the attachment carbon while iso- is treated as part of the substituent's name - arbitrary-looking, but it decides cases like this one.",
+      "options": {
+        "A": "Correct. Ignoring the italicised tert-, butyl files under b and precedes methyl, so it takes C1.",
+        "B": "The right molecule under the wrong name. The locants are correct but assigned the wrong way round, giving C1 to methyl when butyl sorts earlier.",
+        "C": "The right molecule under the wrong name. The substituents are cited in the wrong order - tert-butyl alphabetises under b and must be written first.",
+        "D": "This names a different compound. A plain butyl group is an unbranched four-carbon chain, not the branched tert-butyl group shown."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-membered carbon ring carrying a methyl group and, two ring carbons away, a carbon bearing three methyl groups."
   },
   {
     "question_id": "ch04_q7_decalin_iupac",
@@ -280,13 +321,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests naming conventions for fused bicyclic ring systems.",
-      "process": "Step 1: Identify the bridgehead carbons where the two six-membered rings fuse.\nStep 2: Determine the three pathways (bridges) that connect these two bridgeheads. Two of the pathways contain 4 carbons each. The third pathway is the direct bond between the bridgeheads, which contains 0 carbons.\nStep 3: Format the bridge sizes: [4.4.0].\nStep 4: Count the total number of carbon atoms. Decalin has 10 carbons. The parent name is decane. Thus, the name is Bicyclo[4.4.0]decane.",
-      "result": "The systematic name is Bicyclo[4.4.0]decane."
+      "context": "Fused bicyclic systems, where the two rings share an edge rather than a longer bridge, are still named with bicyclo notation. A shared edge means the third bridge contains no carbons at all, which is written as zero.",
+      "approach": "Step 1: Count the total carbons. Decalin has ten, so the parent is decane.\nStep 2: Identify the bridgeheads - the two carbons shared between the rings - and count the bridges between them. Each ring contributes four carbons, and the direct bond between the bridgeheads is the third bridge with zero carbons.\nStep 3: Cite in decreasing order: bicyclo[4.4.0]decane. Check: 4 plus 4 plus 0 plus two bridgeheads makes ten.",
+      "note": "A zero in the brackets is the signature of a fused system as opposed to a bridged one. Decalin also exists as cis and trans ring-fusion isomers that differ markedly in shape and stability, which is where this chapter's conformational analysis of cyclohexane becomes directly useful.",
+      "options": {
+        "A": "Correct. Two four-carbon bridges plus a zero bridge and two bridgeheads gives ten carbons, matching decane.",
+        "B": "Bicyclo[4.4.1]undecane has a one-carbon third bridge, making eleven carbons and a genuinely bridged rather than fused system.",
+        "C": "Bicyclo[3.3.0]octane is the fused system built from two five-membered rings, with eight carbons rather than ten.",
+        "D": "Bicyclo[4.3.0]nonane fuses a six-membered ring to a five-membered one, totalling nine carbons."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two six-membered carbon rings sharing an edge, so that two carbons belong to both rings."
   },
   {
     "question_id": "ch04_q8_ring_assembled_cycloalkyl",
@@ -321,13 +369,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the IUPAC naming rules for assembly systems consisting of two identical rings.",
-      "process": "Step 1: Identify the two rings. They are both cyclobutane rings.\nStep 2: One ring is treated as the parent cycloalkane (cyclobutane) and the other is treated as a substituent (cyclobutyl).\nStep 3: For a single linkage between two identical rings, the locant '1-' is redundant and omitted from the name. Thus, the correct IUPAC name is simply cyclobutylcyclobutane.",
-      "result": "The correct systematic name is cyclobutylcyclobutane."
+      "context": "Two rings joined by a single bond share no atoms at all, which makes this a quite different case from fused or bridged bicyclics. With no shared carbons, bicyclo notation does not apply.",
+      "approach": "Step 1: Check whether any atoms are shared. Here they are not - one carbon of each ring is joined by an ordinary single bond.\nStep 2: Rule out bicyclo naming, which describes systems where two rings share two or more atoms.\nStep 3: Treat one ring as the parent and the other as a substituent on it, giving cyclobutylcyclobutane.",
+      "note": "The count in a bicyclo name refers to atoms in the ring system as a whole, so a bicyclo[n.n.n] name always implies shared atoms. Reserving that notation for genuinely fused or bridged systems keeps the distinction visible in the name itself.",
+      "options": {
+        "A": "Correct. The rings share no atoms, so one is named as a substituent on the other in ordinary substitutive fashion.",
+        "B": "Bicyclobutyl leaves the parent unnamed - a substituent name standing alone rather than a complete compound name.",
+        "C": "The bicyclo prefix implies shared atoms between the rings. These two share none, being joined only by a single bond.",
+        "D": "The locant is superfluous. With only one substituent on the parent ring, there is nothing for the number to distinguish."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two four-membered carbon rings joined to each other by a single bond between one carbon of each."
   },
   {
     "question_id": "ch04_q9_cis_trans_naming_cyclobutane",
@@ -362,12 +417,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the stereochemical descriptors 'cis' and 'trans' in cycloalkanes.",
-      "process": "Step 1: Identify the parent ring: cyclobutane.\nStep 2: Identify the substituents and their positions: ethyl groups at C1 and C2.\nStep 3: Determine the relative stereochemistry. Since the two groups point to the same face of the ring, the prefix is 'cis-'.\nStep 4: Combine the components: cis-1,2-diethylcyclobutane.",
-      "result": "The correct systematic name is cis-1,2-diethylcyclobutane."
+      "context": "A ring cannot rotate about its own bonds, so substituents are locked either above or below the mean plane of the ring. That locking creates stereoisomers that a chain of the same connectivity would not have.",
+      "approach": "Step 1: Read the locants from the description - the two ethyl groups sit on adjacent ring carbons, so 1,2.\nStep 2: Read the relative stereochemistry. Both point to the same face of the ring.\nStep 3: Same face is cis and opposite faces is trans, giving cis-1,2-diethylcyclobutane.",
+      "note": "These are genuine stereoisomers, separable and with different physical properties, unlike the conformations of butane that interconvert freely by rotation. Ring closure is what converts a rotational freedom into a fixed stereochemical relationship.",
+      "options": {
+        "A": "Correct. Adjacent carbons give the 1,2 locants and the same face gives cis.",
+        "B": "Trans would put the two ethyl groups on opposite faces of the ring, which is the other stereoisomer of the same constitution.",
+        "C": "A 1,3 relationship places the substituents with one ring carbon between them, not on adjacent carbons.",
+        "D": "This has both the locants and the stereochemistry wrong relative to the description given."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -403,13 +464,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests numbering rules when three substituents are present and we must select the lowest locant set.",
-      "process": "Step 1: Identify substituents: two methyls and one isopropyl.\nStep 2: List potential numbering paths to find the lowest locants:\n- Path 1 (starting at C1 of one methyl and going towards the other): locants 1,2,4.\n- Path 2 (starting at C1 of the other methyl): locants 1,2,5.\n- Path 3 (starting at isopropyl): locants 1,3,4.\nStep 3: The locant set 1,2,4 is the lowest set. The substituents are at positions 1, 2, and 4.\nStep 4: Numbering: methyls at 1 and 2, isopropyl at 4. Alphabetizing: 'isopropyl' comes before 'methyl'. Thus: 4-isopropyl-1,2-dimethylcyclohexane.",
-      "result": "The correct systematic name is 4-isopropyl-1,2-dimethylcyclohexane."
+      "context": "With three substituents on a ring, the lowest locant set is found by testing every starting point and direction. Only after the numbering is settled does alphabetical order come into play, and it governs the citation rather than the numbers.",
+      "approach": "Step 1: Note the arrangement - two methyls on adjacent carbons, and a branched three-carbon group separated from them.\nStep 2: Test the numberings. Starting at one of the adjacent methyls and running toward the other gives methyls at 1 and 2 and the isopropyl at 4, the set 1,2,4. Alternatives give 1,3,4 and 1,2,5, both of which lose on comparison.\nStep 3: With numbering fixed, cite the substituents alphabetically: isopropyl before methyl, giving 4-isopropyl-1,2-dimethylcyclohexane.",
+      "note": "Notice that the alphabetically first substituent here carries the highest locant. Alphabetical order controls only the order of writing; it never overrides a locant set that has already been chosen as the lowest. The two rules operate at different stages.",
+      "options": {
+        "A": "Correct. The set 1,2,4 is the lowest available, and isopropyl is written first because citation order is alphabetical.",
+        "B": "The right molecule under the wrong name, numbered to give 1,3,4, which loses to 1,2,4 at the second term.",
+        "C": "The right molecule under the wrong name, numbered to give 1,2,5. It ties 1,2,4 for two terms and then loses at the third.",
+        "D": "The right molecule under the wrong name. This assigns the methyls 2 and 3 where 1 and 2 are available, giving a higher set overall."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring carrying a three-carbon branched substituent, with two methyl groups on adjacent ring carbons positioned away from it."
   },
   {
     "question_id": "ch04_q11_highest_ring_strain",
@@ -444,12 +512,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests basic understanding of total ring strain in small and common rings.",
-      "process": "Step 1: Review total ring strain values: Cyclopropane (~115 kJ/mol), Cyclobutane (~110 kJ/mol), Cyclopentane (~26 kJ/mol), Cyclohexane (~0 kJ/mol).\nStep 2: Compare values. Cyclopropane has the highest total ring strain due to extreme angle strain (60° bond angles) and high torsional strain (eclipsed C-H bonds).",
-      "result": "Cyclopropane has the highest total ring strain."
+      "context": "Total ring strain combines angle strain, from bond angles forced away from 109.5 degrees, and torsional strain, from eclipsed bonds the ring cannot relieve. Small rings suffer both at once and cannot escape either by puckering.",
+      "approach": "Step 1: Consider angle strain. A planar three-membered ring forces 60 degree internal angles, the largest possible distortion from the tetrahedral ideal.\nStep 2: Consider torsional strain. Cyclopropane must be planar, since three points define a plane, so every pair of C-H bonds on adjacent carbons is fully eclipsed.\nStep 3: Both maxima coincide, giving about 115 kJ/mol - the greatest of the four, ahead of cyclobutane's 110, cyclopentane's 26 and cyclohexane's zero.",
+      "note": "Cyclobutane runs cyclopropane surprisingly close despite its less distorted 90 degree angles, because it has an extra carbon's worth of eclipsing and only a slight pucker to relieve it. Total strain per ring and strain per CH2 group tell different stories, and it is worth being clear which is being compared.",
+      "options": {
+        "A": "Correct. The 60 degree angles are the most distorted possible and the enforced planarity eclipses every adjacent C-H pair, giving about 115 kJ/mol.",
+        "B": "Cyclobutane is close behind at about 110 kJ/mol, its lower angle strain offset by more eclipsing interactions, but it does not exceed cyclopropane.",
+        "C": "Cyclopentane puckers into an envelope that relieves most of its strain, leaving only about 26 kJ/mol.",
+        "D": "Cyclohexane adopts a chair with ideal tetrahedral angles and every bond staggered, so it is essentially strain-free."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
