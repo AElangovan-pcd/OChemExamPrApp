@@ -1,10 +1,11 @@
-// McMurry Chapter 14 questions
-const CHAPTER_14_QUESTIONS = [
+// OChemStudyBuddy - McMurry Chapter 14
+// Author: A. Elangovan, PhD
+var CH14_QUESTIONS = [
   {
     "question_id": "ch14_q1_bond_lengths",
     "topic": "Conjugated Dienes: Structure and Hybridization",
     "difficulty_level": "Medium",
-    "question_text": "The C2-C3 single bond in 1,3-butadiene is experimentally determined to be 1.48 \u00c5, which is significantly shorter than the C-C single bond in butane (1.54 \u00c5). Which of the following factors best accounts for this bond shortening?",
+    "question_text": "The C2-C3 single bond in 1,3-butadiene is experimentally determined to be 1.48 Å, which is significantly shorter than the C-C single bond in butane (1.54 Å). Which of the following factors best accounts for this bond shortening?",
     "question_smiles": "",
     "options": [
       {
@@ -36,7 +37,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the structural features and hybridization differences between conjugated systems and saturated hydrocarbons.",
       "process": "Step 1: Compare hybridization. The carbons in butane are $sp^3$ hybridized, while the carbons in 1,3-butadiene are $sp^2$ hybridized.\nStep 2: Compare orbital s-character. $sp^2$ orbitals have 33% s-character, whereas $sp^3$ orbitals have 25% s-character. More s-character means the electrons are held closer to the nucleus, resulting in a shorter bond.\nStep 3: Analyze delocalization. In 1,3-butadiene, the $\\pi$ molecular orbitals show that there is partial double-bond character across the C2-C3 bond (bond order > 1), which further shortens the bond compared to a pure $sp^3$-$sp^3$ single bond.",
       "result": "The bond shortening is due to both the higher s-character of the $sp^2$-$sp^2$ orbital overlap and the partial double-bond character arising from conjugation."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q2_homo_lumo_nodes",
@@ -74,7 +78,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests basic Molecular Orbital (MO) theory concepts for a conjugated diene system.",
       "process": "Step 1: Determine the number of molecular orbitals. 1,3-Butadiene has four conjugated $p$ orbitals, generating four $\\pi$ molecular orbitals ($\\psi_1$, $\\psi_2$, $\\psi_3$, and $\\psi_4$) in order of increasing energy.\nStep 2: Identify the ground state electronic configuration. The four $\\pi$ electrons occupy the lowest two orbitals: two in $\\psi_1$ and two in $\\psi_2$. Thus, the HOMO is $\\psi_2$ and the LUMO is $\\psi_3$.\nStep 3: Count the vertical nodes. The number of nodes in orbital $\\psi_n$ is always $n - 1$. Therefore, $\\psi_2$ (HOMO) has $2 - 1 = 1$ node, and $\\psi_3$ (LUMO) has $3 - 1 = 2$ nodes.",
       "result": "The HOMO ($\\psi_2$) contains 1 node and the LUMO ($\\psi_3$) contains 2 nodes."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q3_psi2_symmetry",
@@ -112,7 +119,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question probes the wave function signs and symmetries of the second molecular orbital of 1,3-butadiene.",
       "process": "Step 1: Recall the signs of the phases of the $p$ orbitals on C1, C2, C3, and C4 in the $\\psi_2$ molecular orbital. The phases are (+, +, -, -) or (up, up, down, down).\nStep 2: Determine bonding and antibonding relationships. The sign does not change between C1 and C2 (both are +), meaning C1-C2 is a bonding interaction. Similarly, the sign does not change between C3 and C4 (both are -), meaning C3-C4 is a bonding interaction.\nStep 3: Analyze C2-C3. The phase changes from C2 (+) to C3 (-), which means there is a node between C2 and C3. This constitutes an antibonding interaction.",
       "result": "The $\\psi_2$ orbital is bonding between C1-C2 and C3-C4, but antibonding between C2-C3, corresponding to one nodal plane."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q4_isomer_stability",
@@ -150,7 +160,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question requires ranking the thermodynamic stability of different classes of dienes (conjugated, isolated, and cumulated).",
       "process": "Step 1: Classify the dienes. (E)-1,3-pentadiene has alternating double and single bonds, making it conjugated. 1,4-pentadiene has double bonds separated by an $sp^3$ carbon, making it isolated. 1,2-pentadiene and 3-methyl-1,2-butadiene have adjacent double bonds, making them cumulated (allenes).\nStep 2: Compare stability. Conjugated dienes are stabilized by resonance and $sp^2$-$sp^2$ single bonds. Isolated dienes behave like typical individual alkenes. Cumulated dienes (allenes) are highly strained and the least stable.\nStep 3: Analyze substituents. (E)-1,3-pentadiene is trans-substituted, which reduces steric strain compared to cis isomers.",
       "result": "(E)-1,3-pentadiene is the most stable because it is a conjugated diene in the more stable trans configuration."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q5_scis_strans_energy",
@@ -188,7 +201,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question reviews the conformational analysis of 1,3-butadiene and the structural reasons for the stability differences.",
       "process": "Step 1: Understand 's' nomenclature. The 's' stands for 'single' bond. s-cis and s-trans designate the relative orientation of the two double bonds about the connecting single bond.\nStep 2: Assess stability. In the s-cis conformation, the two double bonds lie on the same side of the C-C single bond, which brings the hydrogen atoms at C1 and C4 close together, creating steric strain.\nStep 3: Analyze the rotational barrier. Rotation around the C2-C3 single bond passes through a transition state where the double bonds are perpendicular (non-planar). In this transition state, the $\\pi$ orbitals are orthogonal, which breaks the conjugation and increases the activation energy barrier.",
       "result": "The s-trans conformation is more stable because of steric hindrance between terminal hydrogens in the s-cis conformation."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q6_scis_locked",
@@ -226,7 +242,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the concept of s-cis vs s-trans conformations in cyclic dienes and their impact on Diels-Alder reactivity.",
       "process": "Step 1: Examine structures. 1,3-cyclopentadiene and 1,3-cyclohexadiene are conjugated cyclic dienes. 1,4-cyclohexadiene is an isolated diene. Cyclooctatetraene is non-planar and not a simple diene.\nStep 2: Check s-cis conformation. In 1,3-cyclopentadiene, the five-membered ring forces the two double bonds to be permanently held on the same side of the single bond (s-cis). The ring strain prevents any rotation.\nStep 3: Compare reactivity. Because it is permanently locked in the ideal s-cis conformation, 1,3-cyclopentadiene reacts exceptionally fast in Diels-Alder reactions, even dimerizing with itself at room temperature.",
       "result": "1,3-cyclopentadiene is locked in the s-cis conformation, making it highly reactive."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q7_strans_locked",
@@ -264,7 +283,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question evaluates the structural criteria that prevent a diene from participating in a Diels-Alder reaction.",
       "process": "Step 1: Recall the conformation requirement. The Diels-Alder reaction requires a diene to adopt the s-cis conformation to allow the terminal carbons (C1 and C4) to bond with the dienophile concurrently.\nStep 2: Analyze 3-methylenecyclohexene. The endocyclic double bond and the exocyclic double bond are conjugated. However, because they are integrated into a rigid cyclohexene ring in a trans-like orientation, they are locked in the s-trans conformation and cannot rotate to s-cis without breaking the ring.\nStep 3: Contrast with others. 1,3-cyclohexadiene is locked s-cis. 1,2-dimethylenecyclohexane has two exocyclic double bonds that can achieve s-cis easily. (2E,4E)-2,4-hexadiene is acyclic and can rotate around the central single bond.",
       "result": "3-methylenecyclohexene is locked s-trans due to the constraints of the ring system, preventing Diels-Alder reactivity."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q8_heats_of_hydrogenation",
@@ -302,7 +324,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the relative stability of diene classes using heats of hydrogenation data.",
       "process": "Step 1: Recall the correlation between heat of hydrogenation and stability. A lower heat of hydrogenation (less negative $\\Delta H$) indicates a more stable starting material.\nStep 2: Order stability. Conjugated dienes (e.g. (E)-1,3-pentadiene) are stabilized by orbital overlap and are the most stable (lowest heat released). Isolated dienes (e.g. 1,4-pentadiene) are less stable (medium heat released). Cumulated dienes (e.g. 1,2-pentadiene) are highly strained and are the least stable (highest heat released).\nStep 3: Arrange in decreasing order of heat released (least stable to most stable): 1,2-pentadiene > 1,4-pentadiene > (E)-1,3-pentadiene.",
       "result": "The correct order from highest heat released to lowest heat released is: 1,2-pentadiene > 1,4-pentadiene > (E)-1,3-pentadiene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q9_resonance_energy",
@@ -340,7 +365,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question requires the calculation of conjugation (resonance) stabilization energy based on thermodynamic data.",
       "process": "Step 1: Calculate the expected heat of hydrogenation for two isolated terminal double bonds. Using 1-butene as a model, the value is $2 \\times (-127\\text{ kJ/mol}) = -254\\text{ kJ/mol}$.\nStep 2: Obtain the actual heat of hydrogenation for the conjugated 1,3-butadiene, which is $-236\\text{ kJ/mol}$.\nStep 3: Compute the difference: $-254\\text{ kJ/mol} - (-236\\text{ kJ/mol}) = -18\\text{ kJ/mol}$. This difference represents the resonance/conjugation energy that stabilizes the diene, making its hydrogenation less exothermic than expected.",
       "result": "The resonance stabilization energy of 1,3-butadiene is 18 kJ/mol."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q10_allylic_carbocation_resonance",
@@ -378,7 +406,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question evaluates the structural basis for the stability of allylic carbocations.",
       "process": "Step 1: Recall the structure of an allylic carbocation ($[CH_2-CH-CH_2]^+$). The vacant $p$ orbital on the carbocation carbon is adjacent to the $\\pi$ bond of the alkene.\nStep 2: Apply resonance theory. The three $p$ orbitals form a conjugated system, allowing the two $\\pi$ electrons to be delocalized across all three carbon atoms, effectively splitting the +1 charge between the two terminal carbons.\nStep 3: Relate delocalization to stability. Charge delocalization decreases electrostatic potential energy, making allylic carbocations significantly more stable than typical primary or secondary alkyl carbocations.",
       "result": "The stability of allylic carbocations is due to charge delocalization via resonance overlap."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q11_rotation_barrier",
@@ -416,7 +447,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question explores the relationship between orbital conjugation and physical properties like the rotational barrier.",
       "process": "Step 1: Compare the rotation in ethane and 1,3-butadiene. Ethane's barrier is due only to torsional strain (eclipsing C-H bonds).\nStep 2: Analyze butadiene's planar conformers. Both s-cis and s-trans conformers are planar, permitting continuous overlap of the four $p$ orbitals, which gives the central C2-C3 bond partial double-bond character.\nStep 3: Analyze the transition state. To rotate, the diene must pass through a perpendicular conformation (90 degrees). In this geometry, the two $\\pi$ bonds are orthogonal, completely breaking conjugation. The barrier is therefore higher because it requires inputting the energy needed to temporarily destroy the conjugation.",
       "result": "The larger rotational barrier is a direct result of losing the partial double-bond character (conjugation) in the non-planar transition state."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q12_allyl_mo_electrons",
@@ -454,7 +488,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the electronic structure of the allylic carbocation intermediate using molecular orbital theory.",
       "process": "Step 1: Identify the allylic system. Protonation of 1,3-butadiene at C1 leaves an allylic carbocation system involving C2, C3, and C4. This is a 3-carbon, 3-orbital $\\pi$ system.\nStep 2: Count the $\\pi$ electrons. The starting diene has 4 $\\pi$ electrons. Two are used to form the new C1-H $\\sigma$ bond, leaving 2 $\\pi$ electrons in the allylic system.\nStep 3: Assign electrons to orbitals. The 3 MOs are $\\psi_1$ (bonding), $\\psi_2$ (non-bonding), and $\\psi_3$ (antibonding). The 2 electrons go into $\\psi_1$. Thus, the lowest unoccupied orbital (LUMO) is the empty non-bonding orbital $\\psi_2$.",
       "result": "The allylic carbocation has 2 $\\pi$ electrons, and its LUMO is the non-bonding orbital $\\psi_2$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q13_bde_allylic_ch",
@@ -492,7 +529,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question links bond dissociation energies (BDE) directly to the thermodynamic stability of the radicals formed.",
       "process": "Step 1: Define BDE. A lower BDE means a weaker bond, which corresponds to the formation of a more stable radical.\nStep 2: Analyze the allyl radical. Homolysis of an allylic C-H bond in propene yields the allyl radical ($[CH_2-CH-CH_2]^\\bullet$). This radical is resonance-stabilized, with the unpaired electron shared between two terminal carbons.\nStep 3: Compare values. The stabilization energy of the allyl radical (~40 kJ/mol) lowers the energy of the radical product, thereby reducing the BDE of the allylic C-H bond below that of even a tertiary alkyl C-H bond.",
       "result": "The allylic C-H bond is exceptionally weak (364 kJ/mol) because the resulting radical is stabilized by resonance."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q14_homo_lumo_conjugation_length",
@@ -530,7 +570,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the relationship between the extent of conjugation and the observed UV-Vis absorption properties.",
       "process": "Step 1: Understand orbital interactions. Each additional conjugated double bond adds two $p$ orbitals to the system, creating two new $\\pi$ molecular orbitals.\nStep 2: Examine energy spacing. As the number of molecular orbitals increases, the energy spacing between all adjacent levels decreases. Consequently, the energy gap between the HOMO and LUMO ($Delta E$) becomes smaller.\nStep 3: Relate to wavelength. Since $Delta E = hc/\\lambda$, a smaller energy gap requires lower energy light (longer wavelength) to promote an electron from the HOMO to the LUMO. This shift to a longer wavelength is called a bathochromic (or red) shift.",
       "result": "Longer conjugated systems have smaller HOMO-LUMO energy gaps and absorb at longer wavelengths (bathochromic shift)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q15_hbr_addition_low_temp",
@@ -568,7 +611,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question explores the outcome of electrophilic addition to a conjugated diene under low-temperature (kinetic) conditions.",
       "process": "Step 1: Analyze reaction steps. Protonation of 1,3-butadiene at C1 yields a resonance-stabilized allylic carbocation intermediate ($[CH_3-CH-CH=CH_2]^+$).\nStep 2: Contrast pathways. The bromide ion can attack at C2 (1,2-addition) to give 3-bromo-1-butene, or at C4 (1,4-addition) to give 1-bromo-2-butene.\nStep 3: Apply kinetic control principles. At $-80\\ ^\\circ\\text{C}$, the reaction is irreversible because the system lacks thermal energy to overcome the activation barrier of the reverse reaction. The product that forms faster (has lower $E_a$) dominates. The 1,2-addition product forms faster due to the proximity of the bromide ion to C2 immediately after C1 protonation (proximity effect).",
       "result": "Under kinetic control ($-80\\ ^\\circ\\text{C}$), the major product is 3-bromo-1-butene (1,2-addition)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q16_hbr_addition_high_temp",
@@ -606,7 +652,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question explores the outcome of electrophilic addition to a conjugated diene under high-temperature (thermodynamic) conditions.",
       "process": "Step 1: Identify reaction intermediates. Protonation at C1 forms the allylic carbocation intermediate.\nStep 2: Contrast stability of products. 3-bromo-1-butene is a monosubstituted alkene. trans-1-bromo-2-butene is a disubstituted, trans-alkene, which is thermodynamically more stable.\nStep 3: Apply thermodynamic control principles. At $40\\ ^\\circ\\text{C}$, the addition is reversible. The bromide ion can leave, regenerating the carbocation. Under equilibrium, the more stable product (lower free energy, $\\Delta G^\\circ$) will predominate, regardless of which was formed faster.",
       "result": "Under thermodynamic control ($40\\ ^\\circ\\text{C}$), the major product is the more stable trans-1-bromo-2-butene (1,4-addition)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q17_isoprene_protonation_regio",
@@ -644,7 +693,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question evaluates the regiochemistry of electrophilic addition (protonation) to an unsymmetrical conjugated diene.",
       "process": "Step 1: Write down the structures resulting from protonation at each position of 2-methyl-1,3-butadiene ($CH_2=C(CH_3)-CH=CH_2$).\nStep 2: Analyze protonation at C1. This yields $[CH_3-C^+(CH_3)-CH=CH_2 \\leftrightarrow CH_3-C(CH_3)=CH-C^+H_2]$. This allylic carbocation has a tertiary carbocation contributor and a primary carbocation contributor.\nStep 3: Analyze protonation at C4. This yields $[CH_2=C(CH_3)-C^+H-CH_3 \\leftrightarrow C^+H_2-C(CH_3)=CH-CH_3]$. This allylic carbocation has a secondary contributor and a primary contributor.\nStep 4: Compare stability. The C1-protonated carbocation is significantly more stable because of the tertiary contributor, making it the preferred intermediate.",
       "result": "Protonation occurs preferentially at C1 to generate the more stable tertiary-containing allylic carbocation."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q18_13pentadiene_hbr_addition",
@@ -682,7 +734,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the regioselectivity of electrophilic addition to an unsymmetrical conjugated diene.",
       "process": "Step 1: Analyze protonation options. (E)-1,3-pentadiene is $CH_2=CH-CH=CH-CH_3$. Protonation can occur at C1 or C4.\nStep 2: Compare intermediate carbocations. Protonation at C1 yields a secondary-secondary allylic carbocation: $[CH_3-C^+H-CH=CH-CH_3 \\leftrightarrow CH_3-CH=CH-C^+H-CH_3]$. Protonation at C4 yields a secondary-primary allylic carbocation: $[CH_2=CH-C^+H-CH_2-CH_3 \\leftrightarrow C^+H_2-CH=CH-CH_2-CH_3]$. The secondary-secondary allylic carbocation is more stable and is formed preferentially.\nStep 3: Attack of bromide. Bromide attacks either C2 or C4 of the symmetric intermediate. Under both 1,2-addition (attack at C2) and 1,4-addition (attack at C4), the product is 4-bromopent-2-ene (historically numbered 4-bromo-2-pentene).",
       "result": "The major product is 4-bromopent-2-ene, derived from the highly stable secondary-secondary allylic carbocation intermediate."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q19_br2_addition_mechanism",
@@ -720,7 +775,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question focuses on the mechanism of halogenation of conjugated dienes.",
       "process": "Step 1: Electrophilic attack. $\\text{Br}_2$ reacts with the diene, and $\\text{Br}^+$ is added to one of the double bonds to form a cyclic bromonium ion.\nStep 2: Resonance stabilization. Because the bromonium ring is adjacent to the remaining double bond, it can open to form a resonance-stabilized allylic carbocation where the positive charge is shared between C2 and C4.\nStep 3: Nucleophilic attack. The bromide ion ($Br^-$) attacks C2 to yield the 1,2-addition product (3,4-dibromo-1-butene) or C4 to yield the 1,4-addition product (trans-1,4-dibromo-2-butene).",
       "result": "The mechanism involves a cyclic bromonium ion in resonance with an allylic carbocation, yielding both 1,2- and 1,4-addition products."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q20_isoprene_hbr_low_temp",
@@ -758,7 +816,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the prediction of the kinetic product for the hydrohalogenation of isoprene.",
       "process": "Step 1: Protonate isoprene. Protonation occurs at C1 (the terminal carbon of the methyl-substituted double bond) to form the tertiary allylic carbocation intermediate: $[CH_3-C^+(CH_3)-CH=CH_2]$.\nStep 2: Assess kinetic control. At $-80\\ ^\\circ\\text{C}$, the reaction is kinetically controlled. The nucleophile ($Br^-$) attacks the carbocation carbon that holds the higher positive charge density and is closest to the site of protonation (C2).\nStep 3: Write down the product structure. Attack at C2 gives 3-bromo-3-methyl-1-butene, which is the 1,2-addition product.",
       "result": "The major product under kinetic conditions is 3-bromo-3-methyl-1-butene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q21_13cyclohexadiene_hcl",
@@ -796,7 +857,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the symmetry and structural features of cyclic diene additions.",
       "process": "Step 1: Protonate 1,3-cyclohexadiene. Protonation at C1 yields a symmetric allylic carbocation in a six-membered ring: $[C1(H_2)-C2^+(H)-C3(H)=C4(H)-C5(H_2)-C6(H_2) \\leftrightarrow C1(H_2)-C2(H)=C3(H)-C4^+(H)-C5(H_2)-C6(H_2)]$.\nStep 2: Trace addition pathways. 1,2-addition occurs when chloride attacks C2, giving 3-chlorocyclohexene.\nStep 3: 1,4-addition occurs when chloride attacks C4, giving 3-chlorocyclohexene (numbering from the other side of the double bond yields the exact same IUPAC name and structure). Thus, the 1,2- and 1,4-addition products are identical.",
       "result": "Because of the symmetry of the cyclic intermediate, both 1,2- and 1,4-addition yield 3-chlorocyclohexene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q22_4methyl_13pentadiene_chlorination",
@@ -834,7 +898,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the regioselectivity of electrophilic attack on an unsymmetrical conjugated diene.",
       "process": "Step 1: Write down the structure of 4-methyl-1,3-pentadiene: $(CH_3)_2C=CH-CH=CH_2$.\nStep 2: Evaluate electrophilic attack. The electrophile $Cl^+$ will add to one of the terminal positions (C1 or C4) to yield a conjugated allylic carbocation.\nStep 3: Compare carbocations. Adding $Cl^+$ to C1 yields the allylic carbocation $[(CH_3)_2C^+-CH=CH-CH_2Cl \\leftrightarrow (CH_3)_2C=CH-C^+H-CH_2Cl]$. This has a tertiary carbocation contributor.\nStep 4: Adding $Cl^+$ to C4 yields $[(CH_3)_2C(Cl)-C^+H-CH=CH_2 \\leftrightarrow (CH_3)_2C(Cl)-CH=CH-C^+H_2]$. This is a secondary/primary allylic carbocation, which is less stable. Thus, attack occurs at C1.",
       "result": "Initial electrophilic attack by $Cl^+$ occurs at C1 to generate the more stable tertiary-containing allylic carbocation intermediate."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q23_allylic_solvolysis_rate",
@@ -872,7 +939,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question explores $S_N1$ solvolysis pathways of allylic halides.",
       "process": "Step 1: Identify the substrate structures. 3-chlorobut-1-ene is $CH_3-CH(Cl)-CH=CH_2$. 1-chlorobut-2-ene is $CH_3-CH=CH-CH_2Cl$.\nStep 2: Trace ionization. Under polar solvolytic conditions ($S_N1$), chloride leaves both substrates. Ionization of 3-chlorobut-1-ene yields the carbocation $[CH_3-C^+H-CH=CH_2]$. Ionization of 1-chlorobut-2-ene yields $[CH_3-CH=CH-C^+H_2]$.\nStep 3: Analyze resonance. These two representations are resonance structures of the same allylic carbocation: $[CH_3-CH\\dots CH\\dots CH_2]^+$. Nucleophilic attack on this common intermediate by ethanol or water yields the same mixture of products.",
       "result": "The common resonance-stabilized carbocation intermediate accounts for the identical product mixture."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q24_kinetic_control_proximity",
@@ -910,7 +980,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question probes the physical basis of the kinetic preference for 1,2-addition.",
       "process": "Step 1: Detail the first step of hydrohalogenation. Protonation of 1,3-butadiene at C1 by H-Br leaves a bromide ion ($Br^-$) directly next to the newly formed carbocation.\nStep 2: Evaluate the proximity. The bromide ion is physically closer to the C2 carbocation center than to the C4 carbocation center.\nStep 3: Connect to kinetics. Because the nucleophile has a shorter distance to travel, the collision occurs more rapidly, resulting in a lower activation energy ($E_a$) for the C2 attack compared to the C4 attack.",
       "result": "The proximity effect explains why the 1,2-addition product is formed faster and is the kinetic product."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q25_thermodynamic_control_equilibrium",
@@ -948,7 +1021,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the physical chemistry principles of kinetic versus thermodynamic control.",
       "process": "Step 1: Define thermodynamic control. Under thermodynamic control, there is sufficient thermal energy for the reaction to be reversible. All pathways can go forward and backward.\nStep 2: Relate to equilibrium. Reversibility allows the system to reach chemical equilibrium. At equilibrium, the ratio of products is determined by the equilibrium constant ($K_{eq}$), which is governed by the difference in free energy ($\\Delta G^\\circ$) between the products.\nStep 3: Contrast with kinetics. The transition state energies only dictate the speed of the forward/reverse steps, not the position of the equilibrium.",
       "result": "Under thermodynamic control, the reaction is reversible and the product ratio depends strictly on product stability ($\\Delta G^\\circ$)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q26_isomerization_kinetic_thermo",
@@ -986,7 +1062,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the reversibility of allylic addition reactions and proof of thermodynamic control.",
       "process": "Step 1: Examine the starting material: 3-bromo-1-butene (the kinetic product).\nStep 2: Analyze the role of heating and catalyst. Heating to $40\\ ^\\circ\\text{C}$ in the presence of HBr allows the bromine atom to act as a leaving group. Dissociation of $Br^-$ is catalyzed/promoted by acid, reforming the resonance-stabilized allylic carbocation intermediate.\nStep 3: Re-attack. When the bromide ion re-attacks the carbocation, it can attack C2 (reforming 3-bromo-1-butene) or C4. Attack at C4 yields the more stable trans-1-bromo-2-butene. Over time, the mixture equilibrates to favor the more stable thermodynamic product.",
       "result": "The kinetic product isomerizes to the thermodynamic product (trans-1-bromo-2-butene) via reversible carbocation formation."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q27_temperature_effect_reversible",
@@ -1024,7 +1103,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question focuses on the thermodynamic mechanism behind the temperature dependence of kinetic vs thermodynamic control.",
       "process": "Step 1: Understand low-temperature conditions. At $-80\\ ^\\circ\\text{C}$, the forward reaction is fast but there is not enough energy to undergo the reverse reaction (loss of $Br^-$ to reform carbocation). The reaction is irreversible.\nStep 2: Understand high-temperature conditions. At $40\\ ^\\circ\\text{C}$, there is enough thermal energy to overcome the activation barrier of the reverse reaction for both products. The reaction becomes reversible.\nStep 3: Analyze equilibrium. In a reversible system, the products interconvert. The system will accumulate the thermodynamic product (trans-1-bromo-2-butene) because it lies in a deeper energy well.",
       "result": "Higher temperatures make the reaction steps reversible, causing the product mixture to equilibrate toward the more stable 1,4-addition product."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q28_thermodynamic_stability_reasons",
@@ -1062,7 +1144,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question probes the structural reasons for the thermodynamic stability differences between 1,2- and 1,4-addition products.",
       "process": "Step 1: Analyze the structure of 3-bromo-1-butene: $CH_3-CH(Br)-CH=CH_2$. The double bond is monosubstituted (terminal).\nStep 2: Analyze the structure of trans-1-bromo-2-butene: $Br-CH_2-CH=CH-CH_3$. The double bond is disubstituted (internal) and has a trans configuration.\nStep 3: Compare alkene stability. Internal, more highly substituted alkenes are more stable than terminal alkenes due to hyperconjugation and $sp^2$-$sp^3$ bond strengths. The trans configuration also minimizes steric strain compared to the cis configuration.",
       "result": "trans-1-bromo-2-butene is more stable because it contains a disubstituted trans double bond."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q29_reaction_coordinate_diagram",
@@ -1100,7 +1185,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question requires interpreting a reaction coordinate energy diagram for kinetic vs thermodynamic control.",
       "process": "Step 1: Identify the intermediate. Both pathways share a single intermediate: the allylic carbocation.\nStep 2: Compare the second step transition states. $TS_{1,2}$ (attack at C2) is lower in energy than $TS_{1,4}$ (attack at C4) due to the proximity effect.\nStep 3: Compare product energies. The 1,4-addition product (trans-1-bromo-2-butene) is more stable (lower in energy) than the 1,2-addition product (3-bromo-1-butene) because it has a more substituted double bond.",
       "result": "The diagram features one intermediate where the kinetic path has a lower transition state ($TS_{1,2}$) and the thermodynamic path yields the lower energy product (1,4-product)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q30_rate_determining_step",
@@ -1138,7 +1226,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question reviews the kinetic parameters of electrophilic addition to conjugated dienes.",
       "process": "Step 1: Analyze the mechanism. Step 1 is protonation: $diene + HBr \\rightarrow carbocation + Br^-$. This step breaks a $\\pi$ bond and an H-Br bond to form a high-energy carbocation, which is highly endothermic (high $E_a$).\nStep 2: Analyze Step 2: $carbocation + Br^- \\rightarrow product$. This step combines a cation and an anion to form a $\\sigma$ bond, which is highly exothermic (low $E_a$).\nStep 3: Identify the rate-determining step. The step with the highest activation barrier is Step 1.",
       "result": "The first step (protonation to form the carbocation intermediate) is the rate-determining step."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q31_isoprene_hbr_high_temp",
@@ -1176,7 +1267,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the prediction of the thermodynamic product for the hydrohalogenation of isoprene.",
       "process": "Step 1: Protonate isoprene at C1 to yield $[CH_3-C^+(CH_3)-CH=CH_2 \\leftrightarrow CH_3-C(CH_3)=CH-C^+H_2]$.\nStep 2: Compare product stabilities. Attack at C2 (1,2-addition) yields 3-bromo-3-methyl-1-butene (a monosubstituted alkene). Attack at C4 (1,4-addition) yields 1-bromo-3-methyl-2-butene (a trisubstituted alkene).\nStep 3: Apply thermodynamic control. At $40\\ ^\\circ\\text{C}$, the system is under thermodynamic control, which favors the more stable product. The trisubstituted alkene is much more stable than the monosubstituted alkene.",
       "result": "The major product under thermodynamic conditions is 1-bromo-3-methyl-2-butene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q32_fastest_solvolysis_structure",
@@ -1214,7 +1308,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question requires ranking the rate of $S_N1$ solvolysis based on the stability of the intermediate allylic carbocations.",
       "process": "Step 1: Draw the intermediate carbocation for each substrate.\n- 3-chloro-3-methyl-1-butene yields $[(CH_3)_2C^+-CH=CH_2 \\leftrightarrow (CH_3)_2C=CH-C^+H_2]$, a tertiary/primary allylic carbocation.\n- 3-chloro-1-butene and 1-chlorobut-2-ene both yield $[CH_3-C^+H-CH=CH_2 \\leftrightarrow CH_3-CH=CH-C^+H_2]$, a secondary/primary allylic carbocation.\n- 3-chloropropene yields $[CH_2=CH-C^+H_2]$, a primary/primary allylic carbocation.\nStep 2: Rank carbocation stability: tertiary/primary > secondary/primary > primary/primary.\nStep 3: Connect to rate. The substrate that forms the most stable carbocation has the lowest transition state energy for ionization and thus solvolyzes fastest.",
       "result": "3-chloro-3-methyl-1-butene solvolyzes fastest because it forms a highly stable tertiary-substituted allylic carbocation."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q33_diels_alder_mechanism_concerted",
@@ -1252,7 +1349,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question reviews the basic classification and mechanism of the Diels-Alder reaction.",
       "process": "Step 1: Identify components. The reaction occurs between a conjugated diene ($4\\ \\pi$ electrons) and a dienophile ($2\\ \\pi$ electrons).\nStep 2: Define concerted and pericyclic. The bonds are formed and broken simultaneously in a single step via a cyclic transition state containing 6 $\\pi$ electrons.\nStep 3: Classify. This makes it a concerted, [4+2] pericyclic cycloaddition.",
       "result": "The Diels-Alder reaction is a concerted, [4+2] pericyclic cycloaddition."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q34_diels_alder_stereospecific_maleate",
@@ -1290,7 +1390,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the stereospecificity of the Diels-Alder reaction with respect to the dienophile.",
       "process": "Step 1: Check mechanism. The Diels-Alder reaction is a concerted mechanism. No intermediates (carbocations or radicals) are formed that would allow rotation around carbon-carbon bonds.\nStep 2: Determine stereochemistry. Because it is concerted, the relative stereochemistry of the starting material is preserved in the product. The cis configuration of the two ester groups in dimethyl maleate is directly maintained in the cyclohexene product.\nStep 3: Identify the product. The product is dimethyl cis-cyclohex-4-ene-1,2-dicarboxylate.",
       "result": "The cis-dienophile yields a cis-substituted cyclohexene product due to the concerted nature of the cycloaddition."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q35_diels_alder_stereospecific_fumarate",
@@ -1328,7 +1431,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the stereospecificity of the Diels-Alder reaction with respect to trans-dienophiles.",
       "process": "Step 1: Check mechanism. The concerted pericyclic mechanism means that bond formation occurs simultaneously at both ends.\nStep 2: Analyze stereocenter development. The trans configuration of the two ester groups in dimethyl fumarate is locked in during the transition state.\nStep 3: Determine the product. The product has one ester group pointing 'up' (wedged) and the other pointing 'down' (dashed), resulting in a trans-substituted cyclohexene product (racemic trans-dimethyl cyclohex-4-ene-1,2-dicarboxylate).",
       "result": "The trans-dienophile yields a trans-substituted cyclohexene product due to stereospecific retention of configuration."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q36_diels_alder_endo_rule",
@@ -1366,7 +1472,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the endo rule (Alder endo rule) and its molecular orbital explanation.",
       "process": "Step 1: Define endo and exo. In bicyclic systems, endo refers to the substituent pointing toward the double bond bridge, while exo refers to the substituent pointing away from the double bond bridge (toward the shorter methylene bridge).\nStep 2: Contrast stability vs rate. The exo product is actually thermodynamically more stable because the bulky anhydride group is oriented away from the methylene bridge, minimizing steric strain. However, the endo product is formed much faster (kinetic product).\nStep 3: Analyze orbital interactions. In the endo transition state, the carbonyl $\\pi$ systems of the maleic anhydride lie directly underneath the diene $\\pi$ system. This spatial alignment allows favorable secondary orbital overlap (between the LUMO of the carbonyls and the HOMO of the diene), which lowers the activation energy ($E_a$).",
       "result": "The endo product is favored kinetically due to stabilizing secondary orbital interactions in the transition state."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q37_diels_alder_diene_stereochem_rate",
@@ -1404,7 +1513,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question evaluates the steric factors that dictate diene reactivity by affecting the s-cis/s-trans conformational equilibrium.",
       "process": "Step 1: Check s-cis conformation of each diene. 1,3-cyclopentadiene is locked s-cis (most reactive). 1,3-butadiene is acyclic and can easily rotate to s-cis.\nStep 2: Contrast (1E,3E)-2,4-hexadiene and (1E,3Z)-2,4-hexadiene. For (1E,3E)-2,4-hexadiene, the methyl groups point outward in the s-cis conformation, resulting in minimal steric clashes.\nStep 3: Analyze (1E,3Z)-2,4-hexadiene ($C/C=C/C=C\\C$). When it rotates around the central single bond to adopt the s-cis conformation, the cis-methyl group points inward, colliding directly with the hydrogen atom at C1. This severe steric hindrance disfavors the s-cis conformation, making it extremely unreactive.",
       "result": "(1E,3Z)-2,4-hexadiene is the least reactive due to steric clashes that prevent it from adopting the s-cis conformation."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q38_diels_alder_dienophile_reactivity",
@@ -1442,7 +1554,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the electronic factors that influence the reactivity of dienophiles in Diels-Alder reactions.",
       "process": "Step 1: Analyze demand type. Standard Diels-Alder cycloadditions are governed by the interaction of the diene HOMO and the dienophile LUMO.\nStep 2: Relate substituents to orbital energy. Electron-withdrawing groups (EWGs) on the dienophile lower the energy of its LUMO, bringing it closer in energy to the diene HOMO. A smaller energy gap results in a faster reaction.\nStep 3: Analyze the options. Tetracyanoethylene has four highly electron-withdrawing cyano ($-C\\equiv N$) groups, making it an exceptionally reactive dienophile. Alkyl groups (propene) and alkoxy groups (methyl vinyl ether) are electron-donating, which raises the LUMO energy and slows the reaction.",
       "result": "Tetracyanoethylene is the most reactive dienophile because its four electron-withdrawing cyano groups lower the LUMO energy."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q39_diels_alder_regio_1methoxy",
@@ -1480,7 +1595,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the regioselectivity ('ortho/para' rules) of Diels-Alder cycloadditions between unsymmetrical dienes and unsymmetrical dienophiles.",
       "process": "Step 1: Identify the substituents. The diene has an electron-donating group (EDG) at C1 (methoxy, $-OCH_3$). The dienophile has an electron-withdrawing group (EWG) on the double bond (ester, $-COOCH_3$).\nStep 2: Draw resonance structures to find partial charges. For 1-methoxybutadiene, resonance donation from oxygen places a partial negative charge on C4: $[CH_2(OMe)-CH=CH-CH_2 \\leftrightarrow C^-H_2(OMe)-CH=CH-C^-H_2...]$. Specifically, C4 has the highest electron density (partial negative charge).\nStep 3: For methyl acrylate, resonance places a partial positive charge on the terminal $\\beta$-carbon: $[CH_2=CH-COOMe \\leftrightarrow C^+H_2-CH=C(O^-)OMe]$.\nStep 4: Align charges. The partial negative C4 of the diene bonds with the partial positive $\\beta$-carbon of the dienophile. This alignment yields the 1,2-substituted (known as the 'ortho') product.",
       "result": "The major product is the 'ortho' isomer (methyl 2-methoxycyclohex-3-ene-1-carboxylate) due to charge polarization alignment in the transition state."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q40_diels_alder_regio_isoprene",
@@ -1518,7 +1636,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the regioselectivity of a 2-substituted diene reacting with an unsymmetrical dienophile.",
       "process": "Step 1: Identify substituents. Isoprene has an electron-donating methyl group at C2. Methyl acrylate has an electron-withdrawing ester group.\nStep 2: Determine polarization using resonance. In 2-methyl-1,3-butadiene, the electron-donating methyl group at C2 directs the partial negative charge to C4 (terminal carbon farthest from the methyl group).\nStep 3: In methyl acrylate, the terminal $\\beta$-carbon carries a partial positive charge.\nStep 4: Align charges. The C4 of the diene (partial negative) bonds to the $\\beta$-carbon of the dienophile (partial positive). This yields the 1,4-disubstituted cyclohexene derivative, commonly referred to as the 'para'-like product.",
       "result": "The major product is the 'para'-like isomer (methyl 4-methylcyclohex-3-ene-1-carboxylate)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q41_retro_diels_alder",
@@ -1556,7 +1677,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the reversibility of the Diels-Alder reaction (retro-Diels-Alder) under thermal conditions.",
       "process": "Step 1: Understand dicyclopentadiene structure. Dicyclopentadiene is a dimer formed by the Diels-Alder reaction of two cyclopentadiene molecules (where one acts as the diene and the other acts as the dienophile).\nStep 2: Apply thermal cracking mechanism. High temperatures shift the equilibrium toward the starting materials due to entropy (2 molecules of reactant are favored over 1 molecule of product: $\\Delta G = \\Delta H - T\\Delta S$).\nStep 3: Trace retro-Diels-Alder arrows. The cyclohexene ring in the dimer breaks apart, reversing the [4+2] cycloaddition to yield two separate cyclopentadiene molecules.",
       "result": "Thermal cracking of dicyclopentadiene undergoes a retro-Diels-Alder reaction to yield two molecules of 1,3-cyclopentadiene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q42_intramolecular_diels_alder",
@@ -1594,7 +1718,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the capability to trace ring systems in intramolecular Diels-Alder reactions.",
       "process": "Step 1: Identify diene and dienophile in the triene structure: $CH_2=CH-CH=CH-CH_2-CH_2-CH_2-CH_2-CH=CH_2$.\n- The diene is at C1-C4 (4 carbons).\n- The dienophile is the terminal alkene at C9-C10 (2 carbons).\n- The linker between C4 of the diene and C9 of the dienophile contains 4 carbons ($sp^3$ methylene chain).\nStep 2: Fold the molecule into the transition state. The diene adopts s-cis. The C9-C10 double bond coordinates with the diene.\nStep 3: Build the rings. The Diels-Alder cycloaddition always forms a new 6-membered ring (consisting of the 4 diene carbons and 2 dienophile carbons). The 4-carbon linker connects C4 and C9. This creates a second, fused ring. Counting the atoms in this second ring: C4-linker carbons (4 atoms) + C9 = a 5-membered ring. Thus, the system is a fused 6-5 bicyclic system (hydrindane system).",
       "result": "The intramolecular Diels-Alder of (E)-deca-1,3,9-triene yields a fused hydrindane (6-5 ring system) derivative."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q43_fmo_homo_lumo",
@@ -1632,7 +1759,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the foundational molecular orbital principles of pericyclic reactions (FMO theory).",
       "process": "Step 1: Identify donor and acceptor. The diene is electron-rich and acts as the electron donor. The dienophile is electron-poor and acts as the electron acceptor.\nStep 2: Assign orbitals. The electron donor uses its highest occupied molecular orbital (HOMO) to donate electrons. The electron acceptor uses its lowest unoccupied molecular orbital (LUMO) to receive electrons.\nStep 3: Confirm match. FMO theory dictates that the HOMO of the diene and the LUMO of the dienophile must have the correct symmetry (matching phases at terminal carbons) to interact constructively.",
       "result": "The principal interaction in a standard Diels-Alder reaction is between the diene HOMO and the dienophile LUMO."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q44_diels_alder_diene_stereocenter",
@@ -1670,7 +1800,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests the stereochemical rules of diene substituents in Diels-Alder reactions.",
       "process": "Step 1: Analyze the substituents of the diene. (2E,4E)-2,4-hexadiene has two methyl groups pointing 'outwards' in the s-cis conformation.\nStep 2: Apply the stereochemical rule for diene substituents. Substituents that are both 'outer' (or both 'inner') will end up cis to each other in the cyclohexene product. Since both methyl groups are outer groups, they will be pushed to the same face of the developing ring (both wedged or both dashed).\nStep 3: Combine with dienophile stereochemistry. Dimethyl maleate is a cis-dienophile, so the two ester groups are also cis to each other.",
       "result": "The two methyl groups end up cis to each other (cis-1,4-dimethyl substitution) in the cyclohexene ring."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q45_butadiene_polymerization",
@@ -1708,7 +1841,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question tests diene polymerization pathways and the structural properties of polybutadiene.",
       "process": "Step 1: Analyze addition pathways. Radical addition to 1,3-butadiene can occur at C2 (1,2-addition) or C4 (1,4-addition).\nStep 2: Contrast 1,2- and 1,4-addition. 1,4-addition generates an internal double bond which is more stable than the terminal double bond generated in 1,2-addition.\nStep 3: Analyze stereochemistry. The internal double bond can be cis or trans. The trans configuration has less steric hindrance between the polymer chain segments and is thermodynamically more stable, making it the major isomer under standard polymerization conditions.",
       "result": "The polymer contains predominantly trans-1,4-polybutadiene units because of its thermodynamic stability."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q46_natural_rubber_isoprene",
@@ -1746,7 +1882,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question evaluates the correlation between polymer stereochemistry and physical properties using natural rubber and gutta-percha as examples.",
       "process": "Step 1: Identify the monomer. Both polymers are formed from isoprene (2-methyl-1,3-butadiene).\nStep 2: Contrast configurations. In natural rubber, the double bonds are exclusively in the cis configuration (cis-1,4-polyisoprene). This makes the polymer chains highly irregular/coiled, preventing crystallization and allowing high elasticity.\nStep 3: Gutta-percha has the trans configuration (trans-1,4-polyisoprene). The trans chains are linear and can pack closely together, leading to a highly crystalline, tough, and non-elastic material.",
       "result": "Natural rubber is cis-1,4-polyisoprene, while gutta-percha is trans-1,4-polyisoprene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q47_vulcanization_mechanism",
@@ -1784,13 +1923,16 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question reviews the industrial application of diene polymers (vulcanization).",
       "process": "Step 1: Understand the structure of raw rubber. Raw rubber consists of long cis-polyisoprene chains that slide past each other, making it soft, sticky, and weak when warm.\nStep 2: Introduce sulfur. Heating with sulfur ($S_8$) causes reaction at the allylic positions of the polymer chains.\nStep 3: Analyze cross-linking. Sulfur atoms form covalent cross-links between adjacent chains. This holds the chains in a three-dimensional network, preventing them from slipping, which greatly increases elasticity, strength, and thermal stability.",
       "result": "Vulcanization involves heating rubber with sulfur to create disulfide/polysulfide cross-links, rendering it tough and elastic."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q48_uv_electronic_transitions",
     "topic": "Ultraviolet Spectroscopy: Principles",
     "difficulty_level": "Easy",
-    "question_text": "Which type of electronic transition is primarily responsible for the UV-Vis absorption band observed in conjugated dienes in the 200\u2013400 nm region?",
+    "question_text": "Which type of electronic transition is primarily responsible for the UV-Vis absorption band observed in conjugated dienes in the 200–400 nm region?",
     "question_smiles": "",
     "options": [
       {
@@ -1822,7 +1964,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question evaluates the physical basis of ultraviolet-visible spectroscopy for conjugated hydrocarbons.",
       "process": "Step 1: Identify the orbitals present. Conjugated dienes contain only $\\sigma$ and $\\pi$ bonds, with no non-bonding lone pairs ($n$).\nStep 2: Compare transition energies. $\\sigma \\rightarrow \\sigma^*$ transitions require very high energy vacuum UV light (< 150 nm). $\\pi \\rightarrow \\pi^*$ transitions require less energy and occur in the standard UV region (200-400 nm).\nStep 3: Identify the transition. The absorption of a photon promotes an electron from the bonding $\\pi$ orbital (specifically the HOMO) to the antibonding $\\pi^*$ orbital (specifically the LUMO).",
       "result": "The $\\pi \\rightarrow \\pi^*$ transition is responsible for UV absorption in conjugated dienes."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q49_woodward_fieser_12dimethylene",
@@ -1860,7 +2005,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question applies the Woodward-Fieser rules to calculate the $\\lambda_{\\text{max}}$ of a conjugated diene in a ring system.",
       "process": "Step 1: Determine the base value. The diene is heteroannular/acyclic in nature (not in the same ring, but rather exocyclic to one ring). The base value for an acyclic/heteroannular diene is $217\\text{ nm}$.\nStep 2: Add increments for ring residues. The diene carbons are C=C-C=C. C1 and C2 of the diene are connected to C3 and C6 of the cyclohexane ring. This counts as two ring residues: $2 \\times 5\\text{ nm} = +10\\text{ nm}$.\nStep 3: Add increments for exocyclic double bonds. Both C=C bonds are exocyclic to the cyclohexane ring. This counts as two exocyclic double bonds: $2 \\times 5\\text{ nm} = +10\\text{ nm}$.\nStep 4: Sum all values: $\\lambda_{\\text{max}} = 217\\text{ (base)} + 10\\text{ (ring residues)} + 10\\text{ (exocyclic bonds)} = 237\\text{ nm}$.",
       "result": "The calculated $\\lambda_{\\text{max}}$ value is 237 nm."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q50_woodward_fieser_homo_hetero",
@@ -1898,7 +2046,10 @@ const CHAPTER_14_QUESTIONS = [
       "context": "This question explores the physical organic reasoning behind the different base values of homoannular vs heteroannular dienes in Woodward-Fieser rules.",
       "process": "Step 1: Understand the geometries. A homoannular diene has both double bonds in the same ring, forcing it into a cisoid conformation. A heteroannular diene has double bonds in different rings (transoid).\nStep 2: Evaluate thermodynamics. The cisoid conformation is less stable (higher in energy) than the transoid conformation due to steric repulsion between the ends of the diene.\nStep 3: Relate to transition energy. This higher ground-state energy narrows the HOMO-LUMO energy gap compared to the more stable transoid conformation. A smaller energy gap means absorption shifts to a longer wavelength (253 nm vs 217 nm).",
       "result": "The cisoid conformation of homoannular dienes has a smaller HOMO-LUMO gap due to its higher ground-state energy, leading to a higher base absorption wavelength (253 nm)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch14_q_dynamic_addition_14",
@@ -1910,7 +2061,7 @@ const CHAPTER_14_QUESTIONS = [
         "C=CC=C"
       ],
       "reagents": "HBr (1 eq)",
-      "conditions": "0\u00b0C vs 40\u00b0C",
+      "conditions": "0°C vs 40°C",
       "products": [
         "CC(Br)C=C",
         "CC=CCC"
@@ -1919,7 +2070,7 @@ const CHAPTER_14_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "At 0\u00b0C, the 1,2-addition kinetic product is favored; at 40\u00b0C, the 1,4-addition thermodynamic product is favored.",
+        "text": "At 0°C, the 1,2-addition kinetic product is favored; at 40°C, the 1,4-addition thermodynamic product is favored.",
         "is_correct": true
       },
       {
@@ -1940,8 +2091,11 @@ const CHAPTER_14_QUESTIONS = [
     ],
     "feedback": {
       "context": "Evaluating thermodynamic vs kinetic control in conjugated systems.",
-      "process": "Protonation yields an allylic carbocation. At low temperature (0\u00b0C), nucleophilic attack occurs rapidly at C2 (closer to charge) to give the kinetic 1,2-product. At high temperature (40\u00b0C), equilibrium is reached, yielding the more substituted, stable internal alkene (thermodynamic 1,4-product).",
+      "process": "Protonation yields an allylic carbocation. At low temperature (0°C), nucleophilic attack occurs rapidly at C2 (closer to charge) to give the kinetic 1,2-product. At high temperature (40°C), equilibrium is reached, yielding the more substituted, stable internal alkene (thermodynamic 1,4-product).",
       "result": "Product distributions are temperature-dependent."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

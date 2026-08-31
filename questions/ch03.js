@@ -1,7 +1,8 @@
-// McMurry Chapter 3 questions
-const CHAPTER_3_QUESTIONS = [
+// OChemStudyBuddy - McMurry Chapter 3
+// Author: A. Elangovan, PhD
+var CH03_QUESTIONS = [
   {
-    "question_id": "ch3_q1_functional_group_identification",
+    "question_id": "ch03_q1_functional_group_identification",
     "topic": "Functional Groups",
     "difficulty_level": "Easy",
     "question_text": "Identify the functional group present in the compound represented by the following structure: CH3-CH2-O-CH2-CH3.",
@@ -36,10 +37,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "This question tests the basic identification of oxygen-containing functional groups.",
       "process": "Step 1: Locate the oxygen atom in the structure. It is bonded to two alkyl (ethyl) groups.\nStep 2: Compare this structure ($R-O-R$) with standard functional group classes.\nStep 3: A compound with an oxygen atom bridged between two carbon chains is classified as an ether.",
       "result": "The functional group is an ether."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q2_functional_group_ester",
+    "question_id": "ch03_q2_functional_group_ester",
     "topic": "Functional Groups",
     "difficulty_level": "Easy",
     "question_text": "Which functional group is characterized by a carbonyl carbon bonded to an alkoxy (-OR) group?",
@@ -74,10 +78,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Identify functional groups containing carbonyls.",
       "process": "Step 1: A carbonyl is a carbon-oxygen double bond ($C=O$).\nStep 2: When the carbonyl carbon is bonded to an $-OR$ group, the layout is $R-CO-OR$.\nStep 3: This specific layout characterizes an ester.",
       "result": "The correct functional group is an ester."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q3_functional_group_amide",
+    "question_id": "ch03_q3_functional_group_amide",
     "topic": "Functional Groups",
     "difficulty_level": "Easy",
     "question_text": "Which functional group contains a carbonyl carbon bonded directly to a nitrogen atom?",
@@ -112,10 +119,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Distinguish between nitrogen-containing functional groups.",
       "process": "Step 1: An amine contains nitrogen bonded to alkyl groups or hydrogens ($R-NH_2$) with no adjacent carbonyl.\nStep 2: An amide ($R-CONH_2$) contains a nitrogen atom directly bonded to the carbon of a carbonyl group ($C=O$).\nStep 3: This carbonyl-nitrogen link is key to peptide/protein backbones.",
       "result": "The functional group is an amide."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q4_isomers_pentane",
+    "question_id": "ch03_q4_isomers_pentane",
     "topic": "Alkanes and Alkane Isomers",
     "difficulty_level": "Easy",
     "question_text": "How many constitutional isomers exist for the molecular formula C5H12?",
@@ -150,10 +160,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Find the number of constitutional isomers for pentane.",
       "process": "Step 1: Constitutional isomers have the same molecular formula but different connectivity.\nStep 2: Draw the straight chain: pentane ($CH_3-CH_2-CH_2-CH_2-CH_3$).\nStep 3: Draw a 4-carbon chain with a methyl branch: 2-methylbutane (isopentane, $CH_3-CH(CH_3)-CH_2-CH_3$).\nStep 4: Draw a 3-carbon chain with two methyl branches: 2,2-dimethylpropane (neopentane, $CH_3-C(CH_3)_2-CH_3$). No other unique connectivities are possible.",
       "result": "There are exactly 3 constitutional isomers."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q5_isomers_hexane",
+    "question_id": "ch03_q5_isomers_hexane",
     "topic": "Alkanes and Alkane Isomers",
     "difficulty_level": "Medium",
     "question_text": "How many constitutional isomers exist for the molecular formula C6H14?",
@@ -188,10 +201,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Determine the constitutional isomers of hexane.",
       "process": "Step 1: Draw the 6-carbon straight chain: hexane.\nStep 2: Draw 5-carbon chains with 1 methyl branch: 2-methylpentane and 3-methylpentane (2 isomers).\nStep 3: Draw 4-carbon chains with 2 methyl branches: 2,2-dimethylbutane and 2,3-dimethylbutane (2 isomers).\nStep 4: Sum them up: 1 + 2 + 2 = 5 unique isomers.",
       "result": "Hexane has 5 constitutional isomers."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q6_alkyl_group_isobutyl",
+    "question_id": "ch03_q6_alkyl_group_isobutyl",
     "topic": "Alkyl Groups",
     "difficulty_level": "Medium",
     "question_text": "What is the correct structure of the 'isobutyl' group?",
@@ -226,10 +242,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Distinguish between the 4-carbon alkyl group isomers.",
       "process": "Step 1: A butyl group has 4 carbons. Isomers include butyl, sec-butyl, isobutyl, and tert-butyl.\nStep 2: Isobutyl has a branching methyl on the second carbon of a three-carbon chain: $-CH_2-CH(CH_3)_2$.\nStep 3: Compare: $-CH(CH_3)-CH_2-CH_3$ is sec-butyl; $-C(CH_3)_3$ is tert-butyl; $-CH_2-CH_2-CH_2-CH_3$ is butyl.",
       "result": "The isobutyl group is $-CH_2-CH(CH_3)_2$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q7_alkyl_group_secbutyl",
+    "question_id": "ch03_q7_alkyl_group_secbutyl",
     "topic": "Alkyl Groups",
     "difficulty_level": "Medium",
     "question_text": "What is the correct structure of the 'sec-butyl' group?",
@@ -264,10 +283,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Identify the sec-butyl group structure.",
       "process": "Step 1: 'sec' stands for secondary, meaning the attachment point is on a secondary carbon (bonded to two other carbons).\nStep 2: A 4-carbon chain attached at C2 has the structure $-CH(CH_3)CH_2CH_3$.\nStep 3: This matches option A.",
       "result": "The sec-butyl group is $-CH(CH_3)-CH_2-CH_3$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q8_classification_carbons",
+    "question_id": "ch03_q8_classification_carbons",
     "topic": "Alkyl Groups",
     "difficulty_level": "Medium",
     "question_text": "In 2,2,3-trimethylpentane, how many primary (1\\(\\circ\\)), secondary (2\\(\\circ\\)), tertiary (3\\(\\circ\\)), and quaternary (4\\(\\circ\\)) carbon atoms are present, respectively?",
@@ -302,10 +324,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Classify carbons based on their degree of substitution.",
       "process": "Step 1: Draw the structure of 2,2,3-trimethylpentane: $(CH_3)_3C-CH(CH_3)-CH_2-CH_3$.\nStep 2: Identify each carbon: \n- The 5 methyl groups (carbons 1, 5, 2-methyls, 3-methyl) are primary ($1^\\circ$) because they are bonded to only 1 carbon.\n- C4 is a $-CH_2-$ group, bonded to C3 and C5, making it secondary ($2^\\circ$).\n- C3 is a $-CH-$ group, bonded to C2, C4, and a methyl carbon, making it tertiary ($3^\\circ$).\n- C2 is a quaternary ($4^\\circ$) carbon because it is bonded to four carbons (C1, C3, and two methyls).\nStep 3: This sums to 5 primary, 1 secondary, 1 tertiary, and 1 quaternary carbon.",
       "result": "The counts are 5 primary, 1 secondary, 1 tertiary, and 1 quaternary carbon."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q9_iupac_rules_parent",
+    "question_id": "ch03_q9_iupac_rules_parent",
     "topic": "Naming Alkanes",
     "difficulty_level": "Easy",
     "question_text": "What is the first step in the IUPAC system for naming branched-chain alkanes?",
@@ -340,10 +365,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Recall standard IUPAC nomenclature rules.",
       "process": "Step 1: The foundation of any IUPAC name is the parent chain.\nStep 2: Identify the longest continuous chain of carbon atoms. Even if it curves or bends, it defines the root name (e.g. hexane, heptane).\nStep 3: Subsequent steps involve numbering and labeling branches.",
       "result": "First step is to find the longest continuous carbon chain."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q10_iupac_name_isopropyl",
+    "question_id": "ch03_q10_iupac_name_isopropyl",
     "topic": "Naming Alkanes",
     "difficulty_level": "Medium",
     "question_text": "What is the correct IUPAC name of the compound CH3-CH(CH3)-CH2-CH2-CH3?",
@@ -378,10 +406,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Name a simple branched alkane using IUPAC rules.",
       "process": "Step 1: Find the parent chain. The longest continuous chain has 5 carbons (pentane).\nStep 2: Number the parent chain from the end closest to the branch. Numbering from left to right gives the branch at C2. (Right to left would give it at C4).\nStep 3: Name and locate the substituent: 2-methyl.\nStep 4: Combine: 2-methylpentane.",
       "result": "The correct name is 2-methylpentane."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q11_iupac_tiebreaker_numbering",
+    "question_id": "ch03_q11_iupac_tiebreaker_numbering",
     "topic": "Naming Alkanes",
     "difficulty_level": "Hard",
     "question_text": "What is the correct IUPAC name for a seven-carbon parent chain with methyl groups at C3 and C5, and an ethyl group at C4?",
@@ -416,10 +447,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Apply numbering and alphabetical sorting rules to substituted heptanes.",
       "process": "Step 1: Longest chain is 7 carbons (heptane).\nStep 2: Numbering from either end gives substituents at positions 3, 4, and 5 (a tie).\nStep 3: Identify the substituents: ethyl (at C4) and methyls (at C3 and C5). List them alphabetically: ethyl precedes methyl.\nStep 4: Combine prefixes: 4-ethyl-3,5-dimethylheptane. (Note: numerical prefixes like 'di-' are ignored in alphabetical sorting).",
       "result": "The name is 4-ethyl-3,5-dimethylheptane."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q12_iupac_longest_chain_trap",
+    "question_id": "ch03_q12_iupac_longest_chain_trap",
     "topic": "Naming Alkanes",
     "difficulty_level": "Hard",
     "question_text": "What is the correct IUPAC name of the following structure: (CH3CH2)2CH-CH(CH3)2?",
@@ -454,10 +488,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Identify the parent chain when drawn in a condensed, potentially misleading format.",
       "process": "Step 1: Expand the structure: $CH_3-CH_2-CH(CH_2-CH_3)-CH(CH_3)_2$.\nStep 2: Find the longest chain. It goes from the isopropyl methyl through the CH, C3-CH, and down the ethyl group: $C_1(methyl)-C_2(CH)-C_3(CH)-C_4(CH_2)-C_5(methyl)$. This is a pentane chain.\nStep 3: Number from the end closest to a branch: start at the isopropyl end to place branches at C2 and C3 (numbering from the other side places them at C3 and C4).\nStep 4: Identify substituents: methyl at C2, ethyl at C3. Alphabetize: 3-ethyl-2-methylpentane.",
       "result": "The correct IUPAC name is 3-ethyl-2-methylpentane."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q13_heat_of_combustion",
+    "question_id": "ch03_q13_heat_of_combustion",
     "topic": "Properties of Alkanes",
     "difficulty_level": "Hard",
     "question_text": "Which of the following isomer structures of C5H12 releases the least heat of combustion (lowest energy content)?",
@@ -492,10 +529,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Understand how structural branching relates to thermodynamic stability and heat of combustion.",
       "process": "Step 1: Alkanes release heat when combusted ($\\Delta H_c$). A lower heat of combustion indicates a more stable (lower potential energy) starting material.\nStep 2: Branching increases the thermodynamic stability of alkanes because branched molecules are more compact and have stronger internal van der Waals attractions.\nStep 3: Neopentane ($2,2-dimethylpropane$) is the most branched isomer of $C_5H_{12}$, making it the most stable isomer with the lowest potential energy. Therefore, it releases the least heat upon combustion.",
       "result": "Neopentane releases the least heat of combustion."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q14_conformation_ethane_barrier",
+    "question_id": "ch03_q14_conformation_ethane_barrier",
     "topic": "Conformations of Ethane",
     "difficulty_level": "Medium",
     "question_text": "What is the energy barrier to rotation around the C-C bond of ethane?",
@@ -530,10 +570,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Recall the rotational energy barrier of ethane.",
       "process": "Step 1: In ethane ($CH_3-CH_3$), rotation around the C-C single bond transitions between staggered (most stable) and eclipsed (least stable) conformations.\nStep 2: The eclipsed conformation contains three eclipsing H-H interactions.\nStep 3: Each eclipsing H-H interaction incurs a torsional strain of 4.0 kJ/mol. Total energy barrier = 3 * 4.0 kJ/mol = 12.0 kJ/mol.",
       "result": "The energy barrier is 12.0 kJ/mol."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q15_torsional_strain_def",
+    "question_id": "ch03_q15_torsional_strain_def",
     "topic": "Conformations of Ethane",
     "difficulty_level": "Medium",
     "question_text": "What is the primary cause of torsional strain in the eclipsed conformation of ethane?",
@@ -568,10 +611,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Distinguish between torsional strain and steric strain.",
       "process": "Step 1: Steric strain occurs when atoms are forced physically too close to one another (van der Waals repulsion), which is not the case for small hydrogens in ethane.\nStep 2: Torsional strain arises from the repulsion between electron clouds in the C-H $\\sigma$ bonding orbitals of adjacent carbons when they align (dihedral angle = $0^\\circ$).\nStep 3: This orbital-orbital repulsion destabilizes the eclipsed conformer.",
       "result": "Torsional strain is caused by orbital-orbital repulsions in eclipsed bonds."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q16_conformation_propane_barrier",
+    "question_id": "ch03_q16_conformation_propane_barrier",
     "topic": "Conformations of Propane",
     "difficulty_level": "Hard",
     "question_text": "What is the rotational energy barrier around the C-C bond in propane?",
@@ -606,10 +652,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Calculate the energy barrier in propane using specific conformational values.",
       "process": "Step 1: Look at the eclipsed conformation of propane viewed down a C1-C2 bond.\nStep 2: The eclipsing interactions are: two H-H eclipsing interactions and one $H-CH_3$ eclipsing interaction.\nStep 3: Assign energy values: H-H eclipsing = 4.0 kJ/mol each. $H-CH_3$ eclipsing = 6.0 kJ/mol.\nStep 4: Sum: 4.0 + 4.0 + 6.0 = 14.0 kJ/mol.",
       "result": "The energy barrier is 14.0 kJ/mol."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q17_butane_gauche_interaction",
+    "question_id": "ch03_q17_butane_gauche_interaction",
     "topic": "Conformations of Butane",
     "difficulty_level": "Medium",
     "question_text": "In the conformational analysis of butane, what name is given to the staggered conformation where the dihedral angle between the two methyl groups is 60 degrees?",
@@ -644,10 +693,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Identify conformers of butane.",
       "process": "Step 1: Staggered conformations have dihedral angles of $60^\\circ$, $180^\\circ$, or $300^\\circ$.\nStep 2: When methyls are opposite ($180^\\circ$), it is the anti conformation (most stable).\nStep 3: When methyls are adjacent ($60^\\circ$), it is the gauche conformation. It is slightly less stable due to steric strain between the methyl groups.",
       "result": "The conformation is gauche."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q18_butane_staggered_stability",
+    "question_id": "ch03_q18_butane_staggered_stability",
     "topic": "Conformations of Butane",
     "difficulty_level": "Hard",
     "question_text": "What is the energy difference between the anti and gauche conformations of butane?",
@@ -682,10 +734,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Assess the steric cost of a gauche interaction in butane.",
       "process": "Step 1: The anti conformation has zero steric strain between the methyls.\nStep 2: The gauche conformation forces the two bulky methyl groups close together, resulting in steric strain.\nStep 3: The thermodynamic cost of this $CH_3-CH_3$ gauche interaction is 3.8 kJ/mol.",
       "result": "The energy difference is 3.8 kJ/mol."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q19_butane_fully_eclipsed",
+    "question_id": "ch03_q19_butane_fully_eclipsed",
     "topic": "Conformations of Butane",
     "difficulty_level": "Hard",
     "question_text": "What is the energy barrier to rotation through the highest-energy conformation (fully eclipsed) of butane?",
@@ -720,10 +775,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Determine the energy value of the fully eclipsed conformation of butane.",
       "process": "Step 1: The fully eclipsed conformation occurs when the dihedral angle between the two methyl groups is $0^\\circ$.\nStep 2: The interactions are: two H-H eclipsing interactions and one $CH_3-CH_3$ eclipsing interaction.\nStep 3: Assign energy values: H-H eclipsing = 4.0 kJ/mol each. The remaining energy to reach 19.0 kJ/mol is the steric/torsional strain of eclipsing two methyls.\nStep 4: Total energy = 19.0 kJ/mol.",
       "result": "The energy of the fully eclipsed conformation is 19.0 kJ/mol."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q20_butane_methyl_methyl_eclipsed",
+    "question_id": "ch03_q20_butane_methyl_methyl_eclipsed",
     "topic": "Conformations of Butane",
     "difficulty_level": "Hard",
     "question_text": "Using the total energy of the fully eclipsed conformation of butane (19.0 kJ/mol) and the value of eclipsing H-H interactions (4.0 kJ/mol), what is the steric strain value assigned to a single eclipsing CH3-CH3 interaction?",
@@ -758,10 +816,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Isolate the value of a methyl-methyl eclipsing interaction.",
       "process": "Step 1: Total energy of fully eclipsed butane = 19.0 kJ/mol.\nStep 2: Identify the components: two H-H eclipsing interactions ($2 * 4.0 = 8.0$ kJ/mol) plus one $CH_3-CH_3$ eclipsing interaction.\nStep 3: Subtract: $19.0 - 8.0 = 11.0$ kJ/mol.",
       "result": "The eclipsing methyl-methyl interaction is valued at 11.0 kJ/mol."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q21_classification_alkanes",
+    "question_id": "ch03_q21_classification_alkanes",
     "topic": "Alkanes and Alkane Isomers",
     "difficulty_level": "Easy",
     "question_text": "What is the general molecular formula for acyclic, saturated alkanes?",
@@ -796,10 +857,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Review general formulas for hydrocarbons.",
       "process": "Step 1: Alkanes are saturated hydrocarbons containing only single bonds.\nStep 2: An acyclic alkane with $n$ carbons has $2n$ hydrogens to satisfy valence, plus 2 capping hydrogens at the ends of the chain.\nStep 3: This gives the formula $C_nH_{2n+2}$.",
       "result": "The general formula is CnH2n+2."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q22_saturated_definition",
+    "question_id": "ch03_q22_saturated_definition",
     "topic": "Alkanes and Alkane Isomers",
     "difficulty_level": "Easy",
     "question_text": "What does the term 'saturated' mean when describing a hydrocarbon?",
@@ -834,10 +898,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Understand saturation in organic structures.",
       "process": "Step 1: Saturation refers to the hydrogen content.\nStep 2: A hydrocarbon is saturated if it cannot accept any more hydrogen atoms (no double/triple bonds, no rings that reduce hydrogen count).\nStep 3: This corresponds to a chain of carbons bonded by single bonds, filled with hydrogens.",
       "result": "A saturated hydrocarbon contains only single bonds."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q23_boiling_point_structure",
+    "question_id": "ch03_q23_boiling_point_structure",
     "topic": "Properties of Alkanes",
     "difficulty_level": "Medium",
     "question_text": "Which of the following alkanes has the highest boiling point?",
@@ -872,10 +939,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Compare boiling points of alkanes based on molecular weight.",
       "process": "Step 1: Alkanes are non-polar and interact only via London dispersion forces.\nStep 2: Dispersion forces increase with molecular weight (surface area and polarizability).\nStep 3: Among the choices, hexane ($C_6H_{14}$) has the largest molecular weight and surface area, resulting in the highest boiling point.",
       "result": "Hexane has the highest boiling point."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q24_boiling_point_branching",
+    "question_id": "ch03_q24_boiling_point_branching",
     "topic": "Properties of Alkanes",
     "difficulty_level": "Medium",
     "question_text": "Which of the following isomers of C5H12 has the lowest boiling point?",
@@ -910,10 +980,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Understand the effect of branching on alkane boiling points.",
       "process": "Step 1: Isomers have the same molecular weight, so we must analyze molecular shape.\nStep 2: Straight-chain pentane has a cylindrical shape with large surface area. Branching makes neopentane spherical and compact.\nStep 3: A compact shape reduces surface area contact, weakening intermolecular London dispersion forces. Therefore, neopentane has the lowest boiling point.",
       "result": "Neopentane has the lowest boiling point."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q25_conformation_butane_energy_profile",
+    "question_id": "ch03_q25_conformation_butane_energy_profile",
     "topic": "Conformations of Butane",
     "difficulty_level": "Hard",
     "question_text": "During rotation around the C2-C3 bond of butane, how many energy minima (stable conformations) exist in a full 360-degree rotation?",
@@ -948,10 +1021,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Analyze the potential energy curve of butane rotation.",
       "process": "Step 1: Energy minima correspond to staggered conformations.\nStep 2: In a $360^circ$ rotation, there are three staggered states: one anti conformation ($180^circ$ dihedral angle) and two gauche conformations ($60^circ$ and $300^circ$ dihedral angles).\nStep 3: The gauche conformations are degenerate (identical in energy) but represent distinct spatial arrangements.",
       "result": "There are 3 energy minima."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q26_conformation_butane_maxima",
+    "question_id": "ch03_q26_conformation_butane_maxima",
     "topic": "Conformations of Butane",
     "difficulty_level": "Hard",
     "question_text": "How many energy maxima (transition states) occur during a full 360-degree rotation around the C2-C3 bond of butane?",
@@ -986,10 +1062,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Identify energy maxima in the butane rotational profile.",
       "process": "Step 1: Energy maxima correspond to eclipsed conformations.\nStep 2: In a $360^circ$ rotation, there are three eclipsed states: one fully eclipsed ($0^circ$, methyls eclipsing) and two partially eclipsed ($120^circ$ and $240^circ$, methyls eclipsing hydrogens).\nStep 3: These three states act as energy barriers between the three staggered minima.",
       "result": "There are 3 energy maxima."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q27_iupac_alphabetical_prefixes",
+    "question_id": "ch03_q27_iupac_alphabetical_prefixes",
     "topic": "Naming Alkanes",
     "difficulty_level": "Medium",
     "question_text": "Which of the following alkyl prefixes is alphabetized under the letter 'i' when naming complex alkanes?",
@@ -1024,10 +1103,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Review IUPAC alphabetizing rules for prefixes.",
       "process": "Step 1: Italicized prefixes indicating substitution position (like *sec-* and *tert-*) are ignored in alphabetical ordering (sec-butyl is alphabetized under 'b').\nStep 2: Multiplying prefixes (like di-, tri-, tetra-) are also ignored in alphabetizing.\nStep 3: Iso- (and cyclo-) are not separated by hyphens and are treated as part of the alkyl name, so isobutyl is alphabetized under 'i'.",
       "result": "Isobutyl is alphabetized under 'i'."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q28_iupac_longest_chain_tiebreaker",
+    "question_id": "ch03_q28_iupac_longest_chain_tiebreaker",
     "topic": "Naming Alkanes",
     "difficulty_level": "Hard",
     "question_text": "If a molecule contains two different carbon chains of equal length that could both be selected as the parent chain, how is the parent chain chosen?",
@@ -1062,10 +1144,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Resolve parent chain ties in complex alkanes.",
       "process": "Step 1: When two chains compete for parent length, IUPAC rules state a tiebreaker is required.\nStep 2: The tiebreaker rule selects the chain with the maximum number of substituents (branches).\nStep 3: This ensures that substituents are smaller and simpler to name, avoiding highly nested branching labels where possible.",
       "result": "Choose the chain with the greater number of substituents."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q29_properties_combustion",
+    "question_id": "ch03_q29_properties_combustion",
     "topic": "Properties of Alkanes",
     "difficulty_level": "Easy",
     "question_text": "What are the typical products of the complete combustion of any alkane in excess oxygen?",
@@ -1100,10 +1185,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Review the products of alkane oxidation.",
       "process": "Step 1: Combustion is a rapid oxidation of hydrocarbons.\nStep 2: Complete combustion refers to full oxidation of carbon to its maximum state ($CO_2$) and hydrogen to water ($H_2O$).\nStep 3: Incomplete combustion yields carbon monoxide ($CO$) or soot ($C$).",
       "result": "The products are carbon dioxide and water."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q30_properties_alkane_density",
+    "question_id": "ch03_q30_properties_alkane_density",
     "topic": "Properties of Alkanes",
     "difficulty_level": "Easy",
     "question_text": "Why do liquid alkanes float on top of water?",
@@ -1138,10 +1226,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Understand the solubility and density properties of alkanes.",
       "process": "Step 1: Alkanes are hydrophobic (non-polar) and do not dissolve in water.\nStep 2: The density of liquid alkanes typically ranges between 0.6 and 0.8 g/mL.\nStep 3: Since their density is less than water (1.0 g/mL), they form a separate layer that floats on top.",
       "result": "Alkanes are less dense than water and insoluble, causing them to float."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q31_conformational_analysis_propyl_barrier",
+    "question_id": "ch03_q31_conformational_analysis_propyl_barrier",
     "topic": "Conformations of Propane",
     "difficulty_level": "Medium",
     "question_text": "What is the steric strain value assigned to a single eclipsing H-CH3 interaction in propane?",
@@ -1176,10 +1267,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Identify energy values for eclipsing interactions.",
       "process": "Step 1: Total eclipsed propane barrier is 14.0 kJ/mol.\nStep 2: Propane contains two H-H eclipsing interactions ($2 * 4.0 = 8.0$ kJ/mol) and one $H-CH_3$ eclipsing interaction.\nStep 3: Subtract: $14.0 - 8.0 = 6.0$ kJ/mol.",
       "result": "The H-CH3 eclipsing interaction is 6.0 kJ/mol."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q32_butane_partially_eclipsed_value",
+    "question_id": "ch03_q32_butane_partially_eclipsed_value",
     "topic": "Conformations of Butane",
     "difficulty_level": "Hard",
     "question_text": "What is the total energy of the partially eclipsed conformation of butane (where methyl groups eclipse hydrogens)?",
@@ -1214,10 +1308,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Compute the energy of partially eclipsed butane conformations.",
       "process": "Step 1: Identify the interactions in the partially eclipsed ($120^circ$) butane conformation: one H-H eclipsing interaction and two $H-CH_3$ eclipsing interactions.\nStep 2: Apply the values: H-H eclipsing = 4.0 kJ/mol. $H-CH_3$ eclipsing = 6.0 kJ/mol each.\nStep 3: Sum: 4.0 + 6.0 + 6.0 = 16.0 kJ/mol.",
       "result": "The energy of the partially eclipsed conformation is 16.0 kJ/mol."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q33_iupac_prefix_numbering_tie",
+    "question_id": "ch03_q33_iupac_prefix_numbering_tie",
     "topic": "Naming Alkanes",
     "difficulty_level": "Hard",
     "question_text": "What is the correct IUPAC name of the compound CH3-CH(CH3)-CH(CH2CH3)-CH2-CH3?",
@@ -1252,10 +1349,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Name a branched heptane or pentane derivative, testing alphabetization in the final name construction.",
       "process": "Step 1: Longest chain is 5 carbons (pentane).\nStep 2: Numbering starts from the left to give substituents at C2 (methyl) and C3 (ethyl). (Numbering from right gives branches at C3 and C4).\nStep 3: List substituents alphabetically: ethyl comes before methyl.\nStep 4: Combine: 3-ethyl-2-methylpentane.",
       "result": "The correct name is 3-ethyl-2-methylpentane."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q34_iupac_complex_alkane",
+    "question_id": "ch03_q34_iupac_complex_alkane",
     "topic": "Naming Alkanes",
     "difficulty_level": "Hard",
     "question_text": "What is the correct IUPAC name for (CH3)3C-CH2-CH(CH2CH3)2?",
@@ -1290,10 +1390,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Name a branched alkane resolving numbering direction and alphabetical sorting.",
       "process": "Step 1: Longest continuous chain has 6 carbons (hexane): $(CH_3)_3C-CH_2-CH(CH_2CH_3)_2 \\rightarrow (CH_3)_2C(C_1,C_2)-CH_2(C_3)-CH(C_4)(CH_2CH_3)-CH_2(C_5)-CH_3(C_6)$.\nStep 2: Compare numbering directions. Left-to-right gives locants at 2, 2, and 4. Right-to-left gives locants at 3, 5, and 5. The lowest set at the first point of difference is 2,2,4.\nStep 3: List substituents: 4-ethyl and 2,2-dimethyl. Alphabetize: 'ethyl' comes before 'dimethyl'. This gives 4-ethyl-2,2-dimethylhexane.",
       "result": "The correct IUPAC name is 4-ethyl-2,2-dimethylhexane."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q35_iupac_longest_chain_double_tie",
+    "question_id": "ch03_q35_iupac_longest_chain_double_tie",
     "topic": "Naming Alkanes",
     "difficulty_level": "Hard",
     "question_text": "What is the correct IUPAC name of the compound (CH3)2CH-CH(CH3)-CH2-CH(CH2CH3)2?",
@@ -1328,10 +1431,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Name a multi-branched alkane by resolving parent chain, numbering, and alphabetization.",
       "process": "Step 1: Longest carbon chain is 7 carbons (heptane): start at the isopropyl methyl, go through C2, C3, C4, C5, and down one of the ethyl groups.\nStep 2: Numbering from the left gives substituents at 2, 3, and 5. Numbering from the right gives 3, 5, and 6. The lower set of locants is 2,3,5.\nStep 3: Identify the substituents: 2-methyl, 3-methyl, and 5-ethyl. Alphabetize: ethyl comes before dimethyl.\nStep 4: Combine: 5-ethyl-2,3-dimethylheptane.",
       "result": "The name is 5-ethyl-2,3-dimethylheptane."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q36_newman_projection_anti",
+    "question_id": "ch03_q36_newman_projection_anti",
     "topic": "Conformational Analysis & Newman Projections",
     "difficulty_level": "Easy",
     "question_text": "Which conformation corresponds to the lowest potential energy state in the conformational analysis of butane?",
@@ -1366,10 +1472,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Identify the globally most stable conformer of butane.",
       "process": "Step 1: In the anti conformation, the two bulky methyl groups are oriented $180^circ$ apart, minimizing steric strain.\nStep 2: All bonds are staggered, minimizing torsional strain.\nStep 3: This makes it the global energy minimum.",
       "result": "The anti conformation is the lowest energy state."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q37_newman_projection_fully_eclipsed",
+    "question_id": "ch03_q37_newman_projection_fully_eclipsed",
     "topic": "Conformational Analysis & Newman Projections",
     "difficulty_level": "Easy",
     "question_text": "Which conformation corresponds to the highest potential energy state in the conformational analysis of butane?",
@@ -1404,10 +1513,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Identify the globally least stable conformer of butane.",
       "process": "Step 1: The fully eclipsed conformation has a dihedral angle of $0^circ$.\nStep 2: This forces the two bulky methyl groups to directly eclipse each other, maximizing both steric and torsional strain.\nStep 3: This is the global energy maximum on the butane rotational profile.",
       "result": "The fully eclipsed conformation has the highest potential energy."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q38_strain_types",
+    "question_id": "ch03_q38_strain_types",
     "topic": "Conformational Analysis & Newman Projections",
     "difficulty_level": "Medium",
     "question_text": "What type of strain results when non-bonded atoms are forced closer together than their van der Waals radii allow?",
@@ -1442,10 +1554,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Distinguish between steric, torsional, and angle strain.",
       "process": "Step 1: Steric strain occurs due to spatial crowding of electron clouds of non-bonded atoms.\nStep 2: Torsional strain occurs when bonds are eclipsed.\nStep 3: Angle strain occurs when bond angles deviate from their ideal hybrid geometries (e.g. $109.5^circ$ for $sp^3$).",
       "result": "The correct choice is steric strain."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q39_properties_octane_rating",
+    "question_id": "ch03_q39_properties_octane_rating",
     "topic": "Properties of Alkanes",
     "difficulty_level": "Medium",
     "question_text": "What structural feature of alkanes corresponds to a higher octane rating in gasoline?",
@@ -1480,10 +1595,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Relate fuel efficiency and octane rating to alkane structure.",
       "process": "Step 1: Octane rating measures a fuel's resistance to premature ignition (knocking).\nStep 2: Straight-chain heptane is highly prone to knocking (octane rating = 0). Isomeric isooctane ($2,2,4-trimethylpentane$) burns smoothly (octane rating = 100).\nStep 3: Highly branched alkanes are more stable and combust in a controlled, smooth manner, leading to higher octane ratings.",
       "result": "Branching increases the octane rating."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q40_dihedral_angle_def",
+    "question_id": "ch03_q40_dihedral_angle_def",
     "topic": "Conformational Analysis & Newman Projections",
     "difficulty_level": "Easy",
     "question_text": "What is a dihedral angle (or torsion angle)?",
@@ -1518,10 +1636,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Define dihedral angle in stereochemistry.",
       "process": "Step 1: Look down a single C-C bond in a Newman projection.\nStep 2: The dihedral angle is the angle formed by a substituent on the front carbon, the C-C axis, and a substituent on the back carbon.\nStep 3: It ranges from $0^circ$ to $360^circ$.",
       "result": "It is the angle between bonds on adjacent carbons in a Newman projection."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q41_isobutyl_secondary_carbon",
+    "question_id": "ch03_q41_isobutyl_secondary_carbon",
     "topic": "Alkyl Groups",
     "difficulty_level": "Medium",
     "question_text": "Which carbon in the isobutyl group is secondary (2\\(\\circ\\))?",
@@ -1556,10 +1677,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Identify degrees of carbon substitution in the isobutyl group.",
       "process": "Step 1: The isobutyl group is $-CH_2-CH(CH_3)_2$.\nStep 2: The terminal methyl carbons are bonded to 1 carbon (primary). The central $-CH-$ carbon is bonded to 3 carbons (tertiary).\nStep 3: The $-CH_2-$ carbon is bonded to the parent chain carbon and the central $-CH-$ carbon, making it bonded to 2 carbons (secondary).",
       "result": "The direct attachment $-CH_2-$ carbon is secondary."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q42_secbutyl_chiral_center",
+    "question_id": "ch03_q42_secbutyl_chiral_center",
     "topic": "Alkyl Groups",
     "difficulty_level": "Medium",
     "question_text": "Why does the sec-butyl group introduce a chiral center to a molecule when attached to a symmetric chain, whereas the isobutyl group does not?",
@@ -1594,10 +1718,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Analyze stereocenter generation in alkyl groups.",
       "process": "Step 1: A chiral center is a carbon bonded to 4 different groups.\nStep 2: The sec-butyl attachment carbon (C1 of the group: $-^*CH(CH_3)CH_2CH_3$) is bonded to: 1) hydrogen, 2) methyl, 3) ethyl, and 4) the parent chain. Since all 4 are different, it is a chiral center.\nStep 3: The isobutyl group attachment carbon ($-CH_2-CH(CH_3)_2$) is bonded to two identical hydrogens, making it achiral.",
       "result": "The attachment carbon of sec-butyl is bonded to 4 different groups, making it chiral."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q43_properties_solubility",
+    "question_id": "ch03_q43_properties_solubility",
     "topic": "Properties of Alkanes",
     "difficulty_level": "Easy",
     "question_text": "Which of the following solvents is an alkane insoluble in?",
@@ -1632,10 +1759,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Understand the solubility rule 'like dissolves like'.",
       "process": "Step 1: Alkanes are non-polar molecules.\nStep 2: Non-polar solutes dissolve in non-polar solvents (like hexane, ether, benzene).\nStep 3: Water is highly polar and forms strong hydrogen bond networks, which exclude non-polar alkanes.",
       "result": "Alkanes are insoluble in water."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q44_newman_drawing_direction",
+    "question_id": "ch03_q44_newman_drawing_direction",
     "topic": "Conformational Analysis & Newman Projections",
     "difficulty_level": "Easy",
     "question_text": "When looking at a Newman projection, how are the front and back carbons represented?",
@@ -1670,10 +1800,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Identify the visual convention of Newman projections.",
       "process": "Step 1: A Newman projection views a molecule directly down a specific carbon-carbon bond axis.\nStep 2: The front carbon is closest to the viewer and is drawn as the intersection of three lines (a Y-shape).\nStep 3: The back carbon is obscured and is drawn as a large circle, with its bonds starting at the circumference of the circle.",
       "result": "Front carbon is a point; back carbon is a circle."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q45_gauche_butane_dihedral",
+    "question_id": "ch03_q45_gauche_butane_dihedral",
     "topic": "Conformational Analysis & Newman Projections",
     "difficulty_level": "Medium",
     "question_text": "What is the dihedral angle between the two methyl groups in the gauche conformation of butane?",
@@ -1708,10 +1841,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Relate conformer names to dihedral angles in butane.",
       "process": "Step 1: Staggered conformations occur at dihedral angles of $60^circ$, $180^circ$, and $300^circ$.\nStep 2: The angle $180^circ$ is anti.\nStep 3: The angles $60^circ$ and $300^circ$ represent gauche conformations.",
       "result": "The dihedral angle is 60 or 300 degrees."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q46_barrier_rotation_butane_partially",
+    "question_id": "ch03_q46_barrier_rotation_butane_partially",
     "topic": "Conformations of Butane",
     "difficulty_level": "Hard",
     "question_text": "What is the energy barrier to rotation when transitioning from the most stable anti conformation of butane to a gauche conformation?",
@@ -1746,10 +1882,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Understand energy barriers between conformational minima in butane.",
       "process": "Step 1: Anti is at $180^circ$, and gauche is at $60^circ$ (or $300^circ$).\nStep 2: To rotate from $180^circ$ to $60^circ$, the molecule must pass through the eclipsed state at $120^circ$ (partially eclipsed, methyl eclipsing hydrogen).\nStep 3: The potential energy of this transition state is 16.0 kJ/mol above the anti state, representing the energy barrier for the transition.",
       "result": "The energy barrier is 16.0 kJ/mol."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q47_alkane_properties_source",
+    "question_id": "ch03_q47_alkane_properties_source",
     "topic": "Properties of Alkanes",
     "difficulty_level": "Easy",
     "question_text": "What is the principal natural source of alkanes on Earth?",
@@ -1784,10 +1923,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Review industrial sources of hydrocarbons.",
       "process": "Step 1: Natural gas consists mostly of methane with small amounts of ethane, propane, and butane.\nStep 2: Petroleum (crude oil) is a complex mixture of liquid alkanes and other hydrocarbons.\nStep 3: Fractional distillation of petroleum yields gasoline, kerosene, diesel, and other alkane products.",
       "result": "Petroleum and natural gas are the primary sources."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q48_iupac_common_names_alkyl",
+    "question_id": "ch03_q48_iupac_common_names_alkyl",
     "topic": "Alkyl Groups",
     "difficulty_level": "Medium",
     "question_text": "What is the IUPAC systematic name for the 'neopentyl' group?",
@@ -1822,10 +1964,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Name complex alkyl groups systematically under IUPAC.",
       "process": "Step 1: The neopentyl group has the structure $-CH_2-C(CH_3)_3$.\nStep 2: Find the longest chain starting from the attachment carbon (C1): C1 is a $-CH_2-$, C2 is $-C(CH_3)_2-$, and C3 is one of the methyls. This makes it a propyl parent group.\nStep 3: Identify branches on the propyl group: two methyls at C2.\nStep 4: Combine: 2,2-dimethylpropyl.",
       "result": "The systematic name is 2,2-dimethylpropyl."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q49_conformation_barrier_rotation_cause",
+    "question_id": "ch03_q49_conformation_barrier_rotation_cause",
     "topic": "Conformational Analysis & Newman Projections",
     "difficulty_level": "Easy",
     "question_text": "The preference for staggered conformations over eclipsed conformations is known as:",
@@ -1860,10 +2005,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Understand basic conformational preferences.",
       "process": "Step 1: Staggered conformations represent energy minima (stable states).\nStep 2: Eclipsed conformations represent energy maxima (unstable states).\nStep 3: The drive to avoid eclipsing interactions and reside in staggered conformations is the basis of conformational stability.",
       "result": "The preference is called conformational stability."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q50_newman_projection_symmetry_butane",
+    "question_id": "ch03_q50_newman_projection_symmetry_butane",
     "topic": "Conformational Analysis & Newman Projections",
     "difficulty_level": "Hard",
     "question_text": "Which conformation of butane contains a center of inversion (symmetry)?",
@@ -1898,29 +2046,32 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Examine point-group symmetry in conformations of butane.",
       "process": "Step 1: A center of inversion ($i$) exists if drawing a line from any atom through the center of the molecule to an equal distance on the other side finds an identical atom.\nStep 2: Look at the anti conformation. The two methyls are $180^circ$ apart, C1 balances C4, and all hydrogens on the front carbon are exactly opposite hydrogens on the back carbon.\nStep 3: Gauche, fully eclipsed, and partially eclipsed conformations lack this center of inversion.",
       "result": "The anti conformation has a center of inversion."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q_dynamic_conformational_energy",
+    "question_id": "ch03_q_dynamic_conformational_energy",
     "topic": "Alkanes Conformational Analysis",
     "difficulty_level": "Hard",
     "question_text": "Examine the potential energy curve for rotations around the C2-C3 bond of butane. Identify the correct conformational states for the energy levels.",
     "energy_diagram": {
       "points": [
         {
-          "state": "Anti (180\u00b0)",
+          "state": "Anti (180°)",
           "energy": 0
         },
         {
-          "state": "Eclipsed (120\u00b0)",
+          "state": "Eclipsed (120°)",
           "energy": 14
         },
         {
-          "state": "Gauche (60\u00b0)",
+          "state": "Gauche (60°)",
           "energy": 38
         },
         {
-          "state": "Fully Eclipsed (0\u00b0)",
+          "state": "Fully Eclipsed (0°)",
           "energy": 190
         }
       ]
@@ -1949,12 +2100,15 @@ const CHAPTER_3_QUESTIONS = [
     ],
     "feedback": {
       "context": "Analyzing butane conformational energy profiles.",
-      "process": "Anti conformation has methyl groups furthest apart (180\u00b0), minimizing steric strain (0 kJ/mol). Gauche has methyls at 60\u00b0 (3.8 kJ/mol). Fully eclipsed has methyls eclipsing each other (19 kJ/mol), maximizing steric and torsional strain.",
+      "process": "Anti conformation has methyl groups furthest apart (180°), minimizing steric strain (0 kJ/mol). Gauche has methyls at 60° (3.8 kJ/mol). Fully eclipsed has methyls eclipsing each other (19 kJ/mol), maximizing steric and torsional strain.",
       "result": "The order of stability is: Anti > Gauche > Eclipsed > Fully Eclipsed."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q_dynamic_alkane_iupac",
+    "question_id": "ch03_q_dynamic_alkane_iupac",
     "topic": "Alkane Nomenclature & Structure",
     "difficulty_level": "Medium",
     "question_text": "Match each branched alkane structure to its correct IUPAC name.",
@@ -2002,10 +2156,13 @@ const CHAPTER_3_QUESTIONS = [
       "context": "Applying IUPAC rules to name branched alkanes.",
       "process": "Item 1: Isopropane or 2-methylpropane. Item 2: Neopentane or 2,2-dimethylpropane. Item 3: 5-carbon chain with methyl at C3 is 3-methylpentane. Item 4: 5-carbon chain with methyls at C2 and C4 is 2,4-dimethylpentane.",
       "result": "IUPAC rules ensure unique, unambiguous names for chemical structures."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch3_q_dynamic_ring_strain",
+    "question_id": "ch03_q_dynamic_ring_strain",
     "topic": "Cycloalkanes Conformational Analysis",
     "difficulty_level": "Hard",
     "question_text": "Match each cycloalkane to its relative ring strain level (total ring strain in kJ/mol).",
@@ -2048,8 +2205,288 @@ const CHAPTER_3_QUESTIONS = [
     ],
     "feedback": {
       "context": "Assessing ring strain in cycloalkanes based on angle strain and torsional strain.",
-      "process": "Cyclopropanes have severe angle strain (60\u00b0 vs 109.5\u00b0). Cyclobutane is slightly less strained (88\u00b0). Cyclopentane adopts a puckered envelope shape to relieve strain (26 kJ/mol). Cyclohexane adopts the chair conformation, which has zero angle and torsional strain.",
+      "process": "Cyclopropanes have severe angle strain (60° vs 109.5°). Cyclobutane is slightly less strained (88°). Cyclopentane adopts a puckered envelope shape to relieve strain (26 kJ/mol). Cyclohexane adopts the chair conformation, which has zero angle and torsional strain.",
       "result": "Chair cyclohexane is completely strain-free."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch03_q2",
+    "topic": "Nomenclature Matching",
+    "difficulty_level": "Medium",
+    "question_text": "Match each chemical structure to its correct IUPAC name by selecting from the dropdowns.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "CCC(=O)O",
+        "correctAnswer": "Propanoic acid"
+      },
+      {
+        "smiles": "CCC(C)=O",
+        "correctAnswer": "Butanone"
+      },
+      {
+        "smiles": "CCC(=O)CC",
+        "correctAnswer": "3-Pentanone"
+      },
+      {
+        "smiles": "CC=C",
+        "correctAnswer": "Propene"
+      }
+    ],
+    "match_options": [
+      "Ethylbenzene",
+      "Diethyl ether",
+      "1-Butanol",
+      "Propene",
+      "Butanone",
+      "Propanoic acid",
+      "Ethyl benzoate",
+      "3-Pentanone"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect matches",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Matching basic chemical structures with their nomenclature terms.",
+      "process": "Structure 1: CCC(=O)O corresponds to Propanoic acid.\nStructure 2: CCC(C)=O corresponds to Butanone.\nStructure 3: CCC(=O)CC corresponds to 3-Pentanone.\nStructure 4: CC=C corresponds to Propene.",
+      "result": "All structures are correctly matched."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch03_q3",
+    "topic": "Nomenclature Matching",
+    "difficulty_level": "Easy",
+    "question_text": "Match each chemical structure to its correct IUPAC name by selecting from the dropdowns.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "CC#N",
+        "correctAnswer": "Acetonitrile"
+      },
+      {
+        "smiles": "CCCBr",
+        "correctAnswer": "1-Bromopropane"
+      },
+      {
+        "smiles": "C1CCCCC1",
+        "correctAnswer": "Cyclohexane"
+      },
+      {
+        "smiles": "C1CC=CC1",
+        "correctAnswer": "Cyclopentene"
+      }
+    ],
+    "match_options": [
+      "Acetonitrile",
+      "Cyclopentene",
+      "Aniline",
+      "Chloroform",
+      "Cyclopentanone",
+      "1-Bromopropane",
+      "1-Butanol",
+      "Cyclohexane"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect matches",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Matching basic chemical structures with their nomenclature terms.",
+      "process": "Structure 1: CC#N corresponds to Acetonitrile.\nStructure 2: CCCBr corresponds to 1-Bromopropane.\nStructure 3: C1CCCCC1 corresponds to Cyclohexane.\nStructure 4: C1CC=CC1 corresponds to Cyclopentene.",
+      "result": "All structures are correctly matched."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch03_q4",
+    "topic": "Nomenclature Matching",
+    "difficulty_level": "Easy",
+    "question_text": "Match each chemical structure to its correct IUPAC name by selecting from the dropdowns.",
+    "interaction_type": "matching-list",
+    "match_items": [
+      {
+        "smiles": "C1CC=CC1",
+        "correctAnswer": "Cyclopentene"
+      },
+      {
+        "smiles": "CC(O)C",
+        "correctAnswer": "Propan-2-ol"
+      },
+      {
+        "smiles": "CCC(=O)CC",
+        "correctAnswer": "3-Pentanone"
+      },
+      {
+        "smiles": "CO",
+        "correctAnswer": "Methanol"
+      }
+    ],
+    "match_options": [
+      "Methanol",
+      "3-Pentanone",
+      "Dimethyl sulfoxide",
+      "Acetic acid",
+      "Cyclopentene",
+      "Cyclohexane",
+      "Propan-2-ol",
+      "Toluene"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect matches",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Matching basic chemical structures with their nomenclature terms.",
+      "process": "Structure 1: C1CC=CC1 corresponds to Cyclopentene.\nStructure 2: CC(O)C corresponds to Propan-2-ol.\nStructure 3: CCC(=O)CC corresponds to 3-Pentanone.\nStructure 4: CO corresponds to Methanol.",
+      "result": "All structures are correctly matched."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch03_q3_2",
+    "topic": "Stereochemistry Grids",
+    "difficulty_level": "Hard",
+    "question_text": "Identify the IUPAC name for each structural card in this matching grid.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "CCO",
+        "correctAnswer": "Ethanol"
+      },
+      {
+        "smiles": "CCCCO",
+        "correctAnswer": "1-Butanol"
+      },
+      {
+        "smiles": "Clc1ccccc1",
+        "correctAnswer": "Chlorobenzene"
+      },
+      {
+        "smiles": "Oc1ccccc1",
+        "correctAnswer": "Phenol"
+      }
+    ],
+    "match_options": [
+      "Phenol",
+      "Dimethyl ether",
+      "Butanone",
+      "Benzaldehyde",
+      "Acetone",
+      "Chlorobenzene",
+      "Ethanol",
+      "1-Butanol"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect grid matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Visualizing structures in a grid to determine configurations or IUPAC assignments.",
+      "process": "Grid card 1: Ethanol.\nGrid card 2: 1-Butanol.\nGrid card 3: Chlorobenzene.\nGrid card 4: Phenol.",
+      "result": "Grid mapping successfully matched."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch03_q4_2",
+    "topic": "Stereochemistry Grids",
+    "difficulty_level": "Hard",
+    "question_text": "Identify the IUPAC name for each structural card in this matching grid.",
+    "interaction_type": "matching-grid",
+    "grid_columns": 2,
+    "match_items": [
+      {
+        "smiles": "CCc1ccccc1",
+        "correctAnswer": "Ethylbenzene"
+      },
+      {
+        "smiles": "CCC(C)=O",
+        "correctAnswer": "Butanone"
+      },
+      {
+        "smiles": "C1CCCCC1",
+        "correctAnswer": "Cyclohexane"
+      },
+      {
+        "smiles": "Oc1ccccc1",
+        "correctAnswer": "Phenol"
+      }
+    ],
+    "match_options": [
+      "Butanone",
+      "Acetic acid",
+      "Cyclohexane",
+      "Phenol",
+      "Ethanol",
+      "Toluene",
+      "Ethylbenzene",
+      "Ethyl acetate"
+    ],
+    "options": [
+      {
+        "option_id": "A",
+        "text": "All matched correctly",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Incorrect grid matching",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Visualizing structures in a grid to determine configurations or IUPAC assignments.",
+      "process": "Grid card 1: Ethylbenzene.\nGrid card 2: Butanone.\nGrid card 3: Cyclohexane.\nGrid card 4: Phenol.",
+      "result": "Grid mapping successfully matched."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

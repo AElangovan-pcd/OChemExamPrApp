@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Organic Chemistry Exam PrApp - ACS Standardized MCQ Platform</title>
-  <meta name="description" content="Rigorous, ACS-style Multiple Choice Questions designed to master organic chemistry mechanisms, stereochemistry, and nomenclature.">
+  <title>OChemStudyBuddy — Organic Chemistry Practice for CHEM 261/262/263 and the ACS Exam</title>
+  <meta name="description" content="Organic chemistry practice for premedical and predental students: ACS-style multiple-choice questions on mechanisms, stereochemistry, spectroscopy, and nomenclature, grounded in the OpenStax McMurry Organic Chemistry text.">
+  <meta name="author" content="A. Elangovan, PhD">
   
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -21,7 +22,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css?v=1.0.12">
+  <link rel="stylesheet" href="style.css?v=1.0.13">
 </head>
 <body>
 
@@ -30,7 +31,7 @@
     <div class="logo">
       <i class="fas fa-flask"></i>
       <div class="logo-text-group">
-        <span class="logo-title">OChem Exam PrApp</span>
+        <span class="logo-title">OChemStudyBuddy</span>
         <span class="logo-subtitle">Created by A. Elangovan</span>
       </div>
     </div>
@@ -63,33 +64,8 @@
       
       <!-- Practice Sidebar Content -->
       <div id="sidebar-practice-content">
-        <!-- Performance Analytics Panel -->
-        <div class="panel-card">
-          <div class="panel-title">
-            <i class="fas fa-chart-line" style="color: var(--accent-color);"></i>
-            <span>Performance</span>
-          </div>
-          <div class="stats-grid">
-            <div class="stat-box">
-              <div class="stat-val" id="stat-correct">0</div>
-              <div class="stat-label">Correct</div>
-            </div>
-            <div class="stat-box">
-              <div class="stat-val" id="stat-attempted">0</div>
-              <div class="stat-label">Attempted</div>
-            </div>
-          </div>
-          <div class="stat-box" style="margin-top: 1rem; width: 100%;">
-            <div class="stat-val" id="stat-accuracy">0%</div>
-            <div class="stat-label">Overall Accuracy</div>
-          </div>
-          <button class="btn" id="btn-reset" style="margin-top: 1rem; width: 100%; justify-content: center; font-size: 0.8rem; padding: 0.4rem;">
-            <i class="fas fa-trash-alt"></i> Reset Statistics
-          </button>
-        </div>
-
         <!-- Topics Explorer Sidebar -->
-        <div class="panel-card" style="margin-top: 1.5rem;">
+        <div class="panel-card">
           <div class="panel-title" style="margin-bottom: 0.75rem;">
             <i class="fas fa-tags" style="color: var(--accent-color);"></i>
             <span>Study Topics</span>
@@ -189,6 +165,33 @@
       </div>
 
     </main>
+
+    <!-- Right Sidebar: Performance (practice mode only) -->
+    <aside class="sidebar sidebar-right" id="sidebar-right">
+      <div class="panel-card">
+        <div class="panel-title">
+          <i class="fas fa-chart-line" style="color: var(--accent-color);"></i>
+          <span>Performance</span>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-val" id="stat-correct">0</div>
+            <div class="stat-label">Correct</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" id="stat-attempted">0</div>
+            <div class="stat-label">Attempted</div>
+          </div>
+        </div>
+        <div class="stat-box" style="margin-top: 1rem; width: 100%;">
+          <div class="stat-val" id="stat-accuracy">0%</div>
+          <div class="stat-label">Overall Accuracy</div>
+        </div>
+        <button class="btn" id="btn-reset" style="margin-top: 1rem; width: 100%; justify-content: center; font-size: 0.8rem; padding: 0.4rem;">
+          <i class="fas fa-trash-alt"></i> Reset Statistics
+        </button>
+      </div>
+    </aside>
   </div>
 
   <!-- Application Footer -->
@@ -254,57 +257,24 @@
   <div class="toast-container" id="toast-container"></div>
 
   <!-- Load Data and Main Script -->
-  <script src="questions/chapter1.js"></script>
-  <script src="questions/chapter2.js"></script>
-  <script src="questions/chapter3.js"></script>
-  <script src="questions/chapter4.js"></script>
-  <script src="questions/chapter5.js"></script>
-  <script src="questions/chapter6.js"></script>
-  <script src="questions/chapter7.js"></script>
-  <script src="questions/chapter8.js"></script>
-  <script src="questions/chapter9.js"></script>
-  <script src="questions/chapter10.js"></script>
-  <script src="questions/chapter11.js"></script>
-  <script src="questions/chapter12.js"></script>
-  <script src="questions/chapter13.js"></script>
-  <script src="questions/chapter14.js"></script>
-  <script src="questions/chapter15.js"></script>
-  <script src="questions/chapter16.js"></script>
-  <script src="questions/chapter17.js"></script>
-  <script src="questions/chapter18.js"></script>
-  <script src="questions/chapter19.js"></script>
-  <script src="questions/chapter20.js"></script>
-  <script src="questions/chapter21.js"></script>
-  <script src="questions/chapter22.js"></script>
-  <script src="questions/chapter23.js"></script>
-  <script src="questions/chapter24.js"></script>
-  <script src="questions/chapter25.js"></script>
-  <script src="questions/chapter26.js"></script>
-  <script src="questions/chapter27.js"></script>
-  <script src="questions/chapter28.js"></script>
-  <script src="questions/chapter29.js"></script>
-  <script src="questions/chapter30.js"></script>
-  <script src="questions/chapter31.js"></script>
-  <script src="questions/chapter32.js"></script>
-  <script src="questions/chapter33.js"></script>
-  <script src="questions/chapter34.js"></script>
-  <script src="questions/chapter35.js"></script>
-  <script src="questions/chapter36.js"></script>
-  <script src="questions/chapter37.js"></script>
-  <script src="questions/chapter38.js"></script>
-  <script src="questions/chapter39.js"></script>
-  <script src="questions/chapter40.js"></script>
-  <script src="questions/chapter41.js"></script>
-  <script src="questions/chapter42.js"></script>
-  <script src="questions/chapter43.js"></script>
-  <script src="questions/chapter44.js"></script>
-  <script src="questions/chapter45.js"></script>
-  <script src="questions/chapter46.js"></script>
-  <script src="questions/chapter47.js"></script>
-  <script src="questions/chapter48.js"></script>
-  <script src="questions/chapter49.js"></script>
-  <script src="questions/chapter50.js"></script>
-  <script src="questions-data.js"></script>
-  <script src="app.js?v=1.0.11"></script>
+  <script src="questions/ch01.js"></script>
+  <script src="questions/ch02.js"></script>
+  <script src="questions/ch03.js"></script>
+  <script src="questions/ch04.js"></script>
+  <script src="questions/ch05.js"></script>
+  <script src="questions/ch06.js"></script>
+  <script src="questions/ch07.js"></script>
+  <script src="questions/ch08.js"></script>
+  <script src="questions/ch09.js"></script>
+  <script src="questions/ch10.js"></script>
+  <script src="questions/ch11.js"></script>
+  <script src="questions/ch12.js"></script>
+  <script src="questions/ch13.js"></script>
+  <script src="questions/ch14.js"></script>
+  <script src="questions/ch15.js"></script>
+  <script src="questions/ch16.js"></script>
+  <script src="questions/ch17.js"></script>
+  <script src="questions/ch18.js"></script>
+  <script src="app.js?v=1.0.17"></script>
 </body>
 </html>

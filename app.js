@@ -1,4 +1,5 @@
-// Organic Chemistry Exam PrApp - Core Logic
+// OChemStudyBuddy - Core Logic
+// Author: A. Elangovan, PhD
 
 // App State
 let state = {
@@ -34,43 +35,6 @@ let state = {
 let matchingSelections = {};
 
 // Preprocess loaded questions to assign consistent OER chapter numbers matching McMurry OpenStax
-const CHAPTER_OER_MAP = {
-  1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10,
-  11: 11, 12: 12, 13: 13, 14: 14, 15: 15, 16: 16, 17: 17, 18: 18,
-  19: 3,   // ACS Nomenclature -> Ch 3
-  20: 1,   // ACS Structure & Hybridization -> Ch 1
-  21: 2,   // ACS Acids & Bases -> Ch 2
-  22: 5,   // ACS Stereochemistry -> Ch 5
-  23: 11,  // ACS Substitutions & Eliminations -> Ch 11
-  24: 8,   // ACS Electrophilic Additions -> Ch 8
-  25: 19,  // ACS Carbonyl Additions -> Ch 19 (Aldehydes and Ketones)
-  26: 21,  // ACS Carbonyl Substitutions -> Ch 21 (Carboxylic Acid Derivatives)
-  27: 22,  // ACS Enols & Enolates -> Ch 22 (Carbonyl Alpha-Substitution)
-  28: 16,  // ACS EAS & NAS -> Ch 16 (Chemistry of Benzene)
-  29: 10,  // ACS Free Radicals -> Ch 10 (Organohalides)
-  30: 17,  // ACS Oxidations & Reductions -> Ch 17 (Alcohols)
-  31: 12,  // ACS Spectroscopy -> Ch 12 (Spectroscopy Basics)
-  32: 9,   // ACS Synthesis & Qual -> Ch 9 (Alkynes)
-  33: 3,   // Nomenclature Matching -> Ch 3
-  34: 5,   // Stereochemistry Grids -> Ch 5
-  35: 13,  // Dynamic Spectroscopy -> Ch 13 (NMR)
-  36: 8,   // Alkenes Reactivity -> Ch 8
-  37: 11,  // Elimination/Substitution -> Ch 11
-  38: 17,  // Alcohols Prep/Reactions -> Ch 17
-  39: 21,  // Esterification -> Ch 21
-  40: 6,   // Thermodynamics -> Ch 6
-  41: 9,   // Synthetic Roadmaps -> Ch 9
-  42: 25,  // Carbohydrates -> Ch 25 (Biomolecules: Carbohydrates)
-  43: 26,  // Amino Acids -> Ch 26 (Biomolecules: Amino Acids & Proteins)
-  44: 16,  // EAS -> Ch 16
-  45: 17,  // Grignard -> Ch 17
-  46: 30,  // Diels-Alder / Pericyclic -> Ch 30 (Orbitals/Pericyclic)
-  47: 10,  // Radical Halogenation -> Ch 10
-  48: 9,   // Synthetic Roadmaps -> Ch 9
-  49: 27,  // Biomolecules: Lipids -> Ch 27
-  50: 28   // Biomolecules: Nucleic Acids -> Ch 28
-};
-
 // McMurry OpenStax Organic Chemistry Textbook Chapter Titles
 const OER_CHAPTER_TOPICS = {
   1: "Structure and Bonding",
@@ -107,28 +71,11 @@ const OER_CHAPTER_TOPICS = {
 };
 
 function assignOERChapterNumbers() {
+  // The chapter is the question_id prefix, which tools/validate.js guarantees agrees
+  // with the filename. No lookup table: there is nothing left to disagree.
   state.questions.forEach(q => {
-    let origCh = 1;
-    // Extract chapter from question_id: e.g. ch42_q1 or ch19_acs_q1
-    const match = q.question_id.match(/^ch(\d+)_/i);
-    if (match) {
-      origCh = parseInt(match[1]);
-    } else {
-      if (q.question_id.includes('carbocation')) origCh = 7;
-      else if (q.question_id.includes('sn2')) origCh = 11;
-      else if (q.question_id.includes('e2')) origCh = 11;
-      else if (q.question_id.includes('oxymercuration')) origCh = 8;
-      else if (q.question_id.includes('halogenation')) origCh = 8;
-    }
-    
-    // Distinguish actual Lipids and Nucleic Acids from ACS chapters 27/28
-    if (q.topic === "Biomolecules: Lipids" || q.topic === "Lipids" || q.question_id.includes("lipid")) {
-      q.chapterNum = 27;
-    } else if (q.topic === "Biomolecules: Nucleic Acids" || q.topic === "Nucleic Acids" || q.question_id.includes("base_pairing")) {
-      q.chapterNum = 28;
-    } else {
-      q.chapterNum = CHAPTER_OER_MAP[origCh] || 1;
-    }
+    const m = q.question_id.match(/^ch(\d+)_/i);
+    q.chapterNum = m ? Number(m[1]) : 1;
   });
 }
 
@@ -169,159 +116,14 @@ const smilesDrawerOptions = {
 
 // Initialize App
 document.addEventListener('DOMContentLoaded', () => {
-  // Load Default Questions
-  if (typeof OCHEM_QUESTIONS !== 'undefined') {
-    state.questions = [...OCHEM_QUESTIONS];
-  }
-  if (typeof CHAPTER_1_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_1_QUESTIONS];
-  }
-  if (typeof CHAPTER_2_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_2_QUESTIONS];
-  }
-  if (typeof CHAPTER_3_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_3_QUESTIONS];
-  }
-  if (typeof CHAPTER_4_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_4_QUESTIONS];
-  }
-  if (typeof CHAPTER_5_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_5_QUESTIONS];
-  }
-  if (typeof CHAPTER_6_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_6_QUESTIONS];
-  }
-  if (typeof CHAPTER_7_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_7_QUESTIONS];
-  }
-  if (typeof CHAPTER_8_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_8_QUESTIONS];
-  }
-  if (typeof CHAPTER_9_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_9_QUESTIONS];
-  }
-  if (typeof CHAPTER_10_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_10_QUESTIONS];
-  }
-  if (typeof CHAPTER_11_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_11_QUESTIONS];
-  }
-  if (typeof CHAPTER_12_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_12_QUESTIONS];
-  }
-  if (typeof CHAPTER_13_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_13_QUESTIONS];
-  }
-  if (typeof CHAPTER_14_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_14_QUESTIONS];
-  }
-  if (typeof CHAPTER_15_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_15_QUESTIONS];
-  }
-  if (typeof CHAPTER_16_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_16_QUESTIONS];
-  }
-  if (typeof CHAPTER_17_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_17_QUESTIONS];
-  }
-  if (typeof CHAPTER_18_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_18_QUESTIONS];
-  }
-  if (typeof CHAPTER_19_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_19_QUESTIONS];
-  }
-  if (typeof CHAPTER_20_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_20_QUESTIONS];
-  }
-  if (typeof CHAPTER_21_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_21_QUESTIONS];
-  }
-  if (typeof CHAPTER_22_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_22_QUESTIONS];
-  }
-  if (typeof CHAPTER_23_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_23_QUESTIONS];
-  }
-  if (typeof CHAPTER_24_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_24_QUESTIONS];
-  }
-  if (typeof CHAPTER_25_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_25_QUESTIONS];
-  }
-  if (typeof CHAPTER_26_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_26_QUESTIONS];
-  }
-  if (typeof CHAPTER_27_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_27_QUESTIONS];
-  }
-  if (typeof CHAPTER_28_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_28_QUESTIONS];
-  }
-  if (typeof CHAPTER_29_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_29_QUESTIONS];
-  }
-  if (typeof CHAPTER_30_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_30_QUESTIONS];
-  }
-  if (typeof CHAPTER_31_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_31_QUESTIONS];
-  }
-  if (typeof CHAPTER_32_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_32_QUESTIONS];
-  }
-  if (typeof CHAPTER_33_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_33_QUESTIONS];
-  }
-  if (typeof CHAPTER_34_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_34_QUESTIONS];
-  }
-  if (typeof CHAPTER_35_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_35_QUESTIONS];
-  }
-  if (typeof CHAPTER_36_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_36_QUESTIONS];
-  }
-  if (typeof CHAPTER_37_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_37_QUESTIONS];
-  }
-  if (typeof CHAPTER_38_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_38_QUESTIONS];
-  }
-  if (typeof CHAPTER_39_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_39_QUESTIONS];
-  }
-  if (typeof CHAPTER_40_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_40_QUESTIONS];
-  }
-  if (typeof CHAPTER_41_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_41_QUESTIONS];
-  }
-  if (typeof CHAPTER_42_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_42_QUESTIONS];
-  }
-  if (typeof CHAPTER_43_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_43_QUESTIONS];
-  }
-  if (typeof CHAPTER_44_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_44_QUESTIONS];
-  }
-  if (typeof CHAPTER_45_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_45_QUESTIONS];
-  }
-  if (typeof CHAPTER_46_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_46_QUESTIONS];
-  }
-  if (typeof CHAPTER_47_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_47_QUESTIONS];
-  }
-  if (typeof CHAPTER_48_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_48_QUESTIONS];
-  }
-  if (typeof CHAPTER_49_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_49_QUESTIONS];
-  }
-  if (typeof CHAPTER_50_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_50_QUESTIONS];
+  // Load the question bank. Chapter files declare `var CH<NN>_QUESTIONS`, which
+  // attaches to globalThis; a `const` would stay a lexical binding, this loop would
+  // find nothing, and the app would silently load an empty bank.
+  for (let n = 1; n <= 31; n++) {
+    const name = `CH${String(n).padStart(2, '0')}_QUESTIONS`;
+    if (Array.isArray(globalThis[name])) {
+      state.questions = [...state.questions, ...globalThis[name]];
+    }
   }
 
   // Assign OER chapter numbers to all loaded questions
@@ -645,67 +447,6 @@ function shuffleQuestionsOptions(questions) {
   });
 }
 
-// Helper to extract a bag of words from question text to perform Jaccard similarity comparison
-function getQuestionWords(text) {
-  if (!text) return new Set();
-  // Normalize text: lowercase, remove HTML, LaTeX, KaTeX formulas, and non-alphabetic chars
-  const norm = text.toLowerCase()
-    .replace(/<\/?[^>]+(>|$)/g, " ")                  // Remove HTML tags
-    .replace(/\$\$[\s\S]*?\$\$/g, " ")                // Remove display LaTeX
-    .replace(/\$[\s\S]*?\$/g, " ")                    // Remove inline LaTeX
-    .replace(/\\\(.*?\\\)/g, " ")                     // Remove KaTeX \( ... \)
-    .replace(/\\\[.*?\\\]/g, " ")                     // Remove KaTeX \[ ... \]
-    .replace(/[^a-z\s]/g, " ")                        // Remove numbers and punctuation, keep only letters
-    .replace(/\s+/g, " ")                             // Collapse multiple spaces
-    .trim();
-  
-  const words = norm.split(" ").filter(w => w.length > 0);
-  return new Set(words);
-}
-
-// Calculate Jaccard similarity between two sets of words
-function calculateJaccardSimilarity(setA, setB) {
-  if (setA.size === 0 || setB.size === 0) return 0;
-  let intersectionSize = 0;
-  for (const elem of setA) {
-    if (setB.has(elem)) {
-      intersectionSize++;
-    }
-  }
-  const unionSize = setA.size + setB.size - intersectionSize;
-  return intersectionSize / unionSize;
-}
-
-// Filters a list of questions to ensure we do not present the same kind of problem more than once
-function filterUniqueProblemKinds(questions) {
-  if (!questions || !Array.isArray(questions)) return [];
-  const uniqueQuestions = [];
-  const representatives = []; // Array of { topic: string, words: Set }
-
-  for (const q of questions) {
-    const topic = q.topic || "";
-    const words = getQuestionWords(q.question_text || "");
-
-    let isDuplicate = false;
-    for (const rep of representatives) {
-      if (rep.topic === topic) {
-        const similarity = calculateJaccardSimilarity(words, rep.words);
-        if (similarity >= 0.60) {
-          isDuplicate = true;
-          break;
-        }
-      }
-    }
-
-    if (!isDuplicate) {
-      uniqueQuestions.push(q);
-      representatives.push({ topic, words });
-    }
-  }
-
-  return uniqueQuestions;
-}
-
 // Select a Topic
 function selectTopic(topic) {
   state.selectedTopic = topic;
@@ -720,9 +461,6 @@ function selectTopic(topic) {
       return qChapterName === topic;
     });
   }
-  
-  // Deduplicate to not present one kind of problem more than once
-  baseQuestions = filterUniqueProblemKinds(baseQuestions);
   
   state.filteredQuestions = shuffleQuestionsOptions(baseQuestions);
 
@@ -845,14 +583,14 @@ function renderQuestion() {
   setTimeout(() => {
     // 1. Draw standard question Smiles canvas
     if (q.question_smiles && document.getElementById('q-smiles-canvas')) {
-      drawSMILESCanvas(q.question_smiles, 'q-smiles-canvas', 'light');
+      drawSMILESCanvas(q.question_smiles, 'q-smiles-canvas', 'light', q.structure_alt || '');
     }
 
     // 2. Draw standard options Smiles canvases
     q.options.forEach(opt => {
       const canvasId = `opt-canvas-${opt.option_id}`;
       if (opt.smiles && document.getElementById(canvasId)) {
-        drawSMILESCanvas(opt.smiles, canvasId, 'light');
+        drawSMILESCanvas(opt.smiles, canvasId, 'light', opt.text || '');
       }
     });
 
@@ -878,9 +616,16 @@ function renderQuestion() {
 }
 
 // Wrapper for SmilesDrawer execution with standard checks
-function drawSMILESCanvas(smiles, canvasId, theme = 'light') {
+function drawSMILESCanvas(smiles, canvasId, theme = 'light', alt = '') {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return;
+
+  // A <canvas> exposes nothing to assistive technology without an explicit role and
+  // name, which made every structural question unanswerable non-visually. Describe
+  // what a sighted student sees; never supply the answer - on a nomenclature item the
+  // compound name is the leak, on a stereochemistry item the R/S descriptor is.
+  canvas.setAttribute('role', 'img');
+  canvas.setAttribute('aria-label', alt || 'Chemical structure diagram');
 
   const container = canvas.closest('.matching-structure') || canvas.parentElement;
 
@@ -1183,6 +928,16 @@ function showToast(message, type = 'success') {
 // ==========================================================================
 
 // Switch app mode between 'practice' and 'mock'
+// The Performance panel lives in the right sidebar and is practice-mode only.
+// Hiding the aside on its own would leave an empty grid track, and an empty track
+// still contributes its gap - so the container drops to two columns at the same time.
+function setRightSidebarVisible(visible) {
+  const right = document.getElementById('sidebar-right');
+  const container = document.querySelector('.app-container');
+  if (right) right.style.display = visible ? '' : 'none';
+  if (container) container.classList.toggle('mock-layout', !visible);
+}
+
 function setAppMode(mode) {
   state.appMode = mode;
 
@@ -1212,7 +967,8 @@ function setAppMode(mode) {
       mockSidebar.style.display = 'none';
       practiceWorkspace.style.display = 'block';
       mockWorkspace.style.display = 'none';
-      
+      setRightSidebarVisible(true);
+
       // Render normal practice question
       renderQuestion();
     } else {
@@ -1220,7 +976,8 @@ function setAppMode(mode) {
       mockSidebar.style.display = 'block';
       practiceWorkspace.style.display = 'none';
       mockWorkspace.style.display = 'block';
-      
+      setRightSidebarVisible(false);
+
       // Show mock exam dashboard or active exam
       if (state.mockExam.active) {
         renderMockExamQuestion();
@@ -1385,8 +1142,7 @@ function startMockExam() {
 
   // 2. Select 70 Balanced Questions across all chapters (excluding matching lists/grids for Mock Exam)
   const questionsByChapter = {};
-  const deduplicatedPool = filterUniqueProblemKinds(state.questions);
-  deduplicatedPool.forEach(q => {
+  state.questions.forEach(q => {
     // Exclude matching-list and matching-grid from Mock Exam
     if (q.interaction_type === 'matching-list' || q.interaction_type === 'matching-grid') {
       return;
@@ -1465,7 +1221,8 @@ function startMockExam() {
   document.getElementById('sidebar-mock-content').style.display = 'block';
   document.getElementById('workspace-practice-content').style.display = 'none';
   document.getElementById('workspace-mock-content').style.display = 'block';
-  
+  setRightSidebarVisible(false);
+
   // Set tab active
   document.getElementById('tab-btn-practice').classList.remove('active');
   document.getElementById('tab-btn-mock').classList.add('active');
@@ -1560,13 +1317,13 @@ function renderMockExamQuestion() {
   // Draw structures on canvas
   setTimeout(() => {
     if (q.question_smiles && document.getElementById('mock-q-smiles-canvas')) {
-      drawSMILESCanvas(q.question_smiles, 'mock-q-smiles-canvas', 'light');
+      drawSMILESCanvas(q.question_smiles, 'mock-q-smiles-canvas', 'light', q.structure_alt || '');
     }
 
     q.options.forEach(opt => {
       const canvasId = `mock-opt-canvas-${opt.option_id}`;
       if (opt.smiles && document.getElementById(canvasId)) {
-        drawSMILESCanvas(opt.smiles, canvasId, 'light');
+        drawSMILESCanvas(opt.smiles, canvasId, 'light', opt.text || '');
       }
     });
 
@@ -1956,13 +1713,13 @@ function reviewMockQuestion(idx) {
   // Draw Smiley canvases
   setTimeout(() => {
     if (q.question_smiles && document.getElementById('review-q-smiles-canvas')) {
-      drawSMILESCanvas(q.question_smiles, 'review-q-smiles-canvas', 'light');
+      drawSMILESCanvas(q.question_smiles, 'review-q-smiles-canvas', 'light', q.structure_alt || '');
     }
 
     q.options.forEach(opt => {
       const canvasId = `review-opt-canvas-${opt.option_id}`;
       if (opt.smiles && document.getElementById(canvasId)) {
-        drawSMILESCanvas(opt.smiles, canvasId, 'light');
+        drawSMILESCanvas(opt.smiles, canvasId, 'light', opt.text || '');
       }
     });
 
@@ -2169,7 +1926,7 @@ function initVisualEngines(q, prefix = '') {
   // 1. Draw scheme reactants and products
   if (q.reaction_scheme) {
     q.reaction_scheme.reactants.forEach((sm, index) => {
-      drawSMILESCanvas(sm, `${prefix}scheme-reactant-${index}`, 'light');
+      drawSMILESCanvas(sm, `${prefix}scheme-reactant-${index}`, 'light', `Reactant ${index + 1} structure`);
     });
     
     const isMockActive = (prefix === 'mock-');
@@ -2178,7 +1935,7 @@ function initVisualEngines(q, prefix = '') {
     
     if (showProduct) {
       q.reaction_scheme.products.forEach((sm, index) => {
-        drawSMILESCanvas(sm, `${prefix}scheme-product-${index}`, 'light');
+        drawSMILESCanvas(sm, `${prefix}scheme-product-${index}`, 'light', `Product ${index + 1} structure`);
       });
     }
   }
@@ -2186,7 +1943,7 @@ function initVisualEngines(q, prefix = '') {
   // 2. Draw match item structures
   if (q.interaction_type === 'matching-list' || q.interaction_type === 'matching-grid') {
     q.match_items.forEach((item, index) => {
-      drawSMILESCanvas(item.smiles, `${prefix}match-canvas-${index}`, 'light');
+      drawSMILESCanvas(item.smiles, `${prefix}match-canvas-${index}`, 'light', `Structure ${index + 1} to match`);
     });
   }
 
@@ -2210,10 +1967,44 @@ function initVisualEngines(q, prefix = '') {
   }
 }
 
+// Build the accessible name for a simulated spectrum from its own data. This is the
+// same information a sighted student reads off the plot - peak positions and
+// intensities - and stops short of naming the compound, which is the answer.
+function describeSpectrum(spec) {
+  if (spec.spec_type === 'ir') {
+    const bands = (spec.dips || []).map(d => `${d.xc} cm-1`).join(', ');
+    return `Simulated infrared spectrum with absorption bands at ${bands}.`;
+  }
+  if (spec.spec_type === 'ms') {
+    // data_points carry labels like "molecular ion [M+]" and "base peak", but the MS
+    // chart draws bare bars - no annotations, no tooltip, legend off. A sighted
+    // student sees only positions and heights and must work out which peak is M+.
+    // Including those labels here would hand over the interpretation, so they are
+    // deliberately dropped.
+    const peaks = (spec.data_points || [])
+      .map(p => `m/z ${p.x} at ${p.y}% relative abundance`).join('; ');
+    return `Simulated mass spectrum with peaks at ${peaks}.`;
+  }
+  if (spec.spec_type === 'nmr') {
+    // Unlike MS, the NMR label IS rendered: it selects the splitting pattern drawn on
+    // the curve (singlet/doublet/triplet/quartet) and shows in the tooltip. Naming the
+    // multiplicity is therefore describing what is on screen, not supplying the answer.
+    const sig = (spec.data_points || [])
+      .map(p => `${p.x} ppm integrating to ${p.y}H${p.label ? ', ' + p.label : ''}`).join('; ');
+    return `Simulated proton NMR spectrum with signals at ${sig}.`;
+  }
+  return 'Simulated spectrum.';
+}
+
 function drawSpectroscopyChart(ctx, spec) {
   const specType = spec.spec_type;
   const dataPoints = spec.data_points;
-  
+
+  if (ctx && ctx.canvas) {
+    ctx.canvas.setAttribute('role', 'img');
+    ctx.canvas.setAttribute('aria-label', describeSpectrum(spec));
+  }
+
   if (specType === 'ms') {
     const maxMass = Math.max(...dataPoints.map(p => p.x)) + 10;
     const allLabels = [];
@@ -2419,6 +2210,18 @@ function drawEnergyChart(ctx, diag) {
   const points = diag.points;
   const data = points.map((p, i) => ({ x: i, y: p.energy }));
 
+  // The plotted energies are what the question asks the student to read off; giving
+  // them in text is equivalent access, not the answer (which is Ea and dH).
+  // Kept unit-free and generic on purpose: this same renderer draws reaction
+  // coordinate diagrams, MO diagrams and conformational energy profiles, and the
+  // data carries no units of its own - the question text supplies them.
+  if (ctx && ctx.canvas) {
+    ctx.canvas.setAttribute('role', 'img');
+    ctx.canvas.setAttribute('aria-label',
+      'Energy diagram showing: '
+      + points.map(p => `${p.state} at ${p.energy}`).join(', ') + '.');
+  }
+
   new Chart(ctx, {
     type: 'line',
     data: {
@@ -2512,7 +2315,9 @@ function drawSyntheticRoadmap(containerId, roadmap) {
   setTimeout(() => {
     roadmap.nodes.forEach(node => {
       if (node.smiles) {
-        drawSMILESCanvas(node.smiles, `${containerId}-node-${node.id}`, 'light');
+        // node.id is the roadmap label ("A", "B", "C"), never the compound's name,
+        // so this identifies the structure without answering the question.
+        drawSMILESCanvas(node.smiles, `${containerId}-node-${node.id}`, 'light', `Compound ${node.id} structure`);
       }
     });
   }, 20);

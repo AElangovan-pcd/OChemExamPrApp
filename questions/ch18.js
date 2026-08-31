@@ -1,5 +1,6 @@
-// McMurry Chapter 18 questions
-const CHAPTER_18_QUESTIONS = [
+// OChemStudyBuddy - McMurry Chapter 18
+// Author: A. Elangovan, PhD
+var CH18_QUESTIONS = [
   {
     "question_id": "ch18_q1_ethanol_1hnmr",
     "topic": "Spectroscopy (SDBS/ChemicalBook)",
@@ -36,7 +37,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question tests the interpretation of a basic 1H NMR spectrum for a simple molecule.",
       "process": "Step 1: The molecular formula $C_2H_6O$ has a degree of unsaturation (Index of Hydrogen Deficiency, IHD) of 0. Thus, there are no double bonds or rings.\nStep 2: Examine the splitting patterns. The spectrum shows a triplet at $1.2\\text{ ppm}$ integrating to $3\\text{H}$ (typical for a methyl group next to a $CH_2$), a broad singlet at $2.6\\text{ ppm}$ integrating to $1\\text{H}$ (typical for an alcohol $OH$ proton), and a quartet at $3.7\\text{ ppm}$ integrating to $2\\text{H}$ (typical for a $CH_2$ group next to a methyl and bonded to an electronegative oxygen atom).\nStep 3: Combine these fragments: $-CH_3$ (triplet) and $-CH_2-$ (quartet) form an ethyl group, $-CH_2-CH_3$. The oxygen is present as a hydroxyl group $-OH$. This corresponds uniquely to ethanol.",
       "result": "The compound is ethanol ($CCO$). The triplet-quartet coupling pattern is a classic indicator of an ethyl group bonded to an oxygen."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q2_toluene_13cnmr",
@@ -74,7 +78,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question requires analyzing carbon-13 chemical shifts and molecular symmetry to deduce structure.",
       "process": "Step 1: Calculate IHD for $C_7H_8$. $\\text{IHD} = 7 - 8/2 + 1 = 4$. This is highly indicative of a benzene ring (1 ring + 3 double bonds = 4 unsaturations).\nStep 2: Determine carbon types from the spectrum. There is one peak in the aliphatic region ($~21\\text{ ppm}$) corresponding to a methyl carbon ($sp^3$). There are four distinct peaks in the aromatic region ($120-140\\text{ ppm}$), representing the benzene ring carbons.\nStep 3: Evaluate symmetry. A mono-substituted benzene ring (like toluene) has a plane of symmetry passing through C1 and C4. Thus, C1 is unique (1 signal), C2 and C6 are equivalent (1 signal), C3 and C5 are equivalent (1 signal), and C4 is unique (1 signal). This yields a total of 4 distinct $sp^2$ aromatic signals, plus 1 $sp^3$ signal for the methyl group.",
       "result": "The compound is toluene, displaying 4 aromatic signals and 1 methyl signal."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q3_benzaldehyde_ir",
@@ -112,7 +119,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question tests functional group identification using IR spectroscopy signature bands.",
       "process": "Step 1: Identify the main bands in the IR spectrum. The peak at $1701\\text{ cm}^{-1}$ is a strong, sharp stretch characteristic of a carbonyl group ($C=O$). The frequency is slightly lower than aliphatic aldehydes due to conjugation with the benzene ring.\nStep 2: Identify the bands at $2730$ and $2820\\text{ cm}^{-1}$. This pair of moderate intensity bands is the Fermi doublet, which arises from the interaction between the aldehyde $C-H$ stretch and the overtone of the aldehyde $C-H$ bending vibration. This is a definitive signature for an aldehyde group.\nStep 3: Match the formula $C_7H_6O$ with a conjugated aldehyde. Benzaldehyde has a benzene ring ($C_6H_5-$) and an aldehyde group ($-CHO$), which perfectly fits the formula $C_7H_6O$.",
       "result": "The spectrum represents benzaldehyde, characterized by the conjugated carbonyl stretch and the unique Fermi doublet."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q4_isopropanol_1hnmr",
@@ -150,7 +160,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question asks you to identify an alcohol based on splitting patterns and integrations in 1H NMR.",
       "process": "Step 1: Analyze the integrations. The signal at $1.2\\text{ ppm}$ integrates to $6\\text{H}$, representing two equivalent methyl groups ($-CH_3$). Its doublet splitting indicates these methyls are adjacent to a single proton ($CH$).\nStep 2: Analyze the septet. The multiplet at $4.0\\text{ ppm}$ integrates to $1\\text{H}$, which is a methine proton ($-CH-$). Its splitting into a septet confirms it has 6 neighboring protons (the two methyl groups: $n+1 = 6+1 = 7$). Its downfield shift (~4.0 ppm) indicates it is directly attached to the oxygen.\nStep 3: The singlet at $2.2\\text{ ppm}$ ($1\\text{H}$) represents the $-OH$ proton, which does not couple due to rapid proton exchange. This pattern corresponds to 2-propanol.",
       "result": "The compound is isopropanol (2-propanol). The $6\\text{H}$ doublet and $1\\text{H}$ septet represent an isopropyl group, $(CH_3)_2CH-$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q5_ethanol_ms",
@@ -188,7 +201,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question tests the understanding of fragmentation mechanisms in mass spectrometry, specifically $\\alpha$-cleavage of alcohols.",
       "process": "Step 1: Identify the molecular weight of the alcohol. The molecular ion $M^+$ is at $m/z = 46$, which corresponds to the molecular formula $C_2H_6O$ (Ethanol = 46 g/mol).\nStep 2: Analyze the primary fragmentation of primary alcohols. Primary alcohols undergo $\\alpha$-cleavage, where the bond between the $\\alpha$-carbon (bearing the hydroxyl group) and the adjacent $\\beta$-carbon is cleaved. For ethanol, this involves loss of a methyl radical ($\\cdot CH_3$, mass 15).\nStep 3: Calculate the resulting ion mass: $M - 15 = 46 - 15 = 31$. The resulting cation is stabilized by resonance: $[H_2C-OH]^+ \\leftrightarrow [H_2C=O^+-H]$. This resonance-stabilized oxocarbenium ion is highly stable, giving rise to the base peak at $m/z = 31$.",
       "result": "The base peak at $m/z = 31$ represents the resonance-stabilized oxocarbenium ion ($[CH_2=OH]^+$) formed via $\\alpha$-cleavage of ethanol."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q6_benzoic_acid_ir",
@@ -226,7 +242,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question focuses on diagnosing a carboxylic acid functional group using key IR bands.",
       "process": "Step 1: Analyze the unsaturation. For $C_7H_6O_2$, $\\text{IHD} = 7 - 6/2 + 1 = 5$, indicating a benzene ring (4) + a double bond (1).\nStep 2: Examine the IR regions. The extremely broad, jagged absorption band spanning $2500-3300\\text{ cm}^{-1}$ is characteristic of a carboxylic acid $O-H$ stretching vibration, which is broadened significantly by strong dimeric hydrogen bonding.\nStep 3: Look for the carbonyl stretch. The intense peak at $1685\\text{ cm}^{-1}$ corresponds to the carbonyl group ($C=O$), conjugated with the aromatic ring. These two features together uniquely indicate a carboxylic acid. Conjugated benzoic acid matches the formula $C_7H_6O_2$.",
       "result": "The spectrum represents benzoic acid, with the broad carboxylic acid O-H stretch overlapping the C-H region, and a conjugated carbonyl peak."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q7_ethyl_acetate_1hnmr",
@@ -264,7 +283,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question requires matching splitting patterns, chemical shifts, and integrations to identify an ester isomer.",
       "process": "Step 1: The molecular formula $C_4H_8O_2$ has $\\text{IHD} = 1$, representing a carbonyl group ($C=O$).\nStep 2: Deconstruct the NMR signals. The singlet at $2.0\\text{ ppm}$ ($3\\text{H}$) represents an isolated methyl group adjacent to a carbonyl: $CH_3-C(=O)-$. The triplet at $1.25\\text{ ppm}$ ($3\\text{H}$) and quartet at $4.1\\text{ ppm}$ ($2\\text{H}$) represent an ethyl group bonded to an oxygen: $-O-CH_2-CH_3$. The significant downfield shift of the quartet ($4.1\\text{ ppm}$) confirms the $CH_2$ is directly bonded to the highly electronegative ester oxygen.\nStep 3: Assemble the pieces: $CH_3-C(=O)-O-CH_2-CH_3$, which is ethyl acetate.",
       "result": "The compound is ethyl acetate, characterized by the acetyl singlet at 2.0 ppm and the ethyl ester quartet/triplet pair."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q8_acetone_13cnmr",
@@ -302,7 +324,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question tests interpretation of carbon-13 chemical shifts and symmetry.",
       "process": "Step 1: Check the formula and symmetry. $C_3H_6O$ with $\\text{IHD} = 1$. The 13C NMR spectrum has only two peaks. This indicates the compound has symmetry, meaning two of the three carbons are equivalent.\nStep 2: Analyze the chemical shifts. The peak at $31\\text{ ppm}$ is in the $sp^3$ region and corresponds to equivalent methyl carbons. The peak at $206\\text{ ppm}$ is extremely downfield, characteristic of a ketone or aldehyde carbonyl carbon.\nStep 3: Match the shifts and symmetry: a symmetric ketone with three carbons must have the carbonyl in the center and two methyl groups on the sides. This is acetone ($CH_3-C(=O)-CH_3$).",
       "result": "The compound is acetone. The 206 ppm peak represents the ketone carbonyl, and the 31 ppm peak represents the two equivalent methyl carbons."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q9_cyclohexanone_raman",
@@ -340,7 +365,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question links Infrared and Raman spectroscopy frequencies for carbonyl groups.",
       "process": "Step 1: Raman spectroscopy measures the scattering of light due to changes in molecular polarizability during vibration.\nStep 2: Carbonyl groups ($C=O$), while highly polar and active in IR, also undergo significant changes in bond polarizability during stretching, making them Raman active as well.\nStep 3: The frequency of $1711\\text{ cm}^{-1}$ is the exact stretching frequency of an aliphatic six-membered ring ketone ($C=O$ stretch), which matches cyclohexanone.",
       "result": "The peak at $1711\\text{ cm}^{-1}$ in the Raman spectrum represents the $C=O$ carbonyl stretching vibration of cyclohexanone."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q10_aniline_esr",
@@ -378,7 +406,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question covers the principles of Electron Spin Resonance (ESR) and hyperfine coupling in organic radical ions.",
       "process": "Step 1: ESR detects species with unpaired electrons, such as radical cations. The unpaired electron interacts with magnetic nuclei in its vicinity, leading to hyperfine splitting.\nStep 2: The isotropic hyperfine splitting ($a$) is proportional to the unpaired electron spin density at the nucleus. For the aniline radical cation, the nitrogen-14 nucleus has a nuclear spin of $I=1$, causing a major triplet splitting (intensity 1:1:1).\nStep 3: Further coupling occurs with protons ($I=1/2$). The spin density is highest at the amino protons ($-NH_2$), and the ortho and para positions of the benzene ring due to resonance. Carbon-12 ($I=0$) has no nuclear spin and does not cause hyperfine splitting.",
       "result": "The major hyperfine splittings in the aniline radical cation ESR arise from the nitrogen-14 nucleus and the amino, ortho, and para protons."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q11_aniline_ir",
@@ -416,7 +447,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question tests identification of amine classes using FT-IR.",
       "process": "Step 1: Primary amines ($-NH_2$) have two hydrogens attached to the nitrogen. This results in two distinct stretching vibrations in the IR spectrum: a symmetric stretch and an asymmetric stretch, typically appearing as a doublet in the $3300-3500\\text{ cm}^{-1}$ region.\nStep 2: Secondary amines ($R_2NH$) have only one hydrogen, showing only a single stretching band in this region.\nStep 3: Tertiary amines ($R_3N$) have no N-H bonds and do not show any bands in this region. This doublet at $3350$ and $3430\\text{ cm}^{-1}$ confirms a primary amine, matching aniline.",
       "result": "A primary amine (like aniline) is characterized by a doublet in the $N-H$ stretch region representing symmetric and asymmetric stretching modes."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q12_toluene_1hnmr",
@@ -454,7 +488,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question tests the 1H NMR splitting and shifts of monosubstituted benzenes.",
       "process": "Step 1: Toluene contains a methyl group attached to a benzene ring.\nStep 2: The methyl protons ($-CH_3$, $3H$) are isolated with no neighboring protons, so they appear as a singlet at $2.3\\text{ ppm}$ (shifted slightly downfield due to the adjacent aromatic ring).\nStep 3: The 5 aromatic ring protons are chemically similar and couple with each other, appearing as a complex multiplet integrating to $5H$ in the region of $7.0-7.3\\text{ ppm}$.",
       "result": "The correct spectrum contains a $3H$ singlet at $2.3\\text{ ppm}$ and a $5H$ multiplet at $7.2\\text{ ppm}$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q13_acetophenone_ir",
@@ -492,7 +529,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question links chemical structure resonance properties to physical infrared absorption frequencies.",
       "process": "Step 1: Infrared absorption frequencies depend on the bond force constant ($k$) and reduced mass ($\\mu$) per Hooke's Law: $\\nu \\propto \\sqrt{k/\\mu}$.\nStep 2: When a carbonyl is conjugated with a double bond or aromatic ring, resonance delocalization places a partial negative charge on oxygen and a positive charge on carbon/ring: $C=O \\leftrightarrow C^+-O^-$. This resonance increases the single-bond character of the $C-O$ bond.\nStep 3: Single bonds are weaker than double bonds (lower force constant $k$). A lower force constant results in a lower vibrational frequency (wavenumber). Therefore, conjugated carbonyls absorb at lower wavenumbers ($1685\\text{ cm}^{-1}$) than aliphatic carbonyls ($1715\\text{ cm}^{-1}$).",
       "result": "Conjugation with the benzene ring stabilizes the polar resonance form, increasing single-bond character and lowering the stretching frequency to $1685\\text{ cm}^{-1}$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q14_phenol_1hnmr",
@@ -530,7 +570,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question covers the D2O exchange technique used to identify exchangeable protons (hydroxyl, amine, amide) in 1H NMR.",
       "process": "Step 1: Protons bonded to heteroatoms (O, N, S) are exchangeable. Phenol has a hydroxyl group ($-OH$).\nStep 2: Upon addition of $D_2O$, a rapid chemical exchange reaction occurs: $R-OH + D_2O \\rightleftharpoons R-OD + HOD$.\nStep 3: Because deuterium ($D$, $^2H$) does not absorb in the $^1H$ frequency range of the NMR spectrometer, the signal for the hydroxyl proton disappears. This confirms the signal at $5.3\\text{ ppm}$ belongs to the hydroxyl group.",
       "result": "The exchange of the $-OH$ proton with deuterium from $D_2O$ causes the signal to disappear, identifying it as the hydroxyl proton."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q15_phenol_13cnmr",
@@ -568,7 +611,10 @@ const CHAPTER_18_QUESTIONS = [
       "context": "This question tests the analysis of 13C NMR signals based on molecular symmetry and chemical shielding.",
       "process": "Step 1: Analyze symmetry. Phenol has a plane of symmetry passing through C1 and C4. This makes C2/C6 equivalent and C3/C5 equivalent. Therefore, there are 4 unique carbon environments in the aromatic ring: C1, C2/6, C3/5, and C4.\nStep 2: Analyze chemical shielding. The oxygen atom attached to C1 is highly electronegative and deshields the C1 carbon via induction, shifting it downfield. Resonance electron-donation also occurs (oxygen lone pairs donate into the ring, shielding ortho/para positions), but the inductive effect dominates at the C1 position, shifting it to $~155\\text{ ppm}$.\nStep 3: Combine: 4 signals, with the C1 carbon being the most deshielded and shifted downfield.",
       "result": "Phenol exhibits 4 signals in the 13C NMR spectrum due to symmetry, and the oxygen-bearing carbon (C1) is furthest downfield at ~155 ppm."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch18_q_dynamic_epoxide_opening",
@@ -583,7 +629,7 @@ const CHAPTER_18_QUESTIONS = [
       "conditions": "regioselectivity paths",
       "products": [
         "CC(C)(O)CO",
-        "CC(C)(OCH3)CO"
+        "CC(C)(O)COC"
       ]
     },
     "options": [
@@ -612,6 +658,82 @@ const CHAPTER_18_QUESTIONS = [
       "context": "Analyzing transition states of epoxide ring openings.",
       "process": "In acid, protonation of oxygen creates carbocation-like character at the carbon most able to stabilize positive charge (more substituted). In base, steric hindrance dominates, directing the nucleophile to the less substituted carbon (backside attack).",
       "result": "Regiochemical pathways identified."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q4",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC1OC1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)CO",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "mCPBA"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propene, B: acetone, C: 1,2-propanediol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: propylene oxide, C: 1,2-propanediol",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: propylene oxide, C: propan-2-ol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: propylene glycol, C: acetone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: propylene oxide, C: 1,2-propanediol.",
+      "result": "The labels correspond to A: propene, B: propylene oxide, C: 1,2-propanediol."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

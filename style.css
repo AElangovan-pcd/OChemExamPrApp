@@ -1,4 +1,5 @@
-/* Organic Chemistry Exam PrApp - Premium Stylesheet */
+/* OChemStudyBuddy - Stylesheet
+   Author: A. Elangovan, PhD */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
@@ -160,9 +161,32 @@ header {
   margin: 0 auto;
   padding: 1.5rem 1.5rem;
   display: grid;
-  grid-template-columns: 280px 1fr;
+  /* minmax(0, 1fr) rather than 1fr: a bare 1fr track has an auto minimum, so a wide
+     structure canvas or spectrum would push the workspace past the viewport. */
+  grid-template-columns: 280px minmax(0, 1fr) 280px;
   gap: 2.25rem;
   flex: 1;
+}
+
+/* Mock Exam has no Performance panel, so the right column is dropped entirely
+   rather than left as an empty track (an empty track still contributes its gap). */
+.app-container.mock-layout {
+  grid-template-columns: 280px minmax(0, 1fr);
+}
+
+/* Between the mobile stack and a genuinely wide desktop there is not room for two
+   280px rails plus a readable structure canvas - at 1038px the workspace collapsed
+   to 291px. Below 1280px, Performance becomes a full-width band under the question
+   instead of a third rail. */
+@media (min-width: 961px) and (max-width: 1279px) {
+  .app-container {
+    grid-template-columns: 280px minmax(0, 1fr);
+  }
+
+  .sidebar-right {
+    grid-column: 1 / -1;
+    position: static;
+  }
 }
 
 /* Sidebar Dashboard */
@@ -778,10 +802,11 @@ header {
 
 /* Responsive Breakpoints */
 @media (max-width: 960px) {
-  .app-container {
+  .app-container,
+  .app-container.mock-layout {
     grid-template-columns: 1fr;
   }
-  
+
   .sidebar {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1194,7 +1219,7 @@ header {
   background: rgba(255, 255, 255, 0.01);
 }
 
-/* Custom Stylesheet Extensions for OChemExamPrApp */
+/* Custom Stylesheet Extensions for OChemStudyBuddy */
 
 /* Reaction Scheme Layout */
 .reaction-scheme-container {
