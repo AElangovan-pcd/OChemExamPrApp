@@ -1077,12 +1077,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify strong acids.",
-      "process": "Step 1: Check $pK_a$ values. Sulfuric acid is a strong mineral acid with a first $pK_a \\approx -9$.\nStep 2: Phosphoric acid is weak ($pK_a = 2.16$). Hydrofluoric acid is weak ($pK_a = 3.2$).\nStep 3: Acetic acid is a weak organic acid ($pK_a = 4.75$).",
-      "result": "Sulfuric acid has a negative pKa."
+      "context": "A strong acid is one that dissociates essentially completely in water, which corresponds to a pKa below about zero. Being inorganic or feeling corrosive is not the criterion; the pKa is.",
+      "approach": "Step 1: Recall approximate pKa values for the four: sulfuric acid about minus 3 for its first proton, phosphoric acid 2.1, hydrofluoric acid 3.2, acetic acid 4.75.\nStep 2: Apply the test - which of these is below zero?\nStep 3: Only sulfuric acid qualifies. Its first ionisation is complete in water, making it the only strong acid on the list.",
+      "note": "Hydrofluoric acid is the standard trap here. It is famously dangerous and etches glass, but at pKa 3.2 it is a weak acid - the short, strong H-F bond holds its proton comparatively well. Hazard and acid strength are unrelated properties.",
+      "options": {
+        "A": "Correct. Sulfuric acid's first ionisation has a pKa near minus 3, so it dissociates completely in water and is a strong acid.",
+        "B": "Phosphoric acid at pKa 2.1 is a moderately strong weak acid. It ionises substantially but not completely, and its pKa is positive.",
+        "C": "Acetic acid at 4.75 is the weakest of the four and is the standard example of a weak organic acid.",
+        "D": "Hydrofluoric acid is a weak acid at pKa 3.2 despite its reputation. The H-F bond is short and strong, so the proton is not released readily."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1118,12 +1124,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify key organic acid and base functional groups.",
-      "process": "Step 1: Basic compounds accept protons.\nStep 2: Amines contain a nitrogen atom with a basic lone pair that easily accepts $H^+$ to form ammonium salts ($R-NH_3^+$).\nStep 3: Carboxylic acids are acidic; alcohols and ethers are neutral/extremely weakly basic.",
-      "result": "Amines are the most common organic bases."
+      "context": "Basicity requires an available electron pair to donate to a proton. Whether a lone pair is available depends on how tightly its atom holds it, which is largely a matter of electronegativity.",
+      "approach": "Step 1: Look for lone pairs among the candidates. Amines, alcohols and ethers all have them; carboxylic acids donate protons rather than accept them.\nStep 2: Compare how tightly each holds its pair. Nitrogen at electronegativity 3.0 holds a lone pair much more loosely than oxygen at 3.4.\nStep 3: The nitrogen lone pair is therefore the most available for donation, which makes amines the characteristic organic bases.",
+      "note": "The same loosely held lone pair makes amines good nucleophiles as well as good bases - the two behaviours come from one structural feature. Alcohols and ethers are weakly basic and can be protonated by strong acid, but they are nothing like amines.",
+      "options": {
+        "A": "Correct. Nitrogen holds its lone pair less tightly than oxygen does, making it readily available to accept a proton.",
+        "B": "A carboxylic acid is the archetypal organic acid, donating the proton of its OH group rather than accepting one.",
+        "C": "Alcohols have oxygen lone pairs and are very weakly basic, but oxygen holds them far more tightly than nitrogen does. Alcohols are better known as weak acids.",
+        "D": "Ethers are weak Lewis bases through their oxygen lone pairs, but again oxygen's higher electronegativity makes them much weaker bases than amines."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1159,13 +1171,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Analyze periodic trends in acidity across a horizontal row.",
-      "process": "Step 1: Across a row, size variations are small, but electronegativity changes significantly ($C=2.5 \\rightarrow N=3.0 \\rightarrow O=3.5 \\rightarrow F=4.0$).\nStep 2: A higher electronegativity stabilizes the conjugate base anion ($F^-$ is much more stable than $CH_3^-$).\nStep 3: Therefore, acidity increases with increasing electronegativity of the central atom.",
-      "result": "The correct choice is A."
+      "context": "Acidity always comes back to conjugate base stability. Across a period the atoms are all the same size, so size cannot be the variable - what changes is how strongly the nucleus holds a negative charge.",
+      "approach": "Step 1: Write the conjugate bases: methanide, amide, hydroxide and fluoride.\nStep 2: Note that carbon, nitrogen, oxygen and fluorine are all second-row atoms of comparable size, so the charge occupies a similar volume in each.\nStep 3: Compare electronegativity, which rises steadily left to right. The more electronegative the atom, the more comfortably it accommodates the negative charge, so fluoride is most stable and HF most acidic.",
+      "note": "Electronegativity is the deciding factor only when the atoms are the same size, which is what makes this a within-a-period argument. Going down a group the sizes differ enormously and the reasoning changes completely - the very next question is that case.",
+      "options": {
+        "A": "Correct. Across a period the atoms are similar in size, so the rising electronegativity determines how well each stabilises the negative charge of its conjugate base.",
+        "B": "Bond strength runs the wrong way for this argument. The H-F bond is the strongest of the four, yet HF is the most acidic, so bond dissociation energy cannot be what drives the trend here.",
+        "C": "Atomic size changes very little across a period; it is essentially constant here. Size is the controlling factor down a group, not across a row.",
+        "D": "Steric hindrance is negligible around a single hydrogen on a small second-row atom, and it plays no part in this trend."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single carbon atom with its hydrogen atoms."
   },
   {
     "question_id": "ch02_q26_acid_strength_periodic_column",
@@ -1200,13 +1219,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Analyze periodic trends in acidity down a vertical column.",
-      "process": "Step 1: Down a column, electronegativity actually decreases ($F > Cl > Br > I$). If EN were the main factor, HF would be the strongest acid, but it is the weakest.\nStep 2: Instead, the atomic radius increases significantly. A larger size means the H-X bond is longer and weaker (smaller bond dissociation energy).\nStep 3: Additionally, the negative charge on the conjugate base ($I^-$ vs $F^-$) is distributed over a much larger volume, which stabilizes the anion.",
-      "result": "Increasing size of the halogen stabilizes the anion and weakens the bond, increasing acidity."
+      "context": "Down a group the atoms grow dramatically larger, and that size change dominates everything else - including electronegativity, which actually decreases in the direction of increasing acidity.",
+      "approach": "Step 1: Write the conjugate bases: fluoride, chloride, bromide and iodide, in order of increasing size.\nStep 2: Note that a negative charge spread over a larger volume is more stable, since the electrons are further apart and further from the nucleus.\nStep 3: Add the bond-strength effect, which points the same way: the H-X bond lengthens and weakens down the group, so the proton is released more easily. Iodide is the most stable anion and HI the strongest acid.",
+      "note": "This is the case that shows electronegativity is not a universal explanation. Fluorine is by far the most electronegative of the four, yet HF is by far the weakest acid of them - because down a group, size wins.",
+      "options": {
+        "A": "Correct. The larger halogens spread the negative charge over a greater volume and form weaker, longer bonds to hydrogen, both of which increase acidity down the group.",
+        "B": "Electronegativity decreases down a group, so it runs opposite to the acidity trend. If electronegativity controlled this, HF would be the strongest acid rather than the weakest.",
+        "C": "Atomic weight is a bookkeeping quantity with no direct bearing on charge stability, and in any case it increases rather than decreases down the group.",
+        "D": "All four are highly soluble in water. Solubility describes how a substance disperses, not how readily it gives up a proton once dissolved."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A fluorine atom bonded to a hydrogen atom."
   },
   {
     "question_id": "ch02_q27_resonance_carboxylate_stabilization",
@@ -1241,13 +1267,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Contrast alkoxide and carboxylate stabilization.",
-      "process": "Step 1: Acetic acid deprotonates to give acetate ($CH_3COO^-$); ethanol deprotonates to give ethoxide ($CH_3CH_2O^-$).\nStep 2: The negative charge on ethoxide is localized on a single oxygen. The negative charge on acetate is delocalized equally over two oxygen atoms via resonance.\nStep 3: Delocalizing the charge reduces repulsion and stabilizes the anion, making deprotonation easier.",
-      "result": "The correct choice is A."
+      "context": "Both compounds lose a proton from an O-H bond, so the difference cannot lie in the bond broken. It lies in what happens to the charge afterwards - whether it stays on one atom or spreads over several.",
+      "approach": "Step 1: Compare the conjugate bases. Ethoxide holds its negative charge on a single oxygen attached to a saturated carbon, with nowhere to delocalize.\nStep 2: Acetate's charge sits next to a carbonyl, so it delocalizes across both oxygens through the pi system.\nStep 3: Both oxygens are highly electronegative and share the charge equally, making the two C-O bonds identical in length. That spreading stabilises acetate enormously, and the pKa difference of about eleven units follows.",
+      "note": "Eleven pKa units is a factor of a hundred billion, which is why the practical consequences are so stark: sodium bicarbonate deprotonates acetic acid readily but leaves ethanol untouched, and that difference is the basis of standard acid-base extractions.",
+      "options": {
+        "A": "Correct. Delocalization spreads acetate's charge equally over two electronegative oxygens, a stabilisation entirely unavailable to ethoxide.",
+        "B": "Both molecules have two carbons. Even where carbon counts differ, chain length has almost no effect on acidity compared with delocalization.",
+        "C": "Both compounds are liquids at room temperature, and physical state describes bulk behaviour rather than the stability of an anion in solution.",
+        "D": "Both form intermolecular hydrogen bonds - acetic acid famously dimerises. Hydrogen bonding affects boiling point, not the relative stability of the conjugate bases."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A methyl group bonded to a carbon bearing a double-bonded oxygen and a hydroxyl group."
   },
   {
     "question_id": "ch02_q28_amino_acid_zwitterion",
@@ -1282,13 +1315,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Analyze protonation states of amino acids at physiological pH based on $pK_a$ values.",
-      "process": "Step 1: Check $pK_a$ values for amino acids. Carboxylic acid group $pK_a \\approx 2$. Ammonium group $pK_a \\approx 9$.\nStep 2: At pH = 7.4: pH is higher than the carboxylic acid $pK_a$ (so it is deprotonated to $-COO^-$). pH is lower than the ammonium $pK_a$ (so it remains protonated as $-NH_3^+$).\nStep 3: This results in a dipolar ion carrying both a positive and negative charge, known as a zwitterion.",
-      "result": "The zwitterion form is dominant at pH 7.4."
+      "context": "An amino acid carries both an acidic carboxyl group and a basic amino group. To find the dominant form at a given pH, compare that pH with each group's pKa: above a group's pKa it is mostly deprotonated, below it mostly protonated.",
+      "approach": "Step 1: Note the two relevant pKa values for glycine - about 2.3 for the carboxyl group and about 9.6 for the ammonium group.\nStep 2: Compare pH 7.4 with the carboxyl pKa of 2.3. The pH is well above it, so the carboxyl group is deprotonated to carboxylate.\nStep 3: Compare pH 7.4 with the ammonium pKa of 9.6. The pH is well below it, so the amino group stays protonated. Both charges are present at once, giving the zwitterion.",
+      "note": "The neutral, uncharged form with a free NH2 and an intact COOH is essentially never the major species at any pH - the amine is always the stronger base of the pair and takes the carboxyl proton internally. That double charge is why amino acids are crystalline solids with high melting points rather than oily liquids.",
+      "options": {
+        "A": "Correct. At pH 7.4 the carboxyl group is above its pKa and deprotonated while the amino group is below its pKa and protonated, giving both charges simultaneously.",
+        "B": "This is the form below pH 2.3, in strongly acidic solution, where the carboxyl group has not yet lost its proton.",
+        "C": "This is the form above pH 9.6, in strongly basic solution, where the ammonium group has also been deprotonated.",
+        "D": "The fully neutral form is never dominant. The amino group is a stronger base than the carboxylate, so the proton transfers internally at essentially any pH."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A nitrogen atom bonded to a carbon, which is bonded to a further carbon bearing a double-bonded oxygen and a hydroxyl group."
   },
   {
     "question_id": "ch02_q29_lewis_base_ether",
@@ -1323,13 +1363,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify the base in ether protonation.",
-      "process": "Step 1: Diethyl ether ($CH_3CH_2OCH_2CH_3$) has oxygen with 2 lone pairs.\nStep 2: The lone pair acts as a nucleophile (electron pair donor) to attack the proton of $HBr$.\nStep 3: Donating an electron pair makes it a Lewis base (and a Brønsted base).",
-      "result": "Diethyl ether acts as a Lewis base."
+      "context": "In any acid-base pairing, identify which species supplies electrons and which receives them. A species with an available lone pair and no proton to give up can only act as the base.",
+      "approach": "Step 1: Look at what each partner brings. Hydrogen bromide has a proton to donate; diethyl ether has two lone pairs on its oxygen and no acidic hydrogen.\nStep 2: The ether oxygen donates one lone pair to the proton, forming a new O-H bond and leaving bromide behind.\nStep 3: The species donating the electron pair is the base, so the ether is the base and hydrogen bromide the acid.",
+      "note": "The option's phrasing mixes two vocabularies: strictly, a Lewis base donates an electron pair, while accepting a proton is the Brønsted description. Both name the same event from opposite ends, and it is worth being able to translate between them, since mechanisms are drawn in the Lewis language of electron pairs.",
+      "options": {
+        "A": "Correct. The ether oxygen supplies a lone pair to the incoming proton, which is what makes it the base in this pairing.",
+        "B": "A Lewis acid accepts an electron pair, which requires an empty orbital or an incomplete octet. The ether oxygen has full lone pairs to give, not a vacancy to fill.",
+        "C": "A catalyst would be recovered unchanged at the end. The ether is protonated and consumed as a reactant here.",
+        "D": "A spectator takes no part in the reaction. The ether's oxygen forms the new bond to the proton, so it is directly involved."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two ethyl groups joined through a central oxygen atom."
   },
   {
     "question_id": "ch02_q30_alcohol_water_acidity",
@@ -1364,13 +1411,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Compare acidities of common oxygen-containing compounds.",
-      "process": "Step 1: Check $pK_a$ values: phenol (10) < water (15.7) < ethanol (16) < tert-butanol (18).\nStep 2: Phenol is by far the most acidic due to resonance stabilization of the conjugate base phenoxide.\nStep 3: Lower $pK_a$ corresponds to the strongest acid.",
-      "result": "Phenol is the most acidic."
+      "context": "With pKa values supplied, the comparison is arithmetic - the smallest value is the strongest acid. The chemistry lies in seeing why one of them is so far from the others.",
+      "approach": "Step 1: Line the values up: phenol 10, water 15.7, ethanol 16, tert-butanol 18.\nStep 2: Select the smallest, which is phenol at 10.\nStep 3: Confirm it makes structural sense. Phenol's conjugate base delocalizes its charge into the aromatic ring, while the other three are alkoxides or hydroxide with the charge localized on one oxygen.",
+      "note": "Notice how tightly the three non-aromatic compounds cluster, from 15.7 to 18. Structural changes among simple alcohols shift acidity only slightly, while attaching the oxygen to an aromatic ring moves it by nearly six orders of magnitude - delocalization outweighs alkyl substitution by a wide margin.",
+      "options": {
+        "A": "Correct. Phenol's pKa of 10 is the smallest of the four, and the aromatic ring's stabilization of phenoxide is why it stands apart from the alcohols.",
+        "B": "Ethanol at pKa 16 is nearly a million times weaker an acid than phenol, since ethoxide has no delocalization available.",
+        "C": "Water at 15.7 is marginally more acidic than ethanol but still far weaker than phenol.",
+        "D": "tert-Butanol at pKa 18 is the weakest acid listed, its conjugate base being both localized and poorly solvated."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A two-carbon chain ending in a hydroxyl group."
   },
   {
     "question_id": "ch02_q31_solvent_acidity_solvation",
@@ -1405,13 +1459,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Examine steric effects on anion solvation.",
-      "process": "Step 1: Deprotonation forms alkoxide anions: ethoxide vs. tert-butoxide.\nStep 2: Solvent water molecules stabilize these anions by forming hydrogen bonds around the negative oxygen.\nStep 3: The bulky methyl groups in the tert-butyl group physically block water molecules from approaching the oxygen of tert-butoxide, reducing stabilizing solvation and making its formation less favorable (weaker acid).",
-      "result": "Steric hindrance of solvation weakens tert-butanol's acidity."
+      "context": "Acidity measured in solution depends on how well the solvent stabilises the conjugate base, not only on the anion's intrinsic properties. An anion the solvent cannot reach is less stabilised, and its parent acid is correspondingly weaker.",
+      "approach": "Step 1: Compare the two conjugate bases. Both ethoxide and tert-butoxide carry the charge on a single oxygen, so intrinsically they are similar.\nStep 2: Consider access to that oxygen. Tert-butoxide has three methyl groups crowding around it, while ethoxide's oxygen is comparatively exposed.\nStep 3: Water molecules cannot approach the tert-butoxide oxygen as closely or in as many numbers, so it is less well solvated and less stabilised. Its parent acid is therefore weaker, at pKa 18 against ethanol's 16.",
+      "note": "This ordering is a property of the solution, not of the molecules alone. In the gas phase, with no solvent at all, the order reverses and tert-butanol is the stronger acid - a good reminder that pKa values are always quoted for a particular medium.",
+      "options": {
+        "A": "Correct. The bulky tert-butyl group blocks water molecules from solvating the alkoxide oxygen, leaving the conjugate base less stabilised and the acid weaker.",
+        "B": "Alkyl groups are weakly electron-donating by induction, not withdrawing. Donation would destabilise the anion further, so this option has the direction of the inductive effect backwards.",
+        "C": "Neither alcohol forms any such ring structure. Both hydrogen bond to water and to each other in ordinary fashion.",
+        "D": "The oxygen in tert-butanol has two bonds and two lone pairs, so it is sp3 like the oxygen in any other alcohol. Hybridization does not differ between them."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon bearing three methyl groups and a hydroxyl group."
   },
   {
     "question_id": "ch02_q32_lewis_acid_metal_cations",
@@ -1446,12 +1507,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify metal-containing Lewis acids.",
-      "process": "Step 1: Alkaline metals like $Na^+$ and $K^+$ have stable octets and weak electron-accepting properties.\nStep 2: Aluminum in $AlCl_3$ is a group 13 element with a vacant $p$ orbital and only 6 valence electrons in its neutral compounds.\nStep 3: It readily accepts electron pairs, acting as a powerful Lewis acid catalyst (e.g. in Friedel-Crafts reactions).",
-      "result": "Aluminum trichloride is a strong Lewis acid catalyst."
+      "context": "A metal centre acts as a Lewis acid by accepting an electron pair into a vacant orbital. How strongly it does so depends on charge density - a small ion with a high charge polarises and binds an electron pair far more effectively than a large singly charged one.",
+      "approach": "Step 1: Compare the charges. Lithium, sodium and potassium cations all carry a single positive charge; aluminium carries three.\nStep 2: Compare the sizes. Aluminium's ion is small as well as highly charged, giving it much the highest charge density of the four.\nStep 3: That combination makes aluminium trichloride a strong electron-pair acceptor, and it is used as a Lewis acid catalyst throughout organic synthesis.",
+      "note": "Aluminium trichloride's role is to make an electrophile more electrophilic - it accepts a lone pair from a halogen or a carbonyl oxygen and thereby activates the substrate. That is precisely what it does in the Friedel-Crafts alkylation and acylation of Chapter 16.",
+      "options": {
+        "A": "Lithium is small enough to be mildly Lewis acidic and does coordinate to carbonyl oxygens, but a single positive charge makes it far weaker than a tripositive centre and it is not used as a catalyst in this role.",
+        "B": "Sodium cation is larger than lithium and singly charged, giving it low charge density. In organic reactions it behaves as an essentially inert counterion.",
+        "C": "Correct. Aluminium's high charge and small size make it a powerful electron-pair acceptor, and aluminium trichloride is a standard Lewis acid catalyst.",
+        "D": "Potassium cation is the largest of the group with a single charge, so its charge density is the lowest here. It functions as a spectator counterion."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1487,13 +1554,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understand the role of molecular shape in London dispersion forces.",
-      "process": "Step 1: Both are saturated hydrocarbons (non-polar) and interact only through London dispersion forces.\nStep 2: Pentane is a straight-chain molecule (cylindrical shape) which can pack tightly against neighbors, maximizing surface contact.\nStep 3: Neopentane ($2,2-dimethylpropane$) is spherical and compact, reducing surface contact and weakening dispersion forces, leading to a lower boiling point.",
-      "result": "Linear shape increases surface area and dispersion forces, raising the boiling point."
+      "context": "London dispersion forces arise from momentary fluctuations in electron distribution, and their strength depends on how much surface two molecules can bring into contact. For isomers of identical formula, shape is therefore the deciding variable.",
+      "approach": "Step 1: Note what is held constant. Both compounds are C5H12, so they have the same mass and the same number of electrons.\nStep 2: Compare the shapes. Pentane is an extended chain; neopentane is compact and nearly spherical.\nStep 3: A chain can lie alongside its neighbours over much of its length, while a sphere touches only at a small area. Pentane therefore has stronger dispersion attraction and boils about 27 degrees higher.",
+      "note": "The rule generalises to every set of alkane isomers: the more branched the structure, the more compact it is and the lower it boils. Branching reduces contact area, which is one of the few structural predictions about physical properties you can make by inspection alone.",
+      "options": {
+        "A": "Correct. Pentane's extended chain presents much more surface for contact with neighbouring molecules, so its dispersion forces are stronger and it boils higher.",
+        "B": "Neopentane has no O-H, N-H or F-H bond, so it cannot hydrogen bond at all - to itself or anything else.",
+        "C": "Pentane is a nonpolar hydrocarbon with no significant dipole. Dispersion is the only intermolecular force available to either compound.",
+        "D": "Neopentane is a neutral covalent hydrocarbon. If it were ionic it would boil far higher than pentane, not lower."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon bearing four methyl groups."
   },
   {
     "question_id": "ch02_q34_organic_acid_pka_ranges",
