@@ -2385,19 +2385,23 @@ var CH05_QUESTIONS = [
     "match_items": [
       {
         "smiles": "C[C@H](O)C(=O)O",
-        "correctAnswer": "S-Lactic Acid"
+        "correctAnswer": "S-Lactic Acid",
+        "alt": "A carboxylic acid written as HO-C=O on the left, joined to a central carbon that carries a hydroxyl group on a bold wedge toward the viewer and a methyl group on a plain bond below."
       },
       {
         "smiles": "C[C@@H](O)C(=O)O",
-        "correctAnswer": "R-Lactic Acid"
+        "correctAnswer": "R-Lactic Acid",
+        "alt": "A carboxylic acid written as HO-C=O on the left, joined to a central carbon that carries a hydroxyl group on a hashed bond receding from the viewer and a methyl group on a plain bond below."
       },
       {
         "smiles": "N[C@@H](C)C(=O)O",
-        "correctAnswer": "S-Alanine"
+        "correctAnswer": "S-Alanine",
+        "alt": "A carboxylic acid written as HO-C=O on the left, joined to a central carbon that carries a methyl group on a plain bond to the upper right and an amino group on a hashed bond receding from the viewer."
       },
       {
         "smiles": "N[C@H](C)C(=O)O",
-        "correctAnswer": "R-Alanine"
+        "correctAnswer": "R-Alanine",
+        "alt": "A carboxylic acid written as HO-C=O on the left, joined to a central carbon that carries a methyl group on a plain bond to the upper right and an amino group on a bold wedge toward the viewer."
       }
     ],
     "match_options": [

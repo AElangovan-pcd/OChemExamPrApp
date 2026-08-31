@@ -40,7 +40,7 @@ const OER_CHAPTER_TOPICS = {
   2: "Polar Covalent Bonds; Acids and Bases",
   3: "Organic Compounds: Alkanes and Their Stereochemistry",
   4: "Organic Compounds: Cycloalkanes and Their Stereochemistry",
-  5: "Stereochemistry at Tetrahedron Centers",
+  5: "Stereochemistry at Tetrahedral Centers",
   6: "An Overview of Organic Reactions",
   7: "Alkenes: Structure and Reactivity",
   8: "Alkenes: Reactions and Synthesis",
@@ -1806,7 +1806,10 @@ function initVisualEngines(q, prefix = '') {
   // 2. Draw match item structures
   if (q.interaction_type === 'matching-list' || q.interaction_type === 'matching-grid') {
     q.match_items.forEach((item, index) => {
-      drawSMILESCanvas(item.smiles, `${prefix}match-canvas-${index}`, 'light', `Structure ${index + 1} to match`);
+      // Prefer the item's own description; "Structure N to match" names nothing a screen
+      // reader could answer from. Items without one still get the positional fallback.
+      drawSMILESCanvas(item.smiles, `${prefix}match-canvas-${index}`, 'light',
+        item.alt || `Structure ${index + 1} to match`);
     });
   }
 
