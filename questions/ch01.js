@@ -2138,13 +2138,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Translate the skeletal representation of benzene to its molecular formula.",
-      "process": "Step 1: Benzene consists of 6 carbon atoms in a ring.\nStep 2: Each carbon forms 3 bonds within the ring (one double bond and one single bond). Therefore, each carbon requires exactly 1 bond to a hydrogen atom to satisfy its valency.\nStep 3: This results in 6 carbons and 6 hydrogens: $C_6H_6$.",
-      "result": "The formula of benzene is $C_6H_6$."
+      "context": "A skeletal structure shows only the carbon skeleton and any heteroatoms. Carbons sit at every vertex and line end, and each one carries however many hydrogens it needs to reach four bonds.",
+      "approach": "Step 1: Count the carbons. Benzene's ring has six vertices, so six carbons.\nStep 2: Count the bonds each carbon already has to other carbons. In the ring every carbon is joined to two neighbours, and one of those joins is a double bond, so each carbon uses three of its four bonds within the ring.\nStep 3: One bond remains on each carbon, so each takes one hydrogen. Six carbons and six hydrogens gives C6H6.",
+      "note": "Benzene's formula tells you something before you have drawn anything: with six carbons it has only six hydrogens, where a saturated six-carbon chain would have fourteen. That shortfall counts the rings and pi bonds, and is the basis of the degrees-of-unsaturation calculation used throughout structure determination.",
+      "options": {
+        "A": "Correct. Six ring carbons, each with three bonds already used inside the ring, take one hydrogen apiece.",
+        "B": "This is the formula for cyclohexane, the fully saturated six-membered ring. Benzene's three double bonds each cost it two hydrogens relative to that.",
+        "C": "C6H8 would correspond to a six-membered ring with two double bonds rather than three.",
+        "D": "C6H10 would be a six-membered ring with a single double bond, such as cyclohexene."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered ring of carbon atoms drawn as an aromatic ring."
   },
   {
     "question_id": "ch01_q46_skeletal_cyclohexane",
@@ -2179,13 +2186,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Determine cyclohexane's molecular formula.",
-      "process": "Step 1: Cyclohexane is a saturated cyclic alkane with 6 carbons.\nStep 2: Each carbon has 2 bonds to adjacent carbons in the ring, requiring 2 bonds to hydrogens to reach tetravalency.\nStep 3: Total hydrogens = 6 carbons * 2 hydrogens/carbon = 12 hydrogens. Molecular formula = $C_6H_{12}$.",
-      "result": "The molecular formula is $C_6H_{12}$."
+      "context": "In a saturated ring every carbon is bonded to two ring neighbours by single bonds, leaving two bonds each for hydrogen. That gives the general formula CnH2n for a simple cycloalkane.",
+      "approach": "Step 1: Count the vertices. Cyclohexane's ring has six, so six carbons.\nStep 2: Each carbon uses two of its four bonds joining its two ring neighbours.\nStep 3: The remaining two bonds on each carbon go to hydrogens, giving twelve hydrogens and the formula C6H12.",
+      "note": "Compare this with hexane, the open-chain six-carbon alkane, which is C6H14. Closing a ring costs exactly two hydrogens, because forming the final carbon-carbon bond uses one bond position at each end of the chain.",
+      "options": {
+        "A": "Correct. Six carbons each carrying two hydrogens gives C6H12, which fits the CnH2n pattern for a simple cycloalkane.",
+        "B": "C6H6 is benzene, which has three double bonds in the ring. Cyclohexane is fully saturated and carries six more hydrogens.",
+        "C": "C6H14 is hexane, the open-chain isomer. A ring has two fewer hydrogens than the chain with the same number of carbons.",
+        "D": "C5H10 is cyclopentane, a five-membered ring. The formula is consistent with CnH2n but the carbon count is wrong."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered ring of carbon atoms joined by single bonds."
   },
   {
     "question_id": "ch01_q47_skeletal_diethyl_ether",
@@ -2220,13 +2234,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Translate diethyl ether to its molecular formula.",
-      "process": "Step 1: Diethyl ether ($CH_3-CH_2-O-CH_2-CH_3$) contains two ethyl groups attached to an oxygen.\nStep 2: Total carbons = 4. The carbon chain is fully saturated.\nStep 3: Count hydrogens: $(3 + 2) * 2 = 10$. Total formula = $C_4H_{10}O$.",
-      "result": "The molecular formula is $C_4H_{10}O$."
+      "context": "Heteroatoms are shown explicitly in a skeletal structure while carbons and their hydrogens are implied. Building a molecular formula means counting the drawn heteroatoms and then filling out each carbon to four bonds.",
+      "approach": "Step 1: Count carbons. Two ethyl groups give four carbons in total, with one oxygen between them.\nStep 2: Fill in hydrogens. Each terminal CH3 carries three, and each carbon attached to the oxygen carries two.\nStep 3: That is three plus two on each side, giving ten hydrogens, and one oxygen. The formula is C4H10O.",
+      "note": "Notice that C4H10O is also the formula of butan-1-ol and of butan-2-ol. Molecular formula alone never fixes a structure, which is precisely why structure determination needs spectroscopy rather than combustion analysis on its own.",
+      "options": {
+        "A": "Correct. Four carbons carrying ten hydrogens between them, plus the single ether oxygen.",
+        "B": "C4H8O has two hydrogens too few, which would require a ring or a double bond somewhere. Diethyl ether has neither.",
+        "C": "C4H10O2 counts two oxygens. There is only one oxygen in an ether, joining the two alkyl groups.",
+        "D": "C3H8O has only three carbons, which would be a methyl ethyl ether or a propanol rather than diethyl ether."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two carbon atoms bonded to an oxygen atom, which is bonded to two further carbon atoms - an ethyl group on each side of the oxygen."
   },
   {
     "question_id": "ch01_q48_sp2_nitrogen_pyridine",
@@ -2261,13 +2282,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Examine the orbital alignment and aromaticity of pyridine.",
-      "process": "Step 1: Nitrogen in pyridine is part of a conjugated aromatic system. It is bonded to two carbons via one double and one single bond. Steric number = 3 ($sp^2$).\nStep 2: The nitrogen uses its unhybridized $2p$ orbital to contribute one electron to the $\\pi$ system, maintaining aromaticity.\nStep 3: Consequently, the lone pair must occupy one of the hybrid $sp^2$ orbitals, which lies in the plane of the ring, perpendicular to the aromatic $\\pi$ cloud.",
-      "result": "The lone pair resides in an $sp^2$ hybrid orbital."
+      "context": "In an aromatic ring, each ring atom contributes one unhybridized p orbital to the pi system. Whether a nitrogen's lone pair goes into that p orbital or stays in a hybrid orbital depends on whether the p orbital is already needed for the ring's pi bonding.",
+      "approach": "Step 1: Look at what the pyridine nitrogen is bonded to: two ring carbons, with one of those bonds being part of a double bond in the ring.\nStep 2: That double bond means the nitrogen already contributes one electron from its p orbital to the aromatic sextet, so the p orbital is spoken for.\nStep 3: The nitrogen is therefore sp2, with two hybrid orbitals used for the ring sigma bonds and the third holding the lone pair, pointing outward in the plane of the ring.",
+      "note": "Because that lone pair sits in the ring plane rather than in the pi system, it is available to accept a proton without disturbing aromaticity. This is exactly why pyridine is a base while pyrrole, in the next question, is not.",
+      "options": {
+        "A": "Correct. The nitrogen's p orbital is already committed to the aromatic pi system, so the lone pair occupies the remaining sp2 hybrid, in the plane of the ring and pointing outward.",
+        "B": "The p orbital is already used to supply one electron to the aromatic sextet through the ring double bond. Putting the lone pair there as well would require the same orbital to hold three electrons.",
+        "C": "sp3 would make the nitrogen pyramidal and break the planarity that aromaticity requires. The nitrogen has three groups here, not four.",
+        "D": "A 1s orbital is a filled core orbital, far below the valence shell and not involved in bonding or in holding a chemically meaningful lone pair."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered aromatic ring in which one of the ring atoms is a nitrogen and the rest are carbons."
   },
   {
     "question_id": "ch01_q49_sp2_nitrogen_pyrrole",
@@ -2302,13 +2330,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Compare the lone pair localization in pyrrole vs. pyridine.",
-      "process": "Step 1: Pyrrole contains a nitrogen bonded to 2 carbons and 1 hydrogen via single bonds. To make the 5-membered ring aromatic, we need 6 $\\pi$ electrons.\nStep 2: Each of the 4 carbons provides 1 $\\pi$ electron. Nitrogen must contribute its lone pair (2 electrons) to the aromatic cloud.\nStep 3: To do this, the nitrogen lone pair must reside in an unhybridized $p$ orbital perpendicular to the ring. Nitrogen adopts $sp^2$ hybridization.",
-      "result": "The lone pair resides in an unhybridized $2p$ orbital."
+      "context": "Aromaticity requires a continuous ring of overlapping p orbitals holding 4n + 2 pi electrons. When the ring's carbons cannot supply enough electrons on their own, a heteroatom's lone pair can be recruited into the pi system to make up the count.",
+      "approach": "Step 1: Count what the ring carbons provide. Pyrrole has two carbon-carbon double bonds, giving four pi electrons - two short of the six needed for aromaticity.\nStep 2: Look at the nitrogen. It is bonded to two ring carbons and a hydrogen, using three sigma bonds, and holds one lone pair.\nStep 3: For the ring to be aromatic, that lone pair must occupy the unhybridized p orbital and join the pi cloud, supplying the missing two electrons. The nitrogen is sp2 and planar, with its three sigma bonds in the ring plane.",
+      "note": "The contrast with pyridine is the point of the pair. Pyrrole's lone pair is part of the aromatic sextet, so protonating the nitrogen would destroy the aromaticity - which is why pyrrole is a very weak base despite having a nitrogen lone pair on paper.",
+      "options": {
+        "A": "Correct. The two ring double bonds supply only four pi electrons, so the nitrogen lone pair must enter the p orbital and complete the aromatic sextet.",
+        "B": "An in-plane sp2 hybrid is where pyridine's lone pair sits, because pyridine's p orbital is already committed. Pyrrole's ring cannot reach six pi electrons unless this lone pair joins the system.",
+        "C": "sp3 would pyramidalize the nitrogen and break the planar, continuously overlapping p system that aromaticity requires.",
+        "D": "sp would mean the nitrogen points at only two groups. Pyrrole's nitrogen has three sigma bonds - two to ring carbons and one to hydrogen."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-membered aromatic ring in which one ring atom is a nitrogen bearing a hydrogen, and the other four are carbons."
   },
   {
     "question_id": "ch01_q50_huckel_rule_intro",
@@ -2343,12 +2378,18 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Introduce the orbital criteria for aromaticity.",
-      "process": "Step 1: Check the electronic rules for aromaticity. The system must be cyclic, planar, and fully conjugated (continuous ring of $p$ orbitals).\nStep 2: The number of $\\pi$ electrons in the closed loop of overlapping $p$ orbitals must satisfy Huckel's formula: $4n+2$ where n is an integer (2, 6, 10, 14, etc.).\nStep 3: This allows for complete filling of all bonding molecular orbitals in the $\\pi$ system.",
-      "result": "It must have a continuous ring of overlapping $p$ orbitals containing $4n+2$ $\\pi$ electrons."
+      "context": "Aromaticity is a property of a delocalized pi system, so its requirements are about orbitals and electron count rather than about any particular atoms or bond pattern. The ring must be planar, fully conjugated, and hold the right number of pi electrons.",
+      "approach": "Step 1: Require a continuous ring of unhybridized p orbitals - every atom in the ring must contribute one, with no sp3 centre interrupting the loop.\nStep 2: Require that those orbitals be able to overlap, which means the ring must be planar.\nStep 3: Count the pi electrons in that system. Aromaticity needs 4n + 2 of them, so 2, 6, 10 and so on, where n is any non-negative whole number.",
+      "note": "The electron count, not the atom count, is what matters. The cyclopentadienyl anion is aromatic with five carbons and six pi electrons, while cyclooctatetraene with eight is not - and a ring with 4n pi electrons is actively antiaromatic rather than merely non-aromatic.",
+      "options": {
+        "A": "Correct. A continuous, planar loop of overlapping p orbitals containing 4n + 2 pi electrons is the requirement; the atoms involved need not be carbon.",
+        "B": "Six carbons is benzene's particular case, not the rule. Five-membered and seven-membered rings can be aromatic, and heteroatoms can occupy ring positions.",
+        "C": "Alternating single and double bonds is how the system is often drawn, but it describes one resonance contributor. The requirement is a delocalized p system with the right electron count.",
+        "D": "An sp3 carbon has no p orbital available for the pi system, so even one of them in the ring breaks the loop and destroys aromaticity."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2395,12 +2436,16 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Assigning carbon atom hybridization based on bonds: single bonds are sp3, double bonds are sp2, triple bonds are sp.",
-      "process": "Item 1 (propyne triple-bonded carbon) is sp.\nItem 2 (propene double-bonded carbon) is sp2.\nItem 3 (propane single-bonded carbon) is sp3.\nItem 4 (butadiyne carbon) is sp.",
-      "result": "Hybridization is assigned based on the steric number of each carbon."
+      "context": "Hybridization is read from the number of groups an atom points at, and a multiple bond counts once. Across a set of structures the fastest route is to find the most heavily bonded carbon in each and count from there.",
+      "approach": "Step 1: Propyne contains a triple bond, and a carbon in that bond points at only two things, so it is sp.\nStep 2: Propene contains a double bond, and a carbon in it points at three things, so it is sp2. Propane is fully saturated, so each carbon points at four and is sp3.\nStep 3: Butadiyne contains two triple bonds and every carbon in it points at two neighbours, so all of its carbons are sp.",
+      "note": "Take care with the first three: each of those molecules contains carbons of more than one hybridization, since propyne and propene both carry an sp3 methyl group as well. The intended answer is the hybridization of the carbon in the multiple bond, which is what distinguishes the structures from one another.",
+      "options": {
+        "A": "Correct. The triple-bonded carbons of propyne and butadiyne are sp, the double-bonded carbons of propene are sp2, and the saturated carbons of propane are sp3.",
+        "B": "Each pairing follows directly from counting the groups on the carbon in the characteristic bond: two groups give sp, three give sp2, four give sp3. Check the multiple bond first, since that is what the four structures differ in."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2447,12 +2492,16 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Calculating formal charges: FC = Valence electrons - Lone pair electrons - 0.5 * Bonding electrons.",
-      "process": "Ammonium nitrogen: 5 - 0 - 4 = +1.\nBorohydride boron: 3 - 0 - 4 = -1.\nt-Butyl carbocation: 4 - 0 - 3 = +1.\nHydroxide oxygen: 6 - 6 - 1 = -1.",
-      "result": "Formal charge tracking is crucial for mechanism study."
+      "context": "Every one of these is the same calculation applied to a different central atom: valence electrons, minus nonbonding electrons, minus number of bonds. What changes is the atom's valence count and how many lone pairs it retains.",
+      "approach": "Step 1: Ammonium's nitrogen has 5 valence electrons, no lone pair and four bonds, giving plus 1. Borohydride's boron has 3 valence electrons, no lone pair and four bonds, giving minus 1.\nStep 2: The tert-butyl cation's central carbon has 4 valence electrons, no lone pair and three bonds, giving plus 1.\nStep 3: Hydroxide's oxygen has 6 valence electrons, three lone pairs - six nonbonding electrons - and one bond, giving minus 1.",
+      "note": "Notice that two atoms with four bonds land on opposite charges: nitrogen goes to plus 1 and boron to minus 1. The number of bonds alone never determines the charge; it is the comparison against the atom's own valence count that does.",
+      "options": {
+        "A": "Correct. Nitrogen with four bonds is plus 1, boron with four bonds is minus 1, a three-coordinate carbocation carbon is plus 1, and hydroxide oxygen with three lone pairs is minus 1.",
+        "B": "Each species follows from valence electrons minus nonbonding electrons minus bonds. The commonest slip is to compare bond counts between different elements rather than comparing each atom against its own valence count."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2501,12 +2550,16 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identifying functional groups in organic molecules.",
-      "process": "propan-2-one is a Ketone. ethyl acetate is an Ester. acetic acid is a Carboxylic Acid. ethylamine is an Amine.",
-      "result": "Functional group recognition is key to predicting chemical reactivity."
+      "context": "Functional groups are identified by the pattern of atoms around a key centre, most often a carbonyl carbon. What distinguishes one carbonyl group from another is which atom sits next to it.",
+      "approach": "Step 1: Find the carbonyl carbons. A carbonyl with carbon on both sides is a ketone; with an OH attached it is a carboxylic acid.\nStep 2: A carbonyl with an oxygen that in turn carries another carbon is an ester - the oxygen is bridging, not terminal, which is what separates it from an acid.\nStep 3: A structure with a nitrogen bonded only to carbon and hydrogen, and no carbonyl at all, is an amine.",
+      "note": "The distinction that trips people up is ester against carboxylic acid, since both show a carbonyl next to an oxygen. Look at what that second oxygen carries: a hydrogen makes it an acid, another carbon makes it an ester.",
+      "options": {
+        "A": "Correct. A carbonyl flanked by two carbons is a ketone, a carbonyl bearing OH is a carboxylic acid, a carbonyl bearing an O that carries a further carbon is an ester, and a nitrogen with no carbonyl is an amine.",
+        "B": "Each assignment turns on the atom adjacent to the carbonyl carbon. Working outward from the carbonyl and asking what is attached to it separates all four of these structures cleanly."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2565,12 +2618,18 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Analyzing molecular orbital energy levels relative to the starting atomic orbitals.",
-      "process": "Bonding MOs result from constructive interference and are lower in energy (more stable). Antibonding MOs result from destructive interference and are higher in energy (less stable).",
-      "result": "The energy of sigma_1s is lower than 1s, and sigma_star_1s is higher than 1s."
+      "context": "When two atomic orbitals combine they produce two molecular orbitals, one stabilised and one destabilised relative to the orbitals that formed them. The diagram places the atomic orbitals in the middle and the two molecular orbitals above and below.",
+      "approach": "Step 1: Read the atomic orbital levels from the diagram - the 1s and 2s levels of the separated atoms.\nStep 2: Locate the bonding combinations. Each sigma level sits below its parent atomic orbital, because in-phase overlap concentrates electron density between the nuclei and lowers the energy.\nStep 3: Locate the antibonding combinations. Each sigma-star level sits above its parent, because out-of-phase overlap puts a node between the nuclei and raises the energy.",
+      "note": "The destabilisation of an antibonding orbital is slightly larger than the stabilisation of the corresponding bonding orbital. That asymmetry is why filling both cancels out to a net repulsion, and why helium does not form a diatomic molecule.",
+      "options": {
+        "A": "Correct. Each bonding sigma level lies below the atomic orbitals that formed it and each antibonding sigma-star level lies above them, exactly as the plotted energies show.",
+        "B": "If the molecular orbitals matched the atomic orbitals in energy there would be no driving force to form a bond at all. The diagram shows clear separation above and below.",
+        "C": "This inverts the diagram. The antibonding level is the higher of each pair, which is what the star notation denotes.",
+        "D": "Mixing lowers the bonding combination; that stabilisation is the reason a bond forms. It is the antibonding combination that is raised."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   }
 ];
