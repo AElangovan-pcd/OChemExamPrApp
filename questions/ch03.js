@@ -2502,7 +2502,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "O=C(Cl)c1ccccc1",
@@ -2514,7 +2514,7 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isobutylene",
+      "2-Methylpropene",
       "1-Bromopropane",
       "Cyclohexanone",
       "1-Propanol",
@@ -2553,7 +2553,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "CCc1ccccc1",
@@ -2573,7 +2573,7 @@ var CH03_QUESTIONS = [
       "2-Bromopropane",
       "Cyclopentanone",
       "Ethylbenzene",
-      "Butyraldehyde",
+      "Butanal",
       "3-Pentanone",
       "Ethyl benzoate",
       "Formic acid"
@@ -2608,7 +2608,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       },
       {
         "smiles": "ClCCl",
@@ -2616,7 +2616,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "CCCCO",
@@ -2627,8 +2627,8 @@ var CH03_QUESTIONS = [
       "Benzene",
       "2-Pentanone",
       "1-Propanol",
-      "t-Butyl alcohol",
-      "Isobutylene",
+      "2-Methylpropan-2-ol",
+      "2-Methylpropene",
       "Bromobenzene",
       "Dichloromethane",
       "1-Butanol"
@@ -2671,7 +2671,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "O=Cc1ccccc1",
@@ -2679,10 +2679,10 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Propionaldehyde",
+      "Propanal",
       "2-Pentanone",
       "Methanol",
-      "Isobutylene",
+      "2-Methylpropene",
       "Benzaldehyde",
       "Dimethyl sulfoxide",
       "Benzyl alcohol",
@@ -2792,7 +2792,7 @@ var CH03_QUESTIONS = [
       "Benzaldehyde",
       "Acetic acid",
       "1-Bromopropane",
-      "Butyraldehyde",
+      "Butanal",
       "Acetophenone",
       "Cyclopentene",
       "Ethylbenzene",
@@ -2836,7 +2836,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "CCCO",
@@ -2848,7 +2848,7 @@ var CH03_QUESTIONS = [
       "1-Propanol",
       "Ethyl acetate",
       "Tetrahydrofuran",
-      "Isobutylene",
+      "2-Methylpropene",
       "Acetic acid",
       "Benzoyl chloride",
       "Cyclohexanone"
@@ -2891,7 +2891,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       },
       {
         "smiles": "CCCC(C)=O",
@@ -2902,11 +2902,11 @@ var CH03_QUESTIONS = [
       "3-Pentanone",
       "Aniline",
       "Acetophenone",
-      "Propionaldehyde",
+      "Propanal",
       "Benzaldehyde",
       "2-Pentanone",
       "Propyne",
-      "Butyraldehyde"
+      "Butanal"
     ],
     "options": [
       {
@@ -2938,7 +2938,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       },
       {
         "smiles": "CCCO",
@@ -2955,7 +2955,7 @@ var CH03_QUESTIONS = [
     ],
     "match_options": [
       "1-Propanol",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Ethyl acetate",
       "Propyne",
       "Methyl acetate",
@@ -3005,7 +3005,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       }
     ],
     "match_options": [
@@ -3013,7 +3013,7 @@ var CH03_QUESTIONS = [
       "3-Pentanone",
       "Chlorobenzene",
       "Benzoyl chloride",
-      "Isobutylene",
+      "2-Methylpropene",
       "Propanoic acid",
       "Benzene",
       "Formic acid"
@@ -3048,7 +3048,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       },
       {
         "smiles": "C1CCOC1",
@@ -3064,10 +3064,10 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Propionaldehyde",
+      "Propanal",
       "Cyclopentanone",
       "Acetaldehyde",
-      "Isobutylene",
+      "2-Methylpropene",
       "Cyclopentene",
       "Propan-2-ol",
       "Chloroform",
@@ -3286,7 +3286,7 @@ var CH03_QUESTIONS = [
     "match_options": [
       "Cyclopentene",
       "1-Propanol",
-      "Propionaldehyde",
+      "Propanal",
       "Ethanol",
       "Benzoyl chloride",
       "Acetone",
@@ -3496,7 +3496,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "Clc1ccccc1",
@@ -3509,7 +3509,7 @@ var CH03_QUESTIONS = [
       "Chlorobenzene",
       "Acetic acid",
       "Acetophenone",
-      "Butyraldehyde",
+      "Butanal",
       "Cyclohexane",
       "Propan-2-ol"
     ],
@@ -3610,13 +3610,13 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       }
     ],
     "match_options": [
       "Benzoic acid",
-      "Propionaldehyde",
-      "Butyraldehyde",
+      "Propanal",
+      "Butanal",
       "Tetrahydrofuran",
       "Ethyl acetate",
       "Cyclopentene",
@@ -3730,7 +3730,7 @@ var CH03_QUESTIONS = [
       "1-Butanol",
       "Dimethyl ether",
       "Formic acid",
-      "Butyraldehyde",
+      "Butanal",
       "1-Bromopropane"
     ],
     "options": [
@@ -3822,7 +3822,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       },
       {
         "smiles": "C1CCC=CC1",
@@ -3834,7 +3834,7 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Toluene",
       "Bromobenzene",
       "Benzaldehyde",
@@ -3940,7 +3940,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       }
     ],
     "match_options": [
@@ -3951,7 +3951,7 @@ var CH03_QUESTIONS = [
       "Diethyl ether",
       "Acetophenone",
       "Dimethyl sulfoxide",
-      "t-Butyl alcohol"
+      "2-Methylpropan-2-ol"
     ],
     "options": [
       {
@@ -4101,7 +4101,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "Oc1ccccc1",
@@ -4111,10 +4111,10 @@ var CH03_QUESTIONS = [
     "match_options": [
       "Propan-2-ol",
       "Propyne",
-      "Isobutylene",
+      "2-Methylpropene",
       "Ethylbenzene",
       "Phenol",
-      "Butyraldehyde",
+      "Butanal",
       "Propanoic acid",
       "Cyclohexene"
     ],
@@ -4321,7 +4321,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "CCC(=O)CC",
@@ -4334,7 +4334,7 @@ var CH03_QUESTIONS = [
       "Ethanol",
       "Ethyl acetate",
       "Diethyl ether",
-      "Isobutylene",
+      "2-Methylpropene",
       "Aniline",
       "3-Pentanone"
     ],
@@ -4372,7 +4372,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "CCO",
@@ -4387,7 +4387,7 @@ var CH03_QUESTIONS = [
       "3-Pentanone",
       "Phenol",
       "Cyclohexene",
-      "Butyraldehyde",
+      "Butanal",
       "Acetic acid",
       "Ethylbenzene",
       "Acetone",
@@ -4478,7 +4478,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "Oc1ccccc1",
@@ -4498,7 +4498,7 @@ var CH03_QUESTIONS = [
       "2-Pentanone",
       "Phenol",
       "Cyclopentanone",
-      "Isobutylene",
+      "2-Methylpropene",
       "Propene",
       "Tetrahydrofuran",
       "Benzoic acid"
@@ -4537,7 +4537,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "CCc1ccccc1",
@@ -4555,7 +4555,7 @@ var CH03_QUESTIONS = [
       "2-Bromopropane",
       "Benzaldehyde",
       "Propene",
-      "Butyraldehyde",
+      "Butanal",
       "Aniline"
     ],
     "options": [
@@ -4605,7 +4605,7 @@ var CH03_QUESTIONS = [
     ],
     "match_options": [
       "Bromobenzene",
-      "Isobutylene",
+      "2-Methylpropene",
       "Ethylbenzene",
       "Benzaldehyde",
       "Acetic acid",
@@ -4698,7 +4698,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "[N+](=O)([O-])c1ccccc1",
@@ -4716,7 +4716,7 @@ var CH03_QUESTIONS = [
     "match_options": [
       "Cyclohexane",
       "Dichloromethane",
-      "Isobutylene",
+      "2-Methylpropene",
       "Tetrahydrofuran",
       "Propanoic acid",
       "Phenol",
@@ -4765,13 +4765,13 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       }
     ],
     "match_options": [
       "Anisole",
       "Methanol",
-      "Propionaldehyde",
+      "Propanal",
       "Methyl acetate",
       "1-Bromopropane",
       "Propanoic acid",
@@ -4829,7 +4829,7 @@ var CH03_QUESTIONS = [
       "Phenol",
       "Bromobenzene",
       "Benzaldehyde",
-      "Isobutylene",
+      "2-Methylpropene",
       "Formic acid",
       "Butanone"
     ],
@@ -4981,7 +4981,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "CCCO",
@@ -4989,7 +4989,7 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isobutylene",
+      "2-Methylpropene",
       "Acetic acid",
       "Propene",
       "Dimethyl sulfoxide",
@@ -5040,15 +5040,15 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       }
     ],
     "match_options": [
       "Dimethyl ether",
-      "Propionaldehyde",
+      "Propanal",
       "Chlorobenzene",
       "Formic acid",
-      "Isobutylene",
+      "2-Methylpropene",
       "Benzaldehyde",
       "Benzene",
       "2-Pentanone"
@@ -5087,7 +5087,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       },
       {
         "smiles": "C1CCCCC1",
@@ -5095,17 +5095,17 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       }
     ],
     "match_options": [
       "Benzene",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Acetone",
       "1-Bromopropane",
       "1-Butanol",
       "Toluene",
-      "Butyraldehyde",
+      "Butanal",
       "Cyclohexane"
     ],
     "options": [
@@ -5210,7 +5210,7 @@ var CH03_QUESTIONS = [
     ],
     "match_options": [
       "Propene",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Toluene",
       "Phenol",
       "Anisole",
@@ -5248,7 +5248,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       },
       {
         "smiles": "CC(O)C",
@@ -5266,10 +5266,10 @@ var CH03_QUESTIONS = [
     "match_options": [
       "Propyne",
       "Propan-2-ol",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Tetrahydrofuran",
       "Benzyl alcohol",
-      "Butyraldehyde",
+      "Butanal",
       "Cyclohexanone",
       "Acetophenone"
     ],
@@ -5378,7 +5378,7 @@ var CH03_QUESTIONS = [
       "Ethylbenzene",
       "Cyclohexane",
       "Acetonitrile",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Chlorobenzene",
       "Aniline",
       "Acetaldehyde"
@@ -5432,7 +5432,7 @@ var CH03_QUESTIONS = [
       "Chloroform",
       "Benzoic acid",
       "3-Pentanone",
-      "Propionaldehyde",
+      "Propanal",
       "2-Bromopropane",
       "Propene",
       "Benzaldehyde",
@@ -5527,7 +5527,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "Cc1ccccc1",
@@ -5541,7 +5541,7 @@ var CH03_QUESTIONS = [
     "match_options": [
       "Toluene",
       "Ethyl benzoate",
-      "Isobutylene",
+      "2-Methylpropene",
       "Cyclohexane",
       "Tetrahydrofuran",
       "Acetaldehyde",
@@ -5709,7 +5709,7 @@ var CH03_QUESTIONS = [
       "Cyclopentanone",
       "Cyclohexane",
       "Cyclohexene",
-      "Butyraldehyde",
+      "Butanal",
       "Formic acid",
       "Benzaldehyde"
     ],
@@ -5743,7 +5743,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       },
       {
         "smiles": "CCC(C)=O",
@@ -5761,7 +5761,7 @@ var CH03_QUESTIONS = [
     "match_options": [
       "Acetophenone",
       "Propyne",
-      "Propionaldehyde",
+      "Propanal",
       "Butanone",
       "Benzaldehyde",
       "Acetaldehyde",
@@ -5971,7 +5971,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "O=Cc1ccccc1",
@@ -5982,7 +5982,7 @@ var CH03_QUESTIONS = [
       "1-Butanol",
       "2-Bromopropane",
       "Benzaldehyde",
-      "Isobutylene",
+      "2-Methylpropene",
       "3-Pentanone",
       "Acetonitrile",
       "Aniline",
@@ -6081,7 +6081,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       },
       {
         "smiles": "O=Cc1ccccc1",
@@ -6093,7 +6093,7 @@ var CH03_QUESTIONS = [
       "Methanol",
       "Cyclohexane",
       "Benzene",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Nitrobenzene",
       "Benzaldehyde",
       "Cyclopentanone"
@@ -6136,7 +6136,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "CCOC(=O)c1ccccc1",
@@ -6144,8 +6144,8 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isobutylene",
-      "Propionaldehyde",
+      "2-Methylpropene",
+      "Propanal",
       "Ethyl benzoate",
       "3-Pentanone",
       "Diethyl ether",
@@ -6260,7 +6260,7 @@ var CH03_QUESTIONS = [
       "Methanol",
       "Benzoyl chloride",
       "Methyl acetate",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Acetophenone"
     ],
     "options": [
@@ -6407,7 +6407,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       },
       {
         "smiles": "C1CCC=CC1",
@@ -6426,7 +6426,7 @@ var CH03_QUESTIONS = [
       "Cyclohexane",
       "Aniline",
       "Benzoyl chloride",
-      "t-Butyl alcohol"
+      "2-Methylpropan-2-ol"
     ],
     "options": [
       {
@@ -6474,12 +6474,12 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Cyclohexene",
       "Nitrobenzene",
       "2-Pentanone",
       "Chloroform",
-      "Butyraldehyde",
+      "Butanal",
       "Benzene",
       "Cyclopentene"
     ],
@@ -6627,7 +6627,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "CC=O",
@@ -6641,7 +6641,7 @@ var CH03_QUESTIONS = [
     "match_options": [
       "Phenol",
       "Benzoic acid",
-      "Isobutylene",
+      "2-Methylpropene",
       "Acetaldehyde",
       "Acetone",
       "1-Butanol",
@@ -6698,7 +6698,7 @@ var CH03_QUESTIONS = [
       "Acetone",
       "Ethyl acetate",
       "2-Bromopropane",
-      "Butyraldehyde",
+      "Butanal",
       "Ethyl benzoate",
       "Nitrobenzene",
       "Dimethyl ether"
@@ -6809,7 +6809,7 @@ var CH03_QUESTIONS = [
       "Benzene",
       "Propan-2-ol",
       "Chlorobenzene",
-      "Butyraldehyde",
+      "Butanal",
       "Diethyl ether",
       "Nitrobenzene"
     ],
@@ -6969,7 +6969,7 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Propionaldehyde",
+      "Propanal",
       "2-Bromopropane",
       "Acetic acid",
       "Anisole",
@@ -7028,7 +7028,7 @@ var CH03_QUESTIONS = [
       "Acetophenone",
       "Benzoyl chloride",
       "Cyclohexene",
-      "Propionaldehyde",
+      "Propanal",
       "Ethanol",
       "Cyclohexanone",
       "Formic acid"
@@ -7085,7 +7085,7 @@ var CH03_QUESTIONS = [
       "Propanoic acid",
       "1-Propanol",
       "Dimethyl ether",
-      "Isobutylene",
+      "2-Methylpropene",
       "Bromobenzene"
     ],
     "options": [
@@ -7173,7 +7173,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       },
       {
         "smiles": "ClCCl",
@@ -7189,7 +7189,7 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Nitrobenzene",
       "Dichloromethane",
       "Methanol",
@@ -7240,7 +7240,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       }
     ],
     "match_options": [
@@ -7249,7 +7249,7 @@ var CH03_QUESTIONS = [
       "Benzaldehyde",
       "1-Butanol",
       "Benzoyl chloride",
-      "Butyraldehyde",
+      "Butanal",
       "Cyclopentanone",
       "Benzene"
     ],
@@ -7411,7 +7411,7 @@ var CH03_QUESTIONS = [
     "match_options": [
       "Benzyl alcohol",
       "Chlorobenzene",
-      "Butyraldehyde",
+      "Butanal",
       "Cyclopentanone",
       "Dichloromethane",
       "Benzoyl chloride",
@@ -7515,7 +7515,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       }
     ],
     "match_options": [
@@ -7525,7 +7525,7 @@ var CH03_QUESTIONS = [
       "Acetone",
       "Cyclopentene",
       "2-Pentanone",
-      "Isobutylene",
+      "2-Methylpropene",
       "Chloroform"
     ],
     "options": [
@@ -7559,7 +7559,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "ClC(Cl)Cl",
@@ -7571,16 +7571,16 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       }
     ],
     "match_options": [
       "Nitrobenzene",
-      "Isobutylene",
+      "2-Methylpropene",
       "1-Butanol",
       "Ethyl acetate",
       "2-Pentanone",
-      "Propionaldehyde",
+      "Propanal",
       "Chloroform",
       "Dimethyl ether"
     ],
@@ -7750,7 +7750,7 @@ var CH03_QUESTIONS = [
       "2-Pentanone",
       "Benzaldehyde",
       "Acetone",
-      "Isobutylene"
+      "2-Methylpropene"
     ],
     "options": [
       {
@@ -7795,18 +7795,18 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       }
     ],
     "match_options": [
       "Acetophenone",
       "Cyclopentanone",
       "Chlorobenzene",
-      "Propionaldehyde",
+      "Propanal",
       "Formic acid",
       "Diethyl ether",
       "Ethyl benzoate",
-      "Isobutylene"
+      "2-Methylpropene"
     ],
     "options": [
       {
@@ -7858,7 +7858,7 @@ var CH03_QUESTIONS = [
       "Bromobenzene",
       "Cyclopentanone",
       "Acetaldehyde",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Benzoyl chloride",
       "Aniline",
       "Acetic acid",
@@ -7903,7 +7903,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "Cc1ccccc1",
@@ -7918,7 +7918,7 @@ var CH03_QUESTIONS = [
       "Benzaldehyde",
       "Toluene",
       "Cyclohexanone",
-      "Isobutylene"
+      "2-Methylpropene"
     ],
     "options": [
       {
@@ -7959,7 +7959,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       },
       {
         "smiles": "CCCBr",
@@ -7969,8 +7969,8 @@ var CH03_QUESTIONS = [
     "match_options": [
       "1-Bromopropane",
       "Chlorobenzene",
-      "t-Butyl alcohol",
-      "Propionaldehyde",
+      "2-Methylpropan-2-ol",
+      "Propanal",
       "Toluene",
       "Bromobenzene",
       "Methyl acetate",
@@ -8079,7 +8079,7 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Butyraldehyde",
+      "Butanal",
       "Toluene",
       "Benzaldehyde",
       "Benzoyl chloride",
@@ -8119,7 +8119,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       },
       {
         "smiles": "Oc1ccccc1",
@@ -8135,7 +8135,7 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Propionaldehyde",
+      "Propanal",
       "Methanol",
       "Phenol",
       "Acetic acid",
@@ -8191,7 +8191,7 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isobutylene",
+      "2-Methylpropene",
       "Cyclohexanone",
       "Cyclopentene",
       "Dimethyl ether",
@@ -8295,7 +8295,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "Cc1ccccc1",
@@ -8307,7 +8307,7 @@ var CH03_QUESTIONS = [
       "Acetophenone",
       "Benzyl alcohol",
       "Acetone",
-      "Butyraldehyde",
+      "Butanal",
       "Benzaldehyde",
       "Chloroform",
       "Toluene"
@@ -8364,7 +8364,7 @@ var CH03_QUESTIONS = [
       "1-Propanol",
       "Cyclohexane",
       "Methyl acetate",
-      "Propionaldehyde",
+      "Propanal",
       "Butanone",
       "Acetone"
     ],
@@ -8523,14 +8523,14 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       }
     ],
     "match_options": [
       "Tetrahydrofuran",
       "Bromobenzene",
       "Ethylbenzene",
-      "Propionaldehyde",
+      "Propanal",
       "Cyclopentene",
       "Benzene",
       "1-Butanol",
@@ -8683,7 +8683,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       },
       {
         "smiles": "CCCCO",
@@ -8699,7 +8699,7 @@ var CH03_QUESTIONS = [
       "Cyclohexene",
       "Ethylbenzene",
       "1-Butanol",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Benzaldehyde",
       "Ethanol",
       "Dichloromethane"
@@ -8756,7 +8756,7 @@ var CH03_QUESTIONS = [
       "Tetrahydrofuran",
       "Dimethyl sulfoxide",
       "Cyclopentene",
-      "Butyraldehyde",
+      "Butanal",
       "2-Pentanone",
       "Diethyl ether"
     ],
@@ -8803,7 +8803,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       }
     ],
     "match_options": [
@@ -8813,7 +8813,7 @@ var CH03_QUESTIONS = [
       "Methyl acetate",
       "Acetophenone",
       "Cyclohexane",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Acetic acid"
     ],
     "options": [
@@ -8868,7 +8868,7 @@ var CH03_QUESTIONS = [
       "Benzoyl chloride",
       "Dichloromethane",
       "Anisole",
-      "Propionaldehyde",
+      "Propanal",
       "Benzyl alcohol",
       "Acetophenone"
     ],
@@ -8903,7 +8903,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       },
       {
         "smiles": "CC#C",
@@ -8921,9 +8921,9 @@ var CH03_QUESTIONS = [
     "match_options": [
       "Methanol",
       "3-Pentanone",
-      "Propionaldehyde",
+      "Propanal",
       "Propyne",
-      "Butyraldehyde",
+      "Butanal",
       "Ethanol",
       "Cyclopentene",
       "Toluene"
@@ -8978,7 +8978,7 @@ var CH03_QUESTIONS = [
       "Chloroform",
       "Acetonitrile",
       "Butanone",
-      "Isobutylene",
+      "2-Methylpropene",
       "Toluene",
       "2-Pentanone",
       "Dichloromethane",
@@ -9034,7 +9034,7 @@ var CH03_QUESTIONS = [
       "2-Pentanone",
       "1-Butanol",
       "Acetonitrile",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Propene",
       "Benzoic acid",
       "Diethyl ether",
@@ -9131,7 +9131,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "CCOC(C)=O",
@@ -9146,9 +9146,9 @@ var CH03_QUESTIONS = [
       "Ethylbenzene",
       "3-Pentanone",
       "Cyclohexanone",
-      "Butyraldehyde",
+      "Butanal",
       "Benzoic acid",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Bromobenzene",
       "Ethyl acetate"
     ],
@@ -9372,7 +9372,7 @@ var CH03_QUESTIONS = [
       "Aniline",
       "Toluene",
       "Cyclopentanone",
-      "Butyraldehyde",
+      "Butanal",
       "Tetrahydrofuran",
       "Anisole"
     ],
@@ -9411,7 +9411,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       },
       {
         "smiles": "CC=O",
@@ -9430,7 +9430,7 @@ var CH03_QUESTIONS = [
       "Bromobenzene",
       "Benzene",
       "Acetaldehyde",
-      "t-Butyl alcohol"
+      "2-Methylpropan-2-ol"
     ],
     "options": [
       {
@@ -9535,7 +9535,7 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isobutylene",
+      "2-Methylpropene",
       "Acetone",
       "1-Butanol",
       "Anisole",
@@ -9575,7 +9575,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       },
       {
         "smiles": "Brc1ccccc1",
@@ -9587,13 +9587,13 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       }
     ],
     "match_options": [
       "Cyclopentene",
-      "Butyraldehyde",
-      "Propionaldehyde",
+      "Butanal",
+      "Propanal",
       "Chlorobenzene",
       "Cyclohexanone",
       "Toluene",
@@ -9709,7 +9709,7 @@ var CH03_QUESTIONS = [
       "Chlorobenzene",
       "Formic acid",
       "Cyclohexanone",
-      "Propionaldehyde",
+      "Propanal",
       "Aniline"
     ],
     "options": [
@@ -9743,7 +9743,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       },
       {
         "smiles": "CCC(C)=O",
@@ -9760,7 +9760,7 @@ var CH03_QUESTIONS = [
     ],
     "match_options": [
       "Chlorobenzene",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Formic acid",
       "Butanone",
       "3-Pentanone",
@@ -9816,8 +9816,8 @@ var CH03_QUESTIONS = [
     ],
     "match_options": [
       "Ethyl acetate",
-      "Isobutylene",
-      "Butyraldehyde",
+      "2-Methylpropene",
+      "Butanal",
       "2-Pentanone",
       "2-Bromopropane",
       "Benzyl alcohol",
@@ -10267,7 +10267,7 @@ var CH03_QUESTIONS = [
       "2-Bromopropane",
       "Propene",
       "Chlorobenzene",
-      "Isobutylene",
+      "2-Methylpropene",
       "Benzene",
       "Ethylbenzene",
       "Tetrahydrofuran"
@@ -10647,18 +10647,18 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       }
     ],
     "match_options": [
       "Chloroform",
-      "Butyraldehyde",
+      "Butanal",
       "Cyclopentene",
-      "Isobutylene",
+      "2-Methylpropene",
       "Benzaldehyde",
       "Acetone",
       "Acetonitrile",
@@ -10755,7 +10755,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "CCCC(C)=O",
@@ -10769,11 +10769,11 @@ var CH03_QUESTIONS = [
     "match_options": [
       "2-Pentanone",
       "Cyclohexene",
-      "Propionaldehyde",
+      "Propanal",
       "Benzoyl chloride",
       "Anisole",
       "Acetone",
-      "Butyraldehyde",
+      "Butanal",
       "Benzoic acid"
     ],
     "options": [
@@ -10880,10 +10880,10 @@ var CH03_QUESTIONS = [
     ],
     "match_options": [
       "Chloroform",
-      "Propionaldehyde",
+      "Propanal",
       "Tetrahydrofuran",
       "Diethyl ether",
-      "Butyraldehyde",
+      "Butanal",
       "Cyclohexanone",
       "Acetone",
       "Methanol"
@@ -10940,7 +10940,7 @@ var CH03_QUESTIONS = [
       "1-Butanol",
       "Cyclohexene",
       "Benzyl alcohol",
-      "Propionaldehyde",
+      "Propanal",
       "Cyclopentene",
       "Ethanol"
     ],
@@ -10975,7 +10975,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "CCc1ccccc1",
@@ -10992,13 +10992,13 @@ var CH03_QUESTIONS = [
     ],
     "match_options": [
       "Ethylbenzene",
-      "Butyraldehyde",
+      "Butanal",
       "2-Pentanone",
       "Cyclohexanone",
       "Anisole",
       "Cyclopentene",
       "Cyclohexane",
-      "Isobutylene"
+      "2-Methylpropene"
     ],
     "options": [
       {
@@ -11095,7 +11095,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       },
       {
         "smiles": "CCC(C)=O",
@@ -11107,7 +11107,7 @@ var CH03_QUESTIONS = [
       "Propyne",
       "Tetrahydrofuran",
       "Formic acid",
-      "Propionaldehyde",
+      "Propanal",
       "Propanoic acid",
       "Aniline",
       "Butanone"
@@ -11162,7 +11162,7 @@ var CH03_QUESTIONS = [
       "Ethanol",
       "Phenol",
       "2-Pentanone",
-      "Isobutylene",
+      "2-Methylpropene",
       "Benzoyl chloride",
       "Cyclopentanone",
       "2-Bromopropane",
@@ -11222,7 +11222,7 @@ var CH03_QUESTIONS = [
       "2-Pentanone",
       "1-Butanol",
       "1-Bromopropane",
-      "Butyraldehyde"
+      "Butanal"
     ],
     "options": [
       {
@@ -11277,7 +11277,7 @@ var CH03_QUESTIONS = [
       "Acetonitrile",
       "Propan-2-ol",
       "Methyl acetate",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Diethyl ether"
     ],
     "options": [
@@ -11435,7 +11435,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       }
     ],
     "match_options": [
@@ -11445,7 +11445,7 @@ var CH03_QUESTIONS = [
       "Acetic acid",
       "Cyclohexanone",
       "Dimethyl sulfoxide",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "Propanoic acid"
     ],
     "options": [
@@ -11502,7 +11502,7 @@ var CH03_QUESTIONS = [
       "Acetic acid",
       "Chloroform",
       "1-Butanol",
-      "Propionaldehyde"
+      "Propanal"
     ],
     "options": [
       {
@@ -11599,7 +11599,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "CC(C)=O",
@@ -11607,7 +11607,7 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Butyraldehyde",
+      "Butanal",
       "Chlorobenzene",
       "Aniline",
       "1-Bromopropane",
@@ -11651,7 +11651,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "CC(Br)C",
@@ -11659,18 +11659,18 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       }
     ],
     "match_options": [
       "Benzoyl chloride",
-      "Butyraldehyde",
-      "t-Butyl alcohol",
+      "Butanal",
+      "2-Methylpropan-2-ol",
       "2-Bromopropane",
       "Cyclopentanone",
       "Benzaldehyde",
       "1-Bromopropane",
-      "Propionaldehyde"
+      "Propanal"
     ],
     "options": [
       {
@@ -11720,7 +11720,7 @@ var CH03_QUESTIONS = [
     ],
     "match_options": [
       "Nitrobenzene",
-      "Butyraldehyde",
+      "Butanal",
       "Ethylbenzene",
       "Acetic acid",
       "Toluene",
@@ -11875,7 +11875,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "CC(=O)c1ccccc1",
@@ -11893,7 +11893,7 @@ var CH03_QUESTIONS = [
       "Formic acid",
       "Cyclohexene",
       "Propene",
-      "Butyraldehyde",
+      "Butanal",
       "Cyclopentene"
     ],
     "options": [
@@ -12000,7 +12000,7 @@ var CH03_QUESTIONS = [
     ],
     "match_options": [
       "Aniline",
-      "Propionaldehyde",
+      "Propanal",
       "Phenol",
       "Dimethyl ether",
       "Acetic acid",
@@ -12043,7 +12043,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "CCOC(C)=O",
@@ -12055,7 +12055,7 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Butyraldehyde",
+      "Butanal",
       "Ethyl acetate",
       "Dichloromethane",
       "Propyne",
@@ -12099,7 +12099,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       },
       {
         "smiles": "CC(=O)c1ccccc1",
@@ -12113,7 +12113,7 @@ var CH03_QUESTIONS = [
     "match_options": [
       "3-Pentanone",
       "Ethylbenzene",
-      "Propionaldehyde",
+      "Propanal",
       "Ethyl benzoate",
       "Benzyl alcohol",
       "Methanol",
@@ -12219,7 +12219,7 @@ var CH03_QUESTIONS = [
       },
       {
         "smiles": "CC(C)=C",
-        "correctAnswer": "Isobutylene"
+        "correctAnswer": "2-Methylpropene"
       }
     ],
     "match_options": [
@@ -12229,7 +12229,7 @@ var CH03_QUESTIONS = [
       "Acetone",
       "Propene",
       "Chlorobenzene",
-      "Isobutylene",
+      "2-Methylpropene",
       "Propyne"
     ],
     "options": [
@@ -12447,7 +12447,7 @@ var CH03_QUESTIONS = [
       }
     ],
     "match_options": [
-      "Isobutylene",
+      "2-Methylpropene",
       "Chlorobenzene",
       "2-Bromopropane",
       "Methyl acetate",
@@ -12599,7 +12599,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CCC=O",
-        "correctAnswer": "Propionaldehyde"
+        "correctAnswer": "Propanal"
       },
       {
         "smiles": "CS(=O)C",
@@ -12617,7 +12617,7 @@ var CH03_QUESTIONS = [
     "match_options": [
       "Dimethyl ether",
       "Dimethyl sulfoxide",
-      "Propionaldehyde",
+      "Propanal",
       "Propene",
       "Propan-2-ol",
       "Aniline",
@@ -12655,7 +12655,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CC(C)(C)O",
-        "correctAnswer": "t-Butyl alcohol"
+        "correctAnswer": "2-Methylpropan-2-ol"
       },
       {
         "smiles": "CCc1ccccc1",
@@ -12674,7 +12674,7 @@ var CH03_QUESTIONS = [
       "Ethylbenzene",
       "Benzoic acid",
       "Methanol",
-      "t-Butyl alcohol",
+      "2-Methylpropan-2-ol",
       "1-Butanol",
       "Cyclohexane",
       "Methyl acetate",
@@ -12711,7 +12711,7 @@ var CH03_QUESTIONS = [
     "match_items": [
       {
         "smiles": "CCCC=O",
-        "correctAnswer": "Butyraldehyde"
+        "correctAnswer": "Butanal"
       },
       {
         "smiles": "C1CCC=CC1",
@@ -12730,11 +12730,11 @@ var CH03_QUESTIONS = [
       "Toluene",
       "Cyclohexene",
       "Dichloromethane",
-      "Butyraldehyde",
+      "Butanal",
       "Benzoyl chloride",
       "Acetophenone",
       "Dimethyl ether",
-      "Isobutylene"
+      "2-Methylpropene"
     ],
     "options": [
       {
