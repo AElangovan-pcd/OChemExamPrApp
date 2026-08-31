@@ -487,7 +487,7 @@ var CH05_QUESTIONS = [
       {
         "option_id": "A",
         "text": "8",
-        "smiles": "CCC(Cl)C(Cl)C(Cl)C",
+        "smiles": "",
         "is_correct": true
       },
       {
@@ -510,53 +510,66 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the application of the $2^n$ rule to determine the maximum number of stereoisomers.",
-      "process": "Step 1: Identify the number of tetrahedral stereocenters ($n$) in 2,3,4-trichlorohexane. The stereocenters are C2, C3, and C4.\nStep 2: Evaluate the symmetry of the molecule. Since it is an unsymmetrical hexane chain (one end is methyl, the other is ethyl), there is no symmetry. Thus, no meso compounds can exist to reduce the number of stereoisomers.\nStep 3: Apply the formula $2^n$ where $n = 3$: $2^3 = 8$ stereoisomers.",
-      "result": "There are 8 possible stereoisomers for 2,3,4-trichlorohexane because it has 3 stereocenters and lacks symmetry."
+      "context": "The upper bound on stereoisomers is 2 raised to the number of stereocentres, because each centre independently takes one of two configurations. The whole job is counting the stereocentres honestly before raising two to that power.",
+      "approach": "Step 1: Write the skeleton. 2,3,4-Trichlorohexane is CH3-CHCl-CHCl-CHCl-CH2CH3.\nStep 2: Test each substituted carbon for four different groups. C2 carries methyl, chlorine, hydrogen and the rest of the chain - four different, so it counts. C3 carries chlorine, hydrogen, a CHCl-CH3 arm on one side and a CHCl-CH2CH3 arm on the other; those two arms differ, so it counts. C4 carries chlorine, hydrogen, an ethyl and the CHCl-CHCl-CH3 arm - four different again.\nStep 3: Three stereocentres, so 2^3 = 8. Check that nothing collapses the count: the chain ends in a methyl on one side and an ethyl on the other, so no internal mirror plane can exist and no meso form removes any of the eight.",
+      "note": "The word maximum is doing real work in the question. The 2^n figure is an upper bound that a symmetric skeleton pulls below - 2,3,4-trichloropentane, with a methyl at both ends, has only four stereoisomers instead of eight, because two of the labels name the same meso substance and C3 turns into a pseudoasymmetric centre. Check the ends of the chain before you trust the power of two.",
+      "options": {
+        "A": "Correct. C2, C3 and C4 are each stereocentres and the chain is unsymmetrical, so all 2^3 = 8 configurational combinations name distinct compounds.",
+        "B": "Six would follow from three stereocentres if two of the eight combinations collapsed into meso forms, which happens only when the skeleton is symmetric. This chain has a methyl on one end and an ethyl on the other.",
+        "C": "Four is 2^2 and would be right if only C2 and C4 counted. C3 is a genuine stereocentre because the arm reaching toward the methyl end differs from the arm reaching toward the ethyl end.",
+        "D": "Sixteen is 2^4 and counts one stereocentre too many. C5 is a CH2 carrying two hydrogens, which can never be a stereocentre."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-carbon zig-zag chain carrying a chlorine on each of three consecutive interior carbons; every bond is drawn plain, with no wedges or dashes anywhere."
   },
   {
     "question_id": "ch05_q12_diastereomer_definition",
     "topic": "Diastereomers",
-    "difficulty_level": "Easy",
-    "question_text": "Which statement best defines diastereomers?",
-    "question_smiles": "C[C@@H](Cl)[C@H](Cl)C",
+    "difficulty_level": "Medium",
+    "question_text": "Which of the following pairs of compounds are diastereomers?",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
-        "text": "Stereoisomers that are not mirror images of each other.",
+        "text": "(E)-2-Butene and (Z)-2-butene",
         "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "Stereoisomers that are non-superimposable mirror images.",
+        "text": "(R)-2-Butanol and (S)-2-butanol",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "Isomers that differ only in the connectivity of their atoms.",
+        "text": "1-Butene and 2-butene",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "Conformational variants that interconvert by rotation around single bonds.",
+        "text": "Butane and cyclobutane",
         "smiles": "",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests the fundamental definition of diastereomers as a class of stereoisomers.",
-      "process": "Step 1: Compare the definitions of isomers. Constitutional isomers have different connectivity. Stereoisomers have the same connectivity but different 3D arrangements.\nStep 2: Within stereoisomers, if they are mirror images, they are enantiomers.\nStep 3: If they are stereoisomers but NOT mirror images, they are diastereomers. This class includes cis/trans isomers and compounds with multiple stereocenters where some, but not all, centers are inverted.",
-      "result": "Diastereomers are stereoisomers that are not mirror images of one another."
+      "context": "Sorting a pair of compounds runs down a short decision tree. Same molecular formula? If not, they are not isomers at all. Same connectivity? If not, constitutional isomers. Same connectivity but different arrangement in space? Stereoisomers - and then mirror images are enantiomers while everything else is a diastereomer.",
+      "approach": "Step 1: Check the formulas. Butane is C4H10 and cyclobutane is C4H8, so that pair falls out of the tree immediately - different formulas means not isomers.\nStep 2: Check the connectivity. 1-Butene and 2-butene share C4H8 but put the double bond between different carbons, so they are constitutional isomers rather than stereoisomers.\nStep 3: Among the two stereoisomeric pairs, ask whether they are mirror images. (R)- and (S)-2-butanol are reflections of one another, so they are enantiomers. (E)- and (Z)-2-butene have the same connectivity and differ only in the arrangement about the double bond, and no reflection converts one into the other - they are diastereomers.",
+      "note": "Diastereomers do not require a tetrahedral stereocentre, which is the part most easily missed. (E)- and (Z)-2-butene contain no stereocentre at all, and cis- and trans-1,4-dimethylcyclohexane contain none either, yet both pairs are diastereomeric. Diastereomer is defined by exclusion - stereoisomers that are not mirror images - so anything that fixes a spatial arrangement without a mirror relationship qualifies.",
+      "options": {
+        "A": "Correct. The two differ only in the arrangement of groups about a fixed double bond, and neither is the mirror image of the other, which is exactly what a diastereomeric pair is.",
+        "B": "These are enantiomers - non-superimposable mirror images. Every stereocentre is inverted between them, which places them in the other branch of the stereoisomer tree.",
+        "C": "These are constitutional isomers. Both are C4H8, but the double bond joins a different pair of carbons, so the connectivity itself differs rather than the arrangement in space.",
+        "D": "These are not isomers at all. Butane is C4H10 and cyclobutane is C4H8, and isomerism of any kind requires the same molecular formula."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -592,13 +605,20 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests stereochemical relationships in the classic tartaric acid system.",
-      "process": "Step 1: Identify the configurations. (2R,3R)-Tartaric acid has both centers in (R) configuration. meso-Tartaric acid has one (R) and one (S) configuration.\nStep 2: Compare the two structures. Since C2 is (R) in both, but C3 is (R) in the first and (S) in the second, they are stereoisomers that are not mirror images.\nStep 3: Thus, they are diastereomers. Comparing (2R,3R) and (2S,3S) shows they are enantiomers (mirror images).",
-      "result": "(2R,3R)-Tartaric acid and meso-tartaric acid are diastereomers because they differ in configuration at one but not all stereocenters."
+      "context": "Tartaric acid has two stereocentres carrying identical substituent sets, so it has three stereoisomers rather than four: an enantiomeric pair, (2R,3R) and (2S,3S), plus the meso form. Any pairing across that divide is diastereomeric.",
+      "approach": "Step 1: List the three substances. (2R,3R) and (2S,3S) are mirror images of one another; (2R,3S), which is the same substance as (2S,3R), is the meso form.\nStep 2: Take each offered pair and ask whether one is the reflection of the other. (2R,3R) against (2S,3S) inverts both centres, so that pair is enantiomeric. So is (2S,3S) against its own mirror image, which is just the same statement worded differently.\nStep 3: (2R,3R) against the meso form inverts C3 but leaves C2 as R. Some centres match and others do not, so these are stereoisomers that are not mirror images - diastereomers.",
+      "note": "The distinction shows up directly in the bottle. Meso-tartaric acid melts near 140 C and the (2R,3R) form near 170 C, and the two differ in water solubility as well - exactly what being diastereomers means physically. The (2R,3R) and (2S,3S) forms share every one of those numbers and part only in the sign of their rotation.",
+      "options": {
+        "A": "Correct. These two share the C2 descriptor and differ at C3, so they are stereoisomers that are not mirror images - the definition of a diastereomeric pair.",
+        "B": "Inverting both stereocentres makes this an enantiomeric pair, not a diastereomeric one. The two rotate light equally and oppositely and match in every other physical property.",
+        "C": "The mirror image of the (2S,3S) form is the (2R,3R) form, so this option describes the same enantiomeric pair as the previous one under different wording.",
+        "D": "Only one of the three offered pairs is diastereomeric; the other two are the same enantiomeric pair stated twice, so a blanket choice cannot be right."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-carbon chain with a carboxylic acid group at each end and a hydroxyl on each of the two interior carbons; every bond is drawn plain, so no configuration is shown."
   },
   {
     "question_id": "ch05_q14_diastereomer_separation",
@@ -633,53 +653,66 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the physical basis for separating diastereomers versus enantiomers.",
-      "process": "Step 1: Enantiomers have identical physical properties in achiral environments because their spatial relationships between atoms are identical (just mirrored).\nStep 2: Diastereomers have different spatial arrangements of their atoms relative to one another (e.g. cis vs. trans, or R,R vs. R,S). Their dipole moments, molecular shapes, and intermolecular forces differ.\nStep 3: Consequently, they have different boiling points, melting points, solubilities, and chromatographic retention times, allowing easy separation.",
-      "result": "Diastereomers have different physical properties because they have different 3D shapes and spatial arrangements of substituents."
+      "context": "Separation by any ordinary physical method depends on the two substances differing in some bulk property. Diastereomers are genuinely different shapes, so they do; enantiomers are reflections, so in an achiral setting every bulk property they have is identical.",
+      "approach": "Step 1: Compare the shapes. Diastereomers differ at some stereocentres and not others, so the distances between substituents, the dipole moment and the packing in a crystal all come out different.\nStep 2: Follow that into the laboratory. Different packing means different melting point and different solubility, which is what recrystallisation exploits; different shape and polarity mean different adsorption on silica, which is what chromatography exploits.\nStep 3: Run the same argument on enantiomers and it collapses. A reflection changes no distance and no energy in an achiral environment, so the two have identical melting points, identical solubilities and identical Rf values - there is nothing for the technique to grip.",
+      "note": "Different is not the same as conveniently different. Two diastereomers that differ at a stereocentre buried in the middle of a long chain can have almost identical Rf values and take many column volumes to part, while two that differ next to a polar group separate on the first plate. The principle guarantees a difference exists; it promises nothing about its size.",
+      "options": {
+        "A": "Correct. Diastereomers are physically different shapes, so melting point, solubility and adsorption on silica all differ, and any of those differences can drive a separation.",
+        "B": "Diastereomers are stereoisomers, so their connectivity is identical by definition. If the connectivity differed they would be constitutional isomers instead.",
+        "C": "Neither half of this is required. Both members of a diastereomeric pair are often chiral, as with (2R,3R)- and (2R,3S)-tartaric acid, and chirality is not what makes the separation work.",
+        "D": "Diastereomers usually do have stereocentres - and even when they have none, as with cis and trans alkenes, they are still separable because their shapes differ."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-carbon chain in which one interior carbon carries a fluorine on a hashed bond going away from the viewer, and the carbon beside it carries a hydroxyl on a bold wedge coming toward the viewer."
   },
   {
     "question_id": "ch05_q15_epimer_definition",
     "topic": "Diastereomers",
     "difficulty_level": "Medium",
-    "question_text": "What is the term used to describe two diastereomers that differ in configuration at only one of several stereocenters?",
-    "question_smiles": "OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)C=O",
+    "question_text": "Two aldohexoses have the same configuration at C3, C4 and C5 but opposite configurations at C2. Which statement about this pair is correct?",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
-        "text": "Epimers",
+        "text": "They are diastereomers, and an ordinary achiral method such as recrystallization or silica chromatography can separate them.",
         "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "Anomers",
+        "text": "They are enantiomers, so their specific rotations are equal in magnitude and opposite in sign.",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "Enantiomers",
+        "text": "They are the same compound, since the chain could simply have been numbered from the other end.",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "Constitutional isomers",
+        "text": "They are constitutional isomers, because their hydroxyl groups occupy different positions along the chain.",
         "smiles": "",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests organic chemistry terminology related to carbohydrate and sugar stereochemistry.",
-      "process": "Step 1: Diastereomers can differ at one or more stereocenters. If they differ at all stereocenters, they are enantiomers.\nStep 2: If they differ at only one stereocenter out of multiple, they are a special subclass of diastereomers known as epimers.\nStep 3: For example, D-glucose and D-galactose are C4-epimers. Anomers are a specific type of epimer at the hemiacetal/hemiketal carbon of cyclic sugars.",
-      "result": "Two diastereomers that differ at only a single stereocenter are called epimers."
+      "context": "Inverting one stereocentre out of several is the commonest way a pair of stereoisomers ends up neither identical nor mirror images. Everything that follows - separability, distinct melting points, distinct rotations with no relationship between them - comes straight from that classification.",
+      "approach": "Step 1: Count what changed. Three stereocentres are untouched and one is inverted, so a reflection is out of the question: reflecting acts on every centre at once.\nStep 2: Confirm they are still isomers of the same constitution. Both are aldohexoses with hydroxyls on the same carbons; only the spatial arrangement at C2 differs, so they are stereoisomers rather than constitutional isomers.\nStep 3: Stereoisomers that are not mirror images are diastereomers, and diastereomers are physically different substances. Their crystal packing and their adsorption behaviour differ, so recrystallisation or a silica column will part them.",
+      "note": "Carbohydrate chemistry gives this relationship its own name - two sugars differing at exactly one stereocentre are epimers, and D-glucose and D-mannose are C2 epimers of each other. The term is a convenience of nomenclature and not a new category: every epimeric pair is simply a diastereomeric pair, and McMurry introduces the word when the sugars arrive rather than here.",
+      "options": {
+        "A": "Correct. One centre inverted out of four makes them diastereomers, and diastereomers differ in melting point, solubility and adsorption, so achiral methods separate them.",
+        "B": "Enantiomers require every stereocentre to be inverted. Three of the four are unchanged here, so no mirror operation relates these two and their rotations bear no fixed relationship.",
+        "C": "Renumbering cannot help. An aldohexose has an aldehyde at one end and a CH2OH at the other, so the chain has a defined direction and C2 is unambiguous.",
+        "D": "The hydroxyls sit on the same carbons in both compounds. What differs is which side of each carbon they occupy in space, which is a stereochemical difference, not a constitutional one."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -692,19 +725,19 @@ var CH05_QUESTIONS = [
       {
         "option_id": "A",
         "text": "(2R,3S)-Tartaric acid",
-        "smiles": "O=C(O)[C@@H](O)[C@H](O)C(=O)O",
+        "smiles": "O=C(O)[C@H](O)[C@H](O)C(=O)O",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "(2R,3R)-Tartaric acid",
-        "smiles": "O=C(O)[C@@H](O)[C@@H](O)C(=O)O",
+        "smiles": "O=C(O)[C@H](O)[C@@H](O)C(=O)O",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "(2S,3S)-Tartaric acid",
-        "smiles": "O=C(O)[C@H](O)[C@H](O)C(=O)O",
+        "smiles": "O=C(O)[C@@H](O)[C@H](O)C(=O)O",
         "is_correct": false
       },
       {
@@ -715,12 +748,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the identification of the meso form of tartaric acid.",
-      "process": "Step 1: Examine the structure of tartaric acid ($HOOC-CH(OH)-CH(OH)-COOH$). It is a symmetrical molecule with stereocenters at C2 and C3.\nStep 2: For a meso compound, the configurations must be opposite at the two equivalent stereocenters. Thus, one must be (R) and the other (S).\nStep 3: In (2R,3S)-tartaric acid, C2 is (R) and C3 is (S). This creates an internal plane of symmetry that bisects the C2-C3 bond, making the molecule achiral (meso).",
-      "result": "(2R,3S)-Tartaric acid is a meso compound due to its internal symmetry, which cancels its optical activity."
+      "context": "Tartaric acid is the standard meso example because its two stereocentres carry matching substituent sets - each bears a hydroxyl, a hydrogen, a carboxyl and the other CH(OH)COOH half - which is the structural precondition for an internal mirror plane.",
+      "approach": "Step 1: Check the precondition. The molecule divides into two identical halves at the C2-C3 bond, so a mirror plane through that bond is at least geometrically conceivable.\nStep 2: Give the two centres opposite descriptors. In (2R,3S) the plane between C2 and C3 reflects the R half onto the S half, and the molecule maps onto its own mirror image.\nStep 3: Give them matching descriptors and the plane fails. (2R,3R) reflects into (2S,3S) and not into itself, so those two are a chiral pair and neither is meso.",
+      "note": "Optically inactive and achiral are not the same claim, and tartaric acid demonstrates both. A fifty-fifty mixture of the (2R,3R) and (2S,3S) acids reads zero on a polarimeter, but every molecule in that flask is chiral and the rotations merely cancel. The meso acid also reads zero, but there the individual molecule is achiral - a pure substance that cannot rotate light at all.",
+      "options": {
+        "A": "Correct. Opposite descriptors at two stereocentres carrying identical substituent sets put an internal mirror plane through the C2-C3 bond, so this isomer is achiral.",
+        "B": "(2R,3R)-Tartaric acid is chiral; its mirror image is the (2S,3S) acid, a different substance, and a pure sample of it rotates plane-polarised light.",
+        "C": "(2S,3S)-Tartaric acid is the enantiomer of the (2R,3R) acid. Matching descriptors at both centres leave no plane that can reflect one half onto the other.",
+        "D": "Tartaric acid is the textbook meso compound. Its two halves are constitutionally identical, which is exactly the symmetry a meso form needs."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -733,35 +772,41 @@ var CH05_QUESTIONS = [
       {
         "option_id": "A",
         "text": "(2R,3S)-2,3-dichlorobutane",
-        "smiles": "C[C@@H](Cl)[C@H](Cl)C",
+        "smiles": "C[C@@H](Cl)[C@@H](Cl)C",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "(2R,3R)-2,3-dichlorobutane",
-        "smiles": "C[C@@H](Cl)[C@@H](Cl)C",
+        "smiles": "C[C@@H](Cl)[C@H](Cl)C",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "(2R,3S)-2,3-dichloropentane",
-        "smiles": "CC[C@H](Cl)[C@@H](Cl)C",
+        "smiles": "CC[C@H](Cl)[C@H](Cl)C",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "(2S,3S)-2,3-dichlorobutane",
-        "smiles": "C[C@H](Cl)[C@H](Cl)C",
+        "smiles": "C[C@H](Cl)[C@@H](Cl)C",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests the ability to distinguish between meso compounds and chiral diastereomers.",
-      "process": "Step 1: Check for asymmetric carbons (stereocenters). All options except the pentane have C2 and C3 as stereocenters.\nStep 2: Check for symmetry. (2R,3S)-2,3-dichlorobutane is symmetrical (both ends are $-CH_3$), and the stereocenters have opposite configurations (R and S), yielding a plane of symmetry.\nStep 3: Why is (2R,3S)-2,3-dichloropentane NOT meso? Although it has opposite configurations (R,S), it is unsymmetrical (one end is $-CH_3$, the other is $-CH_2CH_3$). Thus, it lacks a plane of symmetry and is chiral.",
-      "result": "(2R,3S)-2,3-dichlorobutane is meso because it is symmetrical and has opposite stereochemical configurations that cancel each other out."
+      "context": "Two conditions have to hold together for a meso compound, and the distractors here are built to fail one each. The skeleton must be symmetric about the point where the mirror plane would sit, and the stereocentres it relates must carry opposite descriptors.",
+      "approach": "Step 1: Test the skeleton first. In 2,3-dichlorobutane the C2-C3 bond has a CH3 and a Cl on each side, so the two halves are identical and a bisecting mirror plane is possible. In 2,3-dichloropentane one half ends in a methyl and the other in an ethyl, so no plane can relate them however the descriptors fall.\nStep 2: Test the descriptors on the symmetric skeleton. (2R,3S) gives opposite configurations and the plane reflects one half onto the other.\nStep 3: (2R,3R) and (2S,3S) give matching configurations on that same symmetric skeleton; those two are mirror images of each other rather than of themselves, so both are chiral.",
+      "note": "The mirror plane is a property of a conformation, not of the drawing you happen to reach for. In fully eclipsed 2,3-dichlorobutane the plane is obvious; rotate about C2-C3 into the anti conformer and the plane is gone, replaced by a centre of inversion. Either element is enough - what matters is that some accessible conformation possesses one.",
+      "options": {
+        "A": "Correct. The skeleton is symmetric about the C2-C3 bond and the two stereocentres carry opposite descriptors, so an internal mirror relates the halves.",
+        "B": "The skeleton is symmetric but both centres are R, so reflection gives the (2S,3S) compound rather than the original. This is one member of a chiral pair.",
+        "C": "Opposite descriptors are not enough on their own. A methyl on one side of the C2-C3 bond and an ethyl on the other leave the halves different, so no mirror plane can pass between them.",
+        "D": "The (2S,3S) compound is the enantiomer of the (2R,3R) compound. Matching descriptors on a symmetric skeleton always give a chiral pair, never a meso form."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -774,7 +819,7 @@ var CH05_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The (2R,4S) isomer is a meso compound, while the (2R,4R) isomer is chiral.",
-        "smiles": "C[C@@H](O)C[C@H](O)C",
+        "smiles": "",
         "is_correct": true
       },
       {
@@ -797,13 +842,20 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the stereocenter and symmetry relations in a 1,3-relationship (2,4-pentanediol).",
-      "process": "Step 1: Identify the stereocenters of 2,4-pentanediol. They are C2 and C4. C3 is achiral because it has two identical hydrogen atoms.\nStep 2: Draw the (2R,4S) isomer. It has a plane of symmetry passing through C3 (splitting the C3 carbon and its two H atoms). Therefore, (2R,4S) is a meso compound.\nStep 3: Draw the (2R,4R) isomer. The two methyl ends are equivalent, but because both stereocenters have the same configuration, they do not mirror each other across C3. The molecule lacks symmetry and is chiral.",
-      "result": "The (2R,4S)-2,4-pentanediol is a meso compound, while the (2R,4R) isomer is chiral."
+      "context": "The stereocentres of a meso compound need not be adjacent. What is required is that a mirror plane can be drawn through the molecule with matching halves on either side, and in 2,4-pentanediol that plane runs through C3 rather than between two bonded stereocentres.",
+      "approach": "Step 1: Identify the stereocentres. C2 and C4 each carry a methyl, a hydroxyl, a hydrogen and the CH2-CH(OH)-CH3 remainder, so both count. C3 carries two hydrogens and cannot be one.\nStep 2: Site the mirror plane. It passes through C3, perpendicular to the chain, with a CH(OH)CH3 arm on each side - the two halves are identical, so the precondition is met.\nStep 3: Assign. (2R,4S) puts opposite descriptors on the two arms, the plane reflects one onto the other, and the molecule is meso. (2R,4R) puts matching descriptors on them, no plane works, and that isomer is chiral - its mirror image is the (2S,4S) compound.",
+      "note": "That C3 carries two hydrogens is exactly why it stays an ordinary carbon here. Replace one of them with a hydroxyl, as in 2,3,4-pentanetriol, and C3 becomes a pseudoasymmetric centre - a carbon whose two flanking arms are identical in constitution but opposite in configuration, needing the lower-case descriptors r and s. The intuition that a CH2 between two stereocentres is always inert stops holding the moment it stops being a CH2.",
+      "options": {
+        "A": "Correct. Opposite descriptors at C2 and C4 allow the mirror plane through C3, while matching descriptors do not, leaving the (2R,4R) isomer chiral.",
+        "B": "The (2R,4R) isomer cannot be meso. Its reflection is the (2S,4S) compound, a different substance, so no internal mirror relates it to itself.",
+        "C": "This reverses the two assignments. Opposite descriptors on identical arms are what a mirror plane needs; matching descriptors are what defeats it.",
+        "D": "C3 being a methylene is what makes the meso form possible rather than what prevents it - the mirror plane passes straight through that carbon and its two identical hydrogens."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-carbon chain with a hydroxyl group on the second carbon and another on the fourth, the middle carbon carrying only hydrogens; every bond is drawn plain, so no configuration is shown."
   },
   {
     "question_id": "ch05_q19_center_of_inversion_meso",
@@ -838,12 +890,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests advanced symmetry concepts, specifically identifying a center of inversion ($i$) versus a plane of symmetry ($\\sigma$) in conformationally flexible systems.",
-      "process": "Step 1: Look at the Newman projection of meso-2,3-dichlorobutane in the anti conformation (where the two $-CH_3$ groups are 180 degrees apart).\nStep 2: In this conformation, if you draw a line from any atom (e.g. Cl) through the center of the C2-C3 bond and extend it an equal distance on the other side, you find an identical atom (Cl). This is a center of inversion ($i$).\nStep 3: There is no plane of symmetry in this staggered conformation. (In the eclipsed conformation, there is a plane of symmetry but no center of inversion). Since it contains a symmetry element in every conformation, the molecule is achiral overall.",
-      "result": "In the anti conformation, meso-2,3-dichlorobutane possesses a center of inversion ($i$) which renders it achiral."
+      "context": "Achirality is not tied to a mirror plane specifically. A molecule is achiral when it possesses any improper symmetry element, and the anti conformer of meso-2,3-dichlorobutane makes the point by having no mirror plane at all.",
+      "approach": "Step 1: Build the anti conformer. Sight along C2-C3 and place the two chlorines at 180 degrees to each other; the two methyls then also end up anti, and each stereocentre still carries its hydrogen.\nStep 2: Look for a mirror plane. There is none - the eclipsed conformation has one, but rotating into anti destroys it.\nStep 3: Test the midpoint of the C2-C3 bond as an inversion centre. Push each atom through that point and out the far side: the chlorine on C2 lands on the chlorine of C3, the methyl on the methyl, the hydrogen on the hydrogen. The molecule maps onto itself, so a centre of inversion is present and the conformation is achiral.",
+      "note": "The general criterion is an improper axis S(n), and the familiar elements are special cases of it: a mirror plane is S(1) and a centre of inversion is S(2). A proper rotation axis is never enough on its own - the anti conformer of the chiral (2R,3R) isomer has a clean two-fold axis and is chiral all the same, which is why option C is a trap rather than a near miss.",
+      "options": {
+        "A": "Correct. Inversion through the midpoint of the C2-C3 bond carries each substituent onto its counterpart on the other stereocentre, so the anti conformer maps onto itself.",
+        "B": "A mirror plane does relate the two halves in the eclipsed conformation, but rotating about C2-C3 into the anti arrangement destroys it. The question asks about that specific conformation.",
+        "C": "A two-fold rotation axis is a proper element and never demonstrates achirality on its own - the chiral (2R,3R) isomer has one in its own anti conformer.",
+        "D": "Time-averaging is the argument used for cis-1,2-dimethylcyclohexane, whose individual conformers really are chiral. Here the single anti conformer is achiral on its own, with no averaging needed."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -856,7 +914,7 @@ var CH05_QUESTIONS = [
       {
         "option_id": "A",
         "text": "It is a meso compound whose individual chair conformations rapidly interconvert, resulting in a time-averaged achiral mixture.",
-        "smiles": "C1CC[C@@H](C)[C@@H](C)C1",
+        "smiles": "",
         "is_correct": true
       },
       {
@@ -879,13 +937,20 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relationship between conformational dynamics (ring flip) and optical activity in cis-cyclohexane systems.",
-      "process": "Step 1: cis-1,2-Dimethylcyclohexane has two chair conformations. Each conformation has one axial methyl and one equatorial methyl group.\nStep 2: These two chair conformations are non-superimposable mirror images (enantiomers) of each other. Individual chair conformations are chiral.\nStep 3: However, ring flipping is extremely rapid at room temperature, meaning they interconvert instantly. Because they are equal in energy, they exist in a 50:50 ratio (a conformational racemate), resulting in a time-averaged plane of symmetry and optical inactivity.",
-      "result": "cis-1,2-Dimethylcyclohexane is optically inactive because it undergoes rapid ring flipping to form a 50:50 conformational racemic mixture of chiral chairs."
+      "context": "A sample rotates light only if it holds an excess of one handedness. cis-1,2-Dimethylcyclohexane holds none, because the ring flip generates its own mirror image faster than any measurement can catch either form alone.",
+      "approach": "Step 1: Confirm the stereocentres are real. C1 and C2 each carry a methyl, a hydrogen and two different arcs of the ring, so both are stereocentres and the compound is not achiral by absence.\nStep 2: Draw both chairs. The cis relationship puts one methyl axial and the other equatorial, and flipping the ring exchanges those roles. The two conformers are non-superimposable mirror images of each other.\nStep 3: Count the population. Because the two are enantiomeric, they are exactly equal in energy and therefore exactly equal in abundance. Whatever rotation one contributes, the other cancels, and the polarimeter reads zero.",
+      "note": "The trans isomer is the control experiment. Its ring flip converts a diequatorial chair into a diaxial one - a different conformer of the same enantiomer, not the mirror image - so trans-1,2-dimethylcyclohexane stays chiral, is resolvable, and rotates light. Same ring, same substituents, opposite verdict, decided entirely by what the flip produces.",
+      "options": {
+        "A": "Correct. The two chair conformers are enantiomers of equal energy, so they are present in exactly equal amounts and their rotations cancel completely.",
+        "B": "Both chairs have identical connectivity - the same carbons bear the same methyls - so they are conformers of one compound, not constitutional isomers.",
+        "C": "C1 and C2 are genuine stereocentres, each carrying four different groups. The compound is optically inactive despite having them, which is what makes it meso.",
+        "D": "The cis arrangement makes a diequatorial chair geometrically impossible; one methyl must be axial. And equatorial placement has no bearing on optical activity in any case."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A hexagon representing the cyclohexane ring, with a methyl group on each of two neighbouring ring carbons; both are drawn on bold wedges, so both sit on the face of the ring nearer the viewer."
   },
   {
     "question_id": "ch05_q21_rs_simple_butanol",
