@@ -1976,11 +1976,19 @@ function describeSpectrum(spec) {
     return `Simulated infrared spectrum with absorption bands at ${bands}.`;
   }
   if (spec.spec_type === 'ms') {
+    // data_points carry labels like "molecular ion [M+]" and "base peak", but the MS
+    // chart draws bare bars - no annotations, no tooltip, legend off. A sighted
+    // student sees only positions and heights and must work out which peak is M+.
+    // Including those labels here would hand over the interpretation, so they are
+    // deliberately dropped.
     const peaks = (spec.data_points || [])
-      .map(p => `m/z ${p.x} (relative intensity ${p.y}${p.label ? ', ' + p.label : ''})`).join('; ');
+      .map(p => `m/z ${p.x} at ${p.y}% relative abundance`).join('; ');
     return `Simulated mass spectrum with peaks at ${peaks}.`;
   }
   if (spec.spec_type === 'nmr') {
+    // Unlike MS, the NMR label IS rendered: it selects the splitting pattern drawn on
+    // the curve (singlet/doublet/triplet/quartet) and shows in the tooltip. Naming the
+    // multiplicity is therefore describing what is on screen, not supplying the answer.
     const sig = (spec.data_points || [])
       .map(p => `${p.x} ppm integrating to ${p.y}H${p.label ? ', ' + p.label : ''}`).join('; ');
     return `Simulated proton NMR spectrum with signals at ${sig}.`;
