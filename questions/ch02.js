@@ -1602,12 +1602,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Remember standard $pK_a$ benchmarks for functional groups.",
-      "process": "Step 1: Check $pK_a$ classes. Alcohols have $pK_a \\approx 16-18$. Mineral acids have negative $pK_a$.\nStep 2: Hydrocarbons are very weak acids ($pK_a > 35$).\nStep 3: Carboxylic acids typically fall between 4 and 5.",
-      "result": "The typical pKa range is 4 to 5."
+      "context": "A handful of pKa ranges are worth knowing by heart, because they let you predict whether a given base will deprotonate a given acid without looking anything up. Carboxylic acids are the anchor point at the acidic end of ordinary organic chemistry.",
+      "approach": "Step 1: Recall the reference value. Acetic acid, the standard carboxylic acid, has a pKa of 4.75.\nStep 2: Note how little substitution moves it. Ordinary alkyl carboxylic acids cluster tightly, roughly from 4 to 5.\nStep 3: Place that against the other landmarks: alcohols near 16 to 18, terminal alkynes near 25, and alkanes near 50.",
+      "note": "The reason carboxylic acids sit so much lower than alcohols is delocalization of the conjugate base over two oxygens. Strong electron-withdrawing substituents can push a carboxylic acid well below this range - trifluoroacetic acid reaches 0.23 - so treat 4 to 5 as the unsubstituted case.",
+      "options": {
+        "A": "Correct. Ordinary carboxylic acids cluster near acetic acid's 4.75, giving a working range of about 4 to 5.",
+        "B": "This is the range for alcohols and water, some eleven orders of magnitude less acidic. It is the comparison that makes carboxylic acids notable.",
+        "C": "Values in the thirties and forties belong to very weak carbon acids such as alkenes, far beyond anything a carboxylic acid approaches.",
+        "D": "Negative pKa values belong to strong mineral acids such as sulfuric or hydrochloric. Carboxylic acids are weak acids and do not dissociate completely in water."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1643,13 +1649,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify conjugate acids of bases.",
-      "process": "Step 1: A conjugate acid is formed when a base accepts a proton ($H^+$).\nStep 2: Add $H^+$ to methylamine ($CH_3NH_2$).\nStep 3: The proton attaches to the nitrogen lone pair, yielding $CH_3NH_3^+$.",
-      "result": "The conjugate acid is methylammonium."
+      "context": "A conjugate acid is what a base becomes after it accepts a proton. The transformation adds one hydrogen and one unit of positive charge, and changes nothing else about the molecule's skeleton.",
+      "approach": "Step 1: Identify the basic site. Methylamine's nitrogen carries a lone pair, which is where a proton will attach.\nStep 2: Add the proton to that lone pair, forming a new N-H bond. The nitrogen now has four bonds and no lone pair.\nStep 3: Update the charge. Four bonds and no lone pair on nitrogen gives a formal charge of plus 1, so the conjugate acid is the methylammonium ion.",
+      "note": "Take care not to confuse conjugate acid with conjugate base. Removing a proton from methylamine would give the methylamide anion, a very strong base at the far end of the scale - the opposite direction from what this question asks.",
+      "options": {
+        "A": "Correct. Adding a proton to the nitrogen lone pair gives a nitrogen with four bonds and a formal charge of plus 1.",
+        "B": "This is the conjugate base, formed by removing a proton rather than adding one. It carries a negative charge.",
+        "C": "Methanol is a different compound entirely - the nitrogen has been replaced by oxygen. A conjugate acid never changes which elements are present.",
+        "D": "A radical results from homolytic bond cleavage, not from proton transfer, and it carries no charge."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A carbon atom bonded to a nitrogen atom, with hydrogens completing both."
   },
   {
     "question_id": "ch02_q36_dipole_vector_addition",
@@ -1684,12 +1697,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Examine how molecular shapes prevent dipole cancellation.",
-      "process": "Step 1: $CO_2$ is linear and cancels its dipoles. $BF_3$ is trigonal planar and cancels its dipoles.\nStep 2: Water ($H_2O$) has oxygen with 2 lone pairs and 2 bonds, adopting a bent shape ($104.5^\\circ$ angle).\nStep 3: Because the bonds are not opposite to each other, their dipoles add up constructively with the lone pair dipoles, resulting in a strong net dipole moment (1.85 D).",
-      "result": "Water has a net dipole moment due to its bent geometry."
+      "context": "Polar bonds are necessary for a molecular dipole but not sufficient. Whether the bond dipoles survive as a net moment depends on whether the molecular geometry lets them cancel.",
+      "approach": "Step 1: Rule out the symmetric arrangements. Carbon dioxide is linear so its two C=O dipoles oppose exactly; boron trifluoride is trigonal planar so its three B-F dipoles cancel to zero.\nStep 2: Consider trans-2-butene. Its bonds are C-C and C-H, barely polar to begin with, and the trans arrangement is symmetric, so there is nothing to add up.\nStep 3: Water has two polar O-H bonds and two lone pairs forcing a bent shape. Bent geometry means the two bond dipoles do not oppose, so they sum to a substantial net moment of about 1.85 D.",
+      "note": "The lone pairs do double duty here: they bend the molecule so the bond dipoles cannot cancel, and they contribute their own dipole in the same direction. That is why water's moment is larger than its two O-H bonds alone would suggest.",
+      "options": {
+        "A": "Correct. The bent geometry imposed by oxygen's two lone pairs stops the O-H bond dipoles from cancelling, leaving a large net moment.",
+        "B": "Carbon dioxide's C=O bonds are strongly polar, but the molecule is linear so the two dipoles point in exactly opposite directions and cancel.",
+        "C": "Boron trifluoride has three very polar B-F bonds arranged trigonally around a planar boron, and that symmetry cancels them completely.",
+        "D": "trans-2-Butene is a symmetric hydrocarbon whose bonds are barely polar at all, so it has essentially no dipole moment to speak of."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1725,20 +1744,27 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Confirm normal valency formal charges.",
-      "process": "Step 1: Nitrogen has 5 valence electrons.\nStep 2: In $CH_3NH_2$, nitrogen has 1 lone pair (2 nonbonding) and 3 single bonds (6 bonding).\nStep 3: Calculate: $5 - 2 - 3 = 0$.",
-      "result": "The formal charge is 0."
+      "context": "Formal charge is computed from valence electrons minus nonbonding electrons minus the number of bonds. For nitrogen the neutral pattern is three bonds and one lone pair, and any departure from it produces a charge.",
+      "approach": "Step 1: Nitrogen's valence electron count is 5.\nStep 2: In methylamine the nitrogen has one lone pair, which is 2 nonbonding electrons.\nStep 3: It forms three bonds - one to carbon and two to hydrogen. The formal charge is 5 minus 2 minus 3, which is zero.",
+      "note": "That neutral three-bond, one-lone-pair arrangement is worth recognising instantly, because the lone pair is what makes every amine basic and nucleophilic. Protonate it and the nitrogen goes to four bonds and plus 1; deprotonate it and it goes to two bonds, two lone pairs and minus 1.",
+      "options": {
+        "A": "Correct. Five valence electrons minus one lone pair minus three bonds gives zero, the standard neutral arrangement for nitrogen.",
+        "B": "Plus 1 requires four bonds and no lone pair, as in the ammonium or methylammonium ion. This nitrogen has three bonds and keeps its lone pair.",
+        "C": "Minus 1 requires two bonds and two lone pairs. That would be the amide anion, formed by removing a proton from this molecule.",
+        "D": "Minus 2 would need three lone pairs and a single bond, which would exceed nitrogen's octet once the bond is counted."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A carbon atom bonded to a nitrogen atom, with hydrogens completing both."
   },
   {
     "question_id": "ch02_q38_resonance_charge_localization",
     "topic": "Resonance Theory",
     "difficulty_level": "Medium",
     "question_text": "In the resonance hybrid of the formate ion (HCOO-), which statement is true about the bond lengths of the two carbon-oxygen bonds?",
-    "question_smiles": "OC(=O)",
+    "question_smiles": "[O-]C=O",
     "options": [
       {
         "option_id": "A",
@@ -1766,13 +1792,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understand the physical reality represented by a resonance hybrid.",
-      "process": "Step 1: Formate has two identical resonance contributors where the double bond shifts between the two oxygens.\nStep 2: The actual molecule does not switch between these structures; it exists as a single hybrid layout.\nStep 3: Consequently, both C-O bonds are identical in length (1.27 Å), reflecting a bond order of 1.5.",
-      "result": "The two bonds are of equal length."
+      "context": "A resonance hybrid is a single structure, not a mixture and not something that oscillates. The contributors are drawings we use because a single Lewis structure cannot represent delocalized electrons; the real molecule is their weighted average at all times.",
+      "approach": "Step 1: Draw the two contributors for formate. Each has a double bond to one oxygen and a negative charge on the other, and the two are related by exchanging which oxygen is which.\nStep 2: Note that the two contributors are equivalent - identical in energy - so they contribute equally to the hybrid.\nStep 3: Averaging them makes both carbon-oxygen bonds identical, each with a bond order of one and a half, and each oxygen carries half a negative charge. Measurement confirms it: both bonds are the same length, between a typical single and double bond.",
+      "note": "The word hybrid is meant literally. It is often compared to a mule, which is not a horse part of the time and a donkey the rest, but one animal with characteristics of both at once. Nothing about formate flickers between two structures.",
+      "options": {
+        "A": "Correct. The two equivalent contributors average to a structure with identical carbon-oxygen bonds, each intermediate between a single and a double bond.",
+        "B": "This would be true of a single contributor drawn on paper, but the real ion is the average of both. Neither oxygen is preferentially double-bonded.",
+        "C": "Nothing alternates. Resonance is not an equilibrium between structures, and there is no process interconverting them; the hybrid is one unchanging structure.",
+        "D": "Both carbon-oxygen bonds are covalent and identical. Neither is ionic, and delocalization makes them equivalent rather than different in kind."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A carbon atom bearing a hydrogen, joined to one oxygen by a double bond and to another oxygen carrying a negative charge."
   },
   {
     "question_id": "ch02_q39_lewis_acid_carbocation",
@@ -1807,13 +1840,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Apply Lewis definitions to organic reaction steps.",
-      "process": "Step 1: The carbocation has a positively charged carbon with an empty $p$ orbital (seeks electrons).\nStep 2: Water has oxygen lone pairs (willing to donate electrons).\nStep 3: The carbocation accepts an electron pair (Lewis acid), and water donates an electron pair (Lewis base).",
-      "result": "Carbocation is the Lewis acid; water is the Lewis base."
+      "context": "Assigning Lewis acid and base to a mechanistic step means asking which species supplies the electron pair and which receives it. The curved arrow points from the donor to the acceptor, so it points from the base to the acid.",
+      "approach": "Step 1: Look at the carbocation. Its positive carbon has only three bonds, six valence electrons and an empty p orbital, so it needs an electron pair.\nStep 2: Look at the water. Its oxygen has two lone pairs available to give.\nStep 3: The arrow runs from an oxygen lone pair to the empty p orbital, forming a new C-O bond. Water is therefore the Lewis base and the carbocation the Lewis acid.",
+      "note": "This step is neither a Brønsted acid-base reaction nor a redox one - no proton moves and no oxidation state changes at this point. Recognising nucleophile-electrophile pairings as Lewis base-acid pairings is what makes the curved-arrow formalism consistent across every mechanism in the course.",
+      "options": {
+        "A": "Correct. The carbocation has an empty p orbital and accepts the electron pair; water supplies it from an oxygen lone pair.",
+        "B": "This reverses the two. A carbocation is electron-deficient and cannot donate a pair, and water has lone pairs to give rather than a vacancy to fill.",
+        "C": "Two Lewis bases have nothing to react with - both would be offering electrons and neither accepting. One partner must have an empty orbital.",
+        "D": "No proton is transferred in this step. The carbocation and water combine to form a bond; deprotonation of the resulting oxonium ion happens afterwards, in a separate step."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A carbon atom bonded to three hydrogen atoms and carrying a positive charge."
   },
   {
     "question_id": "ch02_q40_acid_base_direction_strong_weak",
@@ -1848,12 +1888,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Reinforce the driving force of acid-base reactions.",
-      "process": "Step 1: Strong acids and strong bases are reactive (high energy).\nStep 2: Chemical systems naturally progress toward lower energy states.\nStep 3: Therefore, equilibrium favors the conversion of stronger (more reactive) species into weaker (more stable) acids and bases.",
-      "result": "Equilibrium favors the weaker acid and base."
+      "context": "Proton transfer runs downhill in energy, toward the more stable species. The more stable acid is by definition the weaker one, since it holds its proton more firmly, and the more stable base is likewise the weaker one.",
+      "approach": "Step 1: Recognise that each side of an acid-base equilibrium contains one acid and one base.\nStep 2: The stronger acid gives up its proton more readily, so it is consumed and the equilibrium moves away from it.\nStep 3: The position of equilibrium therefore lies on the side holding the weaker acid - and because acid and conjugate base strengths are inverse, that same side holds the weaker base.",
+      "note": "Only one comparison is needed in practice. Find the pKa of the acid on each side and the larger value marks the favoured side; the base half of the statement follows automatically and never needs checking separately.",
+      "options": {
+        "A": "Correct. Equilibrium settles on the side holding the weaker acid, and since conjugate strengths are inverse, that side holds the weaker base too.",
+        "B": "This is backwards. The stronger acid is the one most willing to lose its proton, so it is consumed rather than accumulated.",
+        "C": "These two cannot occur together. A weaker acid has a stronger conjugate base, so no single side of an equilibrium holds both a weaker acid and a stronger base.",
+        "D": "This pairing is likewise impossible: a stronger acid necessarily has a weaker conjugate base, so they sit on opposite sides."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1889,13 +1935,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Compare sulfur vs. oxygen acidity in thiols vs. alcohols.",
-      "process": "Step 1: Compare size and EN. Oxygen is more electronegative (3.5) than sulfur (2.5), which would predict ethanol to be more acidic. However, sulfur is in the 3rd row and is much larger than oxygen.\nStep 2: The larger size of the sulfur atom means its valence orbitals (3p) are larger and more polarizable than oxygen's (2p) orbitals.\nStep 3: This allows the negative charge on the thiolate ion ($R-S^-$) to be distributed over a larger volume, stabilizing the anion.",
-      "result": "The larger size of sulfur stabilizes the conjugate base, making thiols more acidic."
+      "context": "Sulfur sits directly below oxygen, so comparing a thiol with an alcohol is a down-the-group comparison. Down a group, atomic size dominates and electronegativity works against the observed trend.",
+      "approach": "Step 1: Compare the conjugate bases. Ethoxide holds its charge on oxygen; ethanethiolate holds it on sulfur.\nStep 2: Note that sulfur is a third-row atom and much larger, with its valence electrons in the n = 3 shell rather than n = 2.\nStep 3: The same negative charge spread over that larger volume is less concentrated and therefore more stable. The weaker, longer S-H bond helps too. Ethanethiol's pKa of 10.5 against ethanol's 16 follows.",
+      "note": "Notice this is the same reasoning that made HI a stronger acid than HF, applied one group over. The general rule is worth stating plainly: across a period compare electronegativity, but down a group compare size, and size wins.",
+      "options": {
+        "A": "Correct. Sulfur's larger size lets the conjugate base spread its negative charge over a greater volume, stabilising it far more than oxygen can.",
+        "B": "Sulfur is in fact less electronegative than oxygen, about 2.6 against 3.4. Electronegativity runs opposite to this trend, which is precisely why size must be the explanation.",
+        "C": "The C-S bond is weaker than the C-O bond, not stronger. In any case it is the S-H bond that breaks here, not the bond to carbon.",
+        "D": "Thiols do form weak hydrogen bonds, but hydrogen bonding affects boiling point rather than the stability of the anion left behind after deprotonation."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A two-carbon chain ending in a sulfur atom bearing a hydrogen."
   },
   {
     "question_id": "ch02_q42_lewis_acid_coordinate_bond",
@@ -1930,12 +1983,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify the nature of Lewis acid-base adduct bonding.",
-      "process": "Step 1: In a standard covalent bond, each atom contributes one electron to the shared pair.\nStep 2: In a coordinate covalent bond, one atom (the Lewis base) provides both electrons to form the bond.\nStep 3: Once formed, it is identical to any other covalent bond.",
-      "result": "A coordinate covalent bond is formed."
+      "context": "An ordinary covalent bond is formed by each atom contributing one electron. When one partner supplies both electrons of the shared pair, the bond that results is described as coordinate, or dative.",
+      "approach": "Step 1: Identify what each partner brings. The Lewis base supplies a complete lone pair; the Lewis acid supplies an empty orbital and no electrons.\nStep 2: Both electrons of the new bond therefore come from one atom.\nStep 3: That origin is what the name coordinate covalent records. Once formed, the bond is indistinguishable from any other covalent bond of the same type.",
+      "note": "The distinction is purely about bookkeeping. All four N-H bonds in the ammonium ion are identical and interchangeable, even though one of them was formed by donation of nitrogen's lone pair - the label describes the history, not any lasting property.",
+      "options": {
+        "A": "Correct. One partner supplies both electrons of the shared pair, which is what the terms coordinate and dative describe.",
+        "B": "An ionic bond involves complete transfer of electrons and electrostatic attraction between separate ions, not a shared pair.",
+        "C": "A hydrogen bond is a weak intermolecular attraction, an order of magnitude weaker than a covalent bond and not formed by donating a pair into an empty orbital.",
+        "D": "A pi bond comes from sideways overlap of p orbitals, each contributing one electron. Lewis acid-base donation forms a sigma bond."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1971,13 +2030,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Examine how distance affects the inductive effect.",
-      "process": "Step 1: Acidity is enhanced by electronegative substituents through inductive electron withdrawal.\nStep 2: The inductive effect is highly distance-dependent and drops off rapidly with the number of intervening bonds.\nStep 3: In 2-chlorobutanoic acid, the chlorine is on the $\\alpha$-carbon, directly adjacent to the carboxylate carbon, maximizing its stabilizing electron withdrawal.",
-      "result": "2-Chlorobutanoic acid is the most acidic isomer."
+      "context": "An inductive effect is transmitted through sigma bonds, and it attenuates sharply with each bond it passes through. Where an electron-withdrawing group sits therefore matters as much as whether it is present at all.",
+      "approach": "Step 1: Recognise that all three isomers carry the same chlorine, so the difference is position rather than identity.\nStep 2: Recall that induction falls off by roughly a factor of two to three per bond, so its influence is largely spent after two or three bonds.\nStep 3: The 2-chloro isomer has the chlorine on the carbon next to the carboxyl group, closest to the negative charge of the conjugate base. It stabilises that charge most and is therefore the most acidic.",
+      "note": "The drawn structure here is the 4-chloro isomer, with the chlorine at the far end of the chain - it is one of the options rather than the answer, so read the structure as an example of the isomer family and not as the compound being asked about. The measured values make the point: about 2.86 for 2-chloro, 4.05 for 3-chloro and 4.52 for 4-chloro, against 4.82 for unsubstituted butanoic acid.",
+      "options": {
+        "A": "Correct. The chlorine sits adjacent to the carboxyl group, where its electron withdrawal reaches the negative charge most effectively and lowers the pKa to about 2.86.",
+        "B": "One carbon further away, the inductive effect is already much weaker, giving a pKa near 4.05 - acidic, but well short of the 2-chloro isomer.",
+        "C": "At the far end of the chain the chlorine barely influences the carboxylate at all, and the pKa of about 4.52 is close to unsubstituted butanoic acid.",
+        "D": "Isomers share a molecular formula but not their properties. Where a substituent sits changes how strongly it interacts with the rest of the molecule."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-carbon chain with a chlorine atom on the end carbon and a carboxylic acid group at the other end."
   },
   {
     "question_id": "ch02_q44_hybridization_acidity_nitrogen",
