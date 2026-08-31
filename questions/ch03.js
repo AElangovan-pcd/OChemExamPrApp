@@ -1038,12 +1038,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understand saturation in organic structures.",
-      "process": "Step 1: Saturation refers to the hydrogen content.\nStep 2: A hydrocarbon is saturated if it cannot accept any more hydrogen atoms (no double/triple bonds, no rings that reduce hydrogen count).\nStep 3: This corresponds to a chain of carbons bonded by single bonds, filled with hydrogens.",
-      "result": "A saturated hydrocarbon contains only single bonds."
+      "context": "Saturated is a statement about hydrogen content: the molecule holds as many hydrogens as its carbon skeleton allows. Anything that reduces that count - a pi bond or a ring closure - makes the compound unsaturated.",
+      "approach": "Step 1: Consider what limits the hydrogen count. Each carbon forms four bonds, and any bond used for a second or third link to another carbon is a bond not available to hydrogen.\nStep 2: A molecule with only single bonds uses the minimum of its bonding capacity on carbon-carbon links, leaving the maximum for hydrogen.\nStep 3: So saturated means all single bonds and the maximum hydrogen count - for an open chain, the formula CnH2n+2.",
+      "note": "Strictly, a ring also reduces the hydrogen count without introducing a pi bond, which is why cyclohexane is C6H12 rather than C6H14. Cycloalkanes are still called saturated because they contain no multiple bonds, so the term tracks bond order rather than the raw hydrogen count.",
+      "options": {
+        "A": "Correct. Only single bonds means the carbon skeleton uses the least of its bonding capacity on itself, leaving the maximum available for hydrogen.",
+        "B": "Multiple bonds are precisely what makes a hydrocarbon unsaturated. Each pi bond costs two hydrogens relative to the saturated maximum.",
+        "C": "Saturation describes molecular structure, not solubility. Alkanes are in fact famously insoluble in water.",
+        "D": "Rings and saturation are separate properties. Cyclohexane is cyclic and saturated; cyclohexene is cyclic and unsaturated."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1079,13 +1085,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Compare boiling points of alkanes based on molecular weight.",
-      "process": "Step 1: Alkanes are non-polar and interact only via London dispersion forces.\nStep 2: Dispersion forces increase with molecular weight (surface area and polarizability).\nStep 3: Among the choices, hexane ($C_6H_{14}$) has the largest molecular weight and surface area, resulting in the highest boiling point.",
-      "result": "Hexane has the highest boiling point."
+      "context": "Alkanes are nonpolar, so the only force holding their molecules together is London dispersion. Its strength grows with the number of electrons present and with how much surface two molecules can bring into contact.",
+      "approach": "Step 1: Compare the carbon counts first, since size dominates when it differs. Hexane has six carbons against pentane's five, butane's four and neopentane's five.\nStep 2: More carbons means more electrons and a larger polarizable surface, so dispersion attraction is stronger.\nStep 3: Hexane is the largest of the four and also unbranched, so it has both the greatest electron count and the most extended shape. It boils highest, at about 69 degrees.",
+      "note": "Chain length matters more than branching when both vary: hexane beats pentane by size alone. Branching only becomes the deciding factor between isomers, where the electron count is held fixed - which is what the next question isolates.",
+      "options": {
+        "A": "Correct. Six carbons give hexane the largest electron count and, being unbranched, the most contact area, so it boils highest at about 69 degrees.",
+        "B": "Pentane boils around 36 degrees. It is unbranched, but one carbon shorter than hexane, and size is the dominant factor here.",
+        "C": "Butane is smaller still and boils below room temperature at about minus 0.5 degrees.",
+        "D": "2,2-Dimethylpropane has five carbons but is compact and nearly spherical, so it boils lowest of the five-carbon isomers at 9.5 degrees."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Three separate structures shown together: an unbranched six-carbon chain, a four-carbon chain with a methyl branch, and a central carbon bearing three methyl groups."
   },
   {
     "question_id": "ch03_q24_boiling_point_branching",
@@ -1120,13 +1133,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understand the effect of branching on alkane boiling points.",
-      "process": "Step 1: Isomers have the same molecular weight, so we must analyze molecular shape.\nStep 2: Straight-chain pentane has a cylindrical shape with large surface area. Branching makes neopentane spherical and compact.\nStep 3: A compact shape reduces surface area contact, weakening intermolecular London dispersion forces. Therefore, neopentane has the lowest boiling point.",
-      "result": "Neopentane has the lowest boiling point."
+      "context": "Comparing isomers holds the electron count constant, so dispersion strength depends only on shape. The question becomes how much of each molecule's surface can lie against a neighbour.",
+      "approach": "Step 1: Note that all three are C5H12, with identical mass and identical numbers of electrons.\nStep 2: Compare shapes. Pentane is an extended chain, 2-methylbutane has one branch, and neopentane is compact and nearly spherical.\nStep 3: A sphere has the least surface available for contact, so neopentane's molecules attract each other least and it boils lowest, at 9.5 degrees against pentane's 36.",
+      "note": "Boiling point and stability point in opposite directions here, which is worth keeping straight. Neopentane is the most stable of the three isomers, releasing the least heat on combustion, yet it boils lowest - stability is about the molecule's internal energy, boiling point about attraction between molecules.",
+      "options": {
+        "A": "Correct. The most branched isomer is the most compact, presents the least surface for contact, and therefore boils lowest at 9.5 degrees.",
+        "B": "2-Methylbutane has a single branch and is intermediate in shape, boiling at 28 degrees - between the other two.",
+        "C": "Pentane is unbranched and most extended, so its molecules make the most contact and it boils highest of the three at 36 degrees.",
+        "D": "Isomers share a formula but not a shape, and shape governs dispersion forces. The three boil across a range of nearly 27 degrees."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Three separate five-carbon structures shown together: an unbranched chain, a chain with one methyl branch, and a central carbon bearing four methyl groups."
   },
   {
     "question_id": "ch03_q25_conformation_butane_energy_profile",
@@ -1161,13 +1181,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Analyze the potential energy curve of butane rotation.",
-      "process": "Step 1: Energy minima correspond to staggered conformations.\nStep 2: In a $360^circ$ rotation, there are three staggered states: one anti conformation ($180^circ$ dihedral angle) and two gauche conformations ($60^circ$ and $300^circ$ dihedral angles).\nStep 3: The gauche conformations are degenerate (identical in energy) but represent distinct spatial arrangements.",
-      "result": "There are 3 energy minima."
+      "context": "Rotating about a carbon-carbon bond passes alternately through staggered and eclipsed arrangements. Every staggered arrangement is a local energy minimum, and a full turn passes through three of them.",
+      "approach": "Step 1: Start at a dihedral angle of 0 degrees, the fully eclipsed conformation, and rotate.\nStep 2: Staggered arrangements occur every 120 degrees, at 60, 180 and 300 degrees - three in a full turn.\nStep 3: Classify them. At 180 degrees the methyls are opposed, giving the anti conformation. At 60 and 300 degrees they are adjacent, giving two gauche conformations that are mirror images and therefore equal in energy.",
+      "note": "The two gauche forms are degenerate - identical in energy - because they differ only in which way the rotation went. That is why butane's energy profile has three minima but only two distinct energies among them.",
+      "options": {
+        "A": "Correct. Three staggered arrangements occur in a full turn: one anti at 180 degrees and two degenerate gauche at 60 and 300.",
+        "B": "Two would count only the distinct energy levels, anti and gauche, rather than the number of minima on the curve. There are two gauche positions, not one.",
+        "C": "Four minima would require staggered arrangements every 90 degrees. They occur every 120, since three bonds project from each carbon.",
+        "D": "Six is the total count of stationary points - three minima and three maxima together - not the number of minima alone."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of four carbon atoms."
   },
   {
     "question_id": "ch03_q26_conformation_butane_maxima",
@@ -1202,13 +1229,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify energy maxima in the butane rotational profile.",
-      "process": "Step 1: Energy maxima correspond to eclipsed conformations.\nStep 2: In a $360^circ$ rotation, there are three eclipsed states: one fully eclipsed ($0^circ$, methyls eclipsing) and two partially eclipsed ($120^circ$ and $240^circ$, methyls eclipsing hydrogens).\nStep 3: These three states act as energy barriers between the three staggered minima.",
-      "result": "There are 3 energy maxima."
+      "context": "Eclipsed arrangements are the maxima on a rotational energy profile, and they alternate with the staggered minima. Since staggered forms occur every 120 degrees, eclipsed ones do too, offset by 60.",
+      "approach": "Step 1: Locate the eclipsed arrangements. Starting from 0 degrees they occur at 0, 120 and 240 degrees - three in a full turn.\nStep 2: Identify the highest. At 0 degrees the two methyl groups eclipse each other directly, which is the global maximum at about 19 kJ/mol.\nStep 3: The other two, at 120 and 240 degrees, each eclipse a methyl against a hydrogen. They are mirror images of one another, so they are degenerate and lower than the methyl-methyl maximum, at about 16 kJ/mol.",
+      "note": "The three maxima are not equal in height, unlike ethane's, where all three eclipsed arrangements are identical. Butane's profile is asymmetric because its two rotating carbons carry different substituents, and that asymmetry is what makes the anti conformation distinguishable from gauche at all.",
+      "options": {
+        "A": "Correct. Three eclipsed arrangements occur per full turn: the methyl-methyl eclipse at 0 degrees and two degenerate methyl-hydrogen eclipses at 120 and 240.",
+        "B": "Two would miss one of the eclipsed positions. Three bonds project from each carbon, so eclipsing recurs every 120 degrees.",
+        "C": "Four maxima would require eclipsing every 90 degrees, which does not match the three-fold symmetry of an sp3 carbon.",
+        "D": "Six counts every stationary point on the curve, maxima and minima together. Only half of them are maxima."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of four carbon atoms."
   },
   {
     "question_id": "ch03_q27_iupac_alphabetical_prefixes",
@@ -1243,12 +1277,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Review IUPAC alphabetizing rules for prefixes.",
-      "process": "Step 1: Italicized prefixes indicating substitution position (like *sec-* and *tert-*) are ignored in alphabetical ordering (sec-butyl is alphabetized under 'b').\nStep 2: Multiplying prefixes (like di-, tri-, tetra-) are also ignored in alphabetizing.\nStep 3: Iso- (and cyclo-) are not separated by hyphens and are treated as part of the alkyl name, so isobutyl is alphabetized under 'i'.",
-      "result": "Isobutyl is alphabetized under 'i'."
+      "context": "Alphabetising substituents follows a specific convention: some prefixes count as part of the name and some do not. The rule turns on whether the prefix is part of the substituent's identity or merely describes how many or how it attaches.",
+      "approach": "Step 1: Identify what is ignored. Multiplying prefixes such as di-, tri- and tetra- are never alphabetised, so dimethyl files under m.\nStep 2: Identify the italicised structural prefixes. sec- and tert- are also ignored, so sec-butyl and tert-butyl both file under b.\nStep 3: Identify what counts. The prefix iso is not italicised and is treated as an inseparable part of the substituent name, so isobutyl files under i.",
+      "note": "The distinction is that iso- is regarded as part of the substituent's name while sec- and tert- describe the attachment point rather than the group's identity. It is arbitrary-looking but consistent, and it is the sort of detail that decides which of two otherwise identical names is correct.",
+      "options": {
+        "A": "Correct. Iso is not italicised and counts as part of the substituent name, so isobutyl is alphabetised under i.",
+        "B": "The italicised sec- prefix is ignored for alphabetising, so sec-butyl files under b.",
+        "C": "Likewise tert- is ignored, so tert-butyl also files under b rather than t.",
+        "D": "Di- is a multiplying prefix and is never alphabetised. Dimethyl files under m, which is why ethyl is cited before dimethyl."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1284,12 +1324,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Resolve parent chain ties in complex alkanes.",
-      "process": "Step 1: When two chains compete for parent length, IUPAC rules state a tiebreaker is required.\nStep 2: The tiebreaker rule selects the chain with the maximum number of substituents (branches).\nStep 3: This ensures that substituents are smaller and simpler to name, avoiding highly nested branching labels where possible.",
-      "result": "Choose the chain with the greater number of substituents."
+      "context": "The longest-chain rule can end in a tie, since a branched skeleton often contains several chains of the same maximum length. IUPAC provides a tiebreaker so that one name is always correct rather than several being equally acceptable.",
+      "approach": "Step 1: Confirm the tie. Both candidate chains have the same number of carbons, so the parent name will be the same either way.\nStep 2: Count what each choice leaves as substituents. Selecting one chain may leave a single large branch; selecting the other may leave two smaller ones.\nStep 3: The rule takes the chain with the greater number of substituents, because naming several simple branches is more informative than naming one complex one.",
+      "note": "This is the rule that makes 3-ethyl-2-methylpentane correct and 3-isopropylpentane incorrect for the same molecule - both pick a valid five-carbon chain, but only one leaves two substituents rather than one. Applied consistently, it guarantees a single correct name for any structure.",
+      "options": {
+        "A": "Correct. Where chains tie for length, IUPAC selects the one carrying more substituents, so the name describes several simple branches rather than one complex branch.",
+        "B": "The rule runs the other way. Fewer substituents means a more complex single branch, which needs its own internal naming and is less clear.",
+        "C": "How a structure happens to be drawn on paper has no bearing on the name. The same molecule can be drawn in any orientation.",
+        "D": "The two choices give genuinely different names, which is exactly why a tiebreaker is needed. Without one, a structure would have several equally valid names."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1325,12 +1371,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Review the products of alkane oxidation.",
-      "process": "Step 1: Combustion is a rapid oxidation of hydrocarbons.\nStep 2: Complete combustion refers to full oxidation of carbon to its maximum state ($CO_2$) and hydrogen to water ($H_2O$).\nStep 3: Incomplete combustion yields carbon monoxide ($CO$) or soot ($C$).",
-      "result": "The products are carbon dioxide and water."
+      "context": "Complete combustion means every carbon is oxidised as far as it can go and every hydrogen is converted to water. With excess oxygen available, nothing is left partly oxidised.",
+      "approach": "Step 1: Track the carbon. Fully oxidised carbon is carbon dioxide; carbon monoxide represents incomplete oxidation and appears only when oxygen is limited.\nStep 2: Track the hydrogen. Combined with oxygen it becomes water.\nStep 3: Since an alkane contains only carbon and hydrogen, those two products account for everything, whatever the alkane's structure.",
+      "note": "The qualifier complete matters practically. Burning a hydrocarbon in limited oxygen gives carbon monoxide and soot instead, which is why faulty heaters are dangerous - the products change with the oxygen supply, not with the fuel.",
+      "options": {
+        "A": "Correct. Carbon is fully oxidised to carbon dioxide and hydrogen to water, which between them account for every atom in the alkane.",
+        "B": "Carbon monoxide is a product of incomplete combustion, and hydrogen gas is not produced at all - the hydrogen ends up in water.",
+        "C": "Carbon black is unburnt carbon, another sign of incomplete combustion where the oxygen supply is insufficient.",
+        "D": "Methane is a fuel rather than a product, and ozone is not formed in ordinary combustion."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1366,12 +1418,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understand the solubility and density properties of alkanes.",
-      "process": "Step 1: Alkanes are hydrophobic (non-polar) and do not dissolve in water.\nStep 2: The density of liquid alkanes typically ranges between 0.6 and 0.8 g/mL.\nStep 3: Since their density is less than water (1.0 g/mL), they form a separate layer that floats on top.",
-      "result": "Alkanes are less dense than water and insoluble, causing them to float."
+      "context": "Whether one liquid floats on another is decided by density alone. That two liquids do not mix is a separate matter, decided by polarity - both conditions must hold for a visible floating layer.",
+      "approach": "Step 1: Consider miscibility first. Alkanes are nonpolar and cannot hydrogen bond, so they do not dissolve in water and form a separate layer.\nStep 2: Consider density. Liquid alkanes run about 0.6 to 0.8 g/mL against water's 1.0.\nStep 3: Being less dense and immiscible, the alkane layer sits on top.",
+      "note": "This combination is why oil spills spread across a water surface rather than dispersing or sinking, and it is also why a nonpolar solvent forms the upper layer in a separatory funnel - though not always, since halogenated solvents like dichloromethane are denser than water and sink instead.",
+      "options": {
+        "A": "Correct. Alkanes are both immiscible with water, being nonpolar, and less dense than it, so they form a separate layer on top.",
+        "B": "Alkanes have no O-H or N-H bonds and cannot donate hydrogen bonds. It is precisely their inability to hydrogen bond that keeps them from mixing.",
+        "C": "Volatility describes how readily a liquid evaporates, not where it sits relative to another liquid. Floating is a matter of density.",
+        "D": "Molecular weight and density are different quantities. Hexane's molecular weight is nearly five times water's, yet it is the less dense liquid, because its molecules pack far less tightly."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1407,13 +1465,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify energy values for eclipsing interactions.",
-      "process": "Step 1: Total eclipsed propane barrier is 14.0 kJ/mol.\nStep 2: Propane contains two H-H eclipsing interactions ($2 * 4.0 = 8.0$ kJ/mol) and one $H-CH_3$ eclipsing interaction.\nStep 3: Subtract: $14.0 - 8.0 = 6.0$ kJ/mol.",
-      "result": "The H-CH3 eclipsing interaction is 6.0 kJ/mol."
+      "context": "Individual eclipsing interactions are assigned energies that add up to a conformation's total strain. Extracting one of them means taking a known total and subtracting the contributions already accounted for.",
+      "approach": "Step 1: Take propane's rotational barrier, about 14 kJ/mol.\nStep 2: Identify what eclipses in that conformation - one methyl against a hydrogen, and two hydrogen pairs.\nStep 3: Subtract the two H-H interactions at 4.0 kJ/mol each, leaving 14 minus 8, which is about 6 kJ/mol for the single methyl-hydrogen eclipse.",
+      "note": "Placing this value between the H-H interaction at 4 and the methyl-methyl at 11 makes the pattern clear: the cost rises with the size of both groups involved, and not merely with one. A methyl against a hydrogen is only moderately worse than two hydrogens; a methyl against a methyl is far worse.",
+      "options": {
+        "A": "Correct. Subtracting two H-H eclipses at 4.0 kJ/mol from propane's 14 kJ/mol barrier leaves about 6 for the methyl-hydrogen interaction.",
+        "B": "4.0 kJ/mol is the value for an eclipsing hydrogen pair. Replacing one hydrogen with a methyl group raises the cost above that.",
+        "C": "11.0 kJ/mol is the methyl-methyl eclipsing interaction found in butane. Propane has only one methyl on the rotating carbons and cannot generate it.",
+        "D": "3.8 kJ/mol is the gauche interaction between two staggered methyl groups in butane, which is a steric effect in a staggered conformation rather than an eclipsing one."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of three carbon atoms."
   },
   {
     "question_id": "ch03_q32_butane_partially_eclipsed_value",
