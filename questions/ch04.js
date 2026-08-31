@@ -2035,12 +2035,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests conformational analysis of trans-1,2-disubstituted cyclohexanes.",
-      "process": "Step 1: Understand that 'trans' means the two substituents point to opposite faces of the ring (one up, one down).\nStep 2: On adjacent carbons (1,2-relationship), the orientations are:\n- C1: up is axial, down is equatorial.\n- C2: up is equatorial, down is axial.\nStep 3: Thus, trans can be achieved by having either both groups axial (C1 up-axial, C2 down-axial) OR both groups equatorial (C1 down-equatorial, C2 up-equatorial).\nStep 4: The diequatorial conformation avoids all 1,3-diaxial interactions and is much more stable than the diaxial conformation.",
-      "result": "The most stable chair conformation has both methyl groups in equatorial positions."
+      "context": "For any disubstituted cyclohexane, the cis or trans label fixes which combinations of axial and equatorial are geometrically possible. Only after that is settled does the energy comparison decide between them.",
+      "approach": "Step 1: Work out what trans allows at 1,2. Adjacent carbons alternate their axial directions, so substituents on opposite faces must be either both equatorial or both axial.\nStep 2: Compare those two options energetically. Diaxial puts two methyls each into two 1,3-diaxial interactions; diequatorial puts them into none.\nStep 3: Diequatorial is therefore much more stable, by about 15 kJ/mol, and is overwhelmingly the preferred conformation.",
+      "note": "The pairing rule is worth committing to memory because it inverts with position. At 1,2 and 1,4 it is trans that can be diequatorial; at 1,3 it is cis. Working it out from the alternating axial directions each time is safer than trying to recall which is which.",
+      "options": {
+        "A": "Correct. Adjacent carbons point their axial bonds in opposite directions, so opposite faces means both substituents can be equatorial - and that costs nothing.",
+        "B": "Diaxial is geometrically available for trans-1,2 but is the far worse of the two, carrying four 1,3-diaxial interactions in all.",
+        "C": "One axial and one equatorial is the cis-1,2 arrangement, not trans. The two labels permit different combinations.",
+        "D": "Flagpole positions exist only in the boat conformation. In a chair every substituent is either axial or equatorial."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2076,12 +2082,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question evaluates the chair conformations of cis-1,2-disubstituted cyclohexanes.",
-      "process": "Step 1: 'cis' means both groups point to the same face of the ring (both up or both down).\nStep 2: On adjacent carbons (1,2-relationship):\n- If both are up: C1 is up-axial, C2 is up-equatorial (axial-equatorial).\n- If both are down: C1 is down-equatorial, C2 is down-axial (equatorial-axial).\nStep 3: A ring flip converts one axial-equatorial chair into another equatorial-axial chair. Because both contain exactly one axial and one equatorial methyl group, the two conformations are degenerate (equal in energy).",
-      "result": "Both chair conformations of cis-1,2-dimethylcyclohexane are axial-equatorial and equal in energy."
+      "context": "When a ring flip converts one conformation into an equally strained one, neither is preferred and the molecule spends equal time in each. That happens whenever the two substituents are identical and their positions exchange.",
+      "approach": "Step 1: Determine what cis allows at 1,2. Adjacent carbons alternate axial directions, so the same face requires one substituent axial and the other equatorial.\nStep 2: Consider the ring flip. It converts the axial methyl to equatorial and the equatorial one to axial.\nStep 3: Since both substituents are methyl groups, the result is indistinguishable in energy from the original. The two chairs are equal, and neither predominates.",
+      "note": "Make the two substituents different and the degeneracy breaks immediately - the conformer placing the bulkier group equatorial wins, which is what the tert-butyl and isopropyl items in this chapter turn on. Equal energies here are a consequence of the two groups being identical, not of the cis relationship itself.",
+      "options": {
+        "A": "Correct. Cis at 1,2 forces one axial and one equatorial, and flipping simply swaps which methyl is which - identical groups, identical energy.",
+        "B": "Diequatorial is not available to cis-1,2. It would require the two methyls to be on opposite faces, which is the trans isomer.",
+        "C": "Diaxial is likewise unavailable to cis-1,2, and would in any case be the high-energy arrangement rather than the stable one.",
+        "D": "Neither diequatorial nor diaxial is geometrically possible for cis-1,2, so no such comparison arises."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2117,12 +2129,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relationship between stereochemical configuration and symmetry in disubstituted cyclohexanes.",
-      "process": "Step 1: Examine the flat representation of cis-1,2-dimethylcyclohexane. A plane of symmetry bisects the C1-C2 bond and C4-C5 bond.\nStep 2: Because it has a plane of symmetry in its planar representation, the molecule is achiral overall (meso).\nStep 3: Note: While individual chair conformations are chiral and enantiomeric to each other, they interconvert via a ring flip so rapidly at room temperature that the compound behaves as an optically inactive meso mixture.",
-      "result": "cis-1,2-Dimethylcyclohexane is a meso compound."
+      "context": "A meso compound contains stereocenters yet is achiral overall, because an internal mirror plane makes one half the reflection of the other. Testing for it means finding the stereocenters and then looking for that internal symmetry.",
+      "approach": "Step 1: Find which isomers have stereocenters at all. The 1,2 and 1,3 dimethylcyclohexanes do; the 1,4 isomers do not, since each substituted carbon has two identical ring paths.\nStep 2: Among those, look for an internal mirror. In cis-1,2-dimethylcyclohexane a plane through the midpoints of the C1-C2 and C4-C5 bonds reflects one methyl onto the other.\nStep 3: That makes the two stereocenters opposite in configuration - R and S - so the molecule is achiral despite having them. The trans isomers are R,R or S,S, genuinely chiral, and trans-1,4 has no stereocenters to begin with.",
+      "note": "There is a subtlety worth knowing: a single frozen chair of cis-1,2-dimethylcyclohexane is actually chiral, since one methyl is axial and the other equatorial. The ring flip interconverts it with its own mirror image thousands of times a second, so the compound is achiral on any observable timescale. The mirror plane is a property of the averaged structure.",
+      "options": {
+        "A": "Correct. The two stereocenters are R and S, related by an internal mirror plane, so the molecule is meso - chiral centers present, molecule achiral.",
+        "B": "trans-1,2-Dimethylcyclohexane is R,R or S,S with no internal mirror, so it is genuinely chiral and resolvable into enantiomers.",
+        "C": "trans-1,3-Dimethylcyclohexane is likewise R,R or S,S and chiral. It is the cis-1,3 isomer that is meso.",
+        "D": "The 1,4 isomers have no stereocenters at all - each substituted carbon carries two identical ring branches - so the question of meso does not arise."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2158,12 +2176,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests conformational analysis of cis-1,3-disubstituted cyclohexanes.",
-      "process": "Step 1: 'cis' means both groups point to the same face (both up or both down).\nStep 2: On C1 and C3:\n- C1: up is axial, down is equatorial.\n- C3: up is axial, down is equatorial.\nStep 3: If both are up, the conformation is diaxial. If both are down, the conformation is diequatorial.\nStep 4: The diequatorial conformation has no 1,3-diaxial interactions and is highly stable, making it the dominant conformation at equilibrium.",
-      "result": "The most stable chair conformation of cis-1,3-dimethylcyclohexane has both methyl groups equatorial."
+      "context": "The 1,3 relationship reverses the pattern seen at 1,2. Carbons two apart point their axial bonds in the same direction, so it is the cis isomer that can place both substituents equatorially.",
+      "approach": "Step 1: Compare the axial directions at C1 and C3. Because they are separated by one carbon, both axial bonds point the same way - both up or both down.\nStep 2: Apply that to cis, where both methyls are on the same face. Both can therefore be equatorial together, or both axial together.\nStep 3: Compare the two. Diaxial costs four 1,3-diaxial interactions, including a severe direct one between the two methyls themselves. Diequatorial costs nothing and is strongly preferred.",
+      "note": "The diaxial form of cis-1,3-dimethylcyclohexane is unusually bad, because the two axial methyls point directly at each other across the ring rather than merely at hydrogens. That single interaction is worth about 15 kJ/mol on its own, and it makes this the most lopsided conformational preference among the dimethylcyclohexanes.",
+      "options": {
+        "A": "Correct. At 1,3 the axial directions coincide, so the cis isomer can place both methyls equatorial - which it does, avoiding all diaxial strain.",
+        "B": "Diaxial is geometrically possible for cis-1,3 but is severely destabilised, since the two axial methyls point straight at one another.",
+        "C": "One axial and one equatorial is the trans-1,3 arrangement. Cis at 1,3 places both substituents alike.",
+        "D": "The twist-boat lies about 23 kJ/mol above the chair and is not adopted when a strain-free diequatorial chair is available."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2199,12 +2223,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the quantitative calculation of energy differences between two chair conformations of a disubstituted cyclohexane.",
-      "process": "Step 1: Draw the two conformations of trans-1,4-dimethylcyclohexane. One chair has both methyls equatorial (diequatorial), and the other has both methyls axial (diaxial).\nStep 2: The diequatorial conformation has 0 kJ/mol of steric strain from the methyls.\nStep 3: The diaxial conformation has two axial methyl groups. Each axial methyl group has two 1,3-diaxial H-methyl interactions.\nStep 4: Total interactions in the diaxial conformer = 4 H-methyl interactions.\nStep 5: Energy cost = 4 * 3.8 kJ/mol = 15.2 kJ/mol (or 4 * 0.9 kcal/mol = 3.6 kcal/mol). Since the diequatorial conformation is 0 kJ/mol, the energy difference is 15.2 kJ/mol.",
-      "result": "The energy difference between the two chairs is 15.2 kJ/mol (3.6 kcal/mol)."
+      "context": "The energy difference between two chairs is found by counting the 1,3-diaxial interactions in each and multiplying by the cost of one. Only axial substituents contribute; equatorial ones cost nothing.",
+      "approach": "Step 1: Establish the two conformations. At 1,4 the axial directions oppose, so trans allows both substituents equatorial in one chair and both axial in the other.\nStep 2: Count interactions in the diaxial chair. Each axial methyl faces two axial hydrogens across the ring, so two interactions per methyl and four in total.\nStep 3: Multiply and subtract. Four interactions at 3.8 kJ/mol each is 15.2 kJ/mol, and the diequatorial chair has none, so the difference is 15.2 kJ/mol.",
+      "note": "Note that both interactions of each methyl are with hydrogens, not with the other methyl - at 1,4 the two axial substituents point in opposite directions and never meet. That is why this figure is exactly twice the methyl A-value, whereas the cis-1,3 diaxial case is much worse than simple doubling.",
+      "options": {
+        "A": "Correct. Four 1,3-diaxial interactions at 3.8 kJ/mol each gives 15.2 kJ/mol, which is exactly twice a single methyl's A-value.",
+        "B": "7.6 kJ/mol counts only one methyl's two interactions. Both methyls are axial in that conformation, so both contribute.",
+        "C": "The two chairs are not degenerate here. Diequatorial and diaxial are very different arrangements, unlike the cis-1,2 case where flipping exchanges identical positions.",
+        "D": "11.4 kJ/mol corresponds to three interactions. Two axial methyls generate four, two apiece."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2240,12 +2270,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the thermodynamic control of chair conformation stability when two different-sized groups compete.",
-      "process": "Step 1: 'trans' 1,3-relationship means one substituent is 'up' and one is 'down'.\nStep 2: On C1 and C3, one position is axial and the other is equatorial for any trans-1,3 layout:\n- Conformation A: C1 (tert-butyl) is equatorial (down), C3 (methyl) is axial (up).\n- Conformation B: C1 (tert-butyl) is axial (down), C3 (methyl) is equatorial (up).\nStep 3: Compare A-values: tert-butyl = 21 kJ/mol, methyl = 7.3 kJ/mol.\nStep 4: Because the A-value of tert-butyl is much larger, the conformation keeping tert-butyl equatorial (Conformation A) is highly favored, forcing the smaller methyl group into the axial position.",
-      "result": "The most stable conformation has the bulky tert-butyl group equatorial and the methyl group axial."
+      "context": "When the stereochemistry forces one substituent axial, the question is not whether to avoid the axial position but which group should occupy it. The answer follows from comparing A-values.",
+      "approach": "Step 1: Determine what trans permits at 1,3. Carbons two apart point their axial bonds the same way, so substituents on opposite faces must be one axial and one equatorial. Diequatorial is not available.\nStep 2: Identify which arrangement to prefer. One group must go axial, so put the one that suffers least there.\nStep 3: Compare A-values - about 21 kJ/mol for tert-butyl against 7.3 for methyl. Forcing tert-butyl axial would cost roughly three times as much, so tert-butyl takes equatorial and methyl goes axial.",
+      "note": "A tert-butyl group is often described as conformationally locking a ring, and this is what that means in practice: its axial penalty is so large that the ring will accept almost any other strain rather than place it axially. Chemists exploit that to hold a ring in a known conformation while studying something else on it.",
+      "options": {
+        "A": "Correct. Trans-1,3 forces one substituent axial, and the much larger A-value of tert-butyl means methyl takes that position instead.",
+        "B": "This puts the bulkier group axial, costing about 21 kJ/mol where the alternative costs 7.3. It is the less stable of the two chairs by a wide margin.",
+        "C": "Diequatorial is geometrically impossible for trans-1,3. Opposite faces on carbons two apart require one axial and one equatorial.",
+        "D": "Diaxial is likewise unavailable to the trans isomer at 1,3, and would in any case be far worse than either mixed arrangement."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2281,12 +2317,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question addresses the conformation of a cis-1,4-disubstituted cyclohexane with two different alkyl groups.",
-      "process": "Step 1: 'cis' 1,4-relationship means both groups are on the same face (both up or both down).\nStep 2: On C1 and C4, one position must be axial and the other equatorial in a cis relationship:\n- Chair 1: C1 (isopropyl) is equatorial, C4 (methyl) is axial.\n- Chair 2: C1 (isopropyl) is axial, C4 (methyl) is equatorial.\nStep 3: Compare A-values: isopropyl (~8.8 kJ/mol) > methyl (~7.3 kJ/mol).\nStep 4: To minimize energy, the group with the larger A-value (isopropyl) is placed in the equatorial position, which forces the smaller group (methyl) to be axial.",
-      "result": "The more stable conformation places the larger isopropyl group in the equatorial position and the methyl group in the axial position."
+      "context": "The same reasoning applies whenever geometry forces a choice: identify which arrangements are possible, then let the larger A-value decide which substituent gets the equatorial position.",
+      "approach": "Step 1: Determine what cis permits at 1,4. Carbons directly across the ring point their axial bonds in opposite directions, so substituents on the same face must be one axial and one equatorial.\nStep 2: Note that diequatorial is therefore unavailable, and one group must be axial.\nStep 3: Compare A-values - isopropyl at about 9.2 kJ/mol against methyl's 7.3. Isopropyl suffers more when axial, so it takes the equatorial position and methyl goes axial.",
+      "note": "The margin here is far narrower than in the tert-butyl case - about 2 kJ/mol rather than 14 - so the preference is real but modest, and both conformers are appreciably populated. Isopropyl's A-value is only slightly above methyl's because it can rotate to point its own methyls away from the ring, which tert-butyl cannot.",
+      "options": {
+        "A": "Correct. Cis-1,4 forces one group axial, and isopropyl's slightly larger A-value means methyl takes that role.",
+        "B": "This places the larger group axial. The difference is small, so this conformer is populated, but it is the less stable of the two.",
+        "C": "Diequatorial is not geometrically available for cis-1,4. Opposite axial directions across the ring mean the same face requires one of each.",
+        "D": "Diaxial is likewise impossible for the cis isomer at 1,4, and would be the worst arrangement in any case."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2322,12 +2364,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question applies conformational analysis to a biologically important trisubstituted cyclohexane molecule.",
-      "process": "Step 1: Analyze the structure of menthol. The cyclohexane ring has an -OH group at C1, an isopropyl group at C2, and a methyl group at C5.\nStep 2: Note the stereochemical relationships:\n- The -OH at C1 and the isopropyl at C2 are trans (trans-1,2).\n- The -OH at C1 and the methyl at C5 are trans (trans-1,3, which translates to C1-C5 cis? Let's check: C1-C2-C3-C4-C5 is a 1,3-relationship if we count C1 as 1, C5 as 3. In (1R,2S,5R)-menthol, the substituents are arranged such that all three can simultaneously occupy equatorial positions).\nStep 3: Let's verify: C1-OH (equatorial, e.g., down-equatorial). C2-isopropyl (trans to OH, so it must be up-equatorial). C5-methyl is trans to OH? If OH is down-equatorial, then C5 is C3 if numbering from C1 in opposite direction. Let's trace: C1 (down) -> C6 -> C5 (up is axial, down is equatorial). So if C5 is down, it is down-equatorial. Thus C1-OH (down) and C5-methyl (down) are cis.\nStep 4: Indeed, in this configuration, all three groups (hydroxyl, isopropyl, and methyl) can be equatorial at the same time, making this conformation exceptionally stable.",
-      "result": "In its most stable chair conformation, all three substituents are in equatorial positions."
+      "context": "With three substituents the possible arrangements are constrained by all three stereochemical relationships at once. Occasionally they are mutually compatible with every group equatorial, and menthol is the classic case.",
+      "approach": "Step 1: Take the relationships in turn. In menthol the hydroxyl at C1 and the isopropyl at C2 are trans, which at adjacent carbons permits both equatorial.\nStep 2: Check the third. The methyl at C5 stands in a relationship to the other two that also allows equatorial placement in the same chair.\nStep 3: Since no relationship forces any group axial, all three occupy equatorial positions simultaneously, and the alternative chair would put all three axial - dramatically worse.",
+      "note": "That all-equatorial arrangement is why menthol is so conformationally rigid, and it is a large part of why this particular stereoisomer is the one with the familiar cooling character. Of the eight possible stereoisomers, only this one achieves an all-equatorial chair.",
+      "options": {
+        "A": "Correct. The stereochemistry permits all three substituents to be equatorial in the same chair, which is why menthol is unusually rigid conformationally.",
+        "B": "Putting the hydroxyl axial would be adopted only if the stereochemistry required it. Here it does not - all three can be equatorial together.",
+        "C": "Two axial groups would cost several 1,3-diaxial interactions unnecessarily, since an all-equatorial chair is geometrically available.",
+        "D": "All-axial is the alternative chair reached by flipping, and it is far higher in energy - the least stable arrangement rather than the most."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2378,12 +2426,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understanding cyclohexane ring-flip energetics.",
-      "process": "Chair is the ground state. Half-chair requires severe angle and torsional strain (45 kJ/mol). Twist-boat relieves some eclipsing strain (23 kJ/mol). Boat is a transition state between twist-boats (30 kJ/mol).",
-      "result": "Order of stability: Chair > Twist-Boat > Boat > Half-Chair."
+      "context": "The four cyclohexane conformations split into two kinds. Chair and twist-boat are minima - shapes the molecule rests in - while half-chair and boat are maxima it passes over. The plotted energies distinguish them.",
+      "approach": "Step 1: Read the extremes. The chair is at 0, the reference and global minimum, and the half-chair at 45 kJ/mol is the highest point on the diagram.\nStep 2: Place the twist-boat at 23 kJ/mol. Being a local minimum, it is a genuine conformation with a small population rather than a transition state.\nStep 3: Place the boat at 30 kJ/mol, above the twist-boat. It is a small local maximum sitting between the two twist-boat minima on either side of it.",
+      "note": "Reading a profile means separating minima from maxima, not merely ranking energies. Only the chair and, marginally, the twist-boat can be said to exist as conformations; the half-chair and boat are geometries the molecule passes through and is never found in.",
+      "options": {
+        "A": "Correct. Chair at 0 as the global minimum, half-chair at 45 as the highest transition state, and twist-boat at 23 as a genuine shallow minimum.",
+        "B": "The boat lies about 30 kJ/mol above the chair. Nothing is more stable than the chair.",
+        "C": "The half-chair is the highest point on the diagram, which makes it a transition state rather than an intermediate the molecule can occupy.",
+        "D": "The energies span 45 kJ/mol from chair to half-chair. If they were equal there would be no barrier and no ring flip to describe."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2431,12 +2485,16 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Distinguishing cis/trans isomers in dimethylcyclohexanes.",
-      "process": "Item 1 has both methyls on the same face (wedges/wedges) at 1,3 positions: cis. Item 2 has one wedge and one dash at 1,3: trans. Item 3 has both wedges at 1,2: cis. Item 4 has wedge/dash at 1,2: trans.",
-      "result": "Cis/trans naming depends on whether substituents point to same or opposite faces."
+      "context": "Cis and trans on a ring describe whether two substituents sit on the same face or on opposite faces. Because the ring cannot rotate, that relationship is fixed and gives separable stereoisomers rather than interconverting conformations.",
+      "approach": "Step 1: Locate the two substituted carbons and note their separation - adjacent for 1,2, or one carbon apart for 1,3.\nStep 2: Determine the faces. Two substituents on the same face are cis; on opposite faces, trans.\nStep 3: Cross-check with configurations. In both the 1,2 and 1,3 cases the cis isomer is the meso form, with its two stereocenters opposite in configuration, while the trans isomer is chiral with matching configurations.",
+      "note": "That the cis isomer is meso in both cases is a useful cross-check, but be careful applying it more widely: at 1,4 the substituted carbons are not stereocenters at all, since each carries two identical ring branches, so cis and trans there are diastereomers with no chirality involved.",
+      "options": {
+        "A": "Correct. Each structure's two stereocenters were checked against both their configurations and the geometry of the substituents relative to the ring: the meso pairings are cis and the matching-configuration pairings are trans.",
+        "B": "Read the faces rather than the drawing's orientation. The dependable check is that the cis isomer of a 1,2- or 1,3-dimethylcyclohexane is the meso form, with opposite configurations at its two stereocenters."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   }
 ];
