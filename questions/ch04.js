@@ -1558,12 +1558,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the conformational basis for cyclohexane's stability.",
-      "process": "Step 1: Look down any C-C bond of a chair cyclohexane in a Newman projection.\nStep 2: Observe that all C-H and C-C bonds on adjacent carbons are perfectly staggered.\nStep 3: Staggered bonds have dihedral angles of 60° (gauche or anti), which minimizes electron-electron repulsion between bond orbitals, resulting in zero torsional strain.",
-      "result": "Staggered C-H bonds with 60° dihedral angles eliminate torsional strain."
+      "context": "Torsional strain is measured by the dihedral angle between bonds on adjacent atoms. Zero degrees is fully eclipsed and costly; sixty degrees is fully staggered and costs nothing.",
+      "approach": "Step 1: Look along any carbon-carbon bond of the chair, as though drawing a Newman projection of it.\nStep 2: Read the arrangement. The bonds on the front carbon sit exactly between those on the back carbon - a dihedral angle of about 60 degrees.\nStep 3: That holds for every one of the six ring bonds simultaneously, which is what the chair's particular pucker achieves. With nothing eclipsed anywhere, torsional strain is essentially zero.",
+      "note": "Achieving this at the same time as near-tetrahedral bond angles is the chair's remarkable feature, and it is why six-membered rings are so common. No smaller ring can satisfy both conditions at once, which is why every one of them carries strain.",
+      "options": {
+        "A": "Correct. Every pair of adjacent carbons is perfectly staggered at about 60 degrees, so no bond anywhere in the ring is eclipsed.",
+        "B": "The chair is decidedly not planar. A planar ring would force 120 degree angles and eclipse every bond, which is the opposite of the chair's situation.",
+        "C": "The chair's angles are about 111.5 degrees, close to tetrahedral. Ninety degrees would introduce severe angle strain.",
+        "D": "Rapid ring flipping exchanges axial and equatorial positions, but that motion is a consequence of the low barrier rather than the reason any single chair is strain-free."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1599,13 +1605,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the dynamic path of a ring flip and its energy coordinates.",
-      "process": "Step 1: Starting at the chair, bending one carbon up yields the high-energy transition state, the half-chair.\nStep 2: The half-chair relaxes into a local minimum, the twist-boat.\nStep 3: Bending the other end up yields the boat conformation (a transition state between two twist-boats).\nStep 4: The boat twists to the other twist-boat, which then passes through a second half-chair transition state to relax into the flipped chair.",
-      "result": "The correct sequence is Chair -> Half-Chair -> Twist-Boat -> Boat -> Twist-Boat -> Half-Chair -> Chair."
+      "context": "A ring flip is a journey across an energy landscape with two summits and a shallow valley between them. The order of the conformations follows from their energies: transition states are crossed and minima are rested in.",
+      "approach": "Step 1: Leave the chair, the global minimum. The first obstacle is the half-chair at about 45 kJ/mol, the highest point and therefore the rate-limiting transition state.\nStep 2: Descend into the twist-boat at about 23 kJ/mol, a shallow minimum, then over the boat at about 29 - a small local maximum - and into the second twist-boat.\nStep 3: Cross the second half-chair and descend into the other chair. The path is symmetric about the boat at its midpoint.",
+      "note": "Reading the sequence tells you which species can be observed. Only the chairs, and marginally the twist-boats, are minima that molecules occupy; the half-chairs and the boat are crossed and never populated. That is why the flip is described as a two-barrier process rather than a single hop.",
+      "options": {
+        "A": "Correct. Half-chair and boat are maxima, twist-boat is a shallow minimum, and the path is symmetric about the boat at its centre.",
+        "B": "This places the boat immediately after the chair. The half-chair is the first barrier, and the boat sits at the midpoint of the path rather than near its start.",
+        "C": "This reaches the twist-boat before the half-chair, but the half-chair is the barrier that must be crossed to leave the chair at all.",
+        "D": "This puts the boat before the twist-boat on the descent. The twist-boat is the lower of the two and is reached first, with the boat as the small maximum between the pair."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring."
   },
   {
     "question_id": "ch04_q35_cyclohexane_angle_strain",
@@ -1640,12 +1653,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relationship between bond angle deviation and angle strain in cyclohexane.",
-      "process": "Step 1: The ideal tetrahedral bond angle for sp3-hybridized carbon is 109.5°.\nStep 2: In chair cyclohexane, the angle is 111.5°, representing a deviation of only 2°.\nStep 3: This minor deviation results in a virtually undetectable amount of angle strain (< 1 kJ/mol), which is why cyclohexane is considered essentially free of angle strain.",
-      "result": "An angle of 111.5° is close enough to 109.5° to result in negligible angle strain."
+      "context": "Angle strain grows with the square of the deviation from the ideal angle, so small departures cost very little. The relevant comparison is always against the tetrahedral 109.5 degrees, not against any ring geometry.",
+      "approach": "Step 1: Take the measured value of 111.5 degrees.\nStep 2: Compare it to the tetrahedral ideal of 109.5, giving a deviation of just 2 degrees.\nStep 3: A deviation that small carries negligible energy cost - compare cyclopropane's 60 degree angles, nearly 50 degrees away from ideal, which cost about 115 kJ/mol.",
+      "note": "The angles open slightly beyond tetrahedral rather than closing below it, which is worth noticing: the chair's pucker is chosen to keep every bond staggered, and the small angular opening is the price. Once again the ring optimises the total rather than any single term.",
+      "options": {
+        "A": "Correct. Two degrees from the tetrahedral ideal is a negligible distortion, which is why the chair is treated as free of angle strain.",
+        "B": "The carbons are sp3, with four sigma bonds each and no pi bonds. An sp2 carbon would prefer 120 degrees and be part of a double bond.",
+        "C": "Cyclohexane is a hydrocarbon with no hydrogen bonded to nitrogen, oxygen or fluorine, so it can form no hydrogen bonds at all.",
+        "D": "The angles are not dynamic in that sense, and 90 degrees would be severely strained. The chair holds its angles near 111.5 degrees throughout."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1681,13 +1700,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the structural consequences of a chair-chair interconversion (ring flip) on substituents.",
-      "process": "Step 1: Define the ring flip. A ring flip converts all axial positions to equatorial and all equatorial positions to axial.\nStep 2: Observe the face of the ring. If a substituent is 'up' (pointing above the average plane of the ring), it must remain 'up' after the flip.\nStep 3: Therefore, an 'up-equatorial' substituent becomes 'up-axial', and a 'down-equatorial' substituent becomes 'down-axial'. The relative face (up/down) is conserved.",
-      "result": "The substituent changes from equatorial to axial (or vice versa) but stays on the same face of the ring."
+      "context": "A ring flip changes conformation, not configuration. It rotates about single bonds only, so it can move a substituent between axial and equatorial but can never move it from one face of the ring to the other.",
+      "approach": "Step 1: Note what the flip does to positions. Every carbon that pointed its substituent axially now points it equatorially, and the reverse.\nStep 2: Note what it cannot do. Moving a group from the top face to the bottom would require breaking and remaking a bond, which rotation cannot achieve.\nStep 3: So an equatorial methyl on the upper face becomes an axial methyl still on the upper face. The orientation changes; the face does not.",
+      "note": "This is exactly why cis and trans disubstituted cyclohexanes are separable compounds while axial and equatorial forms are not. The flip interconverts conformations of one molecule; changing faces would produce a different stereoisomer, which the flip cannot reach.",
+      "options": {
+        "A": "Correct. The flip exchanges axial for equatorial while leaving the substituent on the same face of the ring, since only rotations are involved.",
+        "B": "Switching faces would change the configuration, which no amount of bond rotation can do. That would be a different stereoisomer.",
+        "C": "The flip converts every equatorial position to axial. A substituent cannot remain equatorial through a flip, and the carbons themselves do not move.",
+        "D": "No bond breaks during a ring flip. It is a conformational change achieved entirely by rotation about single bonds."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring bearing a single methyl group."
   },
   {
     "question_id": "ch04_q37_a_value_definition",
@@ -1722,13 +1748,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the thermodynamic definition and sign convention of A-values.",
-      "process": "Step 1: A-values are defined as the free energy difference: A-value = G_axial - G_equatorial.\nStep 2: Because placing a group in the equatorial position avoids 1,3-diaxial interactions, G_equatorial is lower than G_axial.\nStep 3: Therefore, G_axial - G_equatorial is positive. A positive A-value means the equatorial conformation is more stable (lower in energy) than the axial conformation.",
-      "result": "A positive A-value indicates that the equatorial conformation is more stable."
+      "context": "The sign convention follows directly from how the quantity is defined. A-value is the free energy change for moving a substituent from equatorial to axial, so its sign says which direction costs energy.",
+      "approach": "Step 1: Read the definition carefully - delta G measured for the equatorial to axial conversion.\nStep 2: A positive delta G means the change is uphill, so going to axial costs energy.\nStep 3: If axial is uphill from equatorial, then equatorial is the lower-energy conformation and the favoured one at equilibrium.",
+      "note": "Every common substituent has a positive A-value, so equatorial is essentially always preferred. What varies is by how much - from a fraction of a kilojoule for a small linear group up to about 21 for tert-butyl, which is enough to lock the ring in one conformation.",
+      "options": {
+        "A": "Correct. A positive delta G for equatorial to axial means axial is uphill, so equatorial is lower in energy and predominates.",
+        "B": "This reverses the sign convention. If axial were the lower-energy form, the A-value defined this way would be negative.",
+        "C": "Equal energies would give an A-value of zero. A positive value is precisely a statement that they differ.",
+        "D": "The A-value compares two conformational minima. It says nothing about the transition state between them, which is the ring-flip barrier."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring bearing a single methyl group."
   },
   {
     "question_id": "ch04_q38_equilibrium_calculation",
@@ -1763,13 +1796,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question applies the thermodynamic equation delta G = -RT * ln(K) to calculate the equilibrium ratio of cyclohexane chair conformers.",
-      "process": "Step 1: Identify the values: delta G° (axial -> equatorial) = -7300 J/mol. Temperature T = 298 K. R = 8.314 J/(mol*K).\nStep 2: Set up the equation: K = exp(-delta G° / RT) = exp(7300 / (8.314 * 298)).\nStep 3: Calculate the exponent: 7300 / 2477.57 = 2.946.\nStep 4: Calculate K: K = exp(2.946) ≈ 19.0.\nStep 5: The ratio is 19:1 equatorial:axial. Expressed as percentages: 19/(19+1) = 95% equatorial, 5% axial.",
-      "result": "The equilibrium ratio is approximately 95% equatorial to 5% axial."
+      "context": "The link between an energy difference and a population ratio is the standard thermodynamic relation, delta G equals minus RT times the natural log of the equilibrium constant. Rearranged, it converts an A-value directly into a conformer ratio.",
+      "approach": "Step 1: Assemble the quantities. Delta G is 7.3 kJ/mol, or 7300 J/mol; R is 8.314 J per mol per kelvin; T is 298 K.\nStep 2: Compute RT: 8.314 times 298 is about 2478 J/mol.\nStep 3: The equilibrium constant favouring equatorial is the exponential of 7300 divided by 2478, which is the exponential of about 2.95, or roughly 19. A ratio of 19 to 1 is about 95 to 5.",
+      "note": "Worth internalising the scale: at room temperature roughly 5.7 kJ/mol buys a ten-to-one preference, and each further 5.7 multiplies it by ten again. That rule of thumb lets you convert any A-value into an approximate population without a calculator.",
+      "options": {
+        "A": "Correct. RT is about 2478 J/mol, so the constant is exp(7300/2478), roughly 19, giving about 95 to 5.",
+        "B": "A one-to-one ratio would require a delta G of zero. An energy difference of 7.3 kJ/mol is far too large for that.",
+        "C": "A three-to-one ratio corresponds to about 2.7 kJ/mol, well below the methyl group's A-value.",
+        "D": "A thousand-to-one ratio would need roughly 17 kJ/mol - closer to a tert-butyl group than a methyl."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring bearing a single methyl group."
   },
   {
     "question_id": "ch04_q39_largest_a_value",
@@ -1804,12 +1844,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relative steric bulk (A-values) of common organic substituents.",
-      "process": "Step 1: Review the A-values (in kJ/mol):\n- tert-Butyl: ~21 kJ/mol (extremely large steric demand)\n- Methyl: ~7.3 kJ/mol\n- Bromine: ~2.0 kJ/mol\n- Cyano: ~0.8 kJ/mol\nStep 2: The tert-butyl group is so bulky that its axial conformation experiences severe steric clash with C3 and C5 axial hydrogens, locking it almost exclusively in the equatorial position.",
-      "result": "The tert-butyl group has the largest A-value."
+      "context": "An A-value measures how badly a substituent suffers in the axial position, where it points directly at the axial hydrogens on the two carbons across the ring. Bulk close to the ring matters most, since that is where the clash occurs.",
+      "approach": "Step 1: Consider what an axial substituent encounters - two 1,3-diaxial hydrogens aimed straight at it.\nStep 2: Compare how much room each candidate needs at the attachment point. tert-Butyl presents three methyl groups immediately around its attaching carbon, so it cannot avoid those hydrogens by rotating.\nStep 3: Methyl is far smaller, and the halogens and cyano group are smaller still in the relevant direction. tert-Butyl's A-value of about 21 kJ/mol is much the largest.",
+      "note": "That value is large enough to be a synthetic tool. A tert-butyl group is effectively locked equatorial, holding the whole ring in one chair, which lets chemists fix a ring's conformation deliberately in order to study how other substituents behave.",
+      "options": {
+        "A": "Correct. Three methyl groups crowded around the attachment carbon cannot rotate out of the way, giving an A-value near 21 kJ/mol.",
+        "B": "Methyl's A-value is about 7.3 kJ/mol - significant, but roughly a third of tert-butyl's.",
+        "C": "Halogen A-values are small, around 1 to 2.3 kJ/mol, because a single atom on a long bond sits well away from the ring.",
+        "D": "The cyano group is unusually small at about 0.8 kJ/mol, since its linear shape points it away from the 1,3-diaxial hydrogens."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1845,13 +1891,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question correlates the steric strain in cyclohexane chairs to acyclic alkane conformations (butane).",
-      "process": "Step 1: Trace the carbon path in axial methylcyclohexane. The methyl carbon (C_methyl), C1, C2, and C3 form a four-carbon butane unit.\nStep 2: In the axial conformation, the dihedral angle between C_methyl and C3 is 60°, which matches a gauche relationship in butane (3.8 kJ/mol of strain).\nStep 3: Trace the other pathway: C_methyl, C1, C6, and C5 also form a butane unit with a 60° dihedral angle (another gauche interaction).\nStep 4: Thus, the axial methyl group is destabilized by two gauche-butane interactions (2 * 3.8 kJ/mol = 7.6 kJ/mol, which is very close to the measured A-value of 7.3 kJ/mol).",
-      "result": "An axial methyl group experiences steric strain equivalent to two gauche-butane interactions."
+      "context": "The 1,3-diaxial interaction is not a new kind of strain. It is the gauche interaction from open-chain conformational analysis, appearing in a ring where the geometry holds it in place.",
+      "approach": "Step 1: Take an axial methyl and follow the chain of carbons through the ring to one of the axial hydrogens three positions away.\nStep 2: Sight along the relevant carbon-carbon bond. The methyl and that part of the ring are found at a dihedral angle of about 60 degrees - the gauche relationship.\nStep 3: The same holds for the axial hydrogen on the other side, so an axial methyl experiences two such interactions, one on each flank.",
+      "note": "The arithmetic confirms the identification. A single gauche-butane interaction costs about 3.8 kJ/mol, and two of them come to 7.6 - almost exactly methyl's measured A-value of 7.3. The ring is not introducing new physics, only holding an already familiar interaction in a fixed geometry.",
+      "options": {
+        "A": "Correct. Each 1,3-diaxial contact is a gauche-butane relationship, and two of them at about 3.8 kJ/mol each account for methyl's A-value of 7.3.",
+        "B": "Anti is the relaxed 180 degree arrangement and costs nothing. If the interactions were anti there would be no axial penalty at all.",
+        "C": "Eclipsing would require a dihedral angle near zero. The chair is fully staggered everywhere, so nothing in it is eclipsed.",
+        "D": "Both flanks are equivalent by the ring's symmetry, so the two interactions are the same. One cannot be gauche and the other anti."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring bearing a single methyl group."
   },
   {
     "question_id": "ch04_q41_cyano_small_a_value",
@@ -1886,13 +1939,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the impact of substituent geometry (hybridization and shape) on steric strain in chair conformations.",
-      "process": "Step 1: Consider the structure of the cyano group: -C≡N. Both the carbon and nitrogen are sp-hybridized.\nStep 2: This hybridization dictates a linear geometry (180° bond angle).\nStep 3: When in the axial position, the cyano group is oriented vertically, pointing straight away from the ring. This narrow, linear shape prevents it from projecting over the ring toward the C3 and C5 axial hydrogens, resulting in very little steric clash.",
-      "result": "The linear geometry of the cyano group minimizes 1,3-diaxial interactions, resulting in a very low A-value."
+      "context": "Steric bulk is directional. What matters for an axial substituent is not the group's total size but how much of it lies in the path of the two 1,3-diaxial hydrogens, close to the ring.",
+      "approach": "Step 1: Establish the geometry of the group. The cyano carbon is sp hybridized, so the C-C-N unit is perfectly linear.\nStep 2: Consider where that puts the atoms. Attached axially, the group projects straight up along the axis, with the nitrogen furthest away and nothing splayed out to the sides.\nStep 3: The 1,3-diaxial hydrogens point up alongside it rather than into it, so there is almost nothing to clash with. The A-value is accordingly tiny at about 0.8 kJ/mol.",
+      "note": "Compare a methyl group, which has the same one heavy atom at the attachment point but carries three hydrogens splayed outward at tetrahedral angles - and an A-value nine times larger. Shape governs the axial penalty far more than atom count or molecular weight does.",
+      "options": {
+        "A": "Correct. The linear sp geometry projects the group straight along the axial direction, so it presents almost no width where the diaxial hydrogens are.",
+        "B": "A hydrogen bond needs a hydrogen on nitrogen, oxygen or fluorine. The relevant hydrogens here are on carbon and cannot donate one.",
+        "C": "The A-value is a thermodynamic property of a stable molecule at equilibrium. No reaction with solvent is involved.",
+        "D": "Every atom has a finite van der Waals radius. The cyano group's small penalty comes from its shape and orientation, not from having no size."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring bearing a carbon triple bonded to a nitrogen."
   },
   {
     "question_id": "ch04_q42_halogen_a_value_trend",
@@ -1927,13 +1987,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question addresses the counter-intuitive trend in halogen A-values by looking at bond length effects.",
-      "process": "Step 1: Identify two competing factors as you go down Group 17: atomic radius increases (increases steric size), and C-X bond length increases (moves the atom further from the ring).\nStep 2: From Cl to Br to I, the bond length increases significantly (C-Cl = 1.78 Å, C-Br = 1.93 Å, C-I = 2.14 Å).\nStep 3: The longer C-I bond places the bulky iodine atom far enough away from the axial hydrogens on C3 and C5 to decrease the steric overlap, resulting in a slightly lower A-value for iodine than for chlorine or bromine.",
-      "result": "The longer C-I bond length projects the iodine atom further away from the ring, reducing steric clash."
+      "context": "Steric strain depends on the distance between the atoms involved, not on atomic size alone. A larger atom held further away can interfere less than a smaller one held close.",
+      "approach": "Step 1: Note the two competing factors as the halogen group is descended - the atom's van der Waals radius grows, but so does the carbon-halogen bond length.\nStep 2: Compare the magnitudes. From chlorine to iodine the bond lengthens from about 1.79 to 2.14 angstroms, a substantial increase.\nStep 3: That extra length carries the iodine further from the 1,3-diaxial hydrogens, and the increased distance more than offsets its greater bulk. The A-value therefore peaks at bromine and falls slightly for iodine.",
+      "note": "This is why the halogen A-values are so tightly bunched, from 0.25 to 0.55 kcal/mol, when the atoms themselves differ enormously in size. Two opposing trends nearly cancel, which is a reminder that steric arguments need geometry and not just a size ranking.",
+      "options": {
+        "A": "Correct. The C-I bond is long enough to carry the iodine clear of the diaxial hydrogens, outweighing its larger radius.",
+        "B": "Dispersion forces are attractive and would lower the axial energy, but they are far too weak to account for the trend and would not explain the peak at bromine.",
+        "C": "Electronegativity governs bond polarity, not steric bulk. A-values measure how much room a group needs, which is a geometric question.",
+        "D": "Iodocyclohexane is a stable, isolable compound. Its C-I bond is the weakest of the carbon-halogen series but does not cleave spontaneously at room temperature."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring bearing an iodine atom."
   },
   {
     "question_id": "ch04_q43_trans_12_dimethyl_chair",
