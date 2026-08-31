@@ -555,13 +555,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Explain the inductive effect on carboxylic acid acidity.",
-      "process": "Step 1: Analyze the conjugate bases: acetate ($CH_3COO^-$) vs. trifluoroacetate ($CF_3COO^-$).\nStep 2: Fluorine is highly electronegative. The three fluorine atoms in the $CF_3$ group pull electron density toward themselves through the $\\sigma$-bond framework (inductive effect).\nStep 3: This electron withdrawal disperses the negative charge on the carboxylate oxygens, stabilizing the trifluoroacetate conjugate base and making trifluoroacetic acid a much stronger acid.",
-      "result": "The correct choice is A."
+      "context": "Acid strength is decided by the stability of the conjugate base. Anything that spreads out or withdraws the negative charge left behind makes that anion more stable and the parent acid stronger.",
+      "approach": "Step 1: Compare the conjugate bases rather than the acids. Both give a carboxylate anion with the charge delocalized over two oxygens.\nStep 2: Look at what differs. Trifluoroacetate carries three highly electronegative fluorines two atoms away from that charge.\nStep 3: Those fluorines pull electron density toward themselves along the sigma bonds - an inductive effect - which drains some of the excess charge away from the carboxylate and stabilises it. A more stable conjugate base means a stronger acid, and the pKa falls from 4.75 to 0.23.",
+      "note": "Induction falls off sharply with distance, roughly by a factor of a few per bond. Move the fluorines further from the carboxyl group and the effect largely disappears, which is why 2-fluorobutanoic acid is far more acidic than the 4-fluoro isomer.",
+      "options": {
+        "A": "Correct. The fluorines withdraw electron density through the sigma framework, stabilising the carboxylate's negative charge and making the acid stronger.",
+        "B": "Both anions have the same two-oxygen carboxylate delocalization; the fluorines add no new resonance contributor. The difference here is inductive, transmitted through sigma bonds rather than pi.",
+        "C": "C-F bonds are among the strongest in organic chemistry and do not ionise in water. If they did, the species would no longer be trifluoroacetic acid.",
+        "D": "Fluorine is the most electronegative element and holds its lone pairs tightly, making it a very poor electron-pair donor. Here it withdraws electron density rather than donating it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A carbon bearing three fluorine atoms, bonded to a second carbon that carries a double-bonded oxygen and a hydroxyl group."
   },
   {
     "question_id": "ch02_q13_hybridization_acidity",
@@ -596,13 +603,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Analyze hybridization effects on carbanion stability and C-H bond acidity.",
-      "process": "Step 1: Check hybridization of the carbons. Ethane ($sp^3$), ethylene ($sp^2$), acetylene ($sp$).\nStep 2: Acidity depends on the stability of the conjugate base carbanion. A carbanion holds its lone pair in a hybrid orbital.\nStep 3: $sp$ hybrid orbitals have 50% $s$-character. Because $s$-orbitals are closer to the nucleus, the lone pair in an $sp$ orbital is held closer to the carbon nucleus, making it more stable than a lone pair in $sp^2$ (33% $s$) or $sp^3$ (25% $s$) orbitals.",
-      "result": "Acetylene is the most acidic hydrocarbon."
+      "context": "Removing a proton from a hydrocarbon leaves a carbanion, and the lone pair sits in whatever orbital the carbon was using for that bond. The more s character that orbital has, the closer the lone pair is held to the nucleus and the more stable the anion.",
+      "approach": "Step 1: Assign the hybridization at the carbon losing the proton. Acetylene's is sp, ethylene's and propene's vinyl carbons are sp2, and ethane's is sp3.\nStep 2: Rank by s character: sp is 50 percent, sp2 is 33, sp3 is 25.\nStep 3: More s character means the resulting lone pair is held closer to the nucleus and is more stable, so the corresponding acid is stronger. Acetylene, at pKa 25, is by far the most acidic of the four.",
+      "note": "Even the strongest of these is an extraordinarily weak acid - at pKa 25 acetylene is still around ten billion times weaker than ethanol. The comparison matters not because alkynes are acidic in absolute terms but because a strong enough base, such as sodium amide, can deprotonate one and make a carbon nucleophile, as Chapter 9 does.",
+      "options": {
+        "A": "Correct. The terminal carbon is sp with 50 percent s character, which holds the resulting lone pair closest to the nucleus and stabilises the anion best.",
+        "B": "Ethylene's vinyl carbon is sp2 with 33 percent s character. That stabilises the anion better than an sp3 carbon would, but far less than acetylene's sp carbon, and its pKa of 44 reflects it.",
+        "C": "Ethane's carbons are sp3, the lowest s character of the set, giving the least stabilised anion and a pKa of 50 - the weakest acid here.",
+        "D": "Propene's pKa of 43 refers to its vinyl positions, which are sp2 like ethylene's. Its allylic hydrogens are more acidic than an alkane's through resonance, but neither position approaches acetylene."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two carbon atoms joined by a single bond, each carrying three hydrogen atoms."
   },
   {
     "question_id": "ch02_q14_resonance_acidity_alcohol_phenol",
@@ -637,13 +651,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Evaluate resonance stabilization in the phenoxide ion compared to cyclohexoxide.",
-      "process": "Step 1: Cyclohexoxide ($C_6H_{11}O^-$) has its negative charge localized entirely on the oxygen atom.\nStep 2: Phenoxide ($C_6H_5O^-$) can delocalize its negative charge into the benzene ring via resonance ($C-O^-$ double bond character, negative charges on ortho and para positions of the ring).\nStep 3: Delocalizing the charge over a larger area stabilizes the phenoxide conjugate base, lowering the energy barrier to deprotonation for phenol.",
-      "result": "Resonance delocalization stabilizes phenoxide, making phenol more acidic."
+      "context": "Where induction spreads charge through sigma bonds, resonance spreads it through a pi system - and resonance is usually the larger effect. A conjugate base whose charge is delocalized over several atoms is far more stable than one holding it on a single atom.",
+      "approach": "Step 1: Compare the conjugate bases. Cyclohexoxide keeps its negative charge localized on one oxygen, with only sp3 carbons around it and no pi system to share with.\nStep 2: Phenoxide's oxygen is attached directly to an aromatic ring, so its lone pair can enter the ring's pi system.\nStep 3: The charge delocalizes onto the ortho and para ring carbons as well as the oxygen, spreading it over four atoms. That extra stabilisation lowers phenol's pKa to 10 against cyclohexanol's 16 - a million-fold difference in acidity.",
+      "note": "The delocalization also predicts where phenoxide reacts. Negative charge accumulates at the ortho and para carbons, which is why phenols undergo electrophilic substitution at exactly those positions, as Chapter 16 works out in detail.",
+      "options": {
+        "A": "Correct. Phenoxide's charge delocalizes into the aromatic ring, reaching the ortho and para carbons, which stabilises it far more than the localized charge on cyclohexoxide.",
+        "B": "Both molecules are cyclic - cyclohexanol has a six-membered ring too. What matters is that phenol's ring is aromatic and conjugated with the oxygen, while cyclohexanol's is saturated.",
+        "C": "Neither molecule can hydrogen bond to itself in any way that would hold the proton; both have a single OH group with nothing suitably placed to accept from it.",
+        "D": "It is the same element in both molecules, with the same electronegativity. The difference lies in what happens to the charge after the proton leaves, not in the oxygen itself."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A benzene ring bearing a hydroxyl group."
   },
   {
     "question_id": "ch02_q15_noncovalent_forces",
@@ -678,13 +699,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Examine structural isomers and how they differ in hydrogen bonding capabilities.",
-      "process": "Step 1: Ethanol ($CH_3CH_2OH$) has a hydrogen atom bonded directly to a highly electronegative oxygen atom.\nStep 2: Dimethyl ether ($CH_3OCH_3$) has no hydrogens attached to oxygen (only C-H bonds).\nStep 3: Ethanol molecules can form strong intermolecular hydrogen bonds (O-H...O), which require substantial thermal energy to break. Dimethyl ether can only interact via weaker dipole-dipole forces.",
-      "result": "Hydrogen bonding accounts for ethanol's higher boiling point."
+      "context": "Boiling requires separating molecules from one another, so boiling point tracks the strength of the intermolecular forces holding them together. Comparing two compounds with the same formula isolates the effect of structure from the effect of size.",
+      "approach": "Step 1: Note what the two share. Identical molecular formulas mean essentially identical molecular masses and comparable dispersion forces, so neither of those explains a hundred-degree gap.\nStep 2: Look for a hydrogen bond donor - a hydrogen attached directly to nitrogen, oxygen or fluorine. Ethanol has an O-H; dimethyl ether has its hydrogens on carbon only.\nStep 3: Ethanol molecules can therefore hydrogen bond to each other, while dimethyl ether can only accept, not donate. Breaking that network costs far more energy, which is the whole gap.",
+      "note": "The requirement is a donor, not just an oxygen. Dimethyl ether has lone pairs and can accept a hydrogen bond from water, which is why it is appreciably water-soluble despite boiling so low - solubility and boiling point are asking different questions.",
+      "options": {
+        "A": "Correct. Ethanol's O-H lets its molecules hydrogen bond to one another; dimethyl ether has no O-H and cannot, which accounts for the hundred-degree difference.",
+        "B": "Dispersion forces scale with size and polarizability, and these two compounds have the same formula and nearly the same mass. That leaves dispersion almost identical between them.",
+        "C": "Both molecules are polar and both experience dipole-dipole attraction; dimethyl ether is actually the more polar of the two. Ordinary dipole-dipole forces are far too weak to explain this gap.",
+        "D": "Ion-dipole forces need an ion. Neither compound is ionic, and none is present in either pure liquid."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A two-carbon chain ending in a hydroxyl group."
   },
   {
     "question_id": "ch02_q16_electronegativity_diffs",
@@ -719,12 +747,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Assign partial charges based on electronegativities of carbon and nitrogen.",
-      "process": "Step 1: EN of C = 2.5, EN of N = 3.0.\nStep 2: Nitrogen is more electronegative, drawing bonding electrons to itself.\nStep 3: Carbon becomes electron-deficient ($\\delta^+$), while nitrogen gains excess electron density ($\\delta^-$).",
-      "result": "Carbon is $\\delta^+$, nitrogen is $\\delta^-$."
+      "context": "In any polar bond the more electronegative atom takes the partial negative charge and its partner the partial positive. Assigning the two is a matter of comparing the atoms on the electronegativity scale.",
+      "approach": "Step 1: Look up the two values: nitrogen is about 3.0 and carbon about 2.5.\nStep 2: Nitrogen is the higher of the two, so it pulls the shared electrons toward itself.\nStep 3: Nitrogen therefore carries the partial negative charge and carbon the partial positive.",
+      "note": "This polarity is the reason amines behave as they do. Nitrogen's lone pair plus its share of the bonding electrons makes it electron rich, so it acts as the nucleophile and base, while the carbon attached to it is the electrophilic site.",
+      "options": {
+        "A": "Correct. Nitrogen is the more electronegative at about 3.0 against carbon's 2.5, so nitrogen is partially negative and carbon partially positive.",
+        "B": "This reverses the two. Nitrogen sits further right in the second period than carbon and so is the more electronegative.",
+        "C": "A difference of about 0.5 is enough to make the bond distinctly polar. Only a bond between identical atoms carries no partial charges.",
+        "D": "An ionic bond requires an electronegativity difference large enough for complete transfer, typically around 2.0 or more. At 0.5 this bond is polar covalent."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -760,12 +794,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understand polarity in organometallic bonds.",
-      "process": "Step 1: Electronegativity of carbon is 2.5.\nStep 2: In bonds with non-metals (O=3.5, Cl=3.0, F=4.0), carbon has a lower electronegativity and is partially positive ($\\delta^+$).\nStep 3: In organometallic bonds like C-Li, lithium has a very low electronegativity (EN = 1.0). Carbon is much more electronegative here, drawing electrons toward itself and taking a partial negative charge ($\\delta^-$).",
-      "result": "In C-Li, carbon is partially negative."
+      "context": "Carbon sits mid-scale at about 2.5, so whether it is the partially positive or the partially negative partner depends entirely on what it is bonded to. Bonded to a more electronegative element it is positive; bonded to a metal it is negative.",
+      "approach": "Step 1: Place carbon's electronegativity at about 2.5.\nStep 2: Compare each partner. Oxygen at 3.4, fluorine at 4.0 and chlorine at 3.0 are all higher, so in those bonds carbon is the partially positive partner.\nStep 3: Lithium is a metal at about 1.0, well below carbon. In a C-Li bond the electrons are drawn toward carbon, making it the partially negative one.",
+      "note": "That reversal is the entire point of organometallic reagents. A carbon made nucleophilic by an attached metal will attack a carbonyl carbon made electrophilic by its oxygen - the polarity reversal that Grignard and organolithium chemistry exploits to build carbon-carbon bonds.",
+      "options": {
+        "A": "Correct. Lithium is far less electronegative than carbon, so the bonding electrons shift toward carbon and make it the partially negative, nucleophilic partner.",
+        "B": "Oxygen is considerably more electronegative than carbon, so in methanol the carbon is partially positive and the oxygen partially negative.",
+        "C": "Chlorine is more electronegative than carbon, making the carbon of chloromethane partially positive - which is why it is attacked by nucleophiles.",
+        "D": "Fluorine is the most electronegative element of all, so a C-F bond leaves carbon strongly partially positive, the opposite of what the question asks for."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -801,12 +841,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Apply vector summation to geometric isomers.",
-      "process": "Step 1: Both isomers contain two polar C-Cl bonds.\nStep 2: In the *cis* isomer, both chlorine atoms are on the same side of the double bond. The dipole vectors add up constructively, yielding a net dipole.\nStep 3: In the *trans* isomer, the chlorines are on opposite sides. The vectors are antiparallel, canceling each other out perfectly.",
-      "result": "The correct choice is A."
+      "context": "Because bond dipoles are vectors, geometry decides whether they reinforce or cancel. Two isomers with identical bonds can have completely different net dipoles purely because those bonds point differently in space.",
+      "approach": "Step 1: Note that both isomers contain the same two polar C-Cl bonds, so the individual bond dipoles are identical in magnitude.\nStep 2: Consider the trans arrangement, with the chlorines on opposite sides of the double bond. The two dipole vectors point in exactly opposite directions along the same line.\nStep 3: Equal and opposite vectors sum to zero, so trans has no net moment. In the cis isomer both chlorines are on the same side, so their dipoles have a common component that adds rather than cancels, leaving 1.9 D.",
+      "note": "This is a genuinely useful measurement: a dipole moment distinguishes cis from trans without any spectroscopy at all. It works because the double bond prevents rotation, so the two arrangements are separable compounds rather than interconverting conformations.",
+      "options": {
+        "A": "Correct. The trans chlorines lie on opposite sides, so their equal bond dipoles point in exactly opposite directions and cancel to zero.",
+        "B": "Both isomers are planar - the double bond enforces it, with all six atoms in one plane. Planarity is not what differs between them.",
+        "C": "Chlorine's electronegativity is a property of the element and does not change between isomers. Both molecules have identically polar C-Cl bonds.",
+        "D": "Neither isomer ionises. Both are neutral covalent molecules; the difference is purely in the direction their bond dipoles point."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -842,12 +888,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify resonance conjugation in carboxylic acid anions.",
-      "process": "Step 1: Saturated alkoxides like ethoxide, cyclohexoxide, and tert-butoxide have negative charges isolated on a single oxygen with no adjacent $\\pi$ bonds.\nStep 2: Acetate ($CH_3COO^-$) has the negative oxygen adjacent to a C=O double bond.\nStep 3: This allows the negative charge to delocalize over both oxygen atoms ($O-C=O \\leftrightarrow O=C-O^-$), providing significant resonance stabilization.",
-      "result": "Acetate is stabilized by resonance."
+      "context": "Resonance stabilization requires the charge-bearing atom to be adjacent to a pi system it can delocalize into. An anion sitting on an oxygen with only sp3 carbons around it has nowhere for the charge to go.",
+      "approach": "Step 1: Look at each anion's oxygen and ask what is attached to it.\nStep 2: Three of the four - ethoxide, cyclohexoxide and tert-butoxide - have the oxygen bonded to a saturated sp3 carbon. There is no pi system, so the charge stays put on the oxygen.\nStep 3: Acetate's oxygen is attached to a carbonyl carbon. The negative charge delocalizes across both oxygens through that pi system, making the two carbon-oxygen bonds identical and the anion much more stable.",
+      "note": "The consequence shows up in the pKa values: acetic acid is around 4.75 while the three alcohols are near 16 to 18. Roughly twelve orders of magnitude in acidity comes from that one delocalization, which is why carboxylic acids are called acids at all and alcohols are not.",
+      "options": {
+        "A": "Correct. The negative charge is delocalized over both oxygens through the carbonyl pi system, making the two C-O bonds equivalent and the anion strongly stabilised.",
+        "B": "Ethoxide's oxygen is attached to a saturated carbon with no adjacent pi system, so the charge remains localized on the single oxygen.",
+        "C": "Cyclohexoxide's ring is fully saturated. Being cyclic offers no delocalization; that requires a conjugated pi system, which this ring does not have.",
+        "D": "tert-Butoxide's charge is localized on the oxygen. The three methyl groups make it bulky and slightly destabilised inductively, but they provide no resonance."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -883,13 +935,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Distinguish between major, minor, and invalid resonance structures.",
-      "process": "Step 1: Major contributors minimize formal charges and maximize covalent bonds.\nStep 2: Structures showing charge separation (e.g. $CH_3-C^+(O^-)O^-$) are minor contributors because they contain more charges and fewer covalent bonds.\nStep 3: Moving nuclei or breaking $\\sigma$ bonds results in invalid resonance structures.",
-      "result": "The structure with charge separation is a minor contributor."
+      "context": "A minor contributor must still be a legal Lewis structure - same atomic positions, same electron count, no second-row atom above an octet - but it is higher in energy, typically because it separates charge or leaves an incomplete octet. An illegal structure is not a minor contributor; it is not a contributor at all.",
+      "approach": "Step 1: Establish the major contributors. Acetate has two equivalent ones, each with the double bond to one oxygen and the negative charge on the other.\nStep 2: Rule out the illegal candidates. Moving the charge to the methyl carbon would mean shifting a sigma bond, breaking a C-C sigma bond is not something resonance may do, and a pentavalent carbon cannot exist at all.\nStep 3: What remains is a charge-separated structure, reached by pushing the carbonyl pi electrons entirely onto their oxygen. That leaves the carbon positive with an incomplete octet and additional negative charge on oxygen - legal, but much higher in energy, so it is a genuine minor contributor.",
+      "note": "The wording of this option is loose: pushing the pi bond onto its oxygen gives a positive carbon with a negative charge on each oxygen, not a single doubly charged oxygen. The point being tested is sound - charge separation makes a contributor minor - but read it as describing a charge-separated structure rather than as a precise formula.",
+      "options": {
+        "A": "Correct as the intended answer, and the only legal structure offered. Pushing the carbonyl pi electrons onto oxygen separates charge and leaves the carbon short of an octet, which is exactly what makes a contributor minor.",
+        "B": "Moving the charge to the methyl carbon would require relocating a sigma bond or a hydrogen. Resonance moves only pi electrons and lone pairs, so this is not a contributor at all.",
+        "C": "Breaking a sigma bond changes the molecular skeleton. All contributors to one hybrid share the same sigma framework, so this is illegal rather than merely minor.",
+        "D": "Carbon has only four valence orbitals and cannot form five bonds. This structure cannot be drawn, so it is not a high-energy contributor - it is no contributor."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A methyl group bonded to a carbon that carries a double-bonded oxygen and a single-bonded oxygen bearing a negative charge."
   },
   {
     "question_id": "ch02_q21_pka_scale_conversion",
@@ -924,12 +983,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Perform a standard logarithmic conversion to find $pK_a$.",
-      "process": "Step 1: Formula: $pK_a = -log_{10}(K_a)$.\nStep 2: Substitute $K_a = 10^{-5}$: $pK_a = -log_{10}(10^{-5})$.\nStep 3: This simplifies to $-(-5) = 5$.",
-      "result": "The pKa is 5."
+      "context": "pKa is defined as the negative base-ten logarithm of Ka. When Ka is written as a clean power of ten the conversion needs no calculator - the exponent carries the whole answer.",
+      "approach": "Step 1: Write down the definition: pKa equals minus log of Ka.\nStep 2: Substitute the value given, so pKa equals minus log of ten to the minus five.\nStep 3: The log of ten to any power is that power, so log of ten to the minus five is minus five. Negating it gives pKa equal to 5.",
+      "note": "Reading the exponent directly is worth practising, because most pKa values you will use are quoted rather than calculated. The useful skill is the reverse direction: a pKa of 5 means a Ka of ten to the minus five, and a pKa four units lower means a Ka ten thousand times larger.",
+      "options": {
+        "A": "Correct. The negative log of ten to the minus five is 5, so the pKa is 5.",
+        "B": "This drops the negative sign in the definition. pKa is minus the log of Ka, and a negative exponent therefore gives a positive pKa.",
+        "C": "This looks like the exponent has been doubled or the base confused. Taking the log of ten to the minus five gives minus five, not minus ten.",
+        "D": "This appears to come from manipulating the exponent arithmetically rather than taking a logarithm. The log of a power of ten is simply that power."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -965,12 +1030,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Relate equilibrium constants to differences in $pK_a$ values.",
-      "process": "Step 1: The equation for the equilibrium constant is: $K_{eq} = 10^{\\Delta pK_a}$, where $\\Delta pK_a = pK_a(product \\ acid) - pK_a(reactant \\ acid)$.\nStep 2: Reactant acid is $H-A$ ($pK_a = 5$). Product acid is $H-B$ ($pK_a = 9$).\nStep 3: $\\Delta pK_a = 9 - 5 = 4$. So, $K_{eq} = 10^4$.",
-      "result": "The equilibrium constant is $10^4$ (favoring products)."
+      "context": "For a proton transfer, the equilibrium constant is the ratio of the two acid dissociation constants: the acid on the left divided by the acid formed on the right. Expressed in pKa terms that ratio becomes a difference of exponents.",
+      "approach": "Step 1: Identify the acid on each side. H-A with pKa 5 is the acid on the left; H-B with pKa 9 is the acid formed on the right.\nStep 2: Write Keq as Ka of H-A divided by Ka of H-B, which is ten to the minus five divided by ten to the minus nine.\nStep 3: Subtracting exponents gives ten to the power minus five minus minus nine, which is ten to the fourth. Equivalently, Keq is ten raised to the difference pKa of the product acid minus pKa of the reactant acid, or 9 minus 5.",
+      "note": "A Keq of ten thousand means the reaction is essentially complete, and the shortcut generalises: each pKa unit of difference is a factor of ten. A gap of three or more units in the favourable direction is enough to treat a proton transfer as going to completion.",
+      "options": {
+        "A": "Correct. Keq is ten raised to the difference in pKa, here 9 minus 5, giving ten to the fourth and a strongly product-favoured equilibrium.",
+        "B": "This is the reciprocal, obtained by subtracting the pKa values in the wrong order. The stronger acid is on the left here, so the products are favoured and Keq exceeds one.",
+        "C": "This looks like the two pKa values were added rather than subtracted. Dividing the two Ka values subtracts their exponents.",
+        "D": "Four is the difference in pKa, not the equilibrium constant itself. That difference is the exponent: Keq is ten to the fourth."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
