@@ -403,13 +403,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify the hybridization of the terminal carbons in allene.",
-      "process": "Step 1: Check the terminal carbons (C1 and C3). Each is bonded to two hydrogens and the central carbon. Total steric groups = 3.\nStep 2: Steric number 3 indicates $sp^2$ hybridization.\nStep 3: This allows them to have one unhybridized $p$ orbital to form a double bond with the central carbon.",
-      "result": "The terminal carbons are $sp^2$ hybridized."
+      "context": "Hybridization follows from the number of groups a carbon must point at, not from how many bonds it has. Count sigma bonds plus lone pairs on the atom in question; each of those needs its own hybrid orbital, and the pi bonds are left over, built from unhybridized p orbitals.",
+      "approach": "Step 1: Pick the atom the question actually asks about. Allene has two different kinds of carbon, and the terminal ones are asked here.\nStep 2: Count what a terminal carbon points at: two C-H sigma bonds and one C-C sigma bond to the central carbon. That is three sigma bonds and no lone pairs, so three hybrid orbitals are needed.\nStep 3: Three hybrid orbitals means one s and two p combine: sp2, trigonal planar, roughly 120 degrees. The one leftover p orbital forms the pi half of the double bond.",
+      "note": "The central carbon is the sp one: it points at only two things, so it is linear. That difference has a consequence McMurry returns to in Chapter 5. Because the central carbon uses two perpendicular p orbitals for its two pi bonds, the two terminal CH2 groups lie in perpendicular planes. Give the ends different substituents and the molecule becomes chiral with no stereocenter at all.",
+      "options": {
+        "A": "Correct. A terminal carbon points at three things - two hydrogens and the central carbon - so it needs three hybrid orbitals and is sp2. Its remaining p orbital makes the pi bond.",
+        "B": "This is the hybridization of the central carbon, not the terminal ones. The middle carbon points at only two atoms, so it is sp and linear. Read which carbon the question names before counting.",
+        "C": "sp3 would mean four sigma bonds or lone pairs, which is what a saturated carbon has. A terminal allene carbon has only three sigma bonds, and it must keep one p orbital unhybridized to make the double bond at all.",
+        "D": "Carbon cannot be sp3d. Expanding past an octet requires d orbitals in the valence shell, and a period 2 element has only 2s and 2p available. This option is impossible for any carbon, in any molecule."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A chain of three carbons drawn with two adjacent double bonds, C=C=C, with two hydrogen atoms on each of the end carbons and none on the middle carbon."
   },
   {
     "question_id": "ch01_q11_lone_pair_effect",
@@ -690,13 +697,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify bond counts in acetylene.",
-      "process": "Step 1: There are 2 C-H single bonds (2 $\\sigma$).\nStep 2: There is 1 C#C triple bond (1 $\\sigma$ + 2 $\\pi$).\nStep 3: Total: 3 $\\sigma$ and 2 $\\pi$ bonds.",
-      "result": "Acetylene contains 3 $\\sigma$ and 2 $\\pi$ bonds."
+      "context": "The first bond between any two atoms is always a sigma bond, formed by head-on orbital overlap. Every additional bond in the same pair is a pi bond, formed by sideways overlap of parallel p orbitals. So a double bond is one sigma and one pi, and a triple bond is one sigma and two pi.",
+      "approach": "Step 1: Count the C-H bonds. Acetylene has two hydrogens, each held by a single bond, giving two sigma bonds.\nStep 2: Take the carbon-carbon triple bond apart. The first of those three is sigma; the other two are pi.\nStep 3: Add them. Sigma: two C-H plus one C-C, so three. Pi: the two remaining in the triple bond.",
+      "note": "This counting rule never changes, so it is worth internalising now: a molecule's sigma count equals its number of connections, and its pi count equals the number of bonds beyond the first in each pair. It is also why sigma bonds allow free rotation and pi bonds do not - sideways overlap is lost the moment you twist, which becomes the whole basis of cis-trans isomerism in Chapter 7.",
+      "options": {
+        "A": "Correct. Two C-H sigma bonds plus one C-C sigma bond makes three sigma; the two extra bonds in the triple bond are the two pi.",
+        "B": "The counts are the right pair of numbers but swapped. Sigma bonds must at least equal the number of connected atom pairs, and acetylene has three such pairs - two C-H and one C-C - so sigma cannot be fewer than three.",
+        "C": "This counts four sigma bonds, but acetylene has only three connections in total. It is the answer you get by treating the triple bond as though it contributed two sigma bonds; only ever one bond per pair of atoms is sigma.",
+        "D": "This treats the carbon-carbon bond as a double rather than a triple, giving one pi instead of two. The sigma count of three is right, but a triple bond always carries two pi bonds."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two carbon atoms joined by a triple bond, drawn as three parallel lines, with one hydrogen attached to each carbon."
   },
   {
     "question_id": "ch01_q18_sigma_pi_acrylonitrile",
@@ -1018,13 +1032,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Evaluate the MO diagram of ethylene.",
-      "process": "Step 1: Two $p$ orbitals combine to form two $\\pi$ MOs: $\\psi_1$ (bonding, lower energy) and $\\psi_2^*$ (antibonding, higher energy).\nStep 2: Ethylene has two $\\pi$ electrons. In the ground state, both reside in $\\psi_1$.\nStep 3: Therefore, $\\psi_1$ is the HOMO. It has constructive side-to-side overlap with zero nodes between the carbon nuclei.",
-      "result": "The HOMO is the bonding $\\pi$ orbital ($\\psi_1$) with zero vertical nodes."
+      "context": "Combining two atomic orbitals always produces two molecular orbitals: one bonding, lower in energy than the originals, and one antibonding, higher. In ethylene the two carbon p orbitals combine into a pi and a pi-star. The molecule's two pi electrons fill the lower one, so pi is the highest orbital that actually contains electrons.",
+      "approach": "Step 1: Count the orbitals in the pi system. Two parallel p orbitals, one per carbon, give exactly two molecular orbitals.\nStep 2: Assign their character by nodes. In-phase combination gives pi, bonding, with electron density spread between the carbons and no node there. Out-of-phase gives pi-star, antibonding, with one node cutting between them.\nStep 3: Fill with the available electrons. A double bond supplies two pi electrons, which pair up in the lower orbital. That fills pi and leaves pi-star empty, so pi is the HOMO and pi-star is the LUMO.",
+      "note": "This is not bookkeeping for its own sake. The HOMO is where a molecule keeps its most available electrons, so it is the electron pair the molecule donates - which is exactly why an alkene behaves as a nucleophile and attacks electrophiles in Chapter 8, rather than the other way round. Reactivity in the rest of the course reads off HOMO and LUMO.",
+      "options": {
+        "A": "Correct. The two pi electrons occupy the in-phase, bonding combination, which has no node between the carbons. It is filled and it is the highest such orbital, so it is the HOMO.",
+        "B": "This describes the LUMO, not the HOMO. Pi-star is antibonding and does carry one node between the carbons, but in the ground state it is empty - and an empty orbital cannot be the highest *occupied* one.",
+        "C": "A non-bonding orbital would have to sit on one carbon alone, but the two p orbitals here are equivalent and combine across both. A two-orbital pi system produces exactly one bonding and one antibonding orbital, with nothing non-bonding in between.",
+        "D": "The sigma framework is occupied, but it lies well below the pi orbital in energy, so it is not the *highest* occupied one. The question asks specifically about the pi system, where sigma orbitals play no part."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two carbon atoms joined by a double bond, drawn as two parallel lines, with two hydrogen atoms on each carbon."
   },
   {
     "question_id": "ch01_q26_formal_charge_ammonium",

@@ -435,12 +435,23 @@ function shuffleQuestionsOptions(questions) {
     
     // If the question has feedback, update option letter references inside feedback strings
     if (clonedQ.feedback) {
-      clonedQ.feedback = {
-        ...clonedQ.feedback,
-        context: replaceOptionLettersInText(clonedQ.feedback.context, optionLetterMap),
-        process: replaceOptionLettersInText(clonedQ.feedback.process, optionLetterMap),
-        result: replaceOptionLettersInText(clonedQ.feedback.result, optionLetterMap)
-      };
+      const fb = { ...clonedQ.feedback };
+      for (const part of ['context', 'process', 'result', 'approach', 'note']) {
+        if (fb[part]) fb[part] = replaceOptionLettersInText(fb[part], optionLetterMap);
+      }
+
+      // Per-option rationales are keyed by the option_id as authored. The shuffle above
+      // has just relabelled the options, so these keys must travel with their option -
+      // leave them alone and every rationale attaches to the wrong answer.
+      if (fb.options) {
+        const remapped = {};
+        for (const [authoredId, text] of Object.entries(fb.options)) {
+          const newLetter = optionLetterMap[authoredId];
+          if (newLetter) remapped[newLetter] = replaceOptionLettersInText(text, optionLetterMap);
+        }
+        fb.options = remapped;
+      }
+      clonedQ.feedback = fb;
     }
     
     return clonedQ;
@@ -566,6 +577,8 @@ function renderQuestion() {
         <div class="feedback-content" id="feedback-content-area">
           ${getFeedbackContent(q.feedback)}
         </div>
+
+        ${getPerOptionFeedback(q, selectedOptionId)}
         
         <div class="feedback-actions">
           ${state.currentQuestionIndex < state.filteredQuestions.length - 1 
@@ -728,13 +741,16 @@ function setFeedbackTab(tabName) {
   }
 }
 
-// Get raw/formatted explanation based on active tab
+// Get raw/formatted explanation based on active tab.
+// Two feedback shapes coexist: items authored in Phase 2 carry approach/note/options,
+// and the not-yet-reviewed remainder carries the older process/result. Read whichever
+// is present so the bank renders correctly mid-migration.
 function getFeedbackContent(feedback) {
   if (state.activeFeedbackTab === 'context') {
-    return `<p>${feedback.context}</p>`;
+    return `<p>${feedback.context || ''}</p>`;
   } else if (state.activeFeedbackTab === 'process') {
-    // Format bullet points / steps
-    const steps = feedback.process.split('\n');
+    const body = feedback.approach || feedback.process || '';
+    const steps = body.split('\n');
     let html = '<ul style="list-style-position: inside; display: flex; flex-direction: column; gap: 0.65rem;">';
     steps.forEach(step => {
       if (step.trim()) {
@@ -744,8 +760,40 @@ function getFeedbackContent(feedback) {
     html += '</ul>';
     return html;
   } else {
-    return `<p><strong>Takeaway:</strong> ${feedback.result}</p>`;
+    const note = feedback.note || feedback.result || '';
+    const label = feedback.note ? 'Worth knowing' : 'Takeaway';
+    return `<p><strong>${label}:</strong> ${note}</p>`;
   }
+}
+
+// Per-option rationales, rendered beside the options themselves rather than behind a
+// tab: the option a student just chose is where they are actually looking. Returns
+// empty for items that have not been authored yet.
+function getPerOptionFeedback(q, selectedOptionId) {
+  const rationales = q.feedback && q.feedback.options;
+  if (!rationales) return '';
+
+  const rows = (q.options || []).map(opt => {
+    const text = rationales[opt.option_id];
+    if (!text) return '';
+    const isKey = opt.is_correct;
+    const isChosen = opt.option_id === selectedOptionId;
+    const accent = isKey ? 'var(--success-color)' : (isChosen ? 'var(--error-color)' : 'var(--border-color)');
+    return `
+      <div style="border-left: 3px solid ${accent}; padding: 0.5rem 0 0.5rem 0.85rem; margin-bottom: 0.85rem;">
+        <div style="font-weight: 700; color: ${isKey ? 'var(--success-color)' : 'var(--text-secondary)'}; font-size: 0.8rem; margin-bottom: 0.25rem;">
+          ${opt.option_id}${isKey ? ' — correct' : ''}${isChosen && !isKey ? ' — your answer' : ''}
+        </div>
+        <div style="line-height: 1.6; color: #cbd5e1;">${formatChemicalText(text)}</div>
+      </div>`;
+  }).join('');
+
+  if (!rows) return '';
+  return `
+    <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+      <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.85rem;">Why each answer</div>
+      ${rows}
+    </div>`;
 }
 
 // Answer Selection Handler
@@ -1699,6 +1747,8 @@ function reviewMockQuestion(idx) {
         <div class="feedback-content" id="review-feedback-content-area" style="padding: 1.25rem 0.5rem 0;">
           ${getFeedbackContent(q.feedback)}
         </div>
+
+        ${getPerOptionFeedback(q, selectedOptionId)}
       </div>
       
       <div style="display: flex; justify-content: flex-end; margin-top: 1rem;">
