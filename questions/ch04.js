@@ -1081,13 +1081,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests quantitative details of cyclobutane's puckered conformation.",
-      "process": "Step 1: In a planar cyclobutane, the dihedral angle is 0°.\nStep 2: When cyclobutane puckers, one carbon is bent out of the plane of the other three by about 25°.\nStep 3: This value represents the optimal balance between minimizing torsional strain and keeping angle strain manageable.",
-      "result": "The dihedral angle of puckered cyclobutane is approximately 25°."
+      "context": "A ring's shape settles where the sum of its strains is lowest, and for cyclobutane that means bending slightly out of plane. The pucker is a compromise rather than a large distortion.",
+      "approach": "Step 1: Consider the planar alternative. A flat four-membered ring has 90 degree angles and every adjacent C-H pair fully eclipsed, so torsional strain is at its maximum.\nStep 2: Fold the ring about a diagonal. Even a small fold rotates the C-H bonds away from full eclipse, cutting torsional strain sharply.\nStep 3: The fold also compresses the internal angles slightly, adding a little angle strain. The two effects balance at a pucker of about 25 degrees.",
+      "note": "Twenty-five degrees is modest - cyclobutane is nearly flat, and the pucker is easily reversed, so the ring flips rapidly between two equivalent folded forms. That distinguishes it from cyclohexane, whose much deeper chair pucker gives genuinely distinct axial and equatorial positions.",
+      "options": {
+        "A": "Correct. About 25 degrees is where the torsional relief from folding stops outweighing the angle strain it costs.",
+        "B": "Zero degrees is the planar form, which has maximum torsional strain and is not the preferred conformation.",
+        "C": "45 degrees would fold the ring far more than is favourable, compressing the internal angles well past what the torsional saving repays.",
+        "D": "60 degrees is a severe fold that would introduce more angle strain than any torsional relief could justify."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-membered carbon ring."
   },
   {
     "question_id": "ch04_q24_cyclopentane_envelope",
@@ -1122,12 +1129,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the geometric description of the envelope conformation of cyclopentane.",
-      "process": "Step 1: Planar cyclopentane has internal angles of 108° (very close to 109.5°), but suffers from severe torsional strain because all 10 hydrogens are eclipsed.\nStep 2: To relieve this, it puckers into the 'envelope' conformation.\nStep 3: In the envelope conformation, four carbons form a plane, and the fifth carbon is out of that plane, resembling the flap of an envelope. This reduces eclipsing of C-H bonds.",
-      "result": "The envelope conformation consists of four coplanar carbons and one out-of-plane carbon."
+      "context": "Cyclopentane's internal angles in a planar pentagon are 108 degrees, almost exactly tetrahedral, so angle strain is nearly absent. Its only real problem is torsional, and the ring puckers to address that.",
+      "approach": "Step 1: Note what is not the problem. At 108 degrees the angles need almost no correction, so the ring is not puckering to fix them.\nStep 2: Note what is. A flat pentagon eclipses every adjacent C-H pair around the ring.\nStep 3: Lifting one carbon out of the plane of the other four rotates the bonds at that carbon and its neighbours away from eclipse. The resulting shape - four coplanar carbons and one raised - is the envelope.",
+      "note": "The raised carbon is not fixed: the pucker migrates rapidly around the ring, so all five carbons take turns being the flap. That motion is called pseudorotation, and it means the five positions are equivalent on any ordinary timescale.",
+      "options": {
+        "A": "Correct. Four carbons stay coplanar while the fifth lifts out of that plane, which relieves the eclipsing without disturbing the near-ideal bond angles.",
+        "B": "This describes a half-chair or twist arrangement rather than an envelope. The envelope displaces one carbon, not two in opposite directions.",
+        "C": "A fully planar ring is exactly what the envelope avoids, since planarity is what causes the eclipsing in the first place.",
+        "D": "Axial and equatorial positions are a feature of the six-membered chair. A five-membered ring has no such distinct sets of positions."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1163,13 +1176,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question addresses the energetic trade-off between angle strain and torsional strain in cyclobutane.",
-      "process": "Step 1: Start with a flat square (planar cyclobutane, angles = 90°).\nStep 2: Bend one corner out of plane. The internal angles must decrease slightly to maintain C-C bond lengths (compressing to ~88°).\nStep 3: This compression increases angle strain. However, the non-planar dihedral angle of ~25° staggers the adjacent C-H bonds, significantly lowering torsional strain. The system lowers its overall free energy.",
-      "result": "The C-C-C angles are smaller than 90° because the system trades increased angle strain for a larger reduction in torsional strain."
+      "context": "It looks perverse for a ring to adopt angles further from tetrahedral than it needs to. The resolution is that angle strain is only one term in the total, and a molecule minimises the sum rather than any single component.",
+      "approach": "Step 1: Compare the two candidates. Planar cyclobutane has 90 degree angles; the puckered form has about 88.\nStep 2: Note that 90 is closer to the tetrahedral 109.5 than 88 is, so on angle strain alone the planar form would win.\nStep 3: But planarity eclipses every adjacent C-H pair. Puckering costs a couple of degrees of angle strain and buys a much larger reduction in torsional strain, so the puckered form is lower in total energy.",
+      "note": "This is the same trade-off Baeyer's theory missed. Judging ring stability by angle strain alone predicts flat rings with ideal angles; real rings give up some angular perfection to escape eclipsing, which is why cyclohexane beats cyclopentane despite the planar-pentagon angles looking better on paper.",
+      "options": {
+        "A": "Correct. The fold costs about two degrees of additional angle strain and repays it with a much larger torsional saving, so the total is lower.",
+        "B": "A four-membered ring has no interior to speak of, and its hydrogens point outward. Transannular interactions require a medium-sized ring.",
+        "C": "The carbons remain sp3, forming four sigma bonds each. sp hybridization would require only two groups per carbon.",
+        "D": "There is nothing special about 88 degrees for angle strain - the ideal remains 109.5, and 88 is worse than 90. The angle is set by the torsional compromise, not by an angular optimum."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-membered carbon ring."
   },
   {
     "question_id": "ch04_q26_cyclopentane_planar_vs_envelope",
@@ -1204,12 +1224,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the primary source of instability in a planar cyclopentane model.",
-      "process": "Step 1: A planar cyclopentane has internal C-C-C angles of 108°, which is extremely close to the ideal 109.5° tetrahedral angle. Therefore, angle strain is virtually zero in the planar form.\nStep 2: However, planarity forces all 5 C-C bonds to be fully eclipsed, resulting in 10 pairs of eclipsing H-H interactions.\nStep 3: This creates a large amount of torsional strain (~40 kJ/mol), which forces the ring to pucker.",
-      "result": "Torsional strain would be at its maximum in a planar cyclopentane."
+      "context": "Asking which strain a hypothetical planar ring would maximise means asking which strain the real puckering exists to relieve. For cyclopentane the answer follows from how close its planar angles already are to ideal.",
+      "approach": "Step 1: Evaluate angle strain in a planar pentagon. The internal angles are 108 degrees against a tetrahedral ideal of 109.5, a discrepancy of well under two degrees - essentially negligible.\nStep 2: Evaluate torsional strain. Flatness aligns the C-H bonds on all five pairs of adjacent carbons, so every one is eclipsed.\nStep 3: With angle strain near zero and eclipsing complete, torsional strain is what a planar cyclopentane would maximise - and it is what the envelope pucker relieves.",
+      "note": "This is the case that most directly refutes angle-strain-only reasoning. By Baeyer's measure cyclopentane should be the most stable cycloalkane of all, since 108 degrees is nearer 109.5 than cyclohexane's planar 120. It is not, because the torsional term he ignored dominates.",
+      "options": {
+        "A": "Correct. A flat pentagon has near-ideal angles but eclipses every adjacent C-H pair, so torsional strain is the term at its maximum.",
+        "B": "Angle strain would be almost absent, since 108 degrees is within two degrees of tetrahedral. That is precisely why it is not the answer.",
+        "C": "Steric strain needs non-bonded atoms pushed inside their van der Waals radii. On a five-membered ring the substituents are not forced that close.",
+        "D": "Transannular strain requires a ring large enough for groups to crowd across its interior, which begins around eight carbons."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1245,13 +1271,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question quantitative analyzes eclipsing interactions in a flat cyclopentane model.",
-      "process": "Step 1: Cyclopentane has 5 C-C bonds.\nStep 2: Across each C-C bond, if the ring is flat, the two hydrogens on the front carbon eclipse the two hydrogens on the back carbon.\nStep 3: This results in 2 eclipsing H-H interactions per C-C bond.\nStep 4: Total interactions = 5 bonds * 2 interactions/bond = 10 pairs.",
-      "result": "There are 10 pairs of eclipsing C-H interactions in planar cyclopentane."
+      "context": "Counting eclipsing interactions is a matter of working bond by bond rather than atom by atom. Each carbon-carbon bond in a flat ring generates its own set of eclipsed hydrogen pairs.",
+      "approach": "Step 1: Count the carbon-carbon bonds. A five-membered ring has five.\nStep 2: Count the eclipsed pairs each bond generates. Each ring carbon carries two hydrogens, one above the ring plane and one below, so across any C-C bond the two upper hydrogens eclipse each other and the two lower ones do as well - two pairs per bond.\nStep 3: Multiply: five bonds times two pairs gives ten eclipsing interactions in total.",
+      "note": "At roughly 4 kJ/mol per eclipsed hydrogen pair, ten pairs would cost about 40 kJ/mol - well above cyclopentane's measured 26. The gap is what the envelope pucker recovers, and it shows the counting is doing real work rather than being an exercise.",
+      "options": {
+        "A": "Correct. Five carbon-carbon bonds, each eclipsing an upper and a lower hydrogen pair, gives ten interactions.",
+        "B": "Five counts one pair per bond, which misses that each carbon carries two hydrogens and both eclipse across the bond.",
+        "C": "Eight would correspond to four bonds rather than five. A five-membered ring has five carbon-carbon bonds.",
+        "D": "Twenty double-counts each interaction, most often by counting from both carbons of every bond. Each eclipsing pair should be counted once."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-membered carbon ring."
   },
   {
     "question_id": "ch04_q28_cyclopropane_dihedral_angle",
@@ -1286,13 +1319,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the geometric constraint of the three-membered ring.",
-      "process": "Step 1: Any three points in space define a flat plane. Therefore, the three carbon atoms of cyclopropane must lie in a single plane.\nStep 2: In a planar system, all substituents on adjacent carbons are locked in an eclipsed conformation.\nStep 3: Consequently, cyclopropane cannot pucker to relieve torsional strain, locking its dihedral angles at 0°.",
-      "result": "The planar constraint of a three-carbon ring makes eclipsing unavoidable."
+      "context": "Every other cycloalkane can pucker to escape eclipsing. Cyclopropane cannot, and the reason is geometric rather than chemical - it has no choice about being flat.",
+      "approach": "Step 1: Consider what puckering requires. A ring must have at least four atoms for any of them to move out of the plane defined by the others.\nStep 2: Apply that to three carbons. Any three points define a plane, so the three carbons of cyclopropane are necessarily coplanar whatever they might prefer.\nStep 3: With the ring locked flat, the C-H bonds on adjacent carbons are held at a dihedral angle of zero - fully eclipsed, with no conformational escape available.",
+      "note": "This is why cyclopropane carries both maximum angle strain and maximum torsional strain at once, and why its total of about 115 kJ/mol is the highest of any common ring. Every larger ring can trade one strain against the other; cyclopropane can trade nothing.",
+      "options": {
+        "A": "Correct. Three points define a plane, so the ring cannot pucker and its C-H bonds are locked in the fully eclipsed arrangement.",
+        "B": "The bent bonds are a consequence of the same rigid geometry, not a cause of the eclipsing. Bent overlap is in fact less effective, not maximised.",
+        "C": "Hydrogen bonding requires a hydrogen on nitrogen, oxygen or fluorine. Cyclopropane's C-H hydrogens cannot hydrogen bond at all.",
+        "D": "Cyclopropane has no ring flip. It is rigidly planar, which is precisely why the eclipsing cannot be relieved."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A three-membered carbon ring."
   },
   {
     "question_id": "ch04_q29_cyclohexane_conformations_stability",
@@ -1327,13 +1367,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the energy hierarchy of cyclohexane's conformations.",
-      "process": "Step 1: Recall the relative energies of cyclohexane conformations:\n- Chair: 0 kJ/mol (global minimum)\n- Twist-boat: ~23 kJ/mol (local minimum)\n- Boat: ~29 kJ/mol (transition state/local maximum)\n- Half-chair: ~45 kJ/mol (global maximum)\nStep 2: Arrange in order of decreasing stability (lowest energy to highest energy): Chair > Twist-boat > Boat > Half-chair.",
-      "result": "The correct order is Chair > Twist-boat > Boat > Half-chair."
+      "context": "Cyclohexane passes through four named shapes. Two are energy minima the molecule occupies, and two are transition states it crosses, so the ranking mixes stable forms with fleeting ones.",
+      "approach": "Step 1: Place the chair. It achieves tetrahedral angles with every bond staggered and no significant steric crowding, so it is the global minimum at zero.\nStep 2: Place the twist-boat next, about 23 kJ/mol above the chair. It is a genuine shallow minimum, twisted to reduce both eclipsing and flagpole crowding.\nStep 3: The boat sits about 6 kJ/mol above the twist-boat, at roughly 29, with eclipsed bonds and flagpole interactions. The half-chair is the highest at about 45 kJ/mol, the transition state for the ring flip itself.",
+      "note": "Only the chair is meaningfully populated at room temperature - the twist-boat lies far enough above it that fewer than one molecule in ten thousand occupies it. When a problem says cyclohexane, it means the chair unless it says otherwise.",
+      "options": {
+        "A": "Correct. Chair at 0, twist-boat at about 23, boat at about 29 and half-chair at about 45 kJ/mol.",
+        "B": "This puts the boat above the twist-boat in stability. The twist is lower, because twisting relieves some of the boat's eclipsing and flagpole strain.",
+        "C": "The chair is by a wide margin the most stable form; no other conformation approaches it.",
+        "D": "This places the half-chair above the boat. The half-chair is the highest point on the profile, being the transition state for the flip."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring."
   },
   {
     "question_id": "ch04_q30_twist_boat_vs_boat_energy",
@@ -1368,13 +1415,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question examines the conformational differences between the boat and twist-boat structures.",
-      "process": "Step 1: Identify sources of strain in the boat conformation: 1) Eclipsing C-H bonds along the sides of the boat. 2) Flagpole steric interactions between the C1 and C4 hydrogens pointing inward.\nStep 2: When the boat twists to form the twist-boat conformation, the C1 and C4 hydrogens move away from each other, reducing flagpole strain.\nStep 3: Additionally, twisting staggers the side C-H bonds, reducing torsional strain. This lowers the energy by ~6 kJ/mol.",
-      "result": "The twist-boat is more stable because it relieves both flagpole steric interactions and eclipsing torsional strain."
+      "context": "The boat suffers two problems at once, and the twist relieves part of each. Understanding the stabilisation means identifying both, since neither alone accounts for the 6 kJ/mol.",
+      "approach": "Step 1: Identify the boat's steric problem. Its two upward-pointing flagpole hydrogens, on carbons across the ring from one another, are forced uncomfortably close.\nStep 2: Identify its torsional problem. Along the two flat sides of the boat the C-H bonds are eclipsed.\nStep 3: Twisting the ring slightly moves the flagpole hydrogens apart and rotates the eclipsed bonds partly out of alignment. Both improvements together lower the energy by about 6 kJ/mol.",
+      "note": "The twist-boat is a shallow minimum rather than a transition state, so it is a real conformation with a measurable, if tiny, population. It matters chiefly as the intermediate the ring passes through during a chair-to-chair flip.",
+      "options": {
+        "A": "Correct. Twisting separates the flagpole hydrogens and rotates the eclipsed bonds partly out of alignment, relieving steric and torsional strain together.",
+        "B": "No conformation of cyclohexane is planar, and planarity would raise the energy sharply by forcing 120 degree angles and full eclipsing.",
+        "C": "The twist does not increase angle strain to buy staggering. Bond angles stay near tetrahedral throughout; what changes is the torsional and steric arrangement.",
+        "D": "Hydrogen bonding requires a hydrogen bonded to nitrogen, oxygen or fluorine. Cyclohexane is a hydrocarbon and has none."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring."
   },
   {
     "question_id": "ch04_q31_flagpole_interaction_positions",
@@ -1409,13 +1463,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question identifies the specific atoms involved in flagpole interactions.",
-      "process": "Step 1: Visualize the boat conformation of cyclohexane.\nStep 2: The 'bow' and 'stern' of the boat are C1 and C4, which point upward.\nStep 3: The hydrogens attached to C1 and C4 that point inward towards each other are forced within their van der Waals radii, creating steric clash. These are the flagpole hydrogens.",
-      "result": "The flagpole interaction occurs between hydrogens at C1 and C4."
+      "context": "The boat conformation is shaped like its name: four carbons form the base and two are lifted at either end. The hydrogens pointing upward from those two raised carbons are the flagpoles.",
+      "approach": "Step 1: Identify the raised carbons. In a boat, two carbons directly across the ring from one another are both bent upward.\nStep 2: On a six-membered ring, directly across means separated by two carbons in each direction - a 1,4 relationship.\nStep 3: The hydrogens pointing up from C1 and C4 are therefore aimed at each other across the ring's interior, close enough to repel.",
+      "note": "The 1,4 relationship is what makes the interaction possible at all: 1,2 or 1,3 positions cannot both be raised in a boat. The same geometry appears in the chair as the 1,3-diaxial interaction between axial substituents, which is where this idea does most of its work.",
+      "options": {
+        "A": "Correct. The two carbons lifted at either end of the boat are across the ring from each other, in a 1,4 relationship, and their upward hydrogens crowd.",
+        "B": "C1 and C2 are adjacent, so their hydrogens point away from one another rather than converging over the ring.",
+        "C": "A 1,3 relationship in the chair does produce diaxial crowding, but the boat's flagpole interaction is specifically between the two raised prow-and-stern carbons.",
+        "D": "C2 and C5 are also 1,4 to each other, but in the standard boat it is C1 and C4 that are raised; C2 and C5 lie in the flat base."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring."
   },
   {
     "question_id": "ch04_q32_half_chair_transition_state",
@@ -1450,12 +1511,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the quantitative energy barrier of the cyclohexane ring flip.",
-      "process": "Step 1: The ring flip from one chair to the other is a multi-step conformational equilibrium.\nStep 2: The highest-energy point on the potential energy diagram is the half-chair conformation, which is a transition state.\nStep 3: The energy of the half-chair is 45 kJ/mol above the chair conformation, representing the activation energy barrier for the ring-flipping process.",
-      "result": "The activation energy barrier is approximately 45 kJ/mol."
+      "context": "A ring flip converts one chair into the other, exchanging every axial position for an equatorial one. The barrier is the height of the highest point on that path, which is the half-chair.",
+      "approach": "Step 1: Identify the starting point and the summit. The molecule begins in a chair at zero and must reach the half-chair transition state, where five of the six carbons become coplanar.\nStep 2: Read off the half-chair's energy, about 45 kJ/mol above the chair.\nStep 3: That difference is the activation energy for the flip. The twist-boat at 23 kJ/mol is an intermediate along the way, not the barrier.",
+      "note": "Forty-five kJ/mol is low enough that the flip happens roughly a hundred thousand times a second at room temperature, so axial and equatorial positions interconvert far too fast to separate. Cool the sample enough and the flip slows until the two environments can be resolved separately by NMR - which is how the barrier was measured.",
+      "options": {
+        "A": "Correct. The half-chair is the highest point on the flip pathway, about 45 kJ/mol above the chair.",
+        "B": "23 kJ/mol is the twist-boat, an intermediate part-way along the path rather than the summit the molecule must clear.",
+        "C": "6 kJ/mol is the gap between the boat and the twist-boat, a difference between two high-energy forms rather than a barrier from the chair.",
+        "D": "80 kJ/mol would be high enough to slow the flip dramatically at room temperature, which is not what is observed - cyclohexane's conformers interconvert rapidly."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
