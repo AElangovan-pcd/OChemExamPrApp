@@ -559,13 +559,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify the parent chain when drawn in a condensed, potentially misleading format.",
-      "process": "Step 1: Expand the structure: $CH_3-CH_2-CH(CH_2-CH_3)-CH(CH_3)_2$.\nStep 2: Find the longest chain. It goes from the isopropyl methyl through the CH, C3-CH, and down the ethyl group: $C_1(methyl)-C_2(CH)-C_3(CH)-C_4(CH_2)-C_5(methyl)$. This is a pentane chain.\nStep 3: Number from the end closest to a branch: start at the isopropyl end to place branches at C2 and C3 (numbering from the other side places them at C3 and C4).\nStep 4: Identify substituents: methyl at C2, ethyl at C3. Alphabetize: 3-ethyl-2-methylpentane.",
-      "result": "The correct IUPAC name is 3-ethyl-2-methylpentane."
+      "context": "When several chains tie for longest, the choice between them is not free. IUPAC settles it with a tiebreaker: take the chain that carries the greater number of substituents, since that produces the more informative name.",
+      "approach": "Step 1: Find the longest chains. Several five-carbon paths run through this eight-carbon skeleton, and none is longer, so the parent is pentane either way.\nStep 2: Apply the tiebreaker. One five-carbon chain leaves a single isopropyl substituent; another leaves an ethyl and a methyl - two substituents. The rule prefers the chain with more, so take the second.\nStep 3: Number for lowest locants. From one end the substituents fall at 3 and 4; from the other at 2 and 3, so the second numbering wins. Cite alphabetically - ethyl before methyl - giving 3-ethyl-2-methylpentane.",
+      "note": "Option C is the right molecule under the wrong name: 3-isopropylpentane denotes exactly this compound and fails only on the tiebreaker rule, since it selects the five-carbon chain carrying one substituent rather than two. Recognising that a rejected name can still describe the correct structure is what this item is really testing.",
+      "options": {
+        "A": "Correct. The five-carbon chain bearing two substituents is preferred, numbered to give locants 2 and 3, with ethyl cited before methyl.",
+        "B": "This takes a four-carbon parent when five-carbon chains are available, so it fails the longest-chain rule before any tiebreaker applies.",
+        "C": "The right molecule under the wrong name. This picks a valid five-carbon chain, but one carrying a single substituent where an alternative carries two, which the tiebreaker rule rejects.",
+        "D": "An ethyl group at C2 of a pentane chain is impossible in a correct name: if a two-carbon substituent sits at the second carbon, a longer chain runs through it and should have been chosen as the parent."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon bearing an ethyl group on one side and joined to a chain that continues through a carbon carrying a methyl group."
   },
   {
     "question_id": "ch03_q13_heat_of_combustion",
@@ -600,13 +607,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understand how structural branching relates to thermodynamic stability and heat of combustion.",
-      "process": "Step 1: Alkanes release heat when combusted ($\\Delta H_c$). A lower heat of combustion indicates a more stable (lower potential energy) starting material.\nStep 2: Branching increases the thermodynamic stability of alkanes because branched molecules are more compact and have stronger internal van der Waals attractions.\nStep 3: Neopentane ($2,2-dimethylpropane$) is the most branched isomer of $C_5H_{12}$, making it the most stable isomer with the lowest potential energy. Therefore, it releases the least heat upon combustion.",
-      "result": "Neopentane releases the least heat of combustion."
+      "context": "Heat of combustion measures the energy released in burning each isomer to the same products, carbon dioxide and water. Since the products are identical, any difference in heat released reflects a difference in the starting materials' energies - the more stable isomer starts lower and releases less.",
+      "approach": "Step 1: Note that all three isomers have the same formula and burn to the same products, so the comparison isolates their relative stabilities.\nStep 2: Recall the branching trend. More highly branched alkanes are more stable, because branching makes the molecule more compact and increases favourable interactions between atoms held close together.\nStep 3: Rank by branching. Neopentane, with a quaternary carbon and four methyls, is the most branched and therefore the most stable, so it releases the least heat.",
+      "note": "The differences are small compared with the totals - a few kJ/mol out of more than three thousand - but they are reproducible and they are how relative alkane stabilities were first measured. Combustion data is a way of comparing energies you cannot measure directly.",
+      "options": {
+        "A": "Correct. Neopentane is the most branched and most stable of the three, so it sits lowest in energy and releases the least on combustion.",
+        "B": "2-Methylbutane has one branch and is intermediate in stability, releasing more than neopentane but less than the straight chain.",
+        "C": "Pentane is unbranched and the least stable of the three, so it releases the most heat rather than the least.",
+        "D": "Isomers share a formula but not their energies. Their different skeletons put them at measurably different energies, which is exactly what combustion data reveals."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Three separate five-carbon structures shown together: an unbranched chain, a chain with one methyl branch, and a central carbon bearing four methyl groups."
   },
   {
     "question_id": "ch03_q14_conformation_ethane_barrier",
@@ -641,13 +655,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Recall the rotational energy barrier of ethane.",
-      "process": "Step 1: In ethane ($CH_3-CH_3$), rotation around the C-C single bond transitions between staggered (most stable) and eclipsed (least stable) conformations.\nStep 2: The eclipsed conformation contains three eclipsing H-H interactions.\nStep 3: Each eclipsing H-H interaction incurs a torsional strain of 4.0 kJ/mol. Total energy barrier = 3 * 4.0 kJ/mol = 12.0 kJ/mol.",
-      "result": "The energy barrier is 12.0 kJ/mol."
+      "context": "Rotation about a single bond is not entirely free. It passes through a low-energy staggered arrangement and a higher-energy eclipsed one, and the barrier is the difference between them.",
+      "approach": "Step 1: Identify the two limiting conformations. Staggered puts each C-H on the front carbon between two on the back carbon; eclipsed aligns them.\nStep 2: The staggered form is the energy minimum and the eclipsed form the maximum, so the barrier is the gap between them.\nStep 3: For ethane that gap is about 12 kJ/mol, or 2.9 kcal/mol, spread across three eclipsing H-H interactions at roughly 4 kJ/mol each.",
+      "note": "Twelve kJ/mol is small enough that thermal energy at room temperature clears it easily - ethane rotates millions of times a second, so the conformations cannot be separated. The barrier matters not because it stops rotation but because it tells you where the molecule spends most of its time.",
+      "options": {
+        "A": "Correct. The staggered-to-eclipsed gap in ethane is about 12 kJ/mol, made up of three H-H eclipsing interactions of roughly 4 kJ/mol each.",
+        "B": "4 kJ/mol is the cost of a single eclipsing H-H interaction. Ethane's eclipsed conformation has three of them at once.",
+        "C": "11 kJ/mol is the value assigned to one eclipsing methyl-methyl interaction in butane, not to ethane's rotation.",
+        "D": "25 kJ/mol is roughly double the true barrier. A barrier that size would begin to slow rotation appreciably at room temperature, which is not what is observed for ethane."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two carbon atoms joined by a single bond, each carrying three hydrogen atoms."
   },
   {
     "question_id": "ch03_q15_torsional_strain_def",
@@ -682,13 +703,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Distinguish between torsional strain and steric strain.",
-      "process": "Step 1: Steric strain occurs when atoms are forced physically too close to one another (van der Waals repulsion), which is not the case for small hydrogens in ethane.\nStep 2: Torsional strain arises from the repulsion between electron clouds in the C-H $\\sigma$ bonding orbitals of adjacent carbons when they align (dihedral angle = $0^\\circ$).\nStep 3: This orbital-orbital repulsion destabilizes the eclipsed conformer.",
-      "result": "Torsional strain is caused by orbital-orbital repulsions in eclipsed bonds."
+      "context": "Torsional strain is often described loosely as atoms bumping into each other, but in ethane the hydrogens never come close enough for that. The strain has an orbital origin rather than a steric one.",
+      "approach": "Step 1: Consider the distance involved. In eclipsed ethane the hydrogens on adjacent carbons remain about 2.5 angstroms apart, comfortably outside the range where their van der Waals surfaces would clash.\nStep 2: Look at the bonds instead of the atoms. Eclipsing aligns the filled C-H bonding orbitals on the two carbons so that they lie directly in line with one another.\nStep 3: Two filled orbitals brought into alignment repel, because their electrons cannot occupy the same region. That repulsion raises the energy, and staggering relieves it by putting each C-H bond between two on the opposite carbon.",
+      "note": "The distinction matters as soon as the substituents get larger. In butane the methyl-methyl eclipsing interaction really is partly steric, which is why it costs 11 kJ/mol against a hydrogen pair's 4 - torsional strain and steric strain are separate contributions that happen to coincide in eclipsed conformations.",
+      "options": {
+        "A": "Correct. Aligning the filled C-H bonding orbitals on adjacent carbons brings their electrons into opposition, and that repulsion is what raises the eclipsed conformation's energy.",
+        "B": "Hydrogen atoms are far too small for this. At about 2.5 angstroms apart in eclipsed ethane, their van der Waals surfaces do not overlap at all.",
+        "C": "Attraction would lower the energy, not raise it, so it cannot explain a barrier. C-H bonds are also barely polar, giving little dipole to work with.",
+        "D": "Angle strain comes from bond angles forced away from 109.5 degrees, which happens in small rings. Rotating about a bond does not change any bond angle."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two carbon atoms joined by a single bond, each carrying three hydrogen atoms."
   },
   {
     "question_id": "ch03_q16_conformation_propane_barrier",
@@ -723,13 +751,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Calculate the energy barrier in propane using specific conformational values.",
-      "process": "Step 1: Look at the eclipsed conformation of propane viewed down a C1-C2 bond.\nStep 2: The eclipsing interactions are: two H-H eclipsing interactions and one $H-CH_3$ eclipsing interaction.\nStep 3: Assign energy values: H-H eclipsing = 4.0 kJ/mol each. $H-CH_3$ eclipsing = 6.0 kJ/mol.\nStep 4: Sum: 4.0 + 4.0 + 6.0 = 14.0 kJ/mol.",
-      "result": "The energy barrier is 14.0 kJ/mol."
+      "context": "Replacing one hydrogen with a methyl group changes what is eclipsing what. The barrier rises because a methyl-hydrogen interaction costs more than the hydrogen-hydrogen interaction it replaced.",
+      "approach": "Step 1: Look at what rotates. Turning about a propane C-C bond swings a methyl group and two hydrogens past three hydrogens on the other carbon.\nStep 2: In the eclipsed conformation there are two H-H eclipsing interactions at about 4 kJ/mol each, plus one CH3-H interaction, which costs somewhat more at about 6.\nStep 3: Adding those gives roughly 14 kJ/mol, slightly above ethane's 12.",
+      "note": "The increments are additive and roughly transferable, which is what makes conformational analysis quantitative rather than merely descriptive. Knowing that an H-H eclipse costs about 4, a CH3-H about 6 and a CH3-CH3 about 11 lets you estimate a barrier for a molecule you have never seen.",
+      "options": {
+        "A": "Correct. Two H-H eclipsing interactions at about 4 kJ/mol plus one methyl-hydrogen interaction at about 6 gives roughly 14 kJ/mol.",
+        "B": "12 kJ/mol is ethane's barrier, where all three eclipsing interactions are between hydrogens. Propane's methyl group raises the total.",
+        "C": "18 kJ/mol overshoots. That would require a methyl-methyl eclipse, which propane cannot have - only one of its rotating carbons carries a methyl.",
+        "D": "6 kJ/mol is roughly the cost of the single methyl-hydrogen interaction alone, leaving out the two H-H interactions that accompany it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of three carbon atoms."
   },
   {
     "question_id": "ch03_q17_butane_gauche_interaction",
@@ -764,13 +799,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify conformers of butane.",
-      "process": "Step 1: Staggered conformations have dihedral angles of $60^\\circ$, $180^\\circ$, or $300^\\circ$.\nStep 2: When methyls are opposite ($180^\\circ$), it is the anti conformation (most stable).\nStep 3: When methyls are adjacent ($60^\\circ$), it is the gauche conformation. It is slightly less stable due to steric strain between the methyl groups.",
-      "result": "The conformation is gauche."
+      "context": "Butane has two distinct staggered conformations rather than one, because the two methyl groups can be positioned differently relative to each other while all bonds remain staggered. They are distinguished by the dihedral angle between the methyls.",
+      "approach": "Step 1: Rotate about the central C2-C3 bond and follow the two methyl groups.\nStep 2: At 180 degrees apart the methyls are as far from one another as possible, and all bonds are staggered. This is the anti conformation, the global minimum.\nStep 3: At 60 degrees the bonds are still staggered, but the two methyls are adjacent rather than opposed. This is the gauche conformation, a local minimum about 3.8 kJ/mol above anti.",
+      "note": "Gauche is the more useful of the two names to fix, because gauche interactions reappear throughout Chapter 4. An axial substituent on a cyclohexane ring is gauche to two ring bonds, and that is precisely the strain that makes the equatorial position preferred.",
+      "options": {
+        "A": "Correct. The staggered conformation with the methyls 60 degrees apart is gauche - staggered, but with the two large groups adjacent.",
+        "B": "Anti is the other staggered conformation, with the methyls 180 degrees apart. It is the lowest-energy arrangement of the two.",
+        "C": "Fully eclipsed is the highest-energy conformation, at a dihedral angle of 0 degrees with the methyls directly aligned - not staggered at all.",
+        "D": "Skew is not the standard term for this conformation. The accepted name for the 60 degree staggered arrangement is gauche."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of four carbon atoms."
   },
   {
     "question_id": "ch03_q18_butane_staggered_stability",
@@ -805,13 +847,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Assess the steric cost of a gauche interaction in butane.",
-      "process": "Step 1: The anti conformation has zero steric strain between the methyls.\nStep 2: The gauche conformation forces the two bulky methyl groups close together, resulting in steric strain.\nStep 3: The thermodynamic cost of this $CH_3-CH_3$ gauche interaction is 3.8 kJ/mol.",
-      "result": "The energy difference is 3.8 kJ/mol."
+      "context": "Both anti and gauche are staggered, so neither carries torsional strain from eclipsing. The energy difference between them is purely steric - a consequence of how close the two methyl groups sit.",
+      "approach": "Step 1: Compare the two conformations. In anti the methyls are 180 degrees apart; in gauche they are 60 degrees apart, close enough for their van der Waals surfaces to begin to overlap.\nStep 2: That crowding is a single gauche interaction, and it destabilises the gauche form relative to anti.\nStep 3: The measured difference is about 3.8 kJ/mol, or 0.9 kcal/mol - small, but enough that anti is the more populated conformation at room temperature.",
+      "note": "3.8 kJ/mol corresponds to roughly a two-to-one preference at room temperature, so butane spends a substantial fraction of its time gauche. A conformational preference this size shifts a population; it does not lock a molecule into one shape.",
+      "options": {
+        "A": "Correct. A single gauche methyl-methyl interaction costs about 3.8 kJ/mol, which is the entire difference between the two staggered forms.",
+        "B": "19.0 kJ/mol is the full barrier to rotation through the fully eclipsed conformation, not the gap between the two staggered minima.",
+        "C": "11.0 kJ/mol is the value assigned to an eclipsing methyl-methyl interaction. In gauche the methyls are staggered, not eclipsed.",
+        "D": "1.0 kJ/mol is too small to account for the observed population difference between anti and gauche butane."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of four carbon atoms."
   },
   {
     "question_id": "ch03_q19_butane_fully_eclipsed",
@@ -846,13 +895,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Determine the energy value of the fully eclipsed conformation of butane.",
-      "process": "Step 1: The fully eclipsed conformation occurs when the dihedral angle between the two methyl groups is $0^\\circ$.\nStep 2: The interactions are: two H-H eclipsing interactions and one $CH_3-CH_3$ eclipsing interaction.\nStep 3: Assign energy values: H-H eclipsing = 4.0 kJ/mol each. The remaining energy to reach 19.0 kJ/mol is the steric/torsional strain of eclipsing two methyls.\nStep 4: Total energy = 19.0 kJ/mol.",
-      "result": "The energy of the fully eclipsed conformation is 19.0 kJ/mol."
+      "context": "The rotational barrier is measured from the lowest-energy conformation to the highest. For butane that means from anti, the global minimum, up to the fully eclipsed arrangement where the two methyl groups are directly aligned.",
+      "approach": "Step 1: Identify the highest point. At a dihedral angle of 0 degrees the two methyls eclipse each other, and the two remaining hydrogen pairs eclipse as well.\nStep 2: Add the contributions. One methyl-methyl eclipse costs about 11 kJ/mol and the two H-H eclipses about 4 each.\nStep 3: The total is about 19 kJ/mol, or 4.5 kcal/mol, measured relative to the anti conformation.",
+      "note": "Even 19 kJ/mol is cleared readily at room temperature, so butane interconverts among all its conformations far too fast to separate them. Conformations are shapes a molecule passes through, not isomers that can be isolated - a distinction worth keeping firm before Chapter 5 introduces stereoisomers, which genuinely can be separated.",
+      "options": {
+        "A": "Correct. One methyl-methyl eclipse at about 11 kJ/mol plus two H-H eclipses at about 4 each gives roughly 19 kJ/mol above anti.",
+        "B": "16.0 kJ/mol falls short. It is close to the total for two H-H eclipses plus a methyl-hydrogen interaction, which describes a different eclipsed arrangement of butane.",
+        "C": "11.0 kJ/mol is the cost of the methyl-methyl eclipse alone, omitting the two hydrogen pairs that eclipse at the same time.",
+        "D": "12.0 kJ/mol is ethane's rotational barrier. Butane's is higher because it eclipses two methyl groups rather than only hydrogens."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of four carbon atoms."
   },
   {
     "question_id": "ch03_q20_butane_methyl_methyl_eclipsed",
@@ -887,13 +943,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Isolate the value of a methyl-methyl eclipsing interaction.",
-      "process": "Step 1: Total energy of fully eclipsed butane = 19.0 kJ/mol.\nStep 2: Identify the components: two H-H eclipsing interactions ($2 * 4.0 = 8.0$ kJ/mol) plus one $CH_3-CH_3$ eclipsing interaction.\nStep 3: Subtract: $19.0 - 8.0 = 11.0$ kJ/mol.",
-      "result": "The eclipsing methyl-methyl interaction is valued at 11.0 kJ/mol."
+      "context": "Conformational energies are treated as additive: the total strain of a conformation is the sum of its individual eclipsing and gauche interactions. That additivity lets an unknown interaction be extracted by subtraction once the others are known.",
+      "approach": "Step 1: Count the interactions in fully eclipsed butane. The two methyl groups eclipse each other, and the remaining two pairs of hydrogens eclipse as well - one methyl-methyl and two H-H interactions.\nStep 2: Subtract the known contributions from the total. Two H-H eclipses at 4.0 kJ/mol each account for 8.0 of the 19.0.\nStep 3: What remains, 19.0 minus 8.0, is 11.0 kJ/mol, which is the cost assigned to the single eclipsing methyl-methyl interaction.",
+      "note": "That a methyl-methyl eclipse costs nearly three times a hydrogen pair is the quantitative statement of a qualitative idea used constantly: larger groups suffer more when forced together. The same number reappears in Chapter 4 to explain why substituents prefer the equatorial position on a cyclohexane ring.",
+      "options": {
+        "A": "Correct. Subtracting the two H-H eclipses at 4.0 kJ/mol each from the 19.0 kJ/mol total leaves 11.0 for the methyl-methyl interaction.",
+        "B": "15.0 kJ/mol comes from subtracting only one H-H interaction. The fully eclipsed conformation has two of them alongside the methyl pair.",
+        "C": "6.0 kJ/mol is roughly the cost of a methyl-hydrogen eclipse, which occurs in a different conformation of butane, not the fully eclipsed one.",
+        "D": "3.8 kJ/mol is the gauche interaction between staggered methyls. Eclipsing them costs considerably more."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of four carbon atoms."
   },
   {
     "question_id": "ch03_q21_classification_alkanes",
@@ -928,12 +991,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Review general formulas for hydrocarbons.",
-      "process": "Step 1: Alkanes are saturated hydrocarbons containing only single bonds.\nStep 2: An acyclic alkane with $n$ carbons has $2n$ hydrogens to satisfy valence, plus 2 capping hydrogens at the ends of the chain.\nStep 3: This gives the formula $C_nH_{2n+2}$.",
-      "result": "The general formula is CnH2n+2."
+      "context": "A general formula follows from counting bonds. In a saturated open-chain alkane every carbon forms four bonds, and every bond not made to another carbon is made to hydrogen.",
+      "approach": "Step 1: Take a chain of n carbons. The carbons are joined by n minus 1 carbon-carbon bonds.\nStep 2: Count the bond positions available. The n carbons offer 4n bonds in total, of which twice n minus 1 are used internally, since each C-C bond consumes a position at both ends.\nStep 3: Subtract to get the hydrogens: 4n minus 2n plus 2, which is 2n plus 2. So the formula is CnH2n+2.",
+      "note": "Each departure from that maximum costs two hydrogens: adding a ring gives CnH2n, and so does adding a double bond. Comparing a real formula against 2n plus 2 counts the rings and pi bonds together, which is the degrees-of-unsaturation calculation used to narrow down an unknown structure.",
+      "options": {
+        "A": "Correct. An open-chain saturated alkane carries the maximum possible hydrogens, 2n plus 2 for n carbons.",
+        "B": "CnH2n is two hydrogens short of saturation, which corresponds to one ring or one double bond - a cycloalkane or an alkene.",
+        "C": "CnH2n-2 is four hydrogens short, indicating two rings, two double bonds, or one triple bond.",
+        "D": "CnHn would leave most carbons far short of four bonds and does not correspond to any saturated structure."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
