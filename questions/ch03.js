@@ -34,13 +34,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the basic identification of oxygen-containing functional groups.",
-      "process": "Step 1: Locate the oxygen atom in the structure. It is bonded to two alkyl (ethyl) groups.\nStep 2: Compare this structure ($R-O-R$) with standard functional group classes.\nStep 3: A compound with an oxygen atom bridged between two carbon chains is classified as an ether.",
-      "result": "The functional group is an ether."
+      "context": "A functional group is identified by which atoms surround a key centre. For oxygen-containing groups the question is always the same: what else is the oxygen attached to, and is there a carbonyl anywhere?",
+      "approach": "Step 1: Locate the oxygen. Here it sits in the middle of the chain, bonded to a carbon on each side.\nStep 2: Check for a carbonyl. There is no C=O anywhere in the structure, which rules out esters, ketones, aldehydes and acids at once.\nStep 3: An oxygen with two carbons and no carbonyl is an ether. This one is diethyl ether.",
+      "note": "Because the ether oxygen has no O-H, ether molecules cannot hydrogen bond to one another. That single structural fact is why diethyl ether boils at 35 degrees while butan-1-ol, its isomer, boils at 118.",
+      "options": {
+        "A": "Correct. The oxygen is bonded to two carbons and there is no carbonyl, which is exactly the definition of an ether.",
+        "B": "An alcohol requires an O-H bond. This oxygen carries a carbon on each side, with no hydrogen attached to it.",
+        "C": "An ester needs a carbonyl carbon bonded to a second oxygen. There is no C=O in this structure at all.",
+        "D": "A ketone requires a C=O flanked by two carbons. The central atom here is oxygen, not a carbonyl carbon."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two ethyl groups joined through a central oxygen atom."
   },
   {
     "question_id": "ch03_q2_functional_group_ester",
@@ -75,12 +82,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify functional groups containing carbonyls.",
-      "process": "Step 1: A carbonyl is a carbon-oxygen double bond ($C=O$).\nStep 2: When the carbonyl carbon is bonded to an $-OR$ group, the layout is $R-CO-OR$.\nStep 3: This specific layout characterizes an ester.",
-      "result": "The correct functional group is an ester."
+      "context": "Several functional groups share a carbonyl carbon, and they are told apart entirely by what else is attached to it. Working outward from the carbonyl is the reliable way to identify any of them.",
+      "approach": "Step 1: Start at the carbonyl carbon, which the question specifies is present.\nStep 2: Ask what the second substituent is. An OH gives a carboxylic acid, an N gives an amide, a carbon gives a ketone, a hydrogen gives an aldehyde.\nStep 3: Here it is an alkoxy group, an oxygen carrying a further carbon. A carbonyl bonded to OR is an ester.",
+      "note": "The distinction from a carboxylic acid is one atom: whether that second oxygen carries a hydrogen or a carbon. It is also the distinction that matters practically, since only the acid is deprotonated by bicarbonate.",
+      "options": {
+        "A": "Correct. A carbonyl carbon bonded to an alkoxy group is an ester, the arrangement written R-CO-OR.",
+        "B": "An ether has an oxygen between two carbons but no carbonyl at all, so it lacks the C=O the question specifies.",
+        "C": "A carboxylic acid has a carbonyl bonded to a hydroxyl, not an alkoxy. The difference is whether that oxygen carries a hydrogen or a carbon.",
+        "D": "An amide has a carbonyl bonded to nitrogen rather than to oxygen."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -116,12 +129,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Distinguish between nitrogen-containing functional groups.",
-      "process": "Step 1: An amine contains nitrogen bonded to alkyl groups or hydrogens ($R-NH_2$) with no adjacent carbonyl.\nStep 2: An amide ($R-CONH_2$) contains a nitrogen atom directly bonded to the carbon of a carbonyl group ($C=O$).\nStep 3: This carbonyl-nitrogen link is key to peptide/protein backbones.",
-      "result": "The functional group is an amide."
+      "context": "Nitrogen appears in several functional groups, and the presence or absence of an adjacent carbonyl separates them. An amide is defined by having both together and directly bonded.",
+      "approach": "Step 1: Note the two features the question specifies - a carbonyl carbon, and a nitrogen bonded directly to it.\nStep 2: Eliminate the nitrogen groups that lack a carbonyl. An amine has nitrogen bonded only to carbon and hydrogen, and a nitrile has a carbon-nitrogen triple bond with no oxygen.\nStep 3: An imine has a C=N double bond rather than a C=O with nitrogen attached. Only the amide has the carbonyl and the nitrogen adjacent to one another.",
+      "note": "That adjacency has a structural consequence worth carrying forward: the nitrogen lone pair delocalizes into the carbonyl, flattening the nitrogen to sp2 and hindering rotation. It is the same delocalization seen in urea in Chapter 1, and it is what makes the peptide bond planar.",
+      "options": {
+        "A": "Correct. A carbonyl carbon bonded directly to nitrogen is an amide, written R-CO-N.",
+        "B": "An amine has nitrogen bonded to carbon and hydrogen with no carbonyl present, which is exactly the feature the question requires.",
+        "C": "An imine contains a carbon-nitrogen double bond. There is no oxygen and so no carbonyl in an imine.",
+        "D": "A nitrile has a carbon-nitrogen triple bond and no oxygen at all, so it has no carbonyl carbon."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -157,13 +176,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Find the number of constitutional isomers for pentane.",
-      "process": "Step 1: Constitutional isomers have the same molecular formula but different connectivity.\nStep 2: Draw the straight chain: pentane ($CH_3-CH_2-CH_2-CH_2-CH_3$).\nStep 3: Draw a 4-carbon chain with a methyl branch: 2-methylbutane (isopentane, $CH_3-CH(CH_3)-CH_2-CH_3$).\nStep 4: Draw a 3-carbon chain with two methyl branches: 2,2-dimethylpropane (neopentane, $CH_3-C(CH_3)_2-CH_3$). No other unique connectivities are possible.",
-      "result": "There are exactly 3 constitutional isomers."
+      "context": "Constitutional isomers differ in the order the atoms are connected. For an alkane that means different carbon skeletons, and the way to count them without missing or repeating is to work systematically down from the longest chain.",
+      "approach": "Step 1: Start with the longest possible chain - all five carbons in a row, which is pentane.\nStep 2: Shorten the chain to four and place the remaining carbon as a methyl branch. It can only go on C2, since C1 would just extend the chain back to pentane and C3 duplicates C2 from the other end. That gives 2-methylbutane.\nStep 3: Shorten to three and place both remaining carbons as methyls. Both must sit on C2, giving 2,2-dimethylpropane. No further skeletons exist, so there are three.",
+      "note": "The count grows explosively with carbon number - 3 for C5, 5 for C6, 9 for C7, and 75 for C10. That growth is exactly why a systematic naming system was needed at all, and it is worth doing the enumeration by hand once to see why the longest-chain rule comes first.",
+      "options": {
+        "A": "Correct. The three skeletons are the straight chain, the four-carbon chain with one methyl branch, and the three-carbon chain with two.",
+        "B": "Four suggests an extra structure has been counted twice - most often 2-methylbutane drawn again as 3-methylbutane, which is the same skeleton numbered from the other end.",
+        "C": "Five is the isomer count for C6H14, one carbon larger. For five carbons there are only three distinct skeletons.",
+        "D": "Two misses one of the branched forms. Both a single methyl branch and a double methyl branch are possible with five carbons."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of five carbon atoms."
   },
   {
     "question_id": "ch03_q5_isomers_hexane",
@@ -198,13 +224,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Determine the constitutional isomers of hexane.",
-      "process": "Step 1: Draw the 6-carbon straight chain: hexane.\nStep 2: Draw 5-carbon chains with 1 methyl branch: 2-methylpentane and 3-methylpentane (2 isomers).\nStep 3: Draw 4-carbon chains with 2 methyl branches: 2,2-dimethylbutane and 2,3-dimethylbutane (2 isomers).\nStep 4: Sum them up: 1 + 2 + 2 = 5 unique isomers.",
-      "result": "Hexane has 5 constitutional isomers."
+      "context": "The same systematic enumeration applies as chain length grows: take the longest chain first, then shorten it by one and distribute the freed carbons as branches, checking each new skeleton against those already found.",
+      "approach": "Step 1: The six-carbon straight chain gives hexane.\nStep 2: A five-carbon chain with one methyl branch gives two distinct skeletons - the methyl on C2 or on C3. Placing it on C4 simply reproduces the C2 case numbered from the other end.\nStep 3: A four-carbon chain with two methyls gives two more - both on C2, or one each on C2 and C3. That makes five in total, and no six-carbon skeleton is left over.",
+      "note": "The trap in this enumeration is counting the same skeleton twice under two numberings. Always renumber a candidate from both ends and take the lower locants before deciding it is new - the same rule that settles naming disputes settles counting ones.",
+      "options": {
+        "A": "Correct. Hexane, 2-methylpentane, 3-methylpentane, 2,2-dimethylbutane and 2,3-dimethylbutane are the five distinct skeletons.",
+        "B": "Six usually comes from counting 4-methylpentane as separate from 2-methylpentane. Numbered from the other end they are the same molecule.",
+        "C": "Seven is the count when two or more duplicates slip through. Check each candidate by renumbering from both ends.",
+        "D": "Four means one skeleton has been missed, most often 2,3-dimethylbutane, where the two methyls sit on adjacent carbons."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of six carbon atoms."
   },
   {
     "question_id": "ch03_q6_alkyl_group_isobutyl",
@@ -239,13 +272,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Distinguish between the 4-carbon alkyl group isomers.",
-      "process": "Step 1: A butyl group has 4 carbons. Isomers include butyl, sec-butyl, isobutyl, and tert-butyl.\nStep 2: Isobutyl has a branching methyl on the second carbon of a three-carbon chain: $-CH_2-CH(CH_3)_2$.\nStep 3: Compare: $-CH(CH_3)-CH_2-CH_3$ is sec-butyl; $-C(CH_3)_3$ is tert-butyl; $-CH_2-CH_2-CH_2-CH_3$ is butyl.",
-      "result": "The isobutyl group is $-CH_2-CH(CH_3)_2$."
+      "context": "An alkyl group is named for the alkane it comes from and for which carbon carries the open valence - the point of attachment. For the four-carbon groups, the same skeleton gives different names depending on where that attachment sits.",
+      "approach": "Step 1: Recall the isobutyl skeleton - four carbons arranged as a three-carbon chain with a methyl branch, the same skeleton as isobutane.\nStep 2: Place the attachment point. In isobutyl the group connects through a CH2, one carbon away from the branch point.\nStep 3: That gives a CH2 joined to a CH which carries two methyls, written -CH2-CH(CH3)2.",
+      "note": "The four butyl groups are worth learning as a set, since they differ only in attachment point: butyl attaches at the end of a straight chain, sec-butyl at an internal carbon of that chain, isobutyl at the CH2 of the branched skeleton, and tert-butyl at the branch carbon itself.",
+      "options": {
+        "A": "Correct. Isobutyl attaches through a CH2 that is joined to a carbon bearing two methyl groups.",
+        "B": "This is the sec-butyl group, which attaches at an internal carbon of a straight four-carbon chain rather than at the CH2 of a branched one.",
+        "C": "This is the tert-butyl group, attaching directly at a carbon that carries three methyls.",
+        "D": "This is the straight-chain butyl group, with no branch at all."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon bonded to three methyl groups, the branched four-carbon alkane."
   },
   {
     "question_id": "ch03_q7_alkyl_group_secbutyl",
@@ -280,13 +320,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify the sec-butyl group structure.",
-      "process": "Step 1: 'sec' stands for secondary, meaning the attachment point is on a secondary carbon (bonded to two other carbons).\nStep 2: A 4-carbon chain attached at C2 has the structure $-CH(CH_3)CH_2CH_3$.\nStep 3: This matches option A.",
-      "result": "The sec-butyl group is $-CH(CH_3)-CH_2-CH_3$."
+      "context": "The prefix sec- indicates that the attachment carbon is secondary - bonded to two other carbons. Reading the prefix tells you how many carbons the attachment point must touch before you draw anything.",
+      "approach": "Step 1: Take the parent as a straight four-carbon chain, butane.\nStep 2: Apply the prefix. Secondary means the attaching carbon is bonded to two other carbons, so the attachment must be at C2 rather than at the end.\nStep 3: Attaching at C2 of butane gives a carbon bearing a methyl on one side and an ethyl on the other, written -CH(CH3)-CH2-CH3.",
+      "note": "Note that these prefixes describe the attachment carbon, not the shape of the group as a whole. tert-Butyl attaches at a tertiary carbon and isobutyl at a primary one, even though isobutyl and tert-butyl share the identical branched skeleton.",
+      "options": {
+        "A": "Correct. Attachment at the second carbon of a straight four-carbon chain gives a secondary attachment point, bearing a methyl and an ethyl.",
+        "B": "This is isobutyl, which attaches through a CH2 - a primary carbon - rather than through a secondary one.",
+        "C": "This is tert-butyl, attaching at a carbon bonded to three others, which is tertiary rather than secondary.",
+        "D": "This has five carbons rather than four, so it is not a butyl group at all."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-carbon chain with a methyl branch on the second carbon."
   },
   {
     "question_id": "ch03_q8_classification_carbons",
@@ -321,13 +368,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Classify carbons based on their degree of substitution.",
-      "process": "Step 1: Draw the structure of 2,2,3-trimethylpentane: $(CH_3)_3C-CH(CH_3)-CH_2-CH_3$.\nStep 2: Identify each carbon: \n- The 5 methyl groups (carbons 1, 5, 2-methyls, 3-methyl) are primary ($1^\\circ$) because they are bonded to only 1 carbon.\n- C4 is a $-CH_2-$ group, bonded to C3 and C5, making it secondary ($2^\\circ$).\n- C3 is a $-CH-$ group, bonded to C2, C4, and a methyl carbon, making it tertiary ($3^\\circ$).\n- C2 is a quaternary ($4^\\circ$) carbon because it is bonded to four carbons (C1, C3, and two methyls).\nStep 3: This sums to 5 primary, 1 secondary, 1 tertiary, and 1 quaternary carbon.",
-      "result": "The counts are 5 primary, 1 secondary, 1 tertiary, and 1 quaternary carbon."
+      "context": "A carbon is classified by how many other carbons it is attached to - one for primary, two for secondary, three for tertiary and four for quaternary. Hydrogens are irrelevant to the count.",
+      "approach": "Step 1: Draw out 2,2,3-trimethylpentane: a five-carbon chain with two methyls on C2 and one on C3, eight carbons in all.\nStep 2: Take the carbons that touch only one other carbon. These are C1, C5, both methyls on C2 and the methyl on C3 - five primary carbons.\nStep 3: Classify the rest. C4 is a CH2 between C3 and C5, so it is secondary. C3 touches C2, C4 and its own methyl - tertiary. C2 touches C1, C3 and its two methyls - quaternary. The tally is 5, 1, 1, 1.",
+      "note": "A quaternary carbon has no hydrogen at all, which is why such positions are inert to the radical halogenation of Chapter 10 and cannot be the site of an elimination. Classifying carbons is a habit worth forming early, because reactivity patterns are stated in these terms throughout the course.",
+      "options": {
+        "A": "Correct. Five carbons touch only one neighbour, one CH2 touches two, C3 touches three and C2 touches four.",
+        "B": "Four primary and two secondary miscounts the methyl groups. There are three methyl substituents plus both chain ends, giving five primary carbons and only one CH2.",
+        "C": "This assigns no tertiary carbon, but C3 carries a methyl branch as well as two chain neighbours, so it touches three carbons.",
+        "D": "Six primary would need another methyl group, and with no secondary carbon at all the five-carbon chain could not be continuous."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-carbon chain carrying a methyl group on one carbon and two methyl groups on the neighbouring carbon."
   },
   {
     "question_id": "ch03_q9_iupac_rules_parent",
@@ -362,12 +416,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Recall standard IUPAC nomenclature rules.",
-      "process": "Step 1: The foundation of any IUPAC name is the parent chain.\nStep 2: Identify the longest continuous chain of carbon atoms. Even if it curves or bends, it defines the root name (e.g. hexane, heptane).\nStep 3: Subsequent steps involve numbering and labeling branches.",
-      "result": "First step is to find the longest continuous carbon chain."
+      "context": "The IUPAC rules are applied in a fixed order, and that order matters: each step constrains the ones after it. Everything else in the name depends on which chain is chosen as the parent.",
+      "approach": "Step 1: Identify the longest continuous carbon chain. This becomes the parent and fixes the root of the name.\nStep 2: Only then number that chain, from whichever end gives the substituents the lower locants.\nStep 3: Finally, name the substituents and cite them alphabetically in front of the parent name.",
+      "note": "The longest chain need not be the one drawn in a straight line - it can turn corners on the page. Missing a longer chain that bends is the commonest naming error, and it corrupts everything downstream, since the substituent list depends entirely on which chain was chosen.",
+      "options": {
+        "A": "Correct. The longest continuous chain is chosen first, because it determines the parent name that every later step depends on.",
+        "B": "Numbering comes second. Until the parent chain is chosen there is nothing to number.",
+        "C": "Substituents can only be identified once the parent chain is fixed, since what counts as a branch depends on which chain was selected.",
+        "D": "Assembling the written name is the last step, after the parent, the numbering and the substituents have all been settled."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -403,13 +463,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Name a simple branched alkane using IUPAC rules.",
-      "process": "Step 1: Find the parent chain. The longest continuous chain has 5 carbons (pentane).\nStep 2: Number the parent chain from the end closest to the branch. Numbering from left to right gives the branch at C2. (Right to left would give it at C4).\nStep 3: Name and locate the substituent: 2-methyl.\nStep 4: Combine: 2-methylpentane.",
-      "result": "The correct name is 2-methylpentane."
+      "context": "Once the parent chain is chosen, the numbering direction is settled by the lowest-locant rule: number from the end that gives the substituents the smaller set of numbers. Two names differing only in numbering direction describe the same molecule, but only one is correct.",
+      "approach": "Step 1: Find the longest chain. Counting through the structure gives five carbons, so the parent is pentane.\nStep 2: Locate the substituent - a single methyl group on the carbon next to one end.\nStep 3: Number from the nearer end, which puts the methyl at C2 rather than C4. The name is 2-methylpentane.",
+      "note": "Option B is the right molecule under the wrong name - 4-methylpentane denotes exactly this compound, and fails only on the lowest-locant rule. Recognising that a wrong name can still describe the correct structure is the skill this kind of item is really testing.",
+      "options": {
+        "A": "Correct. A five-carbon parent with a methyl on the second carbon, numbered from the end that gives the lower locant.",
+        "B": "This is the same molecule numbered from the wrong end. Both numberings are geometrically possible, but the rule requires the lower locant, so 2 wins over 4.",
+        "C": "Butane is a four-carbon parent. This structure has five carbons in its longest continuous chain, so the parent name is wrong.",
+        "D": "Isopropylpropane is not an acceptable IUPAC name. It also fails the longest-chain rule, since the full chain here runs to five carbons."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-carbon chain with a methyl group on the second carbon."
   },
   {
     "question_id": "ch03_q11_iupac_tiebreaker_numbering",
@@ -444,13 +511,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Apply numbering and alphabetical sorting rules to substituted heptanes.",
-      "process": "Step 1: Longest chain is 7 carbons (heptane).\nStep 2: Numbering from either end gives substituents at positions 3, 4, and 5 (a tie).\nStep 3: Identify the substituents: ethyl (at C4) and methyls (at C3 and C5). List them alphabetically: ethyl precedes methyl.\nStep 4: Combine prefixes: 4-ethyl-3,5-dimethylheptane. (Note: numerical prefixes like 'di-' are ignored in alphabetical sorting).",
-      "result": "The name is 4-ethyl-3,5-dimethylheptane."
+      "context": "When a molecule carries several different substituents, two separate rules apply: numbering is chosen to give the lowest locants, and the substituents are then cited in the name in alphabetical order, which is generally a different order from their positions.",
+      "approach": "Step 1: Fix the parent. Seven carbons in the longest chain gives heptane.\nStep 2: Number the chain. The substituents sit at C3, C4 and C5, and this set is symmetric, so numbering from either end gives the same locants.\nStep 3: Cite the substituents alphabetically. Ethyl comes before methyl, so the ethyl at C4 is named first, giving 4-ethyl-3,5-dimethylheptane.",
+      "note": "Alphabetical order uses the substituent name itself, ignoring multiplying prefixes: dimethyl is alphabetised under m, not d. That is why ethyl precedes dimethyl here even though d comes before e in the alphabet.",
+      "options": {
+        "A": "Correct. A heptane parent with substituents at C3, C4 and C5, cited alphabetically so that ethyl precedes methyl.",
+        "B": "The locants and the citation order are right, but hexane is a six-carbon parent. This chain has seven carbons.",
+        "C": "This is the right molecule under the wrong name. Everything is correct except the citation order, which must be alphabetical - ethyl before methyl, ignoring the di- prefix.",
+        "D": "This describes a different substitution pattern entirely, with two ethyl groups on a six-carbon parent rather than one ethyl and two methyls on seven."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A seven-carbon chain carrying a methyl group on the third carbon, an ethyl group on the fourth, and a methyl group on the fifth."
   },
   {
     "question_id": "ch03_q12_iupac_longest_chain_trap",
