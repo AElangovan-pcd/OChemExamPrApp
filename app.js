@@ -234,30 +234,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Setup Events
 function setupEventListeners() {
-  // Modal toggle
-  const importBtn = document.getElementById('btn-import');
-  const modal = document.getElementById('import-modal');
-  const modalClose = document.getElementById('modal-close');
-  const importSubmit = document.getElementById('btn-submit-import');
-
-  importBtn.addEventListener('click', () => {
-    modal.classList.add('active');
-  });
-
-  modalClose.addEventListener('click', () => {
-    modal.classList.remove('active');
-  });
-
-  // Close modal when clicking backdrop
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.remove('active');
-    }
-  });
-
-  // Custom JSON submit
-  importSubmit.addEventListener('click', handleCustomImport);
-
   // Reset Stats button
   const resetBtn = document.getElementById('btn-reset');
   if (resetBtn) {
@@ -511,11 +487,8 @@ function renderQuestion() {
         <i class="fas fa-flask" style="font-size: 3rem; color: var(--text-secondary); margin-bottom: 1rem;"></i>
         <h3>No Questions Loaded</h3>
         <p style="color: var(--text-secondary); margin-top: 0.5rem; margin-bottom: 1.5rem;">
-          Import a batch of questions or select a different topic to begin practicing.
+          Select a different topic to begin practicing.
         </p>
-        <button class="btn btn-primary" onclick="document.getElementById('import-modal').classList.add('active')">
-          <i class="fas fa-plus"></i> Import Questions
-        </button>
       </div>
     `;
     updateProgressBar(0);
@@ -855,94 +828,6 @@ function restartTopic() {
 }
 
 // Custom JSON Import parsing
-function handleCustomImport() {
-  const textarea = document.getElementById('custom-json-input');
-  if (!textarea) return;
-
-  const rawVal = textarea.value.trim();
-  if (!rawVal) {
-    showToast('Please enter JSON question data', 'error');
-    return;
-  }
-
-  try {
-    let parsedData = JSON.parse(rawVal);
-    
-    // Normalize into array if single object
-    if (!Array.isArray(parsedData)) {
-      parsedData = [parsedData];
-    }
-
-    // Validate Schema
-    const validatedQuestions = [];
-    parsedData.forEach((q, idx) => {
-      const errors = validateQuestionSchema(q);
-      if (errors.length > 0) {
-        throw new Error(`Question ${idx + 1} validation failed: ${errors.join(', ')}`);
-      }
-      validatedQuestions.push(q);
-    });
-
-    // Merge into local database
-    state.questions = [...state.questions, ...validatedQuestions];
-    assignOERChapterNumbers();
-    
-    // Rebuild topic list and select the newly imported topic
-    buildTopicList();
-    
-    // Close modal
-    document.getElementById('import-modal').classList.remove('active');
-    textarea.value = '';
-    
-    // Select the topic of the first imported question
-    if (validatedQuestions.length > 0) {
-      selectTopic(validatedQuestions[0].topic);
-    }
-    
-    showToast(`Successfully imported ${validatedQuestions.length} ACS-style questions!`, 'success');
-  } catch (err) {
-    console.error('Import error:', err);
-    showToast(`Import Failed: ${err.message}`, 'error');
-  }
-}
-
-// Strict schema validation helper
-function validateQuestionSchema(q) {
-  const errors = [];
-  
-  if (!q.question_id) errors.push('Missing "question_id"');
-  if (!q.topic) errors.push('Missing "topic"');
-  if (!q.difficulty_level) errors.push('Missing "difficulty_level"');
-  if (!q.question_text) errors.push('Missing "question_text"');
-  
-  // Options checks
-  if (!q.options || !Array.isArray(q.options) || q.options.length < 2) {
-    errors.push('"options" must be an array of at least 2 choices');
-  } else {
-    let hasCorrect = false;
-    q.options.forEach((opt, oIdx) => {
-      if (!opt.option_id) errors.push(`Option ${oIdx + 1} is missing "option_id"`);
-      if (!opt.text) errors.push(`Option ${opt.option_id || oIdx + 1} is missing "text"`);
-      if (opt.is_correct === undefined) errors.push(`Option ${opt.option_id || oIdx + 1} is missing "is_correct"`);
-      if (opt.is_correct) hasCorrect = true;
-    });
-    if (!hasCorrect) {
-      errors.push('No correct option designated ("is_correct": true)');
-    }
-  }
-
-  // Feedback checks
-  if (!q.feedback) {
-    errors.push('Missing "feedback" block');
-  } else {
-    if (!q.feedback.context) errors.push('Feedback missing "context"');
-    if (!q.feedback.process) errors.push('Feedback missing "process"');
-    if (!q.feedback.result) errors.push('Feedback missing "result"');
-  }
-
-  return errors;
-}
-
 // Toast notification helper
 function showToast(message, type = 'success') {
   const container = document.getElementById('toast-container');

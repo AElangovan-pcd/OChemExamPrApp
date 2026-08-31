@@ -22,7 +22,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css?v=1.0.13">
+  <link rel="stylesheet" href="style.css?v=1.0.14">
 </head>
 <body>
 
@@ -50,9 +50,6 @@
       <span style="font-size: 0.8rem; background: rgba(99, 102, 241, 0.15); color: #818cf8; padding: 0.35rem 0.75rem; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.3); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;">
         ACS Standard Mode
       </span>
-      <button class="btn btn-primary" id="btn-import">
-        <i class="fas fa-file-import"></i> Import Questions
-      </button>
     </div>
   </header>
 
@@ -203,55 +200,6 @@
     </div>
   </footer>
 
-  <!-- Custom Question Import Modal -->
-  <div class="modal" id="import-modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">Import ACS-Style JSON Questions</h3>
-        <button class="modal-close" id="modal-close">&times;</button>
-      </div>
-      
-      <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5;">
-        Paste your organic chemistry question(s) below. The format must adhere strictly to the JSON schema. Standard fields include: <code>question_id</code>, <code>topic</code>, <code>difficulty_level</code>, <code>question_text</code>, <code>question_smiles</code>, <code>options</code> (with <code>smiles</code> and <code>is_correct</code>), and <code>feedback</code> (with <code>context</code>, <code>process</code>, <code>result</code>).
-      </p>
-
-      <div class="form-group">
-        <label for="custom-json-input">JSON Question Bank Input</label>
-        <textarea id="custom-json-input" class="form-textarea" placeholder='[
-  {
-    "question_id": "custom_q1",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Medium",
-    "question_text": "Identify the major product of the nitration of benzene.",
-    "question_smiles": "c1ccccc1.HNO3.H2SO4",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Nitrobenzene",
-        "smiles": "c1ccc(cc1)[N+](=O)[O-]",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Benzenesulfonic acid",
-        "smiles": "c1ccc(cc1)S(=O)(=O)O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Reacting benzene with nitric and sulfuric acid.",
-      "process": "Step 1: Form NO2+ electrophile. Step 2: Benzene attacks. Step 3: Deprotonate to restore aromaticity.",
-      "result": "Nitrobenzene is formed."
-    }
-  }
-]'></textarea>
-      </div>
-
-      <button class="btn btn-primary" id="btn-submit-import" style="width: 100%; justify-content: center;">
-        <i class="fas fa-check"></i> Parse & Load Questions
-      </button>
-    </div>
-  </div>
 
   <!-- Toast Notification Holder -->
   <div class="toast-container" id="toast-container"></div>
@@ -287,6 +235,6 @@
   <script src="questions/ch28.js"></script>
   <script src="questions/ch29.js"></script>
   <script src="questions/ch30.js"></script>
-  <script src="app.js?v=1.0.18"></script>
+  <script src="app.js?v=1.0.19"></script>
 </body>
 </html>
