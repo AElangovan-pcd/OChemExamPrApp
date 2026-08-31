@@ -1433,7 +1433,7 @@ var CH05_QUESTIONS = [
     "topic": "Fischer Projections",
     "difficulty_level": "Easy",
     "question_text": "In a Fischer projection, what spatial orientation is represented by the horizontal and vertical bonds?",
-    "question_smiles": "OC[C@@H](O)C=O",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1461,12 +1461,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the 3D interpretation of Fischer projections.",
-      "process": "Step 1: Recall the definition of a Fischer projection. It is a 2D representation of a 3D molecule.\nStep 2: By convention, horizontal lines represent bonds that project out of the page (wedges), resembling a bow tie.\nStep 3: Vertical lines represent bonds that project back into the page (dashes).",
-      "result": "Horizontal bonds point towards the viewer (wedges), and vertical bonds point away from the viewer (dashes)."
+      "context": "A Fischer projection is a flattened three-dimensional drawing with the convention carrying all the information the flattening threw away. The cross is not a two-dimensional structure; it is a picture of a tetrahedral centre viewed from one fixed direction.",
+      "approach": "Step 1: Set up the viewing geometry. Place a tetrahedral carbon so that two of its bonds point back and away from you and the other two point forward toward you, then flatten what you see onto the page.\nStep 2: The two bonds pointing away project onto the vertical line, and the two pointing toward you project onto the horizontal line. That is the whole convention: horizontal is toward the viewer, vertical is away.\nStep 3: Check it against a familiar structure. In D-glyceraldehyde the CHO sits at the top and the CH2OH at the bottom - both receding - while the OH and H occupy the horizontal arms and point out of the page at you.",
+      "note": "The convention only holds if the drawing is used as intended: the carbon chain runs down the vertical line with the most oxidised carbon at the top, and the stereocentre sits at the crossing point rather than being drawn in. Note also that the geometry a Fischer projection depicts is fully eclipsed, which no molecule adopts - that costs nothing, because a projection records configuration, and configuration does not change with conformation.",
+      "options": {
+        "A": "Correct. The two bonds projecting onto the horizontal line point out of the page toward the viewer, and the two on the vertical line recede behind it.",
+        "B": "This reverses the convention exactly, and reversing it inverts every stereocentre in the drawing - a projection read this way returns the enantiomer of the intended compound every time.",
+        "C": "If all four bonds lay in the plane there would be no stereochemical information in the drawing at all, and the projection could not distinguish a compound from its mirror image.",
+        "D": "The vertical line does usually carry the carbon chain, but that is a drafting habit, not the meaning of the lines. What the two directions encode is depth: horizontal forward, vertical back."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1474,7 +1480,7 @@ var CH05_QUESTIONS = [
     "topic": "Fischer Projections",
     "difficulty_level": "Medium",
     "question_text": "Which of the following operations on a Fischer projection preserves the original configuration of the stereocenter?",
-    "question_smiles": "C[C@H](O)C(=O)O",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1502,12 +1508,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the rules of manipulating Fischer projections without altering stereochemistry.",
-      "process": "Step 1: A 180-degree rotation keeps the vertical groups vertical and horizontal groups horizontal. Although their positions are inverted, the wedges remain wedges and dashes remain dashes, preserving configuration.\nStep 2: A 90-degree rotation swaps horizontal and vertical bonds. What was in the back is now in the front, which inverts the configuration.\nStep 3: Swapping two groups inverts the configuration. Flipping the projection out of the page is equivalent to a reflection (mirroring), which inverts the configuration.",
-      "result": "Rotating a Fischer projection by 180 degrees in the plane of the page preserves the configuration, whereas 90-degree rotations or single swaps invert it."
+      "context": "Because a Fischer projection stores depth in the direction of the lines, any manipulation that exchanges horizontal with vertical, or that turns the page over, silently rewrites the stereochemistry. Only operations that leave both bond sets where they are can be trusted.",
+      "approach": "Step 1: Test the 180 degree rotation in the plane. The two horizontal arms swap with each other and the two vertical arms swap with each other, but horizontal stays horizontal and vertical stays vertical - so every group keeps its depth and the configuration is unchanged.\nStep 2: Test the 90 degree rotation. Now the horizontal pair becomes vertical and the vertical pair becomes horizontal, so all four groups reverse their depth and the centre inverts.\nStep 3: Test the remaining two. Flipping the projection out of the page exchanges front for back at every position and inverts the centre; exchanging any two groups at a stereocentre inverts it by definition. Only the 180 degree in-plane rotation survives.",
+      "note": "Preserving the configuration is not quite the same as leaving the drawing alone. A 180 degree turn also inverts the molecule top to bottom, so the carbon that was C1 now sits at the bottom of the page - the descriptors are still correct but the locants have to be re-read from the new orientation before the compound is named.",
+      "options": {
+        "A": "Correct. A half turn in the plane keeps horizontal bonds horizontal and vertical bonds vertical, so no group changes its depth and the configuration survives intact.",
+        "B": "A quarter turn converts the forward-pointing horizontal pair into the rearward vertical pair and vice versa, inverting every stereocentre and producing the enantiomer.",
+        "C": "Turning the projection over exchanges the front and back of every bond at once, which inverts each stereocentre - the drawing that results is of the mirror-image compound.",
+        "D": "A single exchange of two groups at a tetrahedral centre inverts it. That is true in any notation, and it is the reason two exchanges are needed to redraw a centre without changing it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1515,7 +1527,7 @@ var CH05_QUESTIONS = [
     "topic": "Fischer Projections",
     "difficulty_level": "Medium",
     "question_text": "Assign the R/S configuration to the chiral center in the following Fischer projection:\nTop = -CHO, Bottom = -CH2OH, Left = -H, Right = -OH.",
-    "question_smiles": "OC[C@@H](O)C=O",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1543,12 +1555,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the method for assigning R/S configuration directly from a Fischer projection.",
-      "process": "Step 1: Assign priorities to the groups: $-OH$ (1), $-CHO$ (2), $-CH_2OH$ (3), $-H$ (4).\nStep 2: Trace the path 1 -> 2 -> 3. From $-OH$ (right) -> $-CHO$ (top) -> $-CH_2OH$ (bottom), the path is counter-clockwise.\nStep 3: Identify the position of the lowest priority group ($-H$). It is on a horizontal bond. By Fischer rules, if group 4 is horizontal, the apparent configuration (S) is reversed. Thus, the configuration is (R).",
-      "result": "The configuration is (R) because the apparent counter-clockwise direction is reversed since the lowest priority group (-H) is on a horizontal bond."
+      "context": "Assigning a configuration from a Fischer projection uses the ordinary Cahn-Ingold-Prelog procedure with one substitution: instead of looking for a wedge or a dash, you read the depth off which line the lowest-priority group is sitting on.",
+      "approach": "Step 1: Rank the four groups. The hydroxyl is oxygen and comes first. Between the two carbons, the aldehyde carries (O,O,H) once its carbonyl oxygen is duplicated and the CH2OH carries (O,H,H), so CHO outranks CH2OH. Hydrogen is last.\nStep 2: Find the hydrogen. It is on the left arm, which is horizontal - and horizontal means pointing toward the viewer, the orientation that requires the reading to be reversed.\nStep 3: Trace the circle. Going from the hydroxyl on the right, up to the aldehyde at the top, then down to the CH2OH at the bottom runs counter-clockwise on the page. Reversing that, because the hydrogen faces you, gives clockwise: the centre is (R).",
+      "note": "This gives a shortcut worth keeping. In a Fischer projection the lowest-priority group is on a horizontal arm or a vertical one, never anywhere else - so read the circle and reverse it if that group is horizontal, read it directly if vertical. There is no third case to worry about, which is exactly what makes projections convenient for sugars with four or five stereocentres stacked up the page.",
+      "options": {
+        "A": "Correct. Priorities run OH > CHO > CH2OH > H, the circle reads counter-clockwise on the page, and reversing it for the horizontal hydrogen gives (R).",
+        "B": "This is the circle taken as drawn without reversing it. The hydrogen occupies a horizontal arm and therefore points at the viewer, which is precisely when the correction is required.",
+        "C": "The central carbon carries a hydroxyl, an aldehyde, a CH2OH and a hydrogen - four different groups - so it is a stereocentre and the molecule is chiral.",
+        "D": "D is a relative label assigned by comparison with glyceraldehyde, not a Cahn-Ingold-Prelog descriptor, and the question asks for the configuration in the R/S system."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1556,7 +1574,7 @@ var CH05_QUESTIONS = [
     "topic": "Fischer Projections",
     "difficulty_level": "Hard",
     "question_text": "What is the stereochemical relationship between a Fischer projection of a molecule and the structure obtained by rotating it 90 degrees in the plane of the page?",
-    "question_smiles": "C[C@H](O)C(=O)O",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1584,12 +1602,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the stereochemical consequence of a 90-degree rotation of a Fischer projection.",
-      "process": "Step 1: Understand that a 90-degree rotation in the plane of the page changes vertical groups (which project away) to horizontal groups (which project towards you), and vice versa.\nStep 2: This changes the spatial orientation of all substituents, effectively mirroring the chiral center and inverting its configuration.\nStep 3: Because the configuration is inverted and the molecule has a single chiral center, the resulting structure is the enantiomer.",
-      "result": "A 90-degree rotation of a Fischer projection in the plane of the page inverts the configuration, producing the enantiomer."
+      "context": "A quarter turn is the most innocent-looking thing you can do to a drawing on paper, and in a Fischer projection it is the operation that silently produces the mirror image. Depth is stored in the orientation of the lines, so rotating the lines rewrites the depth.",
+      "approach": "Step 1: Note what the two lines mean. Horizontal bonds point toward the viewer and vertical bonds point away, so the drawing encodes two groups in front and two behind.\nStep 2: Rotate the whole projection through 90 degrees. The pair that was horizontal is now vertical and the pair that was vertical is now horizontal, so all four groups have swapped which side of the page they occupy.\nStep 3: Reversing the depth of every group at a tetrahedral centre is the same as reflecting it. Every stereocentre in the projection inverts at once, which is exactly the relationship between a compound and its enantiomer.",
+      "note": "Because the inversion hits every centre in the drawing simultaneously, the result is always the enantiomer and never a diastereomer, however many stereocentres are stacked up the page. That is also why a Fischer projection must be kept upright on the page: unlike a wedge-and-dash drawing, which can be turned any way you like, this notation has a privileged orientation built into its meaning.",
+      "options": {
+        "A": "Correct. A quarter turn exchanges the forward-pointing bonds with the rearward ones at every stereocentre, which inverts them all and gives the mirror image.",
+        "B": "A diastereomer would require some centres to invert and others to stay put. The rotation acts on the whole drawing at once, so no centre can be spared.",
+        "C": "This would be true of a 180 degree turn, which keeps horizontal bonds horizontal. A 90 degree turn moves them onto the vertical line and changes their depth.",
+        "D": "Rotating a drawing cannot break or make a bond, so the connectivity is untouched and the two structures remain stereoisomers rather than constitutional isomers."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1597,7 +1621,7 @@ var CH05_QUESTIONS = [
     "topic": "Fischer Projections",
     "difficulty_level": "Medium",
     "question_text": "Which of the following Fischer projections represents an achiral (meso) diastereomer of 2,3-dibromobutane?",
-    "question_smiles": "C[C@@H](Br)[C@@H](Br)C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1625,12 +1649,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests how to recognize meso compounds in Fischer projections.",
-      "process": "Step 1: For a Fischer projection to represent a meso compound, there must be a plane of symmetry that cuts the projection in half horizontally.\nStep 2: In Option A, the top and bottom groups are identical ($-CH_3$). C2 has H (left) and Br (right), and C3 has H (left) and Br (right). A horizontal line bisecting the C2-C3 bond reflects the top half onto the bottom half exactly. This is a meso compound.\nStep 3: Option B has H/Br on opposite sides, lacking a plane of symmetry (this is the chiral (2R,3R) or (2S,3S) isomer). Option C has different end groups ($-CH_3$ vs. $-CH_2CH_3$), so it cannot have a plane of symmetry.",
-      "result": "The projection with identical substituents reflecting across a horizontal mirror plane represents the meso compound."
+      "context": "A Fischer projection makes a meso compound visible as a picture rather than as a calculation: if a horizontal line can be drawn across the middle of the projection with the top half reflecting onto the bottom half, the molecule has the internal mirror plane a meso form requires.",
+      "approach": "Step 1: Check the skeleton first. A mirror line across the middle can only work if the two halves are constitutionally identical, which means the same group at the top of the projection as at the bottom. Methyl at both ends satisfies this; methyl at one end and ethyl at the other does not.\nStep 2: Apply the mirror line to the option with two methyls and both bromines on the right. Reflecting the top half downward carries the upper bromine onto the lower bromine and the upper hydrogen onto the lower hydrogen - the halves match, so the compound is meso.\nStep 3: Apply it to the option with the bromines on opposite sides. Reflection now sends the upper bromine onto a hydrogen, the halves do not match, and that drawing is one member of a chiral pair.",
+      "note": "The visual test is doing something specific: it looks for the eclipsed conformation in which the mirror plane is manifest, which a Fischer projection always draws. In a wedge-and-dash sketch of the same compound the plane can be hidden by whichever conformation happens to be on the page, and the anti conformer shows a centre of inversion instead. The projection is convenient precisely because it fixes the conformation for you.",
+      "options": {
+        "A": "Correct. Identical methyls top and bottom with both bromines on the same side means a horizontal mirror line reflects the upper half exactly onto the lower one.",
+        "B": "Placing the bromines on opposite sides destroys the mirror line - reflection would carry a bromine onto a hydrogen. This drawing is one enantiomer of the chiral pair.",
+        "C": "A methyl at the top and an ethyl at the bottom describes 2,3-dibromopentane, not 2,3-dibromobutane, and constitutionally different halves rule out any internal mirror whatever the bromines do.",
+        "D": "2,3-Dibromobutane does have a meso form. Its two stereocentres carry identical substituent sets, which is the structural requirement, and one of the drawings offered meets it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1638,7 +1668,7 @@ var CH05_QUESTIONS = [
     "topic": "Optical Activity",
     "difficulty_level": "Medium",
     "question_text": "A solution of a pure chiral compound (concentration = 0.20 g/mL) placed in a 2.0 dm polarimeter tube exhibits an observed rotation of -6.0 degrees. Calculate the specific rotation $[\\alpha]_D$ of this compound.",
-    "question_smiles": "CC(O)C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1666,12 +1696,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the calculation of specific rotation using the standard polarimetry equation.",
-      "process": "Step 1: Write down the specific rotation formula: $[\\alpha] = \\alpha / (c \\cdot l)$, where $\\alpha$ is the observed rotation in degrees (-6.0), $c$ is the concentration in g/mL (0.20), and $l$ is the path length in decimeters (2.0).\nStep 2: Plug in the values: $[\\alpha] = -6.0 / (0.20 \\cdot 2.0) = -6.0 / 0.40$.\nStep 3: Solve the division: $-6.0 / 0.40 = -15$ degrees.",
-      "result": "The specific rotation of the compound is -15 degrees."
+      "context": "An observed rotation is not a property of a substance - it depends on how much of the substance the light passed through. Specific rotation is the observed value normalised for path length and concentration so that it becomes a constant of the compound.",
+      "approach": "Step 1: Write the definition. The specific rotation is the observed rotation divided by the product of the path length in decimetres and the concentration in grams per millilitre.\nStep 2: Substitute. The path is 2.0 dm and the concentration 0.20 g/mL, so the denominator is 2.0 times 0.20, which is 0.40.\nStep 3: Divide. Minus 6.0 divided by 0.40 gives minus 15. The sign is carried straight through, since normalising by two positive quantities cannot change it.",
+      "note": "The units in that denominator are the trap, and they are unusual on purpose: decimetres rather than centimetres or metres, and grams per millilitre rather than molarity. Because the constant depends on more than the molecule, a specific rotation is only meaningful when quoted with its conditions - the sodium D line, the temperature and the solvent - and the same compound can give a noticeably different number in water than in chloroform.",
+      "options": {
+        "A": "Correct. Dividing the observed minus 6.0 degrees by a path of 2.0 dm times a concentration of 0.20 g/mL gives minus 15 degrees.",
+        "B": "Minus 6.0 is the observed rotation as read from the instrument, before normalising. It would only equal the specific rotation if the path length times the concentration came to exactly 1.",
+        "C": "Minus 60 comes from multiplying by the denominator instead of dividing, or from treating the 0.20 as if it belonged in the numerator.",
+        "D": "The magnitude is right but the sign is not. Normalising divides by two positive quantities, so a levorotatory sample stays levorotatory."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1679,7 +1715,7 @@ var CH05_QUESTIONS = [
     "topic": "Optical Activity",
     "difficulty_level": "Easy",
     "question_text": "A sample of a chiral compound has an enantiomeric excess (ee) of 70% of the levorotatory (-) enantiomer. What is the actual percentage of the (+) and (-) enantiomers in the mixture?",
-    "question_smiles": "CC(O)C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1707,12 +1743,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the calculation of individual enantiomer percentages from enantiomeric excess (ee).",
-      "process": "Step 1: Enantiomeric excess (ee) is defined as the difference in percentages of the two enantiomers: $ee = \\% \\text{major} - \\% \\text{minor}$.\nStep 2: Let $x$ be the percentage of the (-) enantiomer and $y$ be the percentage of the (+) enantiomer. We have $x + y = 100\\%$ and $x - y = 70\\%$.\nStep 3: Add the two equations: $2x = 170\\% \\implies x = 85\\%$. Solve for $y$: $y = 15\\%$.",
-      "result": "The mixture contains 85% of the (-) enantiomer and 15% of the (+) enantiomer."
+      "context": "Enantiomeric excess measures the excess, not the majority. It is the fraction of the sample that behaves as a single enantiomer once the racemic part has been mentally paired off and set aside.",
+      "approach": "Step 1: Split the sample in two. An ee of 70 per cent means 70 per cent of the material is pure levorotatory enantiomer and the remaining 30 per cent is a racemate.\nStep 2: Divide the racemic 30 per cent evenly - 15 per cent of each enantiomer, since a racemate is by definition an equal mixture.\nStep 3: Add the two contributions to the levorotatory total: 70 from the excess plus 15 from the racemic half gives 85 per cent, leaving 15 per cent dextrorotatory. Check it: 85 minus 15 is 70, which is the ee we started from.",
+      "note": "Reading 70 per cent ee as 70 per cent of the major enantiomer is the standard slip, and it always understates the purity. A useful sanity check is that ee and the majority percentage converge only at the extremes: zero ee is a 50:50 mixture and 100 per cent ee is a single enantiomer, while everything between has the majority sitting above the ee.",
+      "options": {
+        "A": "Correct. The 70 per cent excess is pure levorotatory material and the remaining 30 per cent racemate splits 15 and 15, giving 85 to 15 overall.",
+        "B": "This reads the ee as the percentage of the major enantiomer. A sample that is 70 per cent levorotatory and 30 per cent dextrorotatory has an ee of 40 per cent, not 70.",
+        "C": "90 to 10 corresponds to an ee of 80 per cent. The arithmetic here would follow from splitting the racemic remainder unevenly, which a racemate by definition cannot be.",
+        "D": "75 to 25 corresponds to an ee of 50 per cent. This is the answer that comes from halving the ee instead of halving the racemic remainder."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1748,20 +1790,27 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relationship between specific rotation, optical purity (ee), and molecular composition.",
-      "process": "Step 1: Calculate the enantiomeric excess (optical purity): $ee = |\\text{observed rotation}| / |\\text{specific rotation of pure enantiomer}| = 11.55 / 23.1 = 0.50$ or $50\\%$.\nStep 2: Since the observed rotation is negative, the (R) enantiomer is in excess. So we have 50% ee of (R).\nStep 3: Calculate the composition. 50% of the mixture is pure (R), and the remaining 50% is a racemic mixture of (R) and (S) (which contains 25% R and 25% S). Thus, total (R) = 50% + 25% = 75%, and total (S) = 25%.",
-      "result": "The mixture has a 50% ee of (R), corresponding to a composition of 75% (R) and 25% (S)."
+      "context": "Optical purity compares a measured rotation with the rotation the pure enantiomer would give. Under the assumption that rotation scales linearly with composition, that ratio is numerically the enantiomeric excess, which then fixes the composition.",
+      "approach": "Step 1: Take the ratio. Minus 11.55 divided by minus 23.1 is 0.500, so the mixture shows half the rotation the pure (R) enantiomer would - an optical purity of 50 per cent, and therefore an ee of 50 per cent in favour of (R).\nStep 2: Convert the ee into a composition. Half the sample is pure (R); the other half is racemic and splits into 25 per cent (R) and 25 per cent (S).\nStep 3: Total up: 50 plus 25 gives 75 per cent (R) against 25 per cent (S). Confirm against the definition - 75 minus 25 is 50, which is the ee just calculated.",
+      "note": "That first step rests on rotation being strictly proportional to composition, and it is not always. Some compounds self-associate in concentrated solution, so a molecule's optical contribution depends on whether its neighbours share its handedness, and the measured rotation drifts away from linearity - the Horeau effect. Modern practice measures the composition directly on a chiral column and reserves the polarimeter for confirmation.",
+      "options": {
+        "A": "Correct. Half the pure rotation means 50 per cent ee, and a 50 per cent excess plus a racemic remainder split 25 and 25 gives 75 per cent (R).",
+        "B": "A 50:50 composition is a racemate and would read zero on the polarimeter, not half the pure value. This confuses the ee with the percentage of the major enantiomer.",
+        "C": "An ee of 25 per cent would give a quarter of the pure rotation, about minus 5.8 degrees. The measured value is half, not a quarter.",
+        "D": "An ee of 75 per cent would give three quarters of the pure rotation, about minus 17.3 degrees. The measured minus 11.55 is exactly half."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-carbon zig-zag chain whose second carbon carries a bromine on a bold wedge pointing toward the viewer, with a methyl below that carbon and the remaining two carbons running off to the right."
   },
   {
     "question_id": "ch05_q39_no_rs_polarimetry_correlation",
     "topic": "Optical Activity",
     "difficulty_level": "Easy",
     "question_text": "Which of the following statements is true regarding the relationship between the configuration (R/S) and the direction of optical rotation (+/-) of a molecule?",
-    "question_smiles": "CC(O)C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1789,12 +1838,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question clarifies the distinction between nomenclatural designation (R/S) and physical property (+/-).",
-      "process": "Step 1: R/S configurations are determined by Cahn-Ingold-Prelog priority rules, which are based on atomic numbers and rules of nomenclature.\nStep 2: The direction of optical rotation (+/-) is an experimental physical property determined by how the molecule interacts with plane-polarized light in a polarimeter.\nStep 3: There is no mathematical or direct correlation between them. A molecule with (R) configuration can be either (+) or (-), depending on its structure, solvent, and temperature.",
-      "result": "There is no direct correlation between the R/S configuration and the direction of optical rotation; they represent two different concepts."
+      "context": "R and S come from a bookkeeping procedure run on a structure; plus and minus come from an instrument reading. One is computed and the other is measured, and nothing in the definition of either ties them together.",
+      "approach": "Step 1: See what the descriptor is built from. Cahn-Ingold-Prelog ranks the four groups by atomic number and reports the sense of rotation through the top three - an operation on connectivity that never touches how light interacts with the molecule.\nStep 2: See what the sign is built from. Optical rotation depends on how the entire electron distribution retards left- and right-circularly polarised light, which involves every atom in the molecule and its response at the wavelength being used.\nStep 3: Test the claim against real compounds. (S)-Lactic acid is dextrorotatory while (S)-glyceraldehyde is levorotatory, so a shared descriptor gives no shared sign; the only guaranteed relationship is that a compound and its own enantiomer have opposite signs.",
+      "note": "The sign is not even fixed for a given substance across conditions. It varies with wavelength, and near an absorption band a compound can rotate light one way at one wavelength and the other way a little further along - which is why every specific rotation is quoted at a stated wavelength, conventionally the sodium D line, and at a stated temperature and solvent.",
+      "options": {
+        "A": "Correct. The descriptor comes from a priority calculation on the structure and the sign from a physical measurement, and neither determines the other.",
+        "B": "This is the correlation students most often assume, and single counterexamples defeat it: (S)-lactic acid is dextrorotatory while (S)-glyceraldehyde is levorotatory.",
+        "C": "Halogens have no special standing here. Rotation depends on the whole electron distribution, and plenty of levorotatory (R) compounds contain no halogen at all.",
+        "D": "This asserts the same false correlation in the opposite direction. A positive rotation is consistent with either descriptor, and the only way to know which is to work the structure out."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1830,13 +1885,20 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests how diastereomeric relationships affect optical activity properties.",
-      "process": "Step 1: Enantiomers must have equal and opposite optical rotations because they are mirror images.\nStep 2: Diastereomers are not mirror images. They have different physical properties including melting points, solubilities, and dipole moments.\nStep 3: Consequently, their interactions with plane-polarized light are completely different. Their specific rotations differ in both magnitude and direction, and there is no formula to predict one from the other.",
-      "result": "Diastereomers have different specific rotations with no simple or predictable relationship between them."
+      "context": "Enantiomers have rotations locked to one another by symmetry - equal size, opposite sign. Diastereomers have no such link, because they are simply different substances that happen to share a constitution, and different substances have unrelated physical constants.",
+      "approach": "Step 1: Ask what forces the enantiomer relationship. Reflection maps one molecule exactly onto the other, so every scalar property matches and the one pseudoscalar property, the rotation, reverses.\nStep 2: Ask whether any operation does that for diastereomers. None does - they differ at some stereocentres and agree at others, so no symmetry connects their electron distributions.\nStep 3: Conclude that the two rotations are independent measurements. They may differ in magnitude, agree or disagree in sign, and one of them may be large while the other is nearly zero; nothing about one predicts the other.",
+      "note": "This has a practical consequence for polarimetry. A single reading on a mixture of diastereomers is the weighted sum of two unrelated constants, so it cannot be unpicked into a composition without measuring each pure diastereomer first - unlike a mixture of two enantiomers, where one reading and one known constant give the composition outright.",
+      "options": {
+        "A": "Correct. No symmetry operation relates two diastereomers, so their rotations are independent physical constants with no fixed relationship in size or in sign.",
+        "B": "Equal magnitudes with opposite signs is the enantiomer relationship, and it holds precisely because reflection maps one molecule onto the other. Diastereomers are not related by reflection.",
+        "C": "Identical rotations would mean the two are indistinguishable in a polarimeter, which would make them the same substance or a pair of enantiomers - not diastereomers.",
+        "D": "One diastereomer being achiral does happen, as with meso-tartaric acid against the (2R,3R) acid, but it is a special case rather than a rule. Two chiral diastereomers are perfectly ordinary."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two adjacent carbons in the middle of a four-carbon chain: the left one carries a chlorine drawn on a hashed bond receding from the viewer, the right one a hydroxyl on a bold wedge coming toward the viewer, with a methyl at each end of the chain."
   },
   {
     "question_id": "ch05_q41_racemization_thermodynamics",
