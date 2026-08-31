@@ -5576,5 +5576,46 @@ var CH08_QUESTIONS = [
     "key_status": "unverified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q35_carbene_singlet_triplet",
+    "topic": "Reaction Intermediates",
+    "difficulty_level": "Hard",
+    "question_text": "Carbenes ($:CR_2$) can exist in singlet or triplet ground states. Which of the following correctly describes the electronic configuration of a triplet carbene?",
+    "question_smiles": "",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "$sp^2$-hybridized carbon with a lone pair in an $sp^2$ orbital and an empty $p$ orbital.",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "$sp^2$-hybridized carbon with two unpaired electrons of parallel spins in different orbitals (one $sp^2$ and one $p$).",
+        "smiles": "",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "$sp$-hybridized carbon with two lone pairs of electrons.",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "$sp^3$-hybridized carbon with two covalent bonds and two vacant orbitals.",
+        "smiles": "",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "This question distinguishes between singlet and triplet carbenes.",
+      "process": "Step 1: A singlet carbene has its two non-bonding electrons paired in a single orbital (usually $sp^2$), leaving an empty $p$ orbital.\nStep 2: A triplet carbene has two non-bonding electrons with parallel spins in different orbitals (satisfying Hund's rule). Usually, the carbon is $sp^2$-hybridized, with one electron in an $sp^2$ orbital and one electron in a $p$ orbital.\nStep 3: This results in a biradical-like electronic structure.",
+      "result": "A triplet carbene has two unpaired electrons with parallel spins in different orbitals."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

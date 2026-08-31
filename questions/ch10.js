@@ -6774,5 +6774,94 @@ var CH10_QUESTIONS = [
     "key_status": "unverified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch10_q4_ligand_exchange",
+    "topic": "Reaction Mechanisms",
+    "difficulty_level": "Hard",
+    "question_text": "During the catalytic cycle of the Heck reaction, an organopalladium intermediate coordinates to an alkene, which subsequently inserts into the palladium-carbon bond. In a preceding step, the halide ligand on palladium is substituted by a phosphine ligand. What type of mechanism does this ligand substitution represent?",
+    "question_smiles": "C=C",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Polar addition",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Pericyclic rearrangement",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Ligand exchange",
+        "smiles": "",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Homolytic cleavage",
+        "smiles": "",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "A metal centre in a catalytic cycle holds a set of ligands that come and go. Swapping one ligand for another at the metal is its own mechanistic category, distinct from anything happening to the organic substrate.",
+      "approach": "Step 1: Locate where the change occurs. The halide leaves palladium and a phosphine takes its place, so the event is at the metal, not at carbon.\nStep 2: Ask what has been exchanged. One two-electron donor has been replaced by another two-electron donor.\nStep 3: Check the metal's oxidation state. It is unchanged, because no electrons were transferred to or from palladium. A substitution in the coordination sphere at constant oxidation state is ligand exchange.",
+      "note": "Keep this step separate from the insertion described just before it. Coordination of the alkene and its insertion into the palladium-carbon bond change what is bonded to carbon; the phosphine-for-halide swap changes only which ligands surround the metal.",
+      "options": {
+        "A": "Polar addition puts two fragments across a multiple bond of an organic substrate. Replacing a halide on palladium adds nothing across the alkene.",
+        "B": "A pericyclic rearrangement is a concerted reorganisation of bonds around a ring and needs no metal at all, so it does not describe a substitution at palladium.",
+        "C": "Correct. A halide ligand departs from palladium and a phosphine donor occupies the vacated coordination site, with the metal's oxidation state unchanged.",
+        "D": "Homolytic cleavage splits a bond so that each fragment keeps one electron, giving radicals. The phosphine arrives with its lone pair intact and no bond is split evenly."
+      }
+    },
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two carbons joined by a double bond, each carrying two hydrogens."
+  },
+  {
+    "question_id": "ch10_q43_organometallic_transmetalation",
+    "topic": "Reaction Mechanisms",
+    "difficulty_level": "Hard",
+    "question_text": "In transition-metal-catalyzed cross-coupling reactions, the step in which an organic group is transferred from one metal (such as boron or tin) to the transition metal catalyst (such as palladium) is known as:",
+    "question_smiles": "",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Oxidative addition",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Reductive elimination",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Transmetalation",
+        "smiles": "",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Carbometalation",
+        "smiles": "",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "This question tests ligand exchange/organometallic mechanisms.",
+      "process": "Step 1: Identify the components: an organometallic donor (e.g. organoboron in Suzuki coupling) and a palladium complex.\nStep 2: The transfer of the organic group from boron to palladium is a ligand exchange between two metals.\nStep 3: This process is known as transmetalation.",
+      "result": "The step is transmetalation."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

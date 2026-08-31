@@ -394,13 +394,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the classification of organic reactions based on their mechanism of bond-making and bond-breaking.",
-      "process": "Step 1: Identify that the reaction is concerted (occurs in a single step) and involves a cyclic transition state of reorganizing $\\pi$ electrons.\nStep 2: Compare with polar reactions (involving electron pairs moving from nucleophiles to electrophiles), radical reactions (involving unpaired electrons), and ligand exchange reactions (substitution at transition metals).\nStep 3: Conclude that reactions proceeding via a concerted cyclic rearrangement of electrons are pericyclic reactions.",
-      "result": "The Diels-Alder reaction is a pericyclic reaction."
+      "context": "McMurry sorts mechanisms by how the electrons move: in pairs between an electron-rich and an electron-poor partner, one at a time, or all together around a closed loop of bonds. Those three answers are the polar, radical and pericyclic classes.",
+      "approach": "Step 1: Look for a nucleophile and an electrophile. Butadiene and ethylene are both neutral hydrocarbons, and neither develops a charge on the way to product.\nStep 2: Look for an initiator or an unpaired electron. There is none, only heat.\nStep 3: The stem says the reaction happens in one step with no intermediate. Six electrons shift around a ring of six atoms simultaneously, which is what pericyclic means.",
+      "note": "Pericyclic reactions are the smallest of the three classes and the Diels-Alder is the one you meet first, in Chapter 14. Note that heat is what drives it; the same two partners under ultraviolet light follow a different set of rules and give a different result.",
+      "options": {
+        "A": "A polar reaction needs an electron-rich partner and an electron-poor one, and it leaves a charged intermediate you could draw. Neither hydrocarbon here carries or develops charge.",
+        "B": "A radical mechanism requires an initiator and moves one electron at a time through radical intermediates. Nothing in this reaction generates a radical.",
+        "C": "Correct. Six electrons move around a cyclic transition state in a single step, with no intermediate at any point - the defining feature of a pericyclic reaction.",
+        "D": "Ligand exchange is substitution at a metal centre, and there is no metal anywhere in this reaction."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-carbon chain with a double bond between the first and second carbons and another between the third and fourth."
   },
   {
     "question_id": "ch06_q2_radical_propagation",
@@ -435,13 +442,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the understanding of the steps in a radical chain reaction mechanism.",
-      "process": "Step 1: Identify the three phases of radical chain reactions: initiation (produces radicals from non-radicals), propagation (consumes a radical to generate a new radical, maintaining the chain), and termination (combines two radicals to form a stable non-radical molecule).\nStep 2: Analyze Option A: initiation step. Analyze Options C and D: termination steps.\nStep 3: Analyze Option B: reactant radical ($Cl\\cdot$) reacts with a non-radical ($CH_4$) to produce a new radical ($\\cdot CH_3$) and a non-radical ($HCl$). This is a propagation step.",
-      "result": "The propagation step is $CH_4 + Cl\\cdot \\rightarrow \\cdot CH_3 + HCl$."
+      "context": "A radical chain has three phases and each has an unmistakable signature in the radical count: initiation makes radicals from a non-radical, propagation consumes one and produces one, and termination consumes two and produces none.",
+      "approach": "Step 1: Count radicals on each side of option A. Zero on the left, two on the right, so this is initiation.\nStep 2: Do the same for C and D. Each consumes two radicals and makes none, so both end the chain.\nStep 3: Option B starts with one radical and finishes with one. The chlorine atom is spent but a methyl radical replaces it, so the chain survives to react again.",
+      "note": "The two propagation steps added together give the overall equation, and neither creates nor destroys radicals. That bookkeeping is exactly why a few initiator molecules can convert a very large number of substrate molecules.",
+      "options": {
+        "A": "Chlorine absorbs light and splits into two chlorine atoms. Making radicals where there were none is initiation, the step that starts the chain rather than sustains it.",
+        "B": "Correct. One radical in and one radical out: the chlorine atom abstracts a hydrogen to give HCl, and the methyl radical left behind carries the chain forward.",
+        "C": "Coupling a methyl radical with a chlorine atom does give the product molecule, but it uses up two radicals and returns none, which stops the chain.",
+        "D": "Two methyl radicals combining to give ethane is a termination step, and it accounts for the trace of ethane found among the products of this reaction."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single carbon atom carrying four hydrogens."
   },
   {
     "question_id": "ch06_q3_polar_addition",
@@ -476,54 +490,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the classification of reactions involving electrophiles and nucleophiles.",
-      "process": "Step 1: Identify that the reaction proceeds via the movement of electron pairs from electron-rich species ($\\pi$ bond and bromide ion) to electron-poor species (proton and carbocation).\nStep 2: Recall that mechanisms involving the transfer of electron pairs between electron-rich and electron-poor centers are classified as polar reactions.",
-      "result": "This is a polar reaction."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch06_q4_ligand_exchange",
-    "topic": "Reaction Mechanisms",
-    "difficulty_level": "Hard",
-    "question_text": "During the catalytic cycle of the Heck reaction, an organopalladium intermediate coordinates to an alkene, which subsequently inserts into the palladium-carbon bond. In a preceding step, the halide ligand on palladium is substituted by a phosphine ligand. What type of mechanism does this ligand substitution represent?",
-    "question_smiles": "C=C",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Polar addition",
-        "smiles": "",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "Pericyclic rearrangement",
-        "smiles": "",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Ligand exchange",
-        "smiles": "",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "Homolytic cleavage",
-        "smiles": "",
-        "is_correct": false
+      "context": "Polar reactions are the ones in which a pair of electrons moves from an electron-rich site to an electron-poor one. Their hallmark is an intermediate bearing a full charge that you can draw as a discrete structure.",
+      "approach": "Step 1: Name the electron-rich partner. The alkene pi bond sits above and below the ring plane and is the most available electron density in the molecule.\nStep 2: Name the electron-poor partner. The hydrogen of H-Br carries a partial positive charge because bromine holds the bonding pair more tightly.\nStep 3: The pi pair moves to that proton, leaving a carbocation, and bromide then donates a pair back to it. Electron pairs, opposite charges and a real intermediate all point to a polar mechanism.",
+      "note": "The carbocation is what makes this mechanism worth naming, and it is also what makes the outcome predictable: the proton adds to whichever carbon leaves the more stable cation behind, which is Markovnikov's rule stated mechanistically.",
+      "options": {
+        "A": "Correct. Electron pairs flow from the electron-rich alkene to the electron-poor proton and back from bromide, by way of a carbocation intermediate.",
+        "B": "A radical route would move single electrons and would need a peroxide or light to start it. With HBr alone and no initiator, the reaction does not take that path.",
+        "C": "Pericyclic reactions are concerted and pass through no intermediate whatsoever, whereas this one stops at a carbocation that can be isolated on paper.",
+        "D": "Ligand exchange means substitution at a metal centre, and no metal appears anywhere in this transformation."
       }
-    ],
-    "feedback": {
-      "context": "This question tests organometallic mechanism steps, specifically ligand substitution/exchange at transition metal centers.",
-      "process": "Step 1: Identify the transition metal complex undergoing reaction.\nStep 2: Recognize that replacing one ligand (halide) bonded to palladium with another ligand (phosphine) is a substitution at the metal center.\nStep 3: Classify this as a ligand exchange reaction, which is distinct from polar organic mechanisms, radical mechanisms, or pericyclic mechanisms.",
-      "result": "This represents ligand exchange."
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring containing one double bond."
   },
   {
     "question_id": "ch06_q5_arrow_direction",
@@ -558,13 +538,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the fundamental convention of using curved arrows to represent electron-pair movement in polar mechanisms.",
-      "process": "Step 1: Recall that curved arrows in polar mechanisms track the movement of electron pairs.\nStep 2: The tail of the arrow must always start at the source of electrons (a lone pair, a $\\sigma$ bond, or a $\\pi$ bond).\nStep 3: The head of the arrow must point to the destination of the electron pair (an electrophilic atom, or a bond being formed/broken).",
-      "result": "The tail starts at an electron-rich site and the head points to an electrophilic atom or bond."
+      "context": "A curved arrow in a polar mechanism is a statement about a pair of electrons: where the pair starts and where it ends up. The direction therefore follows the electrons, never the atoms and never the charge.",
+      "approach": "Step 1: Fix the convention. The tail sits on the electron source, which must be either a lone pair or a bond, because those are the only places a pair can come from.\nStep 2: The head points at the electron sink - an atom or a bond able to accept that pair.\nStep 3: Apply it to acetone. A nucleophile's lone pair attacks the carbonyl carbon, so one arrow runs from that lone pair to carbon, and a second runs from the C=O pi bond up onto oxygen. Both begin rich and end poor.",
+      "note": "This convention is why an arrow can never begin at a positive charge: a positive site is short of electrons and has none to give. The single exception to the two-electron rule is the fishhook arrow, which moves one electron at a time in radical mechanisms.",
+      "options": {
+        "A": "This runs the convention backwards. An electrophilic atom is short of electrons, so it cannot be the source, and a lone pair is a donor rather than a destination.",
+        "B": "Correct. The tail marks the electron source, a lone pair or a bond, and the head marks the electrophilic atom or bond that receives the pair.",
+        "C": "Charges often sit near the two ends of an arrow, but the arrow tracks electron movement rather than charge, and plenty of arrows begin and end at neutral atoms.",
+        "D": "A proton has no electrons of its own to offer, so it cannot serve as the tail. In a protonation the arrow points toward the proton, not away from it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A three-carbon chain with a double-bonded oxygen on the middle carbon."
   },
   {
     "question_id": "ch06_q6_fishhook_arrows",
@@ -599,13 +586,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the distinction between single-electron and double-electron curved arrow conventions.",
-      "process": "Step 1: Double-barbed arrows represent the movement of an electron pair.\nStep 2: Single-barbed arrows (fishhook arrows) represent the movement of a single electron, which is the standard notation in radical (homolytic) reaction steps.",
-      "result": "Single-barbed arrows represent the movement of a single electron."
+      "context": "Organic mechanisms use two kinds of arrowhead with two different meanings, and telling them apart is what distinguishes a radical mechanism from a polar one on the page.",
+      "approach": "Step 1: The ordinary arrow has a full, double-barbed head and moves a pair of electrons. That is the polar convention used throughout Chapter 6.\nStep 2: The fishhook has a single barb and moves exactly one electron.\nStep 3: Apply it to hydrogen peroxide. Breaking the weak oxygen-oxygen bond homolytically takes two fishhooks, one sending each electron of the bond to a different oxygen, and the products are two hydroxyl radicals.",
+      "note": "Fishhooks come in pairs whenever a bond breaks homolytically, because the two electrons of that bond go to opposite fragments. Spotting a single barb anywhere on a page is a reliable sign that the whole mechanism is radical.",
+      "options": {
+        "A": "A pair of electrons is moved by the ordinary double-barbed arrow used in every polar mechanism, which is precisely the arrow the fishhook is defined against.",
+        "B": "Correct. One barb carries one electron, which is why homolysis is drawn with two fishhooks pointing to opposite fragments.",
+        "C": "Fishhooks say nothing about protons. A hydrogen atom carries an electron with it when it transfers, which is exactly what a proton does not do.",
+        "D": "Formal charge is a bookkeeping consequence of where electrons finish up, not something an arrowhead is defined to represent."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two oxygen atoms joined by a single bond, each carrying one hydrogen."
   },
   {
     "question_id": "ch06_q7_homolytic_vs_heterolytic",
@@ -640,13 +634,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question compares the two modes of covalent bond cleavage: homolysis and heterolysis.",
-      "process": "Step 1: In homolytic cleavage, the bond breaks symmetrically; each fragment receives one of the two bonding electrons, generating neutral radicals.\nStep 2: In heterolytic cleavage, the bond breaks unsymmetrically; one fragment retains both bonding electrons, yielding a cation and an anion.",
-      "result": "Homolytic cleavage produces radicals, and heterolytic cleavage produces ions."
+      "context": "When a covalent bond breaks, the only question is how its two shared electrons are divided between the fragments. There are two possible answers, and they give the two names.",
+      "approach": "Step 1: Divide the pair evenly, one electron to each fragment. Both fragments stay neutral and each carries an unpaired electron, so both are radicals. That is homolysis.\nStep 2: Give both electrons to one fragment. That fragment becomes an anion and its partner a cation. That is heterolysis.\nStep 3: For this chloride, heterolysis of the C-Cl bond gives a tertiary carbocation and chloride ion, while homolysis of the same bond would give a tertiary radical and a chlorine atom.",
+      "note": "Which route a molecule takes depends on the conditions rather than on the bond alone. A polar solvent able to solvate ions favours heterolysis; the gas phase, or a non-polar solvent with heat or light, favours homolysis.",
+      "options": {
+        "A": "The two definitions have been swapped. Even division of the bonding pair is what produces radicals, and uneven division is what produces ions.",
+        "B": "Correct. Homolysis divides the bonding pair evenly and gives two radicals, while heterolysis hands both electrons to one fragment and gives a cation and an anion.",
+        "C": "Breaking a bond always costs energy, whichever way the electrons are divided, so the direction of the enthalpy change cannot separate the two processes.",
+        "D": "Solvent influences which route a molecule follows, but it forms no part of either definition, and the pairing offered here is the reverse of the usual tendency."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon carrying three methyl groups and one chlorine."
   },
   {
     "question_id": "ch06_q8_bde_definition",
@@ -681,13 +682,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the thermodynamic definition of bond dissociation energy.",
-      "process": "Step 1: Recall that BDE is a standard thermodynamic property measured under gas-phase conditions.\nStep 2: The chemical process defined by BDE is the homolytic cleavage of a specific bond: $A-B \\rightarrow A\\cdot + B\\cdot$.\nStep 3: Consequently, BDE values are always positive (endothermic) and refer specifically to gas-phase homolytic cleavage.",
-      "result": "It is the energy required for homolytic cleavage in the gas phase to yield two radicals."
+      "context": "Bond dissociation energy is a number with a very precise definition attached, and every clause of that definition matters as soon as you start using tabulated values to predict anything.",
+      "approach": "Step 1: The cleavage must be homolytic, so the two products are radicals rather than a cation and an anion.\nStep 2: It must be measured in the gas phase, so that no solvent is present to stabilise either fragment.\nStep 3: The quantity itself is the enthalpy change for that process, and it is always positive because bond breaking always costs energy. For ethane, the carbon-carbon BDE of 377 kJ/mol is the enthalpy needed to produce two methyl radicals in the gas phase.",
+      "note": "The gas-phase clause is why BDE values cannot be carried straight over to reactions in solution. Heterolysis of the very same bond in water can be far cheaper, because solvating the resulting ions pays back much of the cost of separating charge.",
+      "options": {
+        "A": "This describes heterolysis assisted by a polar solvent. It gives ions rather than radicals, and the energy involved is a quite different quantity.",
+        "B": "Splitting into a carbanion and a proton is also heterolytic, and bond dissociation energy is defined for the even division of the bonding pair.",
+        "C": "Correct. BDE is the gas-phase enthalpy change for breaking a bond homolytically into two radicals.",
+        "D": "Eliminating a small molecule to leave an alkene breaks and forms several bonds at once, so no single bond energy can describe it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two carbons joined by a single bond, each carrying three hydrogens."
   },
   {
     "question_id": "ch06_q9_bde_calculation_simple",
@@ -722,13 +730,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the calculation of reaction enthalpy using bond dissociation energies.",
-      "process": "Step 1: Write down the bonds broken and bonds formed in the reaction.\nStep 2: Bonds broken: 1 mol of $H-H$ (436 kJ/mol) + 1 mol of $Cl-Cl$ (243 kJ/mol) = 679 kJ/mol (endothermic, positive energy input).\nStep 3: Bonds formed: 2 mol of $H-Cl$ (2 $\\times$ 432 = 864 kJ/mol) (exothermic, energy released).\nStep 4: Use the formula: $\\Delta H^\\circ = \\sum \\text{BDE(bonds broken)} - \\sum \\text{BDE(bonds formed)} = 679 - 864 = -185\\text{ kJ/mol}$.",
-      "result": "The enthalpy of reaction is $-185\\text{ kJ/mol}$."
+      "context": "Estimating a reaction enthalpy from bond energies is one subtraction: the energy spent breaking the bonds of the reactants minus the energy released as the bonds of the products form.",
+      "approach": "Step 1: Total the bonds broken. One H-H at 436 and one Cl-Cl at 243 gives 679 kJ/mol going in.\nStep 2: Total the bonds formed. Two H-Cl bonds at 432 each gives 864 kJ/mol coming back out.\nStep 3: Subtract. 679 - 864 = -185 kJ/mol, and the negative sign says the reaction gives out heat.",
+      "note": "Two moles of HCl are formed, not one, and failing to double 432 gives -247 kJ/mol, which is the commonest slip on this calculation. Keep the sign convention straight as well: breaking costs energy and enters positive, forming releases it and enters negative.",
+      "options": {
+        "A": "Correct. 436 + 243 = 679 kJ/mol goes into breaking bonds, 2 x 432 = 864 kJ/mol comes back out as bonds form, and the difference is -185 kJ/mol.",
+        "B": "The magnitude is right but the sign is reversed. Forming two H-Cl bonds releases more than breaking H-H and Cl-Cl costs, so the reaction cannot be endothermic.",
+        "C": "This is twice the correct answer, as though two moles of each reactant were consumed. The equation as written uses one H2 and one Cl2.",
+        "D": "This both doubles the result and reverses its sign, so it misses the stoichiometry and the direction of the heat flow at the same time."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two chlorine atoms joined by a single bond."
   },
   {
     "question_id": "ch06_q10_radical_stability_bde",
@@ -763,13 +778,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question relates C–H bond dissociation energy to the stability of the resulting radical intermediate.",
-      "process": "Step 1: Recall that the weaker the C–H bond (lower BDE), the more stable the resulting radical.\nStep 2: Compare the radicals formed: primary ethyl radical (from ethane), secondary propyl radical (from propane), tertiary tert-butyl radical (from isobutane), and tertiary benzylic radical (from isopropylbenzene).\nStep 3: The tertiary benzylic radical is exceptionally stable because the unpaired electron is delocalized over the aromatic ring via resonance, in addition to being stabilized by two alkyl groups. Therefore, the benzylic C–H bond of cumene has the lowest BDE.",
-      "result": "Isopropylbenzene (cumene) has the lowest C–H BDE at the benzylic position."
+      "context": "A carbon-hydrogen bond dissociation energy measures how hard it is to make the corresponding radical, so the lowest BDE always belongs to the hydrogen whose removal leaves the best-stabilised radical behind.",
+      "approach": "Step 1: Rank the radicals rather than the hydrocarbons. Primary is the least stable, then secondary, then tertiary, as neighbouring alkyl groups feed electron density into the half-filled orbital.\nStep 2: Ask whether any of the radicals is delocalised. Removing the hydrogen at the benzylic carbon of cumene leaves an unpaired electron next to the ring, and resonance spreads it over the ring carbons.\nStep 3: Resonance delocalisation is a much larger effect than hyperconjugation, so cumene has the weakest C-H bond of the four.",
+      "note": "The numbers show the size of the gap: roughly 423 kJ/mol for a primary C-H in ethane, about 410 for a secondary and 400 for a tertiary, but only about 356 for the benzylic position. That difference is why radical halogenation attacks benzylic sites so selectively.",
+      "options": {
+        "A": "Ethane offers nothing but primary C-H bonds, and a primary radical is the least stabilised on this list, so its bond dissociation energy is the highest of the four.",
+        "B": "Breaking the bond at C2 of propane gives a secondary radical. It is better off than primary, but it has no delocalisation available to it.",
+        "C": "A tertiary radical is the most stable of the purely alkyl choices, yet hyperconjugation from three methyl groups still falls well short of resonance into a ring.",
+        "D": "Correct. Losing the benzylic hydrogen gives a radical delocalised into the aromatic ring, the best stabilised of the four and therefore the lowest BDE."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A benzene ring joined to a carbon that carries two methyl groups and one hydrogen."
   },
   {
     "question_id": "ch06_q11_nucleophile_definition",
@@ -804,13 +826,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the definitions of electrophiles and nucleophiles in polar reactions.",
-      "process": "Step 1: A nucleophile is an electron-rich species (neutral or negatively charged) containing a reactive lone pair or $\\pi$ bond.\nStep 2: By donating an electron pair, it acts as a Lewis base.\nStep 3: Thus, nucleophiles are defined as electron pair donors (Lewis bases).",
-      "result": "A nucleophile is a Lewis base that donates an electron pair."
+      "context": "Nucleophile and Lewis base describe the same behaviour from two directions. One says what a species does in a mechanism, the other says what it is in acid-base terms, and both come down to owning an available electron pair.",
+      "approach": "Step 1: Read the word. Nucleus-loving means the species seeks out a positively polarised centre.\nStep 2: Work out what it must bring. To form a bond to that centre it has to supply both electrons, so it needs a lone pair or a pi bond available.\nStep 3: Supplying an electron pair is exactly the Lewis definition of a base. Ammonia, with its lone pair on nitrogen, is the standard example and reacts as a nucleophile toward carbon.",
+      "note": "Nucleophilicity and basicity are related without being the same measurement: basicity is an equilibrium constant measured against a proton, nucleophilicity a rate measured against carbon. Iodide is a weak base and a strong nucleophile, which is the classic reminder that the two can diverge.",
+      "options": {
+        "A": "Accepting an electron pair is the Lewis acid description, which is the electrophile's role and the exact opposite of what a nucleophile does.",
+        "B": "Correct. A nucleophile donates the electron pair that forms the new bond, which is what the Lewis definition of a base states.",
+        "C": "A species carrying an unpaired electron is a radical. Radicals react one electron at a time and belong to a separate mechanistic class.",
+        "D": "Being short of electrons makes a species electrophilic, so this describes the partner that a nucleophile attacks rather than the nucleophile itself."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single nitrogen atom carrying three hydrogens."
   },
   {
     "question_id": "ch06_q12_electrophile_definition",
@@ -845,20 +874,27 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question defines electrophiles in organic chemistry.",
-      "process": "Step 1: Electrophiles ('electron-lovers') are electron-deficient species that have an empty orbital or polar bond.\nStep 2: They react by accepting an electron pair from a nucleophile, which corresponds to the definition of a Lewis acid.",
-      "result": "An electrophile is a Lewis acid that accepts an electron pair."
+      "context": "An electrophile is defined by what it lacks. Somewhere in the species sits an atom short of electron density, and forming a bond repairs that shortage by taking a pair from a partner.",
+      "approach": "Step 1: Read the word. Electron-loving means the species seeks electrons rather than nuclei.\nStep 2: Work out what that requires. To form the bond it must accept the pair its partner supplies, and accepting an electron pair is the Lewis acid definition.\nStep 3: Check it against boric acid. Boron here has only six valence electrons and an empty p orbital, so it takes a pair from water readily. That empty orbital is the whole source of its electrophilic character.",
+      "note": "Electrophilic character does not require a positive charge. A neutral molecule qualifies whenever an atom carries an empty orbital, as boron does here, or sits at the positive end of a strong dipole, as a carbonyl carbon does.",
+      "options": {
+        "A": "Correct. An electrophile accepts the electron pair that forms the new bond, and accepting a pair is what defines a Lewis acid.",
+        "B": "Donating an electron pair is the Lewis base description, and that is the nucleophile's part in a polar reaction rather than the electrophile's.",
+        "C": "Donating a proton is the Bronsted definition of an acid, which is a separate classification; many electrophiles have no proton available to give.",
+        "D": "Electron-rich describes a nucleophile. An electrophile is electron-poor, and the name refers to seeking electrons rather than seeking nuclei."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A boron atom carrying three hydroxyl groups."
   },
   {
     "question_id": "ch06_q13_nucleophile_id",
     "topic": "Electrophiles vs Nucleophiles",
     "difficulty_level": "Medium",
     "question_text": "Which of the following species is NOT a nucleophile?",
-    "question_smiles": "CC(=O)O",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -886,12 +922,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the ability to distinguish nucleophiles from electrophiles.",
-      "process": "Step 1: Nucleophiles must have a lone pair or $\\pi$ bond to donate. Ammonia ($NH_3$), cyanide ($CN^-$), and ethanol ($CH_3CH_2OH$) all possess reactive lone pairs.\nStep 2: $BF_3$ (boron trifluoride) has a boron atom with only 6 valence electrons and a vacant $p$ orbital. It cannot donate electrons; instead, it is a strong Lewis acid (electrophile).",
-      "result": "$BF_3$ is not a nucleophile; it is an electrophile."
+      "context": "Every nucleophile has one thing in common: a pair of electrons it can hand over, held either as a lone pair or as a pi bond. Finding the odd one out means finding the species with no such pair to give.",
+      "approach": "Step 1: Ammonia has a lone pair on nitrogen and attacks carbon readily.\nStep 2: Cyanide carries both a negative charge and a lone pair on carbon, making it one of the strongest nucleophiles in the course.\nStep 3: Ethanol has two lone pairs on oxygen; it is a weak nucleophile but a nucleophile all the same.\nStep 4: Boron in boron trifluoride has only six valence electrons and an empty p orbital, so it has nothing to donate and every reason to accept.",
+      "note": "Boron trifluoride is the standard neutral Lewis acid, and its emptiness is the whole point: a species can be badly electron-poor without carrying any charge. When it reappears as a catalyst in later chapters, expect it to accept a pair from a carbonyl oxygen.",
+      "options": {
+        "A": "The nitrogen lone pair of ammonia is the textbook electron-pair donor, and it attacks electrophilic carbon in substitution reactions.",
+        "B": "Cyanide is anionic and carries a lone pair on carbon, which together make it one of the strongest nucleophiles met in this course.",
+        "C": "Correct. Boron in boron trifluoride has six valence electrons and an empty p orbital, so it accepts an electron pair instead of donating one.",
+        "D": "The oxygen of ethanol carries two lone pairs. It is far weaker than cyanide, but weak is not the same as absent."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -899,7 +941,7 @@ var CH06_QUESTIONS = [
     "topic": "Electrophiles vs Nucleophiles",
     "difficulty_level": "Medium",
     "question_text": "Which of the following species acts as an electrophile in polar organic reactions?",
-    "question_smiles": "COS(=O)(=O)C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -927,12 +969,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question requires identifying electrophilic species.",
-      "process": "Step 1: Analyze the electronic structure of each option.\nStep 2: $H_2S$, $CH_3CH_2NH_2$, and $I^-$ all have lone pairs and are electron-rich, making them nucleophiles.\nStep 3: $CH_3^+$ is a carbocation with a vacant $p$ orbital and a positive formal charge, making it a strong electrophile.",
-      "result": "$CH_3^+$ is the electrophile."
+      "context": "An electrophile has to be able to accept an electron pair, so the test is to look for an atom short of electron density: one bearing a positive charge, an empty orbital, or the positive end of a strong dipole.",
+      "approach": "Step 1: Hydrogen sulfide has lone pairs on sulfur, so it donates rather than accepts.\nStep 2: Ethylamine has a lone pair on nitrogen and behaves as both a base and a nucleophile.\nStep 3: Iodide is an anion with four lone pairs and is among the better nucleophiles.\nStep 4: The methyl cation has only six valence electrons around carbon and a genuinely empty p orbital, so it is the only species here that can take a pair in.",
+      "note": "The methyl cation is the extreme case. Most electrophiles you actually meet are neutral molecules polarised at one atom, such as the carbon of a carbonyl group or of an alkyl halide; what they share with this cation is a shortage of electron density at the carbon under attack.",
+      "options": {
+        "A": "Sulfur in hydrogen sulfide carries lone pairs and gives them away, which is nucleophilic behaviour rather than electrophilic.",
+        "B": "The nitrogen lone pair of ethylamine is available for donation, so ethylamine acts as a nucleophile and a base.",
+        "C": "Correct. The methyl cation has six valence electrons and an empty p orbital on carbon, so it accepts a pair from whatever donor is available.",
+        "D": "Iodide is a large, polarisable anion and a good nucleophile. It has lone pairs to spare and no capacity to accept another pair."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -968,20 +1016,27 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question relates electrostatic potential maps to chemical reactivity (nucleophilicity/electrophilicity).",
-      "process": "Step 1: In ESP maps, red colors represent negative electrostatic potential (high electron density), and blue colors represent positive potential (low electron density).\nStep 2: The nitrogen atom in methylamine is electronegative and has a lone pair, giving it a partial negative charge ($\\delta^-$), represented in red.\nStep 3: This high electron density makes nitrogen nucleophilic (capable of donating its lone pair).",
-      "result": "The nitrogen atom is nucleophilic."
+      "context": "An electrostatic potential map is a colour-coded picture of where the electrons are: red marks regions of excess electron density and blue marks regions short of it. Read that way, the map is a map of reactivity.",
+      "approach": "Step 1: Read the colour. Red at nitrogen says a partial negative charge sits there.\nStep 2: Ask what puts it there. Nitrogen is more electronegative than either carbon or hydrogen, and it also carries a lone pair taking no part in bonding.\nStep 3: Ask what that means for reactivity. Available electron density at an accessible atom is the definition of a nucleophilic site, so this nitrogen attacks electron-poor carbon.",
+      "note": "The same map explains why that nitrogen is also basic: donating the lone pair to a proton and donating it to a carbon are the same act judged by different partners. The blue regions on the map, out at the hydrogens, mark where a base would attack instead.",
+      "options": {
+        "A": "High electron density is what makes a site nucleophilic. An electrophile is electron-poor, so this answer contradicts its own premise.",
+        "B": "Correct. Red marks a partial negative charge, and the lone pair sitting on nitrogen is available to donate, which is what nucleophilic means.",
+        "C": "Radical initiators are molecules with weak bonds that break homolytically. A region of high electron density says nothing about a tendency to split into radicals.",
+        "D": "A concentration of electron density at an accessible atom is the opposite of inert - it marks the most reactive site in the molecule."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A methyl group bonded to a nitrogen atom."
   },
   {
     "question_id": "ch06_q16_gibbs_equation",
     "topic": "Thermodynamics",
     "difficulty_level": "Easy",
     "question_text": "For a reaction at constant pressure and temperature, under what thermodynamic conditions will the reaction ALWAYS be spontaneous ($\\Delta G^\\circ < 0$)?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1009,12 +1064,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the signs of enthalpy and entropy on Gibbs free energy spontaneity.",
-      "process": "Step 1: Use the equation $\\Delta G^\\circ = \\Delta H^\\circ - T\\Delta S^\\circ$.\nStep 2: If $\\Delta H^\\circ$ is negative (exothermic) and $\\Delta S^\\circ$ is positive (disorder-increasing), then both terms contribute negatively to $\\Delta G^\\circ$.\nStep 3: Under these conditions, $\\Delta G^\\circ$ is negative at all temperatures, making the reaction always spontaneous.",
-      "result": "An exothermic reaction with positive entropy change is always spontaneous."
+      "context": "Spontaneity is settled by the sign of the free energy change, and the Gibbs equation ties that sign to two separate quantities: the heat exchanged and the change in disorder.",
+      "approach": "Step 1: Write the relation as delta G = delta H - T delta S, remembering that T on the Kelvin scale is always positive.\nStep 2: For delta G to come out negative no matter what T is, the first term must be negative and the second must subtract something positive.\nStep 3: The quantity -T delta S is negative only when delta S is positive. An exothermic reaction that also increases disorder therefore has both terms pulling the same way, at every temperature.",
+      "note": "The other three combinations are either temperature-dependent or hopeless. Exothermic with decreasing entropy works only below some temperature; endothermic with increasing entropy works only above one; endothermic and ordering never works at all.",
+      "options": {
+        "A": "Being exothermic helps, but a negative entropy change makes the second term positive, so raising the temperature can overturn the result.",
+        "B": "The increase in disorder helps, but a positive delta H works against it, so this pairing becomes spontaneous only above some temperature.",
+        "C": "Correct. A negative delta H and a positive delta S make both terms of the Gibbs equation negative, so delta G stays negative at every temperature.",
+        "D": "Here delta H is positive and -T delta S is positive too, so delta G is positive at every temperature and the reaction is never spontaneous."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1022,7 +1083,7 @@ var CH06_QUESTIONS = [
     "topic": "Chemical Equilibrium",
     "difficulty_level": "Medium",
     "question_text": "If an organic reaction has an equilibrium constant $K_{\\text{eq}} = 0.001$ at 298 K, what are the characteristics of its standard free energy change ($\\Delta G^\\circ$) and the equilibrium mixture?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1050,12 +1111,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question connects the equilibrium constant ($K_{\\text{eq}}$) to the change in Gibbs free energy ($\\Delta G^\\circ$).",
-      "process": "Step 1: Use the equation $\\Delta G^\\circ = -RT \\ln K_{\\text{eq}}$.\nStep 2: Since $K_{\\text{eq}} < 1$ ($K_{\\text{eq}} = 10^{-3}$), $\\ln K_{\\text{eq}}$ is negative, making $\\Delta G^\\circ$ positive.\nStep 3: A positive $\\Delta G^\\circ$ indicates that the reaction is endergonic and favors reactants at equilibrium.",
-      "result": "$\\Delta G^\\circ$ is positive and reactants are favored at equilibrium."
+      "context": "The equilibrium constant and the standard free energy change are two statements of the same fact, tied together by delta G = -RT ln K. Whether K is larger or smaller than one settles the sign immediately.",
+      "approach": "Step 1: Compare K with 1. At 0.001 it is far below, so at equilibrium the reactants dominate the mixture.\nStep 2: Take the logarithm. The natural log of 0.001 is about -6.9.\nStep 3: Substitute. delta G equals -RT times a negative number, which comes out positive - roughly +17 kJ/mol at 298 K. An unfavourable free energy change and a reactant-heavy mixture are the same observation.",
+      "note": "None of this says anything about speed. A reaction can have a strongly positive delta G and reach its unfavourable equilibrium in seconds, or a strongly negative one and take years; thermodynamics fixes the destination while kinetics fixes the travel time.",
+      "options": {
+        "A": "A negative delta G goes with an equilibrium constant greater than one. At 0.001 the equilibrium sits well to the left of the products.",
+        "B": "Correct. A K below one gives a positive delta G, about +17 kJ/mol here, and an equilibrium mixture dominated by starting material.",
+        "C": "A free energy change of zero corresponds to K equal to one, which is three orders of magnitude away from the value given.",
+        "D": "The sign of delta G is right, but the conclusion is not: an equilibrium constant carries no information whatever about how quickly equilibrium is reached."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1063,7 +1130,7 @@ var CH06_QUESTIONS = [
     "topic": "Thermodynamics",
     "difficulty_level": "Medium",
     "question_text": "Which of the following reaction types is expected to have the most positive entropy change ($\\Delta S^\\circ > 0$)?",
-    "question_smiles": "CC(C)(C)OC(C)(C)C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1091,12 +1158,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests factors affecting entropy changes in organic reactions.",
-      "process": "Step 1: Entropy measures disorder. Reactions that increase the number of independent molecules increase entropy ($\\Delta S^\\circ > 0$).\nStep 2: Addition (A) and dimerization (B) reduce the number of molecules (two molecules become one), so $\\Delta S^\\circ < 0$. Ring closure (D) restricts molecular rotation, reducing degrees of freedom ($\\Delta S^\\circ < 0$).\nStep 3: Fragmentation (C) splits one molecule into two molecules ($R-X \\rightarrow \\text{alkene} + HX$), increasing translational freedom and thus increasing entropy ($\\Delta S^\\circ > 0$).",
-      "result": "The fragmentation reaction has the most positive entropy change."
+      "context": "Entropy change in an organic reaction is dominated by one crude count: how many independent molecules exist before the reaction compared with after. More particles free to move about means more disorder.",
+      "approach": "Step 1: Count molecules across the fragmentation. One alkyl halide becomes an alkene plus a hydrogen halide, so one particle becomes two.\nStep 2: Count the other options the same way. Adding water to an alkene takes two molecules to one, and dimerising cyclopentadiene takes two to one; both lose entropy.\nStep 3: Check the ring closure. The particle count stays at one, but tying a chain into a ring removes rotational freedom, so its entropy change is slightly negative.",
+      "note": "This is why eliminations are favoured by heat while additions are favoured by cold. The T delta S term grows with temperature, so the reaction that produces more particles eventually wins even when it costs enthalpy to run.",
+      "options": {
+        "A": "Water and the alkene combine into a single alcohol molecule, so the particle count falls and the entropy change is negative.",
+        "B": "Two molecules of cyclopentadiene become one dimer. The count falls, and freedom of rotation is lost in the new ring as well.",
+        "C": "Correct. One molecule becomes two independent ones, and raising the particle count is the largest positive contribution to entropy available in an organic reaction.",
+        "D": "The particle count is unchanged, and closing the chain into a ring costs rotational freedom, so this is a small negative rather than a positive."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1132,20 +1205,27 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests how to calculate reaction enthalpy using bond dissociation energies for addition reactions.",
-      "process": "Step 1: Identify bonds broken and bonds formed.\nStep 2: Bonds broken: C=C $\\pi$ bond (240 kJ/mol) + H–Br bond (366 kJ/mol) = 606 kJ/mol.\nStep 3: Bonds formed: C–H bond (410 kJ/mol) + C–Br bond (285 kJ/mol) = 695 kJ/mol.\nStep 4: Calculate enthalpy: $\\Delta H^\\circ = \\sum \\text{BDE(broken)} - \\sum \\text{BDE(formed)} = 606 - 695 = -89\\text{ kJ/mol}$.",
-      "result": "The estimated reaction enthalpy is $-89\\text{ kJ/mol}$."
+      "context": "A bond-energy estimate is always the same subtraction, but it only works if you count exactly the bonds that change. The stem here is explicit that the carbon-carbon sigma bond survives, so only the pi bond belongs in the sum.",
+      "approach": "Step 1: Total the bonds broken. The pi bond at 240 and the H-Br bond at 366 give 606 kJ/mol going in.\nStep 2: Total the bonds formed. A new C-H at 410 and a new C-Br at 285 give 695 kJ/mol coming back out.\nStep 3: Subtract. 606 - 695 = -89 kJ/mol, so adding HBr across the double bond gives out heat.",
+      "note": "The reaction is exothermic because two strong sigma bonds replace one weak pi bond and one moderate H-Br bond. That trade is the thermodynamic reason additions to alkenes are so general, and it is why running the reverse elimination takes heat.",
+      "options": {
+        "A": "Correct. 240 + 366 = 606 kJ/mol goes into breaking bonds and 410 + 285 = 695 kJ/mol comes back out as bonds form, leaving -89 kJ/mol.",
+        "B": "The arithmetic is right but the sign is inverted. The bonds formed are collectively stronger than the ones broken, so heat is released.",
+        "C": "This is the total of the bonds broken with a minus sign attached; the energy recovered from forming the C-H and C-Br bonds has not been subtracted.",
+        "D": "This reports the cost of breaking bonds as though it were the answer, ignoring the 695 kJ/mol released when the new bonds form."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two carbons joined by a double bond, each carrying two hydrogens."
   },
   {
     "question_id": "ch06_q20_keq_calculation_math",
     "topic": "Chemical Equilibrium",
     "difficulty_level": "Hard",
     "question_text": "Under standard conditions at 298 K, an isomerization reaction $A \\rightleftharpoons B$ has a $\\Delta G^\\circ = -11.4\\text{ kJ/mol}$. What is the approximate equilibrium constant ($K_{\\text{eq}}$) for this reaction? (Use $R = 8.314\\text{ J/(mol}\\cdot\\text{K)}$)",
-    "question_smiles": "CCCC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1173,12 +1253,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question involves using the thermodynamic relation $\\Delta G^\\circ = -RT \\ln K_{\\text{eq}}$ to solve for $K_{\\text{eq}}$.",
-      "process": "Step 1: Convert $\\Delta G^\\circ$ to J/mol: $-11400\\text{ J/mol}$.\nStep 2: Rearrange the equation: $\\ln K_{\\text{eq}} = -\\Delta G^\\circ / RT = -(-11400) / (8.314 \\times 298) = 11400 / 2477.57 \\approx 4.60$.\nStep 3: Exponentiate to find $K_{\\text{eq}}$: $K_{\\text{eq}} = e^{4.60} \\approx 100$.",
-      "result": "The equilibrium constant is approximately 100."
+      "context": "Converting a free energy change into an equilibrium constant takes one equation, and at 298 K the numbers are friendly enough to handle to one significant figure without a calculator.",
+      "approach": "Step 1: Rearrange delta G = -RT ln K into ln K = -delta G / RT.\nStep 2: Substitute, keeping everything in joules. Minus a negative 11400 over 8.314 times 298 gives 11400 / 2478, which is 4.6.\nStep 3: Exponentiate. e raised to 4.6 is close to 100, so the equilibrium lies well over toward B.",
+      "note": "A useful rule of thumb drops straight out of this arithmetic: at room temperature every 5.7 kJ/mol of free energy is worth one power of ten in K. The 11.4 kJ/mol given here is exactly two of those units, which is the factor of 100 obtained.",
+      "options": {
+        "A": "A constant of 10 corresponds to about 5.7 kJ/mol, half the free energy change given, so this understates the drive toward product tenfold.",
+        "B": "Correct. ln K = 11400 divided by 8.314 times 298, which is 4.6, and e to the 4.6 is approximately 100.",
+        "C": "This has the sign backwards. A negative free energy change gives an equilibrium constant greater than one, not a hundredth.",
+        "D": "A constant near 2 would need a free energy change well under 2 kJ/mol, far smaller in magnitude than the value in the stem."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1186,7 +1272,7 @@ var CH06_QUESTIONS = [
     "topic": "Chemical Equilibrium",
     "difficulty_level": "Easy",
     "question_text": "According to Le Chatelier's principle, what happens to the position of equilibrium for a reaction if a high concentration of reactant is added?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1214,12 +1300,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the qualitative application of Le Chatelier's principle.",
-      "process": "Step 1: Note that adding reactants does not change the value of $K_{\\text{eq}}$, which is temperature-dependent.\nStep 2: The reaction quotient $Q$ becomes less than $K_{\\text{eq}}$.\nStep 3: To restore equilibrium, the reaction must shift to the right, converting reactants to products.",
-      "result": "The reaction shifts toward products."
+      "context": "Le Chatelier's principle says a system at equilibrium responds to a disturbance by shifting in whichever direction relieves it. The useful part of the answer is knowing what shifts and what stays fixed.",
+      "approach": "Step 1: Identify the disturbance. Extra reactant has been added, so the ratio of product to reactant is now below K.\nStep 2: Work out the response. Restoring that ratio means consuming reactant and making product, so the position moves to the right.\nStep 3: Check what does not move. K depends only on temperature, so adding material shifts the position of the equilibrium without altering the constant it must satisfy.",
+      "note": "Keep three things apart here: the position of the equilibrium, the constant that defines it, and the rate at which it is reached. Concentration moves the position, temperature moves the constant, and a catalyst moves only the speed.",
+      "options": {
+        "A": "The equilibrium constant is fixed at a given temperature. Adding material changes the concentrations, not the number they have to satisfy.",
+        "B": "Correct. The system consumes the added reactant by shifting toward products until the concentration ratio matches K once more.",
+        "C": "Activation energy belongs to kinetics and is set by the mechanism. Adding reactant changes how often molecules meet, not the barrier they must clear.",
+        "D": "Shifting toward reactants would pile up more of the very species just added, making the disturbance worse instead of relieving it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1227,7 +1319,7 @@ var CH06_QUESTIONS = [
     "topic": "Kinetics",
     "difficulty_level": "Easy",
     "question_text": "Which of the following statements about activation energy ($E_a$) is correct?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1255,12 +1347,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests basic kinetic terminology regarding the energy barrier.",
-      "process": "Step 1: Activation energy ($E_a$) is the energy barrier that must be overcome for reactants to transform into products.\nStep 2: It is always a positive quantity ($E_a > 0$) because it represents climbing an energy hill from reactants to the transition state.",
-      "result": "$E_a$ is the energy required to reach the transition state."
+      "context": "Activation energy is a barrier height, measured upward from the reactants to the highest point on the way to product. Everything else worth knowing about it follows from that single picture.",
+      "approach": "Step 1: Fix the two reference points. Ea runs from the reactant energy level up to the transition state - not from the products, and not down to them.\nStep 2: Notice what it leaves out. The product energy plays no part at all, which is why Ea and delta G are independent quantities.\nStep 3: Get the direction of the effect right. A taller barrier means fewer collisions carry enough energy to clear it, so a large Ea makes a reaction slow.",
+      "note": "Because Ea is always measured from a starting material up to the transition state, it is positive in both directions, forward and reverse. The difference between those two barriers is the energy change of the reaction itself.",
+      "options": {
+        "A": "The relationship runs the other way. A tall barrier means few molecules have enough energy to cross it, so such reactions are slow.",
+        "B": "Ea and delta G are independent of one another. A strongly exergonic reaction can still crawl, which is exactly why a separate quantity is needed for rate.",
+        "C": "Correct. Activation energy is the energy needed to climb from the reactants to the transition state, the highest point along that step.",
+        "D": "A barrier cannot be negative in either direction, since the transition state is by definition higher in energy than the state it is reached from."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1296,20 +1394,27 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the determination of overall reaction order from a rate law.",
-      "process": "Step 1: The rate law is $\\text{Rate} = k[CH_3Br]^1 [OH^-]^1$.\nStep 2: The order with respect to $CH_3Br$ is 1, and with respect to $OH^-$ is 1.\nStep 3: The overall reaction order is the sum of the exponents in the rate law: $1 + 1 = 2$ (second-order).",
-      "result": "The reaction is second-order overall."
+      "context": "The overall order of a reaction is read straight off the experimentally measured rate law by adding the exponents on the concentration terms. It is a measurement, not something deducible from the balanced equation.",
+      "approach": "Step 1: Read the exponents. Both bromomethane and hydroxide appear to the first power.\nStep 2: Add them. One plus one is two, so the reaction is second-order overall and first-order in each species.\nStep 3: Interpret what that means mechanistically. Both species appear in the rate law, so both must be present in the transition state of the slow step - the signature of a single-step, bimolecular substitution.",
+      "note": "This is the kinetic evidence behind the name SN2, where the 2 records the reaction order rather than the number of steps. Chapter 11 sets it against SN1, whose rate depends on the halide concentration alone.",
+      "options": {
+        "A": "First-order would mean a single concentration term in the rate law, yet halving either species here halves the rate.",
+        "B": "Correct. Both exponents are one, and one plus one is two, so the reaction is second-order overall.",
+        "C": "Third-order would need the exponents to sum to three, requiring either a third concentration term or a squared one.",
+        "D": "A zero-order reaction runs at a rate independent of concentration, whereas doubling either species here doubles the rate."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single carbon carrying a bromine and three hydrogens."
   },
   {
     "question_id": "ch06_q24_rate_determining_step",
     "topic": "Kinetics",
     "difficulty_level": "Medium",
     "question_text": "In a multi-step reaction mechanism, how is the rate-determining step identified on a reaction coordinate diagram?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1337,12 +1442,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question relates reaction coordinate diagrams to the rate-determining step.",
-      "process": "Step 1: The rate-determining step is the bottleneck step of the reaction.\nStep 2: It is characterized by having the highest energy transition state along the path relative to the initial starting materials.\nStep 3: This peak represents the highest activation barrier that must be overcome for the overall reaction to proceed.",
-      "result": "It is the step with the transition state of highest energy relative to the reactants."
+      "context": "In a multi-step mechanism the overall rate is set by the hardest climb, and on an energy diagram the hardest climb is measured from the starting material up to the highest point that has to be crossed.",
+      "approach": "Step 1: Find the highest transition state on the diagram, judged by absolute energy rather than by the size of any one barrier.\nStep 2: Measure from the reactants up to it. That vertical distance is the effective barrier for the whole sequence.\nStep 3: The step owning that transition state is rate-determining, because every molecule that reaches product has to pass over it.",
+      "note": "This is why the step with the larger individual barrier is not automatically the slow one. When the second transition state sits higher in absolute terms than the first, the second step controls the rate even though its climb from the intermediate looks shorter.",
+      "options": {
+        "A": "The lowest transition state is the easiest to cross, so that step is the fastest one and cannot be what limits the overall rate.",
+        "B": "Correct. The highest transition state relative to the reactants is the barrier every molecule must clear, and its step sets the rate.",
+        "C": "How stable an intermediate is affects how long it survives, but the rate is fixed by the barriers on either side of it, not by the depth of the well.",
+        "D": "The fastest step with the smallest barrier never limits anything; a sequence is limited by its slowest link, not its quickest."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1350,7 +1461,7 @@ var CH06_QUESTIONS = [
     "topic": "Kinetics",
     "difficulty_level": "Medium",
     "question_text": "According to the Arrhenius equation ($k = A e^{-E_a/RT}$), what happens to the rate constant ($k$) if the activation energy ($E_a$) is decreased?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1378,12 +1489,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the mathematical relationship between activation energy and the rate constant.",
-      "process": "Step 1: Look at the Arrhenius equation: $k = A e^{-E_a/RT}$.\nStep 2: Since $E_a$ is in the exponent with a negative sign, a decrease in $E_a$ decreases the magnitude of the negative term (makes it closer to 0), which exponentially increases $e^{-E_a/RT}$.\nStep 3: Therefore, decreasing $E_a$ (e.g. by using a catalyst) causes an exponential increase in the rate constant $k$.",
-      "result": "The rate constant $k$ increases exponentially."
+      "context": "The Arrhenius equation puts the activation energy into an exponent, and that placement is why quite small changes in the barrier produce very large changes in rate.",
+      "approach": "Step 1: Locate Ea in the equation. It appears as minus Ea over RT in the exponent, so lowering Ea makes that exponent less negative.\nStep 2: A less negative exponent gives a larger value of e raised to it, so k goes up.\nStep 3: Because the dependence is exponential rather than linear, the increase is steep - at room temperature, taking about 6 kJ/mol off the barrier multiplies k by roughly ten.",
+      "note": "This is the entire basis of catalysis. A catalyst leaves delta G and the equilibrium constant exactly where they were and lowers only Ea, which is enough to turn an unobservably slow reaction into a practical one.",
+      "options": {
+        "A": "Lowering a barrier cannot slow a reaction down. The exponent becomes less negative, which raises k rather than reducing it.",
+        "B": "Correct. A smaller Ea makes the exponent less negative, so k rises, and because Ea sits in an exponent the rise is steep.",
+        "C": "Temperature is one of the two quantities in that exponent and the activation energy is the other, so changing either one changes k.",
+        "D": "Both the direction and the shape are wrong here. Ea sits in an exponent, so its effect on k can never be linear."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1391,7 +1508,7 @@ var CH06_QUESTIONS = [
     "topic": "Kinetics",
     "difficulty_level": "Easy",
     "question_text": "Which of the following best describes a transition state?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1419,12 +1536,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question defines the concept of a transition state.",
-      "process": "Step 1: Transition states are local energy maxima along the reaction pathway.\nStep 2: They represent unstable, partially bonded structures that cannot be isolated or directly observed, having a lifetime of zero.\nStep 3: Thus, they are unstable arrangements of atoms at an energy maximum.",
-      "result": "It is an unstable arrangement of atoms at an energy maximum."
+      "context": "A transition state is a point on an energy profile rather than a substance. It marks the instant at which old bonds are half broken and new ones half formed, at the very top of the climb.",
+      "approach": "Step 1: Locate it on the diagram. The transition state sits at a maximum, so any nudge along the reaction coordinate sends the system downhill in one direction or the other.\nStep 2: Work out what follows. A species at a maximum has nowhere to rest: it has no lifetime, and it cannot be trapped, cooled or observed spectroscopically.\nStep 3: Contrast it with an intermediate, which sits in a minimum and therefore does have a finite lifetime.",
+      "note": "This is why transition-state structures are drawn inside brackets with a double dagger, and why the bonds being made and broken are shown as dotted lines. The notation states outright that what is drawn is a passing arrangement rather than a molecule.",
+      "options": {
+        "A": "Sitting at an energy minimum is what defines an intermediate, and it is exactly what makes low-temperature trapping possible. A transition state occupies a maximum.",
+        "B": "Correct. It is the highest-energy arrangement along the reaction coordinate, lasting no measurable time and impossible to isolate.",
+        "C": "The composition after equilibrium is a mixture of stable substances, which has nothing to do with the barrier that had to be crossed to reach it.",
+        "D": "A stable complex with solvent would sit in an energy well. Solvation shells form and break constantly, but none of them is a transition state."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1432,40 +1555,42 @@ var CH06_QUESTIONS = [
     "topic": "Reaction Intermediates",
     "difficulty_level": "Easy",
     "question_text": "What is a reaction intermediate?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
         "text": "A high-energy state representing bond-breaking and bond-making that cannot be isolated.",
-        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "A stable, isolable molecule that is formed in one step and consumed in a subsequent step of a reaction.",
-        "smiles": "",
+        "text": "A species formed in one step and consumed in a later step, sitting at an energy minimum between two transition states.",
         "is_correct": true
       },
       {
         "option_id": "C",
         "text": "A substance added to the reaction to lower the activation energy.",
-        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "The state where reactants and products are in equilibrium.",
-        "smiles": "",
+        "text": "The state where the forward and reverse reactions proceed at equal rates.",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question defines a reaction intermediate.",
-      "process": "Step 1: Unlike transition states, intermediates are located in energy wells (local minima) on a reaction coordinate diagram.\nStep 2: They have fully formed bonds and a finite lifetime, meaning they can sometimes be detected, trapped, or even isolated under specific conditions.\nStep 3: They are formed in one step of a mechanism and consumed in a later step.",
-      "result": "An intermediate is a species formed in one step and consumed in a subsequent step, corresponding to an energy minimum."
+      "context": "An intermediate is a real species with a real, if brief, existence. One step of the mechanism produces it and the next consumes it, and on the energy profile it occupies a valley between two peaks.",
+      "approach": "Step 1: Look for the valley. Every intermediate sits in a local minimum, and that well is what gives it a finite lifetime.\nStep 2: Check the bookkeeping. It appears as a product of one elementary step and as a reactant in a later one, so it never appears in the overall balanced equation.\nStep 3: Identify its neighbours. The peaks on either side are transition states, which have no lifetime at all.",
+      "note": "A finite lifetime does not make a species bottleable. A carbocation survives perhaps a picosecond in solution while a well-stabilised radical lasts long enough to record a spectrum; both are intermediates, and both differ from a transition state in kind rather than degree.",
+      "options": {
+        "A": "This describes a transition state - a maximum with bonds partly broken and partly formed, and no lifetime whatever.",
+        "B": "Correct. It is produced by one step and consumed by a later one, resting in an energy well between two transition states.",
+        "C": "Lowering the activation energy is what a catalyst does, and a catalyst emerges from the reaction unchanged rather than being consumed by it.",
+        "D": "Equal forward and reverse rates define equilibrium, which is a property of the whole mixture rather than of any one species in it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1473,7 +1598,7 @@ var CH06_QUESTIONS = [
     "topic": "Reaction Intermediates",
     "difficulty_level": "Medium",
     "question_text": "Which of the following is the key difference between a transition state and a reaction intermediate?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1501,12 +1626,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question directly compares transition states and reaction intermediates.",
-      "process": "Step 1: Review energy coordinate diagrams. Transition states are energy maxima (peaks) representing the transition from one species to another.\nStep 2: Intermediates are energy minima (valleys) representing transient but real chemical species.\nStep 3: Consequently, transition states cannot be isolated and have no lifetime, whereas intermediates have a non-zero lifetime.",
-      "result": "Transition states have zero lifetime and cannot be isolated; intermediates have a finite lifetime."
+      "context": "Transition states and intermediates both appear on the same energy profile, and the entire distinction comes down to which way the curve bends at the point where each one sits.",
+      "approach": "Step 1: Place them on the curve. The transition state occupies a maximum and the intermediate a minimum.\nStep 2: Turn that into a lifetime. Anything perched on a maximum rolls off at once, so its lifetime is effectively zero; anything in a well has to be pushed out of it, so it persists.\nStep 3: Turn lifetime into observability. Zero lifetime means no spectrum and no isolation, while a finite lifetime makes detection possible and, for well-stabilised species, routine.",
+      "note": "A profile with three peaks and two valleys tells you immediately that the mechanism has three steps and two intermediates. Counting peaks and valleys is the quickest way to read the shape of an unfamiliar mechanism off its diagram.",
+      "options": {
+        "A": "The two positions have been swapped. The transition state is the maximum and the intermediate is the minimum.",
+        "B": "Correct. Zero lifetime at an energy maximum against a finite lifetime in an energy well is the distinction, and it is what makes one detectable and the other not.",
+        "C": "Both halves are inverted here: intermediates rest at minima, and transition states are the unstable maxima rather than stable species.",
+        "D": "Both appear in radical and polar mechanisms alike. Every elementary step has a transition state, whichever class the reaction belongs to."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1514,7 +1645,7 @@ var CH06_QUESTIONS = [
     "topic": "Kinetics",
     "difficulty_level": "Medium",
     "question_text": "What is the primary assertion of the Hammond Postulate?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1542,12 +1673,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the conceptual formulation of the Hammond Postulate.",
-      "process": "Step 1: The Hammond Postulate states that the transition state of a reaction step resembles the structure of the species closest to it in energy.\nStep 2: If the transition state and another species (reactant or product) are close in energy, they will be close in structure.\nStep 3: This allows organic chemists to estimate the structural features of transition states based on reactant or product/intermediate stabilities.",
-      "result": "Species close in energy on a reaction coordinate are close in structure."
+      "context": "The Hammond postulate bridges two things that are otherwise hard to connect: the energy of a transition state, which controls the rate, and its structure, which can never be observed directly.",
+      "approach": "Step 1: State it plainly. Species that are close in energy along a reaction coordinate are also close in structure.\nStep 2: Apply it where it is needed. Since the transition state cannot be seen, compare its energy with its two neighbours and take its structure to resemble whichever it is nearer.\nStep 3: Notice why that is worth having. It lets you reason about an unobservable transition state using the structure of a reactant or intermediate you can actually draw.",
+      "note": "The payoff arrives in Chapter 7. The carbocation-forming step of an alkene addition is endothermic, so its transition state resembles the carbocation, and whatever stabilises that cation also stabilises the transition state and speeds the reaction. That is Markovnikov's rule derived rather than memorised.",
+      "options": {
+        "A": "Rate and equilibrium constant are independent quantities throughout this chapter, and the postulate concerns structure rather than either of them.",
+        "B": "Correct. Species close in energy are close in structure, which is what allows the structure of an unobservable transition state to be inferred.",
+        "C": "There is no general link between the direction of the energy change and the speed of a reaction; rate depends on the barrier, not on where the products end up.",
+        "D": "This is a true statement about carbocations, and it is the answer to a different question in this chapter, but it describes a stabilising effect rather than the postulate."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1555,7 +1692,7 @@ var CH06_QUESTIONS = [
     "topic": "Kinetics",
     "difficulty_level": "Hard",
     "question_text": "Based on the Hammond Postulate, what type of transition state is expected for a highly exothermic reaction step?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1583,12 +1720,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question applies the Hammond Postulate to exothermic steps.",
-      "process": "Step 1: In a highly exothermic step, the products are much lower in energy than the reactants.\nStep 2: The transition state lies close in energy to the reactants.\nStep 3: According to the Hammond Postulate, the transition state structure will closely resemble the reactants. This is called an 'early' transition state.",
-      "result": "It is an early transition state that structurally resembles the reactants."
+      "context": "The Hammond postulate converts the shape of an energy profile into a claim about the structure of the transition state, and the exothermic case is the easier of the two to picture.",
+      "approach": "Step 1: Sketch the step. The products lie well below the reactants, so the peak is reached early along the reaction coordinate.\nStep 2: Compare the energies. The transition state is much closer in energy to the reactants than to the far lower products.\nStep 3: Apply the postulate. Close in energy means close in structure, so the transition state resembles the reactants, with the new bond barely begun and the old one barely broken.",
+      "note": "The reverse case matters just as much: an endothermic step has a late transition state resembling the products or the intermediate that follows it. That is why carbocation stability governs the rate of an alkene addition even though no carbocation is present at the transition state itself.",
+      "options": {
+        "A": "A late transition state resembling the products belongs to an endothermic step, in which the products sit above the reactants.",
+        "B": "Correct. In a strongly exothermic step the barrier comes early, so the transition state is close in energy and therefore in structure to the reactants.",
+        "C": "A transition state exactly midway is the special case of a thermoneutral step rather than the general result for an exothermic one.",
+        "D": "Every elementary step has a transition state whatever its energy change, and an exothermic reaction can still be far too slow to observe."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1624,13 +1767,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the structural characteristics of carbocation intermediates.",
-      "process": "Step 1: A carbocation carbon has three $\\sigma$ bonds and a vacant $p$ orbital, with a formal charge of $+1$.\nStep 2: The valence shell electron pair repulsion (VSEPR) theory dictates that three electron domains arrange themselves to minimize repulsion.\nStep 3: This results in an $sp^2$ hybridization, trigonal planar geometry, and bond angles of approximately $120^\\circ$.",
-      "result": "The carbocation has $sp^2$ hybridization, trigonal planar geometry, and $120^\\circ$ bond angles."
+      "context": "A carbocation carbon has only three groups attached and six valence electrons around it. Both its shape and its reactivity follow directly from that shortage.",
+      "approach": "Step 1: Count the attached groups. The cationic carbon of the tert-butyl cation bears three methyls and nothing else - no fourth group and no lone pair.\nStep 2: Arrange them to minimise repulsion. Three regions of electron density spread as far apart as they can, which gives a flat trigonal planar arrangement with 120 degree angles.\nStep 3: Identify the hybridisation that produces that geometry. Three sigma bonds in a plane require sp2 hybridisation, which leaves one unhybridised p orbital perpendicular to that plane and empty.",
+      "note": "That empty p orbital is the whole of carbocation chemistry. It is what a nucleophile attacks, it is what neighbouring C-H bonds donate into during hyperconjugation, and because it is exposed on both faces equally, substitution through a carbocation gives a racemic mixture.",
+      "options": {
+        "A": "A tetrahedral sp3 arrangement needs four regions of electron density around carbon. A cationic carbon has three bonds and no lone pair to fill the fourth.",
+        "B": "Correct. Three sigma bonds and no lone pair give sp2 hybridisation, a trigonal planar shape with 120 degree angles, and an empty p orbital above and below.",
+        "C": "Linear sp geometry belongs to a carbon with only two attached groups, as in an alkyne or a nitrile, not to one bearing three methyls.",
+        "D": "A bent shape near 105 degrees arises when lone pairs compress the bond angles, and a carbocation carbon has no lone pair at all."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon carrying three methyl groups and one bromine."
   },
   {
     "question_id": "ch06_q32_carbocation_stabilization",
@@ -1665,20 +1815,27 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the physical organic principles behind carbocation stability.",
-      "process": "Step 1: Alkyl groups are electron-donating relative to hydrogen. They polarize electron density through $\\sigma$ bonds toward the positive carbon, which is the inductive effect.\nStep 2: Alkyl groups also stabilize carbocations via hyperconjugation: the filled C–H (or C–C) $\\sigma$ bond on an adjacent carbon can overlap with the vacant, unhybridized $p$ orbital of the carbocation.\nStep 3: Together, these factors explain why tertiary carbocations are much more stable than secondary, primary, or methyl carbocations.",
-      "result": "Inductive effect and hyperconjugation stabilize carbocations."
+      "context": "A carbocation is short of electron density at one carbon, so anything that feeds electrons toward that carbon lowers its energy. Two distinct mechanisms do this, and both work through the sigma framework rather than through a pi system.",
+      "approach": "Step 1: Consider the sigma bonds themselves. Alkyl groups are more polarisable than hydrogen, so they shift electron density along those bonds toward the positive centre. That is the inductive effect.\nStep 2: Consider orbital overlap. A filled C-H or C-C sigma orbital on an adjacent carbon can align with the empty p orbital and share its pair into it. That is hyperconjugation.\nStep 3: Count what is available. A tertiary cation has nine neighbouring C-H bonds positioned to do this and a primary cation only three, which is where the stability order comes from.",
+      "note": "Both effects need alkyl groups attached to the cationic carbon, which is why the order runs tertiary, secondary, primary, methyl. Where a pi system is adjacent, as in an allylic or benzylic cation, resonance outweighs both of them.",
+      "options": {
+        "A": "Resonance does stabilise cations next to a pi system, but steric hindrance stabilises nothing; blocking access to a centre changes how fast it reacts, not how high its energy is.",
+        "B": "Correct. Induction shifts electron density through the sigma framework and hyperconjugation overlaps filled neighbouring sigma orbitals with the empty p orbital.",
+        "C": "Electronegative atoms pull electron density away and destabilise a cation, and aromaticity needs a cyclic conjugated pi system that a simple alkyl cation does not have.",
+        "D": "Torsional and angle strain are steric terms from conformational analysis; neither has any bearing on where electron density sits in a cation."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A carbon bonded to three methyl groups and a bromine atom."
   },
   {
     "question_id": "ch06_q33_carbanion_hybridization",
     "topic": "Reaction Intermediates",
     "difficulty_level": "Medium",
     "question_text": "What is the hybridization, molecular geometry (including the lone pair), and relative stability trend for simple alkyl carbanions?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1706,12 +1863,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the structure and stability of carbanions.",
-      "process": "Step 1: A carbanion carbon has three bonds and one lone pair, giving it a formal charge of $-1$ and a steric number of 4.\nStep 2: This corresponds to an $sp^3$ hybridization and a trigonal pyramidal molecular geometry.\nStep 3: Alkyl groups are electron-donating. Introducing electron density to a carbon that is already negatively charged is destabilizing. Therefore, more alkyl substituents decrease stability, making methyl carbanion the most stable and tertiary the least stable.",
-      "result": "Carbanions are $sp^3$ hybridized, trigonal pyramidal, and follow the stability trend: $\\text{methyl} > 1^\\circ > 2^\\circ > 3^\\circ$."
+      "context": "A carbanion carbon carries three bonds and a lone pair, making it the electronic opposite of a carbocation. Its geometry and its stability order both invert accordingly.",
+      "approach": "Step 1: Count regions of electron density. Three bonds plus one lone pair make four, and four regions require sp3 hybridisation.\nStep 2: Name the shape. The four regions arrange tetrahedrally, but only three of them are bonds, so the shape described by the atoms is trigonal pyramidal - the same arrangement as ammonia.\nStep 3: Order the stability. Alkyl groups donate electron density, which is unwelcome at a carbon already bearing a negative charge, so the least substituted carbanion is the most stable.",
+      "note": "Because this order is the exact reverse of the carbocation order, the two intermediates are stabilised by opposite substituent patterns. Electron-withdrawing groups stabilise carbanions, which is why the hydrogens next to a carbonyl are the acidic ones when Chapter 22 takes up enolate chemistry.",
+      "options": {
+        "A": "The geometry is wrong and so is the trend. A lone pair occupies a fourth region of electron density, and alkyl substitution destabilises a carbanion rather than helping it.",
+        "B": "Correct. Three bonds plus a lone pair give sp3 hybridisation and a trigonal pyramidal shape, with stability falling as alkyl substitution rises.",
+        "C": "Tetrahedral describes the arrangement of all four electron regions, but a shape is named from the atoms alone, and the stability order quoted is the carbocation order.",
+        "D": "Linear sp geometry would need only two regions of electron density, and the ordering given here mixes the two trends together."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1747,61 +1910,27 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the structure and stability of free radicals.",
-      "process": "Step 1: Carbon radicals have seven valence electrons (three bonding pairs and one unpaired electron). The geometry is planar or near-planar, meaning they are effectively $sp^2$-hybridized.\nStep 2: Radicals are electron-deficient. Like carbocations, they are stabilized by electron-donating alkyl groups through hyperconjugation. This makes tertiary radicals the most stable.\nStep 3: Thus, the stability trend is $3^\\circ > 2^\\circ > 1^circ > \\text{methyl}$.",
-      "result": "Carbon radicals are effectively $sp^2$-hybridized and have the stability order $3^\\circ > 2^\\circ > 1^\\circ > \\text{methyl}$."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch06_q35_carbene_singlet_triplet",
-    "topic": "Reaction Intermediates",
-    "difficulty_level": "Hard",
-    "question_text": "Carbenes ($:CR_2$) can exist in singlet or triplet ground states. Which of the following correctly describes the electronic configuration of a triplet carbene?",
-    "question_smiles": "",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "$sp^2$-hybridized carbon with a lone pair in an $sp^2$ orbital and an empty $p$ orbital.",
-        "smiles": "",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "$sp^2$-hybridized carbon with two unpaired electrons of parallel spins in different orbitals (one $sp^2$ and one $p$).",
-        "smiles": "",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "$sp$-hybridized carbon with two lone pairs of electrons.",
-        "smiles": "",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "$sp^3$-hybridized carbon with two covalent bonds and two vacant orbitals.",
-        "smiles": "",
-        "is_correct": false
+      "context": "A carbon radical has seven valence electrons at the radical centre - three bonds and one unpaired electron - which places it between the carbocation and the carbanion in both shape and behaviour.",
+      "approach": "Step 1: Count what surrounds the carbon. Three sigma bonds and a single electron rather than a pair.\nStep 2: Work out the geometry. One electron repels far less than a lone pair does, so the centre is essentially flat, or pyramidal but inverting far too quickly to matter, and is treated as sp2.\nStep 3: Order the stability. A half-filled p orbital accepts electron density from neighbouring C-H bonds by hyperconjugation much as an empty one would, so the trend follows the carbocation order.",
+      "note": "The single tertiary hydrogen of isobutane is abstracted in preference to its nine primary ones for exactly this reason, and its bond dissociation energy is lower to match. Radical halogenation is selective for the same reason benzylic positions were in the earlier BDE question.",
+      "options": {
+        "A": "The hybridisation is wrong and so is the direction of the electronic effect: a radical is electron-deficient, so electron-donating alkyl groups are what stabilise it.",
+        "B": "Correct. The radical carbon is effectively sp2 with the odd electron in a p orbital, and hyperconjugation gives it the same stability order as a carbocation.",
+        "C": "Simple alkyl radicals are among the most reactive species in this course, which is precisely why radical chains propagate as efficiently as they do.",
+        "D": "Radicals carry no charge, so an ion-dipole interaction has nothing to grip. Radical reactions run perfectly well in non-polar solvents and in the gas phase."
       }
-    ],
-    "feedback": {
-      "context": "This question distinguishes between singlet and triplet carbenes.",
-      "process": "Step 1: A singlet carbene has its two non-bonding electrons paired in a single orbital (usually $sp^2$), leaving an empty $p$ orbital.\nStep 2: A triplet carbene has two non-bonding electrons with parallel spins in different orbitals (satisfying Hund's rule). Usually, the carbon is $sp^2$-hybridized, with one electron in an $sp^2$ orbital and one electron in a $p$ orbital.\nStep 3: This results in a biradical-like electronic structure.",
-      "result": "A triplet carbene has two unpaired electrons with parallel spins in different orbitals."
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon bonded to three methyl groups and one hydrogen."
   },
   {
     "question_id": "ch06_q36_reaction_coordinate_exothermic",
     "topic": "Energy Diagrams",
     "difficulty_level": "Easy",
     "question_text": "For a single-step, exothermic reaction, what is the relative energy of the transition state and the products compared to the reactants?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1829,12 +1958,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the interpretation of simple reaction energy diagrams.",
-      "process": "Step 1: A reaction always goes through a transition state at an energy maximum, so the transition state is always higher in energy than the reactants.\nStep 2: For an exothermic reaction, heat is released, so the products are lower in energy than the reactants ($\\Delta H^\\circ < 0$).",
-      "result": "The transition state is higher in energy than reactants, and products are lower."
+      "context": "Reading a single-step energy profile means answering two independent questions: how high the barrier stands, and where the products finish relative to the reactants.",
+      "approach": "Step 1: Deal with the barrier. Every elementary step passes over a transition state, which is by definition higher in energy than the material entering it.\nStep 2: Deal with the overall change. Exothermic means energy is given out, so the products settle below the reactants.\nStep 3: Put the two together. The curve climbs from the reactants to a peak, then falls past the starting level down to the products.",
+      "note": "The two features are genuinely independent, and that is the point most often missed. A strongly exothermic reaction can carry an enormous barrier and never happen at room temperature; the combustion of a hydrocarbon sitting safely in a fuel tank is the standard example.",
+      "options": {
+        "A": "A transition state below the reactants would mean no barrier at all, and products above them would make the reaction endothermic. Both halves are wrong.",
+        "B": "Correct. The transition state lies above the reactants because a barrier has to be climbed, and the products lie below them because energy is released.",
+        "C": "The transition state cannot be lower than the reactants. If it were, there would be nothing to climb and no activation energy to measure.",
+        "D": "Products above the reactants is the description of an endothermic reaction, which is the opposite of what the stem specifies."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1842,7 +1977,7 @@ var CH06_QUESTIONS = [
     "topic": "Energy Diagrams",
     "difficulty_level": "Medium",
     "question_text": "A reaction has a two-step mechanism where the first step is endothermic and the second step is exothermic. Which of the following describes the correct order of energy states from left to right along the reaction coordinate?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1870,12 +2005,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the sequence of features on a multi-step reaction coordinate diagram.",
-      "process": "Step 1: Every step begins at a stable or meta-stable state (reactants or intermediate) and goes through a transition state (energy maximum) before arriving at another state.\nStep 2: In a two-step reaction, the path is: Reactants $\\rightarrow$ Transition State 1 $\\rightarrow$ Intermediate $\\rightarrow$ Transition State 2 $\\rightarrow$ Products.\nStep 3: Because the first step is endothermic, the intermediate must be higher in energy than the reactants. Because the overall reaction must end with products, the products are lower in energy than reactants.",
-      "result": "The path is Reactants $\\rightarrow$ TS1 $\\rightarrow$ Intermediate $\\rightarrow$ TS2 $\\rightarrow$ Products."
+      "context": "A two-step mechanism always draws the same way: two peaks with one valley between them. What varies from case to case is how high each peak stands and where the valley sits relative to the two ends.",
+      "approach": "Step 1: Fix the sequence. Reactants climb to the first transition state, drop into the intermediate, climb again to the second transition state, then fall to the products. Peaks and valleys have to alternate.\nStep 2: Use the sign of the first step. It is endothermic, so the intermediate ends up above the reactants.\nStep 3: Use the sign of the second. It is exothermic, so the products end up below the intermediate. The intermediate is therefore the highest of the three stable points on the curve.",
+      "note": "Neither feature can ever repeat itself. Two peaks in a row would mean a barrier with no species in between, and two valleys in a row would mean two species interconverting with no barrier at all.",
+      "options": {
+        "A": "Correct. Peaks and valleys alternate, and with an endothermic first step followed by an exothermic second the intermediate finishes above both the reactants and the products.",
+        "B": "This puts the intermediate before the first transition state, which would mean it appeared without any barrier having been crossed to form it.",
+        "C": "A single transition state and no intermediate is the profile of a one-step reaction, and the stem specifies two steps.",
+        "D": "Two transition states in succession would leave nothing occupying the valley between them, and a mechanism cannot pass directly from one peak to another."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1883,7 +2024,7 @@ var CH06_QUESTIONS = [
     "topic": "Energy Diagrams",
     "difficulty_level": "Medium",
     "question_text": "A two-step reaction has the following energy values relative to reactants (0 kJ/mol): Transition State 1 = +75 kJ/mol; Intermediate = +40 kJ/mol; Transition State 2 = +60 kJ/mol; Products = -30 kJ/mol. Which step is the rate-determining step, and what is the activation energy of the forward reaction?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1911,53 +2052,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests quantitative analysis of reaction coordinate diagrams.",
-      "process": "Step 1: Calculate the activation energy for each step.\nStep 2: Step 1 starts at Reactants (0 kJ/mol) and goes to TS1 (+75 kJ/mol). $E_{a1} = 75 - 0 = 75\\text{ kJ/mol}$.\nStep 3: Step 2 starts at Intermediate (+40 kJ/mol) and goes to TS2 (+60 kJ/mol). $E_{a2} = 60 - 40 = 20\\text{ kJ/mol}$.\nStep 4: The rate-determining step is the step with the highest transition state relative to the starting reactants, which is Step 1 ($E_{a,\\text{overall}} = 75\\text{ kJ/mol}$).",
-      "result": "Step 1 is the rate-determining step, with $E_a = 75\\text{ kJ/mol}$."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch06_q39_kinetic_vs_thermodynamic_control",
-    "topic": "Energy Diagrams",
-    "difficulty_level": "Hard",
-    "question_text": "In a reaction that can produce two isomeric products, Product A is formed faster (lower activation energy) but is less stable than Product B. Under what conditions will Product B be the major product?",
-    "question_smiles": "CC",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Low temperature and short reaction time (kinetic control).",
-        "smiles": "",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "High temperature and long reaction time (thermodynamic control).",
-        "smiles": "",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "In the presence of a radical initiator.",
-        "smiles": "",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Under all possible conditions, because Product B is more stable.",
-        "smiles": "",
-        "is_correct": false
+      "context": "Identifying the rate-determining step from a table of energies means finding the highest peak measured from the reactants, rather than the largest single climb considered in isolation.",
+      "approach": "Step 1: Compare the two transition states in absolute terms. TS1 stands at +75 and TS2 at +60, so TS1 is the higher of the two.\nStep 2: Measure from the reference point. The reactants are set at 0, so reaching TS1 costs 75 kJ/mol.\nStep 3: Confirm the second step cannot compete. From the intermediate at +40 the climb to TS2 is only 20 kJ/mol, and TS2 never rises above TS1, so step 1 sets the rate at 75 kJ/mol.",
+      "note": "Had TS2 been placed above TS1, the answer would change even with that small climb from the intermediate unaltered. The barrier that governs the rate is always measured from the starting material up to the highest point that has to be crossed.",
+      "options": {
+        "A": "20 kJ/mol is the climb from the intermediate up to TS2. That is the smaller of the two barriers and belongs to the faster step.",
+        "B": "Correct. TS1 at +75 is the highest point on the profile, and measured from reactants at 0 the activation energy is 75 kJ/mol.",
+        "C": "35 kJ/mol is the drop from TS1 down to the intermediate. A downhill distance is not an activation energy.",
+        "D": "60 kJ/mol is the absolute energy of TS2, and step 2 does not determine the rate because its transition state lies below the first."
       }
-    ],
-    "feedback": {
-      "context": "This question tests the conditions for kinetic versus thermodynamic control.",
-      "process": "Step 1: Product A is formed faster, so it is the kinetic product.\nStep 2: Product B is more stable, so it is the thermodynamic product.\nStep 3: At high temperatures and long reaction times, the reaction becomes reversible (reaches equilibrium), allowing the molecules to cross the higher activation barrier of Product B and settle in the lower-energy product state. This is thermodynamic control, favoring Product B.",
-      "result": "High temperature and long reaction time favor Product B."
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1993,12 +2099,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the mechanistic steps of electrophilic addition to alkenes.",
-      "process": "Step 1: The alkene $\\pi$ bond acts as a nucleophile and attacks the electrophilic proton of $HCl$.\nStep 2: Protonation occurs at the less substituted carbon (Markovnikov's rule) to yield the more stable tertiary carbocation intermediate.\nStep 3: The chloride ion (nucleophile) then attacks the carbocation to form the final alkyl chloride product.",
-      "result": "The mechanism is protonation to form a tertiary carbocation, followed by chloride attack."
+      "context": "A polar addition to an alkene follows a fixed order of events, and that order is dictated by which partner has electrons to give and which has a shortage of them.",
+      "approach": "Step 1: Decide who moves first. The alkene pi bond is the electron-rich partner and the hydrogen of HCl is the electron-poor one, so the pi electrons attack that hydrogen.\nStep 2: Work out what is left behind. Losing the pi pair to hydrogen leaves a positive charge on the other alkene carbon. For 2-methylpropene, adding the proton to the CH2 end leaves the fully substituted carbon positive.\nStep 3: Finish the sequence. Chloride donates a pair to that tertiary cation, giving 2-chloro-2-methylpropane.",
+      "note": "The regiochemistry is settled entirely at the first step. Protonating the other carbon would leave a primary cation instead, far higher in energy, and that comparison is Markovnikov's rule stated in mechanistic terms rather than memorised as one.",
+      "options": {
+        "A": "Correct. The pi bond captures the proton to give a tertiary carbocation, and chloride then donates a pair to that cation.",
+        "B": "Chloride is a nucleophile and the alkene is electron-rich, so the two repel. Neither has any reason to hand electrons to the other.",
+        "C": "A concerted addition would produce no carbocation, and it offers no explanation for why the chlorine ends up on the more substituted carbon.",
+        "D": "HCl does not split homolytically under these conditions, and a radical route would place the chlorine on the less substituted carbon instead."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2034,13 +2146,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the role of initiators in radical mechanisms.",
-      "process": "Step 1: Radical reactions require an initiation step to generate free radicals from neutral molecules.\nStep 2: Peroxides have an O–O single bond with a very low bond dissociation energy (about 150 kJ/mol compared to ~410 kJ/mol for C–H).\nStep 3: This weak bond undergoes homolytic cleavage easily upon heating or exposure to light, generating alkoxy radicals that initiate the chain.",
-      "result": "Peroxides possess a weak O–O bond that undergoes homolytic cleavage easily."
+      "context": "An initiator has exactly one job: to produce radicals under mild conditions without anything else being required. The bond that breaks therefore has to be weak enough to come apart on gentle warming or on exposure to light.",
+      "approach": "Step 1: Look at the bond in question. The oxygen-oxygen single bond of a peroxide has a dissociation energy near 150 kJ/mol, roughly a third of a typical carbon-hydrogen bond.\nStep 2: Ask how it comes apart. With no polar partner present it splits evenly, one electron to each oxygen, giving two oxygen-centred radicals.\nStep 3: Follow the consequence. Those radicals abstract an atom from the substrate, and the chain is under way.",
+      "note": "That same weakness is why peroxides which build up in ethers left standing in air are dangerous, and why an old bottle of ether is tested for peroxides before anyone distils it.",
+      "options": {
+        "A": "Peroxides are not notably polar solvents, and stabilising a carbocation is polar chemistry. An initiator's task is to produce radicals, not ions.",
+        "B": "Correct. The oxygen-oxygen bond is unusually weak, so it cleaves homolytically on mild heating or under ultraviolet light to give two radicals.",
+        "C": "The oxygen lone pairs make peroxides weak bases at best, and donating an electron pair would begin a polar reaction rather than a radical chain.",
+        "D": "Lowering the barrier of a polar step is a catalyst's role. An initiator is consumed in the act of generating the radicals that start the chain."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two oxygen atoms joined by a single bond, each bearing one hydrogen."
   },
   {
     "question_id": "ch06_q42_radical_termination",
@@ -2075,54 +2194,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests identification of termination steps in radical chain reactions.",
-      "process": "Step 1: Radical initiation generates radicals. Propagation steps consume one radical and make a new one.\nStep 2: Termination steps involve the combination of two radicals to form a stable covalent bond, reducing the concentration of active radicals in the mixture.\nStep 3: $2\\ \\cdot CH_3 \\rightarrow CH_3CH_3$ combines two methyl radicals to form ethane, which has no radicals.",
-      "result": "The termination step is $2\\ \\cdot CH_3 \\rightarrow CH_3CH_3$."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch06_q43_organometallic_transmetalation",
-    "topic": "Reaction Mechanisms",
-    "difficulty_level": "Hard",
-    "question_text": "In transition-metal-catalyzed cross-coupling reactions, the step in which an organic group is transferred from one metal (such as boron or tin) to the transition metal catalyst (such as palladium) is known as:",
-    "question_smiles": "",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Oxidative addition",
-        "smiles": "",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "Reductive elimination",
-        "smiles": "",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Transmetalation",
-        "smiles": "",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "Carbometalation",
-        "smiles": "",
-        "is_correct": false
+      "context": "Termination is defined by its effect on the radical population. A termination step takes radicals out of the mixture without putting any back, and the chain stops there.",
+      "approach": "Step 1: Count radicals across each option. The first converts a non-radical into two radicals, which is how the chain is started rather than stopped.\nStep 2: Check the middle two. Each begins with one radical and ends with one, so the chain survives both; these are the two propagation steps.\nStep 3: Check the last. It consumes two radicals and produces none, which is exactly what termination means.",
+      "note": "Because termination requires two radicals to find each other, and radicals are present in vanishingly small concentrations, these steps are rare compared with propagation. That imbalance is why a chain can run for thousands of cycles before it finally stops.",
+      "options": {
+        "A": "Splitting chlorine into two atoms creates radicals where none existed. That is initiation, the opposite of what a termination step does.",
+        "B": "Abstracting hydrogen from methane spends a chlorine atom and produces a methyl radical, so the radical count holds at one and the chain lives on.",
+        "C": "The methyl radical reacts with chlorine to give the product and a fresh chlorine atom, handing the chain on rather than ending it.",
+        "D": "Correct. Two methyl radicals combine to give ethane, removing two radicals from the mixture and returning none."
       }
-    ],
-    "feedback": {
-      "context": "This question tests ligand exchange/organometallic mechanisms.",
-      "process": "Step 1: Identify the components: an organometallic donor (e.g. organoboron in Suzuki coupling) and a palladium complex.\nStep 2: The transfer of the organic group from boron to palladium is a ligand exchange between two metals.\nStep 3: This process is known as transmetalation.",
-      "result": "The step is transmetalation."
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single carbon atom with four hydrogens attached."
   },
   {
     "question_id": "ch06_q44_curved_arrow_formal_charge",
@@ -2157,12 +2242,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests tracking of formal charges during polar bond formation.",
-      "process": "Step 1: Ammonia ($NH_3$) is neutral. When nitrogen donates its lone pair to form a new bond, it effectively shares two electrons that it previously owned completely. Its formal charge becomes: $5 - (8/2) - 0 = +1$.\nStep 2: Boron trifluoride ($BF_3$) is neutral. When boron accepts the electron pair to form a fourth bond, its formal charge becomes: $3 - (8/2) - 0 = -1$.\nStep 3: This forms a Lewis acid-base adduct ($H_3N^+-B^-F_3$).",
-      "result": "Nitrogen is $+1$, Boron is $-1$."
+      "context": "A curved arrow moves an electron pair, and moving a pair always changes the formal charge at both ends: the donor gives up sole ownership of two electrons and the acceptor gains a share in them.",
+      "approach": "Step 1: Count nitrogen before and after. In ammonia it owns half of each of three bonding pairs plus a whole lone pair, five electrons in all, which matches group 5 for a formal charge of zero. Once the lone pair becomes a bond, nitrogen owns half of four pairs and no lone pair - four against five, so +1.\nStep 2: Do the same for boron. In boron trifluoride it owns half of three pairs, matching group 3 for a charge of zero. After accepting the pair it owns half of four - four against three, so -1.\nStep 3: Check the total. A neutral molecule plus a neutral molecule must give a neutral adduct, and +1 alongside -1 does exactly that.",
+      "note": "This separation of charge is the signature of a dative bond, in which both electrons came from one partner. The adduct is neutral overall, which is why it is drawn with the two formal charges marked rather than written as an ion.",
+      "options": {
+        "A": "Correct. Nitrogen becomes +1 having given up sole ownership of its lone pair, and boron becomes -1 having gained a share in a pair it did not own before.",
+        "B": "This reverses the direction of the arrow. The atom that donates becomes positive and the atom that accepts becomes negative, not the other way about.",
+        "C": "Turning a lone pair into a bond always redistributes ownership of those two electrons, so neither atom can keep the formal charge it started with.",
+        "D": "Charge has to be conserved. If nitrogen becomes +1 within a neutral adduct, some atom must carry the balancing -1, and boron is the only candidate."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2198,54 +2289,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the Lewis acidity of metal cations as electrophiles.",
-      "process": "Step 1: Electrophiles are electron pair acceptors (Lewis acids).\nStep 2: Metal cations like $Fe^{3+}$ or $Al^{3+}$ have positive charges and accessible empty valence orbitals.\nStep 3: They strongly attract and accept electron pairs from nucleophiles (like alkyl halides), making them powerful electrophiles/Lewis acids.",
-      "result": "They are electron-deficient with vacant orbitals that accept electron pairs."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch06_q46_nucleophilicity_solvent",
-    "topic": "Electrophiles vs Nucleophiles",
-    "difficulty_level": "Hard",
-    "question_text": "In a polar protic solvent such as methanol ($CH_3OH$), what is the correct order of nucleophilicity for the halide anions?",
-    "question_smiles": "CO",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "$F^- > Cl^- > Br^- > I^-$",
-        "smiles": "",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "$I^- > Br^- > Cl^- > F^-$",
-        "smiles": "",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "$Cl^- > F^- > I^- > Br^-$",
-        "smiles": "",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "All halides have equal nucleophilicity in protic solvents.",
-        "smiles": "",
-        "is_correct": false
+      "context": "A metal cation carrying a high positive charge and holding empty valence orbitals is a Lewis acid in the purest sense: it has both a strong pull on electrons and somewhere to put them once they arrive.",
+      "approach": "Step 1: Look at the charge. A triply charged cation exerts a powerful electrostatic attraction on any electron pair brought near it.\nStep 2: Look at the orbitals. Aluminium and iron in these oxidation states have vacant valence orbitals free to receive that pair.\nStep 3: Put it to work. In a Friedel-Crafts alkylation the metal accepts a lone pair from the halogen of an alkyl halide, weakening the carbon-halogen bond and generating the carbon electrophile that the ring actually attacks.",
+      "note": "The metal never bonds to the ring itself. Its whole role is to turn a mediocre electrophile into a powerful one and then be released, which is why the Lewis acid is needed in more than a token amount yet is recovered at the end.",
+      "options": {
+        "A": "Iron in the +3 state has a partly empty d shell rather than a filled one, and a highly charged cation holds whatever electrons it has very tightly indeed.",
+        "B": "Correct. High positive charge together with vacant orbitals lets these cations accept electron pairs from Lewis bases, which is what electrophilic means.",
+        "C": "Homolytic cleavage yields radicals and belongs to a different mechanistic class. These cations work by accepting electron pairs instead.",
+        "D": "Donating a proton is Bronsted acidity. Such cations can make bound water acidic, but that is not the reason they promote a Friedel-Crafts reaction."
       }
-    ],
-    "feedback": {
-      "context": "This question tests solvent effects on nucleophilicity.",
-      "process": "Step 1: Polar protic solvents can form strong hydrogen bonds to anions.\nStep 2: Small, highly electronegative anions (like $F^-$) are strongly solvated by hydrogen bonding, which shields their lone pairs and reduces their reactivity.\nStep 3: Large, polarizable anions (like $I^-$) are weakly solvated because their charge is spread over a large volume, leaving them free to react. Thus, in polar protic solvents, nucleophilicity increases down the periodic table: $I^- > Br^- > Cl^- > F^-$.",
-      "result": "The order is $I^- > Br^- > Cl^- > F^-$."
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A plain six-membered aromatic ring."
   },
   {
     "question_id": "ch06_q47_early_vs_late_ts",
@@ -2321,13 +2378,20 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests polarization and electrophilicity in alkyl halides.",
-      "process": "Step 1: Chlorine is more electronegative than carbon, pulling electron density away to create a partial positive charge ($\\delta^+$) on carbon.\nStep 2: This makes the carbon atom electrophilic.\nStep 3: The C-Cl bond is polar, and the carbon is susceptible to attack by nucleophiles. Polarizability of the leaving group (chlorine) also assists in bond-breaking.",
-      "result": "The carbon is electrophilic due to C-Cl polarization."
+      "context": "A difference in electronegativity decides where the electrons of a bond spend their time, and that unequal sharing is what creates an electrophilic site in a molecule that would otherwise be unreactive.",
+      "approach": "Step 1: Compare the two atoms. Chlorine is considerably more electronegative than carbon, so the bonding pair sits closer to chlorine.\nStep 2: Assign the partial charges that follow. Chlorine takes the partial negative and carbon the partial positive, which makes carbon the electron-poor atom and the site a nucleophile attacks.\nStep 3: Bring polarisability into it. A large, soft nucleophile such as iodide distorts its electron cloud easily and can begin bonding from further away, so it reaches this carbon faster than a small hard nucleophile of comparable basicity.",
+      "note": "Electronegativity and polarisability are separate properties worth keeping apart. Electronegativity says where the electrons sit at rest; polarisability says how readily that distribution deforms as another species approaches.",
+      "options": {
+        "A": "Chlorine is the electron-rich end of this bond, so it is not the electrophilic atom, and its polarisability does not move the partial negative charge elsewhere.",
+        "B": "Correct. Chlorine's electronegativity leaves carbon partially positive and therefore electrophilic, and polarisable nucleophiles attack that carbon most readily.",
+        "C": "The hydrogens carry only a very small partial positive charge, and sitting on the outside of a molecule is a matter of geometry rather than of electron distribution.",
+        "D": "Carbon is the positive end of this dipole, which is what makes it electrophilic. Polarisability describes the attacking nucleophile rather than carbon's role here."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single carbon carrying one chlorine and three hydrogens."
   },
   {
     "question_id": "ch06_q49_entropy_ring_strain",
@@ -2362,20 +2426,27 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the thermodynamic basis of addition reactions.",
-      "process": "Step 1: Enthalpy change ($\\Delta H^\\circ$) depends on the relative strengths of bonds broken and bonds formed.\nStep 2: Bonds broken: C=C $\\pi$ bond and Br–Br $sigma$ bond.\nStep 3: Bonds formed: two C–Br $\\sigma$ bonds.\nStep 4: $\\sigma$ bonds are significantly stronger than $\\pi$ bonds. Thus, forming two strong $\\sigma$ bonds at the expense of a weak $\\pi$ bond and a weak Br–Br bond is highly exothermic.",
-      "result": "The conversion of weaker bonds to stronger $\\sigma$ bonds makes the reaction highly exothermic."
+      "context": "Explaining a large negative enthalpy means accounting for bonds, because enthalpy is a bond-energy quantity. Strain, entropy and changes of phase each belong in a different column of the bookkeeping.",
+      "approach": "Step 1: List what breaks. The carbon-carbon pi bond, weak at roughly 240 kJ/mol, and the bromine-bromine bond, weaker still at about 193 kJ/mol.\nStep 2: List what forms. Two carbon-bromine sigma bonds at approximately 285 kJ/mol each.\nStep 3: Compare the two columns. Two strong sigma bonds are gained at the price of one weak pi bond and one weak halogen-halogen bond, and that trade is where the released energy comes from.",
+      "note": "The same accounting explains why additions to alkenes are exothermic as a class, and why this one does not run backwards under ordinary conditions: reversing it would mean trading two strong bonds for two weak ones.",
+      "options": {
+        "A": "A six-membered ring is essentially free of strain, so there is none to relieve, and the product ring is exactly the same size as the one it came from.",
+        "B": "Correct. A weak pi bond and a weak Br-Br bond are exchanged for two considerably stronger carbon-bromine sigma bonds.",
+        "C": "Two molecules combine into one, so the entropy change is negative here; in any case entropy does not appear anywhere in an enthalpy term.",
+        "D": "Cyclohexene and bromine are both liquids under the usual conditions and the product is a liquid too, so no gas is produced at any point."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A cyclohexene ring: six carbons with a double bond between two of them."
   },
   {
     "question_id": "ch06_q50_multi_step_diagram_intermediates",
     "topic": "Energy Diagrams",
     "difficulty_level": "Hard",
     "question_text": "A reaction coordinate diagram has three peaks and two valleys. How many steps are in this reaction mechanism, and how many intermediates are formed?",
-    "question_smiles": "CC",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -2403,12 +2474,18 @@ var CH06_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the identification of steps and intermediates in multi-step energy diagrams.",
-      "process": "Step 1: Each peak represents a transition state, which corresponds to one step in the mechanism. Therefore, three peaks mean there are three steps.\nStep 2: Each valley between the peaks represents a stable intermediate. For three steps, there are two valleys between them, indicating two reaction intermediates.\nStep 3: Thus, a reaction with three peaks and two valleys is a three-step reaction with two intermediates.",
-      "result": "The reaction has three steps and two intermediates."
+      "context": "Reading the number of steps off an energy diagram is pure counting, because every feature drawn on the curve corresponds to exactly one thing in the mechanism.",
+      "approach": "Step 1: Count the peaks. Each maximum is one transition state, and each transition state belongs to one elementary step, so three peaks mean three steps.\nStep 2: Count the valleys lying between them. Each minimum between two peaks is one intermediate, so two valleys mean two intermediates.\nStep 3: Check the pattern holds. Peaks and valleys alternate, so a three-step mechanism always has exactly two intermediates.",
+      "note": "The relationship is general: n steps require n transition states and leave n minus one intermediates. The wells at the two ends of the diagram do not count, because nothing consumes the product and nothing produced the reactant.",
+      "options": {
+        "A": "The two counts have been exchanged. The number of intermediates is always one fewer than the number of steps, never one more.",
+        "B": "Correct. Three maxima mean three elementary steps, and the two minima lying between them are the two intermediates.",
+        "C": "Three intermediates would need four peaks, since a mechanism always has one more transition state than it has intermediates.",
+        "D": "Four steps would show four peaks on the diagram, and only three are described in the stem."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {

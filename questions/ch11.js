@@ -7559,5 +7559,46 @@ var CH11_QUESTIONS = [
     "key_status": "unverified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q46_nucleophilicity_solvent",
+    "topic": "Electrophiles vs Nucleophiles",
+    "difficulty_level": "Hard",
+    "question_text": "In a polar protic solvent such as methanol ($CH_3OH$), what is the correct order of nucleophilicity for the halide anions?",
+    "question_smiles": "CO",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "$F^- > Cl^- > Br^- > I^-$",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "$I^- > Br^- > Cl^- > F^-$",
+        "smiles": "",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "$Cl^- > F^- > I^- > Br^-$",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "All halides have equal nucleophilicity in protic solvents.",
+        "smiles": "",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "This question tests solvent effects on nucleophilicity.",
+      "process": "Step 1: Polar protic solvents can form strong hydrogen bonds to anions.\nStep 2: Small, highly electronegative anions (like $F^-$) are strongly solvated by hydrogen bonding, which shields their lone pairs and reduces their reactivity.\nStep 3: Large, polarizable anions (like $I^-$) are weakly solvated because their charge is spread over a large volume, leaving them free to react. Thus, in polar protic solvents, nucleophilicity increases down the periodic table: $I^- > Br^- > Cl^- > F^-$.",
+      "result": "The order is $I^- > Br^- > Cl^- > F^-$."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

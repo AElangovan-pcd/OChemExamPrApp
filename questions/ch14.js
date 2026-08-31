@@ -6942,5 +6942,46 @@ var CH14_QUESTIONS = [
     "key_status": "unverified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch14_q39_kinetic_vs_thermodynamic_control",
+    "topic": "Energy Diagrams",
+    "difficulty_level": "Hard",
+    "question_text": "In a reaction that can produce two isomeric products, Product A is formed faster (lower activation energy) but is less stable than Product B. Under what conditions will Product B be the major product?",
+    "question_smiles": "CC",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Low temperature and short reaction time (kinetic control).",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "High temperature and long reaction time (thermodynamic control).",
+        "smiles": "",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "In the presence of a radical initiator.",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Under all possible conditions, because Product B is more stable.",
+        "smiles": "",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "This question tests the conditions for kinetic versus thermodynamic control.",
+      "process": "Step 1: Product A is formed faster, so it is the kinetic product.\nStep 2: Product B is more stable, so it is the thermodynamic product.\nStep 3: At high temperatures and long reaction times, the reaction becomes reversible (reaches equilibrium), allowing the molecules to cross the higher activation barrier of Product B and settle in the lower-energy product state. This is thermodynamic control, favoring Product B.",
+      "result": "High temperature and long reaction time favor Product B."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];
