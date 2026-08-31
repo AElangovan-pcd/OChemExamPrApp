@@ -561,8 +561,10 @@ function renderQuestion() {
 
   container.innerHTML = html;
 
-  // Render Chemistry structures, dynamic charts, and KaTeX equations on canvases after inserting to DOM
-  setTimeout(() => {
+  // The canvases exist the moment innerHTML lands, so these draws run now rather than
+  // on a timer. A setTimeout here is clamped to ~1s in a background tab, which made
+  // every automated UAT sweep report blank canvases that a student never sees.
+  {
     // 1. Draw standard question Smiles canvas
     if (q.question_smiles && document.getElementById('q-smiles-canvas')) {
       drawSMILESCanvas(q.question_smiles, 'q-smiles-canvas', 'light', q.structure_alt || '');
@@ -594,7 +596,7 @@ function renderQuestion() {
         throwOnError: false
       });
     }
-  }, 50);
+  }
 }
 
 // Wrapper for SmilesDrawer execution with standard checks
@@ -1216,7 +1218,7 @@ function renderMockExamQuestion() {
   container.innerHTML = html;
 
   // Draw structures on canvas
-  setTimeout(() => {
+  {
     if (q.question_smiles && document.getElementById('mock-q-smiles-canvas')) {
       drawSMILESCanvas(q.question_smiles, 'mock-q-smiles-canvas', 'light', q.structure_alt || '');
     }
@@ -1244,7 +1246,7 @@ function renderMockExamQuestion() {
         throwOnError: false
       });
     }
-  }, 50);
+  }
 }
 
 // Option selection handler in mock exam
@@ -1609,7 +1611,7 @@ function reviewMockQuestion(idx) {
   detailContainer.style.display = 'block';
 
   // Draw Smiley canvases
-  setTimeout(() => {
+  {
     if (q.question_smiles && document.getElementById('review-q-smiles-canvas')) {
       drawSMILESCanvas(q.question_smiles, 'review-q-smiles-canvas', 'light', q.structure_alt || '');
     }
@@ -1636,7 +1638,7 @@ function reviewMockQuestion(idx) {
     }
 
     detailContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 50);
+  }
 }
 
 // Tab switcher inside the active question review block
