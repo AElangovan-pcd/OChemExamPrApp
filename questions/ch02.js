@@ -2078,12 +2078,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Compare basicity based on hybridization of the atom carrying the lone pair.",
-      "process": "Step 1: Basicity measures how readily a lone pair is donated to a proton.\nStep 2: The hybridization of nitrogen affects how tightly its lone pair is held: $sp^3$ (25% $s$), $sp^2$ (33% $s$), $sp$ (50% $s$).\nStep 3: A higher $s$-character holds the lone pair closer to the nitrogen nucleus, making it less available for donation. Thus, $sp^3$ nitrogen is the most basic, and $sp$ nitrogen is the least basic.",
-      "result": "Methylamine ($sp^3$ nitrogen) is the most basic."
+      "context": "Basicity depends on how available a lone pair is. A lone pair in an orbital with more s character sits closer to the nucleus, is held more tightly, and is correspondingly less willing to be donated to a proton.",
+      "approach": "Step 1: Assign the hybridization at each nitrogen. Methylamine's is sp3 with three bonds and a lone pair; pyridine's is sp2 in the ring plane; acetonitrile's is sp at the end of a triple bond.\nStep 2: Rank the s character of the orbital holding each lone pair: 25 percent for sp3, 33 for sp2, 50 for sp.\nStep 3: Less s character means a more loosely held, more available lone pair. Methylamine's sp3 nitrogen is therefore the most basic, and acetonitrile's sp nitrogen the least.",
+      "note": "The same s-character argument that made an sp C-H more acidic in Chapter 1 makes an sp nitrogen less basic here - one stabilises a lone pair after deprotonation, the other holds a lone pair too tightly to donate. It is one principle producing opposite-looking consequences.",
+      "options": {
+        "A": "Correct. An sp3 nitrogen holds its lone pair in the orbital with the least s character, making it the most available for donation to a proton.",
+        "B": "Pyridine is a genuine base - its lone pair is in an in-plane sp2 orbital, not in the aromatic pi system - but 33 percent s character holds that pair more tightly than methylamine's sp3 orbital does.",
+        "C": "Acetonitrile's nitrogen is sp with 50 percent s character, holding its lone pair closest to the nucleus. It is the weakest base of the three by a wide margin.",
+        "D": "The three differ in hybridization at nitrogen, which changes how tightly each holds its lone pair. Their basicities differ by many orders of magnitude."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2119,12 +2125,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Compare hydrogen-bonding strengths between O-H and N-H groups.",
-      "process": "Step 1: Propane and dimethyl ether cannot form intermolecular hydrogen bonds.\nStep 2: Both ethanol (O-H) and ethylamine (N-H) form intermolecular hydrogen bonds.\nStep 3: Because oxygen is more electronegative than nitrogen, the O-H bond is more polar than the N-H bond. This makes the hydrogen bonds in ethanol significantly stronger than those in ethylamine, resulting in a higher boiling point ($78^\\circ$C vs. $16^\\circ$C).",
-      "result": "Ethanol has the highest boiling point due to stronger hydrogen bonding."
+      "context": "Boiling point tracks the energy needed to pull molecules apart. Hydrogen bonding is the strongest of the ordinary intermolecular forces, and its strength depends on how polar the bond to hydrogen is.",
+      "approach": "Step 1: Sort by whether hydrogen bonding is possible at all. Propane has only C-H bonds and dimethyl ether has no O-H, so neither can donate a hydrogen bond.\nStep 2: Compare the two that can. Ethanol donates through O-H and ethylamine through N-H.\nStep 3: Oxygen is more electronegative than nitrogen, so the O-H bond is more polarised and its hydrogen bonds are stronger. Ethanol boils at 78 degrees against ethylamine's 17.",
+      "note": "The four span more than a hundred degrees despite comparable molecular masses, which shows how much intermolecular forces matter relative to size. Dimethyl ether is the instructive case: it has an oxygen and is polar, but with no O-H it cannot donate, and it boils below room temperature.",
+      "options": {
+        "A": "Correct. The O-H bond is the most polarised of those available, so ethanol forms the strongest hydrogen bonds and boils highest at 78 degrees.",
+        "B": "Ethylamine does hydrogen bond through N-H, but nitrogen is less electronegative than oxygen so those bonds are weaker, and it boils around 17 degrees.",
+        "C": "Propane has no polar bonds at all and relies on dispersion forces alone, giving it the lowest boiling point of the four at about minus 42 degrees.",
+        "D": "Dimethyl ether is polar and can accept hydrogen bonds, but with no O-H it cannot donate one, so its molecules cannot associate with each other in that way."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2132,7 +2144,7 @@ var CH02_QUESTIONS = [
     "topic": "Polar Covalent Bonds & Electronegativity",
     "difficulty_level": "Medium",
     "question_text": "Which of the following molecules has a net dipole moment of zero due to symmetry?",
-    "question_smiles": "C=C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -2160,12 +2172,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Determine dipoles in aromatic substitution isomers.",
-      "process": "Step 1: All isomers contain polar C-Cl bonds.\nStep 2: In p-dichlorobenzene, the two C-Cl bonds are in the para configuration ($180^\\circ$ opposite each other in a flat ring).\nStep 3: The two dipole vectors point in exact opposite directions and cancel out, resulting in a net dipole moment of zero.",
-      "result": "p-Dichlorobenzene has a net dipole moment of zero."
+      "context": "On a benzene ring the substituent positions are fixed at 60 degree intervals, so the angle between two bond dipoles is determined entirely by whether the substituents are ortho, meta or para. Only one of those arrangements puts them exactly opposed.",
+      "approach": "Step 1: Rule out chlorobenzene immediately - a single polar C-Cl bond has nothing to cancel against.\nStep 2: Consider the disubstituted cases as vectors. Ortho places the two chlorines 60 degrees apart and meta places them 120 degrees apart, so in both cases the dipoles have a common component and add to a nonzero resultant.\nStep 3: Para places them directly across the ring, 180 degrees apart. Two equal dipoles pointing in exactly opposite directions cancel completely, giving a net moment of zero.",
+      "note": "This is a case where symmetry can be read straight off the drawing. Any pair of identical substituents placed para on a benzene ring cancels, which is why para-disubstituted benzenes are consistently the least polar and often the highest melting of the three isomers.",
+      "options": {
+        "A": "Correct. The two chlorines sit directly opposite each other, so their equal bond dipoles point in exactly opposite directions and cancel to zero.",
+        "B": "Adjacent chlorines are only 60 degrees apart, so their dipoles largely reinforce. The ortho isomer is the most polar of the three, at about 2.5 D.",
+        "C": "At 120 degrees apart the two dipoles partly oppose but do not cancel, leaving the meta isomer with a moderate net moment of about 1.5 D.",
+        "D": "A single C-Cl bond gives an unopposed dipole of about 1.7 D. With only one polar substituent there is nothing available to cancel it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2201,12 +2219,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Review the rules of arrow-pushing notation.",
-      "process": "Step 1: Curved arrows in organic mechanisms track the flow of electron density.\nStep 2: Electrons originate from electron-rich sources (lone pairs or $\\pi$ bonds in the Lewis base/nucleophile).\nStep 3: The arrow points to electron-deficient targets (vacant orbitals or partially positive nuclei in the Lewis acid/electrophile).",
-      "result": "Arrows are drawn from the electron donor to the electron acceptor."
+      "context": "A curved arrow represents the movement of an electron pair, so its tail must start where the electrons are and its head must point where they are going. Getting the direction right is the single most important convention in mechanism drawing.",
+      "approach": "Step 1: Locate the electrons. They are on the Lewis base, either as a lone pair or as a pi bond.\nStep 2: Locate the destination. The Lewis acid has an empty orbital or an incomplete octet ready to receive them.\nStep 3: Draw the arrow from the base to the acid - equivalently, from the nucleophile to the electrophile, since those terms describe the same two roles.",
+      "note": "Arrows always follow the electrons, never the atoms and never the positive charge. Drawing an arrow from a positive centre toward a lone pair is the commonest mechanistic error, and it inverts the chemistry being described.",
+      "options": {
+        "A": "Correct. The tail sits on the donor's electron pair and the head points at the acceptor, so the arrow runs from the Lewis base to the Lewis acid.",
+        "B": "This reverses the convention. The Lewis acid has no electrons to give; it is the destination, not the source.",
+        "C": "This is the same reversal in nucleophile-electrophile language. The electrophilic atom is electron-poor, so no arrow can originate there.",
+        "D": "A proton has no electron pair to donate, so an arrow never starts at it. In a protonation the arrow runs from the lone pair to the proton."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2242,12 +2266,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Compare acidities based on substituent electronegativities.",
-      "process": "Step 1: All compounds are tri-substituted acetic acids.\nStep 2: Compare electronegativities of the halogens: $F$ (4.0) > $Cl$ (3.0) > $Br$ (2.8) > $I$ (2.5).\nStep 3: Higher electronegativity increases the inductive electron withdrawal, which stabilizes the carboxylate anion. Therefore, trifluoroacetic acid is the most acidic.",
-      "result": "Trifluoroacetic acid is the most acidic."
+      "context": "Where several substituents differ only in which halogen they are, the strength of the inductive withdrawal follows the halogens' electronegativities directly. The more electronegative the substituent, the more charge it drains from the conjugate base.",
+      "approach": "Step 1: Note that all four acids have the same skeleton with three halogens on the alpha carbon, so position and number are held constant.\nStep 2: Rank the halogens by electronegativity: fluorine 4.0, chlorine 3.0, bromine 2.8, iodine 2.7.\nStep 3: Fluorine withdraws most strongly, so trifluoroacetate is the best-stabilised conjugate base and trifluoroacetic acid the strongest of the four, at pKa 0.23.",
+      "note": "This is a within-a-group comparison where electronegativity does decide, because the halogens here are substituents rather than the atom losing the proton. When the halogen itself bears the charge, as in HF against HI, size takes over instead - which comparison you are making determines which factor dominates.",
+      "options": {
+        "A": "Correct. Fluorine is the most electronegative halogen, so three of them withdraw the most electron density and stabilise the carboxylate best, giving the lowest pKa at 0.23.",
+        "B": "Trichloroacetic acid at 0.66 is very strong, but chlorine is a full electronegativity unit below fluorine and withdraws correspondingly less.",
+        "C": "Bromine is less electronegative still, and the measured pKa of 0.72 places tribromoacetic acid just below the trichloro compound in strength.",
+        "D": "Iodine is the least electronegative halogen, so triiodoacetic acid is the weakest of the four - the trend continues in the same direction."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2283,12 +2313,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify resonance stability guidelines.",
-      "process": "Step 1: Maximize bonds to optimize electronic stabilization.\nStep 2: Charge separation is highly destabilizing due to Coulombic repulsion.\nStep 3: Complete octets are preferred on all atoms. The combination of maximal bonds, complete octets, and minimal charge separation defines the major contributor.",
-      "result": "The structure with maximum bonds and minimum charge separation is the most stable."
+      "context": "Contributors are ranked by ordinary stability arguments. Forming bonds releases energy and separating charge costs it, so the best contributor is the one that maximises bonding and minimises charge separation.",
+      "approach": "Step 1: Count covalent bonds in each candidate structure - more bonds means lower energy.\nStep 2: Check octets. A structure in which every second-row atom has a full octet is preferred over one that leaves an atom short.\nStep 3: Check charge separation. Pulling positive and negative apart costs energy, so a contributor with no separated charges outranks one with them, and any charge present should sit on an atom suited to it.",
+      "note": "These criteria can conflict, and completing an octet usually wins. That is why the methoxymethyl cation's major contributor puts a positive charge on oxygen rather than leaving carbon with six electrons - it accepts charge separation to gain a full octet.",
+      "options": {
+        "A": "Correct. Maximum bonding and minimum charge separation together identify the lowest-energy contributor, which dominates the hybrid.",
+        "B": "More formal charges means more separation of charge, which costs energy. Such structures are minor contributors at best.",
+        "C": "An incomplete octet on an electronegative atom is particularly costly, since those atoms hold electrons most strongly and are least tolerant of being short.",
+        "D": "Fluorine is the most electronegative element and resists a positive charge above all others. Such a contributor would be negligible."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2324,13 +2360,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understand the reaction products of Lewis acids and bases.",
-      "process": "Step 1: $BF_3$ is a strong Lewis acid with a vacant orbital. Dimethyl ether is a Lewis base with lone pairs on oxygen.\nStep 2: The oxygen lone pair attacks the vacant orbital on boron.\nStep 3: This forms a stable Lewis acid-base adduct, $(CH_3)_2O^+-B^-F_3$, containing a coordinate bond.",
-      "result": "A Lewis acid-base adduct is formed."
+      "context": "A Lewis acid with an empty orbital and a Lewis base with a lone pair combine directly, without anything being expelled. The result is a single species held together by a bond in which one partner supplied both electrons.",
+      "approach": "Step 1: Assign the roles. Boron in boron trifluoride has only six valence electrons and an empty p orbital, making it the Lewis acid; the ether oxygen has lone pairs, making it the base.\nStep 2: Donate one oxygen lone pair into boron's empty orbital, forming a boron-oxygen bond.\nStep 3: Boron now has a complete octet and four groups, so it becomes tetrahedral, and the oxygen carries a formal positive charge while the boron carries a negative one. The product is a single adduct, with nothing lost.",
+      "note": "Boron trifluoride diethyl etherate, the same adduct made with diethyl ether, is sold as a stable distillable liquid precisely because this reaction is so clean. It is the standard way to handle boron trifluoride, which is otherwise an awkward gas.",
+      "options": {
+        "A": "Correct. The oxygen lone pair fills boron's empty orbital, giving a single adduct joined by a coordinate bond, with boron becoming tetrahedral.",
+        "B": "No methyl group transfers to boron. The methyls stay on the oxygen throughout; only an electron pair moves.",
+        "C": "The reaction proceeds readily and the adduct is stable enough to isolate and distil. Neither partner is bulky enough to prevent it.",
+        "D": "Each boron accepts one electron pair and each ether donates one, so the two combine in a one-to-one adduct rather than chaining together."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A boron atom bonded to three fluorine atoms."
   },
   {
     "question_id": "ch02_q_dynamic_pka_acids",
@@ -2378,12 +2421,16 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Evaluating acidities: lower pKa indicates a stronger acid.",
-      "process": "Acetic acid is carboxylic, pKa = 4.76. Phenol is resonance stabilized, pKa = 10. Ethanol is a regular alcohol, pKa = 16. Acetone is a weak carbon acid, pKa = 20.",
-      "result": "Acidity trends depend on conjugate base resonance and electronegativity."
+      "context": "These four span the range of ordinary organic acidity, and each value follows from how well its conjugate base disperses the negative charge left behind. Ordering them is a matter of asking what stabilisation is available in each case.",
+      "approach": "Step 1: Acetic acid at 4.76 is the most acidic - its carboxylate delocalizes the charge equally over two electronegative oxygens.\nStep 2: Phenol at 10 comes next, delocalizing into an aromatic ring. The ring shares the charge with carbon atoms rather than oxygens, so the stabilisation is real but weaker.\nStep 3: Ethanol at 16 has no delocalization at all, leaving the charge on one oxygen. Acetone at 20 is the weakest, since deprotonating an alpha C-H leaves the charge partly on carbon, stabilised only by the adjacent carbonyl.",
+      "note": "Acetone's value is the one to remember for later chapters. At pKa 20 an alpha hydrogen is far more acidic than an alkane's 50, and that difference is what makes enolate chemistry possible - the entire basis of Chapters 22 and 23.",
+      "options": {
+        "A": "Correct. Acetic acid 4.76, phenol 10, ethanol 16 and acetone 20, in order of how effectively each conjugate base disperses its charge.",
+        "B": "Each value follows from the conjugate base: two-oxygen delocalization is best, aromatic delocalization next, a bare alkoxide next, and an enolate weakest of these four."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2427,12 +2474,16 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understanding molecular geometry and vector addition of dipole moments.",
-      "process": "Dichloromethane (ClCCl) and Chloroform (ClC(Cl)Cl) are asymmetric and polar. Carbon tetrachloride (ClC(Cl)(Cl)Cl) and Methane (C) are highly symmetric, causing bond dipoles to cancel out completely.",
-      "result": "Molecular symmetry determines net dipole moment."
+      "context": "Whether a molecule is polar depends on both bond polarity and molecular symmetry. Polar bonds arranged symmetrically cancel; the same bonds arranged asymmetrically do not.",
+      "approach": "Step 1: Take the two nonpolar cases. Methane has four essentially nonpolar C-H bonds arranged tetrahedrally, and carbon tetrachloride has four strongly polar C-Cl bonds in the same symmetric arrangement, which cancel exactly.\nStep 2: Take dichloromethane. Two chlorines and two hydrogens break the tetrahedral symmetry, so the C-Cl dipoles have a resultant pointing away from the hydrogens.\nStep 3: Chloroform likewise has three chlorines against one hydrogen, an asymmetric arrangement leaving a clear net moment.",
+      "note": "Carbon tetrachloride and chloroform make the pair worth remembering: both are built from the same two kinds of bond, yet one is nonpolar and the other polar. Replacing a single chlorine with hydrogen destroys the cancellation entirely.",
+      "options": {
+        "A": "Correct. Methane and carbon tetrachloride are tetrahedrally symmetric and cancel to zero, while dichloromethane and chloroform are asymmetric and retain a net dipole.",
+        "B": "Sort by symmetry rather than by whether polar bonds are present. Four identical groups around a carbon cancel; a mixture of two different groups does not."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2475,12 +2526,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identifying Brønsted-Lowry acid/base roles in a reaction scheme.",
-      "process": "Acetic acid (CC(=O)O) donates a proton to form acetate (CC(=O)[O-]). Ethylamine (CCN) accepts a proton to form ethylammonium (CC[NH3+]).",
-      "result": "The acid donates a proton, and the base accepts it."
+      "context": "In a Brønsted-Lowry proton transfer, one reactant must supply a proton and the other must have a lone pair to receive it. Identifying which is which is a matter of looking for an acidic hydrogen on one side and an available lone pair on the other.",
+      "approach": "Step 1: Look for the acidic hydrogen. Acetic acid's carboxyl O-H has a pKa of about 4.76, making it much the most acidic proton present.\nStep 2: Look for the basic site. Ethylamine's nitrogen carries a lone pair and is the strongest base available.\nStep 3: The proton moves from the carboxyl group to the nitrogen, giving acetate and the ethylammonium ion. Acetic acid is the acid, ethylamine the base.",
+      "note": "Check the direction with pKa values: the conjugate acid of ethylamine has a pKa near 10.7, well above acetic acid's 4.76, so the products hold the weaker acid and the equilibrium lies far to the right. This proton transfer is essentially complete.",
+      "options": {
+        "A": "Correct. Acetic acid donates its carboxyl proton and ethylamine's nitrogen lone pair accepts it, giving acetate and the ethylammonium ion.",
+        "B": "This reverses the roles. Acetic acid has the acidic O-H and ethylamine has the available lone pair, not the other way about.",
+        "C": "Two acids have nothing to react with, since neither would accept the proton the other offers. A proton transfer needs a donor and an acceptor.",
+        "D": "Ethylamine is indeed a base, but acetic acid cannot act as one here. Its carboxyl proton is far more available than its comparatively poor lone pairs, so it functions as the acid."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   }
 ];
