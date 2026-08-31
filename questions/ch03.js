@@ -1513,13 +1513,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Compute the energy of partially eclipsed butane conformations.",
-      "process": "Step 1: Identify the interactions in the partially eclipsed ($120^circ$) butane conformation: one H-H eclipsing interaction and two $H-CH_3$ eclipsing interactions.\nStep 2: Apply the values: H-H eclipsing = 4.0 kJ/mol. $H-CH_3$ eclipsing = 6.0 kJ/mol each.\nStep 3: Sum: 4.0 + 6.0 + 6.0 = 16.0 kJ/mol.",
-      "result": "The energy of the partially eclipsed conformation is 16.0 kJ/mol."
+      "context": "Butane has two distinct eclipsed conformations, not one, because the two rotating carbons carry different substituents. Their energies differ according to what ends up aligned with what.",
+      "approach": "Step 1: Set the dihedral angle to 120 degrees and see what eclipses. Each methyl group lines up with a hydrogen, and the remaining hydrogen pair lines up with each other.\nStep 2: Assign the individual costs - two methyl-hydrogen eclipses at about 6 kJ/mol each, plus one hydrogen pair at about 4.\nStep 3: Adding those gives roughly 16 kJ/mol, measured from the anti conformation.",
+      "note": "This partially eclipsed form is a maximum on the energy profile but not the highest one - the fully eclipsed conformation at 19 kJ/mol sits above it. A rotational profile can have maxima of different heights, and butane's does.",
+      "options": {
+        "A": "Correct. Two methyl-hydrogen eclipses at about 6 kJ/mol each plus one hydrogen pair at 4 gives roughly 16 kJ/mol.",
+        "B": "19.0 kJ/mol is the fully eclipsed conformation, where the two methyl groups align with each other rather than with hydrogens.",
+        "C": "12.0 kJ/mol is ethane's rotational barrier, where all three eclipsing interactions are between hydrogens.",
+        "D": "14.0 kJ/mol is propane's barrier, which has only one methyl group on the rotating carbons rather than two."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of four carbon atoms."
   },
   {
     "question_id": "ch03_q33_iupac_prefix_numbering_tie",
@@ -1554,13 +1561,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Name a branched heptane or pentane derivative, testing alphabetization in the final name construction.",
-      "process": "Step 1: Longest chain is 5 carbons (pentane).\nStep 2: Numbering starts from the left to give substituents at C2 (methyl) and C3 (ethyl). (Numbering from right gives branches at C3 and C4).\nStep 3: List substituents alphabetically: ethyl comes before methyl.\nStep 4: Combine: 3-ethyl-2-methylpentane.",
-      "result": "The correct name is 3-ethyl-2-methylpentane."
+      "context": "Two separate conventions govern a name with more than one kind of substituent: numbering is fixed by the lowest set of locants, and the written order of the substituents is fixed alphabetically. The two rules operate independently and can point in different directions.",
+      "approach": "Step 1: The parent is pentane and the substituents are an ethyl and a methyl.\nStep 2: Fix the numbering. One direction gives locants 2 and 3, the other 3 and 4. The lower set wins, putting methyl at C2 and ethyl at C3.\nStep 3: Fix the citation order, which is alphabetical and has nothing to do with the locants. Ethyl precedes methyl, so the ethyl is written first even though it carries the higher number: 3-ethyl-2-methylpentane.",
+      "note": "All three wrong options here denote this same molecule. That is deliberate - each fails on a different rule, so working out which rule each breaks is the real exercise, and it is a far better test of naming than distractors that draw different compounds.",
+      "options": {
+        "A": "Correct. Locants 2 and 3 are the lower set, and ethyl is cited before methyl because citation order is alphabetical rather than numerical.",
+        "B": "The right molecule under the wrong name. The locants are correct but the substituents are cited in numerical order; the rule requires alphabetical order, so ethyl must come first.",
+        "C": "The right molecule under the wrong name. This picks a five-carbon chain carrying one substituent when another five-carbon chain carries two, which the tiebreaker rule rejects.",
+        "D": "The right molecule under the wrong name. This numbers the chain from the wrong end, giving locants 3 and 4 where 2 and 3 are available."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-carbon chain carrying an ethyl group on the third carbon and a methyl group on the second."
   },
   {
     "question_id": "ch03_q34_iupac_complex_alkane",
@@ -1595,13 +1609,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Name a branched alkane resolving numbering direction and alphabetical sorting.",
-      "process": "Step 1: Longest continuous chain has 6 carbons (hexane): $(CH_3)_3C-CH_2-CH(CH_2CH_3)_2 \\rightarrow (CH_3)_2C(C_1,C_2)-CH_2(C_3)-CH(C_4)(CH_2CH_3)-CH_2(C_5)-CH_3(C_6)$.\nStep 2: Compare numbering directions. Left-to-right gives locants at 2, 2, and 4. Right-to-left gives locants at 3, 5, and 5. The lowest set at the first point of difference is 2,2,4.\nStep 3: List substituents: 4-ethyl and 2,2-dimethyl. Alphabetize: 'ethyl' comes before 'dimethyl'. This gives 4-ethyl-2,2-dimethylhexane.",
-      "result": "The correct IUPAC name is 4-ethyl-2,2-dimethylhexane."
+      "context": "With three substituents the lowest-locant rule compares whole sets rather than single numbers. The sets are compared term by term, and the first point of difference decides.",
+      "approach": "Step 1: Find the parent. The longest continuous chain runs to six carbons, so the parent is hexane.\nStep 2: Number from each end and write out the locant sets. One direction gives ethyl at 3 and methyls at 5 and 5, the set 3,5,5. The other gives methyls at 2 and 2 and ethyl at 4, the set 2,2,4.\nStep 3: Compare term by term. The first terms are 2 against 3, so 2,2,4 is the lower set and wins outright. Cite alphabetically: 4-ethyl-2,2-dimethylhexane.",
+      "note": "Comparing sets term by term matters when the totals mislead. Here 2 plus 2 plus 4 and 3 plus 5 plus 5 differ in sum too, but the rule is not about sums - it compares the first point of difference, and would prefer 2,6,6 over 3,4,5 even though that has the larger total.",
+      "options": {
+        "A": "Correct. The locant set 2,2,4 beats 3,5,5 at the first point of difference, and ethyl is cited before dimethyl alphabetically.",
+        "B": "This numbers from the wrong end, producing the set 3,5,5. Compared term by term against 2,2,4 it loses at the very first number.",
+        "C": "The locants are right but the substituents are cited in the wrong order. Alphabetisation ignores the multiplying prefix, so dimethyl files under m and comes after ethyl.",
+        "D": "An ethyl group at C5 of a hexane chain cannot be correct: a two-carbon substituent that far along means a longer chain runs through it, so the parent chain was chosen wrongly."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-carbon chain carrying an ethyl group on the fourth carbon and two methyl groups on the second."
   },
   {
     "question_id": "ch03_q35_iupac_longest_chain_double_tie",
@@ -1636,13 +1657,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Name a multi-branched alkane by resolving parent chain, numbering, and alphabetization.",
-      "process": "Step 1: Longest carbon chain is 7 carbons (heptane): start at the isopropyl methyl, go through C2, C3, C4, C5, and down one of the ethyl groups.\nStep 2: Numbering from the left gives substituents at 2, 3, and 5. Numbering from the right gives 3, 5, and 6. The lower set of locants is 2,3,5.\nStep 3: Identify the substituents: 2-methyl, 3-methyl, and 5-ethyl. Alphabetize: ethyl comes before dimethyl.\nStep 4: Combine: 5-ethyl-2,3-dimethylheptane.",
-      "result": "The name is 5-ethyl-2,3-dimethylheptane."
+      "context": "This structure offers two seven-carbon chains carrying the same number of substituents, so the chain tiebreaker settles nothing and the decision falls entirely to the locant comparison.",
+      "approach": "Step 1: Establish the parent. The longest chains run to seven carbons, so heptane, and both candidates carry three substituents.\nStep 2: Number for the lowest set. From one end the substituents fall at 3, 5 and 6; from the other at 2, 3 and 5.\nStep 3: Compare 2,3,5 against 3,5,6 - the first terms already differ, so 2,3,5 wins. Cite alphabetically, ethyl before methyl, giving 5-ethyl-2,3-dimethylheptane.",
+      "note": "Notice how the rules are applied in a fixed sequence: longest chain, then number of substituents, then lowest locants, then alphabetical citation. Each is consulted only when the one before it leaves a tie, and following them in that order is what guarantees exactly one correct name.",
+      "options": {
+        "A": "Correct. Locant set 2,3,5 beats 3,5,6, and ethyl is cited before methyl alphabetically despite carrying the higher locant.",
+        "B": "The right molecule numbered from the wrong end, giving the set 3,5,6 where 2,3,5 was available.",
+        "C": "The methyl locants are right but the ethyl is placed at C4 rather than C5. Recount the chain from the end that gives the methyls their 2 and 3.",
+        "D": "The right molecule under the wrong name. Locants and parent are correct, but the substituents are cited in numerical rather than alphabetical order."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A seven-carbon chain carrying an ethyl group on the fifth carbon and methyl groups on the second and third."
   },
   {
     "question_id": "ch03_q36_newman_projection_anti",
@@ -1677,13 +1705,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify the globally most stable conformer of butane.",
-      "process": "Step 1: In the anti conformation, the two bulky methyl groups are oriented $180^circ$ apart, minimizing steric strain.\nStep 2: All bonds are staggered, minimizing torsional strain.\nStep 3: This makes it the global energy minimum.",
-      "result": "The anti conformation is the lowest energy state."
+      "context": "The lowest-energy conformation is the one that avoids both kinds of strain at once - no eclipsing bonds, and the two largest groups as far apart as they can get.",
+      "approach": "Step 1: Eliminate the eclipsed conformations. Both the fully and partially eclipsed forms carry torsional strain from aligned bonds, so neither can be the minimum.\nStep 2: Compare the two staggered forms. Both avoid eclipsing entirely, so the difference between them is steric.\nStep 3: Anti places the two methyl groups 180 degrees apart, the maximum separation possible, so it avoids even the gauche interaction. It is the global minimum.",
+      "note": "That anti is preferred is why unbranched alkane chains adopt an extended zigzag shape in the solid state - each successive C-C bond sits anti to the last. It is also why long chains pack together efficiently, which is why melting points climb steadily with chain length.",
+      "options": {
+        "A": "Correct. Anti is staggered, so it has no torsional strain, and its methyl groups are maximally separated, so it has no gauche interaction either.",
+        "B": "Gauche is staggered and therefore free of torsional strain, but its methyls sit 60 degrees apart, costing about 3.8 kJ/mol in steric strain.",
+        "C": "The partially eclipsed conformation is an energy maximum at about 16 kJ/mol, not a minimum.",
+        "D": "Fully eclipsed is the global maximum at about 19 kJ/mol, the highest point on the profile rather than the lowest."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of four carbon atoms."
   },
   {
     "question_id": "ch03_q37_newman_projection_fully_eclipsed",
@@ -1718,13 +1753,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify the globally least stable conformer of butane.",
-      "process": "Step 1: The fully eclipsed conformation has a dihedral angle of $0^circ$.\nStep 2: This forces the two bulky methyl groups to directly eclipse each other, maximizing both steric and torsional strain.\nStep 3: This is the global energy maximum on the butane rotational profile.",
-      "result": "The fully eclipsed conformation has the highest potential energy."
+      "context": "The highest point on the rotational profile is where both sources of strain peak together - every bond eclipsed, and the two bulkiest groups aligned directly with each other.",
+      "approach": "Step 1: Restrict to the eclipsed conformations, since staggered arrangements are minima and cannot be the maximum.\nStep 2: Compare the two eclipsed forms. At 120 degrees each methyl eclipses a hydrogen; at 0 degrees the two methyls eclipse each other.\nStep 3: A methyl-methyl eclipse costs about 11 kJ/mol against a methyl-hydrogen eclipse's 6, so the 0 degree arrangement is the higher of the two, at about 19 kJ/mol.",
+      "note": "Both eclipsed forms are transition states rather than conformations a molecule rests in - butane passes through them and does not linger. That is why they have energies but no measurable population, unlike anti and gauche, which can be assigned relative abundances.",
+      "options": {
+        "A": "Correct. At 0 degrees the two methyl groups eclipse each other directly, the most costly single interaction available, putting this conformation at the top of the profile.",
+        "B": "The partially eclipsed conformation is a maximum, but a lower one at about 16 kJ/mol, because the methyls eclipse hydrogens rather than each other.",
+        "C": "Gauche is staggered and a local minimum, only about 3.8 kJ/mol above the global minimum.",
+        "D": "Anti is the global minimum, the lowest point on the profile rather than the highest."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of four carbon atoms."
   },
   {
     "question_id": "ch03_q38_strain_types",
@@ -1759,12 +1801,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Distinguish between steric, torsional, and angle strain.",
-      "process": "Step 1: Steric strain occurs due to spatial crowding of electron clouds of non-bonded atoms.\nStep 2: Torsional strain occurs when bonds are eclipsed.\nStep 3: Angle strain occurs when bond angles deviate from their ideal hybrid geometries (e.g. $109.5^circ$ for $sp^3$).",
-      "result": "The correct choice is steric strain."
+      "context": "Three distinct kinds of strain are named in this chapter, and they have different physical origins. Keeping them apart matters because a given conformation can suffer from more than one at a time.",
+      "approach": "Step 1: Identify what the question describes - atoms pushed closer than their van der Waals radii permit, so their electron clouds overlap.\nStep 2: Distinguish that from torsional strain, which comes from filled bonding orbitals being aligned rather than from atoms touching.\nStep 3: Distinguish it also from angle strain, which comes from bond angles forced away from the ideal value. What remains is steric strain, also called van der Waals strain.",
+      "note": "The gauche interaction in butane is steric strain in a staggered conformation, which shows the two are genuinely independent - there is no eclipsing at all, yet the methyl groups are close enough to repel. Eclipsed conformations often carry both kinds at once.",
+      "options": {
+        "A": "Correct. Forcing non-bonded atoms inside their van der Waals radii makes their electron clouds overlap and repel, which is steric strain.",
+        "B": "Torsional strain comes from eclipsing filled bonding orbitals on adjacent atoms, not from atoms being pushed together. Eclipsed ethane has it while its hydrogens remain well apart.",
+        "C": "Angle strain arises when bond angles are compressed or widened from the ideal, as in cyclopropane's 60 degree ring.",
+        "D": "Aromatic strain is not a standard term. Aromaticity is a stabilising feature rather than a source of strain."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1800,12 +1848,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Relate fuel efficiency and octane rating to alkane structure.",
-      "process": "Step 1: Octane rating measures a fuel's resistance to premature ignition (knocking).\nStep 2: Straight-chain heptane is highly prone to knocking (octane rating = 0). Isomeric isooctane ($2,2,4-trimethylpentane$) burns smoothly (octane rating = 100).\nStep 3: Highly branched alkanes are more stable and combust in a controlled, smooth manner, leading to higher octane ratings.",
-      "result": "Branching increases the octane rating."
+      "context": "Octane rating measures a fuel's resistance to igniting prematurely under compression rather than at the spark. Premature ignition produces engine knock, and structure determines how easily it happens.",
+      "approach": "Step 1: Recall what the scale is pegged to. Heptane, an unbranched chain, defines 0, and 2,2,4-trimethylpentane, a highly branched isomer, defines 100.\nStep 2: Note the structural difference between those two anchors - the reference at the top of the scale is the branched one.\nStep 3: Branched alkanes resist spontaneous ignition under compression better than straight chains, so more branching means a higher octane rating.",
+      "note": "The name is a historical accident worth knowing: the reference compound has eight carbons, but the rating is a scale position, not a count. A fuel rated 95 does not contain 95 percent of anything - it behaves like a mixture of 95 percent branched reference and 5 percent heptane.",
+      "options": {
+        "A": "Correct. Branched alkanes resist premature ignition under compression, which is what a high octane rating measures - the reference at 100 is a highly branched octane isomer.",
+        "B": "Straight chains ignite most readily under compression. Heptane, an unbranched chain, defines the bottom of the scale at 0.",
+        "C": "Alkanes contain no double bonds by definition, and octane rating is a property measured for saturated fuel components.",
+        "D": "Molecular weight is not the controlling factor. Heptane and 2,2,4-trimethylpentane are close in size but sit at opposite ends of the scale."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1841,12 +1895,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Define dihedral angle in stereochemistry.",
-      "process": "Step 1: Look down a single C-C bond in a Newman projection.\nStep 2: The dihedral angle is the angle formed by a substituent on the front carbon, the C-C axis, and a substituent on the back carbon.\nStep 3: It ranges from $0^circ$ to $360^circ$.",
-      "result": "It is the angle between bonds on adjacent carbons in a Newman projection."
+      "context": "A Newman projection looks straight down a chosen carbon-carbon bond, so the front carbon's bonds and the back carbon's bonds are both seen face on. The dihedral angle measures the rotational offset between them.",
+      "approach": "Step 1: Sight along the bond in question, putting one carbon directly behind the other.\nStep 2: Pick a reference bond on the front carbon and one on the back carbon.\nStep 3: The angle between them, measured around the axis of the bond you are looking along, is the dihedral or torsion angle. It is zero when the bonds are aligned and 60 degrees when staggered.",
+      "note": "The dihedral angle is the single coordinate a conformational energy diagram is plotted against, which is why it needs a precise definition. Confusing it with an ordinary bond angle makes such diagrams unreadable - one describes rotation about a bond, the other the geometry at an atom.",
+      "options": {
+        "A": "Correct. The dihedral angle is the rotational offset between a front-carbon bond and a back-carbon bond, viewed along the bond joining them.",
+        "B": "The angle between two bonds on the same atom is an ordinary bond angle - 109.5 degrees for an sp3 carbon - and it does not change on rotation.",
+        "C": "Double bonds do not rotate freely; the pi overlap prevents it. Dihedral angles are discussed for rotation about single bonds.",
+        "D": "Deviation from 109.5 degrees is angle strain, a measure of distortion at an atom rather than of rotation about a bond."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1882,13 +1942,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify degrees of carbon substitution in the isobutyl group.",
-      "process": "Step 1: The isobutyl group is $-CH_2-CH(CH_3)_2$.\nStep 2: The terminal methyl carbons are bonded to 1 carbon (primary). The central $-CH-$ carbon is bonded to 3 carbons (tertiary).\nStep 3: The $-CH_2-$ carbon is bonded to the parent chain carbon and the central $-CH-$ carbon, making it bonded to 2 carbons (secondary).",
-      "result": "The direct attachment $-CH_2-$ carbon is secondary."
+      "context": "A carbon's classification counts how many other carbons it is attached to. For a substituent group, the parent chain carbon it connects to counts as one of those neighbours, which is easy to overlook.",
+      "approach": "Step 1: Write out the isobutyl group as it appears when attached: a CH2 joined to the parent chain on one side and to a CH on the other.\nStep 2: Count neighbours for that CH2. It touches the parent chain carbon and the CH, so two carbons - secondary.\nStep 3: Check the others. The central CH touches the CH2 and two methyls, so three carbons and tertiary. Each methyl touches only the CH, so primary.",
+      "note": "This is the reason the naming prefixes can seem inconsistent. Isobutyl attaches through a primary carbon in the free group but that carbon becomes secondary once bonded to a chain, whereas the iso prefix describes the branched skeleton rather than the attachment point - unlike sec- and tert-, which describe the attachment carbon directly.",
+      "options": {
+        "A": "Correct. Once attached, that CH2 touches two carbons - the parent chain carbon on one side and the branch carbon on the other - which makes it secondary.",
+        "B": "The central CH touches three carbons: the CH2 and both methyl groups. That makes it tertiary rather than secondary.",
+        "C": "Each terminal methyl touches only one carbon, the central CH, so all of them are primary.",
+        "D": "There is a secondary carbon once the group is attached. Counting only the carbons within the free group, and forgetting the parent chain neighbour, produces this answer."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon bonded to three methyl groups, the branched four-carbon alkane."
   },
   {
     "question_id": "ch03_q42_secbutyl_chiral_center",
