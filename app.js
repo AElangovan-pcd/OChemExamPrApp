@@ -1,4 +1,5 @@
-// Organic Chemistry Exam PrApp - Core Logic
+// OChemStudyBuddy - Core Logic
+// Author: A. Elangovan, PhD
 
 // App State
 let state = {

@@ -1,4 +1,5 @@
-/* Organic Chemistry Exam PrApp - Premium Stylesheet */
+/* OChemStudyBuddy - Stylesheet
+   Author: A. Elangovan, PhD */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
@@ -1194,7 +1195,7 @@ header {
   background: rgba(255, 255, 255, 0.01);
 }
 
-/* Custom Stylesheet Extensions for OChemExamPrApp */
+/* Custom Stylesheet Extensions for OChemStudyBuddy */
 
 /* Reaction Scheme Layout */
 .reaction-scheme-container {
