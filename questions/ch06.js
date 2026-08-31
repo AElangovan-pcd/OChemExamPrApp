@@ -1,7 +1,368 @@
-// McMurry Chapter 6 questions
-const CHAPTER_6_QUESTIONS = [
+// OChemStudyBuddy - McMurry Chapter 6
+// Author: A. Elangovan, PhD
+var CH06_QUESTIONS = [
   {
-    "question_id": "ch6_q1_pericyclic_mechanism",
+    "question_id": "ch06_q1",
+    "topic": "Thermodynamics & Reaction Kinetics",
+    "difficulty_level": "Medium",
+    "question_text": "Analyze the potential energy curve shown in the reaction coordinate diagram. Determine the activation energy ($E_a$) of the first step and the total reaction enthalpy change ($\\Delta H$).",
+    "energy_diagram": {
+      "points": [
+        {
+          "state": "Reactants",
+          "energy": 20
+        },
+        {
+          "state": "TS1",
+          "energy": 88
+        },
+        {
+          "state": "Intermediate",
+          "energy": 40
+        },
+        {
+          "state": "TS2",
+          "energy": 83
+        },
+        {
+          "state": "Products",
+          "energy": 45
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Ea1 = 68 kJ/mol, delta H = -25 kJ/mol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Ea1 = 20 kJ/mol, delta H = 25 kJ/mol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Ea1 = 68 kJ/mol, delta H = 25 kJ/mol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Ea1 = 88 kJ/mol, delta H = 35 kJ/mol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Calculating kinetic and thermodynamic values from energy diagrams.",
+      "process": "Reactant energy = 20 kJ/mol. Transition state 1 energy = 88 kJ/mol. Ea1 = 88 - 20 = 68 kJ/mol. Product energy = 45 kJ/mol. delta H = 45 - 20 = 25 kJ/mol.",
+      "result": "Ea1 is 68 kJ/mol, delta H is 25 kJ/mol."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch06_q2",
+    "topic": "Thermodynamics & Reaction Kinetics",
+    "difficulty_level": "Medium",
+    "question_text": "Analyze the potential energy curve shown in the reaction coordinate diagram. Determine the activation energy ($E_a$) of the first step and the total reaction enthalpy change ($\\Delta H$).",
+    "energy_diagram": {
+      "points": [
+        {
+          "state": "Reactants",
+          "energy": 20
+        },
+        {
+          "state": "TS1",
+          "energy": 93
+        },
+        {
+          "state": "Intermediate",
+          "energy": 52
+        },
+        {
+          "state": "TS2",
+          "energy": 88
+        },
+        {
+          "state": "Products",
+          "energy": -5
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Ea1 = 32 kJ/mol, delta H = -25 kJ/mol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Ea1 = 93 kJ/mol, delta H = -15 kJ/mol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Ea1 = 73 kJ/mol, delta H = -25 kJ/mol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Ea1 = 73 kJ/mol, delta H = 25 kJ/mol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Calculating kinetic and thermodynamic values from energy diagrams.",
+      "process": "Reactant energy = 20 kJ/mol. Transition state 1 energy = 93 kJ/mol. Ea1 = 93 - 20 = 73 kJ/mol. Product energy = -5 kJ/mol. delta H = -5 - 20 = -25 kJ/mol.",
+      "result": "Ea1 is 73 kJ/mol, delta H is -25 kJ/mol."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch06_q3",
+    "topic": "Thermodynamics & Reaction Kinetics",
+    "difficulty_level": "Medium",
+    "question_text": "Analyze the potential energy curve shown in the reaction coordinate diagram. Determine the activation energy ($E_a$) of the first step and the total reaction enthalpy change ($\\Delta H$).",
+    "energy_diagram": {
+      "points": [
+        {
+          "state": "Reactants",
+          "energy": 20
+        },
+        {
+          "state": "TS1",
+          "energy": 86
+        },
+        {
+          "state": "Intermediate",
+          "energy": 44
+        },
+        {
+          "state": "TS2",
+          "energy": 73
+        },
+        {
+          "state": "Products",
+          "energy": 5
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Ea1 = 66 kJ/mol, delta H = 15 kJ/mol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Ea1 = 66 kJ/mol, delta H = -15 kJ/mol",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Ea1 = 24 kJ/mol, delta H = -15 kJ/mol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Ea1 = 86 kJ/mol, delta H = -5 kJ/mol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Calculating kinetic and thermodynamic values from energy diagrams.",
+      "process": "Reactant energy = 20 kJ/mol. Transition state 1 energy = 86 kJ/mol. Ea1 = 86 - 20 = 66 kJ/mol. Product energy = 5 kJ/mol. delta H = 5 - 20 = -15 kJ/mol.",
+      "result": "Ea1 is 66 kJ/mol, delta H is -15 kJ/mol."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch06_q4",
+    "topic": "Thermodynamics & Reaction Kinetics",
+    "difficulty_level": "Medium",
+    "question_text": "Analyze the potential energy curve shown in the reaction coordinate diagram. Determine the activation energy ($E_a$) of the first step and the total reaction enthalpy change ($\\Delta H$).",
+    "energy_diagram": {
+      "points": [
+        {
+          "state": "Reactants",
+          "energy": 20
+        },
+        {
+          "state": "TS1",
+          "energy": 60
+        },
+        {
+          "state": "Intermediate",
+          "energy": 36
+        },
+        {
+          "state": "TS2",
+          "energy": 84
+        },
+        {
+          "state": "Products",
+          "energy": 45
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Ea1 = 40 kJ/mol, delta H = -25 kJ/mol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Ea1 = 16 kJ/mol, delta H = 25 kJ/mol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Ea1 = 40 kJ/mol, delta H = 25 kJ/mol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Ea1 = 60 kJ/mol, delta H = 35 kJ/mol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Calculating kinetic and thermodynamic values from energy diagrams.",
+      "process": "Reactant energy = 20 kJ/mol. Transition state 1 energy = 60 kJ/mol. Ea1 = 60 - 20 = 40 kJ/mol. Product energy = 45 kJ/mol. delta H = 45 - 20 = 25 kJ/mol.",
+      "result": "Ea1 is 40 kJ/mol, delta H is 25 kJ/mol."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch06_q6",
+    "topic": "Thermodynamics & Reaction Kinetics",
+    "difficulty_level": "Medium",
+    "question_text": "Analyze the potential energy curve shown in the reaction coordinate diagram. Determine the activation energy ($E_a$) of the first step and the total reaction enthalpy change ($\\Delta H$).",
+    "energy_diagram": {
+      "points": [
+        {
+          "state": "Reactants",
+          "energy": 20
+        },
+        {
+          "state": "TS1",
+          "energy": 96
+        },
+        {
+          "state": "Intermediate",
+          "energy": 50
+        },
+        {
+          "state": "TS2",
+          "energy": 96
+        },
+        {
+          "state": "Products",
+          "energy": -5
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Ea1 = 76 kJ/mol, delta H = 25 kJ/mol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Ea1 = 30 kJ/mol, delta H = -25 kJ/mol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Ea1 = 76 kJ/mol, delta H = -25 kJ/mol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Ea1 = 96 kJ/mol, delta H = -15 kJ/mol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Calculating kinetic and thermodynamic values from energy diagrams.",
+      "process": "Reactant energy = 20 kJ/mol. Transition state 1 energy = 96 kJ/mol. Ea1 = 96 - 20 = 76 kJ/mol. Product energy = -5 kJ/mol. delta H = -5 - 20 = -25 kJ/mol.",
+      "result": "Ea1 is 76 kJ/mol, delta H is -25 kJ/mol."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch06_q7",
+    "topic": "Thermodynamics & Reaction Kinetics",
+    "difficulty_level": "Medium",
+    "question_text": "Analyze the potential energy curve shown in the reaction coordinate diagram. Determine the activation energy ($E_a$) of the first step and the total reaction enthalpy change ($\\Delta H$).",
+    "energy_diagram": {
+      "points": [
+        {
+          "state": "Reactants",
+          "energy": 20
+        },
+        {
+          "state": "TS1",
+          "energy": 76
+        },
+        {
+          "state": "Intermediate",
+          "energy": 50
+        },
+        {
+          "state": "TS2",
+          "energy": 70
+        },
+        {
+          "state": "Products",
+          "energy": 45
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Ea1 = 56 kJ/mol, delta H = 25 kJ/mol",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Ea1 = 30 kJ/mol, delta H = 25 kJ/mol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Ea1 = 56 kJ/mol, delta H = -25 kJ/mol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Ea1 = 76 kJ/mol, delta H = 35 kJ/mol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Calculating kinetic and thermodynamic values from energy diagrams.",
+      "process": "Reactant energy = 20 kJ/mol. Transition state 1 energy = 76 kJ/mol. Ea1 = 76 - 20 = 56 kJ/mol. Product energy = 45 kJ/mol. delta H = 45 - 20 = 25 kJ/mol.",
+      "result": "Ea1 is 56 kJ/mol, delta H is 25 kJ/mol."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch06_q1_pericyclic_mechanism",
     "topic": "Reaction Mechanisms",
     "difficulty_level": "Easy",
     "question_text": "The thermal [4+2] cycloaddition (Diels-Alder reaction) of 1,3-butadiene with ethene to form cyclohexene occurs in a single concerted step with no intermediates. How is this type of reaction mechanism classified?",
@@ -36,10 +397,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the classification of organic reactions based on their mechanism of bond-making and bond-breaking.",
       "process": "Step 1: Identify that the reaction is concerted (occurs in a single step) and involves a cyclic transition state of reorganizing $\\pi$ electrons.\nStep 2: Compare with polar reactions (involving electron pairs moving from nucleophiles to electrophiles), radical reactions (involving unpaired electrons), and ligand exchange reactions (substitution at transition metals).\nStep 3: Conclude that reactions proceeding via a concerted cyclic rearrangement of electrons are pericyclic reactions.",
       "result": "The Diels-Alder reaction is a pericyclic reaction."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q2_radical_propagation",
+    "question_id": "ch06_q2_radical_propagation",
     "topic": "Reaction Mechanisms",
     "difficulty_level": "Medium",
     "question_text": "In the light-initiated chlorination of methane, which of the following represents a propagation step?",
@@ -74,10 +438,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the understanding of the steps in a radical chain reaction mechanism.",
       "process": "Step 1: Identify the three phases of radical chain reactions: initiation (produces radicals from non-radicals), propagation (consumes a radical to generate a new radical, maintaining the chain), and termination (combines two radicals to form a stable non-radical molecule).\nStep 2: Analyze Option A: initiation step. Analyze Options C and D: termination steps.\nStep 3: Analyze Option B: reactant radical ($Cl\\cdot$) reacts with a non-radical ($CH_4$) to produce a new radical ($\\cdot CH_3$) and a non-radical ($HCl$). This is a propagation step.",
       "result": "The propagation step is $CH_4 + Cl\\cdot \\rightarrow \\cdot CH_3 + HCl$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q3_polar_addition",
+    "question_id": "ch06_q3_polar_addition",
     "topic": "Reaction Mechanisms",
     "difficulty_level": "Easy",
     "question_text": "The addition of hydrogen bromide to cyclohexene to form bromocyclohexane involves the attack of the alkene $\\pi$ bond on a proton, forming a carbocation intermediate, followed by bromide attack. What class of mechanism is this?",
@@ -112,10 +479,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the classification of reactions involving electrophiles and nucleophiles.",
       "process": "Step 1: Identify that the reaction proceeds via the movement of electron pairs from electron-rich species ($\\pi$ bond and bromide ion) to electron-poor species (proton and carbocation).\nStep 2: Recall that mechanisms involving the transfer of electron pairs between electron-rich and electron-poor centers are classified as polar reactions.",
       "result": "This is a polar reaction."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q4_ligand_exchange",
+    "question_id": "ch06_q4_ligand_exchange",
     "topic": "Reaction Mechanisms",
     "difficulty_level": "Hard",
     "question_text": "During the catalytic cycle of the Heck reaction, an organopalladium intermediate coordinates to an alkene, which subsequently inserts into the palladium-carbon bond. In a preceding step, the halide ligand on palladium is substituted by a phosphine ligand. What type of mechanism does this ligand substitution represent?",
@@ -150,10 +520,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests organometallic mechanism steps, specifically ligand substitution/exchange at transition metal centers.",
       "process": "Step 1: Identify the transition metal complex undergoing reaction.\nStep 2: Recognize that replacing one ligand (halide) bonded to palladium with another ligand (phosphine) is a substitution at the metal center.\nStep 3: Classify this as a ligand exchange reaction, which is distinct from polar organic mechanisms, radical mechanisms, or pericyclic mechanisms.",
       "result": "This represents ligand exchange."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q5_arrow_direction",
+    "question_id": "ch06_q5_arrow_direction",
     "topic": "Curved Arrows",
     "difficulty_level": "Medium",
     "question_text": "When drawing a curved arrow to represent a step in a polar mechanism, which of the following correctly describes the starting and ending points of the arrow?",
@@ -188,10 +561,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the fundamental convention of using curved arrows to represent electron-pair movement in polar mechanisms.",
       "process": "Step 1: Recall that curved arrows in polar mechanisms track the movement of electron pairs.\nStep 2: The tail of the arrow must always start at the source of electrons (a lone pair, a $\\sigma$ bond, or a $\\pi$ bond).\nStep 3: The head of the arrow must point to the destination of the electron pair (an electrophilic atom, or a bond being formed/broken).",
       "result": "The tail starts at an electron-rich site and the head points to an electrophilic atom or bond."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q6_fishhook_arrows",
+    "question_id": "ch06_q6_fishhook_arrows",
     "topic": "Curved Arrows",
     "difficulty_level": "Easy",
     "question_text": "What do single-barbed curved arrows ('fishhook' arrows) represent in organic reaction mechanisms?",
@@ -226,10 +602,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the distinction between single-electron and double-electron curved arrow conventions.",
       "process": "Step 1: Double-barbed arrows represent the movement of an electron pair.\nStep 2: Single-barbed arrows (fishhook arrows) represent the movement of a single electron, which is the standard notation in radical (homolytic) reaction steps.",
       "result": "Single-barbed arrows represent the movement of a single electron."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q7_homolytic_vs_heterolytic",
+    "question_id": "ch06_q7_homolytic_vs_heterolytic",
     "topic": "Homolytic vs Heterolytic Cleavage",
     "difficulty_level": "Medium",
     "question_text": "Which statement correctly describes the difference between homolytic and heterolytic bond cleavage?",
@@ -264,10 +643,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question compares the two modes of covalent bond cleavage: homolysis and heterolysis.",
       "process": "Step 1: In homolytic cleavage, the bond breaks symmetrically; each fragment receives one of the two bonding electrons, generating neutral radicals.\nStep 2: In heterolytic cleavage, the bond breaks unsymmetrically; one fragment retains both bonding electrons, yielding a cation and an anion.",
       "result": "Homolytic cleavage produces radicals, and heterolytic cleavage produces ions."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q8_bde_definition",
+    "question_id": "ch06_q8_bde_definition",
     "topic": "Homolytic vs Heterolytic Cleavage",
     "difficulty_level": "Medium",
     "question_text": "Bond dissociation energy (BDE) is specifically defined as the enthalpy change ($\\Delta H^\\circ$) required to cleave a covalent bond by which process?",
@@ -302,10 +684,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the thermodynamic definition of bond dissociation energy.",
       "process": "Step 1: Recall that BDE is a standard thermodynamic property measured under gas-phase conditions.\nStep 2: The chemical process defined by BDE is the homolytic cleavage of a specific bond: $A-B \\rightarrow A\\cdot + B\\cdot$.\nStep 3: Consequently, BDE values are always positive (endothermic) and refer specifically to gas-phase homolytic cleavage.",
       "result": "It is the energy required for homolytic cleavage in the gas phase to yield two radicals."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q9_bde_calculation_simple",
+    "question_id": "ch06_q9_bde_calculation_simple",
     "topic": "Homolytic vs Heterolytic Cleavage",
     "difficulty_level": "Hard",
     "question_text": "Given the bond dissociation energies: $H-H$ (436 kJ/mol), $Cl-Cl$ (243 kJ/mol), and $H-Cl$ (432 kJ/mol), calculate the reaction enthalpy ($\\Delta H^\\circ$) for the reaction: $H_2 + Cl_2 \\rightarrow 2\\ HCl$.",
@@ -340,13 +725,16 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the calculation of reaction enthalpy using bond dissociation energies.",
       "process": "Step 1: Write down the bonds broken and bonds formed in the reaction.\nStep 2: Bonds broken: 1 mol of $H-H$ (436 kJ/mol) + 1 mol of $Cl-Cl$ (243 kJ/mol) = 679 kJ/mol (endothermic, positive energy input).\nStep 3: Bonds formed: 2 mol of $H-Cl$ (2 $\\times$ 432 = 864 kJ/mol) (exothermic, energy released).\nStep 4: Use the formula: $\\Delta H^\\circ = \\sum \\text{BDE(bonds broken)} - \\sum \\text{BDE(bonds formed)} = 679 - 864 = -185\\text{ kJ/mol}$.",
       "result": "The enthalpy of reaction is $-185\\text{ kJ/mol}$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q10_radical_stability_bde",
+    "question_id": "ch06_q10_radical_stability_bde",
     "topic": "Homolytic vs Heterolytic Cleavage",
     "difficulty_level": "Hard",
-    "question_text": "Based on carbon-hydrogen bond dissociation energies, which of the following hydrocarbons has the lowest BDE for homolytic cleavage of a C\u2013H bond?",
+    "question_text": "Based on carbon-hydrogen bond dissociation energies, which of the following hydrocarbons has the lowest BDE for homolytic cleavage of a C–H bond?",
     "question_smiles": "CC(C)C1=CC=CC=C1",
     "options": [
       {
@@ -375,13 +763,16 @@ const CHAPTER_6_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question relates C\u2013H bond dissociation energy to the stability of the resulting radical intermediate.",
-      "process": "Step 1: Recall that the weaker the C\u2013H bond (lower BDE), the more stable the resulting radical.\nStep 2: Compare the radicals formed: primary ethyl radical (from ethane), secondary propyl radical (from propane), tertiary tert-butyl radical (from isobutane), and tertiary benzylic radical (from isopropylbenzene).\nStep 3: The tertiary benzylic radical is exceptionally stable because the unpaired electron is delocalized over the aromatic ring via resonance, in addition to being stabilized by two alkyl groups. Therefore, the benzylic C\u2013H bond of cumene has the lowest BDE.",
-      "result": "Isopropylbenzene (cumene) has the lowest C\u2013H BDE at the benzylic position."
-    }
+      "context": "This question relates C–H bond dissociation energy to the stability of the resulting radical intermediate.",
+      "process": "Step 1: Recall that the weaker the C–H bond (lower BDE), the more stable the resulting radical.\nStep 2: Compare the radicals formed: primary ethyl radical (from ethane), secondary propyl radical (from propane), tertiary tert-butyl radical (from isobutane), and tertiary benzylic radical (from isopropylbenzene).\nStep 3: The tertiary benzylic radical is exceptionally stable because the unpaired electron is delocalized over the aromatic ring via resonance, in addition to being stabilized by two alkyl groups. Therefore, the benzylic C–H bond of cumene has the lowest BDE.",
+      "result": "Isopropylbenzene (cumene) has the lowest C–H BDE at the benzylic position."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q11_nucleophile_definition",
+    "question_id": "ch06_q11_nucleophile_definition",
     "topic": "Electrophiles vs Nucleophiles",
     "difficulty_level": "Easy",
     "question_text": "Which of the following is the most accurate definition of a nucleophile?",
@@ -416,10 +807,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the definitions of electrophiles and nucleophiles in polar reactions.",
       "process": "Step 1: A nucleophile is an electron-rich species (neutral or negatively charged) containing a reactive lone pair or $\\pi$ bond.\nStep 2: By donating an electron pair, it acts as a Lewis base.\nStep 3: Thus, nucleophiles are defined as electron pair donors (Lewis bases).",
       "result": "A nucleophile is a Lewis base that donates an electron pair."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q12_electrophile_definition",
+    "question_id": "ch06_q12_electrophile_definition",
     "topic": "Electrophiles vs Nucleophiles",
     "difficulty_level": "Easy",
     "question_text": "Which of the following is the most accurate definition of an electrophile?",
@@ -454,10 +848,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question defines electrophiles in organic chemistry.",
       "process": "Step 1: Electrophiles ('electron-lovers') are electron-deficient species that have an empty orbital or polar bond.\nStep 2: They react by accepting an electron pair from a nucleophile, which corresponds to the definition of a Lewis acid.",
       "result": "An electrophile is a Lewis acid that accepts an electron pair."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q13_nucleophile_id",
+    "question_id": "ch06_q13_nucleophile_id",
     "topic": "Electrophiles vs Nucleophiles",
     "difficulty_level": "Medium",
     "question_text": "Which of the following species is NOT a nucleophile?",
@@ -492,10 +889,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the ability to distinguish nucleophiles from electrophiles.",
       "process": "Step 1: Nucleophiles must have a lone pair or $\\pi$ bond to donate. Ammonia ($NH_3$), cyanide ($CN^-$), and ethanol ($CH_3CH_2OH$) all possess reactive lone pairs.\nStep 2: $BF_3$ (boron trifluoride) has a boron atom with only 6 valence electrons and a vacant $p$ orbital. It cannot donate electrons; instead, it is a strong Lewis acid (electrophile).",
       "result": "$BF_3$ is not a nucleophile; it is an electrophile."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q14_electrophile_id",
+    "question_id": "ch06_q14_electrophile_id",
     "topic": "Electrophiles vs Nucleophiles",
     "difficulty_level": "Medium",
     "question_text": "Which of the following species acts as an electrophile in polar organic reactions?",
@@ -530,10 +930,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question requires identifying electrophilic species.",
       "process": "Step 1: Analyze the electronic structure of each option.\nStep 2: $H_2S$, $CH_3CH_2NH_2$, and $I^-$ all have lone pairs and are electron-rich, making them nucleophiles.\nStep 3: $CH_3^+$ is a carbocation with a vacant $p$ orbital and a positive formal charge, making it a strong electrophile.",
       "result": "$CH_3^+$ is the electrophile."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q15_esp_map_polarity",
+    "question_id": "ch06_q15_esp_map_polarity",
     "topic": "Electrophiles vs Nucleophiles",
     "difficulty_level": "Medium",
     "question_text": "On an electrostatic potential (ESP) map of methylamine ($CH_3NH_2$), a region of high electron density (colored red) is located near the nitrogen atom. What does this indicate about the reactivity of the nitrogen atom?",
@@ -568,10 +971,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question relates electrostatic potential maps to chemical reactivity (nucleophilicity/electrophilicity).",
       "process": "Step 1: In ESP maps, red colors represent negative electrostatic potential (high electron density), and blue colors represent positive potential (low electron density).\nStep 2: The nitrogen atom in methylamine is electronegative and has a lone pair, giving it a partial negative charge ($\\delta^-$), represented in red.\nStep 3: This high electron density makes nitrogen nucleophilic (capable of donating its lone pair).",
       "result": "The nitrogen atom is nucleophilic."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q16_gibbs_equation",
+    "question_id": "ch06_q16_gibbs_equation",
     "topic": "Thermodynamics",
     "difficulty_level": "Easy",
     "question_text": "For a reaction at constant pressure and temperature, under what thermodynamic conditions will the reaction ALWAYS be spontaneous ($\\Delta G^\\circ < 0$)?",
@@ -606,10 +1012,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the signs of enthalpy and entropy on Gibbs free energy spontaneity.",
       "process": "Step 1: Use the equation $\\Delta G^\\circ = \\Delta H^\\circ - T\\Delta S^\\circ$.\nStep 2: If $\\Delta H^\\circ$ is negative (exothermic) and $\\Delta S^\\circ$ is positive (disorder-increasing), then both terms contribute negatively to $\\Delta G^\\circ$.\nStep 3: Under these conditions, $\\Delta G^\\circ$ is negative at all temperatures, making the reaction always spontaneous.",
       "result": "An exothermic reaction with positive entropy change is always spontaneous."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q17_keq_spontaneity",
+    "question_id": "ch06_q17_keq_spontaneity",
     "topic": "Chemical Equilibrium",
     "difficulty_level": "Medium",
     "question_text": "If an organic reaction has an equilibrium constant $K_{\\text{eq}} = 0.001$ at 298 K, what are the characteristics of its standard free energy change ($\\Delta G^\\circ$) and the equilibrium mixture?",
@@ -644,10 +1053,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question connects the equilibrium constant ($K_{\\text{eq}}$) to the change in Gibbs free energy ($\\Delta G^\\circ$).",
       "process": "Step 1: Use the equation $\\Delta G^\\circ = -RT \\ln K_{\\text{eq}}$.\nStep 2: Since $K_{\\text{eq}} < 1$ ($K_{\\text{eq}} = 10^{-3}$), $\\ln K_{\\text{eq}}$ is negative, making $\\Delta G^\\circ$ positive.\nStep 3: A positive $\\Delta G^\\circ$ indicates that the reaction is endergonic and favors reactants at equilibrium.",
       "result": "$\\Delta G^\\circ$ is positive and reactants are favored at equilibrium."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q18_entropy_factors",
+    "question_id": "ch06_q18_entropy_factors",
     "topic": "Thermodynamics",
     "difficulty_level": "Medium",
     "question_text": "Which of the following reaction types is expected to have the most positive entropy change ($\\Delta S^\\circ > 0$)?",
@@ -682,13 +1094,16 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests factors affecting entropy changes in organic reactions.",
       "process": "Step 1: Entropy measures disorder. Reactions that increase the number of independent molecules increase entropy ($\\Delta S^\\circ > 0$).\nStep 2: Addition (A) and dimerization (B) reduce the number of molecules (two molecules become one), so $\\Delta S^\\circ < 0$. Ring closure (D) restricts molecular rotation, reducing degrees of freedom ($\\Delta S^\\circ < 0$).\nStep 3: Fragmentation (C) splits one molecule into two molecules ($R-X \\rightarrow \\text{alkene} + HX$), increasing translational freedom and thus increasing entropy ($\\Delta S^\\circ > 0$).",
       "result": "The fragmentation reaction has the most positive entropy change."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q19_deltaH_bde_calculation",
+    "question_id": "ch06_q19_deltaH_bde_calculation",
     "topic": "Thermodynamics",
     "difficulty_level": "Hard",
-    "question_text": "For the addition of $HBr$ to ethene to form bromoethane ($CH_2=CH_2 + HBr \\rightarrow CH_3CH_2Br$), estimate the enthalpy of the reaction ($\\Delta H^\\circ$) using the following average BDE values: C=C $\\pi$ bond only (240 kJ/mol), H\u2013Br (366 kJ/mol), C\u2013H (410 kJ/mol), C\u2013Br (285 kJ/mol). Note: The carbon-carbon $\\sigma$ bond remains intact; only the $\\pi$ bond is broken.",
+    "question_text": "For the addition of $HBr$ to ethene to form bromoethane ($CH_2=CH_2 + HBr \\rightarrow CH_3CH_2Br$), estimate the enthalpy of the reaction ($\\Delta H^\\circ$) using the following average BDE values: C=C $\\pi$ bond only (240 kJ/mol), H–Br (366 kJ/mol), C–H (410 kJ/mol), C–Br (285 kJ/mol). Note: The carbon-carbon $\\sigma$ bond remains intact; only the $\\pi$ bond is broken.",
     "question_smiles": "C=C",
     "options": [
       {
@@ -718,12 +1133,15 @@ const CHAPTER_6_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests how to calculate reaction enthalpy using bond dissociation energies for addition reactions.",
-      "process": "Step 1: Identify bonds broken and bonds formed.\nStep 2: Bonds broken: C=C $\\pi$ bond (240 kJ/mol) + H\u2013Br bond (366 kJ/mol) = 606 kJ/mol.\nStep 3: Bonds formed: C\u2013H bond (410 kJ/mol) + C\u2013Br bond (285 kJ/mol) = 695 kJ/mol.\nStep 4: Calculate enthalpy: $\\Delta H^\\circ = \\sum \\text{BDE(broken)} - \\sum \\text{BDE(formed)} = 606 - 695 = -89\\text{ kJ/mol}$.",
+      "process": "Step 1: Identify bonds broken and bonds formed.\nStep 2: Bonds broken: C=C $\\pi$ bond (240 kJ/mol) + H–Br bond (366 kJ/mol) = 606 kJ/mol.\nStep 3: Bonds formed: C–H bond (410 kJ/mol) + C–Br bond (285 kJ/mol) = 695 kJ/mol.\nStep 4: Calculate enthalpy: $\\Delta H^\\circ = \\sum \\text{BDE(broken)} - \\sum \\text{BDE(formed)} = 606 - 695 = -89\\text{ kJ/mol}$.",
       "result": "The estimated reaction enthalpy is $-89\\text{ kJ/mol}$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q20_keq_calculation_math",
+    "question_id": "ch06_q20_keq_calculation_math",
     "topic": "Chemical Equilibrium",
     "difficulty_level": "Hard",
     "question_text": "Under standard conditions at 298 K, an isomerization reaction $A \\rightleftharpoons B$ has a $\\Delta G^\\circ = -11.4\\text{ kJ/mol}$. What is the approximate equilibrium constant ($K_{\\text{eq}}$) for this reaction? (Use $R = 8.314\\text{ J/(mol}\\cdot\\text{K)}$)",
@@ -758,10 +1176,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question involves using the thermodynamic relation $\\Delta G^\\circ = -RT \\ln K_{\\text{eq}}$ to solve for $K_{\\text{eq}}$.",
       "process": "Step 1: Convert $\\Delta G^\\circ$ to J/mol: $-11400\\text{ J/mol}$.\nStep 2: Rearrange the equation: $\\ln K_{\\text{eq}} = -\\Delta G^\\circ / RT = -(-11400) / (8.314 \\times 298) = 11400 / 2477.57 \\approx 4.60$.\nStep 3: Exponentiate to find $K_{\\text{eq}}$: $K_{\\text{eq}} = e^{4.60} \\approx 100$.",
       "result": "The equilibrium constant is approximately 100."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q21_le_chatelier_concentration",
+    "question_id": "ch06_q21_le_chatelier_concentration",
     "topic": "Chemical Equilibrium",
     "difficulty_level": "Easy",
     "question_text": "According to Le Chatelier's principle, what happens to the position of equilibrium for a reaction if a high concentration of reactant is added?",
@@ -796,10 +1217,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the qualitative application of Le Chatelier's principle.",
       "process": "Step 1: Note that adding reactants does not change the value of $K_{\\text{eq}}$, which is temperature-dependent.\nStep 2: The reaction quotient $Q$ becomes less than $K_{\\text{eq}}$.\nStep 3: To restore equilibrium, the reaction must shift to the right, converting reactants to products.",
       "result": "The reaction shifts toward products."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q22_activation_energy_kinetics",
+    "question_id": "ch06_q22_activation_energy_kinetics",
     "topic": "Kinetics",
     "difficulty_level": "Easy",
     "question_text": "Which of the following statements about activation energy ($E_a$) is correct?",
@@ -834,10 +1258,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests basic kinetic terminology regarding the energy barrier.",
       "process": "Step 1: Activation energy ($E_a$) is the energy barrier that must be overcome for reactants to transform into products.\nStep 2: It is always a positive quantity ($E_a > 0$) because it represents climbing an energy hill from reactants to the transition state.",
       "result": "$E_a$ is the energy required to reach the transition state."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q23_rate_law_determination",
+    "question_id": "ch06_q23_rate_law_determination",
     "topic": "Kinetics",
     "difficulty_level": "Medium",
     "question_text": "For the nucleophilic substitution reaction: $CH_3Br + OH^- \\rightarrow CH_3OH + Br^-$, the rate law is determined to be $\\text{Rate} = k[CH_3Br][OH^-]$. What is the overall reaction order?",
@@ -872,10 +1299,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the determination of overall reaction order from a rate law.",
       "process": "Step 1: The rate law is $\\text{Rate} = k[CH_3Br]^1 [OH^-]^1$.\nStep 2: The order with respect to $CH_3Br$ is 1, and with respect to $OH^-$ is 1.\nStep 3: The overall reaction order is the sum of the exponents in the rate law: $1 + 1 = 2$ (second-order).",
       "result": "The reaction is second-order overall."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q24_rate_determining_step",
+    "question_id": "ch06_q24_rate_determining_step",
     "topic": "Kinetics",
     "difficulty_level": "Medium",
     "question_text": "In a multi-step reaction mechanism, how is the rate-determining step identified on a reaction coordinate diagram?",
@@ -910,10 +1340,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question relates reaction coordinate diagrams to the rate-determining step.",
       "process": "Step 1: The rate-determining step is the bottleneck step of the reaction.\nStep 2: It is characterized by having the highest energy transition state along the path relative to the initial starting materials.\nStep 3: This peak represents the highest activation barrier that must be overcome for the overall reaction to proceed.",
       "result": "It is the step with the transition state of highest energy relative to the reactants."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q25_arrhenius_kinetics",
+    "question_id": "ch06_q25_arrhenius_kinetics",
     "topic": "Kinetics",
     "difficulty_level": "Medium",
     "question_text": "According to the Arrhenius equation ($k = A e^{-E_a/RT}$), what happens to the rate constant ($k$) if the activation energy ($E_a$) is decreased?",
@@ -948,10 +1381,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the mathematical relationship between activation energy and the rate constant.",
       "process": "Step 1: Look at the Arrhenius equation: $k = A e^{-E_a/RT}$.\nStep 2: Since $E_a$ is in the exponent with a negative sign, a decrease in $E_a$ decreases the magnitude of the negative term (makes it closer to 0), which exponentially increases $e^{-E_a/RT}$.\nStep 3: Therefore, decreasing $E_a$ (e.g. by using a catalyst) causes an exponential increase in the rate constant $k$.",
       "result": "The rate constant $k$ increases exponentially."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q26_transition_state_definition",
+    "question_id": "ch06_q26_transition_state_definition",
     "topic": "Kinetics",
     "difficulty_level": "Easy",
     "question_text": "Which of the following best describes a transition state?",
@@ -986,10 +1422,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question defines the concept of a transition state.",
       "process": "Step 1: Transition states are local energy maxima along the reaction pathway.\nStep 2: They represent unstable, partially bonded structures that cannot be isolated or directly observed, having a lifetime of zero.\nStep 3: Thus, they are unstable arrangements of atoms at an energy maximum.",
       "result": "It is an unstable arrangement of atoms at an energy maximum."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q27_reaction_intermediate_definition",
+    "question_id": "ch06_q27_reaction_intermediate_definition",
     "topic": "Reaction Intermediates",
     "difficulty_level": "Easy",
     "question_text": "What is a reaction intermediate?",
@@ -1024,10 +1463,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question defines a reaction intermediate.",
       "process": "Step 1: Unlike transition states, intermediates are located in energy wells (local minima) on a reaction coordinate diagram.\nStep 2: They have fully formed bonds and a finite lifetime, meaning they can sometimes be detected, trapped, or even isolated under specific conditions.\nStep 3: They are formed in one step of a mechanism and consumed in a later step.",
       "result": "An intermediate is a species formed in one step and consumed in a subsequent step, corresponding to an energy minimum."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q28_ts_vs_intermediate",
+    "question_id": "ch06_q28_ts_vs_intermediate",
     "topic": "Reaction Intermediates",
     "difficulty_level": "Medium",
     "question_text": "Which of the following is the key difference between a transition state and a reaction intermediate?",
@@ -1062,10 +1504,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question directly compares transition states and reaction intermediates.",
       "process": "Step 1: Review energy coordinate diagrams. Transition states are energy maxima (peaks) representing the transition from one species to another.\nStep 2: Intermediates are energy minima (valleys) representing transient but real chemical species.\nStep 3: Consequently, transition states cannot be isolated and have no lifetime, whereas intermediates have a non-zero lifetime.",
       "result": "Transition states have zero lifetime and cannot be isolated; intermediates have a finite lifetime."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q29_hammond_postulate_concept",
+    "question_id": "ch06_q29_hammond_postulate_concept",
     "topic": "Kinetics",
     "difficulty_level": "Medium",
     "question_text": "What is the primary assertion of the Hammond Postulate?",
@@ -1100,10 +1545,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the conceptual formulation of the Hammond Postulate.",
       "process": "Step 1: The Hammond Postulate states that the transition state of a reaction step resembles the structure of the species closest to it in energy.\nStep 2: If the transition state and another species (reactant or product) are close in energy, they will be close in structure.\nStep 3: This allows organic chemists to estimate the structural features of transition states based on reactant or product/intermediate stabilities.",
       "result": "Species close in energy on a reaction coordinate are close in structure."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q30_hammond_postulate_exothermic",
+    "question_id": "ch06_q30_hammond_postulate_exothermic",
     "topic": "Kinetics",
     "difficulty_level": "Hard",
     "question_text": "Based on the Hammond Postulate, what type of transition state is expected for a highly exothermic reaction step?",
@@ -1138,10 +1586,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question applies the Hammond Postulate to exothermic steps.",
       "process": "Step 1: In a highly exothermic step, the products are much lower in energy than the reactants.\nStep 2: The transition state lies close in energy to the reactants.\nStep 3: According to the Hammond Postulate, the transition state structure will closely resemble the reactants. This is called an 'early' transition state.",
       "result": "It is an early transition state that structurally resembles the reactants."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q31_carbocation_hybridization",
+    "question_id": "ch06_q31_carbocation_hybridization",
     "topic": "Reaction Intermediates",
     "difficulty_level": "Easy",
     "question_text": "A tertiary carbocation, such as the tert-butyl cation, has what carbon hybridization, molecular geometry, and bond angles at the cationic carbon?",
@@ -1176,10 +1627,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the structural characteristics of carbocation intermediates.",
       "process": "Step 1: A carbocation carbon has three $\\sigma$ bonds and a vacant $p$ orbital, with a formal charge of $+1$.\nStep 2: The valence shell electron pair repulsion (VSEPR) theory dictates that three electron domains arrange themselves to minimize repulsion.\nStep 3: This results in an $sp^2$ hybridization, trigonal planar geometry, and bond angles of approximately $120^\\circ$.",
       "result": "The carbocation has $sp^2$ hybridization, trigonal planar geometry, and $120^\\circ$ bond angles."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q32_carbocation_stabilization",
+    "question_id": "ch06_q32_carbocation_stabilization",
     "topic": "Reaction Intermediates",
     "difficulty_level": "Hard",
     "question_text": "What are the two primary electronic factors that stabilize carbocations, and how do they operate?",
@@ -1193,7 +1647,7 @@ const CHAPTER_6_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "Inductive effect (polarization of electron density through $\\sigma$ bonds) and hyperconjugation (orbital overlap of adjacent filled C\u2013H or C\u2013C $\\sigma$ bonds with the empty $p$ orbital).",
+        "text": "Inductive effect (polarization of electron density through $\\sigma$ bonds) and hyperconjugation (orbital overlap of adjacent filled C–H or C–C $\\sigma$ bonds with the empty $p$ orbital).",
         "smiles": "",
         "is_correct": true
       },
@@ -1212,12 +1666,15 @@ const CHAPTER_6_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the physical organic principles behind carbocation stability.",
-      "process": "Step 1: Alkyl groups are electron-donating relative to hydrogen. They polarize electron density through $\\sigma$ bonds toward the positive carbon, which is the inductive effect.\nStep 2: Alkyl groups also stabilize carbocations via hyperconjugation: the filled C\u2013H (or C\u2013C) $\\sigma$ bond on an adjacent carbon can overlap with the vacant, unhybridized $p$ orbital of the carbocation.\nStep 3: Together, these factors explain why tertiary carbocations are much more stable than secondary, primary, or methyl carbocations.",
+      "process": "Step 1: Alkyl groups are electron-donating relative to hydrogen. They polarize electron density through $\\sigma$ bonds toward the positive carbon, which is the inductive effect.\nStep 2: Alkyl groups also stabilize carbocations via hyperconjugation: the filled C–H (or C–C) $\\sigma$ bond on an adjacent carbon can overlap with the vacant, unhybridized $p$ orbital of the carbocation.\nStep 3: Together, these factors explain why tertiary carbocations are much more stable than secondary, primary, or methyl carbocations.",
       "result": "Inductive effect and hyperconjugation stabilize carbocations."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q33_carbanion_hybridization",
+    "question_id": "ch06_q33_carbanion_hybridization",
     "topic": "Reaction Intermediates",
     "difficulty_level": "Medium",
     "question_text": "What is the hybridization, molecular geometry (including the lone pair), and relative stability trend for simple alkyl carbanions?",
@@ -1252,10 +1709,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the structure and stability of carbanions.",
       "process": "Step 1: A carbanion carbon has three bonds and one lone pair, giving it a formal charge of $-1$ and a steric number of 4.\nStep 2: This corresponds to an $sp^3$ hybridization and a trigonal pyramidal molecular geometry.\nStep 3: Alkyl groups are electron-donating. Introducing electron density to a carbon that is already negatively charged is destabilizing. Therefore, more alkyl substituents decrease stability, making methyl carbanion the most stable and tertiary the least stable.",
       "result": "Carbanions are $sp^3$ hybridized, trigonal pyramidal, and follow the stability trend: $\\text{methyl} > 1^\\circ > 2^\\circ > 3^\\circ$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q34_radical_structure",
+    "question_id": "ch06_q34_radical_structure",
     "topic": "Reaction Intermediates",
     "difficulty_level": "Medium",
     "question_text": "Which of the following statements about carbon radicals is correct?",
@@ -1290,10 +1750,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the structure and stability of free radicals.",
       "process": "Step 1: Carbon radicals have seven valence electrons (three bonding pairs and one unpaired electron). The geometry is planar or near-planar, meaning they are effectively $sp^2$-hybridized.\nStep 2: Radicals are electron-deficient. Like carbocations, they are stabilized by electron-donating alkyl groups through hyperconjugation. This makes tertiary radicals the most stable.\nStep 3: Thus, the stability trend is $3^\\circ > 2^\\circ > 1^circ > \\text{methyl}$.",
       "result": "Carbon radicals are effectively $sp^2$-hybridized and have the stability order $3^\\circ > 2^\\circ > 1^\\circ > \\text{methyl}$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q35_carbene_singlet_triplet",
+    "question_id": "ch06_q35_carbene_singlet_triplet",
     "topic": "Reaction Intermediates",
     "difficulty_level": "Hard",
     "question_text": "Carbenes ($:CR_2$) can exist in singlet or triplet ground states. Which of the following correctly describes the electronic configuration of a triplet carbene?",
@@ -1328,10 +1791,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question distinguishes between singlet and triplet carbenes.",
       "process": "Step 1: A singlet carbene has its two non-bonding electrons paired in a single orbital (usually $sp^2$), leaving an empty $p$ orbital.\nStep 2: A triplet carbene has two non-bonding electrons with parallel spins in different orbitals (satisfying Hund's rule). Usually, the carbon is $sp^2$-hybridized, with one electron in an $sp^2$ orbital and one electron in a $p$ orbital.\nStep 3: This results in a biradical-like electronic structure.",
       "result": "A triplet carbene has two unpaired electrons with parallel spins in different orbitals."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q36_reaction_coordinate_exothermic",
+    "question_id": "ch06_q36_reaction_coordinate_exothermic",
     "topic": "Energy Diagrams",
     "difficulty_level": "Easy",
     "question_text": "For a single-step, exothermic reaction, what is the relative energy of the transition state and the products compared to the reactants?",
@@ -1366,10 +1832,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the interpretation of simple reaction energy diagrams.",
       "process": "Step 1: A reaction always goes through a transition state at an energy maximum, so the transition state is always higher in energy than the reactants.\nStep 2: For an exothermic reaction, heat is released, so the products are lower in energy than the reactants ($\\Delta H^\\circ < 0$).",
       "result": "The transition state is higher in energy than reactants, and products are lower."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q37_reaction_coordinate_two_step",
+    "question_id": "ch06_q37_reaction_coordinate_two_step",
     "topic": "Energy Diagrams",
     "difficulty_level": "Medium",
     "question_text": "A reaction has a two-step mechanism where the first step is endothermic and the second step is exothermic. Which of the following describes the correct order of energy states from left to right along the reaction coordinate?",
@@ -1404,10 +1873,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the sequence of features on a multi-step reaction coordinate diagram.",
       "process": "Step 1: Every step begins at a stable or meta-stable state (reactants or intermediate) and goes through a transition state (energy maximum) before arriving at another state.\nStep 2: In a two-step reaction, the path is: Reactants $\\rightarrow$ Transition State 1 $\\rightarrow$ Intermediate $\\rightarrow$ Transition State 2 $\\rightarrow$ Products.\nStep 3: Because the first step is endothermic, the intermediate must be higher in energy than the reactants. Because the overall reaction must end with products, the products are lower in energy than reactants.",
       "result": "The path is Reactants $\\rightarrow$ TS1 $\\rightarrow$ Intermediate $\\rightarrow$ TS2 $\\rightarrow$ Products."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q38_rate_determining_step_math",
+    "question_id": "ch06_q38_rate_determining_step_math",
     "topic": "Energy Diagrams",
     "difficulty_level": "Medium",
     "question_text": "A two-step reaction has the following energy values relative to reactants (0 kJ/mol): Transition State 1 = +75 kJ/mol; Intermediate = +40 kJ/mol; Transition State 2 = +60 kJ/mol; Products = -30 kJ/mol. Which step is the rate-determining step, and what is the activation energy of the forward reaction?",
@@ -1442,10 +1914,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests quantitative analysis of reaction coordinate diagrams.",
       "process": "Step 1: Calculate the activation energy for each step.\nStep 2: Step 1 starts at Reactants (0 kJ/mol) and goes to TS1 (+75 kJ/mol). $E_{a1} = 75 - 0 = 75\\text{ kJ/mol}$.\nStep 3: Step 2 starts at Intermediate (+40 kJ/mol) and goes to TS2 (+60 kJ/mol). $E_{a2} = 60 - 40 = 20\\text{ kJ/mol}$.\nStep 4: The rate-determining step is the step with the highest transition state relative to the starting reactants, which is Step 1 ($E_{a,\\text{overall}} = 75\\text{ kJ/mol}$).",
       "result": "Step 1 is the rate-determining step, with $E_a = 75\\text{ kJ/mol}$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q39_kinetic_vs_thermodynamic_control",
+    "question_id": "ch06_q39_kinetic_vs_thermodynamic_control",
     "topic": "Energy Diagrams",
     "difficulty_level": "Hard",
     "question_text": "In a reaction that can produce two isomeric products, Product A is formed faster (lower activation energy) but is less stable than Product B. Under what conditions will Product B be the major product?",
@@ -1480,10 +1955,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the conditions for kinetic versus thermodynamic control.",
       "process": "Step 1: Product A is formed faster, so it is the kinetic product.\nStep 2: Product B is more stable, so it is the thermodynamic product.\nStep 3: At high temperatures and long reaction times, the reaction becomes reversible (reaches equilibrium), allowing the molecules to cross the higher activation barrier of Product B and settle in the lower-energy product state. This is thermodynamic control, favoring Product B.",
       "result": "High temperature and long reaction time favor Product B."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q40_addition_mechanism_steps",
+    "question_id": "ch06_q40_addition_mechanism_steps",
     "topic": "Reaction Mechanisms",
     "difficulty_level": "Medium",
     "question_text": "The reaction of 2-methylpropene with $HCl$ yields 2-chloro-2-methylpropane. What is the correct order of mechanistic events in this polar addition?",
@@ -1518,10 +1996,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the mechanistic steps of electrophilic addition to alkenes.",
       "process": "Step 1: The alkene $\\pi$ bond acts as a nucleophile and attacks the electrophilic proton of $HCl$.\nStep 2: Protonation occurs at the less substituted carbon (Markovnikov's rule) to yield the more stable tertiary carbocation intermediate.\nStep 3: The chloride ion (nucleophile) then attacks the carbocation to form the final alkyl chloride product.",
       "result": "The mechanism is protonation to form a tertiary carbocation, followed by chloride attack."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q41_radical_initiation_peroxides",
+    "question_id": "ch06_q41_radical_initiation_peroxides",
     "topic": "Reaction Mechanisms",
     "difficulty_level": "Easy",
     "question_text": "Why are peroxides ($R-O-O-R$) frequently used to initiate radical reactions?",
@@ -1554,12 +2035,15 @@ const CHAPTER_6_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the role of initiators in radical mechanisms.",
-      "process": "Step 1: Radical reactions require an initiation step to generate free radicals from neutral molecules.\nStep 2: Peroxides have an O\u2013O single bond with a very low bond dissociation energy (about 150 kJ/mol compared to ~410 kJ/mol for C\u2013H).\nStep 3: This weak bond undergoes homolytic cleavage easily upon heating or exposure to light, generating alkoxy radicals that initiate the chain.",
-      "result": "Peroxides possess a weak O\u2013O bond that undergoes homolytic cleavage easily."
-    }
+      "process": "Step 1: Radical reactions require an initiation step to generate free radicals from neutral molecules.\nStep 2: Peroxides have an O–O single bond with a very low bond dissociation energy (about 150 kJ/mol compared to ~410 kJ/mol for C–H).\nStep 3: This weak bond undergoes homolytic cleavage easily upon heating or exposure to light, generating alkoxy radicals that initiate the chain.",
+      "result": "Peroxides possess a weak O–O bond that undergoes homolytic cleavage easily."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q42_radical_termination",
+    "question_id": "ch06_q42_radical_termination",
     "topic": "Reaction Mechanisms",
     "difficulty_level": "Easy",
     "question_text": "Which of the following reaction steps in radical chlorination represents a termination step?",
@@ -1594,10 +2078,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests identification of termination steps in radical chain reactions.",
       "process": "Step 1: Radical initiation generates radicals. Propagation steps consume one radical and make a new one.\nStep 2: Termination steps involve the combination of two radicals to form a stable covalent bond, reducing the concentration of active radicals in the mixture.\nStep 3: $2\\ \\cdot CH_3 \\rightarrow CH_3CH_3$ combines two methyl radicals to form ethane, which has no radicals.",
       "result": "The termination step is $2\\ \\cdot CH_3 \\rightarrow CH_3CH_3$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q43_organometallic_transmetalation",
+    "question_id": "ch06_q43_organometallic_transmetalation",
     "topic": "Reaction Mechanisms",
     "difficulty_level": "Hard",
     "question_text": "In transition-metal-catalyzed cross-coupling reactions, the step in which an organic group is transferred from one metal (such as boron or tin) to the transition metal catalyst (such as palladium) is known as:",
@@ -1632,10 +2119,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests ligand exchange/organometallic mechanisms.",
       "process": "Step 1: Identify the components: an organometallic donor (e.g. organoboron in Suzuki coupling) and a palladium complex.\nStep 2: The transfer of the organic group from boron to palladium is a ligand exchange between two metals.\nStep 3: This process is known as transmetalation.",
       "result": "The step is transmetalation."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q44_curved_arrow_formal_charge",
+    "question_id": "ch06_q44_curved_arrow_formal_charge",
     "topic": "Curved Arrows",
     "difficulty_level": "Hard",
     "question_text": "A curved arrow starts at a lone pair on a neutral nitrogen atom of ammonia ($NH_3$) and points to the boron atom of boron trifluoride ($BF_3$). After this step, what are the formal charges on the nitrogen and boron atoms, respectively?",
@@ -1670,10 +2160,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests tracking of formal charges during polar bond formation.",
       "process": "Step 1: Ammonia ($NH_3$) is neutral. When nitrogen donates its lone pair to form a new bond, it effectively shares two electrons that it previously owned completely. Its formal charge becomes: $5 - (8/2) - 0 = +1$.\nStep 2: Boron trifluoride ($BF_3$) is neutral. When boron accepts the electron pair to form a fourth bond, its formal charge becomes: $3 - (8/2) - 0 = -1$.\nStep 3: This forms a Lewis acid-base adduct ($H_3N^+-B^-F_3$).",
       "result": "Nitrogen is $+1$, Boron is $-1$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q45_metal_cation_electrophile",
+    "question_id": "ch06_q45_metal_cation_electrophile",
     "topic": "Electrophiles vs Nucleophiles",
     "difficulty_level": "Medium",
     "question_text": "Why do transition metal cations, such as $Fe^{3+}$ or $Al^{3+}$, behave as strong electrophiles in organic reactions like Friedel-Crafts alkylation?",
@@ -1708,10 +2201,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the Lewis acidity of metal cations as electrophiles.",
       "process": "Step 1: Electrophiles are electron pair acceptors (Lewis acids).\nStep 2: Metal cations like $Fe^{3+}$ or $Al^{3+}$ have positive charges and accessible empty valence orbitals.\nStep 3: They strongly attract and accept electron pairs from nucleophiles (like alkyl halides), making them powerful electrophiles/Lewis acids.",
       "result": "They are electron-deficient with vacant orbitals that accept electron pairs."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q46_nucleophilicity_solvent",
+    "question_id": "ch06_q46_nucleophilicity_solvent",
     "topic": "Electrophiles vs Nucleophiles",
     "difficulty_level": "Hard",
     "question_text": "In a polar protic solvent such as methanol ($CH_3OH$), what is the correct order of nucleophilicity for the halide anions?",
@@ -1746,10 +2242,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests solvent effects on nucleophilicity.",
       "process": "Step 1: Polar protic solvents can form strong hydrogen bonds to anions.\nStep 2: Small, highly electronegative anions (like $F^-$) are strongly solvated by hydrogen bonding, which shields their lone pairs and reduces their reactivity.\nStep 3: Large, polarizable anions (like $I^-$) are weakly solvated because their charge is spread over a large volume, leaving them free to react. Thus, in polar protic solvents, nucleophilicity increases down the periodic table: $I^- > Br^- > Cl^- > F^-$.",
       "result": "The order is $I^- > Br^- > Cl^- > F^-$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q47_early_vs_late_ts",
+    "question_id": "ch06_q47_early_vs_late_ts",
     "topic": "Kinetics",
     "difficulty_level": "Hard",
     "question_text": "For an endothermic reaction step, the Hammond Postulate predicts a 'late' transition state. Which of the following is a physical consequence of this prediction?",
@@ -1784,10 +2283,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question applies the Hammond Postulate to explain the relationship between product stability and transition state energy.",
       "process": "Step 1: A late transition state resembles the products of that step structurally and energetically.\nStep 2: Because the transition state is close in energy to the products, any structural or electronic factor that stabilizes the products will also stabilize the transition state.\nStep 3: This lowers the activation energy of the step, making the formation of a more stable intermediate/product faster.",
       "result": "Factors stabilizing the products also stabilize the transition state."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q48_polarization_effects",
+    "question_id": "ch06_q48_polarization_effects",
     "topic": "Electrophiles vs Nucleophiles",
     "difficulty_level": "Medium",
     "question_text": "In the molecule chloromethane ($CH_3Cl$), which atom is electrophilic, and how does the concept of polarizability affect its reactivity?",
@@ -1801,7 +2303,7 @@ const CHAPTER_6_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "The carbon atom is electrophilic because the electronegative chlorine polarizes the C\u2013Cl bond, and the carbon becomes more reactive toward polarizable nucleophiles.",
+        "text": "The carbon atom is electrophilic because the electronegative chlorine polarizes the C–Cl bond, and the carbon becomes more reactive toward polarizable nucleophiles.",
         "smiles": "",
         "is_correct": true
       },
@@ -1822,10 +2324,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests polarization and electrophilicity in alkyl halides.",
       "process": "Step 1: Chlorine is more electronegative than carbon, pulling electron density away to create a partial positive charge ($\\delta^+$) on carbon.\nStep 2: This makes the carbon atom electrophilic.\nStep 3: The C-Cl bond is polar, and the carbon is susceptible to attack by nucleophiles. Polarizability of the leaving group (chlorine) also assists in bond-breaking.",
       "result": "The carbon is electrophilic due to C-Cl polarization."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q49_entropy_ring_strain",
+    "question_id": "ch06_q49_entropy_ring_strain",
     "topic": "Thermodynamics",
     "difficulty_level": "Hard",
     "question_text": "When cyclohexene reacts with bromine ($Br_2$) to form trans-1,2-dibromocyclohexane, the reaction is highly exothermic ($\\Delta H^\\circ \\approx -96\\text{ kJ/mol}$). What is the primary contributor to this large negative enthalpy change?",
@@ -1858,12 +2363,15 @@ const CHAPTER_6_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the thermodynamic basis of addition reactions.",
-      "process": "Step 1: Enthalpy change ($\\Delta H^\\circ$) depends on the relative strengths of bonds broken and bonds formed.\nStep 2: Bonds broken: C=C $\\pi$ bond and Br\u2013Br $sigma$ bond.\nStep 3: Bonds formed: two C\u2013Br $\\sigma$ bonds.\nStep 4: $\\sigma$ bonds are significantly stronger than $\\pi$ bonds. Thus, forming two strong $\\sigma$ bonds at the expense of a weak $\\pi$ bond and a weak Br\u2013Br bond is highly exothermic.",
+      "process": "Step 1: Enthalpy change ($\\Delta H^\\circ$) depends on the relative strengths of bonds broken and bonds formed.\nStep 2: Bonds broken: C=C $\\pi$ bond and Br–Br $sigma$ bond.\nStep 3: Bonds formed: two C–Br $\\sigma$ bonds.\nStep 4: $\\sigma$ bonds are significantly stronger than $\\pi$ bonds. Thus, forming two strong $\\sigma$ bonds at the expense of a weak $\\pi$ bond and a weak Br–Br bond is highly exothermic.",
       "result": "The conversion of weaker bonds to stronger $\\sigma$ bonds makes the reaction highly exothermic."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q50_multi_step_diagram_intermediates",
+    "question_id": "ch06_q50_multi_step_diagram_intermediates",
     "topic": "Energy Diagrams",
     "difficulty_level": "Hard",
     "question_text": "A reaction coordinate diagram has three peaks and two valleys. How many steps are in this reaction mechanism, and how many intermediates are formed?",
@@ -1898,10 +2406,13 @@ const CHAPTER_6_QUESTIONS = [
       "context": "This question tests the identification of steps and intermediates in multi-step energy diagrams.",
       "process": "Step 1: Each peak represents a transition state, which corresponds to one step in the mechanism. Therefore, three peaks mean there are three steps.\nStep 2: Each valley between the peaks represents a stable intermediate. For three steps, there are two valleys between them, indicating two reaction intermediates.\nStep 3: Thus, a reaction with three peaks and two valleys is a three-step reaction with two intermediates.",
       "result": "The reaction has three steps and two intermediates."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
-    "question_id": "ch6_q_dynamic_reaction_energy",
+    "question_id": "ch06_q_dynamic_reaction_energy",
     "topic": "Reaction Energetics & Kinetics",
     "difficulty_level": "Medium",
     "question_text": "Consider the potential energy diagram of an addition reaction. Match the states to their corresponding kinetic features.",
@@ -1955,6 +2466,9 @@ const CHAPTER_6_QUESTIONS = [
       "context": "Analyzing two-step reaction coordinates.",
       "process": "Reactant energy = 10. TS1 = 80. Ea1 = 80 - 10 = 70 kJ/mol. TS2 = 60. Ea2 = 60 - 40 = 20 kJ/mol. Since Ea1 > Ea2, the first step is rate-limiting. Product energy = -30. delta H = -30 - 10 = -40 kJ/mol (exergonic).",
       "result": "Exergonic reaction with rate-determining first step."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

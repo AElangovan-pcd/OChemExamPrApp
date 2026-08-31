@@ -35,43 +35,6 @@ let state = {
 let matchingSelections = {};
 
 // Preprocess loaded questions to assign consistent OER chapter numbers matching McMurry OpenStax
-const CHAPTER_OER_MAP = {
-  1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10,
-  11: 11, 12: 12, 13: 13, 14: 14, 15: 15, 16: 16, 17: 17, 18: 18,
-  19: 3,   // ACS Nomenclature -> Ch 3
-  20: 1,   // ACS Structure & Hybridization -> Ch 1
-  21: 2,   // ACS Acids & Bases -> Ch 2
-  22: 5,   // ACS Stereochemistry -> Ch 5
-  23: 11,  // ACS Substitutions & Eliminations -> Ch 11
-  24: 8,   // ACS Electrophilic Additions -> Ch 8
-  25: 19,  // ACS Carbonyl Additions -> Ch 19 (Aldehydes and Ketones)
-  26: 21,  // ACS Carbonyl Substitutions -> Ch 21 (Carboxylic Acid Derivatives)
-  27: 22,  // ACS Enols & Enolates -> Ch 22 (Carbonyl Alpha-Substitution)
-  28: 16,  // ACS EAS & NAS -> Ch 16 (Chemistry of Benzene)
-  29: 10,  // ACS Free Radicals -> Ch 10 (Organohalides)
-  30: 17,  // ACS Oxidations & Reductions -> Ch 17 (Alcohols)
-  31: 12,  // ACS Spectroscopy -> Ch 12 (Spectroscopy Basics)
-  32: 9,   // ACS Synthesis & Qual -> Ch 9 (Alkynes)
-  33: 3,   // Nomenclature Matching -> Ch 3
-  34: 5,   // Stereochemistry Grids -> Ch 5
-  35: 13,  // Dynamic Spectroscopy -> Ch 13 (NMR)
-  36: 8,   // Alkenes Reactivity -> Ch 8
-  37: 11,  // Elimination/Substitution -> Ch 11
-  38: 17,  // Alcohols Prep/Reactions -> Ch 17
-  39: 21,  // Esterification -> Ch 21
-  40: 6,   // Thermodynamics -> Ch 6
-  41: 9,   // Synthetic Roadmaps -> Ch 9
-  42: 25,  // Carbohydrates -> Ch 25 (Biomolecules: Carbohydrates)
-  43: 26,  // Amino Acids -> Ch 26 (Biomolecules: Amino Acids & Proteins)
-  44: 16,  // EAS -> Ch 16
-  45: 17,  // Grignard -> Ch 17
-  46: 30,  // Diels-Alder / Pericyclic -> Ch 30 (Orbitals/Pericyclic)
-  47: 10,  // Radical Halogenation -> Ch 10
-  48: 9,   // Synthetic Roadmaps -> Ch 9
-  49: 27,  // Biomolecules: Lipids -> Ch 27
-  50: 28   // Biomolecules: Nucleic Acids -> Ch 28
-};
-
 // McMurry OpenStax Organic Chemistry Textbook Chapter Titles
 const OER_CHAPTER_TOPICS = {
   1: "Structure and Bonding",
@@ -108,28 +71,11 @@ const OER_CHAPTER_TOPICS = {
 };
 
 function assignOERChapterNumbers() {
+  // The chapter is the question_id prefix, which tools/validate.js guarantees agrees
+  // with the filename. No lookup table: there is nothing left to disagree.
   state.questions.forEach(q => {
-    let origCh = 1;
-    // Extract chapter from question_id: e.g. ch42_q1 or ch19_acs_q1
-    const match = q.question_id.match(/^ch(\d+)_/i);
-    if (match) {
-      origCh = parseInt(match[1]);
-    } else {
-      if (q.question_id.includes('carbocation')) origCh = 7;
-      else if (q.question_id.includes('sn2')) origCh = 11;
-      else if (q.question_id.includes('e2')) origCh = 11;
-      else if (q.question_id.includes('oxymercuration')) origCh = 8;
-      else if (q.question_id.includes('halogenation')) origCh = 8;
-    }
-    
-    // Distinguish actual Lipids and Nucleic Acids from ACS chapters 27/28
-    if (q.topic === "Biomolecules: Lipids" || q.topic === "Lipids" || q.question_id.includes("lipid")) {
-      q.chapterNum = 27;
-    } else if (q.topic === "Biomolecules: Nucleic Acids" || q.topic === "Nucleic Acids" || q.question_id.includes("base_pairing")) {
-      q.chapterNum = 28;
-    } else {
-      q.chapterNum = CHAPTER_OER_MAP[origCh] || 1;
-    }
+    const m = q.question_id.match(/^ch(\d+)_/i);
+    q.chapterNum = m ? Number(m[1]) : 1;
   });
 }
 
@@ -170,159 +116,14 @@ const smilesDrawerOptions = {
 
 // Initialize App
 document.addEventListener('DOMContentLoaded', () => {
-  // Load Default Questions
-  if (typeof OCHEM_QUESTIONS !== 'undefined') {
-    state.questions = [...OCHEM_QUESTIONS];
-  }
-  if (typeof CHAPTER_1_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_1_QUESTIONS];
-  }
-  if (typeof CHAPTER_2_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_2_QUESTIONS];
-  }
-  if (typeof CHAPTER_3_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_3_QUESTIONS];
-  }
-  if (typeof CHAPTER_4_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_4_QUESTIONS];
-  }
-  if (typeof CHAPTER_5_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_5_QUESTIONS];
-  }
-  if (typeof CHAPTER_6_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_6_QUESTIONS];
-  }
-  if (typeof CHAPTER_7_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_7_QUESTIONS];
-  }
-  if (typeof CHAPTER_8_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_8_QUESTIONS];
-  }
-  if (typeof CHAPTER_9_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_9_QUESTIONS];
-  }
-  if (typeof CHAPTER_10_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_10_QUESTIONS];
-  }
-  if (typeof CHAPTER_11_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_11_QUESTIONS];
-  }
-  if (typeof CHAPTER_12_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_12_QUESTIONS];
-  }
-  if (typeof CHAPTER_13_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_13_QUESTIONS];
-  }
-  if (typeof CHAPTER_14_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_14_QUESTIONS];
-  }
-  if (typeof CHAPTER_15_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_15_QUESTIONS];
-  }
-  if (typeof CHAPTER_16_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_16_QUESTIONS];
-  }
-  if (typeof CHAPTER_17_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_17_QUESTIONS];
-  }
-  if (typeof CHAPTER_18_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_18_QUESTIONS];
-  }
-  if (typeof CHAPTER_19_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_19_QUESTIONS];
-  }
-  if (typeof CHAPTER_20_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_20_QUESTIONS];
-  }
-  if (typeof CHAPTER_21_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_21_QUESTIONS];
-  }
-  if (typeof CHAPTER_22_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_22_QUESTIONS];
-  }
-  if (typeof CHAPTER_23_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_23_QUESTIONS];
-  }
-  if (typeof CHAPTER_24_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_24_QUESTIONS];
-  }
-  if (typeof CHAPTER_25_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_25_QUESTIONS];
-  }
-  if (typeof CHAPTER_26_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_26_QUESTIONS];
-  }
-  if (typeof CHAPTER_27_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_27_QUESTIONS];
-  }
-  if (typeof CHAPTER_28_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_28_QUESTIONS];
-  }
-  if (typeof CHAPTER_29_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_29_QUESTIONS];
-  }
-  if (typeof CHAPTER_30_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_30_QUESTIONS];
-  }
-  if (typeof CHAPTER_31_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_31_QUESTIONS];
-  }
-  if (typeof CHAPTER_32_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_32_QUESTIONS];
-  }
-  if (typeof CHAPTER_33_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_33_QUESTIONS];
-  }
-  if (typeof CHAPTER_34_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_34_QUESTIONS];
-  }
-  if (typeof CHAPTER_35_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_35_QUESTIONS];
-  }
-  if (typeof CHAPTER_36_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_36_QUESTIONS];
-  }
-  if (typeof CHAPTER_37_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_37_QUESTIONS];
-  }
-  if (typeof CHAPTER_38_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_38_QUESTIONS];
-  }
-  if (typeof CHAPTER_39_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_39_QUESTIONS];
-  }
-  if (typeof CHAPTER_40_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_40_QUESTIONS];
-  }
-  if (typeof CHAPTER_41_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_41_QUESTIONS];
-  }
-  if (typeof CHAPTER_42_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_42_QUESTIONS];
-  }
-  if (typeof CHAPTER_43_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_43_QUESTIONS];
-  }
-  if (typeof CHAPTER_44_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_44_QUESTIONS];
-  }
-  if (typeof CHAPTER_45_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_45_QUESTIONS];
-  }
-  if (typeof CHAPTER_46_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_46_QUESTIONS];
-  }
-  if (typeof CHAPTER_47_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_47_QUESTIONS];
-  }
-  if (typeof CHAPTER_48_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_48_QUESTIONS];
-  }
-  if (typeof CHAPTER_49_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_49_QUESTIONS];
-  }
-  if (typeof CHAPTER_50_QUESTIONS !== 'undefined') {
-    state.questions = [...state.questions, ...CHAPTER_50_QUESTIONS];
+  // Load the question bank. Chapter files declare `var CH<NN>_QUESTIONS`, which
+  // attaches to globalThis; a `const` would stay a lexical binding, this loop would
+  // find nothing, and the app would silently load an empty bank.
+  for (let n = 1; n <= 31; n++) {
+    const name = `CH${String(n).padStart(2, '0')}_QUESTIONS`;
+    if (Array.isArray(globalThis[name])) {
+      state.questions = [...state.questions, ...globalThis[name]];
+    }
   }
 
   // Assign OER chapter numbers to all loaded questions

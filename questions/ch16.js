@@ -1,5 +1,6 @@
-// McMurry Chapter 16 questions
-const CHAPTER_16_QUESTIONS = [
+// OChemStudyBuddy - McMurry Chapter 16
+// Author: A. Elangovan, PhD
+var CH16_QUESTIONS = [
   {
     "question_id": "ch16_q1_eas_rds",
     "topic": "Electrophilic Aromatic Substitution Mechanism",
@@ -36,7 +37,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests the fundamentals of the Electrophilic Aromatic Substitution (EAS) mechanism.",
       "process": "Step 1: The aromatic ring attacks the electrophile, breaking aromaticity to form a resonance-stabilized arenium ion (sigma complex). The carbon under attack becomes sp3-hybridized. This endothermic step has a high activation energy and is rate-determining.\nStep 2: Rapid deprotonation by a weak base restores the aromatic pi system, which is highly exergonic.",
       "result": "The rate-determining step is electrophilic addition to form the sp3-hybridized arenium intermediate."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q2_febr3_catalyst",
@@ -74,7 +78,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question addresses the activation of halogens in EAS.",
       "process": "Step 1: Molecular bromine (Br2) is not electrophilic enough to react with benzene directly.\nStep 2: Coordination of Br2 to the Lewis acid FeBr3 forms a Br-Br+-Fe-Br3 complex, polarizing the Br-Br bond and making the terminal bromine atom highly electrophilic.",
       "result": "The Lewis acid catalyst polarizes the halogen molecule to generate a sufficiently active electrophile."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q3_iodination_oxidant",
@@ -112,7 +119,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question covers the unique reagents required for the iodination of benzene.",
       "process": "Step 1: Iodine (I2) is the least reactive halogen and does not react with benzene under standard halogenation conditions.\nStep 2: An oxidizing agent like HNO3 or CuCl2 is required to oxidize I2 in situ, producing a highly reactive electrophile (formally I+).",
       "result": "The oxidant oxidizes I2 to generate the active I+ electrophile."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q4_nitration_h2so4_role",
@@ -149,8 +159,11 @@ const CHAPTER_16_QUESTIONS = [
     "feedback": {
       "context": "This question tests the role of the acid catalyst in nitronium ion generation.",
       "process": "Step 1: H2SO4 is a stronger acid than HNO3 and protonates the hydroxyl group of nitric acid.\nStep 2: The protonated nitric acid intermediate (H2O+-NO2) undergoes dehydration, yielding water and the highly electrophilic nitronium ion (NO2+).",
-      "result": "H2SO4 acts as a Br\u00f8nsted acid catalyst to protonate and dehydrate HNO3, generating the NO2+ electrophile."
-    }
+      "result": "H2SO4 acts as a Brønsted acid catalyst to protonate and dehydrate HNO3, generating the NO2+ electrophile."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q5_nitration_kinetic_isotope",
@@ -188,7 +201,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests interpretation of the kinetic isotope effect in organic mechanisms.",
       "process": "Step 1: The two steps of EAS are electrophilic addition (formation of sigma complex) and deprotonation.\nStep 2: Deprotonation requires breaking a C-H (or C-D) bond. If this occurred in the rate-determining step, a primary kinetic isotope effect (kH/kD > 1) would be observed.\nStep 3: A ratio of 1.0 indicates that C-H bond cleavage occurs after the rate-determining step.",
       "result": "The lack of isotope effect proves that electrophilic attack, not proton removal, is the rate-determining step."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q6_sulfonation_electrophile",
@@ -226,7 +242,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question asks for the identity of the electrophile in aromatic sulfonation.",
       "process": "Step 1: Fuming sulfuric acid contains dissolved SO3 gas.\nStep 2: In SO3, the sulfur atom is highly electron-deficient due to the inductive and resonance withdrawal of the three oxygen atoms.\nStep 3: This makes the neutral SO3 molecule a potent electrophile that is directly attacked by benzene.",
       "result": "SO3 is the active electrophile in the sulfonation reaction."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q7_desulfonation_reversibility",
@@ -264,7 +283,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests understanding of the reversibility of sulfonation.",
       "process": "Step 1: Unlike most EAS reactions, sulfonation has a free energy change close to zero.\nStep 2: Concentrated acid and SO3 drive the reaction forward. Dilute aqueous acid (excess water) and steam shift the equilibrium back toward benzene by generating and volatilizing SO3.",
       "result": "A high concentration of water in dilute acid shifts the equilibrium back to benzene by removing SO3."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q8_fc_alkylation_1chlorobutane",
@@ -302,7 +324,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question covers carbocation rearrangements in Friedel-Crafts alkylations.",
       "process": "Step 1: The primary alkyl halide coordinates with AlCl3 to form a complex (CH3CH2CH2CH2-Cl+-Al-Cl3).\nStep 2: A 1,2-hydride shift occurs concertedly with the departure of AlCl4- to directly generate a stable secondary carbocation (CH3CH2C+HCH3) rather than a primary carbocation.\nStep 3: Benzene attacks this secondary carbocation, yielding sec-butylbenzene.",
       "result": "A concerted 1,2-hydride shift during the loss of AlCl4- gives the secondary carbocation, leading to sec-butylbenzene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q9_fc_alkylation_neopentyl",
@@ -340,7 +365,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests methyl shifts in Friedel-Crafts alkylations.",
       "process": "Step 1: Neopentyl chloride coordinates to AlCl3. Because there are no hydrogens at the C2 position, a hydride shift is impossible.\nStep 2: Instead, a 1,2-methyl shift occurs concertedly with the departure of AlCl4- to avoid forming an unstable primary carbocation.\nStep 3: This shift produces the tertiary tert-pentyl carbocation, which is then attacked by benzene.",
       "result": "A 1,2-methyl shift generates the tert-pentyl carbocation, giving tert-pentylbenzene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q10_fc_alkylation_alkene",
@@ -377,8 +405,11 @@ const CHAPTER_16_QUESTIONS = [
     "feedback": {
       "context": "This question explores alternative methods for generating carbocations in EAS.",
       "process": "Step 1: Strong acids like HF or H3PO4 can protonate alkenes.\nStep 2: Protonation of cyclohexene yields the cyclohexyl carbocation.\nStep 3: This carbocation acts as the electrophile in a Friedel-Crafts alkylation with benzene to form cyclohexylbenzene.",
-      "result": "Alkenes treated with strong Br\u00f8nsted acids generate carbocations that can alkylate aromatic rings."
-    }
+      "result": "Alkenes treated with strong Brønsted acids generate carbocations that can alkylate aromatic rings."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q11_fc_alkylation_alcohol",
@@ -416,7 +447,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests the use of alcohols as alkylating agents in the presence of Lewis acids.",
       "process": "Step 1: The Lewis acid BF3 coordinates to the basic oxygen atom of 2-propanol.\nStep 2: This weakens the C-O bond, allowing the leaving group to depart and generate the isopropyl carbocation.\nStep 3: Benzene attacks the carbocation, yielding isopropylbenzene.",
       "result": "BF3 coordinates with the hydroxyl group, facilitating C-O bond cleavage to form the carbocation."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q12_fc_limitation_nitrobenzene",
@@ -454,7 +488,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question addresses the limitation of Friedel-Crafts reactions on deactivated rings.",
       "process": "Step 1: Friedel-Crafts alkylations require relatively nucleophilic aromatic rings because the carbocation electrophiles are weak.\nStep 2: Rings containing moderately or strongly deactivating groups (e.g., -NO2, -SO3H, carbonyls) are not nucleophilic enough to react.\nStep 3: Nitrobenzene is strongly deactivated and completely unreactive in Friedel-Crafts reactions.",
       "result": "Strongly deactivated aromatic rings like nitrobenzene fail to undergo Friedel-Crafts reactions."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q13_fc_limitation_aniline",
@@ -492,7 +529,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question explores the reaction of aniline with Lewis acid catalysts.",
       "process": "Step 1: The nitrogen of the amino group is a strong Lewis base.\nStep 2: It coordinates with the Lewis acid catalyst AlCl3 to form a salt-like adduct (-NH2+-Al-Cl3).\nStep 3: This adduct places a positive charge directly adjacent to the ring, converting an activating group into a strongly deactivating group, which halts the reaction.",
       "result": "Lewis acid-base complexation between the amino group and AlCl3 deactivates the ring toward Friedel-Crafts reactions."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q14_fc_polyalkylation",
@@ -530,7 +570,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question examines the polyalkylation limitation of Friedel-Crafts alkylations.",
       "process": "Step 1: Alkyl groups are electron-donating groups (activating substituents).\nStep 2: When benzene is monoalkylated to form isopropylbenzene, the product ring becomes more electron-rich and nucleophilic than benzene.\nStep 3: The product competes successfully with starting benzene for the electrophile, leading to polyalkylation.",
       "result": "The monoalkylated product is more reactive than the starting material, resulting in multiple alkylation products."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q15_fc_acylation_acylium",
@@ -541,7 +584,7 @@ const CHAPTER_16_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "The acylium ion (CH3-C\u2261O+), which is resonance-stabilized with the positive charge shared by the oxygen atom, making it highly stable.",
+        "text": "The acylium ion (CH3-C≡O+), which is resonance-stabilized with the positive charge shared by the oxygen atom, making it highly stable.",
         "smiles": "",
         "is_correct": true
       },
@@ -566,9 +609,12 @@ const CHAPTER_16_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question tests the mechanism and intermediate stability in Friedel-Crafts acylation.",
-      "process": "Step 1: Acetyl chloride complexes with AlCl3 and loses chloride to form the acylium ion (CH3-C+=O).\nStep 2: The acylium ion is stabilized by resonance: CH3-C+=O <-> CH3-C\u2261O+ (where all atoms have complete octets).\nStep 3: Because of this significant resonance stabilization, it does not rearrange.",
+      "process": "Step 1: Acetyl chloride complexes with AlCl3 and loses chloride to form the acylium ion (CH3-C+=O).\nStep 2: The acylium ion is stabilized by resonance: CH3-C+=O <-> CH3-C≡O+ (where all atoms have complete octets).\nStep 3: Because of this significant resonance stabilization, it does not rearrange.",
       "result": "The acylium ion is resonance-stabilized and does not undergo skeletal rearrangements."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q16_fc_acylation_stoichiometry",
@@ -606,7 +652,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question addresses the stoichiometric catalyst requirement in acylation.",
       "process": "Step 1: The product of acylation is an aryl ketone.\nStep 2: The carbonyl oxygen has lone pairs that act as a Lewis base, coordinating strongly with the Lewis acid AlCl3 catalyst.\nStep 3: This complexation traps the catalyst, meaning a full equivalent of AlCl3 is needed to ensure the reaction goes to completion.",
       "result": "Strong coordination of the product ketone with AlCl3 complexes the catalyst, requiring stoichiometric amounts."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q17_substituent_anisole",
@@ -644,7 +693,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests resonance effects of alkoxy groups on benzene.",
       "process": "Step 1: Oxygen is electronegative, causing inductive withdrawal. However, it also has lone pairs adjacent to the ring.\nStep 2: The lone pairs donate electron density into the ring through resonance, which is much stronger than the inductive effect.\nStep 3: Delocalization stabilizes the positive charge of the arenium intermediate for ortho/para attack.",
       "result": "Resonance electron donation from the oxygen lone pair activates the ring toward electrophilic attack."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q18_substituent_trifluoromethyl",
@@ -682,13 +734,16 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests directing and activating effects of strongly electronegative groups.",
       "process": "Step 1: Fluorine is highly electronegative. The three fluorine atoms inductively polarize the C-F bonds, putting a large positive charge on the benzylic carbon.\nStep 2: This strongly withdraws electron density from the ring, deactivating it.\nStep 3: Attack at ortho/para puts the positive charge in the sigma complex adjacent to the positive benzylic carbon, which is highly unfavorable. Meta attack avoids this adjacent positive charge and is favored.",
       "result": "-CF3 is strongly deactivating and meta-directing due to powerful inductive electron withdrawal."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q19_substituent_cyano",
     "topic": "Substituent Effects",
     "difficulty_level": "Medium",
-    "question_text": "Why is the cyano group (-C\u2261N) a meta-directing deactivator in electrophilic aromatic substitution?",
+    "question_text": "Why is the cyano group (-C≡N) a meta-directing deactivator in electrophilic aromatic substitution?",
     "question_smiles": "N#Cc1ccccc1",
     "options": [
       {
@@ -720,7 +775,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question explains directing effects of resonance-withdrawing groups.",
       "process": "Step 1: The cyano group is conjugated to the benzene ring. The electronegative nitrogen polarizes the pi electrons away from the ring.\nStep 2: Ortho/para attack places a positive charge directly on C1 (the ipso carbon), which is adjacent to the electron-deficient carbon of the cyano group.\nStep 3: Meta attack avoids placing the positive charge adjacent to the cyano group, making it the lower energy pathway.",
       "result": "The cyano group deactivates and directs meta due to resonance and inductive electron withdrawal."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q20_substituent_halogens",
@@ -758,7 +816,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question addresses the unique substituent effects of halogens in EAS.",
       "process": "Step 1: Halogens are highly electronegative and inductively withdraw electron density, deactivating the ring.\nStep 2: However, they possess lone pairs. In ortho/para attack, the positive charge of the arenium intermediate can be shared by the halogen through resonance, forming a stable fourth resonance contributor with a complete octet.\nStep 3: This resonance stabilization is not possible in meta attack.",
       "result": "Halogens are deactivating due to induction, but ortho/para-directing due to resonance donation."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q21_substituent_acetanilide",
@@ -796,7 +857,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question looks at moderation of amino group activity by acylation.",
       "process": "Step 1: Nitrogen lone pairs donate electron density to the benzene ring via resonance.\nStep 2: In acetanilide, the nitrogen lone pair is also delocalized into the carbonyl group of the amide (cross-conjugation).\nStep 3: This competing resonance reduces nitrogen lone pair donation into the benzene ring compared to aniline, lowering its reactivity.",
       "result": "Amide cross-conjugation reduces nitrogen resonance donation, moderating ring activation."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q22_substituent_toluene",
@@ -834,7 +898,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question covers the activating mechanism of alkyl groups.",
       "process": "Step 1: Alkyl groups lack lone pairs and cannot donate through resonance.\nStep 2: They donate inductively because the sp3 carbon of the methyl group is less electronegative than the sp2 ring carbons.\nStep 3: They also donate through hyperconjugation, stabilizing the adjacent positive charge in the ortho/para arenium intermediates.",
       "result": "Alkyl groups activate and direct ortho/para via inductive effects and hyperconjugation."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q23_disubstituted_cresol",
@@ -872,7 +939,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests directing group priorities in disubstituted benzenes.",
       "process": "Step 1: Identify substituents: -OH (strong activator) and -CH3 (weak activator).\nStep 2: The stronger activating group (-OH) dominates the directing effect.\nStep 3: The -OH group directs ortho/para. Since the para position is blocked by the methyl group, bromination occurs at the position ortho to the -OH group (C2).",
       "result": "The strong activator -OH directs bromination ortho to itself, yielding 2-bromo-4-methylphenol."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q24_disubstituted_xylene",
@@ -910,7 +980,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question covers steric effects in disubstituted benzenes.",
       "process": "Step 1: The two methyl groups direct ortho/para to their respective positions.\nStep 2: C2 is ortho to both methyl groups, but is highly sterically hindered.\nStep 3: C4 is ortho to C3 and para to C1, and is much less sterically hindered.\nStep 4: Electrophilic attack occurs predominantly at C4 to minimize steric strain.",
       "result": "Mononitration occurs at the less hindered C4 position, yielding 1,3-dimethyl-4-nitrobenzene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q25_disubstituted_nitroanisole",
@@ -948,7 +1021,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question evaluates competitive directing effects of activators and deactivators.",
       "process": "Step 1: Identify substituents: -OCH3 (strong activator, ortho/para directing) and -NO2 (strong deactivator, meta directing).\nStep 2: The strong activator (-OCH3) directs the regiochemical outcome of the reaction.\nStep 3: Methoxy directs ortho (C2/C6). Since C2 is also meta to the nitro group, both groups direct cooperatively to C2.",
       "result": "Bromination occurs ortho to the methoxy group, yielding 2-bromo-4-nitroanisole."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q26_disubstituted_nitrobenzoic",
@@ -986,7 +1062,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests EAS on rings containing multiple meta-directing groups.",
       "process": "Step 1: Identify substituents: -COOH (C1) and -NO2 (C3). Both are meta-directing deactivators.\nStep 2: The -COOH group directs meta (C5). The -NO2 group also directs meta (C5).\nStep 3: The directing effects of both substituents cooperate, leading to substitution at the C5 position.",
       "result": "Nitration occurs at the C5 position, producing 3,5-dinitrobenzoic acid."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q27_nas_addition_elimination",
@@ -1024,7 +1103,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests understanding of the SNAr mechanism.",
       "process": "Step 1: Hydroxide attacks the C-Cl carbon directly, forming a cyclohexadienyl anion intermediate (Meisenheimer complex).\nStep 2: The negative charge is delocalized onto the para nitro group, stabilizing the intermediate.\nStep 3: Elimination of the chloride leaving group restores aromaticity, yielding 4-nitrophenol.",
       "result": "The reaction proceeds via a resonance-stabilized anionic Meisenheimer complex."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q28_nas_fluorine_leaving_group",
@@ -1062,7 +1144,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests leaving group reactivity in SNAr vs SN2.",
       "process": "Step 1: The SNAr mechanism is a two-step process: addition (RDS) then elimination (fast).\nStep 2: The rate depends on the stability of the transition state leading to the Meisenheimer complex.\nStep 3: Fluorine, being highly electronegative, stabilizes this anionic transition state inductively, making nucleophilic attack much faster. C-F bond cleavage occurs in the fast second step.",
       "result": "The rate-determining step is nucleophilic attack, accelerated by the inductive effect of fluorine."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q29_nas_meta_nitro_failure",
@@ -1100,13 +1185,16 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question explores resonance requirements in SNAr reactions.",
       "process": "Step 1: In ortho/para isomers, nucleophilic attack places a negative charge on the ring carbon containing the nitro group, allowing delocalization onto oxygen.\nStep 2: In the meta isomer, drawing resonance structures of the Meisenheimer complex shows the negative charge bypasses the carbon bearing the nitro group.\nStep 3: Without direct resonance stabilization by the nitro group, the transition state energy is too high.",
       "result": "Meta substitution prevents resonance stabilization of the Meisenheimer complex by the nitro group."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q30_nas_benzyne_chlorobenzene",
     "topic": "Nucleophilic Aromatic Substitution (Elimination-Addition)",
     "difficulty_level": "Medium",
-    "question_text": "When chlorobenzene is treated with sodium amide (NaNH2) in liquid ammonia at -33 \u00b0C, aniline is formed. What is the key intermediate in this reaction?",
+    "question_text": "When chlorobenzene is treated with sodium amide (NaNH2) in liquid ammonia at -33 °C, aniline is formed. What is the key intermediate in this reaction?",
     "question_smiles": "Clc1ccccc1",
     "options": [
       {
@@ -1138,7 +1226,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question identifies the benzyne mechanism in NAS.",
       "process": "Step 1: NaNH2 is an extremely strong base and deprotonates the ortho-hydrogen of chlorobenzene.\nStep 2: Elimination of chloride yields the highly reactive benzyne intermediate.\nStep 3: Ammonia/amide then attacks the triple bond of benzyne to yield aniline.",
       "result": "The reaction proceeds via an elimination-addition mechanism involving a benzyne intermediate."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q31_nas_benzyne_toluidine",
@@ -1176,7 +1267,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests the regiochemical outcome of additions to benzyne intermediates.",
       "process": "Step 1: Deprotonation of C3 of 4-bromotoluene followed by bromide loss gives 4-methylbenzyne (with a triple bond between C3 and C4).\nStep 2: The nucleophile (NH2-) can attack either sp carbon (C3 or C4) of this relatively symmetric triple bond.\nStep 3: Attack at C3 yields 3-methylaniline; attack at C4 yields 4-methylaniline, resulting in a 1:1 ratio.",
       "result": "Attack at either carbon of the 4-methylbenzyne intermediate yields a 1:1 mixture of meta- and para-isomers."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q32_nas_benzyne_anisidine",
@@ -1214,7 +1308,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question examines the electronic effects of substituents on benzyne regiochemistry.",
       "process": "Step 1: Elimination of HBr yields benzyne intermediates (2,3- and 3,4-dehydroanisole).\nStep 2: Nucleophilic attack by NH2- on these intermediates creates a carbanion in the ring.\nStep 3: The methoxy group (-OCH3) is inductively electron-withdrawing. Attack at C3 placing the negative charge closer to the methoxy carbon is favored due to inductive stabilization.",
       "result": "Inductive stabilization of the carbanion by the methoxy group directs the nucleophile to C3."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q33_nas_benzyne_trapping",
@@ -1252,7 +1349,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests the trapping of benzyne intermediates using the Diels-Alder reaction.",
       "process": "Step 1: Magnesium reacts with 1-bromo-2-fluorobenzene to form a Grignard-like species, which eliminates MgFBr to form benzyne.\nStep 2: Benzyne acts as a highly reactive dienophile.\nStep 3: Furan acts as the diene, undergoing a [4+2] cycloaddition to yield 1,4-epoxy-1,4-dihydronaphthalene.",
       "result": "Benzyne undergoes a Diels-Alder reaction with furan to yield a bridged bicyclic adduct."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q34_sidechain_ethylbenzene_nbs",
@@ -1290,7 +1390,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests selective radical bromination at the benzylic position.",
       "process": "Step 1: Radical initiation generates bromine radicals.\nStep 2: A bromine radical abstracts a hydrogen from ethylbenzene. Abstraction occurs selectively at the benzylic position because the intermediate radical is stabilized by resonance with the benzene ring.\nStep 3: The benzylic radical reacts with Br2 to yield (1-bromoethyl)benzene.",
       "result": "Radical bromination occurs selectively at the benzylic carbon, yielding (1-bromoethyl)benzene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q35_sidechain_benzyl_radical",
@@ -1328,7 +1431,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question evaluates the stability of radicals involved in benzylic halogenation.",
       "process": "Step 1: The benzyl radical has its unpaired electron on a carbon adjacent to the ring.\nStep 2: This electron is delocalized throughout the ring's pi system, providing stabilization.\nStep 3: The phenyl radical is much less stable because the unpaired electron resides in an sp2 orbital that cannot overlap with the ring's pi system.",
       "result": "Delocalization of the unpaired electron makes the benzyl radical highly stable."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q36_sidechain_propylbenzene_oxidation",
@@ -1366,7 +1472,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests the oxidation of alkylbenzene side chains.",
       "process": "Step 1: KMnO4 oxidizes alkyl side chains that contain at least one benzylic hydrogen.\nStep 2: Regardless of the alkyl chain length, the side chain is cleaved, and the benzylic carbon is oxidized to a carboxylic acid group (-COOH).\nStep 3: Propylbenzene contains benzylic hydrogens and is therefore oxidized to benzoic acid.",
       "result": "Oxidation of propylbenzene leads to side-chain cleavage, yielding benzoic acid."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q37_sidechain_tertbutylbenzene_oxidation",
@@ -1404,7 +1513,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question covers the requirement of benzylic hydrogens for side-chain oxidation.",
       "process": "Step 1: Oxidation of alkylbenzenes by KMnO4 requires a benzylic C-H bond for the mechanism to initiate.\nStep 2: tert-Butylbenzene has a quaternary benzylic carbon and lacks benzylic hydrogens.\nStep 3: Thus, it is completely resistant to permanganate oxidation.",
       "result": "No reaction occurs due to the absence of benzylic hydrogens."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q38_sidechain_nitro_reduction",
@@ -1442,7 +1554,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question covers the reduction of nitro groups to amines.",
       "process": "Step 1: Aromatic nitro groups can be reduced using active metals (like Fe, Sn, or Zn) in acidic solutions.\nStep 2: The acidic solution forms anilinium chloride, which must be neutralized with a base like NaOH to yield free aniline.\nStep 3: LiAlH4 reduces nitrobenzene to azobenzene, and NaBH4 does not reduce nitro groups.",
       "result": "Treatment with Fe/HCl followed by base workup reduces the nitro group to an amine."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q39_sidechain_clemmensen",
@@ -1480,7 +1595,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests the Clemmensen reduction of aryl ketones.",
       "process": "Step 1: The Clemmensen reduction uses Zn(Hg) in concentrated HCl to reduce ketones and aldehydes to hydrocarbons.\nStep 2: Under these acidic conditions, the carbonyl group (C=O) of acetophenone is reduced to a methylene group (CH2).\nStep 3: This yields ethylbenzene.",
       "result": "The Clemmensen reduction converts acetophenone to ethylbenzene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q40_sidechain_wolff_kishner",
@@ -1518,7 +1636,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests the Wolff-Kishner reduction conditions and thermodynamics.",
       "process": "Step 1: The ketone reacts with hydrazine (H2NNH2) to form a hydrazone intermediate.\nStep 2: Under strongly basic conditions (KOH) at high temperatures, the hydrazone is deprotonated.\nStep 3: The loss of stable nitrogen gas (N2) drives the reaction to completion, yielding the alkylbenzene.",
       "result": "Wolff-Kishner reduction uses hydrazine and base to reduce ketones, releasing nitrogen gas."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q41_sidechain_catalytic_hydrogenation",
@@ -1556,7 +1677,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question explains the hydrogenolysis of benzylic carbonyl groups.",
       "process": "Step 1: Hydrogenation of an aryl ketone with H2 over Pd/C first reduces the ketone to a benzylic alcohol.\nStep 2: The benzylic C-O bond is activated by conjugation with the aromatic ring, making it weak and susceptible to further reduction (hydrogenolysis) to form a CH2 group.\nStep 3: Aliphatic ketones lack this benzylic activation and are reduced only to alcohols.",
       "result": "Aryl ketones are reduced to alkyl groups using H2 and Pd/C due to benzylic hydrogenolysis."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q42_synthetic_m_bromobenzoic",
@@ -1594,7 +1718,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests synthesis planning and the ordering of directing groups.",
       "process": "Step 1: The starting material is toluene, containing a methyl group (ortho/para director).\nStep 2: The target compound has a meta relationship between the substituents.\nStep 3: To obtain the meta relationship, the methyl group must first be oxidized to a carboxylic acid (-COOH), which is meta-directing. Subsequent bromination will occur meta to the acid.",
       "result": "Oxidation of the methyl group followed by bromination yields the desired meta isomer."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q43_synthetic_p_bromobenzoic",
@@ -1632,7 +1759,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests synthetic design where an ortho/para relationship is required.",
       "process": "Step 1: Toluene has an ortho/para-directing methyl group.\nStep 2: To obtain the para-isomer, the ring must be brominated first while the methyl group is still present.\nStep 3: After bromination (and separation of isomers), the methyl group is oxidized to the carboxylic acid group, yielding para-bromobenzoic acid.",
       "result": "Bromination of toluene followed by side-chain oxidation yields the para isomer."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q44_synthetic_m_butylnitrobenzene",
@@ -1670,7 +1800,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests multi-step synthesis involving ketone reduction and nitration.",
       "process": "Step 1: Direct alkylation with 1-chlorobutane would cause carbocation rearrangement, so acylation is preferred.\nStep 2: Acylation with butanoyl chloride yields butyrophenone. The carbonyl is a meta-director.\nStep 3: Nitration occurs meta to the carbonyl. Subsequently, Clemmensen reduction (Zn(Hg)/HCl) reduces the ketone to an alkyl group without reducing the nitro group.",
       "result": "Acylation followed by nitration and Clemmensen reduction yields 1-butyl-3-nitrobenzene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q45_synthetic_p_butylnitrobenzene",
@@ -1708,7 +1841,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question focuses on synthesizing a para-substituted alkylbenzene.",
       "process": "Step 1: Acylation with butanoyl chloride avoids alkyl rearrangement.\nStep 2: The ketone carbonyl must be reduced to the butyl group (ortho/para director) before nitration to ensure para direction.\nStep 3: Nitration of butylbenzene then yields the para-isomer as the major product.",
       "result": "Acylation, reduction to the alkylbenzene, and nitration yields 1-butyl-4-nitrobenzene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q46_intramolecular_fc_acylation",
@@ -1746,7 +1882,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests intramolecular Friedel-Crafts acylation.",
       "process": "Step 1: The acyl chloride group reacts with AlCl3 to form an intramolecular acylium ion.\nStep 2: The acylium ion is separated from the phenyl ring by a 3-carbon linker.\nStep 3: Intramolecular attack of the benzene ring onto the acylium ion forms a stable six-membered ring, yielding 1-tetralone.",
       "result": "Intramolecular acylation of 4-phenylbutanoyl chloride yields 1-tetralone."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q47_naphthalene_eas",
@@ -1784,7 +1923,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question covers regiochemistry in polycyclic aromatic systems.",
       "process": "Step 1: Draw the arenium intermediates for attack at C1 (alpha) and C2 (beta).\nStep 2: C1 attack yields an intermediate with 2 resonance structures where the second ring remains a fully intact benzene ring.\nStep 3: C2 attack has only 1 resonance structure where the second ring remains fully aromatic. Since preserving aromaticity is highly stabilizing, C1 attack has a lower activation energy.",
       "result": "Substitution occurs at the alpha-position because the corresponding intermediate preserves aromaticity in the adjacent ring better."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q48_pyrrole_pyridine_reactivity",
@@ -1822,7 +1964,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question evaluates the nucleophilicity of heteroaromatic rings.",
       "process": "Step 1: Pyrrole is a five-membered ring with 6 pi electrons. The nitrogen lone pair is part of the aromatic system, making the ring electron-rich.\nStep 2: Pyridine is a six-membered ring where the electronegative nitrogen atom withdraws electron density inductively and through resonance, making it electron-deficient.",
       "result": "Pyrrole is highly reactive (electron-rich), while pyridine is deactivated (electron-deficient)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q49_reagents_bromobenzene_aniline",
@@ -1833,7 +1978,7 @@ const CHAPTER_16_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "NaNH2 in liquid NH3 at -33 \u00b0C; Nucleophilic Aromatic Substitution",
+        "text": "NaNH2 in liquid NH3 at -33 °C; Nucleophilic Aromatic Substitution",
         "smiles": "",
         "is_correct": true
       },
@@ -1860,7 +2005,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question covers the conversion of unactivated aryl halides to amines.",
       "process": "Step 1: Bromobenzene does not contain activating groups for addition-elimination (SNAr).\nStep 2: Treatment with the extremely strong base NaNH2 in liquid ammonia generates a benzyne intermediate.\nStep 3: Addition of ammonia to the benzyne intermediate yields aniline, which is a nucleophilic aromatic substitution.",
       "result": "Aniline is formed from bromobenzene via a benzyne intermediate in a nucleophilic aromatic substitution."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q50_sulfonation_toluene",
@@ -1898,7 +2046,10 @@ const CHAPTER_16_QUESTIONS = [
       "context": "This question tests sulfonation of toluene and nomenclature.",
       "process": "Step 1: The methyl group in toluene is ortho/para-directing.\nStep 2: Sulfonation is steric-sensitive, making the para product the major isomer.\nStep 3: The parent is benzenesulfonic acid, giving 4-methylbenzenesulfonic acid.",
       "result": "Toluene undergoes sulfonation to yield 4-methylbenzenesulfonic acid, showing ortho/para direction."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch16_q_dynamic_directing_effects",
@@ -1946,6 +2097,82 @@ const CHAPTER_16_QUESTIONS = [
       "context": "Predicting directing effects of substituents on a benzene ring.",
       "process": "Phenol (-OH) donates electrons by resonance: strong o/p activator. Toluene (-CH3) donates via hyperconjugation: weak o/p activator. Nitrobenzene (-NO2) is highly electron-withdrawing: m deactivator. Chlorobenzene (-Cl) has competing induction vs resonance: o/p deactivator.",
       "result": "Substituents matched to directing effects."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch16_q6",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "c1ccccc1",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "[N+](=O)([O-])c1ccccc1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "Nc1ccccc1",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "HNO3, H2SO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "Fe, HCl"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: benzene, B: benzenesulfonic acid, C: aniline",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: benzene, B: nitrobenzene, C: aniline",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: benzene, B: chlorobenzene, C: aniline",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: toluene, B: nitrobenzene, C: phenol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: benzene, B: nitrobenzene, C: aniline.",
+      "result": "The labels correspond to A: benzene, B: nitrobenzene, C: aniline."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

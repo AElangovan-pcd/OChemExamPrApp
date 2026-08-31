@@ -1,5 +1,6 @@
-// McMurry Chapter 15 questions
-const CHAPTER_15_QUESTIONS = [
+// OChemStudyBuddy - McMurry Chapter 15
+// Author: A. Elangovan, PhD
+var CH15_QUESTIONS = [
   {
     "question_id": "ch15_q1_nomenclature_priority",
     "topic": "Naming Aromatic Compounds",
@@ -36,7 +37,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question addresses the priority of functional groups in IUPAC nomenclature for benzene derivatives.",
       "process": "Step 1: Identify the two substituents on the benzene ring: a hydroxyl group (-OH) and a formyl group (-CHO).\nStep 2: Determine the priority of the functional groups. The aldehyde group (-CHO) has higher priority than the hydroxyl group (-OH), so the parent chain is named 'benzaldehyde' with the aldehyde carbon as C1.\nStep 3: Number the ring to give the substituent (-OH) the lowest possible locant. Numbering from C1 to C4 gives 4-hydroxybenzaldehyde.",
       "result": "The IUPAC name is 4-hydroxybenzaldehyde."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q2_nomenclature_benzoic_acid",
@@ -74,7 +78,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question tests functional group priority when naming benzoic acid derivatives.",
       "process": "Step 1: The carboxylic acid (-COOH) group has priority over the methyl (-CH3) group.\nStep 2: The parent name is benzoic acid, with the C-COOH carbon defined as C1.\nStep 3: The methyl group is at C4, leading to the name 4-methylbenzoic acid.",
       "result": "The correct IUPAC name is 4-methylbenzoic acid."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q3_nomenclature_trisubstituted",
@@ -112,7 +119,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question tests the IUPAC naming rules for trisubstituted benzenes where common names can be parents.",
       "process": "Step 1: Identify functional groups: amine (-NH2), bromine (-Br) atoms, and hydroxyl (-OH).\nStep 2: The hydroxyl group (-OH) has higher nomenclature priority than the amino group (-NH2), making the parent ring 'phenol' with C1 at the carbon bearing the -OH.\nStep 3: Number the ring to give substituents the lowest possible numbers: C2 and C6 have bromines, C4 has the amino group. Alphabetical ordering puts 'amino' before 'dibromo'.",
       "result": "The IUPAC name is 4-amino-2,6-dibromophenol."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q4_nomenclature_ester",
@@ -150,7 +160,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question tests naming of aromatic esters.",
       "process": "Step 1: An ester is named by first stating the alkyl group attached to the oxygen (methyl) followed by the name of the carboxylic acid parent with the ending '-ic acid' replaced by '-ate' (benzoate).\nStep 2: The benzoic acid ring has a nitro group at position 3 (meta).\nStep 3: Thus, the full name is methyl 3-nitrobenzoate.",
       "result": "The correct name is methyl 3-nitrobenzoate."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q5_nomenclature_acetophenone",
@@ -188,7 +201,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question requires naming an acetophenone derivative with multiple substituents.",
       "process": "Step 1: The acetyl group (-COCH3) has priority, making the parent 'acetophenone' with the acetyl carbon at C1.\nStep 2: Number around the ring toward the substituents to give them the lowest possible numbers: C3 has bromine, C4 has methyl.\nStep 3: Alphabetize the substituents: 'bromo' before 'methyl'. Thus, 3-bromo-4-methylacetophenone.",
       "result": "The IUPAC name is 3-bromo-4-methylacetophenone."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q6_nomenclature_styrene",
@@ -226,7 +242,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question tests priority between cyano and alkene substituents on a benzene ring.",
       "process": "Step 1: The cyano (-CN) group has higher priority than the ethenyl (vinyl) group.\nStep 2: The parent is benzonitrile, with the cyano carbon at C1.\nStep 3: The ethenyl group is at position 4. In IUPAC, 'ethenyl' is preferred over the common name 'vinyl'.",
       "result": "The IUPAC name is 4-ethenylbenzonitrile."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q7_heats_of_hydrogenation",
@@ -264,7 +283,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question examines the experimental evidence for the resonance stabilization energy of benzene.",
       "process": "Step 1: Calculate the expected heat of hydrogenation for a hypothetical localized 1,3,5-cyclohexatriene: 3 * (-120 kJ/mol) = -360 kJ/mol.\nStep 2: Compare this with the actual heat of hydrogenation of benzene (-208 kJ/mol).\nStep 3: The difference: -360 - (-208) = -152 kJ/mol. This represents the stabilization energy (resonance energy) of benzene.",
       "result": "Benzene is 152 kJ/mol more stable than expected due to resonance stabilization."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q8_resonance_energy_concept",
@@ -281,7 +303,7 @@ const CHAPTER_15_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "It is the activation energy barrier that must be overcome to interconvert the two Kekul\u00e9 structures of benzene.",
+        "text": "It is the activation energy barrier that must be overcome to interconvert the two Kekulé structures of benzene.",
         "smiles": "",
         "is_correct": false
       },
@@ -300,9 +322,12 @@ const CHAPTER_15_QUESTIONS = [
     ],
     "feedback": {
       "context": "Understanding what resonance energy physically represents.",
-      "process": "Step 1: Resonance energy is a thermodynamic term comparing a real molecule with a hypothetical model.\nStep 2: The real molecule has delocalized electrons, whereas the hypothetical Kekul\u00e9 structure has localized double bonds.\nStep 3: This difference in energy represents the stabilization due to electron delocalization.",
+      "process": "Step 1: Resonance energy is a thermodynamic term comparing a real molecule with a hypothetical model.\nStep 2: The real molecule has delocalized electrons, whereas the hypothetical Kekulé structure has localized double bonds.\nStep 3: This difference in energy represents the stabilization due to electron delocalization.",
       "result": "Resonance energy is the extra stability of the delocalized system."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q9_bond_lengths",
@@ -340,7 +365,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question addresses the physical geometry of benzene.",
       "process": "Step 1: In a localized cyclohexatriene, we would expect alternating short (134 pm) and long (154 pm) bonds.\nStep 2: Because benzene is symmetric and aromatic, all C-C bonds are completely equivalent.\nStep 3: The measured bond length is 139 pm, which is intermediate between single and double bonds.",
       "result": "All six C-C bonds are equivalent and measure 139 pm."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q10_carbon_hybridization",
@@ -378,7 +406,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question reinforces the orbital hybridization and geometry of benzene.",
       "process": "Step 1: Each carbon in benzene is bonded to two other carbons and one hydrogen (three $\\sigma$ bonds, zero lone pairs).\nStep 2: Three steric domains correspond to $sp^2$ hybridization.\nStep 3: $sp^2$ hybridized atoms exhibit trigonal planar geometry with ideal $120^\\circ$ bond angles.",
       "result": "Carbons in benzene are $sp^2$ hybridized with trigonal planar geometry and $120^\\circ$ bond angles."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q11_hydrogenation_kinetics",
@@ -416,7 +447,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question highlights the contrast in reactivity between isolated alkenes and aromatic systems.",
       "process": "Step 1: Normal alkenes are hydrogenated with $H_2$ and $Pd/C$ under mild conditions (room temperature, 1 atm).\nStep 2: Benzene has high thermodynamic stability (aromatic resonance energy) and requires much harsher conditions (high temperature, high pressure, active catalysts) to undergo hydrogenation.\nStep 3: Once the first double bond is hydrogenated, the remaining diene is much easier to hydrogenate than benzene, so the reaction proceeds all the way to cyclohexane; it cannot be stopped at the diene stage.",
       "result": "Benzene requires high pressure and temperature with a metal catalyst to yield cyclohexane."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q12_thermodynamic_vs_kinetic",
@@ -454,7 +488,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Understanding the fundamental driving force of Electrophilic Aromatic Substitution.",
       "process": "Step 1: Electrophilic addition to an alkene yields an addition product. For benzene, addition would lead to a cyclohexadiene derivative, which has lost its aromatic stabilization (resonance energy loss of 152 kJ/mol).\nStep 2: Electrophilic substitution involves electrophile addition to form a cyclohexadienyl cation (sigma complex), followed by deprotonation to regenerate the double bond and restore the aromatic ring.\nStep 3: Thus, substitution is highly thermodynamically favored over addition because it retains the aromatic resonance stabilization.",
       "result": "Substitution is favored because it preserves aromaticity."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q13_mo_diagram_shape",
@@ -492,7 +529,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question tests the $\\pi$ molecular orbital diagram of benzene.",
       "process": "Step 1: Benzene has six $sp^2$ carbons, each contributing one p orbital to the $\\pi$ system. Combining six atomic p orbitals yields six molecular orbitals.\nStep 2: Because of the hexagonal symmetry of benzene, the MOs are arranged as: one lowest energy bonding MO ($\\psi_1$), a degenerate pair of bonding MOs ($\\psi_2, \\psi_3$), a degenerate pair of antibonding MOs ($\\psi_4^*, \\psi_5^*$), and one highest energy antibonding MO ($\\psi_6^*$).",
       "result": "Benzene has 6 $\\pi$ MOs arranged as one bonding, two degenerate bonding, two degenerate antibonding, and one antibonding."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q14_frost_circle_construction",
@@ -530,7 +570,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "The Frost circle is a useful mnemonic for qualitative MO energy levels of cyclic conjugated systems.",
       "process": "Step 1: To use the Frost circle, draw a circle and inscribe the polygon representing the ring system vertex-down.\nStep 2: The center of the circle represents the energy of an isolated p orbital (alpha). Vertices below the center are bonding MOs; vertices above are antibonding MOs; vertices on the center line are nonbonding MOs.\nStep 3: For benzene (a hexagon), the vertex-down arrangement yields one vertex at the bottom, two on the lower half, two on the upper half, and one at the top.",
       "result": "The polygon is inscribed vertex-down in a circle; vertices give the relative MO energies."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q15_mo_node_count",
@@ -568,7 +611,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question addresses the nodal properties of benzene $\\pi$ MOs.",
       "process": "Step 1: The lowest energy MO ($\\psi_1$) has all p orbitals in phase (all positive lobes up, negative lobes down). Thus, it has 0 vertical nodal planes (only the horizontal nodal plane in the molecular plane itself, which is common to all $\\pi$ orbitals).\nStep 2: As energy increases, the number of nodes increases. For the highest energy MO ($\\psi_6^*$), adjacent p orbitals are completely out of phase, creating a vertical nodal plane between every adjacent pair of carbons.\nStep 3: This results in 3 vertical nodal planes (passing through the bonds or atoms) for $\\psi_6^*$.",
       "result": "$\\psi_1$ has 0 vertical nodes, and $\\psi_6^*$ has 3 vertical nodes."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q16_mo_occupancy",
@@ -606,7 +652,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question tests electron distribution in the ground state MOs.",
       "process": "Step 1: Benzene has six $\\pi$ electrons.\nStep 2: According to the Aufbau principle, electrons fill the lowest energy MOs first.\nStep 3: The lowest is $\\psi_1$ (holds 2 electrons). The next higher energy orbitals are the degenerate pair $\\psi_2$ and $\\psi_3$, which together hold the remaining 4 electrons.",
       "result": "The six $\\pi$ electrons fully occupy the three bonding MOs ($\\psi_1, \\psi_2, \\psi_3$)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q17_degenerate_orbitals_nodes",
@@ -644,7 +693,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question tests detailed knowledge of the degenerate bonding MOs in benzene.",
       "process": "Step 1: In the degenerate bonding pair, both orbitals must have the same energy and the same number of nodes (1 vertical node).\nStep 2: $\\psi_2$ has a nodal plane that bisects the ring, passing through C1 and C4. Thus, it has zero electron density at C1 and C4.\nStep 3: $\\psi_3$ has a nodal plane perpendicular to that of $\\psi_2$, passing between C2-C3 and C5-C6. This ensures the total electron density of $\\psi_2 + \\psi_3$ is cylindrically symmetric.",
       "result": "Both degenerate bonding MOs have 1 node, but their nodal planes are perpendicular."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q18_lumo_benzene",
@@ -682,7 +734,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Identifying the LUMO of benzene is critical for understanding its redox chemistry and UV-Vis spectroscopy.",
       "process": "Step 1: The six $\\pi$ electrons fill $\\psi_1, \\psi_2,$ and $\\psi_3$ (which are the HOMOs).\nStep 2: The next energy level up consists of the degenerate pair $\\psi_4^*$ and $\\psi_5^*$.\nStep 3: Since these orbitals are empty in the ground state, they represent the LUMO.",
       "result": "The degenerate pair $\\psi_4^*$ and $\\psi_5^*$ represents the LUMO of benzene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q19_aromaticity_criteria",
@@ -718,15 +773,18 @@ const CHAPTER_15_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question covers the four criteria of aromaticity.",
-      "process": "Step 1: Cyclic - allows continuous loop of orbitals.\nStep 2: Planar - allows parallel alignment of p orbitals for overlap.\nStep 3: Completely conjugated - every ring atom must have a p orbital.\nStep 4: H\u00fcckel's Rule - the number of $\\pi$ electrons must equal $4n+2$, where $n = 0, 1, 2, \\dots$.",
+      "process": "Step 1: Cyclic - allows continuous loop of orbitals.\nStep 2: Planar - allows parallel alignment of p orbitals for overlap.\nStep 3: Completely conjugated - every ring atom must have a p orbital.\nStep 4: Hückel's Rule - the number of $\\pi$ electrons must equal $4n+2$, where $n = 0, 1, 2, \\dots$.",
       "result": "The correct criteria are cyclic, planar, completely conjugated, and $(4n+2)$ $\\pi$ electrons."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q20_annulene_10",
     "topic": "Aromaticity Criteria",
     "difficulty_level": "Medium",
-    "question_text": "Why is [10]annulene (cyclodeca-1,3,5,7,9-pentaene) non-aromatic despite having 10 $\\pi$ electrons, which fits H\u00fcckel's $(4n+2)$ rule for $n=2$?",
+    "question_text": "Why is [10]annulene (cyclodeca-1,3,5,7,9-pentaene) non-aromatic despite having 10 $\\pi$ electrons, which fits Hückel's $(4n+2)$ rule for $n=2$?",
     "question_smiles": "C1=CC=CC=CC=CC=C1",
     "options": [
       {
@@ -737,7 +795,7 @@ const CHAPTER_15_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "It violates H\u00fcckel's rule because 10 $\\pi$ electrons is not a H\u00fcckel number.",
+        "text": "It violates Hückel's rule because 10 $\\pi$ electrons is not a Hückel number.",
         "smiles": "",
         "is_correct": false
       },
@@ -756,9 +814,12 @@ const CHAPTER_15_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question highlights the planarity requirement for aromaticity.",
-      "process": "Step 1: [10]annulene has 10 $\\pi$ electrons, satisfying H\u00fcckel's rule ($4(2)+2 = 10$).\nStep 2: In its monocyclic cis/trans isomer, two hydrogen atoms point inside the ring.\nStep 3: The steric clash between these internal hydrogens prevents the molecule from adopting a flat, planar conformation.\nStep 4: Without planarity, p-orbitals cannot align parallelly, and the compound is non-aromatic.",
+      "process": "Step 1: [10]annulene has 10 $\\pi$ electrons, satisfying Hückel's rule ($4(2)+2 = 10$).\nStep 2: In its monocyclic cis/trans isomer, two hydrogen atoms point inside the ring.\nStep 3: The steric clash between these internal hydrogens prevents the molecule from adopting a flat, planar conformation.\nStep 4: Without planarity, p-orbitals cannot align parallelly, and the compound is non-aromatic.",
       "result": "Steric clash of internal hydrogens forces a non-planar conformation, making it non-aromatic."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q21_cot_conformation",
@@ -796,7 +857,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question addresses cyclooctatetraene (COT) and the avoidance of antiaromaticity.",
       "process": "Step 1: COT has 8 $\\pi$ electrons ($4n$ where $n=2$). If it were planar, it would be antiaromatic (highly unstable).\nStep 2: To avoid this destabilization, the ring twists into a non-planar 'tub' conformation.\nStep 3: Because it is non-planar, there is no continuous conjugation, and it behaves like an ordinary polyene (non-aromatic).",
       "result": "COT adopts a non-planar 'tub' conformation and is non-aromatic."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q22_aromatic_vs_antiaromatic_vs_non",
@@ -834,13 +898,16 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question tests the ability to distinguish between aromatic, antiaromatic, and non-aromatic compounds.",
       "process": "Step 1: Benzene is cyclic, planar, conjugated, and has 6 $\\pi$ electrons ($4n+2$). Hence, it is aromatic.\nStep 2: Cyclobutadiene is cyclic, planar, conjugated, and has 4 $\\pi$ electrons ($4n$). Hence, it is antiaromatic.\nStep 3: 1,3-cyclohexadiene has an $sp^3$ carbon in the ring, interrupting the conjugation. Hence, it is non-aromatic.",
       "result": "Benzene: aromatic; Cyclobutadiene: antiaromatic; 1,3-cyclohexadiene: non-aromatic."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q23_huckel_definition_limits",
     "topic": "Aromaticity Criteria",
     "difficulty_level": "Easy",
-    "question_text": "H\u00fcckel's $(4n+2)$ rule strictly applies to which class of compounds?",
+    "question_text": "Hückel's $(4n+2)$ rule strictly applies to which class of compounds?",
     "question_smiles": "c1ccccc1",
     "options": [
       {
@@ -869,10 +936,13 @@ const CHAPTER_15_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understanding the theoretical boundary conditions of H\u00fcckel's rule.",
-      "process": "Step 1: H\u00fcckel's rule was derived using H\u00fcckel Molecular Orbital (HMO) theory specifically for monocyclic planar rings.\nStep 2: Polycyclic systems (like naphthalene) and heterocycles can be aromatic, but H\u00fcckel's rule is not strictly rigorous for them (though it often works qualitatively for polycyclics by counting the total $\\pi$ electrons).",
-      "result": "H\u00fcckel's rule strictly applies to monocyclic, planar, fully conjugated systems."
-    }
+      "context": "Understanding the theoretical boundary conditions of Hückel's rule.",
+      "process": "Step 1: Hückel's rule was derived using Hückel Molecular Orbital (HMO) theory specifically for monocyclic planar rings.\nStep 2: Polycyclic systems (like naphthalene) and heterocycles can be aromatic, but Hückel's rule is not strictly rigorous for them (though it often works qualitatively for polycyclics by counting the total $\\pi$ electrons).",
+      "result": "Hückel's rule strictly applies to monocyclic, planar, fully conjugated systems."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q24_annulene_14",
@@ -910,7 +980,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question covers [14]annulene, a larger annulene.",
       "process": "Step 1: [14]annulene has 14 $\\pi$ electrons, which fits $4n+2$ where $n=3$.\nStep 2: Unlike [10]annulene, [14]annulene is large enough that the cavity inside the ring allows the internal hydrogens to reside with less steric crowding.\nStep 3: This allows it to achieve a planar conformation and exhibit aromatic properties.",
       "result": "[14]annulene is aromatic."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q25_annulene_18",
@@ -946,9 +1019,12 @@ const CHAPTER_15_QUESTIONS = [
     ],
     "feedback": {
       "context": "Evaluating large annulenes.",
-      "process": "Step 1: [18]annulene has 18 $\\pi$ electrons, satisfying H\u00fcckel's rule for $n=4$.\nStep 2: The ring is large and has negligible steric hindrance from internal hydrogens, allowing it to be planar.\nStep 3: NMR shows distinct interior and exterior hydrogen chemical shifts, confirming a ring current (aromaticity).",
+      "process": "Step 1: [18]annulene has 18 $\\pi$ electrons, satisfying Hückel's rule for $n=4$.\nStep 2: The ring is large and has negligible steric hindrance from internal hydrogens, allowing it to be planar.\nStep 3: NMR shows distinct interior and exterior hydrogen chemical shifts, confirming a ring current (aromaticity).",
       "result": "[18]annulene is aromatic."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q26_antiaromaticity_criteria",
@@ -986,7 +1062,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question explores the theoretical basis of antiaromaticity.",
       "process": "Step 1: Planar, cyclic, conjugated systems with $4n$ $\\pi$ electrons have a molecular orbital diagram where the last two electrons must occupy a degenerate pair of nonbonding molecular orbitals (per Hund's rule).\nStep 2: This creates a diradical electronic state in the planar geometry, making it highly unstable.\nStep 3: Consequently, such systems are called antiaromatic.",
       "result": "Antiaromatic compounds are highly unstable and often have diradical character if forced planar."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q27_p_orbital_check",
@@ -1024,7 +1103,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Checking the requirement for a continuous ring of p-orbitals.",
       "process": "Step 1: Check the hybridization of all atoms in the ring.\nStep 2: Six of the carbons in 1,3,5-cycloheptatriene are $sp^2$ hybridized, but one carbon is $sp^3$ hybridized (-CH2-).\nStep 3: Because the $sp^3$ carbon has no unhybridized p orbital, the conjugation is not cyclic (continuous). Hence, it is non-aromatic.",
       "result": "The presence of an $sp^3$ carbon breaks conjugation, making the molecule non-aromatic."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q28_dewar_benzene",
@@ -1062,7 +1144,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Distinguishing between constitutional isomers of benzene and aromaticity.",
       "process": "Step 1: Dewar benzene contains two double bonds, but they are in a bicyclic system.\nStep 2: The bridgehead carbons are $sp^3$ hybridized and break any possible monocyclic conjugation.\nStep 3: The double bonds are isolated from each other. Thus, it is non-aromatic.",
       "result": "Dewar benzene is non-aromatic because it lacks continuous cyclic conjugation."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q29_cyclopropenyl_cation",
@@ -1085,7 +1170,7 @@ const CHAPTER_15_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "It has 4 $\\pi$ electrons, satisfying H\u00fcckel's rule.",
+        "text": "It has 4 $\\pi$ electrons, satisfying Hückel's rule.",
         "smiles": "",
         "is_correct": false
       },
@@ -1098,9 +1183,12 @@ const CHAPTER_15_QUESTIONS = [
     ],
     "feedback": {
       "context": "Understanding the cyclopropenyl cation.",
-      "process": "Step 1: The cyclopropenyl cation is a three-membered ring.\nStep 2: Two carbons are $sp^2$ hybridized (double bond), and the third is a carbocation (also $sp^2$ hybridized, with an empty p orbital).\nStep 3: This allows a continuous loop of three p orbitals.\nStep 4: The double bond contributes 2 $\\pi$ electrons. 2 is a H\u00fcckel number ($4(0)+2 = 2$). Thus, it is aromatic.",
+      "process": "Step 1: The cyclopropenyl cation is a three-membered ring.\nStep 2: Two carbons are $sp^2$ hybridized (double bond), and the third is a carbocation (also $sp^2$ hybridized, with an empty p orbital).\nStep 3: This allows a continuous loop of three p orbitals.\nStep 4: The double bond contributes 2 $\\pi$ electrons. 2 is a Hückel number ($4(0)+2 = 2$). Thus, it is aromatic.",
       "result": "The cyclopropenyl cation is aromatic with 2 $\\pi$ electrons."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q30_cyclopropenyl_anion",
@@ -1138,7 +1226,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Comparing cyclopropenyl cation and anion.",
       "process": "Step 1: The cyclopropenyl anion has a carbanion carbon with a lone pair in addition to the C=C double bond.\nStep 2: If the lone pair occupies a p orbital to allow conjugation, the system has 4 $\\pi$ electrons (2 from the double bond + 2 from the lone pair).\nStep 3: A planar, conjugated 4 $\\pi$ system is antiaromatic (highly unstable).",
       "result": "The cyclopropenyl anion is antiaromatic."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q31_cyclopentadienyl_anion_acidity",
@@ -1176,7 +1267,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question connects acidity to aromaticity.",
       "process": "Step 1: Deprotonation of cyclopentadiene removes a proton ($H^+$) from the $sp^3$ carbon ($CH_2$).\nStep 2: The remaining carbon becomes $sp^2$ hybridized and houses its lone pair in a p orbital.\nStep 3: This completes the ring of p orbitals. The $\\pi$ electrons now total 6 (4 from the two double bonds + 2 from the lone pair).\nStep 4: A 6 $\\pi$ system is aromatic, which provides a massive thermodynamic driving force for proton loss.",
       "result": "Deprotonation yields the stable, aromatic cyclopentadienyl anion ($6\\pi$ electrons)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q32_cyclopentadienyl_cation",
@@ -1214,7 +1308,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Exploring the cyclopentadienyl cation.",
       "process": "Step 1: The cyclopentadienyl cation is formed by removing a hydride ion ($H^-$) or leaving group from cyclopentadiene.\nStep 2: The positive carbon has an empty p orbital, completing the conjugation.\nStep 3: The total number of $\\pi$ electrons is 4 (from the two double bonds).\nStep 4: A cyclic, planar, conjugated 4 $\\pi$ system is antiaromatic, hence extremely unstable.",
       "result": "The cyclopentadienyl cation is antiaromatic and highly unstable."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q33_tropylium_cation",
@@ -1252,7 +1349,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Understanding the tropylium cation.",
       "process": "Step 1: The tropylium cation has 7 carbons in a ring, each of which is $sp^2$ hybridized (6 from double bonds, 1 carbocation with an empty p orbital).\nStep 2: The system is cyclic, planar, and fully conjugated.\nStep 3: The three double bonds contribute 6 $\\pi$ electrons ($4n+2$ where $n=1$).\nStep 4: It is therefore aromatic and highly stable.",
       "result": "The tropylium cation is aromatic with 6 $\\pi$ electrons."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q34_cycloheptatrienyl_anion",
@@ -1290,7 +1390,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Comparing tropylium cation and cycloheptatrienyl anion.",
       "process": "Step 1: The tropylium cation has 6 $\\pi$ electrons and is aromatic.\nStep 2: The cycloheptatrienyl anion has a carbanion carbon with a lone pair in a p orbital, totaling 8 $\\pi$ electrons (6 from double bonds + 2 from lone pair).\nStep 3: 8 $\\pi$ electrons is a $4n$ number ($n=2$), making the planar conformation antiaromatic. (In reality, it adopts a non-planar conformation to avoid antiaromaticity, making it non-aromatic).",
       "result": "The cation is aromatic ($6\\pi$); the anion has 8 $\\pi$ electrons and is antiaromatic/non-aromatic."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q35_cyclooctatetraenyl_dianion",
@@ -1326,9 +1429,12 @@ const CHAPTER_15_QUESTIONS = [
     ],
     "feedback": {
       "context": "This question addresses the conversion of a non-aromatic molecule into an aromatic ion.",
-      "process": "Step 1: Neutral COT has 8 $\\pi$ electrons and is non-planar (non-aromatic).\nStep 2: Treatment with potassium metal (a strong reducing agent) adds two electrons, giving a dianion with 10 $\\pi$ electrons.\nStep 3: 10 $\\pi$ electrons satisfies H\u00fcckel's rule ($4n+2$ where $n=2$).\nStep 4: The ring flattens into a planar conformation to gain aromatic stabilization.",
+      "process": "Step 1: Neutral COT has 8 $\\pi$ electrons and is non-planar (non-aromatic).\nStep 2: Treatment with potassium metal (a strong reducing agent) adds two electrons, giving a dianion with 10 $\\pi$ electrons.\nStep 3: 10 $\\pi$ electrons satisfies Hückel's rule ($4n+2$ where $n=2$).\nStep 4: The ring flattens into a planar conformation to gain aromatic stabilization.",
       "result": "The COT dianion is planar and aromatic with 10 $\\pi$ electrons."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q36_calicene_dipole",
@@ -1366,7 +1472,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question tests the application of aromaticity to dipolar resonance forms.",
       "process": "Step 1: If we polarize the central exocyclic double bond, we can place the negative charge on the 5-membered ring and the positive charge on the 3-membered ring.\nStep 2: The 5-membered ring becomes a cyclopentadienyl anion, which has 6 $\\pi$ electrons and is aromatic.\nStep 3: The 3-membered ring becomes a cyclopropenyl cation, which has 2 $\\pi$ electrons and is also aromatic.\nStep 4: Because both rings gain aromatic stabilization in this dipolar form, this resonance structure contributes significantly to the ground state hybrid, resulting in a large dipole moment.",
       "result": "The large dipole moment arises from the stable aromaticity of both the cyclopropenyl cation and cyclopentadienyl anion parts."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q37_pyridine_lone_pair",
@@ -1404,7 +1513,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question contrasts the basicity of pyridine and pyrrole based on lone pair availability.",
       "process": "Step 1: In pyridine, nitrogen is $sp^2$ hybridized. It contributes 1 electron to the aromatic $\\pi$ system from its p orbital. Its lone pair is in an $sp^2$ orbital perpendicular to the p system (in the ring plane). Thus, the lone pair is available for protonation without destroying aromaticity.\nStep 2: In pyrrole, nitrogen is also $sp^2$ hybridized. To make the ring aromatic, nitrogen must contribute both electrons of its lone pair (in a p orbital) to the $\\pi$ system (completing the 6 $\\pi$ count). Protonation of this lone pair destroys the aromaticity, which is thermodynamically highly unfavorable.",
       "result": "Pyridine's lone pair is not part of the aromatic system, making it much more basic than pyrrole."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q38_pyrrole_structure",
@@ -1442,7 +1554,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Understanding the geometry and orbital structure of pyrrole.",
       "process": "Step 1: Pyrrole is a flat, 5-membered aromatic heterocycle.\nStep 2: The nitrogen atom forms three $\\sigma$ bonds (to two carbons and one hydrogen).\nStep 3: To allow aromaticity, the nitrogen lone pair must reside in a p orbital perpendicular to the ring to overlap with the four p orbitals of the carbons, making a total of 6 $\\pi$ electrons. This requires the nitrogen to be $sp^2$ hybridized.",
       "result": "The nitrogen is $sp^2$ hybridized with the lone pair in a p orbital."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q39_furan_lone_pairs",
@@ -1480,7 +1595,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question addresses heterocycles with multiple lone pairs on a single heteroatom.",
       "process": "Step 1: Oxygen in furan is $sp^2$ hybridized to allow aromaticity.\nStep 2: One lone pair resides in a p orbital perpendicular to the ring. Together with the 4 electrons from the two double bonds, this completes the 6 $\\pi$ electron requirement.\nStep 3: The second lone pair resides in an $sp^2$ hybrid orbital that lies in the plane of the ring. This lone pair cannot overlap with the $\\pi$ system and does not contribute to aromaticity.",
       "result": "Only one oxygen lone pair is part of the aromatic $\\pi$ system; the other is in an $sp^2$ orbital."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q40_thiophene_vs_furan",
@@ -1518,7 +1636,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Comparing aromatic stabilization energy in different heterocycles.",
       "process": "Step 1: Both thiophene and furan are 5-membered heterocycles with 6 $\\pi$ electrons.\nStep 2: Oxygen is highly electronegative (3.44) and holds its lone pair tightly, resisting delocalization.\nStep 3: Sulfur is less electronegative (2.58) and more polarizable, which leads to better sharing of the lone pair into the ring and a higher resonance energy.",
       "result": "The lower electronegativity of sulfur results in greater resonance stabilization."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q41_imidazole_protonation",
@@ -1556,7 +1677,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Understanding basicity in heterocycles with multiple nitrogen atoms.",
       "process": "Step 1: Identify the hybridization and lone pair location for both nitrogens.\nStep 2: N1 is like pyrrole: its lone pair is in a p orbital perpendicular to the ring, contributing to the 6 $\\pi$ aromatic system. Protonating N1 destroys aromaticity.\nStep 3: N3 is like pyridine: its lone pair is in an $sp^2$ orbital in the plane of the ring and is not part of the $\\pi$ system. Protonation of N3 yields a symmetric, resonance-stabilized imidazolium cation that remains aromatic.",
       "result": "N3 is protonated because its lone pair is not part of the aromatic system, and protonation preserves aromaticity."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q42_indole_aromaticity",
@@ -1594,7 +1718,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Understanding polycyclic heterocycles.",
       "process": "Step 1: Indole consists of a 6-membered benzene ring fused to a 5-membered pyrrole ring.\nStep 2: Count the $\\pi$ electrons: 6 from the benzene ring (including the shared double bond) and 2 from the pyrrole double bond, plus 2 from the nitrogen lone pair.\nStep 3: This totals 10 $\\pi$ electrons, which satisfies $(4n+2)$ for $n=2$.\nStep 4: The entire bicyclic system is conjugated, planar, and aromatic.",
       "result": "Indole is a 10 $\\pi$ electron aromatic system."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q43_pyrrole_electrophilic_substitution",
@@ -1632,7 +1759,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "This question addresses the regiochemistry of EArS on pyrrole.",
       "process": "Step 1: Write the mechanism for electrophile ($E^+$) addition at C2. The positive charge in the intermediate carbocation can be delocalized onto C3, C5, and the nitrogen (three resonance structures).\nStep 2: Write the mechanism for addition at C3. The positive charge can only be delocalized onto C2 and the nitrogen (two resonance structures).\nStep 3: Since the transition state leading to the C2-substituted intermediate is lower in energy due to greater charge delocalization, the C2 product is formed preferentially.",
       "result": "C2 substitution is preferred because its carbocation intermediate has more resonance stabilization (3 structures vs. 2)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q44_pyridine_electrophilic_substitution",
@@ -1670,7 +1800,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "EArS reactivity of pyridine.",
       "process": "Step 1: Nitrogen is highly electronegative and withdraws electron density, strongly deactivating the ring.\nStep 2: In acidic EArS conditions, the basic nitrogen is protonated or coordinates to the electrophile, forming a pyridinium cation, which is even more deactivated.\nStep 3: If forced to react, substitution occurs at C3 because attack at C2 or C4 would place the positive charge directly on the electronegative nitrogen in one of the resonance structures, which is highly unstable.",
       "result": "Pyridine is deactivated and undergoes substitution at the C3 (meta) position under harsh conditions."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q45_naphthalene_resonance_energy",
@@ -1708,7 +1841,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Understanding the resonance energy of polycyclic aromatic hydrocarbons.",
       "process": "Step 1: Benzene has a resonance energy of 152 kJ/mol.\nStep 2: Naphthalene consists of two fused rings. If they were independent, the resonance energy would be 2 * 152 = 304 kJ/mol.\nStep 3: However, because they share a C-C double bond, we cannot draw a resonance contributor where both rings are simultaneously identical to benzene. The delocalization is shared across the 10-carbon system, resulting in a lower resonance energy of 252 kJ/mol.",
       "result": "The shared central bond prevents the two rings from acting as independent, fully stabilized benzene rings."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q46_naphthalene_substitution",
@@ -1746,7 +1882,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Regiochemical preference of naphthalene in EArS.",
       "process": "Step 1: Draw the carbocation intermediate for attack at C1. The positive charge is delocalized, and we can write 5 resonance structures. In 2 of these structures, the second ring remains a fully intact benzene ring (aromatic stabilization is preserved in that ring).\nStep 2: Draw the carbocation intermediate for attack at C2. We can also write 5 resonance structures, but in only 1 of these structures does the second ring remain a fully intact benzene ring.\nStep 3: The C1-substituted intermediate is more stable because it preserves more aromatic character in the non-reacting ring during the reaction.",
       "result": "C1 substitution is preferred because the intermediate has more resonance contributors that preserve a benzene ring."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q47_anthracene_vs_phenanthrene",
@@ -1784,7 +1923,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Comparing linear and angular polycyclic aromatic hydrocarbons.",
       "process": "Step 1: Anthracene is linear, and phenanthrene is angular.\nStep 2: According to Clar's Sextet Rule, the stability of polycyclic aromatic hydrocarbons can be predicted by the number of disjoint aromatic sextets (benzene-like rings) that can be drawn in a resonance contributor.\nStep 3: For phenanthrene, we can draw a resonance structure with two separate aromatic sextets (the two outer rings). For anthracene, we can only draw structures with one aromatic sextet.\nStep 4: This makes phenanthrene more stable (resonance energy = 381 kJ/mol) than anthracene (resonance energy = 347 kJ/mol).",
       "result": "Phenanthrene is more stable than anthracene due to its angular geometry, which accommodates more aromatic sextets."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q48_anthracene_addition",
@@ -1822,7 +1964,10 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Understanding addition reactions in polycyclic aromatic hydrocarbons.",
       "process": "Step 1: Anthracene has a resonance energy of 347 kJ/mol.\nStep 2: If an addition reaction occurs at the C9 and C10 positions of the middle ring, the middle ring loses its conjugation, but the two outer rings become independent benzene rings.\nStep 3: Two independent benzene rings have a combined resonance energy of 2 * 152 = 304 kJ/mol.\nStep 4: The net loss of resonance energy is only 347 - 304 = 43 kJ/mol, which is very small. This explains why anthracene behaves as a diene in Diels-Alder reactions and easily undergoes additions at the 9,10-positions.",
       "result": "Addition occurs at C9/C10 because it preserves two fully aromatic benzene rings, minimizing the loss of resonance energy."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q49_azulene_dipole",
@@ -1860,30 +2005,33 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Azulene's unusual properties explained by aromaticity.",
       "process": "Step 1: Azulene is a fused system of a 5-membered ring and a 7-membered ring.\nStep 2: By shifting one pair of $\\pi$ electrons from the 7-membered ring to the 5-membered ring, we can draw a zwitterionic resonance contributor.\nStep 3: In this resonance contributor, the 7-membered ring has 6 $\\pi$ electrons (tropylium cation, aromatic) and the 5-membered ring has 6 $\\pi$ electrons (cyclopentadienyl anion, aromatic).\nStep 4: The stabilization gained by having two aromatic rings makes this zwitterionic structure contribute significantly to the resonance hybrid, leading to a large dipole moment with the negative end on the 5-membered ring.",
       "result": "The dipole moment is due to a resonance contributor containing a tropylium cation and a cyclopentadienyl anion."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q50_huckel_rule_polycyclic",
     "topic": "Polycyclic Aromatic Hydrocarbons",
     "difficulty_level": "Medium",
-    "question_text": "Does H\u00fcckel's $(4n+2)$ rule strictly apply to polycyclic aromatic hydrocarbons like naphthalene, anthracene, and phenanthrene?",
+    "question_text": "Does Hückel's $(4n+2)$ rule strictly apply to polycyclic aromatic hydrocarbons like naphthalene, anthracene, and phenanthrene?",
     "question_smiles": "c1ccc2ccccc2c1",
     "options": [
       {
         "option_id": "A",
-        "text": "No, H\u00fcckel's rule strictly applies only to monocyclic systems, although naphthalene (10 $\\pi$ electrons) and anthracene (14 $\\pi$ electrons) happen to fit the $(4n+2)$ formula numerically.",
+        "text": "No, Hückel's rule strictly applies only to monocyclic systems, although naphthalene (10 $\\pi$ electrons) and anthracene (14 $\\pi$ electrons) happen to fit the $(4n+2)$ formula numerically.",
         "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "Yes, H\u00fcckel's rule is a universal law that applies to all planar conjugated systems, regardless of the number of rings.",
+        "text": "Yes, Hückel's rule is a universal law that applies to all planar conjugated systems, regardless of the number of rings.",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "No, H\u00fcckel's rule applies only to heterocyclic systems.",
+        "text": "No, Hückel's rule applies only to heterocyclic systems.",
         "smiles": "",
         "is_correct": false
       },
@@ -1895,10 +2043,13 @@ const CHAPTER_15_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question clarifies the limits of H\u00fcckel's rule.",
-      "process": "Step 1: H\u00fcckel's $(4n+2)$ rule is derived specifically for monocyclic conjugated systems.\nStep 2: For polycyclic aromatic hydrocarbons, the rules for aromaticity are more complex (e.g., Platt's perimeter rule or Clar's sextet rule).\nStep 3: Naphthalene (10 $\\pi$ electrons) and anthracene (14 $\\pi$ electrons) fit the $4n+2$ pattern, but pyrene (16 $\\pi$ electrons) is also aromatic despite having a non-H\u00fcckel number of electrons for a monocycle. This proves that H\u00fcckel's rule does not strictly apply to polycyclic systems.",
-      "result": "H\u00fcckel's rule is strictly for monocyclic systems, even though some polycyclic systems numerically fit it."
-    }
+      "context": "This question clarifies the limits of Hückel's rule.",
+      "process": "Step 1: Hückel's $(4n+2)$ rule is derived specifically for monocyclic conjugated systems.\nStep 2: For polycyclic aromatic hydrocarbons, the rules for aromaticity are more complex (e.g., Platt's perimeter rule or Clar's sextet rule).\nStep 3: Naphthalene (10 $\\pi$ electrons) and anthracene (14 $\\pi$ electrons) fit the $4n+2$ pattern, but pyrene (16 $\\pi$ electrons) is also aromatic despite having a non-Hückel number of electrons for a monocycle. This proves that Hückel's rule does not strictly apply to polycyclic systems.",
+      "result": "Hückel's rule is strictly for monocyclic systems, even though some polycyclic systems numerically fit it."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch15_q_dynamic_aromaticity_check",
@@ -1946,6 +2097,9 @@ const CHAPTER_15_QUESTIONS = [
       "context": "Analyzing Huckel's rules (planar, cyclic, fully conjugated, 4n+2 pi electrons).",
       "process": "Benzene has 6 pi electrons, fully conjugated: Aromatic. 1,3-cyclohexadiene has sp3 carbons: Non-aromatic. Cyclooctatetraene has 8 pi electrons, adopts non-planar tub shape: Non-aromatic. Cyclopentadienyl anion has lone pair conjugated: Aromatic (6 pi).",
       "result": "Aromaticity determined successfully."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

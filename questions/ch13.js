@@ -1,5 +1,6 @@
-// McMurry Chapter 13 questions
-const CHAPTER_13_QUESTIONS = [
+// OChemStudyBuddy - McMurry Chapter 13
+// Author: A. Elangovan, PhD
+var CH13_QUESTIONS = [
   {
     "question_id": "ch13_q1_equivalence_2_bromobutane",
     "topic": "1H NMR: Chemical Equivalence",
@@ -36,7 +37,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the concepts of chemical equivalence and stereotopicity (homotopic, enantiotopic, and diastereotopic protons) in 1H NMR.",
       "process": "Step 1: Identify that C2 is a stereocenter. The C3 carbon has two protons (Ha and Hb) adjacent to this stereocenter.\nStep 2: Perform the substitution test: replacing Ha with deuterium yields a stereoisomer, and replacing Hb yields another. Because C2 is already a stereocenter, these two substitution products are diastereomers. Thus, the protons on C3 are diastereotopic and chemically non-equivalent.\nStep 3: Count the distinct proton environments: C1-methyl (3H, singlet/doublet), C2-methine (1H, multiplet), C3-methylene (2 diastereotopic protons, 2 signals), and C4-methyl (3H, triplet). This yields a total of 5 distinct proton signals.",
       "result": "The C3 protons are diastereotopic, resulting in 5 distinct signals in the 1H NMR spectrum of 2-bromobutane."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q2_equivalence_cyclopropane",
@@ -74,7 +78,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question evaluates the effect of molecular symmetry on chemical equivalence in a small ring system.",
       "process": "Step 1: Identify the symmetry elements of trans-1,2-dichlorocyclopropane. The molecule possesses a C2 rotational axis but lacks a plane of symmetry, making it chiral (C2 symmetry).\nStep 2: Analyze the protons on C1 and C2. The C2 axis relates the C1-H and C2-H, making them homotopic and thus equivalent (1 signal).\nStep 3: Analyze the protons on C3 (methylene group). One proton (cis to both chlorines) and one proton (trans to both chlorines) lie in completely different chemical environments and cannot be interconverted by any symmetry operation of the molecule. They are diastereotopic and thus chemically non-equivalent, giving 2 separate signals. Total signals = 1 (CH-Cl) + 2 (CH2) = 3 signals.",
       "result": "trans-1,2-Dichlorocyclopropane exhibits 3 distinct 1H NMR signals due to its C2 symmetry and diastereotopic C3 protons."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q3_chemical_shifts_ester",
@@ -112,7 +119,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the understanding of inductive effects and proximity to electronegative atoms or carbonyl groups on 1H NMR chemical shifts.",
       "process": "Step 1: Locate the three proton environments: methyl ester (-OCH3), C2 methylene (-CH2-), and C3 methyl (-CH3).\nStep 2: Assess inductive deshielding. The -OCH3 protons are directly attached to an electronegative oxygen atom, placing them most downfield (~3.7 ppm).\nStep 3: The C2 methylene protons are adjacent to the electron-withdrawing carbonyl group, placing them intermediate (~2.3 ppm). The C3 methyl protons are furthest from any electronegative group, placing them most upfield (~1.1 ppm).",
       "result": "The downfield-to-upfield order is -OCH3 > -CH2C=O > -CH2CH3."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q4_diastereotopic_methyls",
@@ -150,7 +160,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the concept of diastereotopic methyl groups and their recognition in 1H NMR spectra.",
       "process": "Step 1: Identify that C2 is a stereocenter with an absolute configuration (e.g., R or S).\nStep 2: Perform the replacement test on the two C3 methyl groups. Replacing one methyl group with a CD3 group creates a second stereocenter at C3, yielding diastereomers. Therefore, the two methyl groups are diastereotopic.\nStep 3: Because diastereotopic groups are in different chemical environments, they have different chemical shifts and appear as two separate signals. Each is split into a doublet by the single proton on C3.",
       "result": "The presence of the C2 stereocenter makes the C3 methyl groups diastereotopic, resolving them into two separate doublets."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q5_citric_acid_methylene",
@@ -188,7 +201,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question examines the symmetry of citric acid and how it affects the equivalence of methylene protons.",
       "process": "Step 1: Identify that citric acid is achiral, but the central carbon (C3) is a prochiral center because it is bonded to two identical -CH2COOH groups, one -OH, and one -COOH.\nStep 2: Examine the two protons on one of the -CH2- groups. Replacing one proton with deuterium makes the central carbon chiral, generating diastereomers due to the presence of the other prochiral/chiral group. Thus, the two protons on each -CH2- carbon are diastereotopic.\nStep 3: Being diastereotopic, they have different chemical shifts (A and B) and couple with each other (geminal coupling, J ~ 15 Hz), forming an AB quartet.",
       "result": "The methylene protons are diastereotopic, appearing as an AB quartet due to geminal coupling."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q6_equivalence_cyclobutanol",
@@ -226,7 +242,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question explores chemical equivalence in cyclic systems where stereocenters or pseudo-stereocenters exist.",
       "process": "Step 1: Identify that cyclobutanol has a stereocenter at C1 bearing the hydroxyl group.\nStep 2: Analyze C3, which has two protons. One proton is cis to the -OH group, while the other is trans to the -OH group.\nStep 3: Perform the substitution test. Replacing the cis proton with deuterium gives cis-3-deuteriocyclobutanol. Replacing the trans proton gives trans-3-deuteriocyclobutanol. These two compounds are cis/trans diastereomers. Therefore, the two protons on C3 are diastereotopic.",
       "result": "The two protons on C3 of cyclobutanol are diastereotopic because one is cis and the other is trans to the hydroxyl group."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q7_benzene_anisotropy",
@@ -264,7 +283,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the concept of magnetic anisotropy and ring currents in aromatic compounds.",
       "process": "Step 1: Recognize that benzene has a conjugated ring of 6 pi electrons. In an external magnetic field ($B_0$), these pi electrons circulate to create a ring current.\nStep 2: This ring current generates an induced magnetic field ($B_i$). According to electromagnetic induction, the lines of $B_i$ oppose $B_0$ inside the ring but reinforce $B_0$ outside the ring.\nStep 3: Aromatic protons are on the periphery (outside the ring). Since the induced field reinforces the external field, the effective field ($B_{\\text{eff}} = B_0 + B_i$) felt by these protons is larger, causing them to resonate downfield (deshielded).",
       "result": "Magnetic anisotropy due to the induced ring current deshields the benzene protons, shifting them to ~7.27 ppm."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q8_deshielding_aldehyde",
@@ -302,7 +324,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question covers the origins of chemical deshielding in carbonyl groups.",
       "process": "Step 1: Identify that the aldehyde proton is directly bound to a carbonyl carbon.\nStep 2: Note the inductive effect: the highly electronegative oxygen polarizes the C=O bond, withdrawing electron density from the carbonyl carbon and the attached hydrogen, which deshields the proton.\nStep 3: Note the anisotropic effect: the pi electrons of the carbonyl group circulate in the external magnetic field, producing an induced field that reinforces the external field at the location of the formyl proton, deshielding it further.",
       "result": "Inductive electron withdrawal and magnetic anisotropy combine to shift the aldehyde proton downfield to 9-10 ppm."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q9_alkyne_shielding",
@@ -340,7 +365,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question addresses the anomalous chemical shift of alkyne protons using magnetic anisotropy.",
       "process": "Step 1: Recall that alkynes have a triple bond with a cylindrical cloud of pi electrons along the C-C axis.\nStep 2: When aligned with the external magnetic field, the pi electrons circulate around the C-C axis. This circulation induces a magnetic field that opposes the external field along the axis where the acetylenic proton is located.\nStep 3: This local shielding effect counteracts the strong inductive deshielding of the electronegative sp carbon, shifting the acetylenic proton upfield (~2.5 ppm) relative to alkene protons.",
       "result": "Cylindrical magnetic anisotropy shields acetylenic protons along the molecular axis, shifting them upfield."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q10_haloalkanes_inductive",
@@ -378,7 +406,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question highlights the relationship between electronegativity and chemical shift.",
       "process": "Step 1: Identify that the electronegativity of the halogens decreases down the periodic table: F (4.0) > Cl (3.0) > Br (2.8) > I (2.5).\nStep 2: The more electronegative the halogen, the more electron density it withdraws from the neighboring -CH2- group through inductive effects.\nStep 3: Lower electron density (deshielding) results in resonance at higher chemical shift (larger ppm value). Therefore, fluoroethane methylene protons are most deshielded and iodoethane methylene protons are least deshielded.",
       "result": "The chemical shift of the methylene protons decreases in the order: fluoroethane > chloroethane > bromoethane > iodoethane."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q11_oh_shift_concentration",
@@ -416,7 +447,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the effect of hydrogen bonding on 1H NMR chemical shifts.",
       "process": "Step 1: Identify that alcohol hydroxyl protons engage in intermolecular hydrogen bonding.\nStep 2: Understand that hydrogen bonding involves a donor oxygen drawing the proton away, which polarizes the O-H bond and decreases the electron density surrounding the hydrogen nucleus.\nStep 3: Dilution or temperature increases disrupt these hydrogen-bonded networks, returning electron density to the proton and shifting the signal upfield. Conversely, higher concentrations promote hydrogen bonding, deshielding the proton and shifting it downfield.",
       "result": "Hydrogen bonding deshields the hydroxyl proton, making its chemical shift highly concentration-dependent."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q12_d2o_shake",
@@ -454,7 +488,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question explains the utility of the 'D2O shake' in identifying exchangeable protons (like OH, NH, COOH).",
       "process": "Step 1: Hydroxyl protons (R-OH) are weakly acidic and undergo rapid intermolecular exchange.\nStep 2: Adding D2O establishes an equilibrium: R-OH + D2O <=> R-OD + HOD. Because D2O is present in vast excess, the equilibrium lies far to the right, converting almost all R-OH to R-OD.\nStep 3: Deuterium (2H) has a different spin quantum number (I = 1) and gyromagnetic ratio than protium (1H). Consequently, R-OD does not absorb radiofrequency energy at the 1H resonance frequency, causing the 1H hydroxyl signal to disappear.",
       "result": "Proton-deuterium exchange replaces the OH proton with deuterium, removing the signal from the 1H spectrum."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q13_integration_dimethoxybenzene",
@@ -492,7 +529,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question applies the concept of symmetry and peak integration in 1H NMR spectroscopy.",
       "process": "Step 1: Identify the plane of symmetry in 1,4-dimethoxybenzene.\nStep 2: Count the equivalent protons in each environment. The 4 aromatic ring protons are chemically equivalent due to the symmetric para-substitution, yielding a single singlet integrating to 4H.\nStep 3: The 2 methoxy groups (-OCH3) are also equivalent, containing a total of 6 protons (2 x 3H), yielding a singlet integrating to 6H. The ratio of the integrations is 4H (aromatic) : 6H (methoxy) = 2 : 3.",
       "result": "The integration ratio of the aromatic signal to the methoxy signal is 2 : 3."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q14_pxylene_structure",
@@ -530,7 +570,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question uses molecular formulas and 1H NMR symmetry to distinguish between isomers of C8H10.",
       "process": "Step 1: Calculate the degrees of unsaturation: (2*8 + 2 - 10)/2 = 4 (suggests a benzene ring).\nStep 2: Examine the integration ratio. Total protons = 10. A ratio of 2:3 corresponds to 4H and 6H respectively.\nStep 3: Assess the symmetry of the options. 1,4-Dimethylbenzene (p-xylene) has a highly symmetric structure: all 4 aromatic protons are equivalent (4H, singlet), and both methyl groups are equivalent (6H, singlet). Ethylbenzene would show 5 signals, o-xylene would show 3 signals (2H multiplet, 2H multiplet, 6H singlet), and m-xylene would show 4 signals.",
       "result": "The highly symmetric 1,4-dimethylbenzene matches the 2-singlet spectrum with a 4H:6H (2:3) integration."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q15_dichlorocyclohexane_symmetry",
@@ -568,7 +611,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question probes the relationship between ring-flipping dynamics, conformational energy, and the NMR timescale.",
       "process": "Step 1: Identify the two chair conformations of trans-1,4-dichlorocyclohexane: one is diequatorial (very stable) and the other is diaxial (unstable).\nStep 2: Understand that because the two chair conformations have different energies, the molecule spends the vast majority of its time in the diequatorial conformation. The time-average conformation is heavily weighted towards this conformer.\nStep 3: In the diequatorial conformation, the axial and equatorial protons on the methylene carbons (C2, C3, C5, C6) remain in distinct environments (diastereotopic). Therefore, they are not averaged to chemical equivalence by ring-flipping and give separate signals. The three signals correspond to: C1/C4-H (2H), C2/C3/C5/C6 axial protons (4H), and C2/C3/C5/C6 equatorial protons (4H).",
       "result": "The energy difference between the diequatorial and diaxial chair conformers prevents the axial and equatorial methylene protons from averaging to equivalence, yielding 3 signals."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q16_tert_butyl_acetate",
@@ -606,7 +652,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the ability to determine structural features of an ester from 1H NMR integration and splitting patterns.",
       "process": "Step 1: Calculate total protons = 12. A 3:1 integration ratio corresponds to 9H and 3H.\nStep 2: Identify the functional groups that yield 9H and 3H singlets. A 9H singlet is highly characteristic of a tert-butyl group, -C(CH3)3. A 3H singlet adjacent to an electron-withdrawing carbonyl is characteristic of an acetyl group, -C(=O)CH3.\nStep 3: Connect these fragments via the ester oxygen: (CH3)3C-O-C(=O)CH3, which is tert-butyl acetate. The other options contain ethyl, isopropyl, or isobutyl groups which would show multiplets (doublets, triplets, quartets, septets) due to spin-spin coupling.",
       "result": "tert-Butyl acetate matches the criteria, showing a 9H singlet (tert-butyl) and a 3H singlet (acetyl methyl)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q17_splitting_2_chloropropane",
@@ -644,7 +693,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question applies the n+1 rule to predict the splitting patterns in an isopropyl halide.",
       "process": "Step 1: Identify the symmetry in 2-chloropropane: (CH3)2CH-Cl. The two methyl groups are equivalent, containing 6 protons. The methine carbon has 1 proton.\nStep 2: Apply the n+1 rule to the methyl protons. They are adjacent to 1 methine proton, so they split into a doublet (1+1 = 2) integrating for 6H.\nStep 3: Apply the n+1 rule to the methine proton. It is adjacent to 6 equivalent methyl protons, so it splits into a septet (6+1 = 7) integrating for 1H.",
       "result": "The 1H NMR spectrum of 2-chloropropane consists of a 6H doublet and a 1H septet."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q18_pascal_ethyl_intensities",
@@ -682,7 +734,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the application of Pascal's triangle in predicting peak intensities of multiplets in first-order coupling.",
       "process": "Step 1: Locate the coupling partners. In a -CH2CH3 group, the -CH2- protons are coupled to the 3 protons of the -CH3 group, and the -CH3 protons are coupled to the 2 protons of the -CH2- group.\nStep 2: Predict the splitting for -CH2-. Adjacent to 3 equivalent protons, n=3. Splitting = n+1 = 4 (quartet). According to Pascal's triangle, the intensity ratio for a quartet is 1:3:3:1.\nStep 3: Predict the splitting for -CH3. Adjacent to 2 equivalent protons, n=2. Splitting = n+1 = 3 (triplet). The intensity ratio for a triplet is 1:2:1.",
       "result": "The -CH2- group is a 1:3:3:1 quartet, and the -CH3 group is a 1:2:1 triplet."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q19_complex_splitting_allyl_chloride",
@@ -720,7 +775,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question explores complex coupling where different coupling partners have distinct coupling constants (non-first-order patterns).",
       "process": "Step 1: Identify the coupling partners of the C2 proton: the trans-vinylic proton (J_trans ~ 17 Hz), the cis-vinylic proton (J_cis ~ 10 Hz), and the two equivalent protons on C3 (J_allylic ~ 6 Hz).\nStep 2: Because the coupling constants are distinct (J_trans > J_cis > J_allylic), the signals do not overlap to form simple multiplets. \nStep 3: Start with the largest coupling: splitting by the trans proton yields a doublet (d). Splitting by the cis proton yields a doublet of doublets (dd). Finally, splitting by the two equivalent C3 protons yields a doublet of doublet of triplets (ddt).",
       "result": "The coupling with three distinct sets of protons (1 trans, 1 cis, 2 allylic) yields a doublet of doublet of triplets (ddt) containing 12 lines total."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q20_coupling_tree_math",
@@ -758,7 +816,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the construction and mathematical analysis of a spin-spin splitting coupling tree.",
       "process": "Step 1: Construct the splitting tree starting from the central chemical shift (0 Hz difference).\nStep 2: Apply the first splitting ($J_1 = 12$ Hz): this yields two lines at $+6$ Hz and $-6$ Hz relative to the center.\nStep 3: Apply the second splitting ($J_2 = 4$ Hz) to each line: the $+6$ Hz line splits into $+8$ Hz and $+4$ Hz. The $-6$ Hz line splits into $-4$ Hz and $-8$ Hz. The four peaks are at $+8$, $+4$, $-4$, and $-8$ Hz relative to the center.\nStep 4: Calculate the separations: Outermost separation is between $+8$ and $-8$ Hz, which is $8 - (-8) = 16$ Hz (equal to $J_1 + J_2$). Innermost separation is between $+4$ and $-4$ Hz, which is $4 - (-4) = 8$ Hz (equal to $J_1 - J_2$).",
       "result": "The outermost peaks are separated by $16\\text{ Hz}$ and the innermost peaks by $8\\text{ Hz}$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q21_spectrometer_frequency_effect",
@@ -796,7 +857,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question distinguishes between coupling constants (in Hz) and chemical shifts (in ppm) as a function of spectrometer frequency.",
       "process": "Step 1: Define coupling constant ($J$). $J$ represents the magnetic interaction between nuclear spins, which is an intrinsic property of the chemical bond and does not depend on the strength of the external magnetic field ($B_0$). Thus, $J$ remains $8.0$ Hz.\nStep 2: Define chemical shift ($\\delta$, ppm). The chemical shift in Hz increases proportionally with spectrometer frequency, but when divided by the spectrometer frequency to obtain ppm (parts per million), it remains constant ($\\delta = \\text{Hz difference} / \\text{spectrometer frequency in MHz}$). Hence, the chemical shift difference in ppm remains constant.\nStep 3: Note that because the chemical shift difference in Hz doubles while the coupling constant in Hz remains constant, spectra recorded at higher frequencies are less crowded and exhibit less overlap (making them closer to first-order).",
       "result": "The coupling constant ($8.0\\text{ Hz}$) and the chemical shift difference (in ppm) both remain constant when changing the spectrometer frequency."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q22_karplus_equation",
@@ -834,7 +898,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the relationship between dihedral angle and vicinal coupling constants ($^3J$) described by the Karplus relationship.",
       "process": "Step 1: The Karplus equation mathematically relates the vicinal coupling constant $^3J_{\\text{HH}}$ to the dihedral angle $\\theta$ between the C-H bonds: $^3J(\\theta) = A \\cos^2(\\theta) + B \\cos(\\theta) + C$.\nStep 2: Evaluate the orbital overlap. The coupling is mediated by the overlap of the C-H $\\sigma$ orbitals with the C-C $\\sigma$ bond. When the dihedral angle is $90^\\circ$, the C-H orbitals are perpendicular to each other, minimizing orbital overlap.\nStep 3: At $\\theta = 90^\\circ$, the term $\\cos(\\theta)$ goes to zero, resulting in the minimum value of $^3J_{\\text{HH}} \\approx 0\\text{ Hz}$. In contrast, $0^\\circ$ (syn-coplanar) and $180^\\circ$ (anti-coplanar) maximize orbital overlap, giving coupling constants of ~8-10 Hz and ~12-15 Hz respectively.",
       "result": "A dihedral angle of $90^\\circ$ results in the smallest vicinal coupling constant ($^3J_{\\text{HH}} \\approx 0\\text{ Hz}$)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q23_allylic_coupling",
@@ -872,7 +939,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question covers long-range coupling across more than three bonds in unsaturated systems.",
       "process": "Step 1: Trace the path between the coupling nuclei in 2-methylprop-1-ene. The methyl protons are connected to the alkene protons through 4 bonds: H-C(methyl)-C(sp2)=C(sp2)-H.\nStep 2: This is a four-bond coupling, designated as $^4J$.\nStep 3: In allylic systems, the pi system facilitates the transmission of spin information over longer distances, leading to a small but resolvable coupling ($J = 1\\text{-}3\\text{ Hz}$) known as allylic coupling.",
       "result": "The long-range 4-bond coupling between methyl and vinylic protons is allylic coupling ($^4J$)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q24_geminal_coupling_range",
@@ -910,7 +980,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the typical magnitude of geminal ($^2J$) coupling constants in organic chemistry.",
       "process": "Step 1: Identify that geminal coupling ($^2J_{\\text{HH}}$) occurs between two non-equivalent protons attached to the same carbon atom (e.g., diastereotopic methylene protons).\nStep 2: Recall that for $sp^3$ hybridized carbons, the bond angle H-C-H is ~109.5 degrees. The magnitude of $^2J_{\\text{HH}}$ is highly dependent on this angle and is typically large, ranging from $12$ to $18$ Hz (often with a negative sign, though usually reported as an absolute value).\nStep 3: Contrast this with $sp^2$ geminal coupling (vinylic, e.g., H2C=), which is much smaller ($0\\text{-}3$ Hz).",
       "result": "The geminal coupling constant ($^2J_{\\text{HH}}$) between diastereotopic $sp^3$ methylene protons is typically in the range of $12\\text{-}18\\text{ Hz}$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q25_13c_equivalence_pxylene",
@@ -948,7 +1021,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question applies symmetry principles to determine the number of signals in a 13C NMR spectrum.",
       "process": "Step 1: Identify the symmetry in 1,4-dimethylbenzene. It has two internal planes of symmetry and a C2 axis.\nStep 2: Group the 8 carbons into equivalent sets:\n- The two methyl carbons are equivalent (1 signal).\n- The two aromatic carbons bearing the methyl groups (C1 and C4) are equivalent (1 signal).\n- The four unsubstituted aromatic carbons (C2, C3, C5, C6) are equivalent (1 signal).\nStep 3: Sum the unique environments: 1 + 1 + 1 = 3 signals.",
       "result": "p-Xylene exhibits exactly 3 signals in its 13C NMR spectrum."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q26_13c_equivalence_mxylene",
@@ -986,7 +1062,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question examines the number of 13C NMR signals for m-xylene based on symmetry.",
       "process": "Step 1: Identify the symmetry in 1,3-dimethylbenzene. A single plane of symmetry passes through C2 and C5, bisecting the molecule.\nStep 2: Group the 8 carbons into equivalent sets:\n- The two methyl carbons are equivalent (1 signal).\n- C1 and C3 (bearing methyl groups) are equivalent (1 signal).\n- C2 (between the two methyl groups) is unique (1 signal).\n- C4 and C6 are equivalent (1 signal).\n- C5 (opposite C2) is unique (1 signal).\nStep 3: Sum the unique environments: 1 + 1 + 1 + 1 + 1 = 5 signals.",
       "result": "m-Xylene exhibits exactly 5 signals in its 13C NMR spectrum."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q27_13c_equivalence_norbornane",
@@ -1024,7 +1103,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests chemical equivalence in rigid bicyclic ring systems.",
       "process": "Step 1: Identify the symmetry elements of norbornane (bicyclo[2.2.1]heptane). It possesses C2v symmetry with two perpendicular planes of symmetry.\nStep 2: Map the 7 carbons to their symmetry-equivalent partners:\n- C7 (the single-carbon bridge) lies on both symmetry planes (1 signal).\n- C1 and C4 (bridgehead carbons) are related by symmetry (1 signal).\n- C2, C3, C5, and C6 (the two two-carbon bridges) are all mutually equivalent (1 signal).\nStep 3: Sum the unique environments: 1 + 1 + 1 = 3 signals.",
       "result": "Due to its high symmetry (C2v), norbornane shows only 3 signals in its 13C NMR spectrum."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q28_diastereotopic_carbons",
@@ -1062,7 +1144,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question applies the concept of diastereotopic groups to 13C NMR spectroscopy.",
       "process": "Step 1: Identify that C2 is a chiral center. The two methyl groups on C3 are adjacent to this chiral center.\nStep 2: Use the substitution test. Replacing one C3-methyl carbon with 13C (or another isotope) generates a diastereomer relative to replacing the other. Therefore, the two methyl carbons are diastereotopic.\nStep 3: Unlike enantiotopic groups, diastereotopic groups are chemically non-equivalent in all media (achiral and chiral). Consequently, they have different chemical shifts and produce distinct signals in both 1H and 13C NMR spectra.",
       "result": "The two C3-methyl carbons are diastereotopic due to the C2 stereocenter, yielding separate 13C NMR signals and resulting in 5 total signals."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q29_13c_limonene",
@@ -1100,7 +1185,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question evaluates chemical equivalence in an unsymmetrical monoterpene.",
       "process": "Step 1: Limonene contains 10 carbons (formula C10H16).\nStep 2: Identify symmetry. The molecule contains a single chiral center at C4 and has no planes, centers, or axes of symmetry.\nStep 3: Because there is no symmetry, all 10 carbons are chemically non-equivalent. Each carbon atom will produce a distinct signal in the 13C NMR spectrum.",
       "result": "Limonene has no symmetry, resulting in 10 distinct signals in its 13C NMR spectrum."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q30_13c_bicyclopropyl",
@@ -1138,7 +1226,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests chemical equivalence in a symmetrical hydrocarbon dimer.",
       "process": "Step 1: Analyze the symmetry of bicyclopropyl (two connected cyclopropane rings). The molecule has a plane of symmetry cutting through both bridgehead carbons and bisecting the C-C bond between the rings.\nStep 2: Classify the carbons:\n- The two bridgehead carbons (C1 and C1') are equivalent to each other (1 signal).\n- The four methylene carbons (C2, C3, C2', C3') are all equivalent due to the planes of symmetry passing through each ring and between the rings (1 signal).\nStep 3: Sum the unique signals: 1 (bridgehead CH) + 1 (methylene CH2) = 2 signals.",
       "result": "Bicyclopropyl has 2 unique carbon environments, yielding exactly 2 signals in its 13C NMR spectrum."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q31_13c_carbonyl_shift",
@@ -1176,7 +1267,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the characteristic 13C chemical shift regions for different functional groups.",
       "process": "Step 1: Identify that 2-butanone is a ketone.\nStep 2: Recognize that ketone and aldehyde carbonyl carbons are highly deshielded due to both the strong electronegativity of the oxygen and the resonance contribution of the polar C=O bond, leaving a partial positive charge on carbon.\nStep 3: Recall the characteristic chemical shift regions: ketones/aldehydes appear at 200-220 ppm; esters, amides, and carboxylic acids appear at 160-180 ppm.",
       "result": "The carbonyl carbon of a ketone like 2-butanone appears downfield in the range of $200\\text{-}220\\text{ ppm}$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q32_carbonyl_ester_vs_ketone",
@@ -1214,7 +1308,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question analyzes the electronic differences between esters and ketones and their effect on 13C chemical shifts.",
       "process": "Step 1: Write down the resonance structures of an ester: R-C(=O)-OR' <-> R-C(O-)=O+R'.\nStep 2: Notice that the oxygen atom can donate its lone pair to the carbonyl carbon by resonance, increasing the electron density at the carbonyl carbon.\nStep 3: In a ketone, no such resonance donation is possible (only weak inductive donation by alkyl groups). Therefore, the carbonyl carbon of the ester is more shielded (lower chemical shift, ~170 ppm) compared to the ketone (more deshielded, ~206 ppm).",
       "result": "Resonance donation by the ester oxygen shields the carbonyl carbon relative to that of a ketone."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q33_13c_shift_hybridization",
@@ -1252,7 +1349,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the effect of carbon hybridization on 13C chemical shifts.",
       "process": "Step 1: Identify the hybridization of all carbons in hex-1-en-5-yne (HC#C-CH2-CH2-CH=CH2):\n- C3 and C4 are $sp^3$ hybridized.\n- C5 and C6 are $sp$ hybridized (alkyne).\n- C1 and C2 are $sp^2$ hybridized (alkene).\nStep 2: Recall chemical shift ranges:\n- $sp^3$ aliphatic carbons: 10-40 ppm.\n- $sp$ alkyne carbons: 65-90 ppm (shielded due to cylindrical anisotropy, similar to 1H NMR).\n- $sp^2$ alkene carbons: 110-140 ppm.\nStep 3: Arrange in order: $sp^3$ (lowest ppm) < $sp$ < $sp^2$ (highest ppm).",
       "result": "The order of 13C chemical shifts is $sp^3 < sp < sp^2$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q34_aromatic_13c_range",
@@ -1290,7 +1390,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests knowledge of the characteristic 13C NMR chemical shift region for aromatic carbons.",
       "process": "Step 1: Identify that aromatic ring carbons are $sp^2$ hybridized.\nStep 2: Recall that $sp^2$ hybridized carbons (alkenes and aromatics) appear downfield due to hybridization and local deshielding effects.\nStep 3: Aromatic carbons typically resonate in the range of 110-160 ppm, overlap significantly with alkenes, but are usually distinguishable by their chemical shifts and number of signals.",
       "result": "Aromatic carbons typically appear in the range of $110\\text{-}160\\text{ ppm}$."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q35_cdcl3_solvent_splitting",
@@ -1328,7 +1431,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question explains the origin of the CDCl3 solvent signal splitting in 13C NMR spectra.",
       "process": "Step 1: Note that the solvent is CDCl3. The carbon atom is directly bonded to one deuterium (2H) nucleus.\nStep 2: Recall the formula for splitting by a nucleus with spin I: number of peaks = 2nI + 1. Here, n = 1 (one deuterium) and I = 1 for deuterium.\nStep 3: Calculate the splitting: 2(1)(1) + 1 = 3 (triplet). Because the three spin states of deuterium (m_I = -1, 0, +1) are equally populated, the triplet exhibits a 1:1:1 intensity ratio.",
       "result": "Coupling to the deuterium nucleus (I = 1) splits the carbon signal into a 1:1:1 triplet at 77 ppm."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q36_dept135_theory",
@@ -1366,7 +1472,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the basic theory and output interpretation of a DEPT-135 experiment.",
       "process": "Step 1: Define the purpose of DEPT (Distortionless Enhancement by Polarization Transfer) NMR: it distinguishes carbons based on the number of attached protons.\nStep 2: Recall that quaternary carbons (no attached protons) are completely absent in all DEPT spectra.\nStep 3: In DEPT-135, CH3 and CH carbons point upward (positive), while CH2 carbons point downward (inverted/negative). This allows immediate identification of methylene carbons.",
       "result": "In DEPT-135, CH3/CH are positive, CH2 is negative, and quaternary carbons are absent."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q37_dept90_theory",
@@ -1404,7 +1513,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the selectivity of the DEPT-90 NMR experiment.",
       "process": "Step 1: Review the pulse sequences for DEPT.\nStep 2: Recall that the DEPT-90 experiment utilizes a 90-degree read pulse for the proton channel.\nStep 3: This specific angle suppresses the magnetization transfer for CH3 and CH2 groups, leaving only methine (CH) carbons visible in the spectrum.",
       "result": "Only CH (methine) carbons appear in a DEPT-90 spectrum."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q38_dept_tert_butanol",
@@ -1442,7 +1554,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question applies DEPT-90 and DEPT-135 principles to a specific molecule (tert-butanol).",
       "process": "Step 1: Identify the two carbon environments in tert-butanol: three equivalent methyl groups (CH3, ~31 ppm) and one central quaternary carbon (C, ~69 ppm).\nStep 2: Analyze the central quaternary carbon. It has no attached protons, so it is absent in all DEPT experiments (both DEPT-90 and DEPT-135).\nStep 3: Analyze the methyl carbons (CH3). Since they are CH3 carbons, they are absent in DEPT-90 (which only shows CH) and appear as a positive (upright) peak in DEPT-135.",
       "result": "The CH3 carbon is positive in DEPT-135 and absent in DEPT-90; the quaternary carbon is absent in both."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q39_dept_2_butanone",
@@ -1480,7 +1595,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests interpretation of DEPT-135 spectra for a simple ketone.",
       "process": "Step 1: Identify the carbon types in 2-butanone: C1 is CH3, C2 is C=O (quaternary), C3 is CH2, and C4 is CH3.\nStep 2: Apply the DEPT-135 rules: CH3 and CH are positive (upright); CH2 is negative (inverted); quaternary is absent.\nStep 3: Evaluate each carbon:\n- C1 (CH3) -> positive.\n- C2 (quaternary) -> absent.\n- C3 (CH2) -> negative.\n- C4 (CH3) -> positive.\nTotal visible signals = 3 (2 positive, 1 negative).",
       "result": "The DEPT-135 spectrum shows 3 signals: 2 positive (methyls) and 1 negative (methylene)."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q40_dept_cyclohexanone",
@@ -1518,7 +1636,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question applies chemical shift and DEPT concepts to a symmetric cyclic ketone.",
       "process": "Step 1: Determine the number of carbon signals in decoupled 13C NMR. Cyclohexanone has a plane of symmetry passing through C1 (carbonyl) and C4. This yields 4 signals: C1 (quaternary carbonyl), C2/C6 (equivalent CH2), C3/C5 (equivalent CH2), and C4 (CH2).\nStep 2: Determine DEPT-90 signals. DEPT-90 only shows CH carbons. Cyclohexanone contains only CH2 carbons and a quaternary carbon, so it has 0 CH carbons. DEPT-90 will show 0 signals.\nStep 3: Determine DEPT-135 signals. DEPT-135 shows CH3/CH as positive, CH2 as negative, and quaternary as absent. Cyclohexanone has 3 unique CH2 environments (C2/C6, C3/C5, C4) and no CH/CH3. Thus, it will display 3 negative signals.",
       "result": "Decoupled shows 4 signals, DEPT-90 shows 0 signals, and DEPT-135 shows 3 negative signals."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q41_elucidation_ethyl_acetate",
@@ -1556,7 +1677,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question represents a classic multi-spectral structure elucidation problem combining IR and 1H NMR data.",
       "process": "Step 1: Calculate degrees of unsaturation: (2*4 + 2 - 8)/2 = 1. The IR band at 1740 cm-1 indicates a carbonyl group (C=O). The lack of OH absorption (3200-3600 cm-1) rules out carboxylic acids (butanoic acid), suggesting an ester.\nStep 2: Analyze the 1H NMR splitting patterns:\n- Triplet (3H, 1.25 ppm) and Quartet (2H, 4.12 ppm) indicate an ethyl group (-CH2CH3) attached to an electronegative atom. The downfield shift of the quartet (4.12 ppm) specifies that the -CH2- is directly attached to the ester oxygen (-OCH2CH3).\n- Singlet (3H, 2.04 ppm) indicates a methyl group adjacent to the carbonyl (-C(=O)CH3).\nStep 3: Assemble the pieces: CH3-C(=O)-OCH2CH3 (ethyl acetate).",
       "result": "The spectral data uniquely identifies the structure as ethyl acetate."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q42_elucidation_3_pentanone",
@@ -1594,7 +1718,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests the identification of a symmetrical ketone using IR, 1H, and 13C NMR.",
       "process": "Step 1: Degree of unsaturation = 1. The IR absorption at 1715 cm-1 suggests an aliphatic ketone or aldehyde carbonyl.\nStep 2: Analyze 1H NMR. The quartet (4H) and triplet (6H) indicate two equivalent ethyl groups (-CH2CH3). The chemical shift of the quartet (2.42 ppm) is consistent with methylene groups adjacent to a carbonyl.\nStep 3: Analyze 13C NMR. Only three signals are observed: 211 ppm (carbonyl C), 35 ppm (CH2 carbons), and 8 ppm (CH3 carbons). This confirms a highly symmetrical ketone. Connecting the two equivalent ethyl groups to the carbonyl carbon gives 3-pentanone.",
       "result": "The structure is 3-pentanone."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q43_elucidation_isobutanol",
@@ -1632,7 +1759,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question requires elucidating the structure of an alcohol from IR and 1H NMR coupling constants.",
       "process": "Step 1: Degree of unsaturation = 0. The broad IR band at 3350 cm-1 indicates an alcohol (-OH). The exchangeable singlet at 2.15 ppm confirms the presence of the hydroxyl proton.\nStep 2: Analyze 1H NMR splitting:\n- 6H doublet at 0.90 ppm coupled to a 1H multiplet at 1.75 ppm indicates an isopropyl group, -CH(CH3)2.\n- 2H doublet at 3.38 ppm indicates a methylene group adjacent to the electronegative oxygen (-CH2OH), split by the methine proton of the isopropyl group.\nStep 3: Combine: (CH3)2CH-CH2OH, which is 2-methyl-1-propanol (isobutanol).",
       "result": "The spectral data corresponds to 2-methyl-1-propanol."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q44_elucidation_acetophenone",
@@ -1670,7 +1800,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question focuses on aromatic ketones and conjugate effects on carbonyl chemical shifts and IR values.",
       "process": "Step 1: Degree of unsaturation = 5. A benzene ring accounts for 4 degrees, leaving 1 degree for a carbonyl group. The IR absorption at 1685 cm-1 is lower than the typical 1715 cm-1 value, indicating conjugation of the carbonyl with the benzene ring.\nStep 2: Analyze 1H NMR. The 5H multiplet in the 7.4-7.9 ppm region confirms a monosubstituted benzene ring. The 3H singlet at 2.6 ppm indicates a methyl group attached directly to the carbonyl carbon (-C(=O)CH3).\nStep 3: Analyze 13C NMR. The signal at 198 ppm is a conjugated carbonyl carbon. The signal at 26 ppm is the methyl carbon. The four signals in the 128-137 ppm range correspond to the 6 aromatic carbons. This matches acetophenone.",
       "result": "The compound is acetophenone."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q45_elucidation_1_4_dioxane",
@@ -1708,7 +1841,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests structure determination for a highly symmetrical molecule with no carbonyl or hydroxyl groups.",
       "process": "Step 1: Degree of unsaturation = 1. The lack of IR bands near 1700 (carbonyl) and 3300 cm-1 (hydroxyl) indicates the absence of C=O and O-H groups. The degree of unsaturation must represent a ring.\nStep 2: Evaluate NMR simplicity. The presence of only 1 signal in both 1H NMR (singlet at 3.69 ppm) and 13C NMR (67.2 ppm) indicates a highly symmetric cyclic ether where all protons and carbons are equivalent.\nStep 3: Check 1,4-dioxane. It is a symmetric 6-membered cyclic diether. All 8 protons are equivalent (3.69 ppm) and all 4 carbons are equivalent (67.2 ppm, deshielded by neighboring oxygen atoms). This matches perfectly.",
       "result": "The compound is 1,4-dioxane."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q46_elucidation_chloropropanoic_acid",
@@ -1746,7 +1882,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question tests identification of chlorinated carboxylic acids using 1H NMR splitting patterns.",
       "process": "Step 1: Degree of unsaturation = 1. The broad IR band from 2500-3300 cm-1 and C=O stretch at 1715 cm-1 specify a carboxylic acid. The peak at 11.8 ppm in 1H NMR confirms the carboxylic acid proton (-COOH).\nStep 2: Analyze the remaining 1H NMR signals. The quartet (1H, 4.41 ppm) and doublet (3H, 1.70 ppm) indicate a -CH(Cl)-CH3 fragment. The significant downfield shift of the quartet (4.41 ppm) is due to both the chlorine atom and the adjacent carbonyl group.\nStep 3: Combine the fragments: CH3-CH(Cl)-COOH, which is 2-chloropropanoic acid. 3-Chloropropanoic acid would instead show two triplets in the 1H NMR spectrum.",
       "result": "The spectral data corresponds to 2-chloropropanoic acid."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q47_elucidation_butanenitrile",
@@ -1784,7 +1923,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question focuses on structure elucidation of nitriles using IR and 1H NMR coupling patterns.",
       "process": "Step 1: Degree of unsaturation = 2. The sharp IR band at 2250 cm-1 is diagnostic of a nitrile group (-C#N).\nStep 2: Analyze the 1H NMR spectrum:\n- Triplet (3H, 1.02 ppm) represents a methyl group coupled to a methylene group (-CH2-CH3).\n- Multiplet/sextet (2H, 1.68 ppm) represents a methylene group adjacent to both a methyl and a methylene group (-CH2-CH2-CH3).\n- Triplet (2H, 2.33 ppm) represents a methylene group adjacent to the nitrile group (-CH2-CN), split by the middle methylene group.\nStep 3: Combine these fragments: CH3-CH2-CH2-CN, which is butanenitrile.",
       "result": "The compound is butanenitrile."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q48_elucidation_pbromotoluene",
@@ -1822,7 +1964,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question applies aromatic splitting patterns to identify the substitution isomer of a bromotoluene.",
       "process": "Step 1: Degree of unsaturation = 4. The presence of signals in the aromatic region (~7 ppm) indicates a benzene ring.\nStep 2: Analyze the aromatic region: two doublets with $J = 8.0$ Hz, each integrating for 2H, represent a characteristic AA'BB' splitting pattern of a 1,4-disubstituted (para) benzene ring.\nStep 3: Identify the substituents. The singlet at 2.28 ppm (3H) indicates a methyl group attached to the aromatic ring. The remaining substituent is bromine. This matches 1-bromo-4-methylbenzene (p-bromotoluene). Benzyl bromide would instead show a 5H aromatic multiplet and a 2H singlet at ~4.5 ppm.",
       "result": "The AA'BB' doublet pattern confirms a para-substituted benzene ring, identifying the molecule as 1-bromo-4-methylbenzene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q49_elucidation_isopropyl_bromide",
@@ -1860,7 +2005,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question combines Mass Spectrometry isotopic patterns with 1H NMR splitting to identify an alkyl halide.",
       "process": "Step 1: The MS peaks at m/z 122 and 124 in a 1:1 ratio are characteristic of a compound containing a single bromine atom (79Br and 81Br isotopes in equal abundance).\nStep 2: Analyze 1H NMR. The 6H doublet and 1H septet indicate a symmetric isopropyl group, -CH(CH3)2.\nStep 3: Combine the fragments: (CH3)2CH-Br, which is 2-bromopropane. 1-Bromopropane would show a triplet, multiplet, and triplet.",
       "result": "The 1:1 isotope ratio and isopropyl splitting pattern confirm the structure is 2-bromopropane."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q50_elucidation_anisole",
@@ -1898,7 +2046,10 @@ const CHAPTER_13_QUESTIONS = [
       "context": "This question requires solving a multi-spectral problem for a para-substituted phenyl ether.",
       "process": "Step 1: Degree of unsaturation = 4. The 4H aromatic doublets confirm a para-disubstituted benzene ring.\nStep 2: Analyze substituents from 1H NMR:\n- 9H singlet at 1.30 ppm indicates a tert-butyl group, -C(CH3)3.\n- 3H singlet at 3.78 ppm represents a methoxy group, -OCH3. The downfield shift is typical for an aryl ether.\n- The two doublets at 6.82 and 7.30 ppm confirm a para-disubstituted benzene ring.\nStep 3: Check IR bands: 1250 and 1040 cm-1 are characteristic of aryl-alkyl ether C-O stretches. No OH band exists, ruling out phenol (2-tert-butyl-5-methylphenol) and alcohol (4-tert-butylbenzyl alcohol) derivatives. Thus, the structure is 1-tert-butyl-4-methoxybenzene (4-tert-butylanisole).",
       "result": "The spectral data matches 1-tert-butyl-4-methoxybenzene."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   },
   {
     "question_id": "ch13_q_dynamic_nmr_shifts",
@@ -1948,6 +2099,157 @@ const CHAPTER_13_QUESTIONS = [
       "context": "Assessing shielding/deshielding effects on proton chemical shifts.",
       "process": "Alkoxy protons are deshielded by electronegative oxygen (3.5-4.5). Aromatic ring currents shift protons downfield (7.2). Carbonyl allylic/alpha protons are slightly deshielded (2.1). Regular alkane sp3 protons are shielded (0.9).",
       "result": "Protons matched to expected NMR shift ranges."
-    }
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q3",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 7.3,
+          "y": 3,
+          "label": "multiplet"
+        },
+        {
+          "x": 7.5,
+          "y": 2,
+          "label": "multiplet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Ethyl benzoate",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Benzyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Bromobenzene",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Nitrobenzene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Bromobenzene.",
+      "result": "The compound is Bromobenzene."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q8",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1.8,
+          "y": 4,
+          "label": "multiplet"
+        },
+        {
+          "x": 3.7,
+          "y": 4,
+          "label": "multiplet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Cyclohexene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Tetrahydrofuran",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Propanoic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Tetrahydrofuran.",
+      "result": "The compound is Tetrahydrofuran."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q18",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 2.1,
+          "y": 6,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Acetone",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Toluene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Benzoic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Acetone.",
+      "result": "The compound is Acetone."
+    },
+    "key_status": "verified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];
