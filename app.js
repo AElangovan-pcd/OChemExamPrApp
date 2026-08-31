@@ -1184,6 +1184,16 @@ function showToast(message, type = 'success') {
 // ==========================================================================
 
 // Switch app mode between 'practice' and 'mock'
+// The Performance panel lives in the right sidebar and is practice-mode only.
+// Hiding the aside on its own would leave an empty grid track, and an empty track
+// still contributes its gap - so the container drops to two columns at the same time.
+function setRightSidebarVisible(visible) {
+  const right = document.getElementById('sidebar-right');
+  const container = document.querySelector('.app-container');
+  if (right) right.style.display = visible ? '' : 'none';
+  if (container) container.classList.toggle('mock-layout', !visible);
+}
+
 function setAppMode(mode) {
   state.appMode = mode;
 
@@ -1213,7 +1223,8 @@ function setAppMode(mode) {
       mockSidebar.style.display = 'none';
       practiceWorkspace.style.display = 'block';
       mockWorkspace.style.display = 'none';
-      
+      setRightSidebarVisible(true);
+
       // Render normal practice question
       renderQuestion();
     } else {
@@ -1221,7 +1232,8 @@ function setAppMode(mode) {
       mockSidebar.style.display = 'block';
       practiceWorkspace.style.display = 'none';
       mockWorkspace.style.display = 'block';
-      
+      setRightSidebarVisible(false);
+
       // Show mock exam dashboard or active exam
       if (state.mockExam.active) {
         renderMockExamQuestion();
@@ -1466,7 +1478,8 @@ function startMockExam() {
   document.getElementById('sidebar-mock-content').style.display = 'block';
   document.getElementById('workspace-practice-content').style.display = 'none';
   document.getElementById('workspace-mock-content').style.display = 'block';
-  
+  setRightSidebarVisible(false);
+
   // Set tab active
   document.getElementById('tab-btn-practice').classList.remove('active');
   document.getElementById('tab-btn-mock').classList.add('active');
