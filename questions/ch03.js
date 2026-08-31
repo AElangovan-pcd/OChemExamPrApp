@@ -1990,13 +1990,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Analyze stereocenter generation in alkyl groups.",
-      "process": "Step 1: A chiral center is a carbon bonded to 4 different groups.\nStep 2: The sec-butyl attachment carbon (C1 of the group: $-^*CH(CH_3)CH_2CH_3$) is bonded to: 1) hydrogen, 2) methyl, 3) ethyl, and 4) the parent chain. Since all 4 are different, it is a chiral center.\nStep 3: The isobutyl group attachment carbon ($-CH_2-CH(CH_3)_2$) is bonded to two identical hydrogens, making it achiral.",
-      "result": "The attachment carbon of sec-butyl is bonded to 4 different groups, making it chiral."
+      "context": "A carbon is a stereocenter when it carries four different groups. Testing for one means listing what is attached to the candidate carbon and checking whether any two of those four are the same.",
+      "approach": "Step 1: Take the sec-butyl attachment carbon. It carries a hydrogen, a methyl, an ethyl and the parent chain - four groups, all different from one another.\nStep 2: Four different groups makes that carbon a stereocenter, so the molecule becomes chiral and exists as a pair of enantiomers.\nStep 3: Take the isobutyl attachment carbon for comparison. It is a CH2, carrying two hydrogens. Two identical groups on the same carbon rules out a stereocenter immediately.",
+      "note": "A quick screen before doing any listing: a carbon bearing two or more hydrogens can never be a stereocenter, since two of its four groups are already identical. That single check disposes of most candidate carbons at a glance, and Chapter 5 develops the test in full.",
+      "options": {
+        "A": "Correct. The sec-butyl attachment carbon bears hydrogen, methyl, ethyl and the parent chain - four different groups, which is exactly the condition for a stereocenter.",
+        "B": "Size does not determine chirality. Isobutyl fails the test because its attachment carbon carries two hydrogens, not because of how bulky the group is.",
+        "C": "sec-Butyl is not symmetric. Its attachment carbon has a methyl on one side and an ethyl on the other, which is precisely what makes the four groups different.",
+        "D": "Conformations interconvert freely by rotation and have nothing to do with chirality. A stereocenter is a matter of connectivity, which rotation cannot change."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two separate four-carbon structures shown together: a chain with a methyl branch on the second carbon, and a central carbon bearing three methyl groups."
   },
   {
     "question_id": "ch03_q43_properties_solubility",
@@ -2031,12 +2038,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understand the solubility rule 'like dissolves like'.",
-      "process": "Step 1: Alkanes are non-polar molecules.\nStep 2: Non-polar solutes dissolve in non-polar solvents (like hexane, ether, benzene).\nStep 3: Water is highly polar and forms strong hydrogen bond networks, which exclude non-polar alkanes.",
-      "result": "Alkanes are insoluble in water."
+      "context": "Dissolving requires the new solute-solvent interactions to compensate for the solvent-solvent interactions they replace. A nonpolar solute cannot repay water for the hydrogen bonds it must break.",
+      "approach": "Step 1: Characterise the solute. Alkanes have only C-C and C-H bonds, so they are nonpolar and can neither donate nor accept hydrogen bonds.\nStep 2: Characterise each solvent. Hexane and benzene are nonpolar; diethyl ether is only weakly polar and has no O-H. All three interact with an alkane about as well as with themselves.\nStep 3: Water is extensively hydrogen bonded. Inserting an alkane would break those hydrogen bonds and return only weak dispersion forces, so the alkane stays separate.",
+      "note": "The usual shorthand is like dissolves like, but the mechanism is worth holding onto: it is not that water repels the alkane, it is that water molecules attract each other far more than they attract the alkane. That preference is what drives the hydrophobic effect behind protein folding and membrane formation.",
+      "options": {
+        "A": "Correct. Water's hydrogen-bonded network cannot be repaid by an alkane, which offers only weak dispersion forces in exchange.",
+        "B": "Hexane is itself an alkane, so alkanes mix with it in all proportions.",
+        "C": "Diethyl ether is only weakly polar with no O-H to donate, and alkanes dissolve in it readily.",
+        "D": "Benzene is a nonpolar aromatic solvent, and alkanes are freely soluble in it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2072,12 +2085,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify the visual convention of Newman projections.",
-      "process": "Step 1: A Newman projection views a molecule directly down a specific carbon-carbon bond axis.\nStep 2: The front carbon is closest to the viewer and is drawn as the intersection of three lines (a Y-shape).\nStep 3: The back carbon is obscured and is drawn as a large circle, with its bonds starting at the circumference of the circle.",
-      "result": "Front carbon is a point; back carbon is a circle."
+      "context": "A Newman projection is a view straight down one carbon-carbon bond. The drawing convention exists to show which of the two carbons is nearer the viewer, since they overlap exactly in that view.",
+      "approach": "Step 1: Picture the sightline. The front carbon sits directly between your eye and the back carbon, hiding it.\nStep 2: Draw the front carbon as a point, with its three bonds radiating out to meet at that point.\nStep 3: Draw the back carbon as a circle behind it, with its three bonds drawn only as far as the circle's edge. The circle stands for the hidden atom.",
+      "note": "Reading the convention correctly matters because the dihedral angle is measured between a front bond and a back bond. Mistaking which set belongs to which carbon inverts the analysis, and staggered can end up drawn as eclipsed.",
+      "options": {
+        "A": "Correct. The near carbon is a point where its three bonds meet, and the far carbon is a circle with its bonds drawn to the perimeter.",
+        "B": "This reverses the convention. The circle represents the carbon hidden behind, not the one nearest the viewer.",
+        "C": "Only the back carbon is drawn as a circle. Two overlapping circles would give no way to tell the bonds apart.",
+        "D": "Two points would make the projection ambiguous, with no indication of which three bonds belong to which carbon."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2113,13 +2132,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Relate conformer names to dihedral angles in butane.",
-      "process": "Step 1: Staggered conformations occur at dihedral angles of $60^circ$, $180^circ$, and $300^circ$.\nStep 2: The angle $180^circ$ is anti.\nStep 3: The angles $60^circ$ and $300^circ$ represent gauche conformations.",
-      "result": "The dihedral angle is 60 or 300 degrees."
+      "context": "Staggered arrangements occur every 120 degrees of rotation, and butane has two kinds. Which one you have depends on where the two methyl groups sit relative to each other, not merely on whether the bonds are staggered.",
+      "approach": "Step 1: Fix the reference. At 180 degrees the methyls are directly opposed, which is the anti conformation.\nStep 2: Rotate by 120 degrees to the next staggered arrangement, reaching 60 degrees. The bonds are staggered again, but the methyls are now adjacent.\nStep 3: That 60 degree arrangement is gauche. Rotating the other way from anti reaches 300 degrees, which is the mirror-image gauche conformation and identical in energy.",
+      "note": "Both gauche forms are genuine energy minima, so butane has three minima but only two distinct energies. The pair are non-superimposable mirror images that interconvert freely by rotation, which is why they are conformations rather than separable stereoisomers.",
+      "options": {
+        "A": "Correct. Gauche is the staggered arrangement with the methyls 60 degrees apart, and the equivalent arrangement at 300 degrees is its mirror image.",
+        "B": "180 degrees is the anti conformation, where the methyls are as far apart as they can get.",
+        "C": "120 degrees is an eclipsed arrangement - a maximum on the profile, not a staggered minimum.",
+        "D": "0 degrees is the fully eclipsed conformation, with the two methyl groups directly aligned."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of four carbon atoms."
   },
   {
     "question_id": "ch03_q46_barrier_rotation_butane_partially",
@@ -2154,13 +2180,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understand energy barriers between conformational minima in butane.",
-      "process": "Step 1: Anti is at $180^circ$, and gauche is at $60^circ$ (or $300^circ$).\nStep 2: To rotate from $180^circ$ to $60^circ$, the molecule must pass through the eclipsed state at $120^circ$ (partially eclipsed, methyl eclipsing hydrogen).\nStep 3: The potential energy of this transition state is 16.0 kJ/mol above the anti state, representing the energy barrier for the transition.",
-      "result": "The energy barrier is 16.0 kJ/mol."
+      "context": "A barrier is the height of the transition state that must be crossed, measured from the starting point. Which barrier applies therefore depends on which two conformations you are travelling between.",
+      "approach": "Step 1: Locate the endpoints. Anti sits at 180 degrees and gauche at 60 degrees.\nStep 2: Identify what lies between them. Rotating from 180 down to 60 passes through 120 degrees, the partially eclipsed conformation.\nStep 3: That transition state sits about 16 kJ/mol above anti, so 16 is the barrier for this particular interconversion.",
+      "note": "The fully eclipsed conformation at 19 kJ/mol is not on this path at all - reaching it means rotating past gauche all the way to 0 degrees. Quoting the highest point on the profile as though it were the only barrier is the usual error here; a barrier belongs to a journey, not to a molecule.",
+      "options": {
+        "A": "Correct. Going from anti to gauche crosses the partially eclipsed conformation at 120 degrees, about 16 kJ/mol above anti.",
+        "B": "19.0 kJ/mol is the fully eclipsed conformation at 0 degrees, which lies on the far side of gauche and is not crossed on this route.",
+        "C": "12.0 kJ/mol is ethane's rotational barrier, not a feature of butane's profile.",
+        "D": "3.8 kJ/mol is the energy difference between anti and gauche, not the barrier between them. The molecule must climb over a transition state well above both."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of four carbon atoms."
   },
   {
     "question_id": "ch03_q47_alkane_properties_source",
@@ -2195,12 +2228,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Review industrial sources of hydrocarbons.",
-      "process": "Step 1: Natural gas consists mostly of methane with small amounts of ethane, propane, and butane.\nStep 2: Petroleum (crude oil) is a complex mixture of liquid alkanes and other hydrocarbons.\nStep 3: Fractional distillation of petroleum yields gasoline, kerosene, diesel, and other alkane products.",
-      "result": "Petroleum and natural gas are the primary sources."
+      "context": "Alkanes are the reduced end of the carbon cycle, formed where organic matter has been buried and transformed under heat and pressure without oxygen present.",
+      "approach": "Step 1: Consider what conditions produce saturated hydrocarbons. Reduction requires the absence of oxygen, so the setting must be anaerobic.\nStep 2: Marine organisms buried in sediment and subjected to heat and pressure over geological time are converted to a mixture of hydrocarbons.\nStep 3: That mixture is petroleum, with the smallest members forming natural gas. Fractional distillation then separates them by boiling point, which is why chain length sorts the products.",
+      "note": "Coal is also a fossil carbon source but is not principally alkane - it is largely aromatic, formed from plant material by a different route. The distinction matters industrially, since the two require quite different processing to yield comparable feedstocks.",
+      "options": {
+        "A": "Correct. Petroleum and natural gas are the principal alkane sources, formed from buried organic matter under heat and pressure without oxygen.",
+        "B": "Coal is fossil carbon, but its structure is largely aromatic rather than saturated, so it is not a principal alkane source.",
+        "C": "Volcanic emissions are dominated by water, carbon dioxide and sulfur compounds, with hydrocarbons a negligible component.",
+        "D": "Photosynthesis produces carbohydrates, which are highly oxygenated. Alkanes are what remains after long anaerobic reduction of such material."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2236,13 +2275,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Name complex alkyl groups systematically under IUPAC.",
-      "process": "Step 1: The neopentyl group has the structure $-CH_2-C(CH_3)_3$.\nStep 2: Find the longest chain starting from the attachment carbon (C1): C1 is a $-CH_2-$, C2 is $-C(CH_3)_2-$, and C3 is one of the methyls. This makes it a propyl parent group.\nStep 3: Identify branches on the propyl group: two methyls at C2.\nStep 4: Combine: 2,2-dimethylpropyl.",
-      "result": "The systematic name is 2,2-dimethylpropyl."
+      "context": "Converting a trivial group name to a systematic one follows the same procedure as naming any substituent: the attachment carbon is always C1, and the chain is numbered outward from it.",
+      "approach": "Step 1: Draw the neopentyl group - a CH2 that attaches to the parent chain, joined to a carbon bearing three methyls.\nStep 2: Number from the attachment point. C1 is the CH2, C2 is the quaternary carbon, and one of its methyls extends the chain to C3. The parent is therefore propyl.\nStep 3: The two remaining methyls both sit on C2, giving 2,2-dimethylpropyl.",
+      "note": "Numbering a substituent always starts at the attachment carbon, which is the opposite convention from a parent chain, where the numbering is chosen for lowest locants. Applying the parent-chain rule to a substituent is a common source of wrong names.",
+      "options": {
+        "A": "Correct. Numbering from the attachment carbon gives a three-carbon propyl chain with two methyl groups on C2.",
+        "B": "1,1-Dimethylpropyl would put both methyls on the attachment carbon itself. In neopentyl that carbon is a CH2 carrying two hydrogens.",
+        "C": "A butyl parent needs four carbons in the chain. Numbering outward from the attachment point here reaches only three.",
+        "D": "This names the fragments without following substituent nomenclature. A systematic substituent name needs a parent chain numbered from C1 at the attachment."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon bonded to four methyl groups."
   },
   {
     "question_id": "ch03_q49_conformation_barrier_rotation_cause",
@@ -2277,12 +2323,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understand basic conformational preferences.",
-      "process": "Step 1: Staggered conformations represent energy minima (stable states).\nStep 2: Eclipsed conformations represent energy maxima (unstable states).\nStep 3: The drive to avoid eclipsing interactions and reside in staggered conformations is the basis of conformational stability.",
-      "result": "The preference is called conformational stability."
+      "context": "The staggered arrangement is favoured because eclipsing aligns filled C-H bonding orbitals on adjacent carbons, and two filled orbitals brought into alignment repel. The resulting preference is a matter of conformation rather than of bonding geometry or connectivity.",
+      "approach": "Step 1: Establish what is being compared - two arrangements of the same molecule that differ only by rotation about a single bond.\nStep 2: Rule out the terms describing other phenomena. Angle strain concerns distorted bond angles, ring strain concerns closed rings, and stereoisomerism concerns different connectivity in space that rotation cannot interconvert.\nStep 3: What remains describes the relative stability of conformations, which is the category this preference belongs to.",
+      "note": "There is no single agreed name for this preference, so treat the term loosely; what is precise is its cause. The eclipsed form is destabilised by torsional strain, and quantifying that strain - about 4 kJ/mol per eclipsing hydrogen pair - says far more than any label does.",
+      "options": {
+        "A": "Correct by elimination and by category: the preference concerns the relative stability of conformations, which the other three terms do not describe.",
+        "B": "Angle strain is distortion of bond angles away from the ideal. Rotating about a bond changes no bond angle at all.",
+        "C": "Ring strain applies to closed rings, where the geometry cannot relax. Ethane and butane are open chains.",
+        "D": "Stereoisomers differ in spatial arrangement in ways that cannot be interconverted by rotation. Conformations interconvert freely and are not stereoisomers."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2318,13 +2370,20 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Examine point-group symmetry in conformations of butane.",
-      "process": "Step 1: A center of inversion ($i$) exists if drawing a line from any atom through the center of the molecule to an equal distance on the other side finds an identical atom.\nStep 2: Look at the anti conformation. The two methyls are $180^circ$ apart, C1 balances C4, and all hydrogens on the front carbon are exactly opposite hydrogens on the back carbon.\nStep 3: Gauche, fully eclipsed, and partially eclipsed conformations lack this center of inversion.",
-      "result": "The anti conformation has a center of inversion."
+      "context": "A center of inversion is a point through which every atom has an identical partner directly opposite and equidistant. Testing for one means checking whether the structure maps onto itself when every atom is projected through a single central point.",
+      "approach": "Step 1: Place the candidate center at the midpoint of the central C2-C3 bond, the only point with any chance of qualifying.\nStep 2: Test the anti conformation. The two methyl groups lie on opposite sides at 180 degrees, so each maps onto the other through that midpoint, and each hydrogen likewise finds a partner.\nStep 3: Test the others. In gauche the methyls are 60 degrees apart, so projecting one through the center does not land on the other. The eclipsed conformations fail for the same reason.",
+      "note": "Possessing a center of inversion has a consequence worth carrying into Chapter 5: any structure with one is achiral, because inversion is an improper symmetry operation. Anti butane is achiral for this reason, although butane is achiral in every conformation anyway.",
+      "options": {
+        "A": "Correct. In anti butane every atom has a counterpart directly opposite through the midpoint of the C2-C3 bond, so the conformation possesses a center of inversion.",
+        "B": "Gauche has a two-fold rotation axis but no center of inversion, since the methyls sit 60 degrees apart rather than opposed.",
+        "C": "The fully eclipsed conformation has a mirror plane but no inversion center - the two methyl groups are aligned on the same side, not opposite one another.",
+        "D": "The partially eclipsed conformation is the least symmetric of the four and possesses neither a mirror plane through the central bond nor an inversion center."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched chain of four carbon atoms."
   },
   {
     "question_id": "ch03_q_dynamic_conformational_energy",
@@ -2339,15 +2398,15 @@ var CH03_QUESTIONS = [
         },
         {
           "state": "Eclipsed (120°)",
-          "energy": 14
+          "energy": 16
         },
         {
           "state": "Gauche (60°)",
-          "energy": 38
+          "energy": 3.8
         },
         {
           "state": "Fully Eclipsed (0°)",
-          "energy": 190
+          "energy": 19
         }
       ]
     },
@@ -2374,12 +2433,18 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Analyzing butane conformational energy profiles.",
-      "process": "Anti conformation has methyl groups furthest apart (180°), minimizing steric strain (0 kJ/mol). Gauche has methyls at 60° (3.8 kJ/mol). Fully eclipsed has methyls eclipsing each other (19 kJ/mol), maximizing steric and torsional strain.",
-      "result": "The order of stability is: Anti > Gauche > Eclipsed > Fully Eclipsed."
+      "context": "A rotational energy profile plots potential energy against dihedral angle. Minima are the staggered conformations the molecule actually populates, and maxima are the eclipsed transition states it passes through.",
+      "approach": "Step 1: Read the minima. Anti at 180 degrees is the global minimum, set at 0, and gauche at 60 degrees is a local minimum 3.8 kJ/mol above it.\nStep 2: Read the maxima. The partially eclipsed conformation at 120 degrees sits at about 16 kJ/mol, and the fully eclipsed at 0 degrees at about 19.\nStep 3: Confirm the ordering the key asserts - anti lowest, fully eclipsed highest, with gauche and the partially eclipsed form in between.",
+      "note": "The plotted values here previously read 38 for gauche and 190 for fully eclipsed, decimal-point errors that put the curve an order of magnitude out and contradicted the key's own figure of 19. They have been corrected to 3.8 and 19, and the 120 degree point from 14 - propane's barrier - to butane's 16.",
+      "options": {
+        "A": "Correct. Anti is the global minimum at 0 and the fully eclipsed conformation the global maximum at about 19 kJ/mol above it.",
+        "B": "Gauche is a minimum, not a maximum - only 3.8 kJ/mol above anti and well below both eclipsed conformations.",
+        "C": "They differ by about 19 kJ/mol. If they were equal there would be no rotational barrier at all and no profile to plot.",
+        "D": "Eclipsed conformations are the maxima and gauche is a minimum, so the stability runs the other way: gauche is far more stable than either eclipsed form."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
