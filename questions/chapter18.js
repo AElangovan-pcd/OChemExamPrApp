@@ -583,7 +583,7 @@ const CHAPTER_18_QUESTIONS = [
       "conditions": "regioselectivity paths",
       "products": [
         "CC(C)(O)CO",
-        "CC(C)(OCH3)CO"
+        "CC(C)(O)COC"
       ]
     },
     "options": [
