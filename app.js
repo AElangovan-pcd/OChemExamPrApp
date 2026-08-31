@@ -1790,8 +1790,12 @@ function renderVisualEngines(q, prefix = '') {
 function initVisualEngines(q, prefix = '') {
   // 1. Draw scheme reactants and products
   if (q.reaction_scheme) {
+    const reactantAlts = q.reaction_scheme.reactant_alts || [];
     q.reaction_scheme.reactants.forEach((sm, index) => {
-      drawSMILESCanvas(sm, `${prefix}scheme-reactant-${index}`, 'light', `Reactant ${index + 1} structure`);
+      // A generic "Reactant 1 structure" tells a screen reader nothing. Authored chapters
+      // supply reactant_alts; unauthored ones fall back until their own pass reaches them.
+      drawSMILESCanvas(sm, `${prefix}scheme-reactant-${index}`, 'light',
+        reactantAlts[index] || `Reactant ${index + 1} structure`);
     });
     
     const isMockActive = (prefix === 'mock-');
