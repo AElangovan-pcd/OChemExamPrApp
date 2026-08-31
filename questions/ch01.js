@@ -1614,13 +1614,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Calculate formal charges for the stable Lewis structure of carbon monoxide.",
-      "process": "Step 1: The stable octet structure is $:C\\equiv O:$.\nStep 2: Carbon has 1 lone pair (2 nonbonding) and a triple bond (3 bonding). Valence = 4. $FC = 4 - 2 - 3 = -1$.\nStep 3: Oxygen has 1 lone pair (2 nonbonding) and a triple bond (3 bonding). Valence = 6. $FC = 6 - 2 - 3 = +1$.",
-      "result": "Carbon is -1 and oxygen is +1."
+      "context": "Formal charge follows from bonds and lone pairs alone, and it can land in places that look counterintuitive. It is a bookkeeping quantity, not a statement about which atom actually holds electron density.",
+      "approach": "Step 1: Carbon has 4 valence electrons. In carbon monoxide it holds one lone pair, so 2 nonbonding electrons, and three bonds from the triple bond. That gives 4 minus 2 minus 3, or minus 1.\nStep 2: Oxygen has 6 valence electrons, also one lone pair, also three bonds. That gives 6 minus 2 minus 3, or plus 1.\nStep 3: Check the sum. Minus 1 and plus 1 add to zero, matching a neutral molecule.",
+      "note": "This is the classic case where formal charge and electronegativity disagree: the negative formal charge sits on carbon even though oxygen is the more electronegative atom. Carbon monoxide binds metals through that carbon, and its toxicity comes from doing so at the iron of haemoglobin.",
+      "options": {
+        "A": "Correct. Both atoms have one lone pair and three bonds, so carbon comes out at 4 minus 2 minus 3 and oxygen at 6 minus 2 minus 3.",
+        "B": "All-neutral would require carbon to have four bonds and oxygen two. The triple bond gives each of them three, so neither can be neutral in this structure.",
+        "C": "The signs are reversed. Carbon has fewer valence electrons to start with, so three bonds and a lone pair leave it in surplus rather than deficit.",
+        "D": "These would need different bond and lone pair counts entirely, and no valid Lewis structure for carbon monoxide produces them."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A carbon atom and an oxygen atom joined by a triple bond, each carrying one lone pair; the carbon is drawn with a negative charge and the oxygen with a positive charge."
   },
   {
     "question_id": "ch01_q35_formal_charge_boron",
@@ -1655,13 +1662,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Find the formal charge on boron in a tetrahydroborate anion.",
-      "process": "Step 1: Boron has 3 valence electrons.\nStep 2: In $BH_4^-$, boron is bonded to 4 hydrogens (8 bonding electrons) and has 0 lone pairs.\nStep 3: Calculate: $3 - 0 - 4 = -1$.",
-      "result": "The boron carries a -1 formal charge."
+      "context": "Boron has only three valence electrons, so its neutral compounds have three bonds and an incomplete octet. Gaining a fourth bond completes the octet and shows up as a negative formal charge.",
+      "approach": "Step 1: Boron's valence electron count is 3.\nStep 2: In borohydride the boron has no lone pairs.\nStep 3: It forms four B-H bonds, so the formal charge is 3 minus 0 minus 4, which is minus 1. The sodium counterion balances it.",
+      "note": "That extra bond is what makes borohydride a hydride donor: boron is holding four bonds where it wants three, so it can hand one hydrogen off with its bonding pair. This is the reagent that reduces aldehydes and ketones throughout the later chapters.",
+      "options": {
+        "A": "Correct. Three valence electrons, no lone pairs and four bonds give 3 minus 0 minus 4, which is minus 1.",
+        "B": "A positive formal charge would mean fewer electrons than a free boron atom, so fewer than three bonds. This boron has four.",
+        "C": "Neutral boron has three bonds, as in borane or boron trifluoride. The fourth bond here is exactly what makes the ion negative.",
+        "D": "Minus 3 would require boron to hold three lone pairs, which is the free boride ion rather than a species with four B-H bonds."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A boron atom bonded to four hydrogen atoms, the whole ion drawn with a negative charge."
   },
   {
     "question_id": "ch01_q36_resonance_rule",
@@ -1696,12 +1710,18 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Review the rules of resonance representation.",
-      "process": "Step 1: Resonance structures represent different layouts of the same molecule. The nuclear scaffold (positions of nuclei and $\\sigma$ bonds) must not change.\nStep 2: This means only non-bonding valence electrons (lone pairs) and $\\pi$ bonding electrons can be repositioned.\nStep 3: Total net charge and number of unpaired electrons must also remain constant.",
-      "result": "Only $\\pi$ electrons and lone pairs can move."
+      "context": "Resonance structures are alternative electron distributions over one fixed arrangement of nuclei. The molecule is the weighted average of them; it does not convert between them, so nothing about the skeleton may change from one to the next.",
+      "approach": "Step 1: Fix what may not change - the positions of the atoms and the sigma framework that holds them together.\nStep 2: Identify what may move: pi electrons and lone pairs, since these are the delocalized electrons.\nStep 3: Apply the remaining constraints - the total electron count stays the same, the number of unpaired electrons stays the same, and no second-row atom may exceed an octet.",
+      "note": "The commonest way to draw an invalid contributor is to move a hydrogen along with the electrons. That produces a different constitution - a tautomer, not a resonance form - and the two are genuinely different compounds in equilibrium rather than one averaged structure.",
+      "options": {
+        "A": "Correct. Only pi electrons and lone pairs are delocalized; the sigma framework and the atomic positions are fixed across all contributors.",
+        "B": "Moving atoms produces a different molecule, not a resonance form. Structures related by moving a nucleus are isomers or tautomers.",
+        "C": "The number of unpaired electrons must be conserved. Changing it would describe a different electronic state, not a contributor to the same hybrid.",
+        "D": "Second-row elements have only four valence orbitals and cannot exceed eight valence electrons in any contributor, valid or otherwise."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1737,13 +1757,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Determine the relative stability of resonance contributors for an enolate ion.",
-      "process": "Step 1: Compare the electronegativity of carbon and oxygen. Oxygen (3.5) is more electronegative than carbon (2.5).\nStep 2: Structures placing negative formal charges on more electronegative atoms are more stable and contribute more to the overall resonance hybrid.\nStep 3: Therefore, the enolate structure ($CH_3-C(O^-)=CH_2$) is more stable than the carbanion ($CH_3-CO-CH_2^-$).",
-      "result": "The oxygen-centered anion is the major contributor."
+      "context": "When resonance contributors are not equivalent, the more stable one contributes more to the hybrid. The main test is where the charge sits: a negative charge is better placed on the more electronegative atom.",
+      "approach": "Step 1: Draw both contributors. Removing an alpha hydrogen from acetone leaves a negative charge that can sit on the alpha carbon, or be pushed onto oxygen with the double bond shifting to the carbon-carbon position.\nStep 2: Compare the atoms holding the charge. Oxygen is considerably more electronegative than carbon, so it accommodates a lone pair and a negative charge far more comfortably.\nStep 3: Both contributors have full octets and the same number of bonds, so electronegativity decides. The oxygen-centred enolate structure is the major contributor.",
+      "note": "This is why an alpha hydrogen next to a carbonyl is acidic at all: the conjugate base is stabilised by putting the charge on oxygen. It is the foundation of the enolate chemistry in Chapters 22 and 23, where the same anion reacts through carbon while storing its charge on oxygen.",
+      "options": {
+        "A": "Correct. The negative charge is better accommodated on oxygen, the more electronegative atom, so the enolate contributor dominates the hybrid.",
+        "B": "This contributor is real and does contribute, but it places the charge on carbon. Between two otherwise comparable structures, the one with the charge on the more electronegative atom is the major one.",
+        "C": "The two structures are not identical - one puts the charge on carbon and the other on oxygen, which are different elements - so they cannot contribute equally.",
+        "D": "A contributor with separated positive and negative charge would be higher in energy, and no such structure is needed here: the anion delocalizes without creating any new charge separation."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A three-carbon fragment: a methyl group, a carbon bearing a double bond to oxygen, and a terminal carbon carrying a negative charge."
   },
   {
     "question_id": "ch01_q38_resonance_non_valid",
@@ -1778,12 +1805,18 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understand the octet rule limitation for second-row elements.",
-      "process": "Step 1: Carbon is in the second row of the periodic table, possessing only $2s$ and three $2p$ valence orbitals (4 total orbitals).\nStep 2: Each orbital can hold up to 2 electrons, limiting carbon to a maximum of 8 valence electrons (an octet).\nStep 3: Five covalent bonds would require 10 valence electrons, which carbon cannot accommodate since it lacks low-energy $d$ orbitals.",
-      "result": "The correct choice is A."
+      "context": "The octet rule is not arbitrary for second-row elements: it reflects how many valence orbitals they actually have. Carbon's valence shell contains one 2s and three 2p orbitals, so four orbitals and at most eight electrons.",
+      "approach": "Step 1: Count carbon's available valence orbitals - one 2s and three 2p, so four in total.\nStep 2: Each orbital holds at most two electrons, so the valence shell holds at most eight.\nStep 3: Five bonds would need five orbitals and ten electrons. There is no fifth orbital low enough in energy to use, so the structure cannot be drawn at all - valid or otherwise.",
+      "note": "Third-row elements are different: phosphorus and sulfur have 3d orbitals available and genuinely do exceed an octet, which is why sulfate and phosphate can be drawn with expanded valence shells. The rule is about the row, not about the charge.",
+      "options": {
+        "A": "Correct. Carbon has only four valence orbitals - one 2s and three 2p - so it cannot hold more than eight valence electrons or form more than four bonds.",
+        "B": "Carbon forms sigma bonds with hydrogen routinely, in resonance contributors as anywhere else. That is not what rules this structure out.",
+        "C": "The problem is not the amount of charge but the impossibility of the bonding arrangement. A structure needing five bonds to carbon cannot be drawn whatever its charge.",
+        "D": "Hund's rule concerns how electrons occupy degenerate orbitals within a subshell. It has no bearing on the maximum number of bonds an atom can form."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1819,12 +1852,18 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Compare polarities based on electronegativity values ($C=2.5, H=2.1, N=3.0, O=3.5$).",
-      "process": "Step 1: Calculate electronegativity difference (\\(\\Delta EN\\)) for each bond.\nStep 2: C-C = 0. C-H = 0.4. C-N = 0.5. C-O = 1.0.\nStep 3: The C-O bond has the largest difference in electronegativity, making it the most polar covalent bond.",
-      "result": "The C-O bond is the most polar."
+      "context": "Bond polarity is set by the difference in electronegativity between the two bonded atoms. The larger that difference, the more unevenly the bonding electrons are shared and the greater the bond dipole.",
+      "approach": "Step 1: Recall the relevant values on the Pauling scale: oxygen 3.4, nitrogen 3.0, carbon 2.5, hydrogen 2.1.\nStep 2: Take each difference against carbon. C-O is about 0.9, C-N about 0.5, C-H about 0.4, and C-C is zero.\nStep 3: The largest difference is C-O, so that bond is the most polar of the four.",
+      "note": "The C-H bond being only slightly polar is why hydrocarbons are effectively nonpolar overall, and why introducing oxygen changes solubility and reactivity so sharply. Almost every functional group in this course is a way of putting a more electronegative atom onto carbon.",
+      "options": {
+        "A": "Correct. Oxygen is the most electronegative of the partners offered, so the difference across a C-O bond is the largest and the bond the most polar.",
+        "B": "C-N is polar, but nitrogen is less electronegative than oxygen, so the difference across it is smaller than across C-O.",
+        "C": "A bond between two identical atoms has no electronegativity difference at all, making C-C nonpolar rather than the most polar.",
+        "D": "Carbon and hydrogen differ by only about 0.4, which is the smallest nonzero difference here. C-H bonds are barely polar."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1860,13 +1899,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify how molecular symmetry affects net molecular dipole moments.",
-      "process": "Step 1: Each C-Cl bond is polar due to the electronegativity difference between carbon (2.5) and chlorine (3.0).\nStep 2: In carbon tetrachloride ($CCl_4$), the four C-Cl polar bonds are arranged symmetrically in a tetrahedral geometry.\nStep 3: Because of this perfect tetrahedral symmetry, the four individual bond dipole vectors cancel each other out completely, resulting in a net dipole moment of zero.",
-      "result": "Carbon tetrachloride has a net dipole moment of zero."
+      "context": "A molecular dipole is the vector sum of the individual bond dipoles. Polar bonds can therefore add to zero if the molecule's symmetry arranges them so that they cancel in every direction.",
+      "approach": "Step 1: Confirm that all four candidates contain polar C-Cl bonds, so bond polarity alone cannot distinguish them.\nStep 2: Look at symmetry instead. In carbon tetrachloride four identical chlorines sit at the corners of a tetrahedron around carbon.\nStep 3: That arrangement is perfectly symmetric, so the four bond dipoles cancel exactly and the net moment is zero. Replacing any chlorine with hydrogen destroys the symmetry and leaves a residual dipole.",
+      "note": "Symmetry, not the absence of polar bonds, is what makes a molecule nonpolar here. It is worth checking the shape before concluding anything about polarity - a molecule full of polar bonds can be entirely nonpolar, and this is the reason carbon tetrachloride does not dissolve in water.",
+      "options": {
+        "A": "Correct. Four identical polar bonds arranged tetrahedrally cancel exactly, leaving no net dipole despite each individual bond being polar.",
+        "B": "Two chlorines and two hydrogens break the symmetry: the two C-Cl dipoles have a resultant pointing away from the hydrogens, so the molecule is polar.",
+        "C": "Three chlorines and one hydrogen is not symmetric either. The three C-Cl dipoles do not cancel against a single, far less polar C-H bond.",
+        "D": "A single polar C-Cl bond against three C-H bonds gives an obvious net dipole; there is nothing to cancel it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon atom bonded to four chlorine atoms."
   },
   {
     "question_id": "ch01_q41_carbon_dioxide_dipole",
@@ -1901,13 +1947,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Explain the zero net dipole in carbon dioxide.",
-      "process": "Step 1: Carbon dioxide ($O=C=O$) contains a carbon double-bonded to two oxygens.\nStep 2: The hybridization of carbon is $sp$, making the geometry linear ($180^\\circ$ angle).\nStep 3: The two dipole vectors of the C=O bonds point in exact opposite directions along the linear axis, resulting in complete cancellation.",
-      "result": "Linear geometry leads to cancellation of the dipoles."
+      "context": "Cancellation of bond dipoles requires them to be equal in size and opposite in direction. Whether that happens is a question about molecular shape, which is set by the number of groups around the central atom.",
+      "approach": "Step 1: Assign the geometry. The carbon of carbon dioxide points at two atoms and has no lone pairs, so it is sp and the molecule is linear.\nStep 2: Note that both C=O bonds are identical, so both dipoles have the same magnitude, each pointing from carbon toward its oxygen.\nStep 3: In a linear arrangement those two point in exactly opposite directions along the same axis, so they sum to zero.",
+      "note": "Compare water, which has the same two polar bonds to oxygen but a bent shape because of its lone pairs. There the dipoles do not oppose one another and add to a substantial net moment - which is why water is a polar solvent and carbon dioxide is a gas that is not.",
+      "options": {
+        "A": "Correct. The molecule is linear, so the two identical C=O bond dipoles point in exactly opposite directions and cancel completely.",
+        "B": "Carbon and oxygen differ substantially in electronegativity, about 2.5 against 3.4, which is why each C=O bond is strongly polar in the first place.",
+        "C": "The carbon has only two groups around it and is sp hybridized, making the molecule linear rather than tetrahedral. Tetrahedral geometry would not produce this cancellation from two bonds.",
+        "D": "Carbon dioxide is a covalent molecule, not an ionic compound, and it certainly possesses bond dipoles - they simply cancel."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon atom joined to two oxygen atoms, one on each side, by double bonds in a straight line."
   },
   {
     "question_id": "ch01_q42_formal_charge_oxygen_radical",
@@ -1942,13 +1995,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Calculate the formal charge on oxygen in the hydroxyl radical.",
-      "process": "Step 1: Oxygen valence = 6.\nStep 2: In a hydroxyl radical, oxygen has 1 single bond to hydrogen (2 bonding electrons) and 5 non-bonding electrons (2 lone pairs and 1 unpaired electron).\nStep 3: Calculate: $6 - 5 - 1 = 0$.",
-      "result": "The oxygen carries a formal charge of 0."
+      "context": "As with any radical, the unpaired electron counts as one nonbonding electron rather than two. The rest of the tally is unchanged: valence electrons, minus all nonbonding electrons, minus the number of bonds.",
+      "approach": "Step 1: Oxygen's valence electron count is 6.\nStep 2: Count its nonbonding electrons in the hydroxyl radical: two full lone pairs, which is 4, plus the single unpaired electron, making 5.\nStep 3: It forms one O-H bond. The formal charge is 6 minus 5 minus 1, which is zero.",
+      "note": "Neutral and highly reactive is a combination worth noticing: the hydroxyl radical is one of the most aggressive species in biological chemistry precisely because it carries no charge to be repelled by anything, yet is one electron short of a filled shell.",
+      "options": {
+        "A": "Correct. Six valence electrons minus five nonbonding electrons minus one bond gives zero, so the radical is neutral.",
+        "B": "Minus 1 is hydroxide, where the oxygen holds three full lone pairs alongside its single bond. The radical has one fewer electron than that.",
+        "C": "A positive formal charge on oxygen would require three bonds, as in hydronium. This oxygen has one.",
+        "D": "Minus 2 would need four lone pairs and no bonds at all, which is the oxide ion rather than a species bonded to hydrogen."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An oxygen atom bonded to one hydrogen atom and carrying an unpaired electron."
   },
   {
     "question_id": "ch01_q43_mo_antibonding",
@@ -1983,12 +2043,18 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Explain the concept of antibonding molecular orbitals.",
-      "process": "Step 1: Antibonding orbitals are formed by destructive interference (subtraction) of atomic wave functions.\nStep 2: This destructive interference leads to a nodal plane (zero electron density) between the nuclei.\nStep 3: Electrons placed here experience repulsion between the nuclei, making the orbital less stable (higher in energy) than the initial isolated atomic orbitals.",
-      "result": "An antibonding orbital is higher in energy and contains a node."
+      "context": "Two atomic orbitals combine in two ways. Adding their wave functions in phase builds up electron density between the nuclei and lowers the energy; subtracting them out of phase cancels that density and raises it.",
+      "approach": "Step 1: Recognise that combining two atomic orbitals must give two molecular orbitals - orbitals are conserved in the mixing.\nStep 2: Identify the out-of-phase combination as the antibonding one. Destructive interference cancels the wave function between the nuclei, creating a node there.\nStep 3: With no electron density between them, the nuclei are less shielded from one another, so that orbital lies higher in energy than either atomic orbital it came from.",
+      "note": "Antibonding orbitals are not merely hypothetical. The lowest one is usually the LUMO, and it is where an incoming nucleophile's electrons go - so the shape of the pi antibonding orbital explains where carbonyls and alkenes are attacked.",
+      "options": {
+        "A": "Correct. Out-of-phase combination cancels electron density between the nuclei, producing a node there and an energy above that of the starting atomic orbitals.",
+        "B": "Lower energy describes the bonding orbital, formed by the in-phase combination. Antibonding is the higher of the two.",
+        "C": "Constructive interference builds density between the nuclei and gives the bonding orbital. The antibonding orbital comes from destructive interference.",
+        "D": "Antibonding orbitals can certainly be occupied - by absorbing a photon, or in molecules with enough electrons - and occupying one weakens or breaks the bond."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2024,13 +2090,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Determine oxygen's hybridization in water.",
-      "process": "Step 1: Oxygen forms 2 single bonds to hydrogens and has 2 lone pairs.\nStep 2: Steric number = 2 (bonds) + 2 (lone pairs) = 4.\nStep 3: Steric number of 4 corresponds to $sp^3$ hybridization.",
-      "result": "The oxygen in water is $sp^3$ hybridized."
+      "context": "Hybridization is assigned from the number of groups around an atom, where a group is a sigma bond or a lone pair. Lone pairs are invisible in a line drawing but count fully.",
+      "approach": "Step 1: Count the bonds on the oxygen in water: two O-H sigma bonds.\nStep 2: Count its lone pairs. Oxygen has six valence electrons and uses two in bonding, leaving two lone pairs.\nStep 3: Two bonds plus two lone pairs is four groups, requiring four hybrid orbitals, so the oxygen is sp3.",
+      "note": "Only two of those four sp3 orbitals hold bonds, so the shape you see is bent rather than tetrahedral - the geometry describes the atoms, while the hybridization describes all four groups. The two filled lone pair orbitals are what accept hydrogen bonds and make water the solvent it is.",
+      "options": {
+        "A": "Correct. Two sigma bonds and two lone pairs make four groups, so four hybrid orbitals are needed and the oxygen is sp3.",
+        "B": "sp2 would mean three groups. That is the count you get by forgetting one of the lone pairs, which occupy hybrid orbitals just as the bonds do.",
+        "C": "sp would mean two groups, which counts only the bonds and ignores both lone pairs entirely.",
+        "D": "Using unhybridized orbitals would force an H-O-H angle near 90 degrees. The observed angle is 104.5, close to the tetrahedral value and consistent with sp3 hybrids."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An oxygen atom bonded to two hydrogen atoms."
   },
   {
     "question_id": "ch01_q45_skeletal_translation",
