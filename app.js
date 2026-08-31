@@ -647,14 +647,14 @@ function renderQuestion() {
   setTimeout(() => {
     // 1. Draw standard question Smiles canvas
     if (q.question_smiles && document.getElementById('q-smiles-canvas')) {
-      drawSMILESCanvas(q.question_smiles, 'q-smiles-canvas', 'light');
+      drawSMILESCanvas(q.question_smiles, 'q-smiles-canvas', 'light', q.structure_alt || '');
     }
 
     // 2. Draw standard options Smiles canvases
     q.options.forEach(opt => {
       const canvasId = `opt-canvas-${opt.option_id}`;
       if (opt.smiles && document.getElementById(canvasId)) {
-        drawSMILESCanvas(opt.smiles, canvasId, 'light');
+        drawSMILESCanvas(opt.smiles, canvasId, 'light', opt.text || '');
       }
     });
 
@@ -680,9 +680,16 @@ function renderQuestion() {
 }
 
 // Wrapper for SmilesDrawer execution with standard checks
-function drawSMILESCanvas(smiles, canvasId, theme = 'light') {
+function drawSMILESCanvas(smiles, canvasId, theme = 'light', alt = '') {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return;
+
+  // A <canvas> exposes nothing to assistive technology without an explicit role and
+  // name, which made every structural question unanswerable non-visually. Describe
+  // what a sighted student sees; never supply the answer - on a nomenclature item the
+  // compound name is the leak, on a stereochemistry item the R/S descriptor is.
+  canvas.setAttribute('role', 'img');
+  canvas.setAttribute('aria-label', alt || 'Chemical structure diagram');
 
   const container = canvas.closest('.matching-structure') || canvas.parentElement;
 
@@ -1375,13 +1382,13 @@ function renderMockExamQuestion() {
   // Draw structures on canvas
   setTimeout(() => {
     if (q.question_smiles && document.getElementById('mock-q-smiles-canvas')) {
-      drawSMILESCanvas(q.question_smiles, 'mock-q-smiles-canvas', 'light');
+      drawSMILESCanvas(q.question_smiles, 'mock-q-smiles-canvas', 'light', q.structure_alt || '');
     }
 
     q.options.forEach(opt => {
       const canvasId = `mock-opt-canvas-${opt.option_id}`;
       if (opt.smiles && document.getElementById(canvasId)) {
-        drawSMILESCanvas(opt.smiles, canvasId, 'light');
+        drawSMILESCanvas(opt.smiles, canvasId, 'light', opt.text || '');
       }
     });
 
@@ -1771,13 +1778,13 @@ function reviewMockQuestion(idx) {
   // Draw Smiley canvases
   setTimeout(() => {
     if (q.question_smiles && document.getElementById('review-q-smiles-canvas')) {
-      drawSMILESCanvas(q.question_smiles, 'review-q-smiles-canvas', 'light');
+      drawSMILESCanvas(q.question_smiles, 'review-q-smiles-canvas', 'light', q.structure_alt || '');
     }
 
     q.options.forEach(opt => {
       const canvasId = `review-opt-canvas-${opt.option_id}`;
       if (opt.smiles && document.getElementById(canvasId)) {
-        drawSMILESCanvas(opt.smiles, canvasId, 'light');
+        drawSMILESCanvas(opt.smiles, canvasId, 'light', opt.text || '');
       }
     });
 
@@ -1984,7 +1991,7 @@ function initVisualEngines(q, prefix = '') {
   // 1. Draw scheme reactants and products
   if (q.reaction_scheme) {
     q.reaction_scheme.reactants.forEach((sm, index) => {
-      drawSMILESCanvas(sm, `${prefix}scheme-reactant-${index}`, 'light');
+      drawSMILESCanvas(sm, `${prefix}scheme-reactant-${index}`, 'light', `Reactant ${index + 1} structure`);
     });
     
     const isMockActive = (prefix === 'mock-');
@@ -1993,7 +2000,7 @@ function initVisualEngines(q, prefix = '') {
     
     if (showProduct) {
       q.reaction_scheme.products.forEach((sm, index) => {
-        drawSMILESCanvas(sm, `${prefix}scheme-product-${index}`, 'light');
+        drawSMILESCanvas(sm, `${prefix}scheme-product-${index}`, 'light', `Product ${index + 1} structure`);
       });
     }
   }
@@ -2001,7 +2008,7 @@ function initVisualEngines(q, prefix = '') {
   // 2. Draw match item structures
   if (q.interaction_type === 'matching-list' || q.interaction_type === 'matching-grid') {
     q.match_items.forEach((item, index) => {
-      drawSMILESCanvas(item.smiles, `${prefix}match-canvas-${index}`, 'light');
+      drawSMILESCanvas(item.smiles, `${prefix}match-canvas-${index}`, 'light', `Structure ${index + 1} to match`);
     });
   }
 
@@ -2025,10 +2032,36 @@ function initVisualEngines(q, prefix = '') {
   }
 }
 
+// Build the accessible name for a simulated spectrum from its own data. This is the
+// same information a sighted student reads off the plot - peak positions and
+// intensities - and stops short of naming the compound, which is the answer.
+function describeSpectrum(spec) {
+  if (spec.spec_type === 'ir') {
+    const bands = (spec.dips || []).map(d => `${d.xc} cm-1`).join(', ');
+    return `Simulated infrared spectrum with absorption bands at ${bands}.`;
+  }
+  if (spec.spec_type === 'ms') {
+    const peaks = (spec.data_points || [])
+      .map(p => `m/z ${p.x} (relative intensity ${p.y}${p.label ? ', ' + p.label : ''})`).join('; ');
+    return `Simulated mass spectrum with peaks at ${peaks}.`;
+  }
+  if (spec.spec_type === 'nmr') {
+    const sig = (spec.data_points || [])
+      .map(p => `${p.x} ppm integrating to ${p.y}H${p.label ? ', ' + p.label : ''}`).join('; ');
+    return `Simulated proton NMR spectrum with signals at ${sig}.`;
+  }
+  return 'Simulated spectrum.';
+}
+
 function drawSpectroscopyChart(ctx, spec) {
   const specType = spec.spec_type;
   const dataPoints = spec.data_points;
-  
+
+  if (ctx && ctx.canvas) {
+    ctx.canvas.setAttribute('role', 'img');
+    ctx.canvas.setAttribute('aria-label', describeSpectrum(spec));
+  }
+
   if (specType === 'ms') {
     const maxMass = Math.max(...dataPoints.map(p => p.x)) + 10;
     const allLabels = [];
@@ -2234,6 +2267,18 @@ function drawEnergyChart(ctx, diag) {
   const points = diag.points;
   const data = points.map((p, i) => ({ x: i, y: p.energy }));
 
+  // The plotted energies are what the question asks the student to read off; giving
+  // them in text is equivalent access, not the answer (which is Ea and dH).
+  // Kept unit-free and generic on purpose: this same renderer draws reaction
+  // coordinate diagrams, MO diagrams and conformational energy profiles, and the
+  // data carries no units of its own - the question text supplies them.
+  if (ctx && ctx.canvas) {
+    ctx.canvas.setAttribute('role', 'img');
+    ctx.canvas.setAttribute('aria-label',
+      'Energy diagram showing: '
+      + points.map(p => `${p.state} at ${p.energy}`).join(', ') + '.');
+  }
+
   new Chart(ctx, {
     type: 'line',
     data: {
@@ -2327,7 +2372,9 @@ function drawSyntheticRoadmap(containerId, roadmap) {
   setTimeout(() => {
     roadmap.nodes.forEach(node => {
       if (node.smiles) {
-        drawSMILESCanvas(node.smiles, `${containerId}-node-${node.id}`, 'light');
+        // node.id is the roadmap label ("A", "B", "C"), never the compound's name,
+        // so this identifies the structure without answering the question.
+        drawSMILESCanvas(node.smiles, `${containerId}-node-${node.id}`, 'light', `Compound ${node.id} structure`);
       }
     });
   }, 20);
