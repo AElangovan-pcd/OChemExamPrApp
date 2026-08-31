@@ -559,13 +559,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relative ring strain normalized per carbon atom, which indicates structural stability.",
-      "process": "Step 1: Calculate strain per CH2 group: \n- Cyclopropane: 115 kJ/mol / 3 = 38.3 kJ/mol\n- Cyclobutane: 110 kJ/mol / 4 = 27.5 kJ/mol\n- Cyclopentane: 26 kJ/mol / 5 = 5.2 kJ/mol\n- Cyclohexane: 0 kJ/mol / 6 = 0 kJ/mol\nStep 2: Order these values from largest to smallest: Cyclopropane > Cyclobutane > Cyclopentane > Cyclohexane.",
-      "result": "The correct order of decreasing ring strain per CH2 group is Cyclopropane > Cyclobutane > Cyclopentane > Cyclohexane."
+      "context": "Strain per methylene group divides a ring's total strain by the number of CH2 units it contains. It answers a different question from total strain: how badly is each carbon compromised, rather than how much strain the whole ring carries.",
+      "approach": "Step 1: Take the total strains - about 115 kJ/mol for cyclopropane, 110 for cyclobutane, 26 for cyclopentane and zero for cyclohexane.\nStep 2: Divide each by its number of carbons: 115 over 3 is about 38, 110 over 4 is about 27.5, 26 over 5 is about 5, and zero over 6 is zero.\nStep 3: The order falls steadily from cyclopropane down to cyclohexane, the same ranking the totals give in this case.",
+      "note": "The two measures agree here but need not in general. Cyclopropane and cyclobutane have nearly equal totals yet clearly different per-CH2 values, because the strain is shared among a different number of carbons - which is why the per-group figure is the fairer comparison of how strained an individual carbon actually is.",
+      "options": {
+        "A": "Correct. Dividing each total by its carbon count gives roughly 38, 27.5, 5 and 0 kJ/mol per CH2, falling steadily with ring size.",
+        "B": "This places cyclobutane first, but its total is slightly lower than cyclopropane's and it is spread over four carbons rather than three, so its per-CH2 figure is clearly smaller.",
+        "C": "This puts cyclopentane ahead of cyclobutane. Cyclopentane puckers to relieve most of its strain and carries only about 5 kJ/mol per CH2 against cyclobutane's 27.5.",
+        "D": "This is the ranking reversed. Cyclohexane is strain-free and cyclopropane the most strained, so it cannot head the list."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A three-membered carbon ring."
   },
   {
     "question_id": "ch04_q13_heat_of_combustion_stability",
@@ -600,12 +607,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relationship between ring strain and the heat of combustion.",
-      "process": "Step 1: Recall that the heat of combustion per CH2 group is a measure of thermodynamic stability. The lower the heat of combustion, the more stable the cycloalkane.\nStep 2: Cyclohexane is non-planar and adopts a chair conformation.\nStep 3: In the chair conformation, C-C-C bond angles are 111.5° (nearly 109.5°), eliminating angle strain, and all adjacent C-H bonds are fully staggered, eliminating torsional strain.",
-      "result": "Cyclohexane has the lowest heat of combustion because it is virtually strain-free."
+      "context": "Heat of combustion per CH2 group is a way of comparing rings of different sizes on equal terms. A ring free of strain releases the least energy per group, since it started from the lowest energy.",
+      "approach": "Step 1: Ask what would make a ring strain-free. Bond angles at the tetrahedral value remove angle strain, and staggered bonds throughout remove torsional strain.\nStep 2: Check whether cyclohexane achieves both. Its chair conformation has C-C-C angles of about 111 degrees, essentially tetrahedral, and every adjacent pair of bonds staggered.\nStep 3: With neither source of strain present, cyclohexane sits at the baseline, which is why its value per CH2 defines the strain-free reference.",
+      "note": "Achieving both at once requires the ring to be non-planar - the chair puckers precisely so that it can hold tetrahedral angles and stagger its bonds simultaneously. A flat six-membered ring would have 120 degree angles and every bond eclipsed, which is far worse.",
+      "options": {
+        "A": "Correct. The chair conformation achieves near-tetrahedral angles and fully staggered bonds at the same time, leaving essentially no strain of either kind.",
+        "B": "Cyclohexane is not planar. Its chair is puckered, and it is precisely that puckering which lets it avoid both angle and torsional strain.",
+        "C": "120 degree angles belong to a planar hexagon, which cyclohexane avoids. Its actual C-C-C angles are close to the tetrahedral 111 degrees.",
+        "D": "Transannular strain is a destabilising interaction across a ring, and in any case cyclohexane is too small to suffer it. Strain never stabilises anything."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -641,13 +654,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the definition and physical origin of torsional strain.",
-      "process": "Step 1: Review the three main components of ring strain: angle strain (deviation from ideal bond angles), torsional strain (eclipsing of bonds on adjacent carbons), and steric strain (spatial crowding of non-bonded atoms).\nStep 2: Identify the strain arising specifically from eclipsed bonds as torsional strain.",
-      "result": "Torsional strain is the strain due to the eclipsing of adjacent bonds."
+      "context": "Three kinds of strain are distinguished in ring chemistry, and each has its own physical origin. Naming them precisely matters because a given ring can suffer from more than one at once.",
+      "approach": "Step 1: Match the description given - bonds on adjacent atoms brought into alignment.\nStep 2: Recall the cause. Aligning filled bonding orbitals on neighbouring carbons brings their electrons into opposition, and the repulsion raises the energy.\nStep 3: That is torsional strain, the same effect that makes eclipsed ethane higher in energy than staggered ethane.",
+      "note": "Torsional strain is about bonds, not atoms - the hydrogens in eclipsed ethane never come close enough to touch. Steric strain, by contrast, requires atoms actually pushed inside their van der Waals radii, which is a separate condition that can occur in staggered arrangements too.",
+      "options": {
+        "A": "Correct. Eclipsing aligns filled bonding orbitals on adjacent carbons, and the resulting electron repulsion is torsional strain.",
+        "B": "Angle strain is distortion of bond angles from the ideal tetrahedral value, which depends on ring size rather than on rotation.",
+        "C": "Steric strain requires non-bonded atoms forced closer than their van der Waals radii allow, which is a different condition from bonds being aligned.",
+        "D": "Transannular strain is crowding between groups on opposite sides of a medium-sized ring, not between adjacent atoms."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-membered carbon ring."
   },
   {
     "question_id": "ch04_q15_baeyer_theory_flaw",
@@ -682,13 +702,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question examines the historical development and limitations of Baeyer's strain theory.",
-      "process": "Step 1: Recall Baeyer's hypothesis: Cycloalkanes are planar polygons.\nStep 2: Under this assumption, cyclopentane would have little angle strain, while cyclohexane (120°) and larger rings would have significant angle strain.\nStep 3: However, rings larger than cyclopropane pucker out of plane to relieve torsional strain, which Baeyer's planar model completely ignored.",
-      "result": "The flaw in Baeyer's theory was the assumption that all rings are planar."
+      "context": "Baeyer's angle strain theory was sound in its central idea - that forcing bond angles away from tetrahedral costs energy - but it rested on a geometric assumption that turns out to be false for all but the smallest rings.",
+      "approach": "Step 1: Identify the assumption. Baeyer calculated internal angles from regular planar polygons, which fixes cyclopentane at 108 degrees and cyclohexane at 120.\nStep 2: Test it against reality. Rings larger than cyclopropane are not planar; they pucker, and puckering changes the angles from the planar values entirely.\nStep 3: Cyclohexane's chair achieves about 111 degrees rather than 120, so it is less strained than cyclopentane rather than more - the opposite of Baeyer's prediction.",
+      "note": "Cyclopropane is the one ring where the assumption holds, since three points necessarily define a plane. That is also why it is the only ring whose strain Baeyer's approach estimates at all well, and it makes a useful check on any theory - the case it gets right shows exactly what it assumed.",
+      "options": {
+        "A": "Correct. Baeyer assumed planar rings, so his angles came from regular polygons. Every ring from cyclobutane upward puckers, which invalidates those angles.",
+        "B": "The tetrahedral angle was well established and Baeyer used 109.5 degrees correctly. His error was in the ring geometry, not in the reference value.",
+        "C": "His estimate for cyclopropane is actually the closest of any, because a three-membered ring genuinely is planar.",
+        "D": "Cycloalkanes are saturated and contain no double bonds. The theory concerned angle strain in saturated rings."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-membered carbon ring."
   },
   {
     "question_id": "ch04_q16_heat_of_combustion_cis_trans",
@@ -723,12 +750,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question relates thermodynamic properties (heat of combustion) to the relative steric stability of cis/trans stereoisomers.",
-      "process": "Step 1: Identify that a higher heat of combustion means the starting compound is less stable (higher in energy).\nStep 2: The cis-isomer is 5 kJ/mol higher in energy than the trans-isomer.\nStep 3: This difference arises because the cis-isomer has two methyl groups pointing to the same face of the rigid cyclopropane ring, causing steric (van der Waals) repulsion. The trans-isomer keeps the methyl groups on opposite faces, minimizing steric clash.",
-      "result": "The cis-isomer has a higher heat of combustion due to steric strain between the cis-methyl groups."
+      "context": "Two stereoisomers of the same ring have identical bond angles and identical numbers of eclipsing interactions, so neither angle nor torsional strain can distinguish them. What differs is how close the substituents sit to one another.",
+      "approach": "Step 1: Compare the values. The cis isomer releases 3293 kJ/mol against the trans isomer's 3288, so cis releases more and therefore starts higher in energy.\nStep 2: Ask what differs structurally. In cis both methyl groups sit on the same face of the ring, adjacent to one another; in trans they are on opposite faces and well separated.\nStep 3: Two methyls crowded on the same face repel, which is steric strain. That extra 5 kJ/mol is the cis isomer's penalty.",
+      "note": "The difference is small in absolute terms - 5 kJ/mol out of nearly 3300 - which is why combustion measurements had to be extremely precise to establish it. Yet the same interaction, scaled up, is what governs substituent preferences on cyclohexane later in this chapter.",
+      "options": {
+        "A": "Correct. Both methyls on the same face are close enough to repel, and that steric strain puts the cis isomer about 5 kJ/mol higher in energy.",
+        "B": "The trans isomer has the lower heat of combustion, so it is the more stable of the two. Its methyls are also further apart, not more strained.",
+        "C": "Both isomers have the same ring geometry and therefore the same torsional strain. If cis were lower in torsional strain it would be the more stable one, which it is not.",
+        "D": "Transannular strain requires a medium-sized ring where groups can reach across the interior. A three-membered ring has no interior to speak of."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -764,12 +797,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the structural conformation of cyclobutane and how it balances different components of ring strain.",
-      "process": "Step 1: If cyclobutane were planar, its internal C-C-C angles would be 90° and all 8 C-H bonds would be eclipsed.\nStep 2: To minimize this severe torsional strain, the molecule adopts a puckered (non-planar) conformation.\nStep 3: Puckering reduces the eclipsing of C-H bonds (dihedral angles become ~25°), but compresses the C-C-C angles to ~88°, which increases angle strain. The final shape is a thermodynamic compromise.",
-      "result": "Cyclobutane puckers to trade off a significant reduction in torsional strain for a minor increase in angle strain."
+      "context": "A ring's shape settles at the compromise that minimises total strain, and the two components can pull in opposite directions. Cyclobutane is the clearest case: relieving one kind of strain costs a little of the other.",
+      "approach": "Step 1: Consider the planar form. A flat four-membered ring would have 90 degree angles and every adjacent C-H pair fully eclipsed.\nStep 2: Consider what puckering does. Folding the ring slightly - about 25 degrees out of plane - rotates the C-H bonds away from full eclipse, relieving torsional strain.\nStep 3: Note the cost. Puckering compresses the internal angles below 90 degrees, adding a little angle strain. The molecule adopts the pucker because the torsional saving outweighs that cost.",
+      "note": "This trade-off is the general principle behind every ring conformation, cyclohexane's chair included. A ring does not minimise angle strain or torsional strain separately; it settles wherever their sum is lowest, which is why predicting shapes from angle strain alone - Baeyer's error - fails.",
+      "options": {
+        "A": "Correct. Puckering rotates the C-H bonds out of full eclipse at the cost of compressing the angles slightly further, and the net effect is stabilising.",
+        "B": "Cyclobutane is not planar. It puckers by roughly 25 degrees, which is what relieves part of its torsional strain.",
+        "C": "The bonds are not staggered even in the puckered form; the pucker only reduces the eclipsing. Substantial torsional strain remains.",
+        "D": "Cyclobutane's angles are near 90 degrees against cyclopentane's near 105, so cyclobutane has considerably more angle strain, not less."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -805,13 +844,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests nomenclature of steric strain specific to medium-sized rings.",
-      "process": "Step 1: Identify that medium rings (C8-C11) have conformations where hydrogen atoms on opposite sides of the ring are forced close to one another.\nStep 2: This steric interaction across a ring is defined as 'transannular' strain (literally 'across the ring').",
-      "result": "The correct term is transannular strain."
+      "context": "Medium-sized rings are large enough to have a genuine interior but too small for the hydrogens pointing inward to avoid one another. That gives them a source of strain that neither small nor large rings share.",
+      "approach": "Step 1: Rule out angle strain. Rings of eight or nine carbons can adopt conformations with near-tetrahedral angles, so that is not the problem.\nStep 2: Look inside the ring. Hydrogens on carbons across the ring from each other point into the same interior space and are forced together.\nStep 3: That crowding across the ring is transannular strain, from the Latin for across the ring.",
+      "note": "It explains a distinctive size dependence: strain falls from cyclopropane to cyclohexane, rises again through the medium rings of about eight to twelve carbons, and falls once more for large rings that are flexible enough to keep their interiors clear.",
+      "options": {
+        "A": "Correct. Transannular means across the ring, and it names exactly this crowding between groups on opposite sides of a medium-sized ring interior.",
+        "B": "Angle strain concerns distorted bond angles. Medium rings can achieve near-tetrahedral angles, so it is not their main difficulty.",
+        "C": "1,3-Diaxial strain is a specific interaction between axial substituents on a cyclohexane chair, not a general medium-ring effect.",
+        "D": "Eclipsing strain is another name for torsional strain, which comes from aligned bonds on adjacent atoms rather than from groups meeting across a ring."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A nine-membered carbon ring."
   },
   {
     "question_id": "ch04_q19_lowest_strain_among_options",
@@ -846,12 +892,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests relative stabilities across a wide range of ring sizes.",
-      "process": "Step 1: Check total ring strain values: Cyclopropane (~115 kJ/mol), Cyclooctane (~41 kJ/mol), Cyclodecane (~50 kJ/mol), Cyclohexane (~0 kJ/mol).\nStep 2: Cyclohexane's chair conformation is exceptionally stable and strain-free. Larger rings cannot achieve complete freedom from strain because of transannular steric interactions.",
-      "result": "Cyclohexane has the lowest total ring strain."
+      "context": "Ring strain does not simply fall as rings get larger. It reaches a minimum at six carbons, rises again through the medium rings, and only falls once more for large flexible rings.",
+      "approach": "Step 1: Take cyclohexane. Its chair achieves tetrahedral angles with every bond staggered, so it is essentially strain-free at zero.\nStep 2: Take the medium rings. Cyclooctane and cyclodecane carry roughly 40 and 50 kJ/mol respectively, mostly transannular crowding between hydrogens across the ring.\nStep 3: Cyclopropane is the most strained of all at about 115 kJ/mol. Cyclohexane is therefore the lowest of the four.",
+      "note": "The non-monotonic pattern is worth remembering because it contradicts the intuition that bigger means more relaxed. Six is a genuinely special case, which is why six-membered rings are so common in nature and why cyclohexane conformational analysis gets a chapter of its own.",
+      "options": {
+        "A": "Correct. Cyclohexane's chair conformation is essentially strain-free, the minimum of the whole series.",
+        "B": "Cyclooctane carries roughly 40 kJ/mol, largely from hydrogens crowding across the ring interior.",
+        "C": "Cyclodecane is more strained still at about 50 kJ/mol, since a ten-membered ring has more inward-pointing hydrogens to accommodate.",
+        "D": "Cyclopropane is the most strained ring of all at about 115 kJ/mol, combining maximum angle strain with enforced eclipsing."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -887,12 +939,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question relates physical ring strain to chemical reactivity and ring-opening reactions.",
-      "process": "Step 1: Recognize that the C-C bonds in cyclopropane are weak and under immense angle strain (60° compared to the tetrahedral 109.5°).\nStep 2: Ring opening releases this 115 kJ/mol of strain energy, acting as a powerful thermodynamic driving force.\nStep 3: Cyclohexane lacks ring strain, so there is no thermodynamic driving force for it to undergo ring-opening hydrogenation under mild conditions.",
-      "result": "The high ring strain in cyclopropane drives its ring-opening reactivity."
+      "context": "Ring strain is stored energy. A reaction that opens a strained ring releases it, which makes the reaction thermodynamically favourable in a way that the same reaction on an unstrained ring is not.",
+      "approach": "Step 1: Compare the starting materials. Cyclopropane carries about 115 kJ/mol of ring strain; cyclohexane carries none.\nStep 2: Consider the products. Both would give an open-chain alkane with no strain, so the strain difference appears directly in the reaction energy.\nStep 3: Opening cyclopropane therefore releases its stored 115 kJ/mol on top of any other energy change, while opening cyclohexane offers no such reward and does not occur under these conditions.",
+      "note": "Cyclopropane's reactivity toward hydrogenation is worth distinguishing from an alkene's. An alkene reacts because it has a pi bond available; cyclopropane has no pi bond and reacts because its sigma bonds are strained and poorly overlapping - the same outcome for a different reason.",
+      "options": {
+        "A": "Correct. Relieving about 115 kJ/mol of stored ring strain makes the ring-opening strongly favourable, where cyclohexane has no strain to release.",
+        "B": "Cyclopropane is saturated, with the formula C3H6 accounted for entirely by the ring. The bent bond description refers to poor sigma overlap, not to a double bond.",
+        "C": "Cyclopropane is the smaller and less hindered of the two. Steric access is not what distinguishes them.",
+        "D": "The carbons are sp3 hybridized. Their C-C bonds do carry increased p character because of the ring geometry, but that is not the same as sp2 hybridization."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -928,13 +986,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the molecular orbital description of the C-C bonds in cyclopropane.",
-      "process": "Step 1: In a regular equilateral triangle, the C-C-C angles are 60°.\nStep 2: If the sp3 orbitals pointed directly at each other, the angle would have to be 109.5°.\nStep 3: The orbitals instead compromise: they point outward at a larger angle (~104°), overlap at an angle, and create 'bent bonds' that are weaker and have more p-character than normal sp3-sp3 sigma bonds.",
-      "result": "Bent bonds result from the inability of hybrid orbitals to overlap directly along the internuclear axis."
+      "context": "A normal sigma bond forms when two hybrid orbitals point directly at each other along the internuclear axis. A three-membered ring makes that impossible, because the 60 degree internal angles are far from what sp3 orbitals can accommodate.",
+      "approach": "Step 1: Note the geometry. The carbons sit at the corners of an equilateral triangle, so the lines joining nuclei meet at 60 degrees.\nStep 2: Note what the orbitals want. sp3 hybrids are directed at about 109.5 degrees to one another and cannot be bent to 60.\nStep 3: The compromise is that the orbitals overlap off-axis, outside the line joining the nuclei. The resulting electron density bulges outward from the ring, which is what bent or banana describes.",
+      "note": "Off-axis overlap is less effective than head-on overlap, so these bonds are weaker and longer than ordinary C-C bonds, and their electron density is unusually exposed on the outside of the ring. That exposure is part of why cyclopropane reacts with electrophiles in ways an ordinary alkane never would.",
+      "options": {
+        "A": "Correct. The 60 degree geometry prevents the sp3 hybrids from pointing at each other, so they overlap off-axis and the electron density bulges outside the ring.",
+        "B": "The carbons remain sp3 hybridized. There is no unhybridized p orbital and no pi bond in cyclopropane.",
+        "C": "The hydrogens point outward, away from the ring, and are far too small to distort the carbon framework. The cause is the ring's own geometry.",
+        "D": "Cyclopropane does not undergo a ring flip - it is rigidly planar. The bent bonds are a consequence of its fixed geometry, not of any conformational change."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A three-membered carbon ring."
   },
   {
     "question_id": "ch04_q22_hybridization_cyclopropane",
@@ -969,12 +1034,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests advanced orbital details of strained rings.",
-      "process": "Step 1: In cyclopropane, the C-C bonds are bent, requiring orbital overlap that utilizes orbitals with greater p-character (close to sp3.5 or sp4) to allow for bending.\nStep 2: Because the carbon uses more p-character for C-C bonding, the remaining orbitals used for C-H bonding must have greater s-character (close to sp2.5).\nStep 3: This explains why C-H bonds in cyclopropane are shorter and more acidic than those in acyclic alkanes.",
-      "result": "Cyclopropane carbons use orbitals with more p-character for C-C bonds and more s-character for C-H bonds."
+      "context": "Hybridization need not be distributed evenly among an atom's four orbitals. When geometry constrains some bonds, an atom can redistribute s and p character between them, keeping the overall sp3 count while making individual bonds differ.",
+      "approach": "Step 1: Establish the baseline. Each cyclopropane carbon forms four sigma bonds and has no lone pairs, so it is sp3 overall.\nStep 2: Consider what the ring demands. The C-C bonds must span 60 degree angles, and orbitals with more p character are directed at smaller angles, so the ring bonds take extra p character.\nStep 3: The s character displaced from those bonds has to go somewhere, so it concentrates in the C-H bonds. Those become shorter and stronger, and their hydrogens more acidic than an ordinary alkane's.",
+      "note": "The consequence is measurable: cyclopropane's C-H bonds behave as though the carbon were closer to sp2, with a coupling constant and an acidity intermediate between an alkane and an alkene. Hybridization is a continuous description rather than a set of four fixed labels.",
+      "options": {
+        "A": "Correct. The carbons remain sp3 overall, but p character concentrates in the strained C-C bonds and s character in the C-H bonds.",
+        "B": "sp2 hybridization would leave an unhybridized p orbital on each carbon and make the compound unsaturated. Cyclopropane is saturated with four sigma bonds per carbon.",
+        "C": "The overlaps are not identical to propane's. Propane's C-C bonds are head-on and unstrained, while cyclopropane's are bent and off-axis.",
+        "D": "Pure p-p overlap would require 90 degree angles between the ring bonds, and the C-H bonds are not sp2. Both descriptions misstate the hybridization."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
