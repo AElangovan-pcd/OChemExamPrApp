@@ -13,7 +13,6 @@ let state = {
     correct: 0,
     attempted: 0
   },
-  activeFeedbackTab: 'context', // 'context', 'process', 'result'
   appMode: 'practice',          // 'practice' or 'mock',
   topicSortMode: 'chapter',     // 'chapter' or 'alpha'
   mockExam: {
@@ -538,14 +537,6 @@ function renderQuestion() {
           <span>${isCorrect ? 'Correct Answer!' : 'Incorrect'}</span>
         </div>
         
-        <div class="feedback-tabs">
-          <button class="feedback-tab ${state.activeFeedbackTab === 'context' ? 'active' : ''}" 
-                  onclick="setFeedbackTab('context')">Context Understanding</button>
-          <button class="feedback-tab ${state.activeFeedbackTab === 'process' ? 'active' : ''}" 
-                  onclick="setFeedbackTab('process')">Pathway & Mechanism</button>
-          <button class="feedback-tab ${state.activeFeedbackTab === 'result' ? 'active' : ''}" 
-                  onclick="setFeedbackTab('result')">Key Result</button>
-        </div>
         
         <div class="feedback-content" id="feedback-content-area">
           ${getFeedbackContent(q.feedback)}
@@ -682,61 +673,34 @@ function formatChemicalText(text) {
 }
 
 // Handle Tab Switching in feedback card
-function setFeedbackTab(tabName) {
-  state.activeFeedbackTab = tabName;
-  
-  // Update UI tabs
-  const tabs = document.querySelectorAll('.feedback-tab');
-  tabs.forEach(tab => {
-    if (tab.getAttribute('onclick').includes(tabName)) {
-      tab.classList.add('active');
-    } else {
-      tab.classList.remove('active');
-    }
-  });
-
-  // Update content
-  const contentArea = document.getElementById('feedback-content-area');
-  if (contentArea) {
-    const q = state.filteredQuestions[state.currentQuestionIndex];
-    contentArea.innerHTML = getFeedbackContent(q.feedback);
-
-    // Re-render KaTeX on tab change
-    if (typeof renderMathInElement !== 'undefined') {
-      renderMathInElement(contentArea, {
-        delimiters: [
-          { left: "$$", right: "$$", display: true },
-          { left: "$", right: "$", display: false }
-        ],
-        throwOnError: false
-      });
-    }
-  }
-}
-
-// Get raw/formatted explanation based on active tab.
-// Two feedback shapes coexist: items authored in Phase 2 carry approach/note/options,
-// and the not-yet-reviewed remainder carries the older process/result. Read whichever
-// is present so the bank renders correctly mid-migration.
+// Render the whole explanation as one continuous flow rather than behind tabs.
+// Two feedback shapes coexist: items authored in Phase 2 carry approach/note, and the
+// not-yet-reviewed remainder carries the older process/result. Read whichever is present.
+// Headings avoid mechanism-specific wording, since much of the bank is nomenclature,
+// structure and conformational analysis.
 function getFeedbackContent(feedback) {
-  if (state.activeFeedbackTab === 'context') {
-    return `<p>${feedback.context || ''}</p>`;
-  } else if (state.activeFeedbackTab === 'process') {
-    const body = feedback.approach || feedback.process || '';
-    const steps = body.split('\n');
-    let html = '<ul style="list-style-position: inside; display: flex; flex-direction: column; gap: 0.65rem;">';
-    steps.forEach(step => {
-      if (step.trim()) {
-        html += `<li style="line-height: 1.6; color: #cbd5e1;">${step}</li>`;
-      }
-    });
-    html += '</ul>';
-    return html;
-  } else {
-    const note = feedback.note || feedback.result || '';
-    const label = feedback.note ? 'Worth knowing' : 'Takeaway';
-    return `<p><strong>${label}:</strong> ${note}</p>`;
-  }
+  if (!feedback) return '';
+  const section = (heading, body) => body
+    ? `<div style="margin-bottom: 1.1rem;">
+         <div style="font-weight: 700; color: var(--text-primary); font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 0.4rem;">${heading}</div>
+         ${body}
+       </div>`
+    : '';
+
+  const steps = (text) => {
+    const parts = String(text).split('\n').filter(s => s.trim());
+    if (parts.length < 2) return `<p style="line-height: 1.7; color: #cbd5e1;">${text}</p>`;
+    return '<ul style="list-style-position: outside; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.55rem;">'
+      + parts.map(s => `<li style="line-height: 1.7; color: #cbd5e1;">${s}</li>`).join('')
+      + '</ul>';
+  };
+
+  return section('The principle', feedback.context
+        ? `<p style="line-height: 1.7; color: #cbd5e1;">${feedback.context}</p>` : '')
+    + section('Working through it', (feedback.approach || feedback.process)
+        ? steps(feedback.approach || feedback.process) : '')
+    + section(feedback.note ? 'Worth knowing' : 'Takeaway', (feedback.note || feedback.result)
+        ? `<p style="line-height: 1.7; color: #cbd5e1;">${feedback.note || feedback.result}</p>` : '');
 }
 
 // Per-option rationales, rendered beside the options themselves rather than behind a
@@ -792,7 +756,6 @@ function handleOptionSelect(optionId) {
 function nextQuestion() {
   if (state.currentQuestionIndex < state.filteredQuestions.length - 1) {
     state.currentQuestionIndex++;
-    state.activeFeedbackTab = 'context'; // Reset active tab
     renderQuestion();
   }
 }
@@ -1623,11 +1586,6 @@ function reviewMockQuestion(idx) {
 
   html += `
       <div class="feedback-panel" style="margin-top: 1.5rem; background: var(--bg-card);">
-        <div class="feedback-tabs">
-          <button class="feedback-tab active" id="review-tab-context" onclick="setReviewFeedbackTab('context', ${idx})">Context Understanding</button>
-          <button class="feedback-tab" id="review-tab-process" onclick="setReviewFeedbackTab('process', ${idx})">Pathway & Mechanism</button>
-          <button class="feedback-tab" id="review-tab-result" onclick="setReviewFeedbackTab('result', ${idx})">Key Result</button>
-        </div>
         
         <div class="feedback-content" id="review-feedback-content-area" style="padding: 1.25rem 0.5rem 0;">
           ${getFeedbackContent(q.feedback)}
@@ -1677,41 +1635,6 @@ function reviewMockQuestion(idx) {
 }
 
 // Tab switcher inside the active question review block
-function setReviewFeedbackTab(tabName, idx) {
-  state.activeFeedbackTab = tabName;
-
-  const tabs = ['context', 'process', 'result'];
-  tabs.forEach(t => {
-    const el = document.getElementById(`review-tab-${t}`);
-    if (el) {
-      if (t === tabName) {
-        el.classList.add('active');
-      } else {
-        el.classList.remove('active');
-      }
-    }
-  });
-
-  const contentArea = document.getElementById('review-feedback-content-area');
-  if (contentArea) {
-    const attempt = state.mockExam.activeReviewAttempt;
-    const q = attempt.questions[idx];
-    contentArea.innerHTML = getFeedbackContent(q.feedback);
-
-    if (typeof renderMathInElement !== 'undefined') {
-      renderMathInElement(contentArea, {
-        delimiters: [
-          { left: "$$", right: "$$", display: true },
-          { left: "$", right: "$", display: false },
-          { left: "\\(", right: "\\)", display: false },
-          { left: "\\[", right: "\\]", display: true }
-        ],
-        throwOnError: false
-      });
-    }
-  }
-}
-
 // Function to view a past mock exam attempt directly from dashboard
 function viewPastMockAttempt(historyIndex) {
   loadMockHistory();

@@ -599,44 +599,6 @@ header {
   color: var(--error-color);
 }
 
-.feedback-tabs {
-  display: flex;
-  border-bottom: 1px solid var(--border-color);
-  gap: 1.5rem;
-}
-
-.feedback-tab {
-  background: none;
-  border: none;
-  color: var(--text-secondary);
-  font-family: inherit;
-  font-size: 0.9rem;
-  font-weight: 600;
-  padding: 0.75rem 0;
-  cursor: pointer;
-  position: relative;
-  transition: var(--transition-smooth);
-}
-
-.feedback-tab:hover {
-  color: var(--text-primary);
-}
-
-.feedback-tab.active {
-  color: var(--accent-color);
-}
-
-.feedback-tab.active::after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--accent-gradient);
-  border-radius: 2px;
-}
-
 .feedback-content {
   font-size: 0.95rem;
   line-height: 1.7;
