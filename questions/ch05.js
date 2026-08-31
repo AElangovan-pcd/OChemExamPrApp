@@ -956,82 +956,95 @@ var CH05_QUESTIONS = [
     "question_id": "ch05_q21_rs_simple_butanol",
     "topic": "R/S Assignment",
     "difficulty_level": "Easy",
-    "question_text": "Determine the configuration of the stereocenter in (S)-2-butanol using the Cahn-Ingold-Prelog rules.",
+    "question_text": "Assign the configuration at the stereocentre of the alcohol shown, and give its full IUPAC name.",
     "question_smiles": "CC[C@@H](O)C",
     "options": [
       {
         "option_id": "A",
-        "text": "(S)",
+        "text": "(S)-Butan-2-ol",
         "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "(R)",
+        "text": "(R)-Butan-2-ol",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "(E)",
+        "text": "(S)-Butan-3-ol",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "(Z)",
+        "text": "(R)-Butan-3-ol",
         "smiles": "",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests basic R/S assignment on a standard secondary alcohol.",
-      "process": "Step 1: Identify the four groups attached to the C2 stereocenter: $-OH$, $-CH_2CH_3$ (ethyl), $-CH_3$ (methyl), and $-H$.\nStep 2: Assign priorities based on atomic numbers: $-OH$ (priority 1, O=8), $-CH_2CH_3$ (priority 2, C bonded to C,H,H), $-CH_3$ (priority 3, C bonded to H,H,H), and $-H$ (priority 4, H=1).\nStep 3: With the lowest priority group ($-H$) pointing away (on a dash in `CC[C@@H](O)C`), trace the path from 1 -> 2 -> 3. The direction is counter-clockwise, which corresponds to (S) configuration.",
-      "result": "The configuration is (S) because the priority path 1 ($-OH$) -> 2 ($-CH_2CH_3$) -> 3 ($-CH_3$) runs counter-clockwise with H pointing away."
+      "context": "A Cahn-Ingold-Prelog assignment is four moves in a fixed order: rank the four groups, find where the lowest-ranked one is pointing, trace the circle from priority one to three, and correct that reading if the lowest priority is facing you rather than away.",
+      "approach": "Step 1: Rank at the carbon bearing the hydroxyl. Oxygen outranks every carbon, so the hydroxyl is first. Between the ethyl and the methyl, compare their first carbons: the ethyl's carries (C,H,H) and the methyl's carries (H,H,H), so ethyl beats methyl. Hydrogen is last. The order is OH > CH2CH3 > CH3 > H.\nStep 2: Locate the hydrogen. The hydroxyl is drawn on a hashed bond, and the two carbon chains lie in the plane of the page, which leaves the hydrogen pointing out of the page toward you.\nStep 3: Trace and correct. Reading OH at the upper left, then the ethyl to the right, then the methyl below runs clockwise on the page. Because the hydrogen is toward you rather than away, that reading is inverted: the centre is (S). Numbering the four-carbon chain from the nearer end puts the hydroxyl at C2, so the compound is (S)-butan-2-ol.",
+      "note": "Forgetting the final correction is the single commonest error in this whole chapter, and it produces exactly the wrong answer rather than a confused one. Write down where the lowest priority points before you trace the circle, not after - deciding afterwards is how a student talks themselves into whichever descriptor they were already expecting. The correction rule also needs the lowest priority to be pointing squarely toward you or away; a group drawn in the plane of the page is a different case entirely.",
+      "options": {
+        "A": "Correct. The priorities run OH > ethyl > methyl > H, the circle reads clockwise on the page with the hydrogen facing the viewer, and inverting that gives (S) at C2.",
+        "B": "This is the reading taken straight off the page without correcting for the hydrogen pointing toward the viewer - the commonest single error in CIP assignment.",
+        "C": "The right molecule under the wrong name. Numbering from the far end of the chain puts the hydroxyl at C3, but the rules require the lower locant, and 2 beats 3.",
+        "D": "Both errors at once: the numbering runs from the wrong end and the reading was not corrected for the hydrogen facing the viewer."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-carbon chain drawn as a zig-zag, with a hydroxyl group on the second carbon on a hashed bond receding from the viewer, a methyl below that carbon, and the remaining two carbons running off to the right."
   },
   {
     "question_id": "ch05_q22_rs_isotope_deuterium",
     "topic": "R/S Assignment",
     "difficulty_level": "Medium",
-    "question_text": "Assign the R/S configuration to the chiral center in the deuterated compound shown below: (R)-1-deuterioethanol.",
-    "question_smiles": "O[C@@H]([2H])C",
+    "question_text": "1-Deuterioethanol, CH3-CHD-OH, is chiral at C1. Under the Cahn-Ingold-Prelog rules, what is the priority order of the four groups at that carbon, from highest to lowest?",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
-        "text": "(R)",
+        "text": "-OH > -CH3 > -D > -H",
         "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "(S)",
+        "text": "-OH > -D > -CH3 > -H",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "Achiral",
+        "text": "-OH > -CH3 > -H > -D",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "(E)",
+        "text": "-D > -OH > -CH3 > -H",
         "smiles": "",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests priority rules for isotopes under the Cahn-Ingold-Prelog system.",
-      "process": "Step 1: The stereocenter has four groups: $-OH$, $-CH_3$, $-D$ (deuterium), and $-H$ (hydrogen).\nStep 2: Assign priorities. Oxygen has the highest atomic number (priority 1). Carbon (priority 2) beats deuterium and hydrogen. For the isotopes deuterium ($^2H$) and hydrogen ($^1H$), priority is determined by atomic mass: Deuterium is priority 3, and Hydrogen is priority 4.\nStep 3: Trace the path 1 ($-OH$) -> 2 ($-CH_3$) -> 3 ($-D$). In the (R) configuration with H in the back, the path runs clockwise.",
-      "result": "The configuration is (R) because isotopes of the same element are prioritized by mass number (D > H), making D priority 3 and H priority 4."
+      "context": "Isotopes are what make this carbon a stereocentre at all - swap the deuterium back for an ordinary hydrogen and the molecule is plain ethanol, with two identical hydrogens and no handedness. Ranking them correctly means knowing exactly where mass number enters the CIP rules.",
+      "approach": "Step 1: Compare the atoms bonded directly to C1 by atomic number, which is always the first criterion. Oxygen is 8 and carbon is 6, so the hydroxyl leads and the methyl follows.\nStep 2: Turn to the deuterium and the hydrogen. Both are atomic number 1, so this criterion cannot separate them and the comparison passes to the next rule down.\nStep 3: Mass number breaks the tie, and the heavier isotope wins: deuterium at mass 2 outranks protium at mass 1. Assembling everything gives OH > CH3 > D > H. Note where the deuterium landed - below carbon, because mass number is consulted only after atomic number has already failed.",
+      "note": "The tie-breakers form a strict ladder: atomic number first, then mass number for atoms of the same element, and finally - only for a pseudoasymmetric centre flanked by two arms identical except in configuration - the R/S descriptors themselves. Nothing lower on the ladder is ever allowed to overturn something higher. This same deuterium trick is how prochirality is demonstrated in the laboratory: label one of a CH2 group's two hydrogens and the enzyme's ability to tell them apart becomes visible.",
+      "options": {
+        "A": "Correct. Atomic number settles oxygen above carbon, and mass number then breaks the deuterium-hydrogen tie in favour of the heavier isotope.",
+        "B": "This promotes deuterium above the methyl carbon. Mass number is only a tie-breaker between atoms of the same element; it never competes with a difference in atomic number, and carbon at 6 outranks any hydrogen isotope at 1.",
+        "C": "The right instinct that the two isotopes must be ranked, applied in the wrong direction. The heavier isotope takes the higher priority, so deuterium sits above protium.",
+        "D": "Putting deuterium at the very top inverts the ladder completely. Atomic number is consulted first and oxygen wins it outright; mass number never gets a hearing against a different element."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1039,7 +1052,7 @@ var CH05_QUESTIONS = [
     "topic": "R/S Assignment",
     "difficulty_level": "Hard",
     "question_text": "Under Cahn-Ingold-Prelog rules, what is the correct priority order (highest to lowest) for the following groups?\n-C≡CH, -CH=CH2, -CH(CH3)2, -CH2CH2CH3",
-    "question_smiles": "C[C@@H](C#C)C=C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1067,12 +1080,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests how double and triple bonds are treated when assigning CIP priorities.",
-      "process": "Step 1: Convert multiple bonds to equivalent single bonds. A triple bond carbon $-C\\equiv CH$ is treated as bonded to three carbons: (C, C, C). A double bond carbon $-CH=CH_2$ is treated as bonded to two carbons and one hydrogen: (C, C, H).\nStep 2: Compare C1 atoms: $-C\\equiv CH$ is (C,C,C) vs. $-CH=CH_2$ which is (C,C,H) vs. $-CH(CH_3)_2$ which is (C,C,H) vs. $-CH_2CH_2CH_3$ which is (C,H,H).\nStep 3: Comparing: (C,C,C) wins immediately, so $-C\\equiv CH$ is priority 1. $-CH_2CH_2CH_3$ is (C,H,H), so it is priority 4.\nStep 4: Now compare $-CH=CH_2$ (vinyl) and $-CH(CH_3)_2$ (isopropyl). Both have C1 bonded to (C,C,H). Go to the next atoms: for vinyl, the next carbon is double bonded, treated as bonded to (C,H,H). For isopropyl, the methyl carbons are bonded to (H,H,H). Since (C,H,H) beats (H,H,H), vinyl has higher priority than isopropyl. Thus, priority is $-C\\equiv CH > -CH=CH_2 > -CH(CH_3)_2 > -CH_2CH_2CH_3$.",
-      "result": "The priority order is -C≡CH > -CH=CH2 > -CH(CH3)2 > -CH2CH2CH3. Double and triple bonds are treated as multiple single bonds to phantom carbons."
+      "context": "Every one of these four groups begins with a carbon, so the first atom decides nothing. Multiple bonds are handled by duplication - a doubly bonded partner is counted twice and a triply bonded partner three times - which turns the comparison of unsaturated groups into an ordinary set comparison.",
+      "approach": "Step 1: Write the substituent set on each group's first carbon. The ethynyl carbon is bonded to the real second carbon plus two duplicates of it, giving (C,C,C). The vinyl carbon has a real neighbour, one duplicate and a hydrogen, giving (C,C,H). The isopropyl carbon has two real methyls and a hydrogen, also (C,C,H). The propyl carbon has one carbon and two hydrogens, (C,H,H).\nStep 2: Place what is already separated. (C,C,C) beats everything, so ethynyl leads; (C,H,H) trails everything, so propyl is last.\nStep 3: Break the tie between vinyl and isopropyl one sphere further out. Vinyl's highest-ranked branch is its real terminal carbon, which carries a duplicate carbon and two hydrogens - (C,H,H). Isopropyl's highest-ranked branch is a methyl, carrying (H,H,H). Carbon beats hydrogen at the first point of difference, so vinyl outranks isopropyl.",
+      "note": "Duplicate atoms are phantoms: they have the right atomic number but no substituents of their own, so they carry a branch through one round of comparison and then lose the next. That is why an unsaturated group can win a tie at the first sphere and lose one at the second. Vinyl beating isopropyl is the case worth committing to memory, because the intuition that the bulkier, more branched group ranks higher points the wrong way here.",
+      "options": {
+        "A": "Correct. Ethynyl's (C,C,C) leads, propyl's (C,H,H) trails, and the (C,C,H) tie between vinyl and isopropyl breaks in vinyl's favour one sphere out.",
+        "B": "This puts isopropyl above vinyl, which is the intuitive answer from counting real carbons rather than duplicated ones. Exploring outward, vinyl's terminal carbon carries (C,H,H) against isopropyl's methyl at (H,H,H).",
+        "C": "Ethynyl cannot be second. Its triple bond duplicates the partner carbon twice, giving (C,C,C) at the first sphere, which no (C,C,H) group can match.",
+        "D": "Isopropyl has (C,C,H) at its first carbon and so cannot outrank ethynyl's (C,C,C). Branching adds real neighbours but never enough to beat a triple bond's duplicates."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1108,54 +1127,68 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests a famous anomaly in biochem/organic stereochemistry: why cysteine is R while other L-amino acids are S.",
-      "process": "Step 1: Identify the four groups on the alpha-carbon of L-cysteine: $-NH_2$, $-COOH$, $-CH_2SH$, and $-H$.\nStep 2: Assign priorities: Nitrogen (atomic number 7) is priority 1. Hydrogen is priority 4.\nStep 3: Compare $-COOH$ and $-CH_2SH$ at C-alpha. The carbon of $-COOH$ is bonded to (O, O, O) (treating the carbonyl as two single bonds). The C-beta of $-CH_2SH$ is bonded to (S, H, H). Since sulfur (atomic number 16) has a higher atomic number than oxygen (atomic number 8), the $-CH_2SH$ group has higher priority (priority 2) than the $-COOH$ group (priority 3). For other amino acids, the side chain carbon is bonded to (C,H,H) or (H,H,H), making $-COOH$ priority 2 and side chain priority 3.",
-      "result": "L-Cysteine is (R) because the side chain carbon is bonded to sulfur, which has a higher atomic number (16) than oxygen (8), prioritizing -CH2SH over -COOH."
+      "context": "The (S) descriptor shared by nineteen amino acids is not a fact about their biology; it is the output of a CIP calculation that happens to come out the same way for nineteen different side chains. Change what the side chain is made of and the calculation can reorder.",
+      "approach": "Step 1: Rank at the alpha carbon of a typical amino acid. Nitrogen outranks carbon, so the amino group is first. Between the carboxyl and the side chain, both start with carbon, so compare their substituent sets: the carboxyl carbon has (O,O,O) after duplicating the carbonyl oxygen, while a side chain like serine's CH2OH has (O,H,H). The carboxyl wins, and the L arrangement reads (S).\nStep 2: Repeat for cysteine, whose side chain is CH2SH. Its first carbon carries (S,H,H). Compare that with the carboxyl's (O,O,O), highest member first: sulfur is atomic number 16 against oxygen's 8, so the side chain wins on the very first comparison.\nStep 3: The order becomes NH2 > CH2SH > COOH > H. Priorities two and three have exchanged places relative to every other amino acid, and exchanging two priorities flips the descriptor - so the same spatial arrangement now reads (R).",
+      "note": "Nothing about the molecule changed; only the bookkeeping did. L-Cysteine has the identical three-dimensional arrangement at its alpha carbon that L-serine has, and the descriptors differ purely because sulfur outranks oxygen. This is the sharpest argument for keeping D/L and R/S apart: D/L records a spatial relationship and stays constant across the whole set of amino acids, while R/S is recomputed from first principles for every structure and can swing on one atom.",
+      "options": {
+        "A": "Correct. Sulfur at atomic number 16 outranks the carboxyl's oxygens at 8, so the side chain takes priority two and the descriptor flips without the geometry changing.",
+        "B": "L-Cysteine is an L amino acid like the rest. Its D/L assignment is unchanged; only the CIP descriptor differs, which is exactly why the two systems are not interchangeable.",
+        "C": "Protonating the nitrogen would not help. Nitrogen already holds priority one in every amino acid, and adding a proton to it changes neither its atomic number nor its rank.",
+        "D": "The carboxyl carbon carries (O,O,O) and a methyl carries (H,H,H), so the carboxyl outranks a methyl comfortably. What beats it here is sulfur, not a plain alkyl group."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon carrying a carboxylic acid written as HO-C=O on its left, an amino group on a bold wedge pointing toward the viewer, and a short side chain running to the lower right and ending in S-H."
   },
   {
     "question_id": "ch05_q25_rs_3_methylcyclohexene",
     "topic": "R/S Assignment",
     "difficulty_level": "Medium",
-    "question_text": "Assign the R/S configuration to the stereocenter (C3) in (R)-3-methylcyclohexene.",
+    "question_text": "Assign the configuration at the stereocentre of the cyclohexene shown, and give its full IUPAC name.",
     "question_smiles": "C1[C@@H](C)C=CCC1",
     "options": [
       {
         "option_id": "A",
-        "text": "(R)",
+        "text": "(R)-3-Methylcyclohexene",
         "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "(S)",
+        "text": "(S)-3-Methylcyclohexene",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "(E)",
+        "text": "(R)-6-Methylcyclohexene",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "(Z)",
+        "text": "(S)-6-Methylcyclohexene",
         "smiles": "",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests R/S assignment on a stereocenter within a cycloalkene ring system.",
-      "process": "Step 1: Identify the groups attached to C3: the methyl group ($-CH_3$), hydrogen ($-H$), C2 (part of the double bond), and C4 (part of the ring).\nStep 2: Assign priorities. C2 is an $sp^2$ carbon double-bonded to C1, so it is treated as bonded to (C,C,H). C4 is an $sp^3$ carbon bonded to C5, H, H, so it is treated as (C,H,H).\nStep 3: Comparing C2 and C4: (C,C,H) beats (C,H,H), so C2 has priority 1. C4 has priority 2. The methyl group ($-CH_3$) is bonded to (H,H,H), so it is priority 3. Hydrogen is priority 4.\nStep 4: Looking at `C1[C@@H](C)C=CCC1` (with the methyl group on a wedge, meaning H is in the back on a dash), tracing from C2 (1) -> C4 (2) -> Methyl (3) runs clockwise, which is (R).",
-      "result": "C3 of the structure shown has the (R) configuration because the double-bonded C2 path has higher priority than the sp3 C4 path."
+      "context": "A stereocentre inside a ring is ranked the same way as any other, except that two of its four groups are the two arcs of the ring itself. Those arcs have to be walked outward from the stereocentre until they differ.",
+      "approach": "Step 1: Identify the four groups at the substituted ring carbon: the ring carbon belonging to the double bond, the ring carbon on the other side, the methyl, and a hydrogen.\nStep 2: Walk the two ring arcs one atom out. The doubly bonded neighbour has its partner duplicated, so it carries (C,C,H); the saturated neighbour on the other side carries (C,H,H). The alkene arc therefore outranks the saturated arc, the methyl at (H,H,H) comes third, and hydrogen is last.\nStep 3: The methyl is drawn on a bold wedge, so the hydrogen at that carbon points away from the viewer and the circle can be read directly off the page without correction. It runs clockwise, so the centre is (R). Numbering the ring so the double bond takes C1 and C2 and the substituent gets the lowest possible locant puts the methyl at C3.",
+      "note": "The ring gives the numbering only one degree of freedom worth arguing about. The double bond must span C1 and C2, which fixes the pair, but either alkene carbon may be C1 - and the two choices send the numbering in opposite directions round the ring, putting the methyl at C3 one way and C6 the other. The lowest-locant rule settles it, and this is where a ring differs from a chain: the constraint comes from the double bond first, and the substituent only breaks the remaining tie.",
+      "options": {
+        "A": "Correct. The alkene arc outranks the saturated arc, the methyl sits on a wedge so no correction is needed, the circle reads clockwise, and the lowest locant puts the methyl at C3.",
+        "B": "This is the reading obtained by reversing the circle unnecessarily. The correction applies only when the lowest-priority hydrogen faces the viewer, and here the methyl's wedge puts that hydrogen at the back.",
+        "C": "The right molecule under the wrong name. Numbering round the ring in the other direction reaches the methyl at C6, but C3 is available and the lower locant is required.",
+        "D": "Both errors together: the ring is numbered in the wrong direction and the circle is reversed when it should have been read as drawn."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring containing one carbon-carbon double bond, with a methyl group on the ring carbon immediately next to that double bond, drawn on a bold wedge pointing toward the viewer."
   },
   {
     "question_id": "ch05_q26_rs_glyceraldehyde",
@@ -1190,13 +1223,20 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests configuration assignment for the reference monosaccharide glyceraldehyde.",
-      "process": "Step 1: The chiral center C2 of glyceraldehyde is bonded to $-OH$, $-CHO$ (aldehyde), $-CH_2OH$ (hydroxymethyl), and $-H$.\nStep 2: Assign priorities: $-OH$ is priority 1. $-CHO$ carbon is bonded to (O,O,H). $-CH_2OH$ carbon is bonded to (O,H,H). Comparing (O,O,H) to (O,H,H), $-CHO$ is priority 2, and $-CH_2OH$ is priority 3. $-H$ is priority 4.\nStep 3: For D-glyceraldehyde, when drawn in standard Fischer projection, $-OH$ is on the right, $-H$ is on the left, $-CHO$ is at the top, and $-CH_2OH$ is at the bottom. This translates to the (R) configuration.",
-      "result": "D-Glyceraldehyde has the (R) configuration because the aldehyde carbon (-CHO) has priority over the hydroxymethyl carbon (-CH2OH)."
+      "context": "D/L and R/S answer different questions and are computed differently. The D label records how a molecule's arrangement compares with a reference compound; the R/S descriptor is worked out from atomic numbers with no reference to anything else, so converting between them means doing the full analysis.",
+      "approach": "Step 1: Rank the four groups at C2. The hydroxyl is oxygen and takes priority one. The other two carbons both start with carbon, so compare their sets: the aldehyde carbon carries (O,O,H) once the carbonyl oxygen is duplicated, and the CH2OH carbon carries (O,H,H). They tie on the first member and part on the second, where oxygen beats hydrogen, so CHO outranks CH2OH. The hydrogen is last.\nStep 2: The order is OH > CHO > CH2OH > H.\nStep 3: The drawing puts the hydroxyl on a bold wedge, so the hydrogen at C2 points away from the viewer and the circle is read straight off the page with no correction. It runs clockwise, so D-glyceraldehyde is (R).",
+      "note": "That D and R coincide here is a property of this one molecule, not a conversion rule. Glyceraldehyde is the reference against which every other D/L assignment is made, so its own labels line up by construction - and they come apart elsewhere. L-Cysteine is (R), and among the sugars, D-fructose is levorotatory. Three independent labels, three independent determinations.",
+      "options": {
+        "A": "Correct. The priorities run OH > CHO > CH2OH > H, the hydroxyl's wedge puts the hydrogen at the back, and the circle read directly off the page is clockwise.",
+        "B": "This is the answer obtained by ranking CH2OH above CHO, or by reversing the circle when no reversal was called for. The aldehyde carbon's duplicated oxygen gives it (O,O,H) against the alcohol carbon's (O,H,H).",
+        "C": "D is not a Cahn-Ingold-Prelog descriptor at all. It records the configuration relative to a reference compound and says nothing directly about the priority order at this carbon.",
+        "D": "L is the other half of the same reference system, and it is in any case the wrong half - this molecule is the D enantiomer. Neither label answers a question about R or S."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A three-carbon chain with an aldehyde group at one end and a CH2OH at the other; the middle carbon carries a hydroxyl group on a bold wedge pointing toward the viewer."
   },
   {
     "question_id": "ch05_q27_rs_wedge_h",
@@ -1231,61 +1271,75 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests how to handle a chiral center where the lowest priority group is pointing towards the viewer.",
-      "process": "Step 1: The Cahn-Ingold-Prelog system requires the lowest priority group (4) to point away from the viewer (on a dash).\nStep 2: If group 4 is pointing towards the viewer (on a wedge), the apparent configuration obtained by tracing 1 -> 2 -> 3 must be reversed.\nStep 3: The apparent direction is clockwise (which would normally be R). Since H is on a wedge, reverse this result to get (S).",
-      "result": "The configuration is (S) because the lowest priority group (-H) is on a wedge, meaning the clockwise apparent rotation must be inverted."
+      "context": "The rule that a clockwise circle means (R) carries a hidden condition: it holds only when the lowest-priority group is pointing directly away from you. Everything the question supplies is designed to test whether that condition gets checked.",
+      "approach": "Step 1: Note where priority four is before doing anything else. The hydrogen is stated to be on a wedge, pointing out of the page toward the viewer - the exact opposite of the orientation the rule assumes.\nStep 2: Read the circle as given. Tracing chlorine to fluorine to methyl runs clockwise, which would be the answer directly if the hydrogen were at the back.\nStep 3: Apply the correction. Viewing a tetrahedral centre from the side the lowest-priority group occupies reverses the apparent sense of rotation, so the clockwise reading corresponds to counter-clockwise from the reference direction. The centre is (S).",
+      "note": "The correction is nothing more mysterious than looking at the same object from the other side, and if the mnemonic ever feels unreliable a physical model settles it in seconds where argument does not. Note also what the rule requires: the lowest priority must be squarely toward you or squarely away. A group drawn flat in the plane of the page satisfies neither condition, and no simple reversal repairs it.",
+      "options": {
+        "A": "Correct. The circle reads clockwise, but it is being viewed from the side the hydrogen occupies, so the reading reverses and the centre is (S).",
+        "B": "This is the circle taken at face value. Clockwise means (R) only when the lowest-priority group points away from the viewer, and here it is stated to point toward you.",
+        "C": "The carbon carries a chlorine, a fluorine, a methyl and a hydrogen - four different groups - so it is a genuine stereocentre and the compound is chiral.",
+        "D": "E and Z describe the arrangement about a double bond. This carbon is tetrahedral and singly bonded throughout, so those labels do not apply to it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A two-carbon fragment: a methyl group on the left joined to a carbon that carries a chlorine on a hashed bond receding from the viewer and a fluorine on a bold wedge coming toward the viewer."
   },
   {
     "question_id": "ch05_q28_rs_two_centers_assignment",
     "topic": "R/S Assignment",
     "difficulty_level": "Hard",
-    "question_text": "Identify the IUPAC name, including stereochemical descriptors, for the compound represented by the SMILES `C[C@@H](Br)[C@H](Cl)C`.",
-    "question_smiles": "",
+    "question_text": "Give the full IUPAC name, including stereochemical descriptors, for the compound shown.",
+    "question_smiles": "C[C@@H](Br)[C@H](Cl)C",
     "options": [
       {
         "option_id": "A",
-        "text": "(2R,3S)-2-bromo-3-chlorobutane",
-        "smiles": "C[C@@H](Br)[C@H](Cl)C",
-        "is_correct": true
+        "text": "(2R,3S)-2-Bromo-3-chlorobutane",
+        "smiles": "",
+        "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "(2S,3R)-2-bromo-3-chlorobutane",
-        "smiles": "C[C@H](Br)[C@@H](Cl)C",
+        "text": "(2S,3R)-2-Bromo-3-chlorobutane",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "(2R,3R)-2-bromo-3-chlorobutane",
-        "smiles": "C[C@@H](Br)[C@@H](Cl)C",
-        "is_correct": false
+        "text": "(2R,3R)-2-Bromo-3-chlorobutane",
+        "smiles": "",
+        "is_correct": true
       },
       {
         "option_id": "D",
-        "text": "(2S,3S)-2-bromo-3-chlorobutane",
-        "smiles": "C[C@H](Br)[C@H](Cl)C",
+        "text": "(2S,3S)-2-Bromo-3-chlorobutane",
+        "smiles": "",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests assignment of R/S configuration to multiple stereocenters in a single molecule.",
-      "process": "Step 1: Number the chain to give substituents the lowest possible locants: C2 gets Br and C3 gets Cl (2-bromo-3-chlorobutane).\nStep 2: Assign C2 configuration. Groups are $-Br$ (1), C3 (2), $-CH_3$ (3), $-H$ (4). With H in the back, the path from $-Br$ (1) -> C3 (2) -> $-CH_3$ (3) is clockwise, which is (2R).\nStep 3: Assign C3 configuration. Groups are $-Cl$ (1), C2 (2), $-CH_3$ (3), $-H$ (4). In `C[C@@H](Br)[C@H](Cl)C`, C3 has Cl on a dash or wedge. Tracing 1 -> 2 -> 3 counter-clockwise with H in the back gives (3S).",
-      "result": "The IUPAC name of the structure is (2R,3S)-2-bromo-3-chlorobutane."
+      "context": "Naming a stereoisomer is two jobs stacked on one another: settle the constitution and its numbering first, then assign each stereocentre on its own. The descriptors cannot be attached to locants that have not been fixed.",
+      "approach": "Step 1: Number the chain. Four carbons with a halogen on each interior carbon gives the locant set 2,3 from either end, so that tie is broken by giving the lower locant to the substituent cited first alphabetically. Bromo precedes chloro, so the bromine takes C2 and the chlorine C3.\nStep 2: Assign C2. Its groups rank bromine first, then C3 - which carries a chlorine and so outranks a plain methyl - then the methyl, then hydrogen. The bromine is drawn on a hashed bond, which leaves the hydrogen pointing toward the viewer, so the circle read off the page must be reversed. That centre is R.\nStep 3: Assign C3 independently. Its groups rank chlorine first, then C2 - which carries a bromine - then the methyl, then hydrogen. Here the chlorine sits on a bold wedge, the hydrogen points away, and the circle is read directly. That centre is R as well, so the compound is (2R,3R)-2-bromo-3-chlorobutane.",
+      "note": "Two centres coming out with the same letter is a coincidence of two separate calculations, not a symmetry of the molecule - at C2 the highest priority is a bromine and at C3 it is a chlorine, and the circles are read in opposite ways because one halogen is wedged and the other hashed. It follows that (2R,3S) is not this compound's mirror image but a diastereomer of it, differing at one centre only; the mirror image is (2S,3S).",
+      "options": {
+        "A": "This differs from the drawn compound at C3 only, which makes it a diastereomer rather than a misnaming of the same substance. The chlorine's bold wedge puts the hydrogen at the back, and the circle read directly gives R, not S.",
+        "B": "Both descriptors are wrong, and the pair (2S,3R) is a diastereomer of the compound shown - it is the mirror image of option A, not of the drawn structure.",
+        "C": "Correct. Bromine takes C2 on the alphabetical tie-break, and both centres work out as R once the hashed bromine bond is corrected for and the wedged chlorine bond is not.",
+        "D": "This is the mirror image of the drawn compound - the enantiomer, obtained by inverting both centres. It arises from correcting the circle at the wedged centre as well as the hashed one."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-carbon zig-zag chain in which one interior carbon carries a chlorine on a bold wedge pointing toward the viewer, and the carbon beside it carries a bromine on a hashed bond receding from the viewer."
   },
   {
     "question_id": "ch05_q29_rs_group_four_in_plane",
     "topic": "R/S Assignment",
     "difficulty_level": "Hard",
     "question_text": "If the lowest priority group (4) at a stereocenter lies in the plane of the page, what is the most reliable method to assign its R/S configuration?",
-    "question_smiles": "CC[C@H](C)O",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1313,12 +1367,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests 3D manipulation techniques for stereocenters, specifically handling groups in the plane.",
-      "process": "Step 1: Swapping any two groups on a stereocenter inverts the configuration. Swapping a second pair inverts it again, returning it to the original configuration.\nStep 2: To keep the stereocenter intact, swap group 4 with the group currently in the back (on the dash). Then swap the remaining two groups (double swap).\nStep 3: Now, since group 4 is in the back, assign the configuration directly. This avoids spatial rotation mistakes.",
-      "result": "A double swap of substituents is the most reliable method because it places group 4 in the back without altering the configuration."
+      "context": "The wedge-and-dash reading rule assumes you are sighting down the bond to the lowest-priority group. When that group lies flat in the plane of the page it is neither toward you nor away, so the rule has nothing to say until the drawing is re-oriented.",
+      "approach": "Step 1: Start from the one fact that makes any repair possible - exchanging any two groups at a tetrahedral centre inverts its configuration, turning the drawing into a drawing of the enantiomer.\nStep 2: Exchange twice rather than once. Two inversions cancel, so a pair of swaps chosen to move the lowest-priority group into the rear position leaves you with a picture of the same compound, now in the orientation the rule expects.\nStep 3: Read that repaired picture directly and stop. No correction is applied at the end, because the configuration was never altered - which is what makes this route hard to get wrong.",
+      "note": "The single-swap route is also legitimate, but it carries two conditions the double swap does not: the swap has to land the lowest-priority group at the rear, and the final answer has to be inverted afterwards. Swapping specifically with the highest-priority group guarantees neither - if that group was itself drawn in the plane, the lowest priority simply moves to another in-plane position and nothing has been gained.",
+      "options": {
+        "A": "Correct. Two exchanges return the original configuration, so the redrawn structure is the same compound in a readable orientation and its circle can be traced without any further correction.",
+        "B": "Reading directly is only valid with the lowest priority pointing away from the viewer. In the plane of the page it faces neither side, and the circle traced on paper bears no fixed relationship to the real configuration.",
+        "C": "A single exchange does invert the configuration, so an inversion at the end would be needed - but swapping with the highest-priority group does not reliably move the lowest priority to the rear, and if it stays in the plane there is still nothing to read.",
+        "D": "Where the highest-priority group is drawn carries no information by itself. The descriptor depends on the sense of rotation through all of priorities one, two and three, not on the placement of any single one of them."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1326,7 +1386,7 @@ var CH05_QUESTIONS = [
     "topic": "R/S Assignment",
     "difficulty_level": "Medium",
     "question_text": "Using Cahn-Ingold-Prelog rules, what is the priority order (highest to lowest) of the following carbonyl and carboxyl derivatives?\n-COOCH3, -COOH, -CHO, -CH2OH",
-    "question_smiles": "CC(C)OC(=O)C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1354,12 +1414,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests CIP priority determination when multiple oxygenated carbon functional groups are compared.",
-      "process": "Step 1: Analyze C1 of each group.\n- $-COOCH_3$ and $-COOH$ are carbonyl carbons bonded to a double bond O and a single bond O. They are treated as bonded to (O, O, O).\n- $-CHO$ (aldehyde) is a carbonyl carbon double bonded to O and single bonded to H. It is treated as bonded to (O, O, H).\n- $-CH_2OH$ is an $sp^3$ carbon bonded to (O, H, H).\nStep 2: Compare $(O, O, O)$ groups ($-COOCH_3$ vs $-COOH$) with $(O, O, H)$ ($-CHO$) and $(O, H, H)$ ($-CH_2OH$). Clearly, $-COOCH_3$ and $-COOH$ have higher priority than $-CHO$, which is higher than $-CH_2OH$.\nStep 3: Compare $-COOCH_3$ and $-COOH$. Go to the next atom: for $-COOCH_3$, it is Carbon (atomic number 6). For $-COOH$, it is Hydrogen (atomic number 1). Since Carbon beats Hydrogen, $-COOCH_3$ is priority 1 and $-COOH$ is priority 2.",
-      "result": "The priority order is -COOCH3 > -COOH > -CHO > -CH2OH."
+      "context": "All four of these groups begin with a carbon, so the first atom separates nothing. The ranking is decided entirely by what each of those carbons carries, and the duplicate atoms generated by the carbonyl double bonds do most of the work.",
+      "approach": "Step 1: Write out each first carbon's substituent set, counting a doubly bonded oxygen twice. The ester carbon of -COOCH3 carries the carbonyl oxygen, its duplicate and the single-bonded oxygen: (O,O,O). The acid carbon of -COOH carries the same three: (O,O,O). The aldehyde carbon of -CHO carries the carbonyl oxygen, its duplicate and a hydrogen: (O,O,H). The alcohol carbon of -CH2OH carries (O,H,H).\nStep 2: Rank what is already separated. (O,O,O) beats (O,O,H) beats (O,H,H), so the ester and the acid occupy the top two places in some order, then the aldehyde, then the primary alcohol.\nStep 3: Break the (O,O,O) tie one sphere further out. In both groups the doubly bonded oxygen carries a duplicate carbon and the phantom duplicate carries nothing, so those match. They part at the single-bonded oxygen: the ester's is attached to a carbon and the acid's to a hydrogen. Carbon beats hydrogen, so -COOCH3 outranks -COOH.",
+      "note": "The carboxylic acid is by far the more reactive and more familiar group, and neither fact enters the ranking at any point - the rules count atomic numbers outward from the stereocentre and are wholly indifferent to chemistry. The same indifference puts -CCl3 above -COOH, since chlorine at 17 beats oxygen at 8, and drops a bulky tert-butyl group below a plain -CH2OH, since a first-sphere (C,C,C) loses to (O,H,H) on the very first comparison.",
+      "options": {
+        "A": "Correct. Both -COOCH3 and -COOH show (O,O,O) at the first carbon, and the ester wins one sphere out because its single-bonded oxygen carries a carbon where the acid's carries a hydrogen.",
+        "B": "This ranks the acid above the ester, which is what chemical reactivity would suggest and what the rules do not. The two tie at (O,O,O) and part on the substituent hanging off the single-bonded oxygen.",
+        "C": "The aldehyde carbon carries only (O,O,H), because it has one oxygen and its duplicate but a hydrogen in the third position. It cannot outrank the acid's (O,O,O).",
+        "D": "Putting -CHO first inverts the whole ordering. Its (O,O,H) set loses at the third member to both (O,O,O) groups, which have an oxygen there instead of a hydrogen."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
