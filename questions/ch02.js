@@ -34,12 +34,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests basic knowledge of electronegativity trends in the periodic table.",
-      "process": "Step 1: Electronegativity increases across a row (left to right) and decreases down a column (top to bottom).\nStep 2: Carbon, nitrogen, oxygen, and fluorine are in the same row (Period 2).\nStep 3: Fluorine is the furthest to the right, making it the most electronegative element with an EN value of 4.0.",
-      "result": "Fluorine is the most electronegative element."
+      "context": "Electronegativity measures how strongly a bonded atom pulls shared electrons toward itself. It rises across a period as nuclear charge increases, and falls down a group as the valence shell gets further from the nucleus.",
+      "approach": "Step 1: Place the four candidates. Carbon, nitrogen, oxygen and fluorine all sit in the second period, in that order left to right.\nStep 2: Apply the periodic trend. Moving right across a period adds protons without adding a shell, so the nucleus holds the bonding electrons more tightly.\nStep 3: Fluorine is furthest right of the four, and it is the most electronegative element on the whole scale at 4.0.",
+      "note": "Fluorine is the maximum against which the Pauling scale is defined, so nothing exceeds it. Carbon at 2.5 sits near the middle, which is why carbon can be the partially positive or the partially negative partner depending on what it is bonded to - the flexibility that makes organic chemistry possible.",
+      "options": {
+        "A": "Correct. Fluorine is the most electronegative element there is, at the top of the Pauling scale at 4.0.",
+        "B": "Oxygen is highly electronegative at 3.5 and second among these, but fluorine is one place further right in the same period and exceeds it.",
+        "C": "Nitrogen at 3.0 is electronegative enough to make N-H bonds polar, but two elements here are more so.",
+        "D": "Carbon at 2.5 is the least electronegative of the four, sitting furthest left in the period."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -75,13 +81,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Determine the direction of the bond dipole in a halomethane.",
-      "process": "Step 1: Compare the electronegativity of carbon (2.5) and chlorine (3.0).\nStep 2: Since chlorine is more electronegative, it pulls the bonding electron pair in the C-Cl bond closer to itself.\nStep 3: This polarization results in a partial negative charge ($\\delta^-$) on the chlorine atom and a partial positive charge ($\\delta^+$) on the carbon atom.",
-      "result": "Chlorine carries the partial negative charge."
+      "context": "In a polar covalent bond the electrons are shared but unequally. The more electronegative atom draws them closer and takes on a partial negative charge, leaving its partner partially positive. Neither charge is a full unit.",
+      "approach": "Step 1: Identify the polar bond. In chloromethane the C-Cl bond is the polar one; the C-H bonds are barely polar.\nStep 2: Compare electronegativities across it: chlorine is about 3.0 against carbon's 2.5.\nStep 3: Chlorine is the more electronegative, so it pulls the shared pair toward itself and carries the partial negative charge, leaving the carbon partially positive.",
+      "note": "That partially positive carbon is what makes chloromethane useful: it is the site a nucleophile attacks, and this polarity is the starting point for the substitution chemistry of Chapter 11. Bond polarity is not a curiosity, it is a prediction about where a molecule reacts.",
+      "options": {
+        "A": "Correct. Chlorine is more electronegative than carbon, so it draws the bonding electrons toward itself and carries the partial negative charge.",
+        "B": "Carbon is the less electronegative partner in this bond, so it carries the partial positive charge rather than the negative one.",
+        "C": "The hydrogens are attached to carbon, not to chlorine, and the C-H bond is only slightly polar. They are not where the negative charge accumulates.",
+        "D": "The bond is polar covalent, not ionic. An electronegativity difference of about 0.5 gives unequal sharing, well short of the complete transfer an ionic bond requires."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A carbon atom bonded to a chlorine atom, with the carbon's remaining bonds to hydrogen."
   },
   {
     "question_id": "ch02_q3_dipole_comparison_amines",
@@ -116,12 +129,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Evaluate net molecular dipole moments based on geometry and individual bond dipoles.",
-      "process": "Step 1: Ethane and carbon tetrachloride are highly symmetric and have a net dipole of 0.\nStep 2: Methylamine ($CH_3NH_2$) and trimethylamine ($(CH_3)_3N$) both contain polar C-N bonds and nitrogen lone pairs.\nStep 3: In trimethylamine, the three bulky methyl groups push the C-N-C angles wider, and their individual vectors partially oppose each other and the lone pair vector, leading to a smaller net dipole (0.61 D) compared to methylamine (1.31 D).",
-      "result": "Methylamine has the largest net dipole moment among the choices."
+      "context": "A molecular dipole is the vector sum of the bond dipoles plus any contribution from lone pairs. Symmetry can cancel large bond dipoles to nothing, so the presence of polar bonds does not by itself predict a large net moment.",
+      "approach": "Step 1: Eliminate the symmetric molecules. Ethane has essentially no polar bonds, and carbon tetrachloride's four polar bonds cancel exactly in its tetrahedral arrangement. Both measure zero.\nStep 2: Compare the two amines. Both have a polar C-N bond arrangement and a nitrogen lone pair, so both are polar.\nStep 3: In trimethylamine three alkyl groups are arranged around the nitrogen so their bond dipoles partly oppose one another, cutting the total to 0.61 D. Methylamine's less symmetric arrangement leaves a larger resultant at 1.31 D.",
+      "note": "Molecular dipole is what governs boiling point and solubility, so this ordering is not just bookkeeping - methylamine's larger moment, together with its N-H bonds, is why it associates far more strongly than trimethylamine, which has no N-H at all.",
+      "options": {
+        "A": "Correct. Methylamine's arrangement leaves the largest uncancelled resultant of the four, at 1.31 D.",
+        "B": "Trimethylamine is polar, but its three methyl groups are arranged so that their bond dipoles partly cancel, leaving less than half of methylamine's moment.",
+        "C": "Ethane is built only from C-C and C-H bonds, which are barely polar, and it is symmetric. Its dipole moment is effectively zero.",
+        "D": "Carbon tetrachloride has four strongly polar bonds, but the tetrahedral arrangement cancels them exactly, giving no net moment at all."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -157,12 +176,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question reinforces the standard formula used to compute formal charge.",
-      "process": "Step 1: Formal charge represents the charge assigned to an atom assuming equal sharing of bonding electrons.\nStep 2: An atom owns all of its non-bonding (unshared) electrons and half of its bonding (shared) electrons.\nStep 3: The formula is: $FC = V - N - 0.5 * B$.",
-      "result": "Option A is the correct equation."
+      "context": "Formal charge asks how many electrons an atom owns in a structure compared with how many it owns as a free atom. Ownership is assigned by a convention: an atom keeps all of its unshared electrons and half of every pair it shares.",
+      "approach": "Step 1: Start from the atom's valence electron count, which is what a free atom would own.\nStep 2: Subtract the electrons it keeps entirely - the unshared, or nonbonding, electrons.\nStep 3: Subtract its share of the bonding electrons, which is half of the shared electrons. Since each bond holds two shared electrons, half the shared electrons is simply the number of bonds.",
+      "note": "The two common forms of this formula are the same equation. Half the shared electrons equals the number of bonds, so valence minus unshared minus half-shared is identical to valence minus nonbonding electrons minus bond count - use whichever is quicker for the structure in front of you.",
+      "options": {
+        "A": "Correct. An atom keeps all its unshared electrons and half of each shared pair, and the difference from its valence count is the formal charge.",
+        "B": "The coefficients are attached to the wrong terms. Unshared electrons are subtracted in full and shared electrons at half, not the other way about.",
+        "C": "This has the valence electron count subtracted rather than used as the starting point, which reverses the sign of the whole comparison.",
+        "D": "This halves the unshared electrons and takes the shared ones in full - again the two coefficients swapped. An atom owns all of its lone pairs, not half of them."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -198,13 +223,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Analyze relative stability of resonance contributors involving heteroatoms with lone pairs.",
-      "process": "Step 1: Draw the two resonance structures: $H_2C^+-O-CH_3$ and $H_2C=O^+-CH_3$.\nStep 2: In $H_2C^+-O-CH_3$, the carbon has only 6 valence electrons (incomplete octet) and a positive formal charge. In $H_2C=O^+-CH_3$, both carbon and oxygen have complete valence octets.\nStep 3: Having a complete octet is the single most important factor stabilizing a resonance structure, far outweighing the electronegativity rule of placing a positive charge on oxygen.",
-      "result": "The structure with the C=O double bond is the major contributor."
+      "context": "Among resonance contributors, the one in which every atom has a complete octet is normally the major one. A neighbouring lone pair can supply the electrons to complete an incomplete octet, which is what stabilises a cation next to a heteroatom.",
+      "approach": "Step 1: Look at the cation as drawn. The positive carbon has only three bonds and six valence electrons, so its octet is incomplete.\nStep 2: Look next door. The oxygen carries lone pairs, and one of them can shift into the empty p orbital on that carbon, forming a second carbon-oxygen bond.\nStep 3: In the resulting structure the carbon has a full octet and the positive charge has moved to oxygen, which now has three bonds. A complete octet on every atom outweighs putting the charge on the more electronegative element.",
+      "note": "This is why an oxygen next to a cationic centre is so stabilising, and it is the reason oxocarbenium ions appear throughout carbohydrate chemistry in Chapter 25. Note the trade being made: charge moves onto the more electronegative atom, which normally costs, but completing the octet gains more.",
+      "options": {
+        "A": "Correct. Donating an oxygen lone pair completes the carbon's octet, and a structure with every atom satisfied outweighs the cost of placing the charge on oxygen.",
+        "B": "This contributor is real and is how the ion is usually drawn, but it leaves the carbon with only six valence electrons. The contributor with complete octets is the major one.",
+        "C": "The two structures are not equivalent - one has an incomplete octet and the other does not - so they cannot contribute equally to the hybrid.",
+        "D": "Resonance contributors never differ in their number of unpaired electrons. Homolytic cleavage would create a different species, not a contributor to this one."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A methyl group bonded to an oxygen, which is bonded to a carbon bearing two hydrogens and a positive charge."
   },
   {
     "question_id": "ch02_q6_bronsted_acid_def",
@@ -239,12 +271,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Review the definition of Brønsted-Lowry acids.",
-      "process": "Step 1: Brønsted-Lowry theory is based on proton ($H^+$) transfer.\nStep 2: An acid is a substance that donates a proton to another species.\nStep 3: A base is a substance that accepts a proton.",
-      "result": "A Brønsted-Lowry acid is a proton donor."
+      "context": "The Brønsted-Lowry definition is framed entirely in terms of protons: an acid supplies one and a base takes one. It sits alongside the Lewis definition, which is framed in terms of electron pairs and is broader.",
+      "approach": "Step 1: Recall that Brønsted-Lowry acidity and basicity are defined as a pair - one species gives up a proton and another accepts it.\nStep 2: Assign the acid. The species that donates the proton is the acid.\nStep 3: What remains after the proton leaves is the conjugate base, and the species that accepted it becomes the conjugate acid.",
+      "note": "Keep the two definitions separate in your head. Every Brønsted acid is also a Lewis acid, but the reverse fails: boron trifluoride accepts an electron pair without having any proton to donate, so it is a Lewis acid only.",
+      "options": {
+        "A": "Correct. A Brønsted-Lowry acid donates a proton, leaving its conjugate base behind.",
+        "B": "Accepting a proton is the Brønsted-Lowry definition of a base, not an acid.",
+        "C": "Donating an electron pair is the Lewis definition of a base. It is a different framework from the proton-based one this question asks about.",
+        "D": "Accepting an electron pair is the Lewis definition of an acid. It describes a broader class than the Brønsted-Lowry definition asked for here."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -280,12 +318,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understand the logarithmic scale of acid dissociation constants ($pK_a$).",
-      "process": "Step 1: The acid dissociation constant is $K_a$. A larger $K_a$ means more dissociation (stronger acid).\nStep 2: $pK_a$ is defined as $-log_{10}(K_a)$.\nStep 3: Because of the negative log, a larger $K_a$ gives a smaller $pK_a$. Therefore, the stronger the acid, the smaller (more negative) its $pK_a$ value.",
-      "result": "Smaller $pK_a$ indicates a stronger acid."
+      "context": "pKa is the negative logarithm of the acid dissociation constant Ka. Because it is a negative log, the relationship runs backwards from intuition: as an acid gets stronger and Ka gets larger, pKa gets smaller.",
+      "approach": "Step 1: Recall that a stronger acid dissociates more, so its equilibrium constant Ka is larger.\nStep 2: Apply the negative logarithm. Taking a log of a larger number gives a larger result, and negating it gives a smaller one.\nStep 3: So a stronger acid has a smaller, and often negative, pKa. Hydrochloric acid at about minus 7 is far stronger than ethanol at 16.",
+      "note": "Because the scale is logarithmic, the gaps are much larger than they look: a difference of one pKa unit is a factor of ten in acidity, so ethanol and acetic acid differ by more than eleven orders of magnitude. Treat pKa differences as exponents, never as linear distances.",
+      "options": {
+        "A": "Correct. pKa is the negative log of Ka, so a stronger acid with a larger Ka ends up with a smaller pKa.",
+        "B": "This has the relationship inverted. Larger pKa means smaller Ka and therefore less dissociation - a weaker acid.",
+        "C": "pKa is derived from Ka, a property of the acid itself, not from pH, which describes a particular solution. The two are related but distinct quantities.",
+        "D": "A pKa of 7 has no special status for acids; 7 is neutral on the pH scale, which is a different measurement. Strong acids have pKa values well below zero."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -321,13 +365,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Relate acid strength of conjugate acids to base strength of conjugate bases.",
-      "process": "Step 1: The strength of a base is inversely proportional to the strength of its conjugate acid.\nStep 2: Strong acids have weak conjugate bases; weak acids have strong conjugate bases.\nStep 3: Compare $pK_a$ values of the conjugate acids: $HCl$ (-7, strongest acid) < Acetic acid (4.75) < Phenol (10) < Ethanol (16, weakest acid).\nStep 4: Since ethanol is the weakest acid, its conjugate base (ethoxide, $CH_3CH_2O^-$) is the strongest base.",
-      "result": "Ethoxide is the strongest base."
+      "context": "Acid strength and conjugate base strength are inverse. A strong acid gives up its proton readily, which means its conjugate base holds that proton weakly and is therefore a weak base. The weakest acid in a list has the strongest conjugate base.",
+      "approach": "Step 1: Order the acids by pKa. Hydrochloric acid at minus 7 is strongest, then acetic acid at 4.75, then phenol at 10, then ethanol at 16.\nStep 2: Identify the weakest acid, which is the one with the largest pKa - ethanol.\nStep 3: Take its conjugate base. Ethoxide is the conjugate base of the weakest acid here, so it is the strongest base of the four.",
+      "note": "This inverse relationship is the practical value of a pKa table: it doubles as a table of base strengths read from the bottom up. It is also why ethoxide is a useful strong base in synthesis while chloride, from the strongest acid, is essentially non-basic.",
+      "options": {
+        "A": "Correct. Ethanol has the largest pKa of the four and so is the weakest acid, which makes its conjugate base ethoxide the strongest base.",
+        "B": "Phenoxide comes from phenol at pKa 10, an acid stronger than ethanol. That makes phenoxide the more stable and therefore weaker base of the two.",
+        "C": "Acetate comes from acetic acid at pKa 4.75. Its charge is delocalized over two oxygens, which stabilises it and makes it a comparatively weak base.",
+        "D": "Chloride is the conjugate base of hydrochloric acid, the strongest acid listed, so it is the weakest base of the four - effectively non-basic in water."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A two-carbon chain ending in a hydroxyl group."
   },
   {
     "question_id": "ch02_q9_predict_eq",
@@ -362,13 +413,20 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Use $pK_a$ values to determine the direction of equilibrium in an acid-base reaction.",
-      "process": "Step 1: Identify the acid on the left: Phenol ($pK_a = 10$). Identify the conjugate acid on the right: Carbonic acid ($H_2CO_3$, $pK_a = 6.4$).\nStep 2: Acid-base reactions favor the formation of the weaker acid and weaker base (from lower $pK_a$ to higher $pK_a$).\nStep 3: Carbonic acid ($pK_a = 6.4$) is a stronger acid than phenol ($pK_a = 10$). Therefore, the reverse reaction is favored, and the equilibrium lies far to the left ($K_{eq} = 10^{6.4 - 10} = 10^{-3.6}$).",
-      "result": "The equilibrium favors the reactants (lies to the left)."
+      "context": "An acid-base equilibrium favours the side with the weaker acid, because the stronger acid is the one more willing to give its proton away. Comparing the pKa of the acid you start with against the pKa of the acid you would form settles the direction.",
+      "approach": "Step 1: Identify the acid on each side. On the left, phenol at pKa 10 would donate a proton to bicarbonate. On the right, the acid formed is carbonic acid at pKa 6.4.\nStep 2: Compare them. The lower pKa belongs to carbonic acid, so carbonic acid is the stronger of the two by more than three orders of magnitude.\nStep 3: Equilibrium favours the side holding the weaker acid, which is phenol on the left. So the reaction does not proceed appreciably.",
+      "note": "This is the basis of a classical separation. Carboxylic acids at around pKa 5 are deprotonated by bicarbonate and dissolve, while phenols at pKa 10 are not - so bicarbonate washing separates a carboxylic acid from a phenol, and the pKa table predicts it before any experiment.",
+      "options": {
+        "A": "Correct. Phenol at pKa 10 is the weaker acid and carbonic acid at 6.4 the stronger, so equilibrium favours the reactant side.",
+        "B": "Products would be favoured only if phenol were the stronger acid, meaning a pKa below 6.4. At pKa 10 it is more than three orders of magnitude weaker.",
+        "C": "A balanced equilibrium would need the two acids to have essentially equal pKa values. A gap of 3.6 units is a factor of about four thousand.",
+        "D": "Bicarbonate is a mild base and does nothing to the aromatic ring. Failing to react is not the same as decomposing."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A benzene ring bearing a hydroxyl group."
   },
   {
     "question_id": "ch02_q10_lewis_acid_def",
@@ -403,12 +461,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Distinguish between Brønsted-Lowry and Lewis definitions of acids and bases.",
-      "process": "Step 1: The Lewis definition focuses on electron pairs rather than proton transfer.\nStep 2: A Lewis acid is an electron pair acceptor.\nStep 3: A Lewis base is an electron pair donor.",
-      "result": "A Lewis base is an electron pair donor."
+      "context": "The Lewis definition describes acids and bases in terms of electron pairs rather than protons. That makes it the broader framework, and it is the one that maps directly onto curved-arrow mechanisms, where arrows always start at an electron pair.",
+      "approach": "Step 1: Recall the pairing. A Lewis acid accepts an electron pair; a Lewis base supplies one.\nStep 2: The question asks for the base, so identify the donor.\nStep 3: A Lewis base must therefore have an electron pair available to give - a lone pair, or sometimes the electrons of a pi bond.",
+      "note": "Lewis base and nucleophile describe the same behaviour in different languages: donating an electron pair. The difference is emphasis - basicity is about position at equilibrium, nucleophilicity about rate - and Chapter 11 turns on keeping the two apart.",
+      "options": {
+        "A": "Correct. A Lewis base donates an electron pair, which is exactly what the tail of a curved arrow represents in a mechanism.",
+        "B": "Accepting an electron pair is the Lewis definition of an acid, the partner in the pairing rather than the base.",
+        "C": "Donating a proton is the Brønsted-Lowry definition of an acid, from the other framework entirely.",
+        "D": "Producing hydroxide is the older Arrhenius definition of a base, which applies only in water and is narrower than the Lewis definition."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -444,12 +508,18 @@ var CH02_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify non-protonic Lewis acids.",
-      "process": "Step 1: A Brønsted-Lowry acid must donate a proton ($H^+$).\nStep 2: A Lewis acid accepts an electron pair. Species with vacant orbitals and incomplete valence octets are excellent Lewis acids.\nStep 3: Boron trifluoride ($BF_3$) has a boron atom surrounded by only 6 valence electrons, leaving a vacant $2p$ orbital. It can accept a lone pair but lacks protons to donate.",
-      "result": "Boron trifluoride is a Lewis acid but not a Brønsted acid."
+      "context": "Every Brønsted acid is a Lewis acid, but not the reverse. A species that is Lewis acidic without being Brønsted acidic must be able to accept an electron pair while having no proton to donate.",
+      "approach": "Step 1: Apply the first test - can the species accept an electron pair? That normally means an incomplete octet or an empty orbital.\nStep 2: Apply the second test - does it have a proton it can give up? If it does, it is a Brønsted acid too and fails the question's requirement.\nStep 3: Boron trifluoride has only six valence electrons around boron and an empty p orbital, so it readily accepts a pair. It contains no hydrogen at all, so it can be nothing but a Lewis acid.",
+      "note": "That empty p orbital is why boron trifluoride and aluminium trichloride are standard catalysts: they accept an electron pair from a substrate and activate it, which is exactly the role they play in the Friedel-Crafts reactions of Chapter 16.",
+      "options": {
+        "A": "Correct. Boron's incomplete octet lets it accept an electron pair, and with no hydrogen in the molecule it cannot donate a proton.",
+        "B": "Water can donate a proton, so it is a Brønsted acid as well as being able to act as a Lewis base through its lone pairs.",
+        "C": "The ammonium ion's whole reactivity as an acid is donating one of its four protons, which makes it a Brønsted acid.",
+        "D": "Acetic acid donates the proton of its OH group; it is the standard example of a weak Brønsted acid."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
