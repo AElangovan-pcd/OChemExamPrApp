@@ -735,5 +735,1058 @@ var CH18_QUESTIONS = [
     "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q26",
+    "topic": "Williamson Ether Synthesis",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CO"
+      ],
+      "reagents": "Na, then CCBr",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Williamson Ether Synthesis.",
+      "process": "Williamson ether synthesis of methoxide ion and ethyl bromide yields methyl ethyl ether.",
+      "result": "The product is COCC."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q50",
+    "topic": "Williamson Ether Synthesis",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CO"
+      ],
+      "reagents": "Na, then CCBr",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Williamson Ether Synthesis.",
+      "process": "Williamson ether synthesis of methoxide ion and ethyl bromide yields methyl ethyl ether.",
+      "result": "The product is COCC."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q65",
+    "topic": "Williamson Ether Synthesis",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CO"
+      ],
+      "reagents": "Na, then CCBr",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Williamson Ether Synthesis.",
+      "process": "Williamson ether synthesis of methoxide ion and ethyl bromide yields methyl ethyl ether.",
+      "result": "The product is COCC."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q90",
+    "topic": "Williamson Ether Synthesis",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CO"
+      ],
+      "reagents": "Na, then CCBr",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Williamson Ether Synthesis.",
+      "process": "Williamson ether synthesis of methoxide ion and ethyl bromide yields methyl ethyl ether.",
+      "result": "The product is COCC."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q91",
+    "topic": "Williamson Ether Synthesis",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CO"
+      ],
+      "reagents": "Na, then CCBr",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Williamson Ether Synthesis.",
+      "process": "Williamson ether synthesis of methoxide ion and ethyl bromide yields methyl ethyl ether.",
+      "result": "The product is COCC."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q15",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC1OC1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)CO",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "mCPBA"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propene, B: propylene glycol, C: acetone",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: acetone, C: 1,2-propanediol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: propylene oxide, C: propan-2-ol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: propylene oxide, C: 1,2-propanediol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: propylene oxide, C: 1,2-propanediol.",
+      "result": "The labels correspond to A: propene, B: propylene oxide, C: 1,2-propanediol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q47",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC1OC1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)CO",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "mCPBA"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propene, B: propylene glycol, C: acetone",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: propylene oxide, C: 1,2-propanediol",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: acetone, C: 1,2-propanediol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propyne, B: propylene oxide, C: propan-2-ol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: propylene oxide, C: 1,2-propanediol.",
+      "result": "The labels correspond to A: propene, B: propylene oxide, C: 1,2-propanediol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q51",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC1OC1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)CO",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "mCPBA"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: propylene oxide, C: propan-2-ol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: acetone, C: 1,2-propanediol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: propylene oxide, C: 1,2-propanediol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: propylene glycol, C: acetone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: propylene oxide, C: 1,2-propanediol.",
+      "result": "The labels correspond to A: propene, B: propylene oxide, C: 1,2-propanediol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q91_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC1OC1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)CO",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "mCPBA"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: propylene oxide, C: propan-2-ol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: propylene glycol, C: acetone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: acetone, C: 1,2-propanediol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: propylene oxide, C: 1,2-propanediol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: propylene oxide, C: 1,2-propanediol.",
+      "result": "The labels correspond to A: propene, B: propylene oxide, C: 1,2-propanediol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q16",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC1OC1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)CO",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "mCPBA"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: propylene oxide, C: propan-2-ol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: acetone, C: 1,2-propanediol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: propylene glycol, C: acetone",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: propylene oxide, C: 1,2-propanediol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: propylene oxide, C: 1,2-propanediol.",
+      "result": "The labels correspond to A: propene, B: propylene oxide, C: 1,2-propanediol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q34",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC1OC1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)CO",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "mCPBA"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propene, B: acetone, C: 1,2-propanediol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: propylene glycol, C: acetone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: propylene oxide, C: propan-2-ol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: propylene oxide, C: 1,2-propanediol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: propylene oxide, C: 1,2-propanediol.",
+      "result": "The labels correspond to A: propene, B: propylene oxide, C: 1,2-propanediol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q36",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC1OC1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)CO",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "mCPBA"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: propylene oxide, C: propan-2-ol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: propylene glycol, C: acetone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: propylene oxide, C: 1,2-propanediol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: acetone, C: 1,2-propanediol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: propylene oxide, C: 1,2-propanediol.",
+      "result": "The labels correspond to A: propene, B: propylene oxide, C: 1,2-propanediol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q50_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC1OC1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)CO",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "mCPBA"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propene, B: propylene glycol, C: acetone",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propyne, B: propylene oxide, C: propan-2-ol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: propylene oxide, C: 1,2-propanediol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: acetone, C: 1,2-propanediol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: propylene oxide, C: 1,2-propanediol.",
+      "result": "The labels correspond to A: propene, B: propylene oxide, C: 1,2-propanediol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q54",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC1OC1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)CO",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "mCPBA"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propene, B: propylene glycol, C: acetone",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: acetone, C: 1,2-propanediol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: propylene oxide, C: 1,2-propanediol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: propyne, B: propylene oxide, C: propan-2-ol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: propylene oxide, C: 1,2-propanediol.",
+      "result": "The labels correspond to A: propene, B: propylene oxide, C: 1,2-propanediol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q76",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC1OC1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)CO",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "mCPBA"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propene, B: propylene glycol, C: acetone",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propyne, B: propylene oxide, C: propan-2-ol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: acetone, C: 1,2-propanediol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: propylene oxide, C: 1,2-propanediol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: propylene oxide, C: 1,2-propanediol.",
+      "result": "The labels correspond to A: propene, B: propylene oxide, C: 1,2-propanediol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q92",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC1OC1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)CO",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "mCPBA"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: propylene oxide, C: propan-2-ol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: propylene oxide, C: 1,2-propanediol",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: propylene glycol, C: acetone",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: acetone, C: 1,2-propanediol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: propylene oxide, C: 1,2-propanediol.",
+      "result": "The labels correspond to A: propene, B: propylene oxide, C: 1,2-propanediol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

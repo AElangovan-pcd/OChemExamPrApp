@@ -2251,5 +2251,1575 @@ var CH13_QUESTIONS = [
     "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q10",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 7.3,
+          "y": 3,
+          "label": "multiplet"
+        },
+        {
+          "x": 7.5,
+          "y": 2,
+          "label": "multiplet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Dimethyl ether",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Bromobenzene",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "1-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Acetic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Bromobenzene.",
+      "result": "The compound is Bromobenzene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q12",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 7.3,
+          "y": 6,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Acetonitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Acetone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Benzene",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Dichloromethane",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Benzene.",
+      "result": "The compound is Benzene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q14",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1.7,
+          "y": 6,
+          "label": "singlet"
+        },
+        {
+          "x": 4.6,
+          "y": 2,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Formic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Dimethyl ether",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Isobutylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Propyne",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Isobutylene.",
+      "result": "The compound is Isobutylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q21",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 3.4,
+          "y": 3,
+          "label": "singlet"
+        },
+        {
+          "x": 4.8,
+          "y": 1,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "1-Butanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Aniline",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Methanol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Dichloromethane",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Methanol.",
+      "result": "The compound is Methanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q24",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 2,
+          "y": 4,
+          "label": "multiplet"
+        },
+        {
+          "x": 2.2,
+          "y": 4,
+          "label": "multiplet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Propanoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Cyclopentanone",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "1-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "t-Butyl alcohol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Cyclopentanone.",
+      "result": "The compound is Cyclopentanone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q27",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 7.3,
+          "y": 3,
+          "label": "multiplet"
+        },
+        {
+          "x": 7.5,
+          "y": 2,
+          "label": "multiplet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "3-Pentanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Bromobenzene",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Toluene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Benzene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Bromobenzene.",
+      "result": "The compound is Bromobenzene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q30",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 7.6,
+          "y": 2,
+          "label": "triplet"
+        },
+        {
+          "x": 7.7,
+          "y": 1,
+          "label": "triplet"
+        },
+        {
+          "x": 8.2,
+          "y": 2,
+          "label": "doublet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "t-Butyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Bromobenzene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Nitrobenzene",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Propan-2-ol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Nitrobenzene.",
+      "result": "The compound is Nitrobenzene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q32",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1.8,
+          "y": 4,
+          "label": "multiplet"
+        },
+        {
+          "x": 3.7,
+          "y": 4,
+          "label": "multiplet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Tetrahydrofuran",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Propyne",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Cyclopentanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Dimethyl sulfoxide",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Tetrahydrofuran.",
+      "result": "The compound is Tetrahydrofuran."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q33",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1.7,
+          "y": 6,
+          "label": "doublet"
+        },
+        {
+          "x": 4.3,
+          "y": 1,
+          "label": "septet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "1-Butanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Benzaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "2-Bromopropane",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Cyclopentene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is 2-Bromopropane.",
+      "result": "The compound is 2-Bromopropane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q37",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 3.4,
+          "y": 3,
+          "label": "singlet"
+        },
+        {
+          "x": 4.8,
+          "y": 1,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Methanol",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Benzaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Acetone",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Cyclopentanone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Methanol.",
+      "result": "The compound is Methanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q43",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1.2,
+          "y": 9,
+          "label": "singlet"
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "t-Butyl alcohol",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Acetophenone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Benzaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "1-Butanol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is t-Butyl alcohol.",
+      "result": "The compound is t-Butyl alcohol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q45",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1.8,
+          "y": 3,
+          "label": "doublet"
+        },
+        {
+          "x": 2.1,
+          "y": 1,
+          "label": "triplet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Propyne",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Diethyl ether",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "2-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Toluene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Propyne.",
+      "result": "The compound is Propyne."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q46",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 0.9,
+          "y": 3,
+          "label": "triplet"
+        },
+        {
+          "x": 1.7,
+          "y": 2,
+          "label": "multiplet"
+        },
+        {
+          "x": 2.4,
+          "y": 2,
+          "label": "multiplet"
+        },
+        {
+          "x": 9.8,
+          "y": 1,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Butyraldehyde",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "1-Propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Acetonitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Nitrobenzene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Butyraldehyde.",
+      "result": "The compound is Butyraldehyde."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q50",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 0.9,
+          "y": 3,
+          "label": "triplet"
+        },
+        {
+          "x": 1.7,
+          "y": 2,
+          "label": "multiplet"
+        },
+        {
+          "x": 2.4,
+          "y": 2,
+          "label": "multiplet"
+        },
+        {
+          "x": 9.8,
+          "y": 1,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Butyraldehyde",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Ethyl acetate",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Chloroform",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Acetophenone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Butyraldehyde.",
+      "result": "The compound is Butyraldehyde."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q51",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1.7,
+          "y": 4,
+          "label": "multiplet"
+        },
+        {
+          "x": 1.8,
+          "y": 2,
+          "label": "multiplet"
+        },
+        {
+          "x": 2.3,
+          "y": 4,
+          "label": "triplet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "2-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Cyclohexanone",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Benzaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Dichloromethane",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Cyclohexanone.",
+      "result": "The compound is Cyclohexanone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q64",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1.8,
+          "y": 4,
+          "label": "multiplet"
+        },
+        {
+          "x": 3.7,
+          "y": 4,
+          "label": "multiplet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Ethyl acetate",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Tetrahydrofuran",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Propionaldehyde",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Tetrahydrofuran.",
+      "result": "The compound is Tetrahydrofuran."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q65",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1.2,
+          "y": 3,
+          "label": "triplet"
+        },
+        {
+          "x": 2.6,
+          "y": 1,
+          "label": "singlet"
+        },
+        {
+          "x": 3.7,
+          "y": 2,
+          "label": "quartet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Dimethyl sulfoxide",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "2-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Benzoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Ethanol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Ethanol.",
+      "result": "The compound is Ethanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q68",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 5.3,
+          "y": 2,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Dimethyl sulfoxide",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "2-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Dichloromethane",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "3-Pentanone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Dichloromethane.",
+      "result": "The compound is Dichloromethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q71",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 7.3,
+          "y": 5,
+          "label": "multiplet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Benzyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Ethyl acetate",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Aniline",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Chlorobenzene",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Chlorobenzene.",
+      "result": "The compound is Chlorobenzene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q74",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 7.5,
+          "y": 3,
+          "label": "multiplet"
+        },
+        {
+          "x": 8.1,
+          "y": 2,
+          "label": "doublet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Benzoyl chloride",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Chlorobenzene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Dimethyl sulfoxide",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Cyclohexene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Benzoyl chloride.",
+      "result": "The compound is Benzoyl chloride."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q75",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1.2,
+          "y": 9,
+          "label": "singlet"
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "t-Butyl alcohol",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Propanoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Dimethyl ether",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Butanone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is t-Butyl alcohol.",
+      "result": "The compound is t-Butyl alcohol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q77",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 2,
+          "y": 3,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Dimethyl sulfoxide",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Ethyl benzoate",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Acetonitrile",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Acetonitrile.",
+      "result": "The compound is Acetonitrile."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q80",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 7.5,
+          "y": 2,
+          "label": "triplet"
+        },
+        {
+          "x": 7.6,
+          "y": 1,
+          "label": "triplet"
+        },
+        {
+          "x": 7.9,
+          "y": 2,
+          "label": "doublet"
+        },
+        {
+          "x": 10,
+          "y": 1,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "2-Pentanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Butyraldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Benzaldehyde",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Acetaldehyde",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Benzaldehyde.",
+      "result": "The compound is Benzaldehyde."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q81",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1.2,
+          "y": 3,
+          "label": "triplet"
+        },
+        {
+          "x": 2.6,
+          "y": 2,
+          "label": "quartet"
+        },
+        {
+          "x": 7.2,
+          "y": 5,
+          "label": "multiplet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Cyclopentanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Ethylbenzene",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Formic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Cyclohexane",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Ethylbenzene.",
+      "result": "The compound is Ethylbenzene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q83",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 3.2,
+          "y": 6,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Dimethyl ether",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "1-Propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Isobutylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Propan-2-ol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Dimethyl ether.",
+      "result": "The compound is Dimethyl ether."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q89",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1,
+          "y": 3,
+          "label": "triplet"
+        },
+        {
+          "x": 2.4,
+          "y": 2,
+          "label": "multiplet"
+        },
+        {
+          "x": 9.7,
+          "y": 1,
+          "label": "triplet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "2-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Propionaldehyde",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Acetophenone",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Propanoic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Propionaldehyde.",
+      "result": "The compound is Propionaldehyde."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q91",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 0.9,
+          "y": 3,
+          "label": "triplet"
+        },
+        {
+          "x": 1.5,
+          "y": 2,
+          "label": "sextet"
+        },
+        {
+          "x": 2.2,
+          "y": 1,
+          "label": "singlet"
+        },
+        {
+          "x": 3.5,
+          "y": 2,
+          "label": "triplet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Propionaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Phenol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "1-Propanol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Dimethyl sulfoxide",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is 1-Propanol.",
+      "result": "The compound is 1-Propanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q93",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1,
+          "y": 6,
+          "label": "triplet"
+        },
+        {
+          "x": 2.4,
+          "y": 4,
+          "label": "quartet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Acetonitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Cyclohexane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "3-Pentanone",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Chlorobenzene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is 3-Pentanone.",
+      "result": "The compound is 3-Pentanone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q94",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 2.1,
+          "y": 3,
+          "label": "singlet"
+        },
+        {
+          "x": 11.8,
+          "y": 1,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Propene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Ethyl acetate",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "2-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Acetic acid",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Acetic acid.",
+      "result": "The compound is Acetic acid."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch13_q95",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated $^1\\text{H}$ NMR spectrum below. Identify the organic compound corresponding to these chemical shifts.",
+    "dynamic_spectroscopy": {
+      "spec_type": "nmr",
+      "data_points": [
+        {
+          "x": 1.7,
+          "y": 6,
+          "label": "singlet"
+        },
+        {
+          "x": 4.6,
+          "y": 2,
+          "label": "singlet"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Phenol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Isobutylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Dimethyl sulfoxide",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Chloroform",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic NMR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Isobutylene.",
+      "result": "The compound is Isobutylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

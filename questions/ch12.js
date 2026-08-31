@@ -2275,5 +2275,3254 @@ var CH12_QUESTIONS = [
     "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q1",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 119$ and a base peak at $m/z = 83$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 83,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 119,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Propanoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Chloroform",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Ethyl acetate",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Propionaldehyde",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Chloroform.",
+      "result": "The compound is Chloroform."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q5",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 122$ and a base peak at $m/z = 43$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 43,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 122,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Chloroform",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Bromobenzene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Anisole",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "1-Bromopropane",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is 1-Bromopropane.",
+      "result": "The compound is 1-Bromopropane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q7",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 1790,
+          "w": 20,
+          "d": 85
+        },
+        {
+          "xc": 700,
+          "w": 40,
+          "d": 55
+        },
+        {
+          "xc": 1600,
+          "w": 20,
+          "d": 30
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Ethylbenzene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Cyclohexanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "2-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Benzoyl chloride",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Benzoyl chloride.",
+      "result": "The compound is Benzoyl chloride."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q9",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 78$ and a base peak at $m/z = 63$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 63,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 78,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Tetrahydrofuran",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Cyclopentene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Dimethyl sulfoxide",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Dichloromethane",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Dimethyl sulfoxide.",
+      "result": "The compound is Dimethyl sulfoxide."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q11",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3030,
+          "w": 20,
+          "d": 25
+        },
+        {
+          "xc": 1600,
+          "w": 20,
+          "d": 30
+        },
+        {
+          "xc": 1500,
+          "w": 20,
+          "d": 30
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Benzene",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Phenol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Chlorobenzene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Aniline",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Benzene.",
+      "result": "The compound is Benzene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q13",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3020,
+          "w": 20,
+          "d": 25
+        },
+        {
+          "xc": 1650,
+          "w": 20,
+          "d": 20
+        },
+        {
+          "xc": 2920,
+          "w": 40,
+          "d": 50
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Aniline",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Acetaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Cyclopentene",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Methyl acetate",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Cyclopentene.",
+      "result": "The compound is Cyclopentene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q15",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 72$ and a base peak at $m/z = 44$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 44,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 72,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Propan-2-ol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Butyraldehyde",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Nitrobenzene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Methanol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Butyraldehyde.",
+      "result": "The compound is Butyraldehyde."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q16",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 74$ and a base peak at $m/z = 59$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 59,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 74,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Acetophenone",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "t-Butyl alcohol",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Cyclohexene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Phenol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is t-Butyl alcohol.",
+      "result": "The compound is t-Butyl alcohol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q17",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 123$ and a base peak at $m/z = 77$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 77,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 123,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Propyne",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Cyclopentene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Nitrobenzene",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Nitrobenzene.",
+      "result": "The compound is Nitrobenzene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q19",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 112$ and a base peak at $m/z = 77$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 77,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 112,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Chlorobenzene",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "1-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Propene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "3-Pentanone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Chlorobenzene.",
+      "result": "The compound is Chlorobenzene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q20",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3000,
+          "w": 300,
+          "d": 75
+        },
+        {
+          "xc": 1710,
+          "w": 20,
+          "d": 85
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Acetic acid",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Acetaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Toluene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Isobutylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Acetic acid.",
+      "result": "The compound is Acetic acid."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q22",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 72$ and a base peak at $m/z = 43$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 43,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 72,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "2-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Propyne",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Butanone",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Tetrahydrofuran",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Butanone.",
+      "result": "The compound is Butanone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q23",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3050,
+          "w": 20,
+          "d": 20
+        },
+        {
+          "xc": 700,
+          "w": 40,
+          "d": 50
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Chlorobenzene",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "t-Butyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Benzaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Isobutylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Chlorobenzene.",
+      "result": "The compound is Chlorobenzene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q25",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 2950,
+          "w": 40,
+          "d": 50
+        },
+        {
+          "xc": 650,
+          "w": 40,
+          "d": 40
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Methanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "1-Bromopropane",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Propan-2-ol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Propyne",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is 1-Bromopropane.",
+      "result": "The compound is 1-Bromopropane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q26",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 2950,
+          "w": 40,
+          "d": 50
+        },
+        {
+          "xc": 650,
+          "w": 40,
+          "d": 40
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "1-Bromopropane",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Dimethyl ether",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Ethyl benzoate",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Acetophenone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is 1-Bromopropane.",
+      "result": "The compound is 1-Bromopropane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q28",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 60$ and a base peak at $m/z = 43$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 43,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 60,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Acetic acid",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Acetone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Aniline",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Chlorobenzene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Acetic acid.",
+      "result": "The compound is Acetic acid."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q29",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3300,
+          "w": 150,
+          "d": 70
+        },
+        {
+          "xc": 3050,
+          "w": 20,
+          "d": 20
+        },
+        {
+          "xc": 1600,
+          "w": 20,
+          "d": 30
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Phenol",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Cyclohexanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "1-Propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Ethylbenzene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Phenol.",
+      "result": "The compound is Phenol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q31",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 1725,
+          "w": 20,
+          "d": 85
+        },
+        {
+          "xc": 2720,
+          "w": 30,
+          "d": 30
+        },
+        {
+          "xc": 2820,
+          "w": 30,
+          "d": 30
+        },
+        {
+          "xc": 2950,
+          "w": 40,
+          "d": 50
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "2-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Butyraldehyde",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Acetaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "1-Bromopropane",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Butyraldehyde.",
+      "result": "The compound is Butyraldehyde."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q34",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 2950,
+          "w": 40,
+          "d": 50
+        },
+        {
+          "xc": 650,
+          "w": 40,
+          "d": 40
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "1-Bromopropane",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Ethylbenzene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Acetophenone",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Propene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is 1-Bromopropane.",
+      "result": "The compound is 1-Bromopropane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q35",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3300,
+          "w": 150,
+          "d": 70
+        },
+        {
+          "xc": 2950,
+          "w": 40,
+          "d": 50
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Aniline",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "3-Pentanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Ethyl acetate",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Methanol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Methanol.",
+      "result": "The compound is Methanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q36",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 60$ and a base peak at $m/z = 31$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 31,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 60,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "t-Butyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Ethylbenzene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Butyraldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "1-Propanol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is 1-Propanol.",
+      "result": "The compound is 1-Propanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q38",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 58$ and a base peak at $m/z = 43$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 43,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 58,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Dimethyl ether",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Acetone",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Dichloromethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Propionaldehyde",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Acetone.",
+      "result": "The compound is Acetone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q39",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3020,
+          "w": 20,
+          "d": 25
+        },
+        {
+          "xc": 1650,
+          "w": 20,
+          "d": 20
+        },
+        {
+          "xc": 2920,
+          "w": 40,
+          "d": 50
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Propanoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Cyclopentene",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Propionaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Cyclohexene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Cyclopentene.",
+      "result": "The compound is Cyclopentene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q40",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 112$ and a base peak at $m/z = 77$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 77,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 112,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Chlorobenzene",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Cyclohexene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Propan-2-ol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "3-Pentanone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Chlorobenzene.",
+      "result": "The compound is Chlorobenzene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q41",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 106$ and a base peak at $m/z = 105$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 105,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 106,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Propionaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "1-Butanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Benzaldehyde",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Methanol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Benzaldehyde.",
+      "result": "The compound is Benzaldehyde."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q42",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 1250,
+          "w": 40,
+          "d": 80
+        },
+        {
+          "xc": 3050,
+          "w": 20,
+          "d": 20
+        },
+        {
+          "xc": 1600,
+          "w": 20,
+          "d": 30
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Methyl acetate",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Benzene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Anisole",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Propionaldehyde",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Anisole.",
+      "result": "The compound is Anisole."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q44",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 74$ and a base peak at $m/z = 43$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 43,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 74,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Formic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Propyne",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Methanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Methyl acetate",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Methyl acetate.",
+      "result": "The compound is Methyl acetate."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q47",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 2920,
+          "w": 40,
+          "d": 65
+        },
+        {
+          "xc": 2850,
+          "w": 40,
+          "d": 65
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Dimethyl ether",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Propyne",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Cyclohexane",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "1-Butanol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Cyclohexane.",
+      "result": "The compound is Cyclohexane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q48",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 1715,
+          "w": 20,
+          "d": 85
+        },
+        {
+          "xc": 2950,
+          "w": 40,
+          "d": 50
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Dimethyl sulfoxide",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "1-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Acetone",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Cyclopentanone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Acetone.",
+      "result": "The compound is Acetone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q49",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 1715,
+          "w": 20,
+          "d": 85
+        },
+        {
+          "xc": 2950,
+          "w": 40,
+          "d": 50
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Cyclohexene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Butanone",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Acetonitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "2-Bromopropane",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Butanone.",
+      "result": "The compound is Butanone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q52",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 60$ and a base peak at $m/z = 45$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 45,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 60,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Propan-2-ol",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Propyne",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Acetonitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Benzyl alcohol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Propan-2-ol.",
+      "result": "The compound is Propan-2-ol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q53",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 2950,
+          "w": 40,
+          "d": 50
+        },
+        {
+          "xc": 650,
+          "w": 40,
+          "d": 40
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "1-Bromopropane",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Methyl acetate",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Chloroform",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Propionaldehyde",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is 1-Bromopropane.",
+      "result": "The compound is 1-Bromopropane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q54",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 78$ and a base peak at $m/z = 63$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 63,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 78,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Dimethyl sulfoxide",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "1-Butanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "2-Pentanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Acetonitrile",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Dimethyl sulfoxide.",
+      "result": "The compound is Dimethyl sulfoxide."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q55",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 122$ and a base peak at $m/z = 43$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 43,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 122,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Acetaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Methyl acetate",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Benzyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "2-Bromopropane",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is 2-Bromopropane.",
+      "result": "The compound is 2-Bromopropane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q56",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 122$ and a base peak at $m/z = 43$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 43,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 122,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Ethyl benzoate",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Cyclohexanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Chloroform",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "1-Bromopropane",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is 1-Bromopropane.",
+      "result": "The compound is 1-Bromopropane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q57",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 72$ and a base peak at $m/z = 44$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 44,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 72,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Cyclohexane",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "3-Pentanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Butyraldehyde",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Chlorobenzene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Butyraldehyde.",
+      "result": "The compound is Butyraldehyde."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q58",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3400,
+          "w": 30,
+          "d": 40
+        },
+        {
+          "xc": 3300,
+          "w": 30,
+          "d": 40
+        },
+        {
+          "xc": 3050,
+          "w": 20,
+          "d": 20
+        },
+        {
+          "xc": 1600,
+          "w": 20,
+          "d": 30
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Aniline",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Acetophenone",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Butyraldehyde",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Aniline.",
+      "result": "The compound is Aniline."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q59",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3000,
+          "w": 30,
+          "d": 30
+        },
+        {
+          "xc": 740,
+          "w": 45,
+          "d": 75
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Cyclohexene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Propyne",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Dichloromethane",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Propanoic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Dichloromethane.",
+      "result": "The compound is Dichloromethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q60",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 140$ and a base peak at $m/z = 105$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 105,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 140,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Benzoyl chloride",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "1-Propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "1-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Methyl acetate",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Benzoyl chloride.",
+      "result": "The compound is Benzoyl chloride."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q61",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 150$ and a base peak at $m/z = 105$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 105,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 150,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Diethyl ether",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Acetonitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Ethyl benzoate",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Butyraldehyde",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Ethyl benzoate.",
+      "result": "The compound is Ethyl benzoate."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q62",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3000,
+          "w": 300,
+          "d": 75
+        },
+        {
+          "xc": 1710,
+          "w": 20,
+          "d": 85
+        },
+        {
+          "xc": 1240,
+          "w": 50,
+          "d": 60
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Dimethyl sulfoxide",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Propionaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Tetrahydrofuran",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Propanoic acid",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Propanoic acid.",
+      "result": "The compound is Propanoic acid."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q63",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3000,
+          "w": 300,
+          "d": 75
+        },
+        {
+          "xc": 1710,
+          "w": 20,
+          "d": 85
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Acetic acid",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "2-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Butyraldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Ethyl benzoate",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Acetic acid.",
+      "result": "The compound is Acetic acid."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q66",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 122$ and a base peak at $m/z = 43$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 43,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 122,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "2-Pentanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Diethyl ether",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Propene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "2-Bromopropane",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is 2-Bromopropane.",
+      "result": "The compound is 2-Bromopropane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q67",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 1715,
+          "w": 20,
+          "d": 85
+        },
+        {
+          "xc": 2920,
+          "w": 40,
+          "d": 55
+        },
+        {
+          "xc": 2850,
+          "w": 40,
+          "d": 55
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Methanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "3-Pentanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Cyclohexene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Cyclohexanone",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Cyclohexanone.",
+      "result": "The compound is Cyclohexanone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q69",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3000,
+          "w": 300,
+          "d": 75
+        },
+        {
+          "xc": 1710,
+          "w": 20,
+          "d": 85
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Acetaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Butanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Tetrahydrofuran",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Formic acid",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Formic acid.",
+      "result": "The compound is Formic acid."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q70",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 72$ and a base peak at $m/z = 42$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 42,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 72,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "1-Butanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Tetrahydrofuran",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Bromobenzene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Tetrahydrofuran.",
+      "result": "The compound is Tetrahydrofuran."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q72",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 1725,
+          "w": 20,
+          "d": 85
+        },
+        {
+          "xc": 2720,
+          "w": 30,
+          "d": 30
+        },
+        {
+          "xc": 2820,
+          "w": 30,
+          "d": 30
+        },
+        {
+          "xc": 2950,
+          "w": 40,
+          "d": 50
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Chlorobenzene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Propionaldehyde",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Dimethyl ether",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Nitrobenzene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Propionaldehyde.",
+      "result": "The compound is Propionaldehyde."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q73",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 1070,
+          "w": 40,
+          "d": 70
+        },
+        {
+          "xc": 2950,
+          "w": 40,
+          "d": 50
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Toluene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Tetrahydrofuran",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Methanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Butanone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Tetrahydrofuran.",
+      "result": "The compound is Tetrahydrofuran."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q76",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 1715,
+          "w": 20,
+          "d": 85
+        },
+        {
+          "xc": 2950,
+          "w": 40,
+          "d": 50
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Formic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "2-Pentanone",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Ethyl benzoate",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Cyclohexane",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is 2-Pentanone.",
+      "result": "The compound is 2-Pentanone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q78",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3020,
+          "w": 20,
+          "d": 25
+        },
+        {
+          "xc": 1650,
+          "w": 20,
+          "d": 20
+        },
+        {
+          "xc": 2920,
+          "w": 40,
+          "d": 50
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Diethyl ether",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Benzoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Cyclopentene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Cyclohexene",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Cyclohexene.",
+      "result": "The compound is Cyclohexene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q79",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 40$ and a base peak at $m/z = 39$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 39,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 40,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Methanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Propyne",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Acetaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Butyraldehyde",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Propyne.",
+      "result": "The compound is Propyne."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q82",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 112$ and a base peak at $m/z = 77$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 77,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 112,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Chlorobenzene",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "2-Pentanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "1-Propanol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Chlorobenzene.",
+      "result": "The compound is Chlorobenzene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q84",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3080,
+          "w": 20,
+          "d": 25
+        },
+        {
+          "xc": 1650,
+          "w": 20,
+          "d": 35
+        },
+        {
+          "xc": 2950,
+          "w": 40,
+          "d": 50
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Tetrahydrofuran",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Benzoyl chloride",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "1-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Isobutylene",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Isobutylene.",
+      "result": "The compound is Isobutylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q85",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 3080,
+          "w": 20,
+          "d": 25
+        },
+        {
+          "xc": 1640,
+          "w": 20,
+          "d": 35
+        },
+        {
+          "xc": 2950,
+          "w": 40,
+          "d": 45
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Propene",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Butyraldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Toluene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Propene.",
+      "result": "The compound is Propene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q86",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Infrared (IR) spectrum. Determine the organic compound that exhibits the corresponding characteristic functional group absorption bands.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ir",
+      "dips": [
+        {
+          "xc": 1530,
+          "w": 30,
+          "d": 80
+        },
+        {
+          "xc": 1350,
+          "w": 30,
+          "d": 80
+        },
+        {
+          "xc": 3050,
+          "w": 20,
+          "d": 20
+        },
+        {
+          "xc": 1600,
+          "w": 20,
+          "d": 30
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Benzoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Propyne",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Phenol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Nitrobenzene",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic IR data.",
+      "process": "Analyze coordinates/absorption features: target compound is Nitrobenzene.",
+      "result": "The compound is Nitrobenzene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q87",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 68$ and a base peak at $m/z = 67$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 67,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 68,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Cyclohexanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Cyclopentene",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "2-Bromopropane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Ethyl acetate",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Cyclopentene.",
+      "result": "The compound is Cyclopentene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q88",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 60$ and a base peak at $m/z = 43$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 43,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 60,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Cyclohexene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Cyclohexanone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Benzoyl chloride",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Acetic acid",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Acetic acid.",
+      "result": "The compound is Acetic acid."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q90",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 74$ and a base peak at $m/z = 31$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 31,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 74,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Chloroform",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "1-Butanol",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Chlorobenzene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Benzaldehyde",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is 1-Butanol.",
+      "result": "The compound is 1-Butanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch12_q92",
+    "topic": "Dynamic Spectroscopy Analysis",
+    "difficulty_level": "Hard",
+    "question_text": "Analyze the simulated Mass Spectrum below. Identify the organic compound showing a molecular ion peak at $m/z = 72$ and a base peak at $m/z = 44$.",
+    "dynamic_spectroscopy": {
+      "spec_type": "ms",
+      "data_points": [
+        {
+          "x": 15,
+          "y": 20,
+          "label": "methyl segment"
+        },
+        {
+          "x": 44,
+          "y": 100,
+          "label": "base peak"
+        },
+        {
+          "x": 72,
+          "y": 60,
+          "label": "molecular ion [M+]"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "t-Butyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Aniline",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Butyraldehyde",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "2-Pentanone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Elucidating organic structures from dynamic MS data.",
+      "process": "Analyze coordinates/absorption features: target compound is Butyraldehyde.",
+      "result": "The compound is Butyraldehyde."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

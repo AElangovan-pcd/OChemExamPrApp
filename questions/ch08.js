@@ -2476,5 +2476,3105 @@ var CH08_QUESTIONS = [
     "key_status": "unverified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q1",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q4",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q6",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q9",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q12",
+    "topic": "Alkenes: Halohydrin Formation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2, H2O",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halohydrin Formation.",
+      "process": "Halohydrin formation from propene yields 1-bromo-2-propanol.",
+      "result": "The product is CC(O)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q13",
+    "topic": "Alkenes: Epoxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "mCPBA",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Epoxidation.",
+      "process": "Epoxidation of propene with mCPBA yields propylene oxide (methyloxirane).",
+      "result": "The product is CC1OC1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q19",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q20",
+    "topic": "Alkenes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "1) BH3, THF\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propene yields 1-propanol (anti-Markovnikov addition).",
+      "result": "The product is CCCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q22",
+    "topic": "Alkenes: Epoxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "mCPBA",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Epoxidation.",
+      "process": "Epoxidation of propene with mCPBA yields propylene oxide (methyloxirane).",
+      "result": "The product is CC1OC1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q25",
+    "topic": "Alkenes: Hydroboration-Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "1) BH3, THF\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propene yields 1-propanol (anti-Markovnikov addition).",
+      "result": "The product is CCCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q27",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q29",
+    "topic": "Alkenes: Halohydrin Formation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2, H2O",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halohydrin Formation.",
+      "process": "Halohydrin formation from propene yields 1-bromo-2-propanol.",
+      "result": "The product is CC(O)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q32",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q33",
+    "topic": "Alkenes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "1) BH3, THF\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propene yields 1-propanol (anti-Markovnikov addition).",
+      "result": "The product is CCCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q34",
+    "topic": "Alkenes: Halohydrin Formation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2, H2O",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halohydrin Formation.",
+      "process": "Halohydrin formation from propene yields 1-bromo-2-propanol.",
+      "result": "The product is CC(O)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q35",
+    "topic": "Alkenes: Halohydrin Formation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2, H2O",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halohydrin Formation.",
+      "process": "Halohydrin formation from propene yields 1-bromo-2-propanol.",
+      "result": "The product is CC(O)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q37",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Halogenation of ethylene with molecular bromine yields 1,2-dibromoethane.",
+      "result": "The product is C(Br)CBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q39",
+    "topic": "Alkenes: Epoxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "mCPBA",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Epoxidation.",
+      "process": "Epoxidation of propene with mCPBA yields propylene oxide (methyloxirane).",
+      "result": "The product is CC1OC1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q41",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q42",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q44",
+    "topic": "Alkenes: Halohydrin Formation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2, H2O",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halohydrin Formation.",
+      "process": "Halohydrin formation from propene yields 1-bromo-2-propanol.",
+      "result": "The product is CC(O)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q45",
+    "topic": "Alkenes: Halohydrin Formation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2, H2O",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halohydrin Formation.",
+      "process": "Halohydrin formation from propene yields 1-bromo-2-propanol.",
+      "result": "The product is CC(O)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q47",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Halogenation of ethylene with molecular bromine yields 1,2-dibromoethane.",
+      "result": "The product is C(Br)CBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q48",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Halogenation of ethylene with molecular bromine yields 1,2-dibromoethane.",
+      "result": "The product is C(Br)CBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q49",
+    "topic": "Alkenes: Hydrogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "H2, Pd/C",
+      "conditions": "MeOH",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydrogenation.",
+      "process": "Catalytic hydrogenation converts propene to propane.",
+      "result": "The product is CCC."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q50",
+    "topic": "Alkenes: Hydroboration-Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "1) BH3, THF\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propene yields 1-propanol (anti-Markovnikov addition).",
+      "result": "The product is CCCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q51",
+    "topic": "Alkenes: Halohydrin Formation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2, H2O",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halohydrin Formation.",
+      "process": "Halohydrin formation from propene yields 1-bromo-2-propanol.",
+      "result": "The product is CC(O)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q52",
+    "topic": "Alkenes: Hydrogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "H2, Pd/C",
+      "conditions": "MeOH",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydrogenation.",
+      "process": "Catalytic hydrogenation converts propene to propane.",
+      "result": "The product is CCC."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q53",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q54",
+    "topic": "Alkenes: Hydrogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "H2, Pd/C",
+      "conditions": "MeOH",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydrogenation.",
+      "process": "Catalytic hydrogenation converts propene to propane.",
+      "result": "The product is CCC."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q56",
+    "topic": "Alkenes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "1) BH3, THF\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propene yields 1-propanol (anti-Markovnikov addition).",
+      "result": "The product is CCCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q57",
+    "topic": "Alkenes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "1) BH3, THF\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propene yields 1-propanol (anti-Markovnikov addition).",
+      "result": "The product is CCCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q59",
+    "topic": "Alkenes: Epoxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "mCPBA",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Epoxidation.",
+      "process": "Epoxidation of propene with mCPBA yields propylene oxide (methyloxirane).",
+      "result": "The product is CC1OC1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q61",
+    "topic": "Alkenes: Halohydrin Formation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2, H2O",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halohydrin Formation.",
+      "process": "Halohydrin formation from propene yields 1-bromo-2-propanol.",
+      "result": "The product is CC(O)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q62",
+    "topic": "Alkenes: Halohydrin Formation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2, H2O",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halohydrin Formation.",
+      "process": "Halohydrin formation from propene yields 1-bromo-2-propanol.",
+      "result": "The product is CC(O)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q63",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q64",
+    "topic": "Alkenes: Hydrogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "H2, Pd/C",
+      "conditions": "MeOH",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydrogenation.",
+      "process": "Catalytic hydrogenation converts propene to propane.",
+      "result": "The product is CCC."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q65",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Halogenation of ethylene with molecular bromine yields 1,2-dibromoethane.",
+      "result": "The product is C(Br)CBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q66",
+    "topic": "Alkenes: Epoxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "mCPBA",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Epoxidation.",
+      "process": "Epoxidation of propene with mCPBA yields propylene oxide (methyloxirane).",
+      "result": "The product is CC1OC1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q67",
+    "topic": "Alkenes: Halohydrin Formation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2, H2O",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halohydrin Formation.",
+      "process": "Halohydrin formation from propene yields 1-bromo-2-propanol.",
+      "result": "The product is CC(O)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q69",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q70",
+    "topic": "Alkenes: Epoxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "mCPBA",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Epoxidation.",
+      "process": "Epoxidation of propene with mCPBA yields propylene oxide (methyloxirane).",
+      "result": "The product is CC1OC1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q71",
+    "topic": "Alkenes: Hydration",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "H2O, H2SO4",
+      "conditions": "dil. H2SO4",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydration.",
+      "process": "Acid-catalyzed hydration of propene yields propan-2-ol (Markovnikov addition).",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q72",
+    "topic": "Alkenes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "1) BH3, THF\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propene yields 1-propanol (anti-Markovnikov addition).",
+      "result": "The product is CCCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q73",
+    "topic": "Alkenes: Hydrogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "H2, Pd/C",
+      "conditions": "MeOH",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydrogenation.",
+      "process": "Catalytic hydrogenation converts propene to propane.",
+      "result": "The product is CCC."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q74",
+    "topic": "Alkenes: Halohydrin Formation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2, H2O",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halohydrin Formation.",
+      "process": "Halohydrin formation from propene yields 1-bromo-2-propanol.",
+      "result": "The product is CC(O)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q75",
+    "topic": "Alkenes: Hydration",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "H2O, H2SO4",
+      "conditions": "dil. H2SO4",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydration.",
+      "process": "Acid-catalyzed hydration of propene yields propan-2-ol (Markovnikov addition).",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q76",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "C=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Halogenation of ethylene with molecular bromine yields 1,2-dibromoethane.",
+      "result": "The product is C(Br)CBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q78",
+    "topic": "Alkenes: Hydration",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "H2O, H2SO4",
+      "conditions": "dil. H2SO4",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydration.",
+      "process": "Acid-catalyzed hydration of propene yields propan-2-ol (Markovnikov addition).",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q79",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q80",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q81",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q82",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q84",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q85",
+    "topic": "Alkenes: Hydrogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "H2, Pd/C",
+      "conditions": "MeOH",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydrogenation.",
+      "process": "Catalytic hydrogenation converts propene to propane.",
+      "result": "The product is CCC."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q86",
+    "topic": "Alkenes: Hydrogenation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "H2, Pd/C",
+      "conditions": "MeOH",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydrogenation.",
+      "process": "Catalytic hydrogenation converts propene to propane.",
+      "result": "The product is CCC."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q87",
+    "topic": "Alkenes: Hydrogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "H2, Pd/C",
+      "conditions": "MeOH",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydrogenation.",
+      "process": "Catalytic hydrogenation converts propene to propane.",
+      "result": "The product is CCC."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q88",
+    "topic": "Alkenes: Halohydrin Formation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2, H2O",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halohydrin Formation.",
+      "process": "Halohydrin formation from propene yields 1-bromo-2-propanol.",
+      "result": "The product is CC(O)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q90",
+    "topic": "Alkenes: Hydroboration-Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "1) BH3, THF\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propene yields 1-propanol (anti-Markovnikov addition).",
+      "result": "The product is CCCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q91",
+    "topic": "Alkenes: Halogenation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "Br2",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Halogenation.",
+      "process": "Electrophilic halogenation of propene yields 1,2-dibromopropane.",
+      "result": "The product is CC(Br)C(Br)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q93",
+    "topic": "Alkenes: Hydration",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "H2O, H2SO4",
+      "conditions": "dil. H2SO4",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydration.",
+      "process": "Acid-catalyzed hydration of propene yields propan-2-ol (Markovnikov addition).",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q94",
+    "topic": "Alkenes: Hydration",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=C"
+      ],
+      "reagents": "H2O, H2SO4",
+      "conditions": "dil. H2SO4",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkenes: Hydration.",
+      "process": "Acid-catalyzed hydration of propene yields propan-2-ol (Markovnikov addition).",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

@@ -2312,5 +2312,3326 @@ var CH09_QUESTIONS = [
     "key_status": "unverified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q2",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q5_2",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q7",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q10",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q15",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q16",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q17",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q18",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q21",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q24",
+    "topic": "Alkynes: Hydration",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "H2O, H2SO4, HgSO4",
+      "conditions": "Hg(II) catalyst",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydration.",
+      "process": "Hydration of propyne yields acetone via tautomerization of an enol intermediate.",
+      "result": "The product is CC(C)=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q26",
+    "topic": "Alkynes: Hydration",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "H2O, H2SO4, HgSO4",
+      "conditions": "Hg(II) catalyst",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydration.",
+      "process": "Hydration of propyne yields acetone via tautomerization of an enol intermediate.",
+      "result": "The product is CC(C)=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q28",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q30",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q31",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q36",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q38",
+    "topic": "Alkynes: Hydration",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "H2O, H2SO4, HgSO4",
+      "conditions": "Hg(II) catalyst",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydration.",
+      "process": "Hydration of propyne yields acetone via tautomerization of an enol intermediate.",
+      "result": "The product is CC(C)=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q40",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q43",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q55",
+    "topic": "Alkynes: Hydration",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "H2O, H2SO4, HgSO4",
+      "conditions": "Hg(II) catalyst",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydration.",
+      "process": "Hydration of propyne yields acetone via tautomerization of an enol intermediate.",
+      "result": "The product is CC(C)=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q58",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q60",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q68",
+    "topic": "Alkynes: Hydration",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "H2O, H2SO4, HgSO4",
+      "conditions": "Hg(II) catalyst",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydration.",
+      "process": "Hydration of propyne yields acetone via tautomerization of an enol intermediate.",
+      "result": "The product is CC(C)=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q77",
+    "topic": "Alkynes: Hydration",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "H2O, H2SO4, HgSO4",
+      "conditions": "Hg(II) catalyst",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydration.",
+      "process": "Hydration of propyne yields acetone via tautomerization of an enol intermediate.",
+      "result": "The product is CC(C)=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q83",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q89",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q92",
+    "topic": "Alkynes: Hydration",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "H2O, H2SO4, HgSO4",
+      "conditions": "Hg(II) catalyst",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydration.",
+      "process": "Hydration of propyne yields acetone via tautomerization of an enol intermediate.",
+      "result": "The product is CC(C)=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q95",
+    "topic": "Alkynes: Hydroboration-Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC#C"
+      ],
+      "reagents": "1) R2BH\n2) H2O2, NaOH",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Alkynes: Hydroboration-Oxidation.",
+      "process": "Hydroboration-oxidation of propyne yields propionaldehyde (anti-Markovnikov carbonyl formation).",
+      "result": "The product is CCC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q14",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q20",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC#C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(=O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaBH4, MeOH"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propene, B: propanal, C: 1-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propyne, B: acetone, C: 2-propanol",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: propanal, C: 2-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propyne, B: acetone, C: propane",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propyne, B: acetone, C: 2-propanol.",
+      "result": "The labels correspond to A: propyne, B: acetone, C: 2-propanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q23_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC#C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(=O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaBH4, MeOH"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propene, B: propanal, C: 1-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propyne, B: propanal, C: 2-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: acetone, C: propane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propyne, B: acetone, C: 2-propanol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propyne, B: acetone, C: 2-propanol.",
+      "result": "The labels correspond to A: propyne, B: acetone, C: 2-propanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q25",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC#C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(=O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaBH4, MeOH"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: acetone, C: propane",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propyne, B: propanal, C: 2-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: propanal, C: 1-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propyne, B: acetone, C: 2-propanol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propyne, B: acetone, C: 2-propanol.",
+      "result": "The labels correspond to A: propyne, B: acetone, C: 2-propanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q31_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC#C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(=O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaBH4, MeOH"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: acetone, C: propane",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: propanal, C: 1-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: propanal, C: 2-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propyne, B: acetone, C: 2-propanol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propyne, B: acetone, C: 2-propanol.",
+      "result": "The labels correspond to A: propyne, B: acetone, C: 2-propanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q33",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC#C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(=O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaBH4, MeOH"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: propanal, C: 2-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: propanal, C: 1-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: acetone, C: propane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propyne, B: acetone, C: 2-propanol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propyne, B: acetone, C: 2-propanol.",
+      "result": "The labels correspond to A: propyne, B: acetone, C: 2-propanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q40_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC#C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(=O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaBH4, MeOH"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propene, B: propanal, C: 1-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propyne, B: acetone, C: propane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: propanal, C: 2-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propyne, B: acetone, C: 2-propanol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propyne, B: acetone, C: 2-propanol.",
+      "result": "The labels correspond to A: propyne, B: acetone, C: 2-propanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q55_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q59",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q61",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q66",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q68_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q72",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q79",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC#C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(=O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaBH4, MeOH"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: propanal, C: 2-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: propanal, C: 1-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: acetone, C: 2-propanol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: propyne, B: acetone, C: propane",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propyne, B: acetone, C: 2-propanol.",
+      "result": "The labels correspond to A: propyne, B: acetone, C: 2-propanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q80",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC#C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(=O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaBH4, MeOH"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: propanal, C: 2-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propyne, B: acetone, C: propane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: acetone, C: 2-propanol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: propanal, C: 1-propanol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propyne, B: acetone, C: 2-propanol.",
+      "result": "The labels correspond to A: propyne, B: acetone, C: 2-propanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q93",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC#C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(=O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaBH4, MeOH"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: acetone, C: propane",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propyne, B: acetone, C: 2-propanol",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: propanal, C: 1-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propyne, B: propanal, C: 2-propanol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propyne, B: acetone, C: 2-propanol.",
+      "result": "The labels correspond to A: propyne, B: acetone, C: 2-propanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q94",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q95_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC#C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(=O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaBH4, MeOH"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propene, B: propanal, C: 1-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propyne, B: acetone, C: propane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: acetone, C: 2-propanol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: propyne, B: propanal, C: 2-propanol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propyne, B: acetone, C: 2-propanol.",
+      "result": "The labels correspond to A: propyne, B: acetone, C: 2-propanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q3",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q15_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q17_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q22",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q46",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q78",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC#C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(=O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4, HgSO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaBH4, MeOH"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: acetone, C: 2-propanol",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: propyne, B: acetone, C: propane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: propanal, C: 2-propanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: propanal, C: 1-propanol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propyne, B: acetone, C: 2-propanol.",
+      "result": "The labels correspond to A: propyne, B: acetone, C: 2-propanol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q79_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q84",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch09_q95_3",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "C=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C(Br)CBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "C#C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "2 NaNH2"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: acetylene, B: 1,2-dibromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethane, B: bromoethane, C: ethylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethylene, B: bromoethane, C: acetylene",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethylene, B: 1,2-dibromoethane, C: acetylene",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethylene, B: 1,2-dibromoethane, C: acetylene.",
+      "result": "The labels correspond to A: ethylene, B: 1,2-dibromoethane, C: acetylene."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];
