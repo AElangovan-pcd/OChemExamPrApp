@@ -110,7 +110,12 @@ const smilesDrawerOptions = {
   fontSizeSmall: 8,
   padding: 10,
   terminalCarbons: true,
-  explicitHydrogens: false
+  explicitHydrogens: false,
+  // SmilesDrawer's compact mode collapses a small molecule into a condensed text
+  // formula - Cl[C@H](F)C renders as the string "CHClFHCH3", with no bonds and no
+  // wedges, which makes every stereochemistry item on a short chain unanswerable.
+  // Larger structures draw identically either way, so this is off everywhere.
+  compactDrawing: false
 };
 
 // Initialize App
