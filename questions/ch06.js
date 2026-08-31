@@ -2205,8 +2205,8 @@ var CH06_QUESTIONS = [
     ],
     "feedback": {
       "context": "Explaining a large negative enthalpy means accounting for bonds, because enthalpy is a bond-energy quantity. Strain, entropy and changes of phase each belong in a different column of the bookkeeping.",
-      "approach": "Step 1: List what breaks. The carbon-carbon pi bond, weak at roughly 240 kJ/mol, and the bromine-bromine bond, weaker still at about 193 kJ/mol.\nStep 2: List what forms. Two carbon-bromine sigma bonds at approximately 285 kJ/mol each.\nStep 3: Compare the two columns. Two strong sigma bonds are gained at the price of one weak pi bond and one weak halogen-halogen bond, and that trade is where the released energy comes from.",
-      "note": "The same accounting explains why additions to alkenes are exothermic as a class, and why this one does not run backwards under ordinary conditions: reversing it would mean trading two strong bonds for two weak ones.",
+      "approach": "Step 1: List what breaks. The carbon-carbon pi bond, which is the weakest bond in the alkene, and the bromine-bromine bond, one of the weakest single bonds anywhere in the halogens.\nStep 2: List what forms. Two carbon-bromine sigma bonds, each of them substantially stronger than either bond that was broken.\nStep 3: Compare the two columns. Two strong sigma bonds are gained at the price of two weak ones, and the difference between them is the energy given out.",
+      "note": "Tabulated bond energies would only estimate the value quoted in the stem, because they are averages taken over many compounds while -96 kJ/mol is measured for this reaction in particular. The accounting still delivers the sign and the rough size, which is all a bond-energy argument is ever meant to do.",
       "options": {
         "A": "A six-membered ring is essentially free of strain, so there is none to relieve, and the product ring is exactly the same size as the one it came from.",
         "B": "Correct. A weak pi bond and a weak Br-Br bond are exchanged for two considerably stronger carbon-bromine sigma bonds.",
