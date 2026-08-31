@@ -5617,5 +5617,196 @@ var CH08_QUESTIONS = [
     "key_status": "unverified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q95_hydration_nucleophile",
+    "topic": "Electrophilic Addition Mechanism",
+    "difficulty_level": "Medium",
+    "question_text": "In the acid-catalyzed hydration of alkenes, which species acts as the nucleophile in the step that forms the carbon-oxygen bond?",
+    "question_smiles": "",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A water molecule (\\(H_2O\\))",
+        "smiles": "",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A hydronium ion (\\(H_3O^+\\))",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A bisulfate ion (\\(HSO_4^-\\))",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "The carbocation intermediate",
+        "smiles": "",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "In an acid-catalysed reaction the acid is a catalyst, not a reagent, so it must be handed back at the end. That constraint decides which species is allowed to supply the atom that ends up in the product.",
+      "approach": "Step 1: Follow the mechanism. The acid protonates the alkene, giving a carbocation and leaving the conjugate base behind.\nStep 2: Ask what supplies the oxygen. The product is an alcohol, so an oxygen-bearing species must bond to the cationic carbon, and the only oxygen source present in quantity is the solvent, water.\nStep 3: Complete the cycle. Water attacks the carbocation to give a protonated alcohol, which loses a proton to another water molecule - returning the catalyst and finishing with a neutral alcohol.",
+      "note": "The intermediate oxonium ion is the reason the acid comes back. If water bonded to carbon and stopped there, the reaction would consume a proton per turnover and the acid would no longer be catalytic.",
+      "options": {
+        "A": "Correct. Water is the nucleophile: its lone pair attacks the carbocation, and the resulting oxonium ion is deprotonated to give the alcohol and regenerate the acid.",
+        "B": "Hydronium is the proton source for the first step, which makes it the electrophile in this mechanism. Its oxygen already carries a positive charge and is a poor donor.",
+        "C": "Bisulfate is a weak nucleophile, and on the occasions it does bond to the cation the product is an alkyl hydrogen sulfate, not the alcohol.",
+        "D": "The carbocation is the electrophile here - the species being attacked. It is short of electrons and has none to donate."
+      }
+    },
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch08_q96_halogenation_stereochem",
+    "topic": "Electrophilic Addition Mechanism",
+    "difficulty_level": "Medium",
+    "question_text": "Reaction of cyclohexene with bromine (\\(Br_2\\)) in a non-nucleophilic solvent like dichloromethane yields trans-1,2-dibromocyclohexane. Which intermediate explains this anti stereochemistry?",
+    "question_smiles": "C1=CCCCC1",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A cyclic bromonium ion intermediate",
+        "smiles": "",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A planar carbocation intermediate",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A free radical intermediate",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A carbanion intermediate",
+        "smiles": "",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Stereochemistry is evidence about intermediates. A reaction that gives only one diastereomer has ruled out any intermediate that would have allowed both, so the observed product constrains the mechanism.",
+      "approach": "Step 1: Ask what an open carbocation would predict. It is planar, so bromide could attack either face and both the cis and the trans dibromide would appear.\nStep 2: Compare with the result. Only the trans product forms, which means one face of the intermediate is blocked.\nStep 3: Identify what blocks it. The first bromine bridges both carbons as a three-membered cyclic bromonium ion, shielding the face it sits on, so bromide must open the ring from the opposite side - giving anti addition and the trans dibromide.",
+      "note": "The bromonium ion was proposed from stereochemical evidence alone, decades before such ions were observed directly in stable-ion solutions. It is a clean example of a mechanism deduced from what the products are not.",
+      "options": {
+        "A": "Correct. Bromine bridges the two carbons, shielding one face, so the incoming bromide can only attack from the other side and the two bromines end up anti.",
+        "B": "A planar carbocation exposes both faces equally and would give a mixture of cis and trans dibromides. The exclusive trans product is exactly what rules it out.",
+        "C": "Radical addition of bromine needs light or a radical initiator and shows no such stereochemical preference; this reaction runs in the dark in dichloromethane.",
+        "D": "An alkene is electron-rich and attacks bromine, not the other way round. No carbanion is formed at any point in this mechanism."
+      }
+    },
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring containing one double bond."
+  },
+  {
+    "question_id": "ch08_q97_halohydrin_regiochem",
+    "topic": "Electrophilic Addition Mechanism",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product and its regiochemical orientation when 2-methylpropene is treated with bromine (\\(Br_2\\)) in water?",
+    "question_smiles": "CC(C)=C",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "1-bromo-2-methylpropan-2-ol (bromine at C1, hydroxyl at C2)",
+        "smiles": "CC(C)(O)CBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "2-bromo-2-methylpropan-1-ol (bromine at C2, hydroxyl at C1)",
+        "smiles": "CC(C)(Br)CO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "1,2-dibromo-2-methylpropane",
+        "smiles": "CC(C)(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "2-methylpropan-2-ol",
+        "smiles": "CC(C)(C)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "A bridged bromonium ion on an unsymmetrical alkene is not symmetrical either. The two carbon-bromine bonds are unequal, and the regiochemistry of the opening follows from which of them is longer and weaker.",
+      "approach": "Step 1: Form the bromonium ion across the double bond, and identify the two carbons: one carries two methyl groups, the other only hydrogens.\nStep 2: Recognise where the positive charge is concentrated. The more substituted carbon supports positive charge better, so its bond to bromine is stretched and it is the more electrophilic of the two.\nStep 3: Attack there with water, the nucleophile present in excess. The oxygen bonds to the more substituted carbon and bromine stays on the less substituted one, giving 1-bromo-2-methylpropan-2-ol.",
+      "note": "This looks like Markovnikov orientation and it is, but the reason differs: no free carbocation ever forms. The bridged ion simply leans towards the structure the open cation would have had.",
+      "options": {
+        "A": "Correct. Water attacks the more substituted carbon of the bromonium ion, where positive charge is concentrated, leaving bromine on the terminal carbon.",
+        "B": "This reverses the opening. Water would have to attack the carbon that supports positive charge least well, which is the slower path.",
+        "C": "The dibromide is what forms when the reaction is run in an inert solvent. With water present in large excess, water outcompetes bromide for the bromonium ion.",
+        "D": "This product contains no bromine at all. It would come from simple acid-catalysed hydration, with no bromine involved in the reaction."
+      }
+    },
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon carrying two methyl groups and joined by a double bond to a terminal CH2 group."
+  },
+  {
+    "question_id": "ch08_q98_evidence_against_carbocation",
+    "topic": "Electrophilic Addition Mechanism",
+    "difficulty_level": "Hard",
+    "question_text": "Which of the following experimental observations provides the strongest evidence AGAINST a simple planar carbocation intermediate in the bromination of cyclopentene?",
+    "question_smiles": "C1=CCCC1",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "The reaction yields exclusively trans-1,2-dibromocyclopentane.",
+        "smiles": "",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "The reaction rate increases with increasing alkyl substitution on the double bond.",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "The reaction is carried out in dark conditions and does not require light.",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "The product obtained is a racemic mixture of enantiomers.",
+        "smiles": "",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Evidence against a mechanism has to be an observation that mechanism forbids. Facts that both candidate mechanisms predict equally are consistent with either and settle nothing.",
+      "approach": "Step 1: Write down what an open, planar carbocation predicts: bromide attacks either face at random, so both the cis and the trans dibromide should appear.\nStep 2: Compare each observation against that prediction. Only one of them contradicts it.\nStep 3: Note that the reaction gives the trans dibromide and nothing else. A planar intermediate cannot produce a single diastereomer, so this result excludes it - and points instead to a bridged bromonium ion.",
+      "note": "Racemic product is the observation most often mistaken for evidence here. A planar cation gives a racemate and so does a bridged ion opened at either carbon, so that result cannot tell the two apart.",
+      "options": {
+        "A": "Correct. A planar carbocation would let bromide attack either face and give both diastereomers; getting only the trans product rules that intermediate out.",
+        "B": "Faster reaction with more substituted alkenes is exactly what a carbocation mechanism predicts, since alkyl groups stabilise positive charge. This supports the carbocation picture rather than opposing it.",
+        "C": "Working in the dark rules out a radical chain mechanism. It says nothing about whether the ionic intermediate is open or bridged.",
+        "D": "Both mechanisms give a racemate: a planar cation is attacked equally from both faces, and a bridged ion is opened equally at either carbon. The observation does not discriminate."
+      }
+    },
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-membered carbon ring containing one double bond."
   }
 ];
