@@ -1905,7 +1905,7 @@ var CH05_QUESTIONS = [
     "topic": "Racemic Mixtures & Resolution",
     "difficulty_level": "Medium",
     "question_text": "Thermodynamically, why is the spontaneous racemization of a pure enantiomer favored over time in solution?",
-    "question_smiles": "CC(O)C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1933,12 +1933,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the thermodynamic principles behind racemization.",
-      "process": "Step 1: Racemization converts a pure enantiomer into a 50:50 mixture of enantiomers.\nStep 2: In terms of enthalpy ($\\Delta H$), enantiomers have identical bond energies and solvent interactions, so the enthalpy of mixing is close to zero ($\\Delta H \\approx 0$).\nStep 3: In terms of entropy ($\\Delta S$), mixing two different species (the two enantiomers) increases the disorder of the system, making $\\Delta S_\\text{mix} > 0$. Since $\\Delta G = \\Delta H - T\\Delta S$, a positive entropy change makes the free energy change negative ($\\Delta G < 0$), driving spontaneous racemization.",
-      "result": "Spontaneous racemization is thermodynamically driven by the positive entropy of mixing."
+      "context": "A pure enantiomer and its racemate have essentially the same bonds, the same strain and the same solvation, so enthalpy has nothing to say about which is favoured. What separates them is that one is a single substance and the other is a mixture, and mixing has an entropy.",
+      "approach": "Step 1: Compare the two states. A pure enantiomer in solution is one component; a racemate is two components in equal amounts, distinguishable in principle but identical in energy.\nStep 2: Evaluate the enthalpy change. Because the two enantiomers are mirror images, every intermolecular interaction in an achiral solvent is energetically identical, so mixing them releases and absorbs nothing - the enthalpy change is essentially zero.\nStep 3: Evaluate the entropy change. Going from one component to an equimolar two-component mixture raises the entropy, and with the enthalpy term absent the free energy change is negative at every temperature. Racemisation is therefore always downhill.",
+      "note": "The driving force is real but small: the entropy of mixing gives about 1.4 J per mole per kelvin, worth roughly 0.4 kcal/mol of free energy at room temperature. That is why enantiopure compounds sit stable on a shelf for decades - not because racemising them is uphill, but because there is usually no pathway with a low enough barrier. Thermodynamics says it will happen; kinetics decides whether you live to see it.",
+      "options": {
+        "A": "Correct. Converting one component into an equimolar mixture of two raises the entropy, and with essentially no enthalpy change the free energy change is negative at any temperature.",
+        "B": "The two enantiomers are mirror images, so their interactions with an achiral solvent and with each other are energetically identical. Mixing them releases no heat worth speaking of.",
+        "C": "The barrier is usually large, which is exactly why most enantiopure compounds do not racemise. A zero activation energy would make every stereocentre useless.",
+        "D": "Hydrogen bonding to an achiral solvent cannot distinguish the two enantiomers, so it is identical in the pure and the mixed sample and cannot drive anything."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1974,20 +1980,27 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the chemical mechanism of resolving enantiomers via salt formation.",
-      "process": "Step 1: Enantiomers cannot be separated by standard physical methods because they have identical physical properties.\nStep 2: Reacting a racemic mixture of amines, (±)-A, with a pure enantiomer of an acid, (+)-B, results in the formation of two salts: ((+)-A·(+)-B) and ((-)-A·(+)-B).\nStep 3: These two salts are diastereomers of each other (not mirror images). Because they are diastereomers, they have different solubilities, allowing them to be separated by selective recrystallization. The free amines are then recovered by adding a base.",
-      "result": "Chiral resolving agents work by converting enantiomers into diastereomeric salts which possess different solubilities and can be separated by recrystallization."
+      "context": "Enantiomers are inseparable because nothing achiral can tell them apart. A resolving agent supplies the missing chirality: react both enantiomers with a single pure enantiomer of something else, and the two products are no longer mirror images of one another.",
+      "approach": "Step 1: Form the salts. (+)-Tartaric acid protonates both amines, giving the (+)-acid paired with the (+)-amine and the (+)-acid paired with the (-)-amine.\nStep 2: Classify the pair of products. Their mirror images would be the (-)-acid salts, which are not present, so the two salts in the flask are stereoisomers that are not mirror images - diastereomers.\nStep 3: Exploit the difference. Diastereomers have different lattice energies and different solubilities, so one salt crystallises preferentially from a chosen solvent while the other stays in solution. Filter, then break each salt with base to release the free amine.",
+      "note": "The resolving agent is recovered, not consumed - the final base treatment liberates the amine and leaves the tartrate in solution to be re-acidified and reused. That, plus availability as a single enantiomer from natural sources, is what makes tartaric acid, brucine and quinine the classical choices. The method also has a hard requirement: the racemate must be an acid or a base, so that a salt can be formed at all.",
+      "options": {
+        "A": "Correct. Salt formation with one pure enantiomer converts the enantiomeric pair into a diastereomeric pair, whose different solubilities allow one to be crystallised away from the other.",
+        "B": "Nothing is destroyed. Both amines react with the resolving agent; what differs is how the two resulting salts crystallise, and both enantiomers can be recovered at the end.",
+        "C": "An achiral catalyst could not distinguish the two enantiomers at all - that is the whole reason a chiral agent is required. The agent is also used in stoichiometric amount, not catalytically.",
+        "D": "A meso compound needs two stereocentres related by an internal mirror plane. The salts here are ionic pairs, not covalent adducts, and their two chiral halves have no such relationship."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A benzene ring joined to a carbon that carries a methyl group and an amino group; every bond is drawn plain, so no configuration is shown."
   },
   {
     "question_id": "ch05_q43_chiral_stationary_phase",
     "topic": "Racemic Mixtures & Resolution",
     "difficulty_level": "Hard",
     "question_text": "How does chiral HPLC (high-performance liquid chromatography) separate a racemic mixture of enantiomers without chemical modification?",
-    "question_smiles": "CC(O)C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -2015,12 +2028,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the physical principles of chromatographic resolution using a chiral stationary phase.",
-      "process": "Step 1: In chiral HPLC, the column stationary phase is bonded to a single enantiomer of a chiral compound (the chiral selector).\nStep 2: When the racemic mixture passes through the column, each enantiomer interacts with the chiral selector. These interactions form transient, non-covalent diastereomeric complexes.\nStep 3: Because diastereomeric complexes have different stabilities and binding energies, one enantiomer binds more tightly and moves slower, while the other elutes faster, achieving separation.",
-      "result": "Chiral HPLC separates enantiomers by utilizing a chiral stationary phase that forms diastereomeric complexes of differing stability with each enantiomer."
+      "context": "Classical resolution builds a covalent or ionic bond to a chiral agent and then has to break it again. Chiral chromatography achieves the same conversion to a diastereomeric relationship without any chemistry at all, by making the column itself the chiral partner.",
+      "approach": "Step 1: Make the stationary phase chiral. The silica is bonded to a single enantiomer of a selector - a derivatised cellulose, a cyclodextrin or a small chiral molecule - so the surface the analytes meet has a definite handedness.\nStep 2: Let each enantiomer bind. The complex formed between the (+) analyte and the (+) selector is not the mirror image of the complex formed between the (-) analyte and the (+) selector; the two association complexes are diastereomeric.\nStep 3: Read that as a retention difference. Diastereomeric complexes have different binding energies, so one enantiomer spends more time adsorbed than the other and the two leave the column at different times, unchanged and separable.",
+      "note": "Discrimination usually needs at least three simultaneous points of contact between the analyte and the selector, at least one of them directional - the three-point interaction model. Two contacts can be matched by either enantiomer, so nothing is distinguished. That requirement is why chiral columns are selective for particular structural classes rather than universal, and why method development means screening several phases.",
+      "options": {
+        "A": "Correct. A single-enantiomer selector on the stationary phase forms diastereomeric association complexes with the two analytes, and their different binding energies give different retention times.",
+        "B": "A chiral solvent in the mobile phase can shift both enantiomers but it moves with them down the column, so it produces no differential retention. The chirality has to be anchored to the stationary phase.",
+        "C": "Enantiomers have identical magnetic properties in an achiral field. There is no magnetic handle to grip, and chiral columns contain no magnetic core.",
+        "D": "Enantiomers have identical molecular weights, being made of the same atoms in the same connectivity. Size exclusion cannot separate them even in principle."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2028,7 +2047,7 @@ var CH05_QUESTIONS = [
     "topic": "Racemic Mixtures & Resolution",
     "difficulty_level": "Hard",
     "question_text": "In a kinetic resolution of a racemic ester using a lipase enzyme, one enantiomer is hydrolyzed to an alcohol, while the other remains unreacted. What is the fundamental cause of this selectivity?",
-    "question_smiles": "CC(OC(=O)C)C",
+    "question_smiles": "CC(OC(=O)C)c1ccccc1",
     "options": [
       {
         "option_id": "A",
@@ -2056,20 +2075,27 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the biochemical basis of kinetic resolution.",
-      "process": "Step 1: Enzymes are chiral proteins that form chiral active sites.\nStep 2: When a racemic substrate binds to the active site, the transition states for the hydrolysis of the (R) and (S) enantiomers are diastereomeric.\nStep 3: Diastereomeric transition states have different free energies of activation ($\\Delta G^\\ddagger$). This causes one enantiomer to react much faster than the other, yielding selective hydrolysis.",
-      "result": "Kinetic resolution relies on the difference in activation energy between the diastereomeric transition states formed when each enantiomer binds to the chiral enzyme."
+      "context": "The two previous methods separate enantiomers that are already there. A kinetic resolution instead makes them react at different rates, which requires the difference to appear not in the ground state - where enantiomers are identical - but in the transition state.",
+      "approach": "Step 1: Compare the starting materials. The two ester enantiomers have identical energies, so nothing distinguishes them before the enzyme is involved.\nStep 2: Bring in the enzyme. A lipase is built from L-amino acids and is therefore a single chiral entity. The complex it forms with one ester enantiomer is not the mirror image of the complex it forms with the other; the two transition states leading to hydrolysis are diastereomeric.\nStep 3: Diastereomeric transition states have different energies, so the two enantiomers hydrolyse at different rates. Stop the reaction partway and the faster-reacting enantiomer has become the alcohol while the slower one remains as unreacted ester.",
+      "note": "The arithmetic of a kinetic resolution is worth knowing before running one. The yield of either single enantiomer cannot exceed fifty per cent, and the two purities move in opposite directions with conversion: the recovered starting material grows steadily more enantiopure as the reaction proceeds, while the product grows less so. Stopping short of fifty per cent conversion favours the product's purity, going past it favours the recovered material's, and the choice has to be made before the reaction is set up.",
+      "options": {
+        "A": "Correct. The enzyme is chiral, so the two transition states it forms with the two ester enantiomers are diastereomeric and differ in activation energy, giving different rates.",
+        "B": "An enzyme built from L-amino acids is inherently chiral and could not distinguish enantiomers if it were not. A kinetic resolution is also decided by rates, not by which product is thermodynamically favoured.",
+        "C": "If one enantiomer deactivated the enzyme, the reaction would simply stop rather than run selectively on the other. Both enantiomers bind; they merely react at different rates.",
+        "D": "Enantiomers have identical solubility in water, which is achiral. No solubility difference exists for a solvent-based selectivity to exploit."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A benzene ring attached to a carbon bearing a methyl group, that carbon joined through an oxygen to an acetyl group; every bond is drawn plain, so no configuration is shown."
   },
   {
     "question_id": "ch05_q45_resolution_vs_separation",
     "topic": "Racemic Mixtures & Resolution",
     "difficulty_level": "Medium",
     "question_text": "Why is resolving enantiomers more difficult than separating diastereomers?",
-    "question_smiles": "CC(O)C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -2097,12 +2123,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question compares the basic separation challenges of enantiomers vs. diastereomers.",
-      "process": "Step 1: Diastereomers differ in their 3D shape and have different physical properties (boiling point, solubility, etc.). They can be separated by standard techniques like distillation.\nStep 2: Enantiomers are identical in all physical properties in an achiral environment. They have the same boiling point, melting point, density, and solubility in achiral solvents.\nStep 3: Consequently, separation of enantiomers (resolution) requires introducing a chiral environment (chiral auxiliary, chiral solvent, chiral column, or chiral resolving agent) to break the symmetry.",
-      "result": "Enantiomers have identical physical properties in an achiral environment, making their resolution significantly more challenging than separating diastereomers."
+      "context": "Every practical resolution runs the same manoeuvre: enantiomers cannot be separated as they stand, so they are put temporarily into a chiral environment where they become diastereomeric, separated there, and then released. Whether that environment is a salt, a column surface or an enzyme's active site is a detail of implementation.",
+      "approach": "Step 1: State why the direct attempt fails. In an achiral environment two enantiomers have identical boiling points, identical solubilities and identical adsorption energies, so distillation, crystallisation and ordinary chromatography have nothing to act on.\nStep 2: State why diastereomers are different. They are not related by any symmetry operation, so every one of those properties differs and any ordinary technique can grip the difference.\nStep 3: Bridge the two. Introduce a single enantiomer of some second chiral substance and the pair becomes diastereomeric for as long as the association lasts; separate them in that state, then remove the auxiliary.",
+      "note": "The alternative is to sidestep the problem entirely. Asymmetric synthesis builds the wanted enantiomer preferentially in the first place, using a chiral catalyst or a chiral starting material, which avoids the ceiling every resolution runs into - a resolution starts from a fifty-fifty mixture and can never deliver more than half the material as the desired enantiomer, with the other half discarded or recycled.",
+      "options": {
+        "A": "Correct. Enantiomers match in every property an achiral technique can measure, while diastereomers differ in all of them, which is why one pair separates readily and the other does not.",
+        "B": "Enantiomers are ordinary stable compounds. Nothing about being a single enantiomer makes a substance unstable, and pure enantiomers are isolated and stored routinely.",
+        "C": "Diastereomers are ordinary organic compounds full of carbon-carbon bonds, and separating isomers never involves breaking bonds at all - it is a physical separation.",
+        "D": "Enantiomers already have the same elemental formula, which is the point. Changing the formula would give a different compound rather than a separated enantiomer."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2115,7 +2147,7 @@ var CH05_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The cis isomer is a meso compound, and the trans isomer is a pair of enantiomers.",
-        "smiles": "C1CC[C@@H](C)[C@@H](C)C1",
+        "smiles": "",
         "is_correct": true
       },
       {
@@ -2138,12 +2170,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests stereochemical relationships in 1,2-disubstituted cycloalkanes.",
-      "process": "Step 1: Identify the stereocenters in 1,2-dimethylcyclohexane. They are C1 and C2.\nStep 2: Analyze cis-1,2-dimethylcyclohexane. Although the chair conformations are chiral, they interconvert rapidly by ring flipping. The time-averaged structure (or planar representation) has a plane of symmetry, making it an achiral meso compound.\nStep 3: Analyze trans-1,2-dimethylcyclohexane. It has no plane of symmetry or center of inversion. It exists as a pair of non-superimposable, stable enantiomers: (1R,2R) and (1S,2S).",
-      "result": "For 1,2-dimethylcyclohexane, the cis isomer is a meso compound and the trans isomer exists as a pair of resolvable enantiomers."
+      "context": "C1 and C2 of 1,2-dimethylcyclohexane are both stereocentres, each carrying a methyl, a hydrogen and the two unequal arcs of the ring. Two stereocentres on a skeleton whose halves are identical is exactly the setting where a meso form can appear, and cis or trans decides whether it does.",
+      "approach": "Step 1: Draw the ring flat and place both methyls on the same face - the cis isomer. A mirror plane stands perpendicular to the ring through the middle of the C1-C2 bond and reflects one methyl onto the other, so this isomer is achiral despite its two stereocentres.\nStep 2: Move one methyl to the opposite face - the trans isomer. Now the plane fails, because reflection would send a methyl pointing up onto one pointing down.\nStep 3: Check that trans really is chiral rather than merely lacking that one plane. Its mirror image is the trans isomer with both methyls swapped between faces, which is a different molecule that cannot be superimposed by any rotation. The trans isomer therefore exists as a resolvable pair of enantiomers.",
+      "note": "The whole pattern is tartaric acid with the two stereocentres tethered together. Assign descriptors and the parallel is exact: the cis isomer is (1R,2S), the achiral one, and the trans isomer is the (1R,2R) and (1S,2S) pair. Recognising a 1,2-disubstituted ring as an open-chain compound with its ends tied makes the cis-to-meso mapping automatic - though only for 1,2, since moving the substituents further apart changes where the mirror plane has to sit.",
+      "options": {
+        "A": "Correct. The cis isomer has an internal mirror plane through the C1-C2 bond and is meso; the trans isomer has none and exists as a resolvable pair of enantiomers.",
+        "B": "This reverses the two. Placing the methyls on the same face is what allows the mirror plane; placing them on opposite faces is what destroys it.",
+        "C": "The trans isomer cannot be meso. Its mirror image is a genuinely different molecule, which is the definition of a chiral compound rather than a meso one.",
+        "D": "The cis isomer is not resolvable. Any sample of it is achiral overall, so there are no enantiomers of it to separate."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2179,13 +2217,20 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests how temperature-dependent conformational mobility affects chirality and resolution.",
-      "process": "Step 1: At room temperature, the two chair conformations of cis-1,2-dimethylcyclohexane interconvert rapidly. These conformations are enantiomers of each other.\nStep 2: At very low temperatures (like -100 °C), the thermal energy is insufficient to overcome the barrier for the chair flip, freezing the conformations.\nStep 3: This stops the interconversion, locking the molecules into their individual chiral chair forms. Under these conditions, the two enantiomers can theoretically be resolved and would rotate plane-polarized light.",
-      "result": "Freezing the ring flip of cis-1,2-dimethylcyclohexane at low temperatures allows the isolation of the two stable, chiral chair conformers as enantiomers."
+      "context": "Calling cis-1,2-dimethylcyclohexane achiral is a statement about a rapidly interconverting mixture, not about any molecule in it. Freeze the interconversion and the statement stops applying, because what is left are two distinct chiral species.",
+      "approach": "Step 1: Examine a single chair. The cis arrangement forces one methyl axial and the other equatorial, and that conformer has no mirror plane and no centre of inversion - it is chiral.\nStep 2: Examine the other chair. Ring flip exchanges axial for equatorial, giving a conformer that is the non-superimposable mirror image of the first. The two chairs are conformational enantiomers.\nStep 3: Apply the premise. If the flip is genuinely frozen, the two conformers become separate, isolable substances rather than two forms of one substance - and being enantiomers, they are in principle resolvable, each rotating plane-polarised light.",
+      "note": "The premise is doing more work than the temperature can deliver. Cyclohexane's ring flip has a barrier near 10.8 kcal/mol, which is slow on the NMR timescale below about minus 60 degrees Celsius - enough to see separate axial and equatorial signals - but the conformers still interconvert in milliseconds even at minus 100. Freezing the flip on a spectroscopic timescale is routine; freezing it long enough to crystallise one enantiomer is not, so this stays a thought experiment.",
+      "options": {
+        "A": "Correct. The two chair conformers are non-superimposable mirror images, so once the flip between them stops they are separate chiral substances open to resolution in principle.",
+        "B": "The meso description depends on the two conformers averaging. Stop the averaging, as the question stipulates, and what remains are two chiral conformers, neither of which is achiral on its own.",
+        "C": "Cooling a compound does not eliminate it. Forming an alkene would require breaking C-H bonds and losing hydrogen, which needs energy rather than its removal.",
+        "D": "A planar cyclohexane costs enormous angle and torsional strain and is never populated. Cooling drives a molecule toward its lowest-energy conformation, not toward a high-energy one."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered ring drawn as a flat hexagon, with methyl groups on two neighbouring ring carbons, each on a bold wedge so that both project toward the viewer from the same face."
   },
   {
     "question_id": "ch05_q48_dimethylcyclohexane_1_3",
@@ -2197,7 +2242,7 @@ var CH05_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The cis isomer is a meso compound, and the trans isomer is a pair of enantiomers.",
-        "smiles": "C1CC[C@@H](C)C[C@@H](C)1",
+        "smiles": "",
         "is_correct": true
       },
       {
@@ -2220,12 +2265,18 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests stereochemical relationships in 1,3-disubstituted cycloalkanes.",
-      "process": "Step 1: Identify the stereocenters in 1,3-dimethylcyclohexane. They are C1 and C3.\nStep 2: Analyze cis-1,3-dimethylcyclohexane. In the diequatorial conformation, a plane of symmetry passes directly through C2 and C5. Thus, the cis isomer has a plane of symmetry and is a meso compound.\nStep 3: Analyze trans-1,3-dimethylcyclohexane. The two methyl groups must be cis-trans relative to one another (one axial, one equatorial). This conformation lacks a plane of symmetry. It exists as a pair of enantiomers: (1R,3R) and (1S,3S).",
-      "result": "For 1,3-dimethylcyclohexane, the cis isomer is meso because it has a plane of symmetry, and the trans isomer is chiral."
+      "context": "Moving the two methyls from a 1,2 to a 1,3 relationship moves where any mirror plane would have to sit. It can no longer pass through a bond between the stereocentres, because they are no longer bonded to one another - it has to pass through the atoms lying between them.",
+      "approach": "Step 1: Locate the candidate plane. In 1,3-dimethylcyclohexane a mirror plane would run through C2 and C5, the two ring carbons that lie between the substituted ones, cutting the ring into halves that each contain one methyl.\nStep 2: Test the cis isomer. With both methyls on the same face, reflection through that plane carries one methyl onto the other and the molecule onto itself. The cis isomer is achiral - a meso compound.\nStep 3: Test the trans isomer. With the methyls on opposite faces, reflection sends an up methyl onto a down one and fails. Its mirror image is a distinct molecule, so the trans isomer is a resolvable pair of enantiomers.",
+      "note": "The 1,3 case is also the one where the stability ordering inverts. cis-1,3-Dimethylcyclohexane can put both methyls equatorial in the same chair, while the trans isomer is stuck with one axial in either chair - so here, uniquely among the three dimethylcyclohexanes, the cis isomer is the more stable by about 1.8 kcal/mol. In the 1,2 and 1,4 compounds it is the trans isomer that achieves the diequatorial arrangement.",
+      "options": {
+        "A": "Correct. A mirror plane through C2 and C5 reflects the cis isomer onto itself, making it meso, while the trans isomer has no such plane and forms an enantiomeric pair.",
+        "B": "This reverses the assignment. Reflection through the C2-C5 plane requires the two methyls to be on the same face, which is the cis arrangement rather than the trans one.",
+        "C": "The cis isomer is not resolvable. It maps onto its own mirror image through the plane containing C2 and C5, so there is no second enantiomer to separate from it.",
+        "D": "The trans isomer is chiral. Its mirror image is a genuinely different molecule that no rotation of the ring will superimpose on it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2238,7 +2289,7 @@ var CH05_QUESTIONS = [
       {
         "option_id": "A",
         "text": "The molecules possess planes of symmetry, and C1 and C4 are not asymmetric stereocenters.",
-        "smiles": "CC1CCC(C)CC1",
+        "smiles": "",
         "is_correct": true
       },
       {
@@ -2261,25 +2312,32 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the criteria for asymmetric carbons and overall molecular chirality in 1,4-disubstituted cyclohexanes.",
-      "process": "Step 1: Examine C1 and C4 of 1,4-dimethylcyclohexane. For a carbon to be an asymmetric stereocenter, it must be bonded to four different groups.\nStep 2: C1 is bonded to: 1) $-CH_3$, 2) $-H$, 3) the C2-C3 path around the ring, and 4) the C6-C5 path around the ring. Since the path from C1 to C4 is identical in both directions (C1-C2-C3-C4 vs C1-C6-C5-C4), paths 3 and 4 are identical.\nStep 3: Consequently, C1 and C4 are not stereocenters. Both the cis and trans isomers have planes of symmetry passing through C1 and C4 and contain no stereocenters, making them achiral.",
-      "result": "Both cis and trans isomers of 1,4-dimethylcyclohexane are achiral because they possess planes of symmetry and lack asymmetric carbons."
+      "context": "The 1,4 compound looks like the 1,2 and 1,3 cases and behaves quite differently, because the substituted carbons stop being stereocentres altogether. Both cis and trans are achiral, and for a reason that has nothing to do with cancelling stereocentres.",
+      "approach": "Step 1: Test C1 for four different groups. Going round the ring one way from C1 gives C2, C3, C4; going the other way gives C6, C5, C4. Those two arcs are identical - each is two CH2 groups leading to the carbon bearing the other methyl - so C1 has two identical substituents and is not a stereocentre. The same argument applies at C4.\nStep 2: Look for the symmetry directly. A mirror plane containing C1, C4 and both methyl groups cuts each isomer into two identical halves, in the cis and the trans arrangement alike.\nStep 3: Conclude. With no stereocentres and a mirror plane in each isomer, neither cis nor trans 1,4-dimethylcyclohexane is chiral, and neither rotates plane-polarised light.",
+      "note": "It is worth being precise about the word meso here, because these two are not meso compounds - meso means achiral in spite of possessing stereocentres, and this molecule possesses none. Cis and trans 1,4-dimethylcyclohexane are still diastereomers of one another, different substances with different melting points and different energies, which shows that a diastereomeric relationship needs no stereocentre at either end.",
+      "options": {
+        "A": "Correct. The two ring arcs leaving C1 are identical, so C1 and C4 are not stereocentres, and a mirror plane through those two carbons and both methyls makes each isomer achiral.",
+        "B": "Carbon-carbon bonds in a saturated ring do not cleave at room temperature. Nothing needs to racemise here in any case, since there is no chirality to lose.",
+        "C": "Cis and trans are distinct substances, not two components of one sample. Each is separately achiral, so neither has a rotation for the other to cancel.",
+        "D": "The methyls being across the ring from one another is the right observation, but it does not destroy anything - it makes the two ring arcs at each substituted carbon identical, which is what removes the stereocentres."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered ring carrying a methyl group on each of two carbons directly across the ring from one another; every bond is drawn plain, so no configuration is shown."
   },
   {
     "question_id": "ch05_q50_cyclopropane_isomers",
     "topic": "Stereocenters in Cycloalkanes",
     "difficulty_level": "Hard",
     "question_text": "How many stereoisomers exist for 1-bromo-2-chlorocyclopropane?",
-    "question_smiles": "C1[C@@H](Br)[C@H](Cl)1",
+    "question_smiles": "BrC1CC1Cl",
     "options": [
       {
         "option_id": "A",
         "text": "4",
-        "smiles": "C1[C@@H](Br)[C@H](Cl)1",
+        "smiles": "",
         "is_correct": true
       },
       {
@@ -2302,13 +2360,20 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the number of stereoisomers for an unsymmetrically disubstituted cyclic system.",
-      "process": "Step 1: Identify the stereocenters. The stereocenters are C1 (bonded to Br, H, and ring paths) and C2 (bonded to Cl, H, and ring paths).\nStep 2: Evaluate the symmetry of the molecule. Because the two substituents are different (Br and Cl), the molecule is unsymmetrical. There is no plane of symmetry in any isomer (neither cis nor trans).\nStep 3: Apply the $2^n$ rule where $n = 2$: $2^2 = 4$ stereoisomers. This corresponds to a pair of cis enantiomers: ((1R,2S) and (1S,2R)) and a pair of trans enantiomers: ((1R,2R) and (1S,2S)).",
-      "result": "There are 4 stereoisomers of 1-bromo-2-chlorocyclopropane since there are two stereocenters and no internal symmetry is possible."
+      "context": "A ring makes cis and trans configurational rather than conformational, so the count runs the same way as for an open chain: identify the stereocentres, raise two to their number, then check whether any symmetry collapses two of the labels onto one substance.",
+      "approach": "Step 1: Test C1. It carries a bromine, a hydrogen, and the two ring arcs - one leading directly to the chlorine-bearing carbon, the other going the long way round through the CH2. Those arcs differ, so C1 is a stereocentre; the same test makes C2 one too.\nStep 2: Raise two to the power of two, giving four candidate stereoisomers: the cis pair and the trans pair.\nStep 3: Check for collapse. A meso form would need the two stereocentres to carry identical substituent sets, and here one holds bromine while the other holds chlorine. No internal mirror plane is possible, so none of the four labels names the same compound as another and the answer is four.",
+      "note": "Change one halogen and the count changes with it. In 1,2-dibromocyclopropane the two stereocentres carry matching substituents, the cis isomer acquires a mirror plane through the CH2 and becomes meso, and the total drops from four to three. Note also that the ring rigidity matters: there is no flip available to average the two faces, so cis and trans here are separate substances rather than interconverting conformers.",
+      "options": {
+        "A": "Correct. C1 and C2 are both stereocentres and the different halogens rule out any meso form, so all 2^2 = 4 combinations are distinct compounds.",
+        "B": "Three would be the count if one of the four collapsed into a meso form, which needs both stereocentres to carry the same substituents. Bromine on one and chlorine on the other prevents it.",
+        "C": "Two counts only the cis and trans relationship and forgets that each of those is itself chiral, since neither has an internal mirror plane.",
+        "D": "Eight is 2^3 and counts a third stereocentre. The remaining ring carbon is a CH2 bearing two hydrogens and can never be one."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A three-membered carbon ring with a bromine on one ring carbon and a chlorine on the carbon next to it; both bonds are drawn plain, so no configuration is shown."
   },
   {
     "question_id": "ch05_q_dynamic_rs_assign",
@@ -2319,11 +2384,11 @@ var CH05_QUESTIONS = [
     "grid_columns": 2,
     "match_items": [
       {
-        "smiles": "C[C@@H](O)C(=O)O",
+        "smiles": "C[C@H](O)C(=O)O",
         "correctAnswer": "S-Lactic Acid"
       },
       {
-        "smiles": "C[C@H](O)C(=O)O",
+        "smiles": "C[C@@H](O)C(=O)O",
         "correctAnswer": "R-Lactic Acid"
       },
       {
@@ -2355,12 +2420,16 @@ var CH05_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Assigning Cahn-Ingold-Prelog priorities to configure stereocenters.",
-      "process": "For lactic acid, -OH is 1, -COOH is 2, -CH3 is 3, -H is 4. If the lowest priority group H is on a wedge, reverse configuration. This correctly yields S for C@@H and R for C@H.",
-      "result": "Stereocenter configurations assigned."
+      "context": "Four structures, two compounds, both enantiomers of each. Lactic acid and alanine differ only in what sits at the top of the priority list - a hydroxyl in one, an amino group in the other - so the same reading procedure runs on both and the grid becomes a check on consistency as much as on any single assignment.",
+      "approach": "Step 1: Rank lactic acid at the carbon bearing the hydroxyl. Oxygen leads. Between the carboxyl carbon at (O,O,O) and the methyl at (H,H,H), the carboxyl wins easily. So OH > COOH > CH3 > H.\nStep 2: Rank alanine at its alpha carbon. Nitrogen leads now, since no oxygen is bonded directly to that carbon. The carboxyl again beats the methyl, giving NH2 > COOH > CH3 > H - the same shape of list with a different atom at the top.\nStep 3: For each structure, find the implicit hydrogen, trace the circle through priorities one to three, and reverse the reading if that hydrogen points toward the viewer. Work the pairs together: within each compound the two structures are mirror images, so their descriptors must come out opposite, and any pair that does not is a signal to go back.",
+      "note": "The unused option is the instructive one. Meso-tartaric acid cannot be labelled with a single descriptor at all - it has two stereocentres carrying opposite descriptors, so it is named (2R,3S) and never simply R or S. A decoy that cannot syntactically fit any of the four structures is worth pausing on rather than skipping past.",
+      "options": {
+        "A": "Correct. Both compounds rank as highest priority > carboxyl > methyl > hydrogen, so each pair of mirror-image structures returns opposite descriptors.",
+        "B": "Check the two failure points in order. First confirm the priority list, remembering that the carboxyl carbon carries (O,O,O) and outranks the methyl comfortably; then confirm where the implicit hydrogen points, since a circle read without that correction gives exactly the wrong letter."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   }
 ];
