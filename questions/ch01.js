@@ -34,13 +34,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the understanding of ground-state electron configurations for carbon, which is the foundational element of organic chemistry.",
-      "process": "Step 1: Identify the atomic number of carbon, which is 6. A neutral carbon atom has 6 electrons.\nStep 2: Fill orbitals in order of increasing energy (Aufbau principle): $1s$ first, then $2s$, then $2p$.\nStep 3: Distribute the 6 electrons: 2 in $1s$, 2 in $2s$, and the remaining 2 in the three degenerate $2p$ orbitals (singly, with parallel spins, per Hund's rule). This results in $1s^2 2s^2 2p^2$.",
-      "result": "The correct ground-state electron configuration is $1s^2 2s^2 2p^2$."
+      "context": "A ground-state configuration fills orbitals from the lowest energy upward, one electron at a time, and the total number of electrons must equal the atomic number. Carbon is element 6, so any correct answer accounts for exactly six electrons.",
+      "approach": "Step 1: Carbon's atomic number is 6, so a neutral atom has 6 electrons.\nStep 2: Fill in order of increasing energy - 1s, then 2s, then 2p. The 1s holds 2 and the 2s holds 2, using four.\nStep 3: The remaining two go into 2p. By Hund's rule they occupy separate 2p orbitals with parallel spins rather than pairing in one.",
+      "note": "Notice that ground-state carbon has only two unpaired electrons, yet carbon forms four bonds in essentially every organic compound. That mismatch is the whole reason hybridization exists, and it is the problem the next several questions in this chapter set up.",
+      "options": {
+        "A": "Correct. Six electrons fill 1s and 2s completely and leave two in 2p, which spread across separate 2p orbitals by Hund's rule.",
+        "B": "This does contain six electrons, but promoting a 2s electron into 2p costs energy, so it is an excited state rather than the ground state the question asks for.",
+        "C": "This holds eight electrons and so describes neutral oxygen, not carbon. Count the superscripts before anything else: they must sum to the atomic number.",
+        "D": "This holds five electrons and describes boron. It is carbon's configuration with one electron missing, which would be the cation, not a neutral atom."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single carbon atom shown on its own, with no bonds to other atoms."
   },
   {
     "question_id": "ch01_q2_nitrogen_config",
@@ -75,13 +82,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the ground-state electron configuration of nitrogen (atomic number 7).",
-      "process": "Step 1: Nitrogen has atomic number 7, meaning 7 electrons in a neutral atom.\nStep 2: Apply Aufbau principle: fill $1s$ (2e-), $2s$ (2e-), and then $2p$ (3e-).\nStep 3: This gives $1s^2 2s^2 2p^3$, with three unpaired electrons in the $2p$ subshell.",
-      "result": "The ground-state configuration is $1s^2 2s^2 2p^3$."
+      "context": "The same filling rules apply to every second-row atom; only the electron count changes. Nitrogen is element 7, so the superscripts in a correct ground-state configuration must add to seven.",
+      "approach": "Step 1: Nitrogen's atomic number is 7, so a neutral atom has 7 electrons.\nStep 2: Fill 1s with two and 2s with two, accounting for four.\nStep 3: The remaining three occupy the three 2p orbitals singly, one electron in each with parallel spins, which is the half-filled 2p subshell.",
+      "note": "Those three singly occupied 2p orbitals are why nitrogen forms three bonds and keeps one lone pair - the pattern behind every amine in this course. Counting unpaired electrons predicts an atom's usual number of bonds before you know any hybridization at all.",
+      "options": {
+        "A": "Correct. Seven electrons fill 1s and 2s, leaving three that occupy the three 2p orbitals singly - a half-filled 2p subshell.",
+        "B": "This totals six electrons, which is carbon rather than nitrogen. It is the configuration one element to the left in the period.",
+        "C": "This totals seven, so the electron count is right, but a 2s electron has been promoted into 2p. The 2s orbital is lower in energy and fills completely first.",
+        "D": "This totals eight electrons and describes oxygen, the element one place to the right. Add the superscripts and compare to the atomic number."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single nitrogen atom shown on its own, with no bonds to other atoms."
   },
   {
     "question_id": "ch01_q3_oxygen_config",
@@ -116,13 +130,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify the ground-state configuration of oxygen (atomic number 8).",
-      "process": "Step 1: Oxygen has 8 electrons.\nStep 2: Fill $1s$ (2e-), $2s$ (2e-), and $2p$ (4e-).\nStep 3: This gives $1s^2 2s^2 2p^4$.",
-      "result": "The ground-state configuration is $1s^2 2s^2 2p^4$."
+      "context": "Oxygen is element 8, so a ground-state configuration must account for eight electrons, filling the lowest orbitals first and only pairing within a 2p orbital once every 2p orbital holds one electron.",
+      "approach": "Step 1: Oxygen's atomic number is 8, so a neutral atom has 8 electrons.\nStep 2: The 1s and 2s orbitals take two each, leaving four.\nStep 3: Those four go into 2p. Three occupy the separate 2p orbitals singly, and the fourth must then pair up with one of them, giving 2p to the fourth power with two unpaired electrons remaining.",
+      "note": "Two unpaired electrons and two lone pairs is exactly the pattern behind alcohols, ethers and water: oxygen forms two bonds and keeps two lone pairs. Those lone pairs are what make oxygen nucleophilic and basic later in the course.",
+      "options": {
+        "A": "Correct. Eight electrons fill 1s and 2s and put four in 2p, where one orbital is doubly occupied and two hold single electrons.",
+        "B": "This totals seven electrons, which is nitrogen. Oxygen has one more electron than this, and it goes into the 2p subshell.",
+        "C": "This totals nine electrons and describes fluorine, one element to the right of oxygen in the period.",
+        "D": "This totals eight, so the count is right, but it promotes a 2s electron into 2p. That is an excited state; the ground state fills 2s completely first."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single oxygen atom shown on its own, with no bonds to other atoms."
   },
   {
     "question_id": "ch01_q4_phosphorus_config",
@@ -157,13 +178,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the ability to determine valence electron configurations for third-row elements like phosphorus.",
-      "process": "Step 1: Identify the total electron configuration of phosphorus (Z = 15): $1s^2 2s^2 2p^6 3s^2 3p^3$.\nStep 2: The valence shell is the outermost shell (n = 3).\nStep 3: The electrons in n = 3 are $3s^2 3p^3$.",
-      "result": "The valence configuration is $3s^2 3p^3$."
+      "context": "Valence electrons are those in the outermost occupied shell - the highest principal quantum number. For a third-row element the valence shell is n = 3, and the filled inner shells are not part of the answer.",
+      "approach": "Step 1: Phosphorus is element 15, so the full configuration is 1s2 2s2 2p6 3s2 3p3.\nStep 2: Identify the outermost shell. The largest principal quantum number present is 3, so the valence shell is 3s and 3p.\nStep 3: Read off just that shell: two electrons in 3s and three in 3p.",
+      "note": "Phosphorus sits directly below nitrogen and so has the same number of valence electrons and the same usual bonding pattern. What differs is that the third shell has empty 3d orbitals available, so phosphorus can exceed an octet where nitrogen never can - the reason phosphorus ylides exist and nitrogen analogues do not.",
+      "options": {
+        "A": "Correct. Phosphorus is in period 3 and group 15, so its outermost shell holds two 3s electrons and three 3p electrons.",
+        "B": "This is the right group but the wrong period. Three s and p electrons in the pattern shown belongs to nitrogen, whose valence shell is n = 2, not phosphorus.",
+        "C": "This gives seven valence electrons, which is chlorine. Phosphorus has five valence electrons, matching its group number.",
+        "D": "This totals five valence electrons, so the count is right, but it leaves 3s half empty while filling 3p further. The lower-energy 3s fills completely first."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single phosphorus atom shown on its own, with no bonds to other atoms."
   },
   {
     "question_id": "ch01_q5_carbon_excited",
@@ -198,12 +226,18 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Distinguish between ground states, excited states, and different elements.",
-      "process": "Step 1: A neutral carbon atom must have exactly 6 electrons.\nStep 2: Check configurations with 6 electrons. $1s^2 2s^2 2p^2$ is the ground state. $1s^2 2s^1 2p^3$ also has 6 electrons but one electron has been promoted from the $2s$ orbital to a higher energy $2p$ orbital.\nStep 3: This represents an excited state.",
-      "result": "The correct option is $1s^2 2s^1 2p^3$."
+      "context": "An excited state has the correct number of electrons for the element but distributes them into a higher-energy arrangement than the ground state. So a candidate must be checked twice: does the electron count match the element, and is the arrangement something other than the lowest-energy one?",
+      "approach": "Step 1: Fix the target. Carbon has 6 electrons, so any excited state of carbon must also total 6.\nStep 2: Establish the ground state for comparison: 1s2 2s2 2p2.\nStep 3: Test each candidate. Reject anything whose superscripts do not sum to 6, since that is a different element rather than an excited carbon. Of what remains, the excited one is the arrangement that has promoted an electron to a higher orbital.",
+      "note": "Promoting a 2s electron to 2p is often shown as the first step in a hybridization story, but treat that as bookkeeping rather than a real intermediate. Nothing measures a carbon atom sitting in that state; hybrid orbitals are a model for the bonded molecule, not a sequence of events.",
+      "options": {
+        "A": "Correct. This totals six electrons, so it is still carbon, and one 2s electron has been promoted into 2p - a higher-energy arrangement than the ground state.",
+        "B": "This totals six and so is carbon, but it is the ground-state configuration itself: the lowest-energy arrangement, which is precisely what an excited state is not.",
+        "C": "This totals five electrons, so it describes boron rather than any state of carbon. Check the electron count before judging whether an arrangement is excited.",
+        "D": "This totals seven electrons, which is nitrogen. Changing the element is not the same as exciting the atom you started with."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -239,13 +273,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Evaluate hybridization and geometry of methane ($CH_4$).",
-      "process": "Step 1: Count electron groups around carbon. Carbon has 4 single bonds to hydrogen and 0 lone pairs. Total steric number = 4.\nStep 2: A steric number of 4 corresponds to $sp^3$ hybridization.\nStep 3: The geometry is tetrahedral, which has an ideal bond angle of $109.5^\\circ$.",
-      "result": "The carbon is $sp^3$ hybridized with a bond angle of $109.5^\\circ$."
+      "context": "Hybridization and geometry are two readings of the same fact: how many groups an atom must point at. Count sigma bonds plus lone pairs, and both the orbital label and the ideal bond angle follow from that one number.",
+      "approach": "Step 1: Count what the carbon in methane points at: four C-H sigma bonds, no lone pairs. That is four groups.\nStep 2: Four groups need four equivalent hybrid orbitals, made from one s and three p orbitals - sp3.\nStep 3: Four equivalent orbitals repel each other into a tetrahedron, which places them at 109.5 degrees apart.",
+      "note": "The 109.5 degree figure is a geometric consequence of putting four points as far apart as possible on a sphere, not a fact about carbon in particular. Any atom with four equivalent groups approaches it, and any lone pair among those four pushes the bonded angles below it.",
+      "options": {
+        "A": "Correct. Four sigma bonds and no lone pairs give four sp3 hybrid orbitals arranged tetrahedrally, 109.5 degrees apart.",
+        "B": "sp2 with 120 degrees describes three groups in a plane, which would require carbon to bond to only three things. Methane's carbon bonds to four.",
+        "C": "sp with 180 degrees describes two groups on opposite sides, the arrangement in a linear molecule. Methane has four bonds, not two.",
+        "D": "The hybridization here is right but paired with the wrong angle. sp3 is tetrahedral at 109.5 degrees; 120 degrees belongs to the trigonal planar sp2 case."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single carbon atom bonded to four hydrogen atoms."
   },
   {
     "question_id": "ch01_q7_hybrid_ethylene",
@@ -280,13 +321,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify hybridization and geometry of ethylene carbons.",
-      "process": "Step 1: Each carbon has 3 attached groups (two hydrogens and one carbon). Steric number = 3.\nStep 2: A steric number of 3 indicates $sp^2$ hybridization.\nStep 3: The geometry around each carbon is trigonal planar with bond angles of approximately $120^\\circ$.",
-      "result": "The carbons are $sp^2$ hybridized with trigonal planar geometry."
+      "context": "Only sigma bonds and lone pairs are counted when assigning hybridization. A double bond contributes one sigma bond to that count; its pi bond is built from a leftover unhybridized p orbital and does not add a group.",
+      "approach": "Step 1: Look at one ethylene carbon. It has two C-H sigma bonds and one C-C sigma bond from the double bond, so three groups.\nStep 2: Three groups need three hybrid orbitals, one s and two p - sp2.\nStep 3: Three orbitals spread as far apart as possible within a plane, giving trigonal planar geometry at about 120 degrees. The unused p orbital stands perpendicular to that plane and forms the pi bond.",
+      "note": "Because the pi bond comes from sideways overlap of two parallel p orbitals, twisting one end of the molecule breaks that overlap. That is why there is no free rotation about a double bond, and it is the structural basis of cis-trans isomerism in Chapter 7.",
+      "options": {
+        "A": "Correct. Three sigma bonds and no lone pairs give sp2 hybridization and a trigonal planar arrangement, with the remaining p orbital forming the pi bond.",
+        "B": "This is the count you get by treating the double bond as two separate groups. A double bond is one sigma plus one pi and contributes a single group to the hybridization count.",
+        "C": "sp and linear would require each carbon to point at only two things. An ethylene carbon points at three: two hydrogens and the other carbon.",
+        "D": "The hybridization is right but the geometry does not follow from it. Three equivalent sp2 orbitals arrange trigonally in a plane; linear geometry belongs to the two-group sp case."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two carbon atoms joined by a double bond, with two hydrogen atoms on each carbon."
   },
   {
     "question_id": "ch01_q8_hybrid_acetylene",
@@ -321,13 +369,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify hybridization and geometry of acetylene carbons.",
-      "process": "Step 1: Each carbon is bonded to one hydrogen and one carbon (via triple bond). Steric number = 2.\nStep 2: A steric number of 2 corresponds to $sp$ hybridization.\nStep 3: The geometry is linear, which corresponds to a bond angle of $180^\\circ$.",
-      "result": "The carbons are $sp$ hybridized with bond angles of $180^\\circ$."
+      "context": "A triple bond is one sigma bond plus two pi bonds. Only the sigma contributes to the group count, so the two pi bonds sit in unhybridized p orbitals and leave the hybridization determined by everything else the atom points at.",
+      "approach": "Step 1: Look at one acetylene carbon. It has one C-H sigma bond and one C-C sigma bond from the triple bond, and no lone pairs - two groups.\nStep 2: Two groups need two hybrid orbitals, one s and one p - sp.\nStep 3: Two orbitals get as far apart as possible by pointing in opposite directions, which is 180 degrees and makes the whole molecule linear. The two remaining p orbitals, perpendicular to each other, form the two pi bonds.",
+      "note": "An sp carbon holds its electrons in orbitals with 50 percent s character, much closer to the nucleus than sp3's 25 percent. That is why a terminal alkyne C-H is far more acidic than an alkane C-H, which is the property Chapter 9 exploits to make acetylide nucleophiles.",
+      "options": {
+        "A": "Correct. Two sigma bonds and no lone pairs give sp hybridization, and two orbitals point in opposite directions at 180 degrees.",
+        "B": "sp2 at 120 degrees describes three groups in a plane. An acetylene carbon points at only two things, one hydrogen and one carbon.",
+        "C": "sp3 at 109.5 degrees describes four groups. Counting the triple bond as three separate groups produces this error; it contributes only one.",
+        "D": "The hybridization is right but the angle does not match it. Two sp orbitals oppose each other at 180 degrees; 120 degrees belongs to trigonal planar sp2."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two carbon atoms joined by a triple bond, with one hydrogen atom on each carbon."
   },
   {
     "question_id": "ch01_q9_hybrid_allene_center",
@@ -362,13 +417,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Determine the hybridization of the central carbon in allene, a molecule containing two adjacent double bonds.",
-      "process": "Step 1: Look at the central carbon (C2) in allene ($H_2C=C=CH_2$). It forms two $\\sigma$ bonds (one to each adjacent carbon) and has 0 lone pairs. Steric number = 2.\nStep 2: A steric number of 2 corresponds to $sp$ hybridization.\nStep 3: Note that C1 and C3 are each bonded to 2 hydrogens and 1 carbon, making them $sp^2$ hybridized. The central carbon uses two orthogonal $p$ orbitals to form two orthogonal $\\pi$ bonds.",
-      "result": "The central carbon is $sp$ hybridized."
+      "context": "Hybridization is set by the number of groups an atom points at, counting each multiple bond once. An atom in the middle of two double bonds still points at only two neighbours, however many bonds join them.",
+      "approach": "Step 1: Identify what the central carbon is attached to: the two terminal carbons, and nothing else. It carries no hydrogens and no lone pairs.\nStep 2: That is two groups, so two hybrid orbitals are needed - one s and one p, giving sp.\nStep 3: Two sp orbitals point in opposite directions, so the C=C=C unit is linear at 180 degrees. The two p orbitals left unhybridized are perpendicular to each other, and each forms one of the two pi bonds.",
+      "note": "A carbon carrying two double bonds is called cumulated, and such arrangements are strained and uncommon compared with the conjugated dienes of Chapter 14, where the double bonds alternate with a single bond instead of sharing a carbon.",
+      "options": {
+        "A": "Correct. The central carbon points at just two neighbours, so it needs two hybrid orbitals and is sp, making the three-carbon unit linear.",
+        "B": "This counts bonds rather than groups. Two double bonds are still only two neighbours; the extra pi bonds live in unhybridized p orbitals and add nothing to the count.",
+        "C": "Four bonds are indeed present, but the central carbon is attached to only two atoms. sp3 would require four separate neighbours or lone pairs.",
+        "D": "Carbon cannot be sp2d. Expanding beyond an octet needs d orbitals in the valence shell, and a second-row element has only 2s and 2p available."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A chain of three carbons drawn with two adjacent double bonds, with two hydrogen atoms on each end carbon and none on the middle carbon."
   },
   {
     "question_id": "ch01_q10_hybrid_allene_terminal",
@@ -451,13 +513,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Compare the geometries and bond angles of water and ammonia, focusing on VSEPR theory.",
-      "process": "Step 1: Both oxygen in water and nitrogen in ammonia are $sp^3$ hybridized with steric number 4.\nStep 2: Nitrogen has 1 lone pair, and oxygen has 2 lone pairs.\nStep 3: Valence Shell Electron Pair Repulsion (VSEPR) theory states that lone pairs occupy more space than bonding pairs. The two lone pairs in water exert greater repulsive force on the O-H bonds than the single lone pair in ammonia, squeezing the H-O-H angle down to $104.5^\\circ$.",
-      "result": "The correct choice is A."
+      "context": "VSEPR treats a lone pair as taking more angular room than a bonding pair, because it is held by one nucleus rather than shared between two. The repulsion order is lone pair to lone pair, then lone pair to bonding pair, then bonding pair to bonding pair.",
+      "approach": "Step 1: Count groups on each central atom. Nitrogen in ammonia has three bonds and one lone pair; oxygen in water has two bonds and two lone pairs. Both are four groups, so both start from a tetrahedral parent shape.\nStep 2: Compare how many of those groups are lone pairs. Ammonia has one, water has two.\nStep 3: Each lone pair squeezes the bonding pairs closer together, so the angle falls further below the ideal 109.5 with each one added: 107.3 for ammonia's one lone pair, 104.5 for water's two.",
+      "note": "The trend runs the other way too - methane has no lone pairs and sits at the full 109.5 degrees. Reading a bond angle backwards to count lone pairs is a quick structural check you can apply to any small molecule.",
+      "options": {
+        "A": "Correct. Water has two lone pairs to ammonia's one, and each compresses the bonding pairs further, so water's angle is the smaller of the two.",
+        "B": "Oxygen is in fact more electronegative than nitrogen, not less, so this reverses the periodic trend. Electronegativity is also not what sets the angle here; the number of lone pairs is.",
+        "C": "Both molecules have four groups around the central atom and both are sp3 hybridized. If ammonia were sp2 its bond angle would be near 120 degrees, well above the value given.",
+        "D": "Hydrogen atoms are the same size in both molecules. The size of the outer atoms is not the variable here; what differs between water and ammonia is the lone pair count."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single oxygen atom with two hydrogen atoms attached, drawn as a bent molecule."
   },
   {
     "question_id": "ch01_q12_hybrid_acetonitrile",
@@ -492,13 +561,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Assign hybridization states to atoms in acetonitrile ($CH_3CN$).",
-      "process": "Step 1: Methyl carbon (C1) is bonded to 3 hydrogens and 1 carbon. Steric number = 4 ($sp^3$).\nStep 2: Nitrile carbon (C2) is bonded to 1 carbon and 1 nitrogen. Steric number = 2 ($sp$).\nStep 3: Nitrile nitrogen (N) is bonded to 1 carbon and has 1 lone pair. Steric number = 2 ($sp$).",
-      "result": "The hybridizations are $sp^3$, $sp$, and $sp$ respectively."
+      "context": "A question naming three atoms is three separate counting problems, not one. Assign each atom independently by counting its own sigma bonds and lone pairs, and remember that a lone pair occupies a hybrid orbital exactly as a bond does.",
+      "approach": "Step 1: The methyl carbon has three C-H bonds and one bond to the neighbouring carbon - four groups, so sp3.\nStep 2: The nitrile carbon has one sigma bond to the methyl carbon and one sigma bond to nitrogen from the triple bond - two groups, so sp.\nStep 3: The nitrogen has one sigma bond to carbon plus one lone pair - also two groups, so sp. The two pi bonds of the triple bond sit in unhybridized p orbitals on both atoms and change nothing.",
+      "note": "Nitrogen's lone pair is easy to forget because it is not drawn as a bond, but it occupies a hybrid orbital and counts. Missing it would give sp instead of the correct answer only by accident here; on an amine it would change the assignment outright.",
+      "options": {
+        "A": "Correct. Four groups on the methyl carbon give sp3; two groups on each of the nitrile carbon and the nitrogen give sp for both.",
+        "B": "The nitrile carbon is assigned sp2, which would require three groups. It has only two - the methyl carbon and the nitrogen - because a triple bond counts once.",
+        "C": "The methyl carbon is assigned sp2, but it bonds to four things: three hydrogens and a carbon. Four groups always mean sp3.",
+        "D": "The nitrogen is assigned sp2. Counting only its single sigma bond and forgetting the lone pair gives too few groups; with the lone pair included it has two, making it sp."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A methyl carbon bonded to a second carbon, which is joined to a nitrogen atom by a triple bond."
   },
   {
     "question_id": "ch01_q13_hybrid_carbonyl",
@@ -533,13 +609,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify the hybridization of carbonyl carbons.",
-      "process": "Step 1: The carbon is bonded to 2 hydrogens and double-bonded to 1 oxygen. Steric groups = 3.\nStep 2: Steric number 3 indicates $sp^2$ hybridization.\nStep 3: Ideal bond angle for trigonal planar geometry is $120^\\circ$.",
-      "result": "The carbonyl carbon is $sp^2$ hybridized with a bond angle of $120^\\circ$."
+      "context": "The carbonyl carbon is counted like any other: sigma bonds plus lone pairs. The C=O double bond supplies one sigma bond to that total, and its pi bond comes from a leftover p orbital.",
+      "approach": "Step 1: Count the groups on the carbonyl carbon of formaldehyde: two C-H sigma bonds and one C-O sigma bond.\nStep 2: Three groups require three hybrid orbitals, one s and two p, which is sp2.\nStep 3: Three equivalent orbitals spread within a plane at roughly 120 degrees, making the whole molecule planar. The unhybridized p orbital, perpendicular to that plane, forms the pi bond with oxygen.",
+      "note": "That perpendicular p orbital is the carbonyl's reactive feature: it is where the pi antibonding orbital sits, and it is what a nucleophile attacks from above or below the plane in every carbonyl addition later in the course.",
+      "options": {
+        "A": "Correct. Three sigma bonds and no lone pairs on the carbonyl carbon give sp2 hybridization and a trigonal planar arrangement near 120 degrees.",
+        "B": "sp3 at 109.5 degrees would need four groups. Counting the double bond twice produces this answer; it contributes one sigma bond, not two.",
+        "C": "sp at 180 degrees describes an atom pointing at only two things. The carbonyl carbon here points at three: two hydrogens and the oxygen.",
+        "D": "The hybridization is right but the angle belongs to a different geometry. Three sp2 orbitals in a plane sit near 120 degrees; 109.5 is the tetrahedral value."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A carbon atom joined to an oxygen atom by a double bond, with two hydrogen atoms on the carbon."
   },
   {
     "question_id": "ch01_q14_hybrid_oxygen",
@@ -574,13 +657,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Determine hybridization of ether oxygens.",
-      "process": "Step 1: Oxygen has 2 single bonds (to methyl carbons) and 2 lone pairs.\nStep 2: Total steric number = 2 + 2 = 4.\nStep 3: Steric number 4 corresponds to $sp^3$ hybridization (bent molecular geometry).",
-      "result": "The oxygen is $sp^3$ hybridized."
+      "context": "Lone pairs occupy hybrid orbitals and count toward the total just as bonds do. An atom with two bonds and two lone pairs has four groups, exactly like an atom with four bonds.",
+      "approach": "Step 1: Count what the ether oxygen holds: two sigma bonds, one to each methyl carbon.\nStep 2: Add its lone pairs. Oxygen has six valence electrons; four are used in the two bonds' share, leaving two lone pairs.\nStep 3: Two bonds plus two lone pairs is four groups, so the oxygen is sp3, with the bonded atoms forming a bent arrangement below the ideal tetrahedral angle.",
+      "note": "Contrast this with an amide or ester oxygen, where a lone pair can delocalize into an adjacent pi system and the atom flattens toward sp2. A plain ether has no such pi system next to it, so nothing pulls its lone pairs out of their hybrid orbitals.",
+      "options": {
+        "A": "Correct. Two sigma bonds plus two lone pairs make four groups, so the oxygen is sp3 and the C-O-C arrangement is bent.",
+        "B": "Delocalization would require a neighbouring pi system for the lone pair to enter. Dimethyl ether has only sp3 methyl groups on either side, so there is nothing to conjugate with.",
+        "C": "sp would mean two groups in total. That ignores both lone pairs; counting only the bonds is the usual source of this error.",
+        "D": "Using pure p orbitals for bonding would force a 90 degree C-O-C angle, well below what is observed. The bonding orbitals here are hybrids, not unmixed p orbitals."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An oxygen atom bonded to two methyl carbons, each carrying three hydrogen atoms."
   },
   {
     "question_id": "ch01_q15_hybrid_urea",
@@ -615,13 +705,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the effect of resonance conjugation on atom hybridization in amides/urea.",
-      "process": "Step 1: Normally, a nitrogen with three single bonds and one lone pair appears $sp^3$ hybridized.\nStep 2: However, urea has key resonance contributors where the nitrogen lone pair forms a double bond with carbon ($H_2N^+=C(-O^-)NH_2$).\nStep 3: To participate in this $\\pi$ delocalization, the nitrogen lone pair must reside in a $p$ orbital, which requires the nitrogen to adopt $sp^2$ hybridization with trigonal planar geometry.",
-      "result": "The nitrogen atoms are $sp^2$ hybridized due to resonance conjugation."
+      "context": "Counting groups gives a first guess, but when a lone pair sits next to a pi system the atom can rehybridize so that the lone pair occupies a p orbital and joins the delocalization. Whether it does is a question about the neighbouring atoms, not about the lone pair alone.",
+      "approach": "Step 1: Count naively. Each urea nitrogen has three sigma bonds - two N-H and one N-C - plus one lone pair, which suggests four groups and sp3.\nStep 2: Check the neighbour. The carbon next door is a carbonyl carbon with a pi bond available to accept electron density.\nStep 3: The nitrogen rehybridizes to sp2 so its lone pair occupies a p orbital aligned with the carbonyl pi system, letting it delocalize onto the oxygen. Both nitrogens are equivalent by symmetry, so both do this and both become planar.",
+      "note": "This delocalization is the amide bond, and it is why peptide bonds are planar and rotate only sluggishly. That single structural fact organises much of protein conformation in Chapter 26.",
+      "options": {
+        "A": "Correct. Each nitrogen flattens to sp2 so its lone pair can occupy a p orbital and delocalize into the carbonyl pi system, which is worth more than the geometry it gives up.",
+        "B": "This is the answer from counting groups alone - three bonds and a lone pair. It ignores that the adjacent carbonyl offers a pi system, which is exactly the situation where naive counting fails.",
+        "C": "sp would require the nitrogen to point at two things. Each urea nitrogen bonds to three: two hydrogens and the carbonyl carbon.",
+        "D": "The two nitrogens are equivalent by the molecule's symmetry - both sit on the same carbonyl carbon in identical environments - so no argument distinguishes one from the other."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon double bonded to an oxygen and single bonded to two nitrogen atoms, each nitrogen carrying two hydrogens."
   },
   {
     "question_id": "ch01_q16_sigma_pi_ethylene",
@@ -656,13 +753,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Count the total number of $\\sigma$ and $\\pi$ bonds in ethylene.",
-      "process": "Step 1: Count single bonds. There are 4 C-H single bonds, each representing a $\\sigma$ bond.\nStep 2: Identify double bonds. There is 1 C=C double bond, which consists of 1 $\\sigma$ bond and 1 $\\pi$ bond.\nStep 3: Sum them up: $\\sigma$ bonds = 4 + 1 = 5. $\\pi$ bonds = 1.",
-      "result": "Ethylene contains 5 $\\sigma$ and 1 $\\pi$ bonds."
+      "context": "Count sigma bonds by counting connections: every pair of bonded atoms is joined by exactly one. Then count pi bonds as the bonds beyond the first within each of those pairs.",
+      "approach": "Step 1: Count the C-H connections. Ethylene has four hydrogens, each joined to a carbon by a single bond, giving four sigma bonds.\nStep 2: Add the carbon-carbon connection. The first of its two bonds is sigma, bringing the total to five.\nStep 3: The second bond of the double bond is the pi bond, and it is the only one in the molecule.",
+      "note": "A useful cross-check: the number of sigma bonds equals the number of lines you would draw in a skeletal structure if every double bond were reduced to a single one. Anything left over is pi.",
+      "options": {
+        "A": "Correct. Four C-H sigma bonds plus one C-C sigma bond make five, and the double bond's second component is the single pi bond.",
+        "B": "This undercounts the sigma bonds and doubles the pi. There are four C-H bonds alone, so the sigma total cannot be as low as four for a molecule with five connections.",
+        "C": "This treats the double bond as two sigma bonds. Only one bond between any pair of atoms can be sigma; the rest are pi.",
+        "D": "The sigma count is right, but a double bond contains one pi bond, not two. Two pi bonds would make it a triple bond."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two carbon atoms joined by a double bond, with two hydrogen atoms on each carbon."
   },
   {
     "question_id": "ch01_q17_sigma_pi_acetylene",
@@ -745,13 +849,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Count bonds in a conjugated nitrile.",
-      "process": "Step 1: Count single bonds first. C-H bonds = 3. C-C single bond = 1. Total single bonds = 4 (4 $\\sigma$).\nStep 2: Add double bond components: C=C double bond (1 $\\sigma$ + 1 $\\pi$).\nStep 3: Add triple bond components: C#N triple bond (1 $\\sigma$ + 2 $\\pi$).\nStep 4: Sum: $\\sigma$ = 4 + 1 + 1 = 6. $\\pi$ = 1 + 2 = 3.",
-      "result": "Acrylonitrile contains 6 $\\sigma$ and 3 $\\pi$ bonds."
+      "context": "With two different multiple bonds in one molecule, work connection by connection rather than trying to see the answer whole. Each bonded pair contributes one sigma bond, and each contributes one pi bond for every bond it has beyond the first.",
+      "approach": "Step 1: Count the hydrogens. Acrylonitrile has three C-H bonds, all sigma.\nStep 2: Count the heavy-atom connections. There are three: the C=C, the C-C single bond, and the C-N triple bond. Each contributes one sigma, bringing sigma to six.\nStep 3: Count the extra bonds. The double bond contributes one pi and the triple bond contributes two, giving three pi in total.",
+      "note": "The double bond and the nitrile are separated by a single bond, so their pi systems are conjugated. That conjugation is what makes acrylonitrile a good Michael acceptor and a useful monomer, and it is the arrangement Chapter 14 takes up in detail.",
+      "options": {
+        "A": "Correct. Three C-H plus three heavy-atom connections give six sigma bonds; one pi from the double bond and two from the triple bond give three pi.",
+        "B": "The sigma count is right but a pi bond has been missed. A triple bond carries two pi bonds, not one, so the total is three rather than two.",
+        "C": "This has too few sigma and too many pi. There are six bonded pairs in the molecule and each must contribute exactly one sigma bond.",
+        "D": "Seven sigma bonds would require seven bonded pairs. Counting three C-H bonds and three heavy-atom connections gives six; acrylonitrile has three hydrogens, not four."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A three-carbon chain with a double bond between the first two carbons and a triple bond from the third carbon to a nitrogen atom."
   },
   {
     "question_id": "ch01_q19_allene_pi_overlap",
@@ -786,13 +897,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Explain the orbital orbital overlap structure that leads to adjacent double bonds in allene.",
-      "process": "Step 1: The central carbon C2 is $sp$ hybridized, leaving two unhybridized $p$ orbitals ($p_y$ and $p_z$) which are perpendicular (orthogonal) to each other.\nStep 2: One terminal carbon (C1) is in a plane that allows its $p_y$ orbital to overlap with C2's $p_y$ orbital, forming the first $\\pi$ bond.\nStep 3: The other terminal carbon (C3) must align its $p_z$ orbital with C2's $p_z$ orbital, forming the second $\\pi$ bond. This forces the two terminal $CH_2$ groups to be perpendicular to each other.",
-      "result": "The central carbon uses orthogonal $2p_y$ and $2p_z$ orbitals to overlap with terminal $p$ orbitals."
+      "context": "Pi bonds are made only from unhybridized p orbitals overlapping sideways. Hybrid orbitals point along internuclear axes and can only form sigma bonds, so any answer describing a pi bond built from hybrids is ruled out before the geometry is even considered.",
+      "approach": "Step 1: Assign the central carbon. It points at two atoms, so it is sp - built from one s and one p orbital, leaving two p orbitals unhybridized.\nStep 2: Note how those two leftover p orbitals sit. Being different p orbitals on the same atom, they are perpendicular to one another.\nStep 3: Each overlaps sideways with a p orbital on one terminal carbon, forming one pi bond on each side. Because the two central p orbitals are perpendicular, the two pi bonds lie in perpendicular planes.",
+      "note": "This is why allene is not flat. The two CH2 groups end up in planes at right angles, so an allene bearing different substituents on each end is chiral despite having no stereocenter at all - a case Chapter 5 uses to show that a stereocenter is not required for handedness.",
+      "options": {
+        "A": "Correct. The sp central carbon keeps two mutually perpendicular p orbitals, each overlapping sideways with a p orbital on one terminal carbon.",
+        "B": "Hybrid orbitals point directly at their neighbours and so form sigma bonds only. A pi bond requires sideways overlap, which only unhybridized p orbitals provide.",
+        "C": "The terminal carbons are not bonded to each other at all - the central carbon lies between them - so no overlap between them of any kind forms a bond here.",
+        "D": "sp-sp overlap would be head-on between two hybrid orbitals, which produces a sigma bond. It cannot describe a pi bond."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A chain of three carbons drawn with two adjacent double bonds, with two hydrogen atoms on each end carbon."
   },
   {
     "question_id": "ch01_q20_orbital_overlap_single",
@@ -827,13 +945,20 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Identify the hybridization of the two carbons forming the C-C single bond in propene.",
-      "process": "Step 1: Identify the methyl carbon (C3), which is bonded to 3 hydrogens and C2. It is $sp^3$ hybridized.\nStep 2: Identify the alkene carbon (C2), which is bonded to C1, C3, and H. It is $sp^2$ hybridized.\nStep 3: The single bond connecting C2 and C3 is formed by the head-on overlap of an $sp^3$ orbital from C3 and an $sp^2$ orbital from C2.",
-      "result": "The overlap is $sp^3$-$sp^2$."
+      "context": "A sigma bond is described by the two orbitals that overlap head-on to form it, one from each atom. So naming the overlap means assigning hybridization to both atoms separately and then reading the pair.",
+      "approach": "Step 1: Identify the bond in question. In propene the C-C single bond joins the methyl carbon to the nearer alkene carbon.\nStep 2: Assign the methyl carbon. It bonds to three hydrogens and one carbon, so four groups and sp3.\nStep 3: Assign the alkene carbon it joins. That carbon has one C-H bond, the single bond to the methyl group, and the double bond to the terminal carbon - three groups, so sp2. The overlap is therefore sp3 with sp2.",
+      "note": "The two carbons in a single bond need not be hybridized the same way, and the mismatch has consequences: bonds between more s-rich orbitals are shorter and stronger, so this bond is slightly shorter than the C-C bond in ethane.",
+      "options": {
+        "A": "Correct. The methyl carbon is sp3 with four groups and the alkene carbon it joins is sp2 with three, so the sigma bond is an sp3-sp2 overlap.",
+        "B": "This would be right for the C-C bond in ethane or propane, where both carbons are saturated. Here one of the two carbons is part of the double bond and has only three groups.",
+        "C": "sp2-sp2 would describe a bond between two alkene carbons. The methyl carbon is not part of the double bond and bonds to four things.",
+        "D": "An unhybridized p orbital on the alkene carbon is used for the pi bond, not for this sigma bond. Sigma overlap here is between two hybrid orbitals."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A three-carbon chain with a single bond between the first two carbons and a double bond between the second and third."
   },
   {
     "question_id": "ch01_q21_bond_strength_order",
@@ -868,12 +993,18 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Compare C-C bond strengths across single, double, and triple bonds.",
-      "process": "Step 1: A single bond (ethane, C-C) consists of one $\\sigma$ bond. It is the easiest to break.\nStep 2: A double bond (ethylene, C=C) contains a $\\sigma$ and a $\\pi$ bond, requiring more energy to break.\nStep 3: A triple bond (acetylene, C#C) contains a $\\sigma$ and two $\\pi$ bonds, requiring the highest energy to break.",
-      "result": "The order of increasing bond dissociation energy is Ethane < Ethylene < Acetylene."
+      "context": "Bond dissociation energy measures how much energy is needed to break a bond homolytically. Adding pi bonds between the same two atoms adds to the total that must be broken, so bond order and bond strength rise together.",
+      "approach": "Step 1: Identify the carbon-carbon bond order in each molecule: ethane is a single bond, ethylene a double, acetylene a triple.\nStep 2: Recognise that each additional pi bond contributes further to holding the atoms together, so more bonds means more energy required to separate them.\nStep 3: Order from weakest to strongest by bond order: the single bond of ethane, then the double bond of ethylene, then the triple bond of acetylene.",
+      "note": "The increments are not equal. Going from single to double adds far more than going from double to triple, because the second pi bond overlaps less effectively - which is part of why alkynes are more reactive than the raw bond energy suggests.",
+      "options": {
+        "A": "Correct. Bond order rises from single to double to triple across these three, and dissociation energy rises with it, so ethane is weakest and acetylene strongest.",
+        "B": "This is the order exactly reversed. It would mean a triple bond is easier to break than a single one, which no amount of added pi bonding could produce.",
+        "C": "This places acetylene's triple bond as weaker than ethylene's double bond. A triple bond has one more pi component and is the stronger of the two.",
+        "D": "This places ethylene's double bond below ethane's single bond. Adding a pi bond to a single bond can only increase the energy needed to break the pair apart."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -909,12 +1040,18 @@ var CH01_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Compare bond lengths for single, double, and triple C-C bonds.",
-      "process": "Step 1: Triple bonds pull atoms closest together due to sharing of six electrons (shortest).\nStep 2: Double bonds are intermediate.\nStep 3: Single bonds share only two electrons and are the longest.",
-      "result": "The order of increasing length is Acetylene < Ethylene < Ethane."
+      "context": "Bond length runs opposite to bond order: the more bonds joining two atoms, the more strongly they are drawn together and the shorter the distance between them. Increasing s character in the hybrid orbitals pulls them closer still.",
+      "approach": "Step 1: Assign bond order and hybridization: acetylene is a triple bond between sp carbons, ethylene a double bond between sp2 carbons, ethane a single bond between sp3 carbons.\nStep 2: Note that s orbitals sit closer to the nucleus than p, so a hybrid with more s character holds its electrons nearer the atom. That character falls from 50 percent in sp to 33 in sp2 to 25 in sp3.\nStep 3: Both effects point the same way, so length increases from acetylene to ethylene to ethane - roughly 1.20, 1.34 and 1.54 angstroms.",
+      "note": "Because the two effects reinforce each other here, bond length is a reliable way to read hybridization off a structure. A carbon-carbon distance near 1.2 angstroms tells you the carbons are sp before you have looked at anything else.",
+      "options": {
+        "A": "Correct. The triple bond of acetylene is shortest and the single bond of ethane longest, with ethylene between them - about 1.20, 1.34 and 1.54 angstroms.",
+        "B": "This is the reverse of the true order. It would mean a triple bond holds its atoms further apart than a single bond does.",
+        "C": "This places ethylene's double bond as shorter than acetylene's triple bond. A triple bond is the shorter of the two, being both higher order and more s-rich.",
+        "D": "This places ethane's single bond as shorter than ethylene's double bond. The single bond between two sp3 carbons is the longest of the three, not the middle one."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
