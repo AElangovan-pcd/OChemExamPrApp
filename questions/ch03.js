@@ -2227,12 +2227,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Applying IUPAC rules to name branched alkanes.",
-      "process": "Item 1: Isopropane or 2-methylpropane. Item 2: Neopentane or 2,2-dimethylpropane. Item 3: 5-carbon chain with methyl at C3 is 3-methylpentane. Item 4: 5-carbon chain with methyls at C2 and C4 is 2,4-dimethylpentane.",
-      "result": "IUPAC rules ensure unique, unambiguous names for chemical structures."
+      "context": "Naming a branched alkane is three decisions in order: find the longest continuous chain, number it from the end giving the lower locants, then cite the substituents alphabetically with their positions. Each of these four structures exercises a different part of that sequence.",
+      "approach": "Step 1: The four-carbon structure has a three-carbon longest chain with one methyl on the middle carbon, giving 2-methylpropane. The five-carbon one has a three-carbon chain carrying two methyls on the same central carbon, so 2,2-dimethylpropane.\nStep 2: The six-carbon structure has a five-carbon chain with a methyl at the centre. Numbering from either end gives the same locant, so it is 3-methylpentane.\nStep 3: The seven-carbon structure has a five-carbon chain with methyls on the second and fourth carbons. Numbering from the nearer end gives 2,4 rather than 2,4 reversed, so it is 2,4-dimethylpentane.",
+      "note": "Notice that none of these needs an alphabetical decision, because every substituent is a methyl. The locant rule does all the work here; it is only when substituents differ that citation order becomes a separate question.",
+      "options": {
+        "A": "Correct. 2-Methylpropane, 2,2-dimethylpropane, 3-methylpentane and 2,4-dimethylpentane - each read off by taking the longest chain first and then the lowest locants.",
+        "B": "Work through each in the same order every time: longest chain, then numbering direction, then substituent names. The commonest slip is taking a chain that runs straight across the page rather than the genuinely longest one, which may turn a corner."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2278,12 +2282,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Assessing ring strain in cycloalkanes based on angle strain and torsional strain.",
-      "process": "Cyclopropanes have severe angle strain (60° vs 109.5°). Cyclobutane is slightly less strained (88°). Cyclopentane adopts a puckered envelope shape to relieve strain (26 kJ/mol). Cyclohexane adopts the chair conformation, which has zero angle and torsional strain.",
-      "result": "Chair cyclohexane is completely strain-free."
+      "context": "Ring strain has two main sources: angle strain, from bond angles forced away from the ideal tetrahedral 109.5 degrees, and torsional strain, from eclipsed C-H bonds that the ring cannot relieve by rotating. Small rings suffer both at once.",
+      "approach": "Step 1: Cyclopropane is flat by geometric necessity, with 60 degree internal angles - the largest angular distortion possible - and every C-H pair eclipsed. Its total strain is about 115 kJ/mol.\nStep 2: Cyclobutane's 90 degree angles are less distorted, but it has four carbons' worth of near-eclipsing, so its strain stays high at about 110 kJ/mol despite a slight pucker.\nStep 3: Cyclopentane puckers into an envelope and its angles are close to ideal, leaving about 26 kJ/mol. Cyclohexane adopts the chair, which achieves 109.5 degree angles with every bond staggered, and is strain-free at 0.",
+      "note": "The pattern is not simply smaller ring, more strain: cyclobutane has less angle strain than cyclopropane yet nearly the same total, because its extra carbon adds torsional strain that cancels the gain. This is why cyclohexane chemistry dominates Chapter 4 - the chair is the one common ring with no strain to pay.",
+      "options": {
+        "A": "Correct. Strain falls from cyclopropane at about 115 kJ/mol, through cyclobutane at 110 and cyclopentane at 26, to zero for cyclohexane's chair.",
+        "B": "Rank by how far the ring forces its bond angles from 109.5 degrees, then ask whether puckering can relieve the eclipsing. Three- and four-membered rings cannot escape either problem; five- and six-membered rings largely can."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2333,12 +2341,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: CCC(=O)O corresponds to Propanoic acid.\nStructure 2: CCC(C)=O corresponds to Butanone.\nStructure 3: CCC(=O)CC corresponds to 3-Pentanone.\nStructure 4: CC=C corresponds to Propene.",
-      "result": "All structures are correctly matched."
+      "context": "The suffix of a name records the highest-priority functional group present, and its locant records where that group sits. Carboxylic acids outrank ketones, which outrank alkenes, and each takes a different ending.",
+      "approach": "Step 1: Find the carboxylic acid. A three-carbon chain ending in COOH takes the -oic acid suffix, giving propanoic acid; the carboxyl carbon is always C1, so no locant is needed.\nStep 2: Take the two ketones. A four-carbon chain with the carbonyl at C2 is butanone - unambiguous, so the locant is optional. A five-carbon chain with the carbonyl at the centre is 3-pentanone.\nStep 3: The remaining structure is a three-carbon chain with a double bond, an alkene, named propene.",
+      "note": "Butanone needs no locant because there is only one position a ketone carbonyl can occupy in a four-carbon chain - the ends would make it an aldehyde. 3-Pentanone does need one, since a five-carbon chain offers a genuine choice between C2 and C3.",
+      "options": {
+        "A": "Correct. Propanoic acid by the -oic acid suffix, butanone and 3-pentanone by -one with locants where needed, and propene by -ene.",
+        "B": "Identify the highest-priority group first, since it fixes the suffix, then work out whether its position needs a number at all. Not every carbonyl requires a locant."
+      }
     },
     "key_status": "verified",
-    "feedback_status": "unreviewed",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2388,12 +2400,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: CC#N corresponds to Acetonitrile.\nStructure 2: CCCBr corresponds to 1-Bromopropane.\nStructure 3: C1CCCCC1 corresponds to Cyclohexane.\nStructure 4: C1CC=CC1 corresponds to Cyclopentene.",
-      "result": "All structures are correctly matched."
+      "context": "Two of these are open chains and two are rings, and the ring compounds take the cyclo- prefix in front of the chain name they would otherwise have. Whether a ring contains a double bond then decides between -ane and -ene.",
+      "approach": "Step 1: Take the chains. A two-carbon chain ending in a nitrile group is acetonitrile, a retained name. A three-carbon chain with bromine at the end is 1-bromopropane, the locant being needed to distinguish it from the 2-isomer.\nStep 2: Take the saturated ring. Six carbons in a ring with no multiple bond gives cyclohexane.\nStep 3: The remaining ring has five carbons and one double bond, so it is cyclopentene. In a ring with a single double bond the locant is unnecessary, since the double bond is understood to start at C1.",
+      "note": "1-Bromopropane needs its locant precisely because 2-bromopropane also exists, and the two behave differently in substitution and elimination reactions. Where an isomer exists, the number is not decoration - dropping it makes the name ambiguous.",
+      "options": {
+        "A": "Correct. Acetonitrile and 1-bromopropane as chains, cyclohexane and cyclopentene as rings distinguished by the presence of a double bond.",
+        "B": "Separate rings from chains first, then ask whether a locant is genuinely required - it is when an isomer exists, and it is not when only one arrangement is possible."
+      }
     },
     "key_status": "verified",
-    "feedback_status": "unreviewed",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2499,12 +2515,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Visualizing structures in a grid to determine configurations or IUPAC assignments.",
-      "process": "Grid card 1: Ethanol.\nGrid card 2: 1-Butanol.\nGrid card 3: Chlorobenzene.\nGrid card 4: Phenol.",
-      "result": "Grid mapping successfully matched."
+      "context": "Naming oxygen-containing compounds starts with what the oxygen is attached to, and whether the carbon skeleton is a chain or a benzene ring. Those two questions separate all four structures here.",
+      "approach": "Step 1: Take the two chain alcohols. Both carry an OH on the end of a saturated chain, so both take the -ol suffix; the chain length distinguishes them, giving ethanol for two carbons and 1-butanol for four.\nStep 2: Take the two aromatic compounds. Both are benzene rings with a single substituent.\nStep 3: A benzene ring bearing chlorine is chlorobenzene, named as a substituted benzene. A benzene ring bearing OH is not called hydroxybenzene - it takes the retained name phenol, which IUPAC keeps.",
+      "note": "Phenol is the case worth remembering here. An OH on a saturated carbon makes an alcohol named with -ol, but an OH directly on an aromatic ring makes a phenol, and the two behave very differently - phenol is roughly a million times the stronger acid, for the resonance reason seen in Chapter 2.",
+      "options": {
+        "A": "Correct. Two chain alcohols distinguished by length, and two monosubstituted benzenes, one named as a substituted benzene and one by its retained name.",
+        "B": "Sort first by skeleton - chain or ring - then by what the oxygen or halogen is attached to. An OH on a ring and an OH on a chain do not take the same kind of name."
+      }
     },
     "key_status": "verified",
-    "feedback_status": "unreviewed",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2614,7 +2634,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCCC(C)=O corresponds to 2-Pentanone.\nStructure 2: CC(C)=C corresponds to Isobutylene.\nStructure 3: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 4: Clc1ccccc1 corresponds to Chlorobenzene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -2665,12 +2685,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: CCCC=O corresponds to Butyraldehyde.\nStructure 2: CCc1ccccc1 corresponds to Ethylbenzene.\nStructure 3: CCOC(=O)c1ccccc1 corresponds to Ethyl benzoate.\nStructure 4: O=C1CCCC1 corresponds to Cyclopentanone.",
-      "result": "All structures are correctly matched."
+      "context": "Aldehydes, esters, ketones and substituted benzenes each carry their own suffix or naming pattern. Sorting the four structures by functional group makes the naming almost mechanical.",
+      "approach": "Step 1: The four-carbon chain ending in CHO is an aldehyde, taking the -al suffix: butanal. The carbonyl carbon is necessarily C1, so no locant appears.\nStep 2: The benzene ring bearing an ethyl group is ethylbenzene, named as a substituted benzene.\nStep 3: The remaining two carry carbonyls. The ester of benzoic acid with ethanol is ethyl benzoate, alkyl group first. The five-membered ring with a carbonyl in it is cyclopentanone.",
+      "note": "This item previously keyed the aldehyde as butyraldehyde, a trivial name IUPAC does not retain, under a stem asking for the IUPAC name; it has been corrected to butanal. Compare benzaldehyde, which IUPAC does retain - the two look like similar cases but are treated differently.",
+      "options": {
+        "A": "Correct. Butanal by the -al suffix, ethylbenzene as a substituted ring, ethyl benzoate as an ester, and cyclopentanone as a cyclic ketone.",
+        "B": "Work group by group. An aldehyde takes -al with no locant, an ester is named alkyl then acid-derived group, and a carbonyl inside a ring takes cyclo- with -one."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2724,7 +2748,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC(C)(C)O corresponds to t-Butyl alcohol.\nStructure 2: ClCCl corresponds to Dichloromethane.\nStructure 3: CC(C)=C corresponds to Isobutylene.\nStructure 4: CCCCO corresponds to 1-Butanol.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -2779,7 +2803,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CO corresponds to Methanol.\nStructure 2: OCc1ccccc1 corresponds to Benzyl alcohol.\nStructure 3: CC(C)=C corresponds to Isobutylene.\nStructure 4: O=Cc1ccccc1 corresponds to Benzaldehyde.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -2834,7 +2858,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCC(=O)CC corresponds to 3-Pentanone.\nStructure 2: C1CCOC1 corresponds to Tetrahydrofuran.\nStructure 3: c1ccccc1 corresponds to Benzene.\nStructure 4: CC(=O)c1ccccc1 corresponds to Acetophenone.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -2889,7 +2913,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCc1ccccc1 corresponds to Ethylbenzene.\nStructure 2: O=Cc1ccccc1 corresponds to Benzaldehyde.\nStructure 3: CCCBr corresponds to 1-Bromopropane.\nStructure 4: CC(=O)O corresponds to Acetic acid.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -2940,12 +2964,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: CCOC(C)=O corresponds to Ethyl acetate.\nStructure 2: CC(O)C corresponds to Propan-2-ol.\nStructure 3: CC(C)=C corresponds to Isobutylene.\nStructure 4: CCCO corresponds to 1-Propanol.",
-      "result": "All structures are correctly matched."
+      "context": "This set contains two alcohols with the same molecular formula, distinguished only by which carbon carries the OH. That single locant is the whole difference between two genuinely different compounds.",
+      "approach": "Step 1: Take the two three-carbon alcohols. With the OH on an end carbon the name is 1-propanol; with the OH on the middle carbon it is propan-2-ol. Both are C3H8O.\nStep 2: The four-carbon alkene with a methyl branch is 2-methylpropene - a three-carbon propene chain carrying a methyl on C2.\nStep 3: The remaining structure is the ester formed from acetic acid and ethanol, named ethyl acetate.",
+      "note": "1-Propanol and propan-2-ol are constitutional isomers, and the difference is not cosmetic: the first is a primary alcohol that oxidises to an aldehyde and then an acid, while the second is secondary and oxidises to a ketone and stops there. Chapter 17 turns on exactly this distinction.",
+      "options": {
+        "A": "Correct. The two propanols separated by their OH locant, together with 2-methylpropene and ethyl acetate.",
+        "B": "For the two alcohols, count which carbon carries the OH - an end carbon gives 1-propanol, the middle carbon gives propan-2-ol. They share a formula but are different compounds."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2999,7 +3027,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCC(=O)CC corresponds to 3-Pentanone.\nStructure 2: CC(=O)c1ccccc1 corresponds to Acetophenone.\nStructure 3: CCC=O corresponds to Propionaldehyde.\nStructure 4: CCCC(C)=O corresponds to 2-Pentanone.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3054,7 +3082,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC(C)(C)O corresponds to t-Butyl alcohol.\nStructure 2: CCCO corresponds to 1-Propanol.\nStructure 3: CC(=O)c1ccccc1 corresponds to Acetophenone.\nStructure 4: COC(C)=O corresponds to Methyl acetate.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3109,7 +3137,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 2: C(=O)O corresponds to Formic acid.\nStructure 3: c1ccccc1 corresponds to Benzene.\nStructure 4: CC(C)=C corresponds to Isobutylene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3164,7 +3192,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCC=O corresponds to Propionaldehyde.\nStructure 2: C1CCOC1 corresponds to Tetrahydrofuran.\nStructure 3: CC=O corresponds to Acetaldehyde.\nStructure 4: O=C1CCCC1 corresponds to Cyclopentanone.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3219,7 +3247,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CCOC1 corresponds to Tetrahydrofuran.\nStructure 2: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 3: CC=C corresponds to Propene.\nStructure 4: C1CC=CC1 corresponds to Cyclopentene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3274,7 +3302,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCC(=O)CC corresponds to 3-Pentanone.\nStructure 2: C1CCC=CC1 corresponds to Cyclohexene.\nStructure 3: CO corresponds to Methanol.\nStructure 4: CCCBr corresponds to 1-Bromopropane.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3329,7 +3357,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CC=CC1 corresponds to Cyclopentene.\nStructure 2: CC#C corresponds to Propyne.\nStructure 3: C1CCCCC1=O corresponds to Cyclohexanone.\nStructure 4: CCc1ccccc1 corresponds to Ethylbenzene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3384,7 +3412,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCO corresponds to Ethanol.\nStructure 2: C1CC=CC1 corresponds to Cyclopentene.\nStructure 3: CC#N corresponds to Acetonitrile.\nStructure 4: CC(C)=O corresponds to Acetone.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3439,7 +3467,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: Oc1ccccc1 corresponds to Phenol.\nStructure 2: ClCCl corresponds to Dichloromethane.\nStructure 3: Clc1ccccc1 corresponds to Chlorobenzene.\nStructure 4: CCOC(C)=O corresponds to Ethyl acetate.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3494,7 +3522,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CS(=O)C corresponds to Dimethyl sulfoxide.\nStructure 2: CC(Br)C corresponds to 2-Bromopropane.\nStructure 3: CCO corresponds to Ethanol.\nStructure 4: ClCCl corresponds to Dichloromethane.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3549,7 +3577,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC(=O)O corresponds to Acetic acid.\nStructure 2: ClC(Cl)Cl corresponds to Chloroform.\nStructure 3: CC(Br)C corresponds to 2-Bromopropane.\nStructure 4: CCC(C)=O corresponds to Butanone.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3604,7 +3632,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CCCCC1 corresponds to Cyclohexane.\nStructure 2: CC(O)C corresponds to Propan-2-ol.\nStructure 3: CCCC=O corresponds to Butyraldehyde.\nStructure 4: Clc1ccccc1 corresponds to Chlorobenzene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3659,7 +3687,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC=C corresponds to Propene.\nStructure 2: CCO corresponds to Ethanol.\nStructure 3: O=C1CCCC1 corresponds to Cyclopentanone.\nStructure 4: CCOC(C)=O corresponds to Ethyl acetate.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3714,7 +3742,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CCOC1 corresponds to Tetrahydrofuran.\nStructure 2: O=C(O)c1ccccc1 corresponds to Benzoic acid.\nStructure 3: C1CC=CC1 corresponds to Cyclopentene.\nStructure 4: CCCC=O corresponds to Butyraldehyde.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3769,7 +3797,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC(=O)c1ccccc1 corresponds to Acetophenone.\nStructure 2: CS(=O)C corresponds to Dimethyl sulfoxide.\nStructure 3: C1CCCCC1=O corresponds to Cyclohexanone.\nStructure 4: CCOCC corresponds to Diethyl ether.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3824,7 +3852,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCOC(=O)c1ccccc1 corresponds to Ethyl benzoate.\nStructure 2: CCC(=O)O corresponds to Propanoic acid.\nStructure 3: CCCCO corresponds to 1-Butanol.\nStructure 4: C(=O)O corresponds to Formic acid.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3879,7 +3907,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: Oc1ccccc1 corresponds to Phenol.\nStructure 2: CO corresponds to Methanol.\nStructure 3: C1CCC=CC1 corresponds to Cyclohexene.\nStructure 4: CCOCC corresponds to Diethyl ether.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -3930,12 +3958,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: Brc1ccccc1 corresponds to Bromobenzene.\nStructure 2: CC(C)(C)O corresponds to t-Butyl alcohol.\nStructure 3: C1CCC=CC1 corresponds to Cyclohexene.\nStructure 4: CC(C)=O corresponds to Acetone.",
-      "result": "All structures are correctly matched."
+      "context": "A branched alcohol needs both a locant for the OH and locants for its branches, which is where trivial names tend to be substituted instead. The other three here are a substituted ring, a cyclic alkene and a retained ketone name.",
+      "approach": "Step 1: Name the branched alcohol systematically. The longest chain through the carbon bearing OH is three carbons, with a methyl branch and the OH both on the central carbon: 2-methylpropan-2-ol.\nStep 2: The benzene ring carrying bromine is bromobenzene, named as a substituted benzene.\nStep 3: The six-membered ring with one double bond is cyclohexene, and the three-carbon ketone is acetone, a name IUPAC retains.",
+      "note": "This item previously keyed the alcohol as t-butyl alcohol, a trivial name IUPAC does not retain, while the stem asks for the IUPAC name; it now reads 2-methylpropan-2-ol. Acetone in the same set is retained and stays - the two cases look alike but IUPAC treats them differently.",
+      "options": {
+        "A": "Correct. 2-Methylpropan-2-ol named systematically, with bromobenzene, cyclohexene and the retained name acetone.",
+        "B": "For the branched alcohol, find the longest chain through the carbon carrying the OH and give both the OH and the branch their locants. tert-Butyl alcohol names the right molecule but is not an IUPAC name."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -3989,7 +4021,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CCCCC1=O corresponds to Cyclohexanone.\nStructure 2: Brc1ccccc1 corresponds to Bromobenzene.\nStructure 3: CC=O corresponds to Acetaldehyde.\nStructure 4: O=C1CCCC1 corresponds to Cyclopentanone.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4044,7 +4076,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCCBr corresponds to 1-Bromopropane.\nStructure 2: CCCO corresponds to 1-Propanol.\nStructure 3: CC(=O)c1ccccc1 corresponds to Acetophenone.\nStructure 4: CC(C)(C)O corresponds to t-Butyl alcohol.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4099,7 +4131,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: COc1ccccc1 corresponds to Anisole.\nStructure 2: OCc1ccccc1 corresponds to Benzyl alcohol.\nStructure 3: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 4: O=C(O)c1ccccc1 corresponds to Benzoic acid.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4150,12 +4182,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: CCC(=O)O corresponds to Propanoic acid.\nStructure 2: CCCC(C)=O corresponds to 2-Pentanone.\nStructure 3: CC(Br)C corresponds to 2-Bromopropane.\nStructure 4: COC(C)=O corresponds to Methyl acetate.",
-      "result": "All structures are correctly matched."
+      "context": "Three of these four need a locant, and in each case the reason is the same: another isomer exists that the name must exclude. A locant is required exactly when leaving it out would be ambiguous.",
+      "approach": "Step 1: The three-carbon acid needs no locant - a carboxyl carbon is always C1 - so it is propanoic acid.\nStep 2: The five-carbon ketone does need one, since the carbonyl could sit at C2 or C3. Here it is next to the end, giving 2-pentanone.\nStep 3: The brominated propane has bromine on the middle carbon, so it is 2-bromopropane rather than 1-. The ester of acetic acid with methanol is methyl acetate, the alkyl group cited first.",
+      "note": "Compare 2-pentanone with 3-pentanone, which appears elsewhere in this chapter: same formula, same functional group, different carbonyl position. They are constitutional isomers with different boiling points and different products on reduction, so the locant carries real information.",
+      "options": {
+        "A": "Correct. Propanoic acid needs no locant, while 2-pentanone and 2-bromopropane do, and methyl acetate is named alkyl group first.",
+        "B": "For each structure, ask whether another isomer exists. If it does, the name needs a number; if the group can only sit in one place, as with a carboxyl carbon, it does not."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -4209,7 +4245,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCc1ccccc1 corresponds to Ethylbenzene.\nStructure 2: CC(O)C corresponds to Propan-2-ol.\nStructure 3: CCCC=O corresponds to Butyraldehyde.\nStructure 4: Oc1ccccc1 corresponds to Phenol.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4264,7 +4300,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC(=O)O corresponds to Acetic acid.\nStructure 2: Brc1ccccc1 corresponds to Bromobenzene.\nStructure 3: CCOCC corresponds to Diethyl ether.\nStructure 4: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4319,7 +4355,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: Oc1ccccc1 corresponds to Phenol.\nStructure 2: CCCO corresponds to 1-Propanol.\nStructure 3: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 4: C1CCCCC1=O corresponds to Cyclohexanone.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4370,12 +4406,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: CC=C corresponds to Propene.\nStructure 2: CC(=O)O corresponds to Acetic acid.\nStructure 3: OCc1ccccc1 corresponds to Benzyl alcohol.\nStructure 4: CCCCO corresponds to 1-Butanol.",
-      "result": "All structures are correctly matched."
+      "context": "Two of these carry an OH but are named quite differently, because one sits on a saturated chain and the other on a carbon attached to a ring. Where the oxygen is attached decides the naming pattern.",
+      "approach": "Step 1: The four-carbon chain with OH at the end is 1-butanol, a straightforward primary alcohol.\nStep 2: The other alcohol has its OH on a CH2 that is attached to a benzene ring. That CH2 is the benzylic position, and the compound is benzyl alcohol.\nStep 3: The three-carbon alkene is propene, and the two-carbon acid is acetic acid, a retained name.",
+      "note": "Benzyl alcohol is not a phenol. The OH sits on a saturated carbon one atom away from the ring, so it behaves as an ordinary primary alcohol - it is not appreciably acidic, unlike phenol where the OH is bonded directly to the ring.",
+      "options": {
+        "A": "Correct. 1-Butanol as a chain alcohol, benzyl alcohol with its OH on the benzylic carbon, plus propene and acetic acid.",
+        "B": "For each OH, look at what carbon it sits on. Directly on the ring gives a phenol; on a CH2 next to the ring gives benzyl alcohol; on a plain chain gives an ordinary alkanol."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -4429,7 +4469,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCOCC corresponds to Diethyl ether.\nStructure 2: CCO corresponds to Ethanol.\nStructure 3: CC(C)=C corresponds to Isobutylene.\nStructure 4: CCC(=O)CC corresponds to 3-Pentanone.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4484,7 +4524,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC(C)=O corresponds to Acetone.\nStructure 2: CCCC=O corresponds to Butyraldehyde.\nStructure 3: CCO corresponds to Ethanol.\nStructure 4: CC(=O)O corresponds to Acetic acid.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4539,7 +4579,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC=C corresponds to Propene.\nStructure 2: CCCO corresponds to 1-Propanol.\nStructure 3: CCc1ccccc1 corresponds to Ethylbenzene.\nStructure 4: O=C(O)c1ccccc1 corresponds to Benzoic acid.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4594,7 +4634,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC(C)=C corresponds to Isobutylene.\nStructure 2: Oc1ccccc1 corresponds to Phenol.\nStructure 3: CC=C corresponds to Propene.\nStructure 4: C1CCOC1 corresponds to Tetrahydrofuran.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4649,7 +4689,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCC(=O)O corresponds to Propanoic acid.\nStructure 2: CCCC=O corresponds to Butyraldehyde.\nStructure 3: CCc1ccccc1 corresponds to Ethylbenzene.\nStructure 4: CC#N corresponds to Acetonitrile.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4704,7 +4744,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCc1ccccc1 corresponds to Ethylbenzene.\nStructure 2: Cc1ccccc1 corresponds to Toluene.\nStructure 3: C(=O)O corresponds to Formic acid.\nStructure 4: Brc1ccccc1 corresponds to Bromobenzene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4759,7 +4799,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CC=CC1 corresponds to Cyclopentene.\nStructure 2: CC(=O)O corresponds to Acetic acid.\nStructure 3: COc1ccccc1 corresponds to Anisole.\nStructure 4: CCOC(=O)c1ccccc1 corresponds to Ethyl benzoate.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4814,7 +4854,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC(C)=C corresponds to Isobutylene.\nStructure 2: [N+](=O)([O-])c1ccccc1 corresponds to Nitrobenzene.\nStructure 3: C1CCCCC1 corresponds to Cyclohexane.\nStructure 4: C1CCOC1 corresponds to Tetrahydrofuran.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4869,7 +4909,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CCC=CC1 corresponds to Cyclohexene.\nStructure 2: COC(C)=O corresponds to Methyl acetate.\nStructure 3: CC(=O)O corresponds to Acetic acid.\nStructure 4: CCC=O corresponds to Propionaldehyde.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4924,7 +4964,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: O=Cc1ccccc1 corresponds to Benzaldehyde.\nStructure 2: CCC(C)=O corresponds to Butanone.\nStructure 3: CC(O)C corresponds to Propan-2-ol.\nStructure 4: Brc1ccccc1 corresponds to Bromobenzene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -4979,7 +5019,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: ClCCl corresponds to Dichloromethane.\nStructure 2: C1CCOC1 corresponds to Tetrahydrofuran.\nStructure 3: COC(C)=O corresponds to Methyl acetate.\nStructure 4: CCC(C)=O corresponds to Butanone.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5034,7 +5074,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCCCO corresponds to 1-Butanol.\nStructure 2: CCOCC corresponds to Diethyl ether.\nStructure 3: [N+](=O)([O-])c1ccccc1 corresponds to Nitrobenzene.\nStructure 4: CCc1ccccc1 corresponds to Ethylbenzene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5089,7 +5129,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: c1ccccc1 corresponds to Benzene.\nStructure 2: C1CCCCC1 corresponds to Cyclohexane.\nStructure 3: CC(C)=C corresponds to Isobutylene.\nStructure 4: CCCO corresponds to 1-Propanol.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5144,7 +5184,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: c1ccccc1 corresponds to Benzene.\nStructure 2: O=Cc1ccccc1 corresponds to Benzaldehyde.\nStructure 3: C(=O)O corresponds to Formic acid.\nStructure 4: CCC=O corresponds to Propionaldehyde.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5199,7 +5239,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCCBr corresponds to 1-Bromopropane.\nStructure 2: CC(C)(C)O corresponds to t-Butyl alcohol.\nStructure 3: C1CCCCC1 corresponds to Cyclohexane.\nStructure 4: CCCC=O corresponds to Butyraldehyde.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5254,7 +5294,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC#C corresponds to Propyne.\nStructure 2: CCCBr corresponds to 1-Bromopropane.\nStructure 3: CC(=O)O corresponds to Acetic acid.\nStructure 4: C(=O)O corresponds to Formic acid.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5309,7 +5349,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: Cc1ccccc1 corresponds to Toluene.\nStructure 2: COc1ccccc1 corresponds to Anisole.\nStructure 3: Nc1ccccc1 corresponds to Aniline.\nStructure 4: CC=C corresponds to Propene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5364,7 +5404,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC(C)(C)O corresponds to t-Butyl alcohol.\nStructure 2: CC(O)C corresponds to Propan-2-ol.\nStructure 3: OCc1ccccc1 corresponds to Benzyl alcohol.\nStructure 4: C1CCCCC1=O corresponds to Cyclohexanone.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5419,7 +5459,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: ClC(Cl)Cl corresponds to Chloroform.\nStructure 2: c1ccccc1 corresponds to Benzene.\nStructure 3: CC(C)=O corresponds to Acetone.\nStructure 4: CC(=O)O corresponds to Acetic acid.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5474,7 +5514,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CCCCC1 corresponds to Cyclohexane.\nStructure 2: CC#N corresponds to Acetonitrile.\nStructure 3: Nc1ccccc1 corresponds to Aniline.\nStructure 4: CCc1ccccc1 corresponds to Ethylbenzene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5529,7 +5569,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCC(=O)CC corresponds to 3-Pentanone.\nStructure 2: O=Cc1ccccc1 corresponds to Benzaldehyde.\nStructure 3: ClC(Cl)Cl corresponds to Chloroform.\nStructure 4: CC=C corresponds to Propene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5584,7 +5624,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCC(C)=O corresponds to Butanone.\nStructure 2: CC#N corresponds to Acetonitrile.\nStructure 3: c1ccccc1 corresponds to Benzene.\nStructure 4: CCc1ccccc1 corresponds to Ethylbenzene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5639,7 +5679,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CCCCC1 corresponds to Cyclohexane.\nStructure 2: CC(C)=C corresponds to Isobutylene.\nStructure 3: Cc1ccccc1 corresponds to Toluene.\nStructure 4: CCC(=O)O corresponds to Propanoic acid.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5694,7 +5734,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: Cc1ccccc1 corresponds to Toluene.\nStructure 2: CC#N corresponds to Acetonitrile.\nStructure 3: CCc1ccccc1 corresponds to Ethylbenzene.\nStructure 4: CC(=O)O corresponds to Acetic acid.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5749,7 +5789,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC#C corresponds to Propyne.\nStructure 2: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 3: OCc1ccccc1 corresponds to Benzyl alcohol.\nStructure 4: CC=O corresponds to Acetaldehyde.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5804,7 +5844,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CCC=CC1 corresponds to Cyclohexene.\nStructure 2: CCO corresponds to Ethanol.\nStructure 3: C(=O)O corresponds to Formic acid.\nStructure 4: C1CCCCC1 corresponds to Cyclohexane.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5859,7 +5899,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCC=O corresponds to Propionaldehyde.\nStructure 2: CCC(C)=O corresponds to Butanone.\nStructure 3: O=Cc1ccccc1 corresponds to Benzaldehyde.\nStructure 4: CC#C corresponds to Propyne.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5914,7 +5954,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: Brc1ccccc1 corresponds to Bromobenzene.\nStructure 2: CCCBr corresponds to 1-Bromopropane.\nStructure 3: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 4: O=Cc1ccccc1 corresponds to Benzaldehyde.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -5969,7 +6009,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 2: C1CCC=CC1 corresponds to Cyclohexene.\nStructure 3: CS(=O)C corresponds to Dimethyl sulfoxide.\nStructure 4: CC(O)C corresponds to Propan-2-ol.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6024,7 +6064,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: Nc1ccccc1 corresponds to Aniline.\nStructure 2: CCOC(=O)c1ccccc1 corresponds to Ethyl benzoate.\nStructure 3: OCc1ccccc1 corresponds to Benzyl alcohol.\nStructure 4: [N+](=O)([O-])c1ccccc1 corresponds to Nitrobenzene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6079,7 +6119,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC#N corresponds to Acetonitrile.\nStructure 2: CCC(=O)CC corresponds to 3-Pentanone.\nStructure 3: CC(C)=C corresponds to Isobutylene.\nStructure 4: O=Cc1ccccc1 corresponds to Benzaldehyde.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6134,7 +6174,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCC(=O)O corresponds to Propanoic acid.\nStructure 2: CCC(C)=O corresponds to Butanone.\nStructure 3: C1CCOC1 corresponds to Tetrahydrofuran.\nStructure 4: CC(C)=O corresponds to Acetone.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6189,7 +6229,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CCCCC1 corresponds to Cyclohexane.\nStructure 2: O=C1CCCC1 corresponds to Cyclopentanone.\nStructure 3: CC(C)(C)O corresponds to t-Butyl alcohol.\nStructure 4: O=Cc1ccccc1 corresponds to Benzaldehyde.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6244,7 +6284,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCOC(C)=O corresponds to Ethyl acetate.\nStructure 2: CCOCC corresponds to Diethyl ether.\nStructure 3: CC(C)=C corresponds to Isobutylene.\nStructure 4: CCOC(=O)c1ccccc1 corresponds to Ethyl benzoate.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6299,7 +6339,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CC=CC1 corresponds to Cyclopentene.\nStructure 2: OCc1ccccc1 corresponds to Benzyl alcohol.\nStructure 3: CCCCO corresponds to 1-Butanol.\nStructure 4: CCC(C)=O corresponds to Butanone.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6354,7 +6394,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: Oc1ccccc1 corresponds to Phenol.\nStructure 2: CO corresponds to Methanol.\nStructure 3: C1CCCCC1=O corresponds to Cyclohexanone.\nStructure 4: COC(C)=O corresponds to Methyl acetate.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6409,7 +6449,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC=C corresponds to Propene.\nStructure 2: [N+](=O)([O-])c1ccccc1 corresponds to Nitrobenzene.\nStructure 3: C(=O)O corresponds to Formic acid.\nStructure 4: Clc1ccccc1 corresponds to Chlorobenzene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6464,7 +6504,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CCOC1 corresponds to Tetrahydrofuran.\nStructure 2: CC(C)=O corresponds to Acetone.\nStructure 3: CCO corresponds to Ethanol.\nStructure 4: CC(O)C corresponds to Propan-2-ol.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6519,7 +6559,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 2: CC(C)(C)O corresponds to t-Butyl alcohol.\nStructure 3: C1CCC=CC1 corresponds to Cyclohexene.\nStructure 4: CCOC(=O)c1ccccc1 corresponds to Ethyl benzoate.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6574,7 +6614,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CC=CC1 corresponds to Cyclopentene.\nStructure 2: CCCC(C)=O corresponds to 2-Pentanone.\nStructure 3: c1ccccc1 corresponds to Benzene.\nStructure 4: ClC(Cl)Cl corresponds to Chloroform.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6629,7 +6669,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCC(=O)O corresponds to Propanoic acid.\nStructure 2: CC#N corresponds to Acetonitrile.\nStructure 3: C1CCCCC1 corresponds to Cyclohexane.\nStructure 4: COc1ccccc1 corresponds to Anisole.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6684,7 +6724,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: O=Cc1ccccc1 corresponds to Benzaldehyde.\nStructure 2: CS(=O)C corresponds to Dimethyl sulfoxide.\nStructure 3: CCOC(C)=O corresponds to Ethyl acetate.\nStructure 4: c1ccccc1 corresponds to Benzene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6739,7 +6779,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: O=C(O)c1ccccc1 corresponds to Benzoic acid.\nStructure 2: CC(C)=C corresponds to Isobutylene.\nStructure 3: CC=O corresponds to Acetaldehyde.\nStructure 4: Oc1ccccc1 corresponds to Phenol.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6794,7 +6834,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CCOC1 corresponds to Tetrahydrofuran.\nStructure 2: CCOC(C)=O corresponds to Ethyl acetate.\nStructure 3: COC corresponds to Dimethyl ether.\nStructure 4: CC(Br)C corresponds to 2-Bromopropane.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6845,12 +6885,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Matching basic chemical structures with their nomenclature terms.",
-      "process": "Structure 1: CCC(=O)CC corresponds to 3-Pentanone.\nStructure 2: CC#C corresponds to Propyne.\nStructure 3: [N+](=O)([O-])c1ccccc1 corresponds to Nitrobenzene.\nStructure 4: CCc1ccccc1 corresponds to Ethylbenzene.",
-      "result": "All structures are correctly matched."
+      "context": "Four different functional groups appear here - a ketone, an alkyne, a nitro compound and an alkyl-substituted ring - and each is named by a different mechanism: a suffix, a suffix with a locant, a substituent prefix, and a substituted benzene.",
+      "approach": "Step 1: The five-carbon ketone with the carbonyl at the centre is 3-pentanone, the locant distinguishing it from the 2-isomer.\nStep 2: The three-carbon chain with a triple bond is propyne. With only one possible position in a three-carbon chain, no locant is needed.\nStep 3: The ring bearing NO2 is nitrobenzene, the nitro group being cited as a substituent prefix. The ring bearing a two-carbon chain is ethylbenzene.",
+      "note": "The nitro group is always a prefix and never a suffix, however important it is to the compound's chemistry. It is also strongly electron-withdrawing, which is why nitrobenzene resists further electrophilic substitution and directs any that occurs to the meta position, as Chapter 16 shows.",
+      "options": {
+        "A": "Correct. 3-Pentanone with its locant, propyne needing none, and nitrobenzene and ethylbenzene as substituted rings.",
+        "B": "Take each functional group in turn and ask how it is expressed - as a suffix, as a prefix, or as a substituent on a ring - and then whether a locant is required to remove ambiguity."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -6904,7 +6948,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: Clc1ccccc1 corresponds to Chlorobenzene.\nStructure 2: CC(O)C corresponds to Propan-2-ol.\nStructure 3: [N+](=O)([O-])c1ccccc1 corresponds to Nitrobenzene.\nStructure 4: CCOCC corresponds to Diethyl ether.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -6959,7 +7003,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCc1ccccc1 corresponds to Ethylbenzene.\nStructure 2: ClC(Cl)Cl corresponds to Chloroform.\nStructure 3: COC corresponds to Dimethyl ether.\nStructure 4: C(=O)O corresponds to Formic acid.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7014,7 +7058,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CS(=O)C corresponds to Dimethyl sulfoxide.\nStructure 2: CCO corresponds to Ethanol.\nStructure 3: CC(Br)C corresponds to 2-Bromopropane.\nStructure 4: CCOC(C)=O corresponds to Ethyl acetate.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7069,7 +7113,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC(Br)C corresponds to 2-Bromopropane.\nStructure 2: COC(C)=O corresponds to Methyl acetate.\nStructure 3: CC(O)C corresponds to Propan-2-ol.\nStructure 4: CCC(=O)O corresponds to Propanoic acid.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7124,7 +7168,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: C1CCC=CC1 corresponds to Cyclohexene.\nStructure 2: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 3: CC(=O)c1ccccc1 corresponds to Acetophenone.\nStructure 4: CO corresponds to Methanol.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7179,7 +7223,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: COC corresponds to Dimethyl ether.\nStructure 2: Brc1ccccc1 corresponds to Bromobenzene.\nStructure 3: CCCO corresponds to 1-Propanol.\nStructure 4: CC#C corresponds to Propyne.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7234,7 +7278,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCC(=O)CC corresponds to 3-Pentanone.\nStructure 2: Oc1ccccc1 corresponds to Phenol.\nStructure 3: C1CCCCC1 corresponds to Cyclohexane.\nStructure 4: COC(C)=O corresponds to Methyl acetate.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7289,7 +7333,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC(C)(C)O corresponds to t-Butyl alcohol.\nStructure 2: ClCCl corresponds to Dichloromethane.\nStructure 3: [N+](=O)([O-])c1ccccc1 corresponds to Nitrobenzene.\nStructure 4: CO corresponds to Methanol.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7344,7 +7388,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: c1ccccc1 corresponds to Benzene.\nStructure 2: O=Cc1ccccc1 corresponds to Benzaldehyde.\nStructure 3: O=C1CCCC1 corresponds to Cyclopentanone.\nStructure 4: CCCC=O corresponds to Butyraldehyde.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7399,7 +7443,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCCBr corresponds to 1-Bromopropane.\nStructure 2: O=Cc1ccccc1 corresponds to Benzaldehyde.\nStructure 3: Oc1ccccc1 corresponds to Phenol.\nStructure 4: CCC(=O)CC corresponds to 3-Pentanone.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7454,7 +7498,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCO corresponds to Ethanol.\nStructure 2: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 3: CC#N corresponds to Acetonitrile.\nStructure 4: Nc1ccccc1 corresponds to Aniline.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7509,7 +7553,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: Nc1ccccc1 corresponds to Aniline.\nStructure 2: c1ccccc1 corresponds to Benzene.\nStructure 3: OCc1ccccc1 corresponds to Benzyl alcohol.\nStructure 4: ClCCl corresponds to Dichloromethane.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7564,7 +7608,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CCCCO corresponds to 1-Butanol.\nStructure 2: CCOCC corresponds to Diethyl ether.\nStructure 3: Cc1ccccc1 corresponds to Toluene.\nStructure 4: COC corresponds to Dimethyl ether.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7619,7 +7663,7 @@ var CH03_QUESTIONS = [
       "process": "Structure 1: CC(C)=O corresponds to Acetone.\nStructure 2: CCCC(C)=O corresponds to 2-Pentanone.\nStructure 3: O=C(Cl)c1ccccc1 corresponds to Benzoyl chloride.\nStructure 4: CC(C)=C corresponds to Isobutylene.",
       "result": "All structures are correctly matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7671,12 +7715,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Visualizing structures in a grid to determine configurations or IUPAC assignments.",
-      "process": "Grid card 1: Isobutylene.\nGrid card 2: Chloroform.\nGrid card 3: Ethyl acetate.\nGrid card 4: Propionaldehyde.",
-      "result": "Grid mapping successfully matched."
+      "context": "Two of these carry names IUPAC retains and two are named systematically, so the set tests whether you can tell which convention applies. A retained name is not a wrong name - it is one IUPAC has kept in use.",
+      "approach": "Step 1: The four-carbon alkene with a methyl branch is named systematically: a three-carbon propene chain with a methyl on C2, giving 2-methylpropene.\nStep 2: The three-carbon aldehyde is likewise systematic - a three-carbon chain ending in CHO takes the -al suffix, so propanal.\nStep 3: The remaining two use retained names. Trichloromethane is universally called chloroform, and the ester of acetic acid with ethanol is ethyl acetate, named as alkyl followed by the acid-derived group.",
+      "note": "This item previously keyed the first two as isobutylene and propionaldehyde, which are trivial names IUPAC does not retain, while the stem asks for the IUPAC name. They have been corrected. Chloroform and ethyl acetate stay as they are, because those names IUPAC does keep.",
+      "options": {
+        "A": "Correct. 2-Methylpropene and propanal are named systematically; chloroform and ethyl acetate are retained names that IUPAC permits.",
+        "B": "Ask of each name whether IUPAC retains it. Chloroform and ethyl acetate are on that retained list; isobutylene and propionaldehyde are not, so those two must be named systematically."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -7727,12 +7775,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Visualizing structures in a grid to determine configurations or IUPAC assignments.",
-      "process": "Grid card 1: Dichloromethane.\nGrid card 2: Diethyl ether.\nGrid card 3: Acetophenone.\nGrid card 4: Formic acid.",
-      "result": "Grid mapping successfully matched."
+      "context": "This set mixes systematic and retained names across four different functional groups. Identify the group first, because that determines both the kind of name used and whether a locant is needed.",
+      "approach": "Step 1: The single carbon carrying two chlorines is named systematically as dichloromethane, with the di- prefix counting the substituents.\nStep 2: The oxygen flanked by two ethyl groups is an ether, named by its two alkyl groups: diethyl ether.\nStep 3: The remaining two are retained names. A benzene ring bearing an acetyl group is acetophenone, and the simplest carboxylic acid, a single carbon bearing COOH, is formic acid.",
+      "note": "Ethers are commonly named as functional class names - the two alkyl groups followed by the word ether - rather than by a substitutive name like ethoxyethane. Both are acceptable, which is why diethyl ether is not a violation of the IUPAC stem.",
+      "options": {
+        "A": "Correct. Dichloromethane named systematically, diethyl ether by functional class, and acetophenone and formic acid by retained names.",
+        "B": "Identify the functional group before reaching for a naming rule. Ethers, ketones on a ring and the one-carbon acid each follow a different convention here."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -7783,12 +7835,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Visualizing structures in a grid to determine configurations or IUPAC assignments.",
-      "process": "Grid card 1: Cyclohexane.\nGrid card 2: Dimethyl sulfoxide.\nGrid card 3: Acetaldehyde.\nGrid card 4: 1-Bromopropane.",
-      "result": "Grid mapping successfully matched."
+      "context": "This set spans a saturated ring, a sulfur-containing compound, an aldehyde and an alkyl halide. The sulfoxide is the unfamiliar one, and its name follows the same alkyl-plus-group pattern used for ethers.",
+      "approach": "Step 1: The six-membered saturated ring is cyclohexane.\nStep 2: The sulfur bearing a double-bonded oxygen and two methyl groups is a sulfoxide, named from its two alkyl groups: dimethyl sulfoxide.\nStep 3: The two-carbon aldehyde is acetaldehyde, a retained name, and the three-carbon chain with bromine at the end is 1-bromopropane.",
+      "note": "Dimethyl sulfoxide is worth recognising on sight because it is a common laboratory solvent - strongly polar but without an O-H, so it dissolves ionic reagents while being unable to donate a hydrogen bond. That combination makes it the standard polar aprotic solvent for the SN2 reactions of Chapter 11.",
+      "options": {
+        "A": "Correct. Cyclohexane, dimethyl sulfoxide named from its two alkyl groups, acetaldehyde by its retained name, and 1-bromopropane with its locant.",
+        "B": "The sulfoxide is named like an ether - the two alkyl groups followed by the group name. The other three follow the ordinary ring, aldehyde and haloalkane patterns."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -7843,7 +7899,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Nitrobenzene.\nGrid card 2: Acetone.\nGrid card 3: Benzaldehyde.\nGrid card 4: Chlorobenzene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7899,7 +7955,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Diethyl ether.\nGrid card 2: Cyclopentanone.\nGrid card 3: Acetophenone.\nGrid card 4: Isobutylene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -7951,12 +8007,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Visualizing structures in a grid to determine configurations or IUPAC assignments.",
-      "process": "Grid card 1: Cyclopentanone.\nGrid card 2: Aniline.\nGrid card 3: Acetaldehyde.\nGrid card 4: Dimethyl ether.",
-      "result": "Grid mapping successfully matched."
+      "context": "Three of these four carry retained names, which is common among the simplest members of each functional group family - they were named before systematic nomenclature and the names stuck.",
+      "approach": "Step 1: The five-membered ring containing a carbonyl is cyclopentanone, named systematically with cyclo- and the -one suffix.\nStep 2: The benzene ring bearing NH2 is aniline, not aminobenzene - IUPAC retains the older name.\nStep 3: The two-carbon aldehyde is acetaldehyde and the oxygen between two methyls is dimethyl ether, both names IUPAC accepts.",
+      "note": "Aniline is worth singling out because its systematic alternative is essentially never used, and because the compound's chemistry differs sharply from an aliphatic amine - the ring delocalizes the nitrogen lone pair, making aniline a far weaker base, as Chapter 24 develops.",
+      "options": {
+        "A": "Correct. Cyclopentanone named systematically, and aniline, acetaldehyde and dimethyl ether by names IUPAC retains.",
+        "B": "Check each against the retained list. Simple aromatic amines, two-carbon aldehydes and symmetrical small ethers all keep older names in ordinary use."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -8011,7 +8071,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Acetophenone.\nGrid card 2: Cyclohexanone.\nGrid card 3: Isobutylene.\nGrid card 4: Toluene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8067,7 +8127,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Chlorobenzene.\nGrid card 2: Bromobenzene.\nGrid card 3: t-Butyl alcohol.\nGrid card 4: 1-Bromopropane.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8119,12 +8179,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Visualizing structures in a grid to determine configurations or IUPAC assignments.",
-      "process": "Grid card 1: Ethyl acetate.\nGrid card 2: Bromobenzene.\nGrid card 3: Toluene.\nGrid card 4: Benzoic acid.",
-      "result": "Grid mapping successfully matched."
+      "context": "Three benzene derivatives and one ester. Among aromatics, whether a name is systematic or retained depends on the substituent, and the three here fall on different sides of that line.",
+      "approach": "Step 1: The ring bearing bromine is bromobenzene - named systematically as a substituted benzene, since halogens take ordinary substituent prefixes.\nStep 2: The ring bearing a methyl group is toluene, a retained name; methylbenzene is correct but rarely used.\nStep 3: The ring bearing COOH is benzoic acid, also retained. The remaining structure is ethyl acetate, the ester of acetic acid with ethanol.",
+      "note": "Toluene matters beyond its name: the methyl group attached to a ring is a benzylic position, and its C-H bonds are unusually weak because the resulting radical is delocalized into the ring. That reactivity is developed in Chapter 16.",
+      "options": {
+        "A": "Correct. Bromobenzene named systematically, toluene and benzoic acid by retained names, and ethyl acetate as the ester.",
+        "B": "Halogens on a ring take systematic substituent prefixes, but a methyl group and a carboxyl group on benzene both produce compounds with retained names."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -8179,7 +8243,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Benzaldehyde.\nGrid card 2: Acetone.\nGrid card 3: Acetic acid.\nGrid card 4: Propanoic acid.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8235,7 +8299,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Propionaldehyde.\nGrid card 2: Phenol.\nGrid card 3: Acetic acid.\nGrid card 4: Dichloromethane.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8291,7 +8355,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Tetrahydrofuran.\nGrid card 2: Dimethyl ether.\nGrid card 3: Cyclopentene.\nGrid card 4: Butanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8343,12 +8407,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Visualizing structures in a grid to determine configurations or IUPAC assignments.",
-      "process": "Grid card 1: Benzene.\nGrid card 2: Benzaldehyde.\nGrid card 3: Anisole.\nGrid card 4: Benzoyl chloride.",
-      "result": "Grid mapping successfully matched."
+      "context": "All four are benzene or a monosubstituted benzene, so the ring is constant and only the substituent varies. Three of the four names are retained rather than systematic, which is characteristic of aromatic chemistry.",
+      "approach": "Step 1: The unsubstituted ring is benzene itself.\nStep 2: A ring bearing CHO is benzaldehyde and a ring bearing OCH3 is anisole - both retained names rather than the systematic benzenecarbaldehyde and methoxybenzene.\nStep 3: The ring bearing a carbonyl chloride is benzoyl chloride, named from the benzoyl acyl group.",
+      "note": "Aromatic compounds carry a high proportion of retained names because they were characterised and named long before systematic nomenclature existed. Anisole in particular gives no clue to its structure from the name alone, which is why the drawing matters more here than in the aliphatic sets.",
+      "options": {
+        "A": "Correct. Benzene, plus benzaldehyde, anisole and benzoyl chloride - three retained aromatic names distinguished by their single substituent.",
+        "B": "The ring is the same in all four, so identify the substituent and recall its retained name. Systematic alternatives exist for benzaldehyde and anisole but are rarely used."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -8403,7 +8471,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Benzaldehyde.\nGrid card 2: Benzyl alcohol.\nGrid card 3: Butyraldehyde.\nGrid card 4: Toluene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8459,7 +8527,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: 3-Pentanone.\nGrid card 2: Cyclohexane.\nGrid card 3: Acetone.\nGrid card 4: 1-Butanol.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8515,7 +8583,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: 2-Pentanone.\nGrid card 2: Chloroform.\nGrid card 3: Bromobenzene.\nGrid card 4: Cyclopentanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8571,7 +8639,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Acetonitrile.\nGrid card 2: Cyclohexane.\nGrid card 3: 1-Propanol.\nGrid card 4: 1-Bromopropane.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8627,7 +8695,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Butanone.\nGrid card 2: 1-Butanol.\nGrid card 3: Tetrahydrofuran.\nGrid card 4: Propionaldehyde.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8683,7 +8751,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Cyclohexane.\nGrid card 2: Ethanol.\nGrid card 3: Acetone.\nGrid card 4: Formic acid.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8739,7 +8807,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Benzoic acid.\nGrid card 2: Acetonitrile.\nGrid card 3: Diethyl ether.\nGrid card 4: 2-Bromopropane.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8795,7 +8863,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Ethylbenzene.\nGrid card 2: t-Butyl alcohol.\nGrid card 3: 1-Butanol.\nGrid card 4: Dichloromethane.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8851,7 +8919,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Diethyl ether.\nGrid card 2: Dimethyl sulfoxide.\nGrid card 3: Tetrahydrofuran.\nGrid card 4: Cyclopentene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8907,7 +8975,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Acetophenone.\nGrid card 2: Cyclohexane.\nGrid card 3: 3-Pentanone.\nGrid card 4: t-Butyl alcohol.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -8963,7 +9031,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Acetophenone.\nGrid card 2: Cyclohexene.\nGrid card 3: Dichloromethane.\nGrid card 4: Anisole.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9019,7 +9087,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Propionaldehyde.\nGrid card 2: Propyne.\nGrid card 3: Cyclopentene.\nGrid card 4: Ethanol.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9075,7 +9143,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Benzoyl chloride.\nGrid card 2: Chloroform.\nGrid card 3: Acetonitrile.\nGrid card 4: Toluene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9131,7 +9199,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: 2-Pentanone.\nGrid card 2: 1-Butanol.\nGrid card 3: Propene.\nGrid card 4: Diethyl ether.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9187,7 +9255,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Methyl acetate.\nGrid card 2: Phenol.\nGrid card 3: 1-Butanol.\nGrid card 4: 2-Pentanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9243,7 +9311,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Bromobenzene.\nGrid card 2: Butyraldehyde.\nGrid card 3: Ethyl acetate.\nGrid card 4: Ethylbenzene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9299,7 +9367,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Cyclohexanone.\nGrid card 2: 1-Bromopropane.\nGrid card 3: 1-Propanol.\nGrid card 4: Formic acid.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9355,7 +9423,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Propan-2-ol.\nGrid card 2: 1-Bromopropane.\nGrid card 3: 1-Propanol.\nGrid card 4: Ethyl benzoate.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9411,7 +9479,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Ethyl acetate.\nGrid card 2: Cyclohexene.\nGrid card 3: Acetone.\nGrid card 4: Cyclopentanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9467,7 +9535,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Toluene.\nGrid card 2: Acetone.\nGrid card 3: Tetrahydrofuran.\nGrid card 4: Cyclopentanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9523,7 +9591,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Formic acid.\nGrid card 2: t-Butyl alcohol.\nGrid card 3: Acetaldehyde.\nGrid card 4: Diethyl ether.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9579,7 +9647,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Formic acid.\nGrid card 2: Diethyl ether.\nGrid card 3: Methanol.\nGrid card 4: Butanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9635,7 +9703,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Ethanol.\nGrid card 2: 1-Butanol.\nGrid card 3: Toluene.\nGrid card 4: 1-Bromopropane.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9691,7 +9759,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Propionaldehyde.\nGrid card 2: Bromobenzene.\nGrid card 3: Benzaldehyde.\nGrid card 4: Butyraldehyde.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9747,7 +9815,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Ethyl acetate.\nGrid card 2: Diethyl ether.\nGrid card 3: Dimethyl sulfoxide.\nGrid card 4: Toluene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9803,7 +9871,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Aniline.\nGrid card 2: Methyl acetate.\nGrid card 3: Formic acid.\nGrid card 4: Ethyl benzoate.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9859,7 +9927,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: t-Butyl alcohol.\nGrid card 2: Butanone.\nGrid card 3: 3-Pentanone.\nGrid card 4: Chlorobenzene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9915,7 +9983,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Cyclopentanone.\nGrid card 2: 2-Bromopropane.\nGrid card 3: Ethyl acetate.\nGrid card 4: 2-Pentanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -9971,7 +10039,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Benzoyl chloride.\nGrid card 2: Propyne.\nGrid card 3: Cyclopentene.\nGrid card 4: Methanol.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10027,7 +10095,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: 1-Butanol.\nGrid card 2: Dimethyl ether.\nGrid card 3: Methyl acetate.\nGrid card 4: 1-Bromopropane.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10083,7 +10151,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Propanoic acid.\nGrid card 2: Cyclohexanone.\nGrid card 3: Chloroform.\nGrid card 4: Acetic acid.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10139,7 +10207,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: 2-Pentanone.\nGrid card 2: Propene.\nGrid card 3: Dichloromethane.\nGrid card 4: Bromobenzene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10195,7 +10263,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Acetone.\nGrid card 2: Cyclohexene.\nGrid card 3: Acetic acid.\nGrid card 4: Butanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10251,7 +10319,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: 3-Pentanone.\nGrid card 2: Acetic acid.\nGrid card 3: Dimethyl sulfoxide.\nGrid card 4: Acetone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10307,7 +10375,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Diethyl ether.\nGrid card 2: Ethanol.\nGrid card 3: Chlorobenzene.\nGrid card 4: Benzoyl chloride.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10363,7 +10431,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: 2-Bromopropane.\nGrid card 2: Propene.\nGrid card 3: Anisole.\nGrid card 4: Ethylbenzene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10419,7 +10487,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: 3-Pentanone.\nGrid card 2: Cyclohexene.\nGrid card 3: Dichloromethane.\nGrid card 4: Benzoyl chloride.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10475,7 +10543,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Acetonitrile.\nGrid card 2: Ethylbenzene.\nGrid card 3: Toluene.\nGrid card 4: Tetrahydrofuran.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10531,7 +10599,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Cyclohexene.\nGrid card 2: Tetrahydrofuran.\nGrid card 3: 2-Bromopropane.\nGrid card 4: Butanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10587,7 +10655,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Benzaldehyde.\nGrid card 2: Cyclopentene.\nGrid card 3: Acetaldehyde.\nGrid card 4: Tetrahydrofuran.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10643,7 +10711,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Ethylbenzene.\nGrid card 2: Aniline.\nGrid card 3: Formic acid.\nGrid card 4: Diethyl ether.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10699,7 +10767,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Phenol.\nGrid card 2: Propyne.\nGrid card 3: Ethanol.\nGrid card 4: Acetonitrile.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10755,7 +10823,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Cyclopentene.\nGrid card 2: Acetonitrile.\nGrid card 3: Isobutylene.\nGrid card 4: Butyraldehyde.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10811,7 +10879,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Nitrobenzene.\nGrid card 2: Cyclopentanone.\nGrid card 3: 2-Bromopropane.\nGrid card 4: Cyclopentene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10867,7 +10935,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Anisole.\nGrid card 2: Butyraldehyde.\nGrid card 3: 2-Pentanone.\nGrid card 4: Cyclohexene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10923,7 +10991,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Dimethyl sulfoxide.\nGrid card 2: Phenol.\nGrid card 3: Diethyl ether.\nGrid card 4: Benzaldehyde.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -10975,12 +11043,16 @@ var CH03_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Visualizing structures in a grid to determine configurations or IUPAC assignments.",
-      "process": "Grid card 1: Cyclohexanone.\nGrid card 2: Acetone.\nGrid card 3: Tetrahydrofuran.\nGrid card 4: Methanol.",
-      "result": "Grid mapping successfully matched."
+      "context": "Two ketones, one cyclic and one open-chain, sit alongside a cyclic ether and the simplest alcohol. Whether a functional group is inside a ring changes the name but not the group's identity.",
+      "approach": "Step 1: The six-membered ring with a carbonyl in it is cyclohexanone. No locant is needed, since every ring position is equivalent until a second substituent appears.\nStep 2: The open-chain three-carbon ketone is acetone, a retained name; systematically it would be propan-2-one.\nStep 3: The five-membered ring containing an oxygen is tetrahydrofuran, a retained name for what IUPAC would call oxolane. The single carbon bearing OH is methanol.",
+      "note": "Tetrahydrofuran shows how a retained name can encode history rather than structure - it is named as furan with four added hydrogens, referring to the aromatic compound it is derived from, even though the saturated ring shares none of furan's aromaticity.",
+      "options": {
+        "A": "Correct. Cyclohexanone and acetone as the two ketones, with tetrahydrofuran as the cyclic ether and methanol as the simplest alcohol.",
+        "B": "Identify the functional group first, then ask whether it sits in a ring. A carbonyl in a ring takes cyclo- with -one; an oxygen in a ring here takes a retained name."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -11035,7 +11107,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Propanoic acid.\nGrid card 2: Ethanol.\nGrid card 3: 1-Butanol.\nGrid card 4: Cyclopentene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11091,7 +11163,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Butyraldehyde.\nGrid card 2: Ethylbenzene.\nGrid card 3: Cyclohexane.\nGrid card 4: 2-Pentanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11147,7 +11219,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Anisole.\nGrid card 2: Acetonitrile.\nGrid card 3: Cyclopentanone.\nGrid card 4: 1-Propanol.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11203,7 +11275,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Propyne.\nGrid card 2: Formic acid.\nGrid card 3: Propionaldehyde.\nGrid card 4: Butanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11259,7 +11331,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: 2-Bromopropane.\nGrid card 2: Phenol.\nGrid card 3: Cyclopentanone.\nGrid card 4: Benzoyl chloride.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11315,7 +11387,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: 1-Bromopropane.\nGrid card 2: Dimethyl sulfoxide.\nGrid card 3: 2-Pentanone.\nGrid card 4: Propan-2-ol.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11371,7 +11443,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Acetonitrile.\nGrid card 2: Chloroform.\nGrid card 3: Methyl acetate.\nGrid card 4: Dimethyl sulfoxide.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11427,7 +11499,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: 1-Butanol.\nGrid card 2: 1-Bromopropane.\nGrid card 3: Propyne.\nGrid card 4: 3-Pentanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11483,7 +11555,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Acetic acid.\nGrid card 2: Formic acid.\nGrid card 3: Methyl acetate.\nGrid card 4: Propan-2-ol.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11539,7 +11611,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Cyclohexanone.\nGrid card 2: Dimethyl sulfoxide.\nGrid card 3: Methanol.\nGrid card 4: t-Butyl alcohol.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11595,7 +11667,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Dichloromethane.\nGrid card 2: Bromobenzene.\nGrid card 3: Acetaldehyde.\nGrid card 4: 1-Butanol.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11651,7 +11723,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Tetrahydrofuran.\nGrid card 2: Butanone.\nGrid card 3: Dimethyl ether.\nGrid card 4: 1-Butanol.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11707,7 +11779,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Chlorobenzene.\nGrid card 2: Aniline.\nGrid card 3: Butyraldehyde.\nGrid card 4: Acetone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11763,7 +11835,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Benzoyl chloride.\nGrid card 2: Butyraldehyde.\nGrid card 3: 2-Bromopropane.\nGrid card 4: Propionaldehyde.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11819,7 +11891,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Acetophenone.\nGrid card 2: Acetic acid.\nGrid card 3: Nitrobenzene.\nGrid card 4: Cyclopentanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11875,7 +11947,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Cyclohexene.\nGrid card 2: Bromobenzene.\nGrid card 3: Cyclohexane.\nGrid card 4: Chlorobenzene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11931,7 +12003,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Cyclopentene.\nGrid card 2: Acetaldehyde.\nGrid card 3: 3-Pentanone.\nGrid card 4: Chloroform.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -11987,7 +12059,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Butanone.\nGrid card 2: Butyraldehyde.\nGrid card 3: Acetophenone.\nGrid card 4: Propene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12043,7 +12115,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Ethyl acetate.\nGrid card 2: Toluene.\nGrid card 3: Aniline.\nGrid card 4: Benzene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12099,7 +12171,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Dimethyl ether.\nGrid card 2: 1-Propanol.\nGrid card 3: Aniline.\nGrid card 4: Cyclopentene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12155,7 +12227,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Nitrobenzene.\nGrid card 2: Butyraldehyde.\nGrid card 3: Ethyl acetate.\nGrid card 4: Toluene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12211,7 +12283,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Benzyl alcohol.\nGrid card 2: Propionaldehyde.\nGrid card 3: Acetophenone.\nGrid card 4: Acetic acid.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12267,7 +12339,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Diethyl ether.\nGrid card 2: Ethyl benzoate.\nGrid card 3: Nitrobenzene.\nGrid card 4: Cyclopentene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12323,7 +12395,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Chlorobenzene.\nGrid card 2: Propyne.\nGrid card 3: Diethyl ether.\nGrid card 4: Isobutylene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12379,7 +12451,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Ethyl acetate.\nGrid card 2: 3-Pentanone.\nGrid card 3: Cyclohexane.\nGrid card 4: Methanol.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12435,7 +12507,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Dimethyl ether.\nGrid card 2: Cyclopentanone.\nGrid card 3: Phenol.\nGrid card 4: Acetic acid.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12491,7 +12563,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Propene.\nGrid card 2: Ethanol.\nGrid card 3: 1-Butanol.\nGrid card 4: Butanone.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12547,7 +12619,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Diethyl ether.\nGrid card 2: Ethyl acetate.\nGrid card 3: Chlorobenzene.\nGrid card 4: Benzene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12603,7 +12675,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Ethanol.\nGrid card 2: Benzoyl chloride.\nGrid card 3: Cyclohexanone.\nGrid card 4: 1-Butanol.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12659,7 +12731,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Cyclopentene.\nGrid card 2: Cyclohexanone.\nGrid card 3: Bromobenzene.\nGrid card 4: Propene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12715,7 +12787,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Propionaldehyde.\nGrid card 2: Dimethyl sulfoxide.\nGrid card 3: Aniline.\nGrid card 4: Propene.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12771,7 +12843,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: t-Butyl alcohol.\nGrid card 2: Ethylbenzene.\nGrid card 3: Benzoic acid.\nGrid card 4: Methyl acetate.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   },
@@ -12827,7 +12899,7 @@ var CH03_QUESTIONS = [
       "process": "Grid card 1: Butyraldehyde.\nGrid card 2: Cyclohexene.\nGrid card 3: Benzoyl chloride.\nGrid card 4: Dimethyl ether.",
       "result": "Grid mapping successfully matched."
     },
-    "key_status": "unverified",
+    "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
   }
