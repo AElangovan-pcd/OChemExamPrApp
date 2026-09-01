@@ -2344,5 +2344,65 @@ var CH10_QUESTIONS = [
     "key_status": "verified",
     "feedback_status": "tailored",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch10_q53_pbr3_1_propanol",
+    "topic": "Preparing Alkyl Halides from Alcohols",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product when propan-1-ol is treated with phosphorus tribromide in ether?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether, 0 °C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "1-bromopropane",
+        "smiles": "CCCBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "2-bromopropane",
+        "smiles": "CC(C)Br",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "propene",
+        "smiles": "C=CC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "propyl dibromophosphite",
+        "smiles": "CCCOP(Br)Br",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Hydroxide is too poor a leaving group to be displaced, so converting an alcohol into a bromide means first turning the oxygen into something that leaves. PBr3 does this in one pot: the alcohol attacks phosphorus, the oxygen becomes part of a dibromophosphite, and bromide displaces it.",
+      "approach": "Step 1: The alcohol oxygen attacks phosphorus and loses a proton, giving the alkyl dibromophosphite CH3CH2CH2-O-PBr2 with bromide released.\nStep 2: The O-PBr2 group is an excellent leaving group. Bromide attacks the primary carbon from the back and displaces it in an SN2 step.\nStep 3: The carbon skeleton never carries a positive charge, so bromine lands exactly where the hydroxyl was: 1-bromopropane.",
+      "note": "This is why PBr3 (and SOCl2 for chlorides) is preferred over HBr for primary and secondary alcohols. HBr protonates the alcohol and, for anything but a primary substrate, invites a carbocation and the rearrangement that comes with it; the phosphite route stays SN2 and, on a chiral secondary alcohol, inverts cleanly.",
+      "options": {
+        "A": "Correct. The alcohol becomes a dibromophosphite ester, and bromide displaces that group by SN2 at the primary carbon, leaving bromine on the end carbon.",
+        "B": "2-Bromopropane would need the positive charge to visit the secondary carbon, which only a carbocation could arrange. PBr3 never generates one; the displacement is a backside attack on a neutral phosphite ester.",
+        "C": "Propene is the dehydration product an acid catalyst and heat would give. PBr3 in cold ether supplies a nucleophilic bromide and no strong acid, so substitution wins outright.",
+        "D": "Propyl dibromophosphite is the intermediate, not the product. It is exactly the species bromide then attacks; isolating it would require withholding the bromide the first step releases."
+      }
+    },
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "reactant_alts": [
+      "A three-carbon chain with a hydroxyl group on the end carbon."
+    ],
+    "_why": "Survivor of the 15-copy propanol/PBr3 family. Authored here, then refiled to Ch 10, the chapter that teaches alkyl halides from alcohols; Ch 10 had no PBr3 or SOCl2 item."
   }
 ];

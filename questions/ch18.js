@@ -1788,5 +1788,89 @@ var CH18_QUESTIONS = [
     "key_status": "unverified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch18_q11_ether_cleavage_regiochemistry",
+    "topic": "SN2 Mechanism: Leaving Groups",
+    "difficulty_level": "Hard",
+    "question_text": "Predict the major organic products when isopropyl methyl ether is treated with one equivalent of concentrated hydroiodic acid (HI) at room temperature.",
+    "question_smiles": "CC(C)OC",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "iodomethane and propan-2-ol",
+        "smiles": "CI.CC(C)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "2-iodopropane and methanol",
+        "smiles": "CC(C)I.CO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "iodomethane and 2-iodopropane",
+        "smiles": "CI.CC(C)I",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "methanol and propan-2-ol",
+        "smiles": "CO.CC(C)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "This question tests the regiochemical outcome of ether cleavage via the SN2 pathway under acidic conditions.",
+      "process": "Step 1: In the presence of HI, the ether oxygen is protonated to form a highly reactive dialkyloxonium ion: (CH3)2CH-OH+-CH3.\nStep 2: The iodide ion (I-) is a strong nucleophile. Because the protonated ether has two alkyl groups (a secondary isopropyl group and a primary methyl group), substitution will proceed via the SN2 mechanism.\nStep 3: The SN2 pathway is highly sensitive to steric hindrance. The iodide ion will preferentially attack the less hindered methyl carbon rather than the secondary isopropyl carbon.\nStep 4: Backside attack on the methyl carbon cleaves the C-O bond, yielding iodomethane (CH3I) and leaving behind propan-2-ol ((CH3)2CHOH).",
+      "result": "The reaction produces iodomethane and propan-2-ol due to nucleophilic attack on the less sterically hindered methyl group."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original",
+    "_why": "Each option names two products but drew one; B and D rendered the same picture. Dot-disconnected before refiling to Ch 18, where acidic ether cleavage is taught."
+  },
+  {
+    "question_id": "ch18_q19_intramolecular_williamson",
+    "topic": "SN2 Mechanism: Specific Reactions",
+    "difficulty_level": "Medium",
+    "question_text": "When 4-bromobutan-1-ol is treated with sodium hydride (NaH), it rapidly cyclizes to form tetrahydrofuran. What are the kinetics of this reaction, and how does the rate compare to the intermolecular reaction between ethanol and 1-bromobutane?",
+    "question_smiles": "OCCCCBr",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "The reaction exhibits first-order kinetics; it is much faster than the intermolecular reaction because the intramolecular process is entropically favored.",
+        "smiles": "",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "The reaction exhibits second-order kinetics; it is slower than the intermolecular reaction due to ring strain in forming a 5-membered ring.",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "The reaction exhibits zero-order kinetics; the rate is governed solely by the rate of hydrogen gas release.",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "The reaction exhibits second-order kinetics; the rate is identical to the intermolecular reaction because the same functional groups are involved.",
+        "smiles": "",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "This question tests the kinetics and thermodynamic principles of intramolecular nucleophilic substitutions.",
+      "process": "Step 1: NaH acts as a strong base, deprotonating the alcohol group to form a nucleophilic alkoxide intermediate (-O-).\nStep 2: The alkoxide and the alkyl bromide leaving group are within the same molecule. An intramolecular SN2 reaction takes place to form a stable 5-membered ring (tetrahydrofuran).\nStep 3: Because the reactant contains both the nucleophile and electrophile, the rate depends only on the concentration of this single species, resulting in first-order kinetics: Rate = k[substrate].\nStep 4: The reaction is much faster than its intermolecular counterpart because the nucleophile is held in close proximity to the electrophile, minimizing the loss of translational entropy in the transition state.",
+      "result": "The reaction is first-order and is accelerated by favorable entropy (proximity effect)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original",
+    "_why": "The stem named 5-bromopentan-1-ol, which closes a six-membered ring (oxane), while every option and the feedback discuss tetrahydrofuran. Substrate corrected to the four-carbon chain the rest of the item assumes. Refiled to Ch 18 (Williamson synthesis) unaudited."
   }
 ];
