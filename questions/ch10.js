@@ -34,13 +34,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the fundamentals of IUPAC nomenclature for branched alkyl halides.",
-      "process": "Step 1: Identify the longest continuous carbon chain, which contains 5 carbons (pentane).\nStep 2: Number the chain to give substituents the lowest possible locants. Numbering from either side gives 2,4-dimethyl and 3-bromo.\nStep 3: Assemble the name alphabetically (bromo before methyl): 3-bromo-2,4-dimethylpentane.",
-      "result": "The correct IUPAC name is 3-bromo-2,4-dimethylpentane."
+      "context": "IUPAC naming begins with the longest continuous carbon chain, not with the way the structure happens to be drawn on the page. A halogen is cited as a prefix and takes its locant from that chain.",
+      "approach": "Step 1: Trace the longest chain. Running through one isopropyl CH, across the C-Br carbon, and out through the other isopropyl CH gives five carbons - pentane, not butane or propane.\nStep 2: Number from whichever end reaches a substituent first. Both ends are equivalent here, so bromine lands on C3 either way.\nStep 3: Place the remaining substituents. A methyl sits on C2 and another on C4.\nStep 4: Assemble the name with identical prefixes collected and cited alphabetically: 3-bromo-2,4-dimethylpentane.",
+      "note": "Two methyls on different carbons are collected as 'dimethyl' with both locants; they are never cited as two separate methyl prefixes.",
+      "options": {
+        "A": "Correct. Pentane is the longest chain, bromine is at C3, and the two methyls at C2 and C4 are collected as 2,4-dimethyl.",
+        "B": "This picks a four-carbon parent and then has to invent a methyl at C1 to account for the fifth carbon. A substituent at C1 of the parent chain is a signal the chain was drawn too short - extend it instead.",
+        "C": "This names the compound as a substituted propane with two isopropyl groups. Propane is not the longest chain available, and a name built on a chain shorter than the longest is wrong however consistently it is constructed.",
+        "D": "The right molecule under the wrong name. Identical substituents on a chain must be collected into one prefix with a multiplying prefix, so 2-methyl-4-methyl has to be written 2,4-dimethyl."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A seven-carbon skeleton: a central carbon carrying a bromine, flanked on each side by a CH group that itself carries two methyl groups."
   },
   {
     "question_id": "ch10_q2_iupac_stereocenter",
@@ -52,36 +59,40 @@ var CH10_QUESTIONS = [
       {
         "option_id": "A",
         "text": "(R)-2-chloro-3,3-dimethylbutane",
-        "smiles": "",
-        "is_correct": true
+        "is_correct": false
       },
       {
         "option_id": "B",
         "text": "(S)-2-chloro-3,3-dimethylbutane",
-        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "(R)-3-chloro-2,2-dimethylbutane",
-        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "(S)-3-chloro-2,2-dimethylbutane",
-        "smiles": "",
-        "is_correct": false
+        "is_correct": true
       }
     ],
     "feedback": {
-      "context": "This question tests IUPAC nomenclature including stereocenter assignment using the Cahn-Ingold-Prelog (CIP) priority rules.",
-      "process": "Step 1: Find the longest carbon chain, which is 4 carbons (butane), numbered starting from the right to give the chlorine at C2: 2-chloro-3,3-dimethylbutane.\nStep 2: Determine stereocenter priority at C2: -Cl is 1st, -C(CH3)3 is 2nd, -CH3 is 3rd, and -H is 4th.\nStep 3: Track the direction of 1 -> 2 -> 3. In the (R) configuration, the path is clockwise with H in the back.",
-      "result": "The correct name is (R)-2-chloro-3,3-dimethylbutane."
+      "context": "This item needs two independent decisions: which numbering the locant rule requires, and which descriptor the drawn configuration carries. Getting one right and the other wrong still gives a wrong name.",
+      "approach": "Step 1: Find the chain. Butane, with two methyls on one carbon and a chlorine on the next.\nStep 2: Choose the numbering. Counting from the chlorine end gives the locant set {2,3,3}; counting from the other end gives {2,2,3}. Compare term by term - the first two agree, then 2 beats 3, so {2,2,3} wins and the name is built as 3-chloro-2,2-dimethylbutane.\nStep 3: Assign the descriptor at the C-Cl carbon. Priorities run Cl > C(CH3)3 > CH3 > H, because the tert-butyl carbon duplicates to (C,C,C) while the methyl duplicates to (H,H,H). With the drawn configuration the sequence traces counterclockwise with hydrogen pointing away, giving S.",
+      "note": "The lowest-locant rule compares the whole set of prefix locants at the first point of difference; it does not simply give the halogen the lowest number it can reach.",
+      "options": {
+        "A": "Wrong on both counts. The locant set {2,3,3} loses to {2,2,3}, and the drawn configuration is S rather than R.",
+        "B": "The descriptor is right but the numbering is not: 2-chloro-3,3-dimethyl carries the locant set {2,3,3}, which the lowest-locant rule rejects in favour of {2,2,3}.",
+        "C": "The numbering is right and the descriptor is not. With hydrogen pointing away the priority sequence Cl to tert-butyl to methyl runs counterclockwise, which is S.",
+        "D": "Correct. The locant set {2,2,3} is lower than {2,3,3}, and the drawn stereocentre is S once tert-butyl is ranked above methyl."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "Structure is (S) per rdCIPLabeler, and {2,2,3} beats {2,3,3} so the locants are 3-chloro-2,2-dimethyl. Key moves A -> D. The 2x2 descriptor-by-locant option set is sound; only the key cell was wrong.",
+    "structure_alt": "A six-carbon skeleton: a carbon bearing a chlorine and a methyl group, bonded to a carbon that carries three methyl groups. The bond to chlorine is drawn with wedge-and-dash stereochemistry."
   },
   {
     "question_id": "ch10_q3_iupac_alkene",
@@ -116,13 +127,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the IUPAC naming of alkenes containing a halogen substituent, focusing on numbering priority and E/Z stereocentered alkene notation.",
-      "process": "Step 1: The alkene double bond has priority over the alkyl and halide substituents for numbering. The longest chain containing the double bond has 5 carbons, starting at the carbon with bromine (C1) to give the double bond the lowest locant (1-ene).\nStep 2: Substituents are 1-bromo, 2-methyl, and 4-methyl. This yields 1-bromo-2,4-dimethylpent-1-ene.\nStep 3: For E/Z assignment, at C1, -Br > -H. At C2, -CH2CH(CH3)2 > -CH3. The high priority groups (-Br and -CH2CH(CH3)2) are on opposite sides of the double bond, making it the (E) isomer.",
-      "result": "The correct IUPAC name is (E)-1-bromo-2,4-dimethylpent-1-ene."
+      "context": "In an alkene the double bond, not the halogen, controls the numbering, and the geometric descriptor is decided by CIP priority on each alkene carbon separately rather than by which groups look bigger.",
+      "approach": "Step 1: Number so the double bond gets the lowest possible locant. Starting at the bromine-bearing alkene carbon makes it C1 and the double bond pent-1-ene; starting at the other end would push the double bond to C4.\nStep 2: Place the substituents on that numbering - bromine at C1, methyl at C2, methyl at C4.\nStep 3: Assign geometry. On C1 the contest is bromine against hydrogen, so bromine wins. On C2 it is the isopropyl-bearing CH2 against a methyl, so the CH2 branch wins. Those two higher-priority groups sit on opposite sides, which is E.",
+      "note": "Alkene numbering outranks the halogen prefix, which is why a name that gives bromine the higher locant can still be the correct one.",
+      "options": {
+        "A": "Correct. Numbering toward the bromine end gives pent-1-ene, and the two CIP-preferred groups lie on opposite sides of the double bond, so the geometry is E.",
+        "B": "The skeleton and locants are right but the geometry is inverted. Bromine on C1 and the chain branch on C2 are on opposite sides, not the same side.",
+        "C": "This numbers from the wrong end, putting the double bond at C4 when C1 is reachable. The double bond takes priority over the halogen when the numbering direction is chosen.",
+        "D": "Wrong on both counts: the double bond is numbered from the wrong end, and the geometry is reported as Z when the priority groups are on opposite sides."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-carbon chain with a branching methyl near one end. At the far end a carbon-carbon double bond carries a bromine on its terminal carbon and a methyl on the internal carbon; the double bond is drawn with defined geometry."
   },
   {
     "question_id": "ch10_q4_classification_allylic",
@@ -157,12 +175,18 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the classification of alkyl halides based on the hybridization of the carbon bearing the halogen and its neighboring atoms.",
-      "process": "Step 1: An allylic halide has the halogen atom bonded to an sp3-hybridized carbon adjacent to a C=C double bond.\nStep 2: A secondary allylic halide has two alkyl/alkenyl groups attached to the halogen-bearing carbon.\nStep 3: 3-bromobut-1-ene has the bromine on C3, which is bonded to one hydrogen, a methyl group, and a vinyl group, making it secondary and allylic.",
-      "result": "3-bromobut-1-ene is a secondary allylic halide."
+      "context": "Two independent labels are being asked for at once. Allylic describes where the halogen sits relative to the double bond; primary, secondary or tertiary describes how many carbons are attached to the carbon holding the halogen.",
+      "approach": "Step 1: Locate the alkene, then look at the saturated carbon immediately next to it - that carbon is the allylic position.\nStep 2: Confirm the halogen actually occupies it. A halogen one carbon further out is homoallylic, and a halogen on the double bond itself is vinylic.\nStep 3: Count the carbon substituents on that carbon. In 3-bromobut-1-ene the C-Br carbon carries a methyl and the vinyl group, so it is secondary as well as allylic.",
+      "note": "Allylic halides are reactive out of proportion to their structure because the radical or cation formed on ionisation is resonance-delocalised over both ends of the allyl unit.",
+      "options": {
+        "A": "Correct. The bromine sits on the carbon next to the double bond, and that carbon bears two other carbons, making it a secondary allylic halide.",
+        "B": "The bromine here is two carbons from the alkene, not one. That is a homoallylic primary halide, and it gains none of the resonance stabilisation an allylic position confers.",
+        "C": "This is allylic, but the carbon bearing bromine also carries two methyls plus the vinyl group, so it is tertiary rather than secondary.",
+        "D": "The bromine is attached directly to a carbon of the double bond, which makes it vinylic. Vinylic halides are notably unreactive, the opposite of the allylic case."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -170,7 +194,7 @@ var CH10_QUESTIONS = [
     "topic": "Structure and naming of alkyl halides",
     "difficulty_level": "Medium",
     "question_text": "Arrange the following alkyl halides in order of increasing boiling point:\nI. 2-chloro-2-methylpropane\nII. 2-chlorobutane\nIII. 1-chlorobutane\nIV. 1-bromobutane",
-    "question_smiles": "CCCCCl",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -198,20 +222,27 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relationship between molecular structure, intermolecular forces, and physical properties (boiling point) of alkyl halides.",
-      "process": "Step 1: Among isomers (I, II, and III), branching reduces surface area, making the molecule more spherical. This decreases London dispersion forces and lowers the boiling point: 2-chloro-2-methylpropane (I) < 2-chlorobutane (II) < 1-chlorobutane (III).\nStep 2: Comparing 1-chlorobutane (III) and 1-bromobutane (IV), the heavier and more polarizable bromine atom creates stronger dispersion forces than chlorine, leading to a higher boiling point for 1-bromobutane.\nStep 3: Combining these trends gives the order: I < II < III < IV.",
-      "result": "The correct order of increasing boiling point is I < II < III < IV."
+      "context": "Boiling point in this series is set by two things working together: how many electrons the molecule has, which controls the strength of its London dispersion forces, and how much surface the molecules can present to each other.",
+      "approach": "Step 1: Separate the three chlorides from the bromide. Bromine is far more polarisable than chlorine, so 1-bromobutane boils highest of the four.\nStep 2: Order the three C4 chlorides by shape. All three have the same formula, so only branching separates them.\nStep 3: Branching makes a molecule more spherical and cuts the contact area, which lowers the boiling point. 2-chloro-2-methylpropane is the most compact and boils lowest at about 51 degrees, 2-chlorobutane follows near 68, and the unbranched 1-chlorobutane reaches about 78.\nStep 4: Combining gives I < II < III < IV.",
+      "note": "Branching lowers boiling point but raises melting point, because a compact symmetric molecule packs into a crystal lattice more readily even as it loses surface contact in the liquid.",
+      "options": {
+        "A": "Correct. The two chlorobutanes are separated by branching, and 1-bromobutane tops the list because the larger, more polarisable bromine gives the strongest dispersion forces.",
+        "B": "This is the correct sequence read backwards. It would require branching to raise boiling point and the heavier halogen to lower it, and both of those run the wrong way.",
+        "C": "This puts the straight-chain 1-chlorobutane below the branched 2-chlorobutane. More branching means less surface contact and a lower boiling point, so the unbranched isomer must be the higher of the two.",
+        "D": "This ranks 2-chlorobutane below the doubly branched 2-chloro-2-methylpropane. The more heavily branched compound is the more compact one and boils lower, not higher."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "question_smiles dropped: it drew only compound III of the four being compared, which mis-signals that the item is about that one molecule (the Ch 7 decorative-structure cut)."
   },
   {
     "question_id": "ch10_q6_bond_strength_trends",
     "topic": "Structure and naming of alkyl halides",
     "difficulty_level": "Medium",
     "question_text": "Which of the following statements correctly describes the trend in carbon-halogen bond length and bond dissociation energy (BDE) going from fluoromethane ($CH_3F$) to iodomethane ($CH_3I$)?",
-    "question_smiles": "CI",
+    "question_smiles": "CF.CI",
     "options": [
       {
         "option_id": "A",
@@ -235,13 +266,21 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the periodic trends of carbon-halogen bonds as atomic size increases down the halogen group.",
-      "process": "Step 1: As you go down Group 17 from F to I, the atomic radius of the halogen increases significantly.\nStep 2: The larger atomic size leads to a longer distance between the carbon and halogen nuclei, so bond length increases.\nStep 3: Due to the longer bond and poorer overlap between the carbon 2p orbital and the larger halogen valence orbitals (e.g., 5p for iodine), the C-X bond becomes weaker, which decreases the bond dissociation energy (BDE).",
-      "result": "Going from fluoromethane to iodomethane, bond length increases and BDE decreases."
+      "context": "Descending a group of the periodic table, the halogen's valence shell lies further from its nucleus and is more diffuse. Both the length of the bond it forms to carbon and the energy needed to break that bond follow from this.",
+      "approach": "Step 1: Track atomic size. Fluorine to iodine is a steady increase in covalent radius, so the C-X bond lengthens all the way down.\nStep 2: Ask what a longer bond does to overlap. The halogen's valence orbital is larger and more diffuse, so it overlaps the compact carbon 2p orbital more poorly at greater distance.\nStep 3: Weaker overlap means a weaker bond, so the bond dissociation energy falls as the length rises - roughly 460 kJ/mol for C-F down to about 240 for C-I.\nStep 4: Length up, BDE down.",
+      "note": "This inverse relationship is why alkyl iodides are the best substrates and alkyl fluorides the worst in reactions that require the carbon-halogen bond to break.",
+      "options": {
+        "A": "Correct. The C-X bond lengthens from fluorine to iodine while orbital overlap deteriorates, so the dissociation energy falls as the bond grows.",
+        "B": "Both halves are inverted. Iodine is much larger than fluorine, so its bond to carbon is the longer one, and the longer bond is the weaker one.",
+        "C": "The bond length is right but the energy is not. A bond cannot get both longer and stronger across this series - the poorer orbital overlap at longer distance is exactly what weakens it.",
+        "D": "This has the bond shortening toward iodine, which contradicts the increase in atomic radius down the group, even though the falling BDE is correctly stated."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "question_smiles was CH3I alone, one endpoint of a CH3F-to-CH3I comparison. Dot-disconnected so the drawing shows the comparison the stem actually makes.",
+    "structure_alt": "Two separate one-carbon molecules drawn side by side: a carbon bonded to fluorine, and a carbon bonded to iodine."
   },
   {
     "question_id": "ch10_q7_bicyclic_nomenclature",
@@ -276,20 +315,27 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests IUPAC rules for naming bridged bicyclic systems with halogen substituents.",
-      "process": "Step 1: Count the total number of carbons in the bicyclic system. The compound has 7 carbons, hence 'heptane'.\nStep 2: Determine the bridge lengths between the bridgehead carbons: there are two bridges of 2 carbons and one bridge of 1 carbon. This makes it a bicyclo[2.2.1]heptane.\nStep 3: Number starting from a bridgehead carbon, going along the longest bridge first, then the next longest bridge. Minimizing the substituent number gives the chlorine position at C2.",
-      "result": "The correct IUPAC name is 2-chlorobicyclo[2.2.1]heptane."
+      "context": "A bicyclic name is built from the total number of ring atoms and the sizes of the three bridges joining the two bridgehead carbons, cited in descending order inside the brackets.",
+      "approach": "Step 1: Count the ring carbons. Seven, so the parent is a heptane.\nStep 2: Find the two bridgeheads - the atoms shared by both rings - and count the carbons in each of the three bridges between them: two, two, and one.\nStep 3: Cite those in descending order to get bicyclo[2.2.1]heptane.\nStep 4: Number from a bridgehead, around the longest bridge first, then the next longest, and take the direction that gives the chlorine the lower locant. That direction reaches it at C2.",
+      "note": "The one-carbon bridge is always numbered last, which is why the bridging carbon in this skeleton is C7 no matter which bridgehead the numbering starts from.",
+      "options": {
+        "A": "Correct. Seven ring carbons with bridges of two, two and one make bicyclo[2.2.1]heptane, and numbering around the longer bridges first reaches the chlorine at C2.",
+        "B": "The bracket descriptor here sums to eight ring carbons plus the bridgeheads, describing a larger cage than the seven-carbon skeleton drawn.",
+        "C": "The right molecule under the wrong name. Numbering may start at either bridgehead and run in either direction, so the direction that reaches the chlorine at C2 must be chosen over one that reaches it at C5.",
+        "D": "The bracket describes a fused three-and-two bridge arrangement with a zero bridge, which is a four-membered ring fused to a five-membered one - not the bridged cage shown."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A rigid two-ring cage of seven carbons sharing two bridgehead atoms, with a one-carbon bridge across the top. A chlorine is attached to one of the carbons in a two-carbon bridge."
   },
   {
     "question_id": "ch10_q8_dipole_moments",
     "topic": "Structure and naming of alkyl halides",
     "difficulty_level": "Hard",
     "question_text": "Although fluorine is more electronegative than chlorine, chloromethane ($CH_3Cl$, $\\mu = 1.87\\text{ D}$) has a larger dipole moment than fluoromethane ($CH_3F$, $\\mu = 1.85\\text{ D}$). Which of the following statements explains this phenomenon?",
-    "question_smiles": "CF",
+    "question_smiles": "CF.CCl",
     "options": [
       {
         "option_id": "A",
@@ -313,13 +359,21 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the physical principles governing molecular polarity and dipole moments in halomethanes.",
-      "process": "Step 1: Dipole moment ($\\mu$) is mathematically defined as $\\mu = q \\times d$, where $q$ is the magnitude of the separated charge and $d$ is the distance (bond length).\nStep 2: Fluorine is more electronegative than chlorine, meaning $q$ is larger for the C-F bond.\nStep 3: However, the C-Cl bond (1.78 Å) is significantly longer than the C-F bond (1.39 Å). The greater bond distance $d$ in $CH_3Cl$ outweighs the larger charge separation $q$ in $CH_3F$, resulting in a slightly higher dipole moment for $CH_3Cl$.",
-      "result": "The longer C-Cl bond length increases the distance factor of the dipole moment equation, outweighing the electronegativity difference."
+      "context": "A bond dipole is not electronegativity alone. It is the magnitude of the separated charge multiplied by the distance over which that charge is separated, so a bond can be less polarised per unit length and still carry the larger moment.",
+      "approach": "Step 1: Write the definition, dipole moment equals charge times distance. Two factors, not one.\nStep 2: Compare the charge term. Fluorine is the more electronegative atom, so the C-F bond does separate charge more effectively.\nStep 3: Compare the distance term. The C-Cl bond is roughly 1.78 angstroms against about 1.39 for C-F, a difference of nearly thirty percent.\nStep 4: The longer bond length in chloromethane more than compensates for its smaller charge separation, so its dipole moment edges ahead at 1.87 D against 1.85 D.",
+      "note": "The two values differ by barely one percent, so this is a near-tie in which the length term only just wins - not a reversal of the electronegativity trend itself.",
+      "options": {
+        "A": "Correct. The dipole moment is a product of charge and distance, and the substantially longer C-Cl bond outweighs fluorine's advantage in charge separation.",
+        "B": "Fluorine has no pi system to donate into here; the carbon of a saturated methyl group has no empty p orbital to accept density. Back-donation of this kind requires an adjacent unsaturated centre.",
+        "C": "Fluoromethane is a gas that shows no such association, and dimerisation would not be invoked to explain a measured molecular dipole in any case.",
+        "D": "This has the polarity backwards. The C-F bond is the more ionic of the two, not the more covalent, which is precisely why the explanation has to rest on bond length instead."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "question_smiles was CH3F alone; the stem compares CH3F with CH3Cl, so both are now drawn.",
+    "structure_alt": "Two separate one-carbon molecules drawn side by side: a carbon bonded to fluorine, and a carbon bonded to chlorine."
   },
   {
     "question_id": "ch10_q9_density_trends",
@@ -354,12 +408,18 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests practical knowledge of the physical properties (specifically density) of organohalides relative to water.",
-      "process": "Step 1: Compare the density of different classes of organohalides. Monochloroalkanes generally have densities less than 1.00 g/mL (e.g., 1-chlorobutane is ~0.88 g/mL).\nStep 2: Monobromoalkanes, monoiodoalkanes, and polyhalogenated alkanes (such as $CH_2Cl_2$ or $CHCl_3$) contain heavy halogen atoms that make them significantly denser than water.\nStep 3: Thus, 1-chlorobutane is the only option that will float on water.",
-      "result": "1-chlorobutane is less dense than water."
+      "context": "Whether an organohalide sinks or floats in water is decided almost entirely by which halogen it carries and how much hydrocarbon is attached to dilute that halogen's mass.",
+      "approach": "Step 1: Sort by halogen. Bromine and iodine are heavy enough that essentially every simple alkyl bromide and iodide exceeds the density of water.\nStep 2: Among the chlorides, weigh the chlorine against the carbon skeleton. Dichloromethane packs two chlorines onto a single carbon and reaches about 1.33 g/mL.\nStep 3: 1-chlorobutane spreads one chlorine over four carbons, which dilutes it to roughly 0.89 g/mL - below water.",
+      "note": "This is why a dichloromethane extraction forms the lower layer while a diethyl ether extraction forms the upper one, a distinction worth knowing before reaching for a separatory funnel.",
+      "options": {
+        "A": "Correct. One chlorine spread over a four-carbon chain gives about 0.89 g/mL, so this is the only one of the four that floats on water.",
+        "B": "Swapping chlorine for bromine on the same butyl skeleton takes the density to roughly 1.28 g/mL. Bromine is heavy enough that four carbons cannot dilute it below water.",
+        "C": "Two chlorines on a single carbon give about 1.33 g/mL. There is almost no hydrocarbon here to offset the halogen mass.",
+        "D": "Iodine is the heaviest halogen in the set and it sits on a single carbon, giving roughly 2.28 g/mL - the densest of the four by a wide margin."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -395,12 +455,18 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the chemical terminology used to describe the relative positions of halogens in dihalogenated alkanes.",
-      "process": "Step 1: Understand the definitions. 'Geminal' (gem-) refers to substituents on the same carbon atom. 'Vicinal' (vic-) refers to substituents on adjacent carbon atoms.\nStep 2: Look at the locants in the names. 1,1-dichlorobutane has both chlorine atoms on C1, which fits the definition of geminal.\nStep 3: The other options (1,2-, 1,3-, and 1,4-) have chlorines on different carbons; 1,2-dichlorobutane is a vicinal dihalide.",
-      "result": "1,1-dichlorobutane is a geminal dihalide."
+      "context": "Geminal and vicinal are positional terms borrowed from Latin - geminal for twins on one carbon, vicinal for neighbours on adjacent carbons. The locants in the name are what settle which applies.",
+      "approach": "Step 1: Read the two locants in each name and ask whether they are the same number or different.\nStep 2: Identical locants mean both halogens sit on one carbon, which is geminal. In 1,1-dichlorobutane both chlorines are on C1.\nStep 3: Locants differing by one mean adjacent carbons, which is vicinal. Anything further apart carries neither label.",
+      "note": "The distinction earns its keep in synthesis: a geminal dihalide comes from adding two equivalents of HX to an alkyne, whereas a vicinal dihalide comes from adding one equivalent of X2 across an alkene.",
+      "options": {
+        "A": "Correct. The repeated locant 1,1 places both chlorines on the same carbon, which is what geminal means.",
+        "B": "Locants 1 and 2 put the chlorines on adjacent carbons. That is the vicinal arrangement, the one produced by adding bromine or chlorine across a double bond.",
+        "C": "Chlorines on C1 and C3 are separated by an intervening carbon, so this is neither geminal nor vicinal - the terms only cover the same-carbon and adjacent-carbon cases.",
+        "D": "Locants 1 and 4 place the chlorines at opposite ends of the butane chain, about as far from a geminal relationship as this skeleton allows."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -432,13 +498,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the mechanistic understanding and bond energetics involved in the initiation step of radical halogenations.",
-      "process": "Step 1: Radical reactions begin with an initiation step where a bond is homolytically cleaved by light or heat.\nStep 2: The bond that cleaves first is always the weakest one available. The $Cl-Cl$ bond has a BDE of ~243 kJ/mol, while the $C-H$ bond has a BDE of ~439 kJ/mol.\nStep 3: Consequently, the $Cl-Cl$ bond homolytically cleaves under mild irradiation/heating, whereas the $C-H$ bond remains intact.",
-      "result": "The lower bond dissociation energy of the $Cl-Cl$ bond causes it to cleave selectively during initiation."
+      "context": "Initiation is the step that manufactures the first radicals from a closed-shell precursor, and light or heat will break whichever bond in the mixture needs the least energy to homolyse.",
+      "approach": "Step 1: List the bonds available to break: Cl-Cl in chlorine and C-H in methane.\nStep 2: Compare their homolytic bond dissociation energies. Cl-Cl is about 243 kJ/mol; a methane C-H is about 439 kJ/mol, nearly twice as much.\nStep 3: Ultraviolet light supplies enough energy per photon to cleave the weaker bond readily while the stronger one is essentially untouched. Two chlorine radicals form, and everything after that is propagation.",
+      "note": "Initiation happens only a handful of times; each chlorine radical it creates goes on to drive thousands of propagation cycles before termination removes it.",
+      "options": {
+        "A": "Correct. Homolysis of the halogen-halogen bond costs roughly 243 kJ/mol against about 439 for a methane C-H, so light breaks the chlorine molecule and leaves methane intact.",
+        "B": "A radical chain reaction proceeds entirely by homolysis; heterolytic cleavage of a C-H bond in the gas phase under light is not on the table, and the polarity of the bond is not why it survives.",
+        "C": "Electronegativity is not a stabilising influence on a radical, and it has nothing to do with which bond breaks first. The question is one of bond strength, not radical stability.",
+        "D": "The absence of a chromophore in methane is true but beside the point. Chlorine absorbs the light and provides the radicals; methane is consumed in propagation, not initiation."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single carbon atom with four hydrogens, drawn as the simplest alkane."
   },
   {
     "question_id": "ch10_q12_propagation_thermodynamics",
@@ -469,13 +542,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests thermodynamic calculations of individual radical propagation steps using bond dissociation energies.",
-      "process": "Step 1: Calculate $\\Delta H$ for Step 1. We break a $C-H$ bond (+439 kJ/mol) and form an $H-Cl$ bond (-431 kJ/mol). $\\Delta H_1 = +439 - 431 = +8\\text{ kJ/mol}$ (slightly endothermic).\nStep 2: Calculate $\\Delta H$ for Step 2. We break a $Cl-Cl$ bond (+243 kJ/mol) and form a $C-Cl$ bond (-351 kJ/mol). $\\Delta H_2 = +243 - 351 = -108\\text{ kJ/mol}$ (highly exothermic).\nStep 3: Sum the steps: $\\Delta H_{\\text{overall}} = +8 - 108 = -100\\text{ kJ/mol}$. Step 1 is endothermic, and Step 2 is highly exothermic.",
-      "result": "Step 1 is slightly endothermic, and Step 2 is highly exothermic, driving the overall process exothermically."
+      "context": "The enthalpy of any step is the total energy of the bonds broken minus the total energy of the bonds formed. Each propagation step breaks one bond and makes one, so its sign is set by which of the two is stronger.",
+      "approach": "Step 1: Step 1 breaks a methane C-H at about 439 kJ/mol and forms H-Cl at about 432. Net roughly +7 kJ/mol, a slightly uphill abstraction.\nStep 2: Step 2 breaks Cl-Cl at about 243 kJ/mol and forms a C-Cl bond at about 351. Net roughly -108 kJ/mol, strongly downhill.\nStep 3: Add the two steps. The sum is about -101 kJ/mol, so the propagation cycle as a whole releases energy and, once started, sustains itself.",
+      "note": "The small uphill cost of the first step is what makes chlorination fast but unselective; it is the same step that becomes strongly endothermic for bromine, and that difference is the whole story of bromine's selectivity.",
+      "options": {
+        "A": "Correct. Hydrogen abstraction is marginally endothermic while the chlorine-transfer step releases over 100 kJ/mol, so the cycle is exothermic overall and self-propagating.",
+        "B": "This swaps the two signs. Breaking a 439 kJ/mol C-H bond to form a 432 kJ/mol H-Cl bond cannot be highly exothermic, and forming a strong C-Cl bond from a weak Cl-Cl bond cannot be endothermic.",
+        "C": "The second step forms a C-Cl bond that is about 108 kJ/mol stronger than the Cl-Cl bond it breaks. That step is strongly exothermic, not endothermic, and it is what pays for the cycle.",
+        "D": "The first step breaks a bond slightly stronger than the one it makes and is therefore mildly endothermic, not highly exothermic. The rate of chlorination is high, but not for this reason."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single carbon atom with four hydrogens, drawn as the simplest alkane."
   },
   {
     "question_id": "ch10_q13_chlorination_selectivity",
@@ -510,13 +590,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the quantitative calculation of product distribution in alkane chlorination using statistical factors and relative reactivities.",
-      "process": "Step 1: Identify the types and counts of $C-H$ bonds in 2-methylbutane:\n- $1^\\circ$ hydrogens: 9 (six on the C1/C2-methyls, three on the C4-methyl). Relative rate = $9 \\times 1.0 = 9.0$.\n- $2^\\circ$ hydrogens: 2 (on C3). Relative rate = $2 \\times 3.9 = 7.8$.\n- $3^\\circ$ hydrogens: 1 (on C2). Relative rate = $1 \\times 5.2 = 5.2$.\nStep 2: Calculate total reactivity: $9.0 + 7.8 + 5.2 = 22.0$.\nStep 3: Calculate the proportion of 2-chloro-2-methylbutane (tertiary product): $5.2 / 22.0 \\approx 23.6\\%$. rounding to 24%.",
-      "result": "The predicted percentage of 2-chloro-2-methylbutane is 24%."
+      "context": "The product distribution from a radical halogenation combines two factors: how many hydrogens of each kind are present, and how reactive each kind is. Leaving out either factor gives a wrong number.",
+      "approach": "Step 1: Count the hydrogens by type in 2-methylbutane. Three methyls give nine primary, the CH2 gives two secondary, and the branch CH gives one tertiary - twelve in all.\nStep 2: Weight each count by its relative reactivity: primary 9 x 1.0 = 9.0, secondary 2 x 3.9 = 7.8, tertiary 1 x 5.2 = 5.2.\nStep 3: Add the weighted values to 22.0, then take the tertiary share. 5.2 divided by 22.0 is 0.236, so 2-chloro-2-methylbutane is about 24 percent of the mixture.",
+      "note": "The single tertiary hydrogen accounts for nearly a quarter of the product despite being one hydrogen in twelve - and the same calculation for bromine, with its 1600-to-1 preference, puts that product above 95 percent.",
+      "options": {
+        "A": "Correct. Weighting one tertiary hydrogen at 5.2 against nine primary at 1.0 and two secondary at 3.9 gives 5.2 out of 22.0, which is 24 percent.",
+        "B": "This is the combined share of the two primary chlorides, 9.0 out of 22.0. It lumps both primary products together and answers a question that was not asked.",
+        "C": "This treats the reactivity ratios as if there were one hydrogen of each kind - 5.2 out of 10.1 - and ignores that primary hydrogens outnumber the tertiary one nine to one.",
+        "D": "This is one tertiary hydrogen out of twelve total, pure statistics with the reactivity difference ignored. It underestimates the tertiary product by a factor of three."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-carbon chain with a methyl branch on the second carbon."
   },
   {
     "question_id": "ch10_q14_bromination_selectivity",
@@ -551,13 +638,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the extreme selectivity of radical bromination for tertiary positions compared to chlorination.",
-      "process": "Step 1: Identify C-H bonds in 2-methylbutane and multiply by relative bromination rates:\n- $1^\\circ$ H: $9 \\times 1 = 9$\n- $2^\\circ$ H: $2 \\times 82 = 164$\n- $3^\\circ$ H: $1 \\times 1600 = 1600$\nStep 2: Total reactivity: $9 + 164 + 1600 = 1773$.\nStep 3: Yield of tertiary product (2-bromo-2-methylbutane): $1600 / 1773 \\approx 90.2\\%$. It is the dominant product by far.",
-      "result": "The major product is 2-bromo-2-methylbutane."
+      "context": "Bromine radical is far more selective than chlorine radical because its hydrogen abstraction is endothermic and its transition state resembles the alkyl radical. A single tertiary hydrogen therefore outcompetes every other position in the molecule.",
+      "approach": "Step 1: Identify every distinct kind of hydrogen in 2-methylbutane: nine primary, two secondary, one tertiary.\nStep 2: Apply the bromination weighting of 1 : 82 : 1600. The tertiary position scores 1600, the secondary 164, the primary 9.\nStep 3: Bromine ends up on the branch carbon in well over 90 percent of the product, giving 2-bromo-2-methylbutane as the single major product.",
+      "note": "The same substrate under chlorination gives four products with no majority; the reagent, not the substrate, decides whether radical halogenation is a clean synthesis or a mixture.",
+      "options": {
+        "A": "Correct. The tertiary C-H is the weakest bond in the molecule and bromine's 1600-fold preference for it makes the tertiary bromide the overwhelming product.",
+        "B": "Bromine on the secondary carbon is the second most favoured outcome, but even with two hydrogens there its weighted score of 164 is dwarfed by the tertiary position's 1600.",
+        "C": "This is a primary bromide from one of the methyls next to the branch. With a relative reactivity of 1, primary positions contribute a fraction of a percent under bromination.",
+        "D": "This is the primary bromide from the far methyl. Three hydrogens at a relative reactivity of 1 cannot compete with a single hydrogen weighted at 1600."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-carbon chain with a methyl branch on the second carbon."
   },
   {
     "question_id": "ch10_q15_hammond_postulate",
@@ -588,13 +682,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the application of the Hammond Postulate to explain the differences in selectivity between radical chlorination and bromination.",
-      "process": "Step 1: Check the energetics. Hydrogen abstraction by a bromine radical is endothermic ($\\Delta H \\approx +42\\text{ kJ/mol}$), whereas hydrogen abstraction by a chlorine radical is exothermic ($\\Delta H \\approx -8\\text{ kJ/mol}$).\nStep 2: According to the Hammond Postulate, endothermic steps have 'late' transition states that resemble the products (the alkyl radical intermediate).\nStep 3: Consequently, the transition state for bromination has substantial radical character, and its energy is heavily affected by radical stability ($3^\\circ > 2^\\circ > 1^\\circ$). Chlorination has an 'early' transition state with little radical character developed, showing low selectivity.",
-      "result": "The endothermic hydrogen abstraction by bromine radical creates a late, highly selective transition state."
+      "context": "The Hammond postulate states that a transition state resembles whichever species it is closer to in energy. For an endothermic step that is the product, so the transition state carries most of the product's character - including its stability differences.",
+      "approach": "Step 1: Compare the abstraction thermochemistry. H-Br at about 366 kJ/mol is too weak to pay for breaking a C-H bond, so abstraction by bromine radical is endothermic; H-Cl at about 432 kJ/mol nearly does, so chlorine's abstraction is close to thermoneutral.\nStep 2: Apply Hammond. The endothermic bromine step has a late transition state that looks like the alkyl radical, with the C-H bond mostly broken.\nStep 3: Radical stability now matters in the transition state itself. A tertiary radical is more stable than a primary one, so the tertiary transition state is lower, and bromine chooses it decisively.",
+      "note": "This is the reactivity-selectivity principle in its cleanest form: the reagent that is less reactive is the more selective, because it must wait for the best transition state rather than take the first one.",
+      "options": {
+        "A": "Correct. Endothermic abstraction means a late, radical-like transition state, and a late transition state feels the full difference between tertiary and primary radical stability.",
+        "B": "Abstraction by chlorine is nearly thermoneutral, not endothermic, and its early transition state is exactly why alkyl substitution has little effect - but that explains chlorine's lack of selectivity, not bromine's selectivity.",
+        "C": "Sterics are not the mechanism. Primary hydrogens are the most exposed in the molecule, and bromine's radius is not what keeps it away from them; the selectivity is energetic.",
+        "D": "Chlorination has an early transition state, not a late one, and a radical halogenation has no carbocation intermediate anywhere in it."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A single carbon atom with four hydrogens, drawn as the simplest alkane."
   },
   {
     "question_id": "ch10_q16_stereochemistry_butane_chlorination",
@@ -606,36 +707,40 @@ var CH10_QUESTIONS = [
       {
         "option_id": "A",
         "text": "It is a 1:1 racemic mixture of (R)- and (S)-2-chlorobutane because the intermediate sec-butyl radical is planar and achiral.",
-        "smiles": "CC(Cl)CC",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "It is optically active (S)-2-chlorobutane due to asymmetric induction by the neighboring methyl group.",
-        "smiles": "C[C@H](Cl)CC",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "It is a meso compound because the starting material is symmetric.",
-        "smiles": "CC(Cl)CC",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "It is optically active (R)-2-chlorobutane because chlorine attacks from the less hindered face.",
-        "smiles": "C[C@@H](Cl)CC",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests the stereochemical outcome of radical substitution at an achiral carbon atom.",
-      "process": "Step 1: Hydrogen abstraction at C2 of butane yields a secondary butyl radical intermediate.\nStep 2: The radical carbon is $sp^2$-hybridized, planar, and achiral.\nStep 3: Chlorine molecules ($Cl_2$) can react with equal probability from either the top or bottom face of this planar intermediate, producing a 50:50 (racemic) mixture of (R)- and (S)-2-chlorobutane.",
-      "result": "The product is a racemic mixture of (R)- and (S)-2-chlorobutane."
+      "context": "A radical formed at a carbon that will become a stereocentre is sp2-hybridised and trigonal planar. Nothing about a planar, achiral intermediate can prefer one face over the other, so the product it gives is racemic.",
+      "approach": "Step 1: Abstract a hydrogen from C2 of butane. The sec-butyl radical that forms is planar at C2 with its unpaired electron in a p orbital.\nStep 2: Ask what chlorine sees when it approaches. Both faces of the planar radical are equivalent, and there is no existing stereocentre elsewhere to differentiate them.\nStep 3: Chlorine transfer from Cl2 therefore occurs from either face at the same rate, producing (R)- and (S)-2-chlorobutane in exactly equal amounts.",
+      "note": "This outcome holds for any radical substitution that creates a single new stereocentre in an achiral substrate; it is only when a stereocentre already exists that the two faces become distinguishable.",
+      "options": {
+        "A": "Correct. The sec-butyl radical is planar at the reacting carbon and chlorine attacks either face equally, so the product is a racemic mixture.",
+        "B": "The adjacent methyl group cannot induce asymmetry; it is not itself a stereocentre and the radical is symmetric with respect to its two faces.",
+        "C": "A meso compound needs at least two stereocentres arranged with an internal mirror plane. 2-chlorobutane has one stereocentre and cannot be meso.",
+        "D": "Both faces of the planar sec-butyl radical are equally hindered - the substituents lie in the same plane as the radical carbon - so there is no less hindered face to attack."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "A and C rendered the identical picture while asserting opposite things. A racemic mixture has no single structure, so the options carry no SMILES.",
+    "structure_alt": "An unbranched four-carbon chain."
   },
   {
     "question_id": "ch10_q17_diastereotopic_chlorination",
@@ -647,43 +752,47 @@ var CH10_QUESTIONS = [
       {
         "option_id": "A",
         "text": "An unequal mixture of diastereomers is formed because the pre-existing stereocenter at C2 makes the two faces of the C3 radical intermediate diastereotopic.",
-        "smiles": "C[C@H](Cl)[C@@H](F)C",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "A 1:1 racemic mixture of enantiomers is formed because the C3 radical intermediate is planar and achiral.",
-        "smiles": "C[C@H](Cl)[C@@H](F)C",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "A single meso compound is formed exclusively.",
-        "smiles": "C[C@@H](Cl)[C@@H](F)C",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "No reaction occurs at C3 because the electronegative fluorine atom deactivates the adjacent position entirely.",
-        "smiles": "CC[C@@H](F)C",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests stereochemical principles when a new stereocenter is generated in a molecule that already contains a chiral center.",
-      "process": "Step 1: Radical formation at C3 yields a planar radical. However, the molecule is chiral due to the fixed (S)-stereocenter at C2.\nStep 2: Because of the chiral center at C2, the two faces (top and bottom) of the C3 radical are diastereotopic.\nStep 3: Chlorine attacks the two faces at different rates due to steric and electronic differences, resulting in an unequal mixture of diastereomers (e.g., (2S,3R)- and (2S,3S)-2-chloro-3-fluorobutane).",
-      "result": "An unequal mixture of diastereomers is formed due to the diastereotopic faces of the radical intermediate."
+      "context": "When a new stereocentre is created next to one that already exists, the two possible products are diastereomers rather than enantiomers, and the two faces of the intermediate are no longer equivalent.",
+      "approach": "Step 1: Note that C2 carries a stereocentre that the reaction does not touch.\nStep 2: Form the radical at C3. It is planar at C3, as any carbon radical is, but its two faces now sit in different environments because the (S)-configured C2 is adjacent.\nStep 3: Chlorine transfer to the two faces proceeds through diastereomeric transition states with different energies, so the (2S,3R) and (2S,3S) products form in unequal amounts.",
+      "note": "The difference in rates is usually modest for a radical, so the selectivity is real but small; the essential point is that it exists at all, which it cannot for a substrate with no prior stereocentre.",
+      "options": {
+        "A": "Correct. The intact C2 stereocentre makes the two faces of the planar C3 radical diastereotopic, so the two diastereomeric products form at different rates.",
+        "B": "The products cannot be enantiomers because both retain the same (S) configuration at C2. Two compounds sharing one stereocentre and differing at another are diastereomers.",
+        "C": "A meso compound requires an internal mirror plane, which a molecule with one carbon bearing fluorine and another bearing chlorine cannot possess.",
+        "D": "An adjacent fluorine slows radical abstraction somewhat but does not shut it off; the question states that C3 chlorination products are in fact obtained."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "A and B carried the same SMILES while making opposite claims. Product distribution is a statement, not a structure.",
+    "structure_alt": "A four-carbon chain with a fluorine on the second carbon, drawn with wedge-and-dash stereochemistry at that carbon."
   },
   {
     "question_id": "ch10_q18_radical_stability_ranking",
     "topic": "Radical halogenation of alkanes",
     "difficulty_level": "Medium",
     "question_text": "Which of the following lists carbon radicals in order of decreasing stability?",
-    "question_smiles": "C=C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -707,13 +816,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relative thermodynamic stabilities of carbon-centered radicals.",
-      "process": "Step 1: Allylic radicals are stabilized by resonance delocalization of the unpaired electron across a $\\pi$ system, making them more stable than tertiary radicals.\nStep 2: Alkyl radicals are stabilized by hyperconjugation and inductive donation from alkyl groups ($3^\\circ > 2^\\circ > 1^\\circ$).\nStep 3: Vinylic radicals have the unpaired electron in an $sp^2$ orbital, which has more s-character and holds the electron closer to the nucleus. This is highly unstable compared to $sp^3$-hybridized radicals.",
-      "result": "The correct stability order is: allylic > tertiary > secondary > vinylic."
+      "context": "Radical stability follows the same ordering as carbocation stability - resonance delocalisation first, then alkyl substitution - and for the same reason: an electron-deficient carbon is stabilised by anything that spreads the deficiency out.",
+      "approach": "Step 1: Place resonance at the top. An allylic radical is delocalised over two carbons, which outweighs any amount of alkyl substitution.\nStep 2: Order the localised radicals by substitution, tertiary above secondary, because each additional alkyl group donates by hyperconjugation and spreads the unpaired electron.\nStep 3: Put vinylic at the bottom. Its unpaired electron sits in an sp2 orbital lying in the molecular plane, cannot overlap with the pi bond, and is held closer to the nucleus by the higher s character.",
+      "note": "The bond dissociation energies tell the same story: an allylic C-H at about 370 kJ/mol is far easier to break than a vinylic C-H at about 465, with the tertiary and secondary values in between.",
+      "options": {
+        "A": "Correct. Resonance beats substitution, substitution ranks tertiary over secondary, and the vinylic radical with its in-plane orbital is the least stable of the set.",
+        "B": "This puts tertiary above allylic. Delocalisation over two carbons stabilises a radical more than three alkyl groups on one carbon do.",
+        "C": "This is the correct order reversed. A vinylic radical is the least stable, not the most, because its orbital lies in the plane of the alkene and gains nothing from it.",
+        "D": "Allylic is rightly first and vinylic rightly last, but secondary and tertiary are swapped. More alkyl substitution stabilises a radical, so tertiary outranks secondary."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "question_smiles dropped: it drew ethene, which is not among the radicals being ranked and cues 'vinylic' for no reason."
   },
   {
     "question_id": "ch10_q19_bromination_methylcyclohexane",
@@ -742,19 +858,27 @@ var CH10_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "trans-1-bromo-4-methylcyclohexane",
-        "smiles": "C[C@@H]1CC[C@H]1Br",
+        "text": "1-bromo-4-methylcyclohexane",
+        "smiles": "CC1CCC(Br)CC1",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests the selectivity of radical bromination on a cyclic alkane containing a tertiary carbon.",
-      "process": "Step 1: Identify all hydrogen types in methylcyclohexane. There are primary, secondary, and one tertiary hydrogen.\nStep 2: Radical bromination is highly selective for tertiary C-H bonds (reactivity ratio is 1600:82:1).\nStep 3: The tertiary hydrogen is located at C1. Abstraction yields a stable tertiary radical intermediate, which reacts with $Br_2$ to form 1-bromo-1-methylcyclohexane.",
-      "result": "The major product is 1-bromo-1-methylcyclohexane."
+      "context": "Bromine radical abstracts the weakest C-H bond available, and in a monosubstituted cycloalkane the weakest is the single tertiary hydrogen at the ring carbon that carries the substituent.",
+      "approach": "Step 1: Classify the hydrogens. Methylcyclohexane has three primary hydrogens on the methyl, ten secondary hydrogens around the ring, and one tertiary hydrogen at the substituted ring carbon.\nStep 2: Weight them for bromination, roughly 1 : 82 : 1600. The single tertiary hydrogen scores 1600 against 820 for all ten secondary and 3 for the methyl.\nStep 3: Bromine therefore lands on the ring carbon that already bears the methyl, giving 1-bromo-1-methylcyclohexane as the dominant product.",
+      "note": "The product has no stereocentre - the carbon bearing bromine also bears the methyl and two equivalent ring arms - so unlike a secondary ring bromide there is no cis/trans pair to worry about.",
+      "options": {
+        "A": "Correct. The tertiary hydrogen at the methyl-bearing ring carbon is the weakest in the molecule, and bromine's strong preference for it makes the tertiary bromide the major product.",
+        "B": "Bromine on the methyl carbon would require abstracting a primary hydrogen, the strongest C-H in the molecule and the one bromine radical is least willing to take.",
+        "C": "Bromine on a ring CH2 next to the methyl carbon is a secondary product. Even with ten secondary hydrogens available, their combined weighting is about half that of the one tertiary hydrogen.",
+        "D": "A secondary bromide on the carbon opposite the methyl is possible in principle but is one of the minor secondary products; it does not compete with the tertiary position."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "Option D was drawn as a cyclobutane (C5H9Br) under a cyclohexane name - eliminable by counting carbons.",
+    "structure_alt": "A six-membered saturated ring with a single methyl substituent."
   },
   {
     "question_id": "ch10_q20_radical_initiators",
@@ -789,12 +913,18 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the structures and chemical properties of common reagents used to initiate radical reactions.",
-      "process": "Step 1: Radical initiators must have bonds that easily undergo homolytic cleavage.\nStep 2: Benzoyl peroxide contains a weak $O-O$ single bond (BDE $\\approx 150\\text{ kJ/mol}$) that breaks homolytically upon mild heating or light exposure.\nStep 3: AIBN is also a radical initiator, but it contains a weak carbon-nitrogen bond and releases nitrogen gas, not a peroxide bond.",
-      "result": "Benzoyl peroxide is a peroxide-based radical initiator."
+      "context": "A radical initiator is a compound with one bond weak enough to homolyse under mild heating or light, releasing radicals that start a chain. The oxygen-oxygen single bond, at roughly 150 kJ/mol, is one of the weakest in organic chemistry.",
+      "approach": "Step 1: Look for an O-O single bond in each structure. Only benzoyl peroxide has one, between its two acyl groups.\nStep 2: Confirm the mechanism. Gentle heating cleaves that bond to give two benzoyloxy radicals, which lose CO2 to give phenyl radicals; either species can abstract a hydrogen and begin propagation.\nStep 3: Eliminate the others by function: AIBN initiates through an N=N bond and nitrogen loss, NBS is a bromine source rather than an initiator, and DMSO is a solvent.",
+      "note": "AIBN is the other workhorse initiator, but it works by expelling N2 from an azo linkage rather than by peroxide homolysis - the stem's requirement for an O-O bond is what separates the two.",
+      "options": {
+        "A": "Correct. Benzoyl peroxide carries a weak O-O bond that homolyses on warming to give benzoyloxy radicals, the classic way to start a radical chain.",
+        "B": "AIBN is a genuine radical initiator, but it contains an azo N=N linkage and decomposes by losing nitrogen gas. There is no peroxide bond anywhere in it.",
+        "C": "Dimethyl sulfoxide is a polar aprotic solvent. It has an S=O bond, not an O-O bond, and does not decompose into radicals under ordinary conditions.",
+        "D": "N-bromosuccinimide supplies bromine in allylic brominations; it contains an N-Br bond rather than a peroxide and is not itself the initiator - a trace of peroxide or light does that job."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -824,19 +954,26 @@ var CH10_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "A carbon radical at the central oxygen atom",
+        "text": "The intact ether reacts directly with triplet oxygen; no radical intermediate is required",
         "smiles": "CC(C)OC(C)C",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests radical reactions that occur during the degradation of common lab solvents (autooxidation of ethers).",
-      "process": "Step 1: Ethers have C-H bonds adjacent to the oxygen atom ($\\alpha$-hydrogens) that are weakened by resonance stabilization from the oxygen lone pair.\nStep 2: In diisopropyl ether, this carbon is tertiary, making it particularly weak and susceptible to radical abstraction.\nStep 3: Radical abstraction at this position yields a tertiary carbon-centered radical adjacent to oxygen, which reacts with triplet oxygen ($O_2$) to start the peroxide cascade.",
-      "result": "The autooxidation initiates at the tertiary carbon adjacent to the oxygen atom."
+      "context": "Autooxidation is a radical chain in which a C-H bond alpha to an ether oxygen is abstracted, and the resulting carbon radical captures O2. The alpha C-H is the target because the adjacent oxygen lone pair delocalises the radical that forms there.",
+      "approach": "Step 1: Find the weakest C-H bond. In diisopropyl ether each isopropyl group has one hydrogen on a tertiary carbon that is also bonded to oxygen - tertiary and alpha-oxy at once.\nStep 2: Abstract that hydrogen. The radical left behind is stabilised both by the two methyls and by overlap with the oxygen lone pair.\nStep 3: That carbon radical adds triplet oxygen to give a peroxyl radical, which abstracts another alpha hydrogen to give the hydroperoxide and continue the chain. Accumulated hydroperoxides are what make old ether dangerous to distil.",
+      "note": "Diisopropyl ether is worse than diethyl ether precisely because its alpha carbon is tertiary; the same reasoning explains why tetrahydrofuran, with two alpha CH2 groups, also forms peroxides on standing.",
+      "options": {
+        "A": "Correct. Hydrogen abstraction at the tertiary carbon bonded to oxygen gives the most stabilised radical available, and that radical is what captures O2 to start the peroxide chain.",
+        "B": "A primary methyl radical is neither alkyl-stabilised nor alpha to the oxygen, so it is the least favourable radical the molecule can form.",
+        "C": "The C-O bond of an ether is about 360 kJ/mol and does not homolyse under ambient light; autooxidation begins by breaking a C-H, not a C-O.",
+        "D": "Triplet oxygen is a diradical and does not insert into closed-shell C-H bonds directly. A carbon radical must form first, which is why an inhibitor that scavenges radicals prevents peroxide formation."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "Option D said 'a carbon radical at the central oxygen atom', which is not a species. Replaced with a real misconception that matches the intact-ether structure it already drew."
   },
   {
     "question_id": "ch10_q22_neopentane_equivalence",
@@ -871,13 +1008,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the concept of chemical equivalence and symmetry in determining radical halogenation product outcomes.",
-      "process": "Step 1: Examine the structure of neopentane, $C(CH_3)_4$.\nStep 2: There are 4 methyl groups attached to a quaternary carbon. The quaternary carbon has no hydrogens.\nStep 3: All 12 hydrogens on the 4 methyl groups are chemically equivalent by symmetry. Abstraction of any of these hydrogens yields the same primary radical and thus a single monochlorination product (1-chloro-2,2-dimethylpropane).",
-      "result": "Symmetry and equivalence of all 12 hydrogens lead to a single monochlorinated product."
+      "context": "The number of monosubstitution products an alkane can give equals the number of chemically distinct hydrogen environments it contains. Symmetry, not reactivity, sets that count.",
+      "approach": "Step 1: Draw neopentane as a central carbon carrying four methyl groups.\nStep 2: Notice that the central carbon has no hydrogen, and that every one of the twelve hydrogens sits on a methyl that is related to the other three by symmetry.\nStep 3: Replacing any of the twelve with chlorine gives the same compound, 1-chloro-2,2-dimethylpropane, so only one monochloride is possible.",
+      "note": "This makes neopentane a useful test of whether a student is counting hydrogens by environment or by number - butane, with the same number of carbons in a chain, gives two monochlorides from its two environments.",
+      "options": {
+        "A": "Correct. Four symmetry-equivalent methyls provide twelve identical hydrogens, so every monochlorination gives the same product.",
+        "B": "Steric hindrance affects rate, not the number of possible products, and the primary radical formed here is not especially hindered anyway.",
+        "C": "Chlorine radical is not selective, and the central carbon carries no hydrogen at all, so it could not be a target under any selectivity.",
+        "D": "This is true but does not answer the question. The central carbon's lack of hydrogens removes one site; the single product arises because the remaining twelve hydrogens are all equivalent."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A central carbon bonded to four methyl groups."
   },
   {
     "question_id": "ch10_q23_ethylbenzene_bromination",
@@ -895,7 +1039,7 @@ var CH10_QUESTIONS = [
       {
         "option_id": "B",
         "text": "(2-bromoethyl)benzene",
-        "smiles": "CCC(Br)c1ccccc1",
+        "smiles": "BrCCc1ccccc1",
         "is_correct": false
       },
       {
@@ -912,13 +1056,21 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests selectivity in radical halogenations when a highly stabilized benzylic position is present.",
-      "process": "Step 1: Identify the C-H bonds in ethylbenzene: aromatic, primary aliphatic, and secondary benzylic.\nStep 2: Benzylic C-H bonds have lower bond dissociation energies (BDE $\\approx 356\\text{ kJ/mol}$) than standard aliphatic C-H bonds because the resulting radical is resonance-stabilized by the benzene ring.\nStep 3: Bromine radical selectively abstracts the secondary benzylic hydrogen to form the stable (1-phenylethyl) radical, which then reacts with $Br_2$ to form (1-bromoethyl)benzene.",
-      "result": "The major product is (1-bromoethyl)benzene."
+      "context": "A benzylic C-H is to an aromatic ring what an allylic C-H is to an alkene: the radical formed by breaking it is delocalised into the pi system, so it is the weakest C-H in the molecule and the one bromine radical takes.",
+      "approach": "Step 1: Locate the benzylic position - the CH2 attached directly to the ring - and note it also counts as secondary.\nStep 2: Compare it with the alternatives. The terminal methyl is primary and not benzylic; the ring hydrogens are aromatic C-H bonds at over 470 kJ/mol and are never abstracted by bromine.\nStep 3: Bromine abstracts the benzylic hydrogen and the resulting radical captures bromine, giving (1-bromoethyl)benzene.",
+      "note": "Under light bromine substitutes at the side chain; with a Lewis acid catalyst and no light the same reagent substitutes on the ring instead. The conditions, not the substrate, decide which chemistry occurs.",
+      "options": {
+        "A": "Correct. The benzylic hydrogen is the weakest C-H available because the resulting radical is resonance-stabilised across the ring.",
+        "B": "Bromine on the terminal methyl carbon requires abstracting a primary, non-benzylic hydrogen, the strongest sp3 C-H in the molecule.",
+        "C": "Para bromination of the ring is an electrophilic aromatic substitution. It needs a Lewis acid such as FeBr3 and does not occur under radical conditions.",
+        "D": "Ortho bromination of the ring, like the para product, is an ionic electrophilic substitution and is not what light and bromine deliver."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "Option B was drawn C9H11Br against a C8H10 substrate.",
+    "structure_alt": "A benzene ring bearing a two-carbon ethyl chain."
   },
   {
     "question_id": "ch10_q24_nbs_role_mechanism",
@@ -949,13 +1101,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the mechanistic role of NBS in allylic brominations, explaining how the competing ionic addition reaction is bypassed.",
-      "process": "Step 1: Ionic electrophilic addition of $Br_2$ to alkenes requires high concentration of $Br_2$.\nStep 2: NBS reacts rapidly with $HBr$ formed in the propagation step to produce succinimide and $Br_2$.\nStep 3: This keeps the concentration of $Br_2$ extremely low, which suppresses the electrophilic addition rate (a bimolecular reaction in bromine/alkene) and allows the radical propagation pathway (allylic bromination) to dominate.",
-      "result": "NBS maintains a low concentration of $Br_2$ by reacting with trace $HBr$."
+      "context": "Molecular bromine can either add across an alkene or, under radical conditions, substitute at the allylic position. Which one wins depends on how much Br2 is present, and the entire purpose of NBS is to keep that amount vanishingly small.",
+      "approach": "Step 1: Recognise the competition. High Br2 concentration favours ionic addition across the double bond; low concentration starves that pathway while the radical chain still runs.\nStep 2: Follow the NBS cycle. Each allylic hydrogen abstraction releases HBr, and HBr reacts with NBS to regenerate one molecule of Br2 plus succinimide.\nStep 3: Bromine is therefore produced only as fast as it is consumed, so its steady-state concentration stays too low for addition, and the allylic bromide is the product.",
+      "note": "The bromine radical, not NBS, is the hydrogen-abstracting species. NBS is a bromine reservoir that meters Br2 out one molecule at a time.",
+      "options": {
+        "A": "Correct. NBS converts the HBr formed in each propagation cycle back into Br2, keeping the bromine concentration low enough that addition across the alkene cannot compete.",
+        "B": "The N-Br bond can homolyse under strong initiation, but that is not how NBS functions here. The chain carrier that abstracts the allylic hydrogen is bromine radical from Br2.",
+        "C": "There is no second phase for anything to be transferred across, and radicals do not need solubilising. Carbon tetrachloride is simply an inert solvent in which NBS is sparingly soluble.",
+        "D": "Syn-addition followed by elimination would describe a completely different reaction. NBS does not add across the double bond at all; if it did, the product would not be an allylic bromide."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered ring containing one carbon-carbon double bond."
   },
   {
     "question_id": "ch10_q25_cyclohexene_nbs",
@@ -990,13 +1149,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the product identification in allylic bromination of a simple symmetric cyclic alkene.",
-      "process": "Step 1: Locate the allylic positions in cyclohexene. C3 and C6 are the two equivalent allylic positions.\nStep 2: Radical abstraction of a hydrogen from C3/C6 yields a resonance-stabilized allylic radical.\nStep 3: Reaction of this radical with $Br_2$ gives 3-bromocyclohexene.",
-      "result": "The major product is 3-bromocyclohexene."
+      "context": "Under radical conditions NBS substitutes bromine at the allylic carbon, the saturated carbon next to the double bond. The double bond itself is left in place.",
+      "approach": "Step 1: Identify the allylic carbons of cyclohexene. Both CH2 groups flanking the double bond qualify, and by symmetry they are equivalent.\nStep 2: Abstract an allylic hydrogen to give a radical delocalised over three carbons; because the ring is symmetric, bromine capture at either end gives the same compound.\nStep 3: The product keeps the double bond and carries bromine on the adjacent carbon: 3-bromocyclohexene.",
+      "note": "The two allylic termini are equivalent in cyclohexene, so a single product forms; in an unsymmetrical alkene the same delocalised radical gives two regioisomers.",
+      "options": {
+        "A": "Correct. Bromine replaces an allylic hydrogen, and because the delocalised radical is symmetric in cyclohexene, only one allylic bromide results.",
+        "B": "Trans-1,2-dibromocyclohexane is the product of ionic addition of Br2 through a bromonium ion. NBS is used precisely to keep the bromine concentration too low for that pathway.",
+        "C": "A vinylic C-H is far too strong for bromine radical to abstract, so bromine does not end up on a double-bond carbon under these conditions.",
+        "D": "The carbon two positions from the double bond is homoallylic, not allylic; its hydrogens are ordinary secondary ones and are not activated by the alkene."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered ring containing one carbon-carbon double bond."
   },
   {
     "question_id": "ch10_q26_butene_nbs",
@@ -1027,13 +1193,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests resonance stabilization of allylic radicals and its impact on product mixtures.",
-      "process": "Step 1: Radical abstraction of the allylic hydrogen at C3 of 1-butene yields an allylic radical.\nStep 2: The radical is resonance-stabilized: $CH_2=CH-\\dot{C}H-CH_3 \\leftrightarrow \\dot{C}H_2-CH=CH-CH_3$.\nStep 3: Bromine transfer can occur at either C3 (yielding 3-bromobut-1-ene) or C1 (yielding 1-bromobut-2-ene).",
-      "result": "Resonance delocalization of the radical intermediate between C1 and C3 yields both products."
+      "context": "An allylic radical is not a localised species. Its unpaired electron is shared across the two ends of a three-carbon unit, and bromine can be delivered to either end.",
+      "approach": "Step 1: Abstract the allylic hydrogen from C3 of 1-butene, the CH2 between the double bond and the methyl.\nStep 2: Write the two resonance forms. The unpaired electron sits at C3 with the double bond at C1-C2, or at C1 with the double bond shifted to C2-C3.\nStep 3: Bromine transfer at C3 gives 3-bromobut-1-ene; transfer at C1 gives 1-bromobut-2-ene with the double bond relocated. Both arise from a single intermediate.",
+      "note": "The internal alkene product is usually the larger component because its disubstituted double bond is more stable, but the ratio is set at the bromine-transfer step and the two products are not interconverted afterwards.",
+      "options": {
+        "A": "Correct. The allylic radical is delocalised across C1 and C3, and bromine attaches at whichever terminus it meets, producing both regioisomers.",
+        "B": "There is no carbocation and no hydride shift in a radical bromination; the electron count is odd throughout, and a shift would not relocate the double bond anyway.",
+        "C": "NBS under light operates through a single radical chain. The two products come from one delocalised intermediate, not from two competing mechanisms.",
+        "D": "Radical addition of HBr would give a saturated bromobutane, not an allylic bromide with the double bond retained; 1-bromobut-2-ene still contains its alkene."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched four-carbon chain with a terminal carbon-carbon double bond."
   },
   {
     "question_id": "ch10_q27_methylcyclohexene_nbs",
@@ -1045,7 +1218,7 @@ var CH10_QUESTIONS = [
       {
         "option_id": "A",
         "text": "4-bromo-3-methylcyclohexene",
-        "smiles": "CC1C(Br)C=CCC1",
+        "smiles": "CC1C(Br)CCC=C1",
         "is_correct": true
       },
       {
@@ -1062,19 +1235,27 @@ var CH10_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "6-bromo-3-methylcyclohexene",
-        "smiles": "CC1C=CCC(Br)C1",
+        "text": "3-bromo-6-methylcyclohexene",
+        "smiles": "CC1CCC(Br)C=C1",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "This question tests the identification of allylic positions and resonance-stabilized intermediates in unsymmetrical cyclohexene derivatives.",
-      "process": "Step 1: Identify allylic positions in 3-methylcyclohexene (double bond at C1-C2, methyl at C3). The allylic positions are C3 (tertiary) and C6 (secondary).\nStep 2: Abstraction of H from C3 yields a radical at C3, which has resonance to C1 (yielding 3-bromo-3-methylcyclohexene and 3-bromo-1-methylcyclohexene).\nStep 3: Abstraction of H from C6 yields a radical at C6, which has resonance to C2 (yielding 6-bromo-3-methylcyclohexene and 2-bromo-3-methylcyclohexene).\nStep 4: C4 is a homoallylic position, not an allylic position. A radical cannot be stabilized there directly by the double bond, so 4-bromo-3-methylcyclohexene is not formed.",
-      "result": "4-bromo-3-methylcyclohexene is not formed because C4 is not an allylic position."
+      "context": "An unsymmetrical cycloalkene has two different allylic positions, each giving its own delocalised radical with two ends, so up to four allylic bromides can form. Any candidate whose bromine is not at one of those four positions is not a product.",
+      "approach": "Step 1: Number 3-methylcyclohexene with the double bond at C1-C2 and the methyl on C3. The allylic carbons are C3 and C6.\nStep 2: The C3 radical is delocalised over C3-C2-C1; bromine can land at C3 or at C1. The C6 radical is delocalised over C6-C1-C2; bromine can land at C6 or at C2.\nStep 3: Map the four outcomes to names. Bromine at C3 gives 3-bromo-3-methylcyclohexene; at C1, 3-bromo-1-methylcyclohexene after renumbering; at C6, 3-bromo-6-methylcyclohexene; at C2, 3-bromo-4-methylcyclohexene.\nStep 4: 4-bromo-3-methylcyclohexene places bromine on C4, which is next to the sp3 methyl carbon rather than to the double bond. No allylic radical reaches it.",
+      "note": "Renumbering after the double bond migrates is where most errors in this kind of problem occur; draw each product, then name it fresh, rather than carrying the starting material's locants forward.",
+      "options": {
+        "A": "Correct. C4 is homoallylic - two bonds from the nearest alkene carbon - so neither of the two allylic radicals can deliver bromine there.",
+        "B": "This is the tertiary allylic bromide from the C3 radical reacting at its methyl-bearing end. It is a genuine product.",
+        "C": "This is the C3 radical reacting at C1, with the double bond shifting to C2-C3. It is formed, and its name is what the starting material's locants become after renumbering.",
+        "D": "This is the C6 radical reacting at C6, keeping the double bond in place. It is one of the four allylic bromides that form."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "Key A was drawn as 3-bromo-4-methylcyclohexene, an allylic bromide that IS formed - the picture contradicted the answer. Option D was drawn as the non-allylic 5-bromo isomer under a 6-bromo name.",
+    "structure_alt": "A six-membered ring with one double bond and a methyl group on the saturated carbon immediately next to it."
   },
   {
     "question_id": "ch10_q28_methylenecyclohexane_nbs",
@@ -1097,8 +1278,8 @@ var CH10_QUESTIONS = [
       },
       {
         "option_id": "C",
-        "text": "1-bromomethylcyclohexane",
-        "smiles": "BrCC1CCCCC1",
+        "text": "2-bromomethylenecyclohexane",
+        "smiles": "C=C1CCCCC1Br",
         "is_correct": false
       },
       {
@@ -1109,20 +1290,28 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the concept of thermodynamic stability of alkene isomers in radical allylic brominations.",
-      "process": "Step 1: Abstraction of an allylic hydrogen from the ring C2 of methylenecyclohexane yields an allylic radical.\nStep 2: This radical has two resonance contributors: one with an exocyclic double bond and one with an endocyclic double bond.\nStep 3: Bromination of the endocyclic contributor yields 1-(bromomethyl)cyclohexene, which has a more stable, trisubstituted endocyclic double bond. Bromination of the exocyclic contributor yields 3-bromomethylenecyclohexane, which has a less stable, disubstituted exocyclic double bond.",
-      "result": "Under thermodynamic control, the major product is the more stable isomer 1-(bromomethyl)cyclohexene."
+      "context": "When the two ends of an allylic radical give products with differently substituted double bonds, the product that keeps the more substituted alkene is the more stable one and is generally the major component.",
+      "approach": "Step 1: Find the allylic hydrogens. The ring CH2 groups on either side of the exocyclic alkene carbon are allylic; the exocyclic CH2 itself is vinylic and its hydrogens are not abstracted.\nStep 2: Abstract a ring allylic hydrogen. The radical is delocalised over the ring carbon, the alkene ring carbon, and the exocyclic CH2.\nStep 3: Compare the two bromine-transfer outcomes. Bromine on the ring carbon keeps the disubstituted exocyclic alkene; bromine on the exocyclic carbon moves the double bond into the ring, where it becomes trisubstituted.\nStep 4: The endocyclic, trisubstituted product 1-(bromomethyl)cyclohexene is the more stable and is the major product.",
+      "note": "The exocyclic-to-endocyclic preference is reliable for five- and six-membered rings, where an endocyclic double bond is unstrained; it should not be extended to four-membered rings without thermochemical data.",
+      "options": {
+        "A": "Correct. Bromine transfer to the exocyclic carbon relocates the double bond into the ring, where it is trisubstituted and lower in energy than the exocyclic disubstituted alternative.",
+        "B": "Bromine on the ring carbon two positions from the alkene is a homoallylic product; that carbon carries ordinary secondary hydrogens and is not part of the delocalised radical.",
+        "C": "This is the other end of the same allylic radical - the kinetic product that keeps the exocyclic alkene. It is formed, but its disubstituted double bond makes it the less stable of the pair.",
+        "D": "The carbon opposite the alkene is three bonds from it. Nothing about the allylic radical extends that far, so bromine does not arrive there."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "Option C was a saturated C7H13Br, impossible from allylic bromination of a C7H12 alkene. Replaced by the kinetic allylic product, which is genuinely formed and therefore actually tempting.",
+    "structure_alt": "A six-membered saturated ring with an exocyclic carbon-carbon double bond to a CH2 group."
   },
   {
     "question_id": "ch10_q29_pentene_nbs",
     "topic": "Allylic bromination using NBS",
     "difficulty_level": "Hard",
     "question_text": "Treatment of (E)-pent-2-ene with NBS and light gives a mixture of allylic bromides. Which of the following compounds is NOT a product of this reaction?",
-    "question_smiles": "CC=CCC",
+    "question_smiles": "C/C=C/CC",
     "options": [
       {
         "option_id": "A",
@@ -1150,13 +1339,21 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the ability to map allylic radicals and their resonance hybrids to specific brominated products for unsymmetric alkenes.",
-      "process": "Step 1: The allylic positions of (E)-pent-2-ene ($CH_3-CH=CH-CH_2-CH_3$) are C1 and C4.\nStep 2: Abstraction at C1 gives a radical that resonance delocalizes to C3, yielding 1-bromopent-2-ene and 3-bromopent-1-ene.\nStep 3: Abstraction at C4 gives a radical that resonance delocalizes to C2, yielding 4-bromopent-2-ene.\nStep 4: C5 is a homoallylic carbon. Radicals do not form there readily, so 5-bromopent-2-ene is not produced.",
-      "result": "5-bromopent-2-ene is not formed because C5 is not an allylic position."
+      "context": "Pent-2-ene has two different allylic carbons, C1 and C4. Each gives a three-carbon delocalised radical, and bromine can attach only at the ends of one of those two radicals.",
+      "approach": "Step 1: Abstract from C1, the methyl on the double bond. The radical spans C1-C2-C3, so bromine lands at C1 giving 1-bromopent-2-ene, or at C3 giving 3-bromopent-1-ene.\nStep 2: Abstract from C4, the CH2 on the other side. The radical spans C4-C3-C2, so bromine lands at C4 giving 4-bromopent-2-ene, or at C2 giving what renumbers to the same compound.\nStep 3: List the reachable positions: C1, C2, C3, C4. The C5 methyl is two bonds from the double bond and no radical reaches it, so 5-bromopent-2-ene is never formed.",
+      "note": "The E geometry of the starting alkene is preserved in products where the original double bond survives, but it is lost in the products where the double bond migrates.",
+      "options": {
+        "A": "Correct. C5 is a homoallylic methyl; its hydrogens are ordinary primary ones that bromine radical does not take, and no allylic radical delocalises onto it.",
+        "B": "This is the C1 radical capturing bromine at C1 without moving the double bond. It is a real product.",
+        "C": "This is the C1 radical capturing bromine at C3, with the double bond shifting to the terminal position. It is formed.",
+        "D": "This is the C4 radical capturing bromine at C4, keeping the internal double bond. It is one of the products."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "The stem names (E)-pent-2-ene; the structure was drawn flat.",
+    "structure_alt": "An unbranched five-carbon chain with an internal double bond between the second and third carbons, drawn with defined geometry."
   },
   {
     "question_id": "ch10_q30_methylcyclopentene_nbs",
@@ -1173,7 +1370,7 @@ var CH10_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "1-bromo-1-methylcyclopentene",
+        "text": "3-bromo-3-methylcyclopentene",
         "smiles": "CC1(Br)C=CCC1",
         "is_correct": false
       },
@@ -1191,54 +1388,21 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests regiochemical preferences in allylic brominations of methylcyclopentenes.",
-      "process": "Step 1: Identify allylic positions in 1-methylcyclopentene: C3 (secondary), C5 (secondary), and the methyl group (primary).\nStep 2: Abstraction at C3 (secondary allylic) gives a stable radical that maintains the trisubstituted double bond framework.\nStep 3: Reaction of this C3 radical intermediate with bromine source gives 3-bromo-1-methylcyclopentene as the major product.",
-      "result": "The major allylic bromide is 3-bromo-1-methylcyclopentene."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q31_methylenecyclobutane_nbs",
-    "topic": "Allylic bromination using NBS",
-    "difficulty_level": "Hard",
-    "question_text": "Allylic bromination of methylenecyclobutane with NBS yields a compound with the formula $C_5H_7Br$. What is the IUPAC name of the major product under thermodynamic control?",
-    "question_smiles": "C=C1CCC1",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "1-(bromomethyl)cyclobutene",
-        "smiles": "",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "3-bromomethylenecyclobutane",
-        "smiles": "",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "1-Bromo-2-methylcyclobutene",
-        "smiles": "",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "2-bromomethylenecyclobutane",
-        "smiles": "",
-        "is_correct": false
+      "context": "Two questions decide the major product of an unsymmetrical allylic bromination: which allylic hydrogen is abstracted, and which end of the resulting radical takes the bromine. The answers are the more stable radical and the more stable alkene.",
+      "approach": "Step 1: Locate the allylic positions of 1-methylcyclopentene. Ring carbons C3 and C5 flank the double bond, and the methyl on C1 is allylic too.\nStep 2: Compare the radicals. Abstraction at C3 gives a radical delocalised over C3-C2-C1, with a tertiary terminus at C1; abstraction at C5 gives one with two secondary termini. The radical with the tertiary terminus is the more stable and forms preferentially.\nStep 3: Deliver bromine to that radical. At C3 the trisubstituted double bond is retained; at C1 it moves to a disubstituted position. The trisubstituted product, 3-bromo-1-methylcyclopentene, is the major component.",
+      "note": "This is a mixture in practice; the item asks for the largest component, and the reasoning that identifies it is the same two-step comparison of radical stability and alkene stability used throughout the chapter.",
+      "options": {
+        "A": "Correct. It arises from the more stable allylic radical, and it keeps the trisubstituted alkene, so it wins on both criteria.",
+        "B": "This is the same radical reacting at its tertiary end. It is formed, but relocating the double bond to a disubstituted position makes it less stable than the isomer that keeps the trisubstituted alkene.",
+        "C": "Bromine on the second alkene carbon would be a vinylic bromide. A vinylic C-H is too strong to abstract, and no allylic radical places bromine on an alkene carbon.",
+        "D": "The carbon opposite the double bond is homoallylic on both sides. Its hydrogens are not activated and no delocalised radical reaches it."
       }
-    ],
-    "feedback": {
-      "context": "This question tests the thermodynamic stabilization of double bonds in small rings following radical resonance pathways.",
-      "process": "Step 1: Abstraction of allylic hydrogen from C2 of methylenecyclobutane yields an allylic radical.\nStep 2: The radical has resonance delocalization between C2 and the exocyclic carbon.\nStep 3: Bromination at the exocyclic carbon yields 1-(bromomethyl)cyclobutene, which possesses a more stable, trisubstituted endocyclic double bond that reduces ring strain compared to exocyclic alkenes.",
-      "result": "The thermodynamic major product is 1-(bromomethyl)cyclobutene."
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "Option B was named '1-bromo-1-methylcyclopentene', which is not a valid name (C1 of a cyclopentene is sp2). Its SMILES is 3-bromo-3-methylcyclopentene, a genuine product, so the text now says so.",
+    "structure_alt": "A five-membered ring with one double bond and a methyl group on one of the double-bond carbons."
   },
   {
     "question_id": "ch10_q32_grignard_solvent",
@@ -1269,13 +1433,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the coordination chemistry and solvation requirements of Grignard reagents.",
-      "process": "Step 1: Grignard reagents ($RMgX$) feature a highly polar C-Mg bond where Mg is electron-deficient (a Lewis acid).\nStep 2: Ethers (like diethyl ether or THF) have oxygen atoms with lone pairs that act as Lewis bases.\nStep 3: Two ether molecules coordinate to the magnesium atom, forming a stable tetrahedral complex that keeps the Grignard reagent soluble and active.",
-      "result": "Ether coordinates to and stabilizes the magnesium center via Lewis acid-base interactions."
+      "context": "Magnesium in a Grignard reagent is a Lewis acid with empty orbitals and a positive partial charge. Ether solvents are chosen because their oxygen lone pairs fill those orbitals and because they carry no acidic hydrogen to destroy the reagent.",
+      "approach": "Step 1: Ask what the magnesium needs. It is electron-deficient and two-coordinate in the bare R-Mg-X; it wants ligands.\nStep 2: Match that need to the solvent. Diethyl ether and THF each donate an oxygen lone pair, and two ether molecules typically complete magnesium's coordination sphere, holding the reagent in solution as a stable complex.\nStep 3: Check what the solvent must not do. Water, alcohols and amines all carry protons that a Grignard reagent, a strong base, would remove instantly - so the solvent must be anhydrous and aprotic as well as coordinating.",
+      "note": "Hydrocarbon solvents fail not because they react but because they cannot coordinate; without the ether ligands the Grignard reagent will not form from the metal in useful amounts.",
+      "options": {
+        "A": "Correct. The ether oxygen donates a lone pair into the electron-poor magnesium, and the solvated complex is what keeps the reagent stable and dissolved.",
+        "B": "Grignard formation does involve surface radicals, but ethers are not radical inhibitors; the solvent's job is coordination, not scavenging.",
+        "C": "An ether has no acidic proton to give up, and protonating magnesium metal is not a step in the reaction. A solvent that could protonate would destroy the Grignard reagent it was meant to form.",
+        "D": "The solvent does nothing to the alkyl halide. The reaction occurs at the magnesium surface by electron transfer, and the ether's role is entirely on the magnesium side."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched four-carbon chain with a bromine on the terminal carbon."
   },
   {
     "question_id": "ch10_q33_grignard_oxidation_states",
@@ -1306,13 +1477,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the redox nature of organometallic reagent formation.",
-      "process": "Step 1: In bromobenzene, the ipso carbon is bonded to a more electronegative bromine (C has a positive formal oxidation state in C-Br).\nStep 2: In phenylmagnesium bromide, the carbon is bonded to magnesium, which is electropositive ($chi = 1.31$ vs $2.55$ for C), giving carbon a negative formal charge (reduction).\nStep 3: Magnesium metal starts as $Mg(0)$ and is oxidized to $Mg(II)$ in the organometallic species.",
-      "result": "Carbon is reduced and magnesium is oxidized during Grignard formation."
+      "context": "Forming a Grignard reagent inverts the polarity of a carbon. Bonded to bromine it carries a partial positive charge; bonded to magnesium it carries a partial negative charge. Tracking who lost and who gained electrons shows why the reaction is a redox process.",
+      "approach": "Step 1: Assign the ipso carbon's oxidation state in bromobenzene. Bromine is more electronegative, so that carbon is counted as having lost an electron to it.\nStep 2: Assign the same carbon in phenylmagnesium bromide. Magnesium is less electronegative than carbon, so the carbon now counts as having gained an electron from it. The carbon has gone down by two units - it has been reduced.\nStep 3: Balance it. Magnesium metal, at zero, ends up as Mg(II) bonded to carbon and bromine. It supplied the two electrons and has been oxidised.",
+      "note": "This is why Grignard formation is described as an oxidative insertion of magnesium into the carbon-halogen bond, and why the carbon that results behaves as a carbanion equivalent.",
+      "options": {
+        "A": "Correct. The carbon bonded to bromine gains electron density when its partner switches to the electropositive magnesium, and the magnesium metal is oxidised from zero to plus two in supplying them.",
+        "B": "This has the electrons flowing the wrong way. Magnesium starts as the neutral metal, so it cannot be reduced from Mg(II), and a carbon that trades bromine for magnesium gains electrons rather than losing them.",
+        "C": "Something must be reduced if something is oxidised. Magnesium gives up two electrons and the carbon receives them; they cannot both be oxidised.",
+        "D": "The metal is the electron source and has to be oxidised. Only the carbon is reduced."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A benzene ring bearing a single bromine substituent."
   },
   {
     "question_id": "ch10_q34_grignard_protonation",
@@ -1347,13 +1525,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the strong basicity of Grignard reagents and their reaction with weak acids (deuterium oxide).",
-      "process": "Step 1: Grignard reagents are extremely strong bases (conjugate bases of alkanes, $pK_a \\approx 50$).\nStep 2: They react instantly with proton/deuteron donors such as water or $D_2O$.\nStep 3: Protonation/deuteration of cyclopentylmagnesium bromide with $D_2O$ replaces the $-MgBr$ group with a deuterium atom, yielding monodeuteriocyclopentane.",
-      "result": "The reaction yields monodeuteriocyclopentane."
+      "context": "A Grignard reagent is a strong base, and the simplest thing it does is take a proton from any acid it meets. Heavy water is such an acid, and it hands over a deuteron instead of a proton.",
+      "approach": "Step 1: Recognise the carbon bound to magnesium as carbanion-like and strongly basic.\nStep 2: Treat D2O as the acid. The O-D bond is polarised the same way as O-H, and the carbanion abstracts the deuteron.\nStep 3: The carbon that held magnesium now holds one deuterium; the rest of the ring is untouched. Magnesium leaves as the mixed salt Mg(OD)Br.",
+      "note": "This reaction is how deuterium is placed at a single, chosen carbon - the reverse view of why every trace of moisture must be excluded when a Grignard reagent is being made or used.",
+      "options": {
+        "A": "Correct. The Grignard carbon abstracts one deuteron from D2O, so exactly one deuterium is installed at the former C-Mg position.",
+        "B": "An alcohol would need an oxygen to become bonded to carbon. Deuterium oxide donates a deuteron to the carbanion; its oxygen stays with magnesium as the deuteroxide salt.",
+        "C": "There is no leaving group on the adjacent carbon and no base that could remove a beta hydrogen. Quenching a Grignard reagent does not create a double bond.",
+        "D": "Only one carbon carried magnesium, so only one deuterium is delivered. A second deuterium has no anionic carbon to attach to."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-membered saturated ring with a magnesium-bromide group attached to one carbon."
   },
   {
     "question_id": "ch10_q35_grignard_compatibility",
@@ -1388,12 +1573,18 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the compatibility of functional groups with Grignard reagents.",
-      "process": "Step 1: Grignard reagents are highly basic and nucleophilic.\nStep 2: They are incompatible with acidic protons (such as those in -OH, -NH2, -COOH groups) or electrophilic groups (such as carbonyls, epoxides, nitriles).\nStep 3: 4-bromobutan-1-ol contains an acidic alcohol (-OH) group. As soon as the Grignard reagent starts to form, it will deprotonate the hydroxyl group of another molecule, destroying the reagent.",
-      "result": "4-bromobutan-1-ol is incompatible due to its acidic hydroxyl group."
+      "context": "Any functional group with an acidic hydrogen - hydroxyl, amine, thiol, carboxylic acid, terminal alkyne - will protonate a Grignard reagent as fast as it forms. Such a group must be absent, or protected, before the halide is treated with magnesium.",
+      "approach": "Step 1: Scan each candidate for a hydrogen on an electronegative atom.\nStep 2: 4-bromobutan-1-ol has an O-H. As soon as any R-MgBr forms it removes that proton from another molecule, converting itself to the alkane and the alcohol to a magnesium alkoxide; no useful reagent accumulates.\nStep 3: The other three carry only C-H bonds, none acidic enough to matter, and each gives a normal Grignard reagent.",
+      "note": "The remedy is protection: cap the alcohol as a silyl ether or a tetrahydropyranyl ether, form the Grignard reagent, then remove the protecting group afterwards.",
+      "options": {
+        "A": "Correct. The hydroxyl proton is acidic enough to quench any Grignard reagent formed from the bromide, so the reagent destroys itself as it is made.",
+        "B": "1-bromobutane is the textbook Grignard precursor. It carries nothing acidic and forms butylmagnesium bromide cleanly.",
+        "C": "An isolated alkene is inert toward a Grignard reagent; its vinylic hydrogens are far too weakly acidic to be removed. 4-bromobut-1-ene gives the corresponding Grignard reagent without difficulty.",
+        "D": "Aryl bromides form Grignard reagents readily, and phenylmagnesium bromide is among the most commonly prepared. Aromatic C-H bonds are not acidic enough to interfere."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1425,13 +1616,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the stoichiometry of the preparation of organolithium reagents from alkyl halides.",
-      "process": "Step 1: Write down the balanced chemical equation for the formation of organolithium reagents:\n$R-X + 2\\text{ Li} \\rightarrow R-\\text{Li} + \\text{LiX}$.\nStep 2: For every mole of alkyl halide, 2 moles of lithium metal are required: one mole to form the carbon-lithium bond and one mole to form the lithium halide salt.\nStep 3: Thus, 2 equivalents of lithium metal are required.",
-      "result": "2 equivalents of lithium metal are required."
+      "context": "Lithium is a one-electron metal. Converting a carbon-halogen bond into a carbon-lithium bond and a lithium halide takes two electrons, so it takes two lithium atoms.",
+      "approach": "Step 1: Write the balanced equation: C4H9Br plus 2 Li gives C4H9Li plus LiBr.\nStep 2: Account for the lithium. One atom ends up bonded to carbon in butyllithium; the other ends up as the cation of lithium bromide.\nStep 3: Check the electron budget. Each lithium supplies one electron; the two together reduce the C-Br bond, exactly as one magnesium atom would with its two electrons.",
+      "note": "Magnesium, being divalent, does the same job with one atom and keeps the halide in the same molecule as R-Mg-X. Lithium needs two atoms and ejects the halide as a separate salt.",
+      "options": {
+        "A": "Correct. One lithium bonds to carbon and the second pairs with the bromide; two one-electron metals are needed to supply the two electrons the C-Br bond reduction requires.",
+        "B": "One lithium atom supplies one electron. That leaves the bromide with no counter-ion and the carbon with a half-completed reduction; the equation cannot balance.",
+        "C": "A third lithium has nothing to do. The products are butyllithium and lithium bromide, which together account for exactly two lithium atoms.",
+        "D": "Four equivalents would leave two lithium atoms unreacted. The stoichiometry is fixed by the two electrons the C-Br bond needs."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched four-carbon chain with a bromine on the terminal carbon."
   },
   {
     "question_id": "ch10_q37_lithium_vs_magnesium",
@@ -1462,13 +1660,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the electronic properties and reactivity differences of different organometallic reagents.",
-      "process": "Step 1: Check electronegativity values: $\\chi(\\text{Li}) = 0.98$, $\\chi(\\text{Mg}) = 1.31$, and $\\chi(\\text{C}) = 2.55$.\nStep 2: The electronegativity difference in C-Li (1.57) is greater than in C-Mg (1.24), meaning the C-Li bond has more ionic character.\nStep 3: The greater partial negative charge on the carbon in organolithium reagents makes them more reactive nucleophiles and stronger bases.",
-      "result": "Organolithium reagents are more polar and therefore more reactive than Grignard reagents."
+      "context": "The reactivity of an organometallic reagent tracks how much negative charge sits on carbon, and that is set by the electronegativity gap between carbon and the metal. Lithium is less electronegative than magnesium, so its bond to carbon is the more ionic.",
+      "approach": "Step 1: Compare electronegativities. Lithium is about 1.0, magnesium about 1.3, carbon about 2.5.\nStep 2: The larger gap for lithium puts more negative charge on the carbon, making the C-Li bond closer to a carbanion and lithium cation.\nStep 3: More carbanion character means a stronger base and a stronger nucleophile, so organolithium reagents outdo Grignard reagents on both counts and are the reagent of choice when a Grignard proves too sluggish.",
+      "note": "Both reagents are strong enough to deprotonate water and alcohols; the difference shows when the substrate is hindered or the electrophile is weak, where the organolithium succeeds and the Grignard may not.",
+      "options": {
+        "A": "Correct. The larger electronegativity gap makes the C-Li bond more ionic, concentrating negative charge on carbon and raising both basicity and nucleophilicity.",
+        "B": "Atomic number has no bearing on nucleophilicity here. What matters is the polarity of the metal-carbon bond, and magnesium's higher electronegativity makes that bond the less polar of the two.",
+        "C": "This reverses the electronegativity order. Lithium is the less electronegative metal, which is exactly why its carbon bears more charge and is the stronger base.",
+        "D": "Their reactivity is not identical; organolithiums add to hindered ketones and to esters where Grignard reagents stop, and are used precisely because the two are not interchangeable."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched four-carbon chain with a lithium atom bonded to the terminal carbon."
   },
   {
     "question_id": "ch10_q38_gilman_stoichiometry",
@@ -1499,13 +1704,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the stoichiometry and preparation of Gilman reagents.",
-      "process": "Step 1: The preparation of Gilman reagents ($R_2CuLi$) is a two-step transmetalation.\nStep 2: First, 1 equivalent of $RLi$ reacts with $CuI$ to form the alkylcopper intermediate ($RCu$).\nStep 3: A second equivalent of $RLi$ coordinates to the copper atom to form the soluble cuprate complex: $RCu + RLi \\rightarrow R_2CuLi$. Thus, the ratio is 2 RLi to 1 CuI.",
-      "result": "The correct stoichiometry is 2 RLi + 1 CuI -> R2CuLi + LiI."
+      "context": "A Gilman reagent is a diorganocopper anion paired with a lithium cation. Two organic groups must be delivered to one copper, and each comes from one organolithium.",
+      "approach": "Step 1: Write the product formula, R2CuLi, and count what it contains: two R groups, one copper, one lithium.\nStep 2: Source the R groups. Each organolithium contributes one, so two RLi are required.\nStep 3: Balance the lithium. Two lithiums arrive with the RLi; one stays in R2CuLi and the other leaves as lithium iodide with the iodide from CuI.",
+      "note": "The first equivalent of RLi actually forms the alkylcopper RCu; the second adds to it to give the cuprate. Stopping at one equivalent leaves a far less useful reagent.",
+      "options": {
+        "A": "Correct. Two organolithiums supply the two organic groups on copper, one lithium stays as the counter-ion and the other departs as LiI.",
+        "B": "One equivalent gives the monoalkylcopper RCu, which is not a Gilman reagent. The cuprate requires a second organic group on copper.",
+        "C": "This produces a dialkyl dicopper with no lithium, which is not the reagent and is not what forms. Only one copper is needed per two R groups.",
+        "D": "Three organic groups on copper with two lithiums is not a stable cuprate under these conditions and is not the Gilman formulation R2CuLi."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched four-carbon chain with a lithium atom bonded to the terminal carbon."
   },
   {
     "question_id": "ch10_q39_gilman_coupling",
@@ -1540,13 +1752,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the coupling reaction of Gilman reagents with primary alkyl halides (Corey-Posner, Whitesides-House reaction).",
-      "process": "Step 1: Gilman reagents ($R_2CuLi$) react with primary or secondary alkyl halides ($R'-X$) to form carbon-carbon bonds ($R-R'$).\nStep 2: Here, lithium dimethylcopper (delivers a methyl group) reacts with 1-iodooctane (8 carbons).\nStep 3: The methyl group replaces the iodine atom, yielding a 9-carbon straight chain: nonane.",
-      "result": "The coupling yields nonane."
+      "context": "A Gilman reagent transfers one of its organic groups to the carbon of an alkyl halide, forming a new carbon-carbon bond. The product chain is the halide's skeleton plus the group delivered from copper.",
+      "approach": "Step 1: Identify the two pieces. The halide contributes an eight-carbon chain; lithium dimethylcopper delivers a single methyl.\nStep 2: Join them at the carbon that held iodine. The methyl replaces iodine at C1, extending the unbranched chain by one carbon.\nStep 3: Count: eight plus one gives nonane. Only one of the two methyls on copper is transferred; the other leaves as methylcopper.",
+      "note": "This is the Corey-House synthesis, the one general way in this chapter to make a carbon-carbon bond; it works best with primary halides, since secondary and tertiary ones tend to eliminate instead.",
+      "options": {
+        "A": "Correct. Replacing iodine with one methyl from the cuprate lengthens the eight-carbon chain to the unbranched nine-carbon alkane.",
+        "B": "Decane would require both methyls from the cuprate to add at the same carbon, which cannot happen; only one group is transferred to each halide.",
+        "C": "Octane is what reduction of the iodide would give. Coupling adds a carbon rather than simply replacing iodine with hydrogen.",
+        "D": "A branch at C2 would require the methyl to attach one carbon in from the terminus. The new bond forms at the carbon that bore the iodine, so the product is unbranched."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched eight-carbon chain with an iodine on the terminal carbon."
   },
   {
     "question_id": "ch10_q40_gilman_stereospecificity",
@@ -1570,7 +1789,7 @@ var CH10_QUESTIONS = [
       {
         "option_id": "C",
         "text": "A 1:1 mixture of (E)- and (Z)-oct-3-ene",
-        "smiles": "CCCC/C=C/CC",
+        "smiles": "CCCC/C=C/CC.CCCC/C=C\\CC",
         "is_correct": false
       },
       {
@@ -1581,50 +1800,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the stereochemical course of organocuprate coupling reactions with vinylic halides.",
-      "process": "Step 1: Gilman coupling with vinyl halides proceeds with retention of double bond stereochemistry.\nStep 2: (E)-1-iodohex-1-ene has the (E) configuration.\nStep 3: Replacing the iodine atom with an ethyl group from the diethylcuprate reagent yields oct-3-ene while retaining the (E) stereochemistry: (E)-oct-3-ene.",
-      "result": "The reaction proceeds with retention of configuration to yield (E)-oct-3-ene."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q41_gilman_vs_grignard_conjugate",
-    "topic": "Organometallic reagents",
-    "difficulty_level": "Hard",
-    "question_text": "Which of the following statements correctly describes the difference in reactivity between a Grignard reagent and a Gilman reagent when reacted with cyclohex-2-en-1-one?",
-    "question_smiles": "O=C1C=CCCC1",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "The Grignard reagent undergoes 1,2-addition to the carbonyl carbon, whereas the Gilman reagent undergoes 1,4-addition to the $\\beta$-carbon.",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "The Grignard reagent undergoes 1,4-addition, whereas the Gilman reagent undergoes 1,2-addition.",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "Both reagents undergo 1,2-addition to yield tertiary allylic alcohols.",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Both reagents undergo 1,4-addition to yield saturated ketones.",
-        "is_correct": false
+      "context": "Coupling of a Gilman reagent with a vinylic halide replaces the halogen with the organic group while the double bond stays exactly as it was. The geometry of the alkene is carried straight through into the product.",
+      "approach": "Step 1: Draw (E)-1-iodohex-1-ene: the iodine and the butyl group on opposite sides of the double bond.\nStep 2: Swap iodine for ethyl without disturbing the double bond. The ethyl takes iodine's place, so it and the butyl remain on opposite sides.\nStep 3: Name the product. The chain is now eight carbons with the double bond at C3; the E relationship survives, giving (E)-oct-3-ene.",
+      "note": "This stereospecificity is what makes vinylic cuprate coupling valuable in synthesis: a single geometric isomer of the halide gives a single geometric isomer of the product, with no scrambling.",
+      "options": {
+        "A": "Correct. The double bond is untouched during coupling, so the trans relationship between the two chain fragments in the halide is preserved in the product.",
+        "B": "A Z product would need the double bond to have been broken and re-formed with the groups swapped. Vinylic cuprate coupling does not do that.",
+        "C": "A mixture would mean the alkene geometry was lost somewhere along the way. It is retained, which is exactly what stereospecific means.",
+        "D": "An alkyne would require an elimination that removes two more atoms from the alkene carbons. Coupling substitutes one group for another and leaves the double bond as a double bond."
       }
-    ],
-    "feedback": {
-      "context": "This question tests the differing regiochemistry of organometallic additions to $\\alpha,\\beta$-unsaturated carbonyl systems.",
-      "process": "Step 1: Grignard reagents are highly polar and act as 'hard' nucleophiles, which attack the carbon of the carbonyl group directly (1,2-addition).\nStep 2: Gilman reagents have less polar carbon-copper bonds and act as 'soft' nucleophiles, which selectively attack the conjugate position at the $\\beta$-carbon (1,4-addition).\nStep 3: Thus, Grignard reagents yield allylic alcohols, while Gilman reagents yield substituted ketones.",
-      "result": "Grignard reagents undergo 1,2-addition, whereas Gilman reagents undergo 1,4-addition."
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "Option C claimed a 1:1 E/Z mixture while carrying the key's own single SMILES. A mixture is two structures - dot-disconnected, per the Ch 8 rule."
   },
   {
     "question_id": "ch10_q42_gilman_aryl_coupling",
@@ -1659,12 +1848,18 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the synthetic utility of Gilman reagents in coupling with aryl halides.",
-      "process": "Step 1: Standard organolithium and Grignard reagents do not undergo nucleophilic substitution coupling with aryl halides due to the high barrier to $S_N2$ on $sp^2$ carbons.\nStep 2: Gilman reagents ($R_2CuLi$) are transition metal reagents that can couple with aryl and vinyl halides through a non-classical mechanism.\nStep 3: Reacting lithium dimethylcopper with iodobenzene successfully couples the methyl group to the benzene ring, forming toluene.",
-      "result": "Lithium dimethylcopper couples with iodobenzene to form toluene."
+      "context": "Only certain organometallic reagents can join an sp3 carbon to an aromatic ring without a transition-metal catalyst. The diorganocuprate is the one from this chapter that does it, and it does so with aryl iodides and bromides directly.",
+      "approach": "Step 1: Ask which reagent couples with aryl halides on its own. Lithium diorganocuprates do; Grignard and organolithium reagents do not without a nickel or palladium catalyst.\nStep 2: Pair lithium dimethylcopper with iodobenzene. The methyl transfers to the ring carbon that held iodine, giving toluene and methylcopper.\nStep 3: Eliminate the alternatives by what actually happens: an organolithium performs halogen-lithium exchange with an aryl bromide, and an aqueous base with two halides gives no carbon-carbon bond at all.",
+      "note": "Aryl halides are inert to ordinary SN2 chemistry, so bringing a carbon nucleophile to a benzene ring needs either a cuprate or a catalysed cross-coupling; the palladium-catalysed Suzuki reaction is the modern general answer.",
+      "options": {
+        "A": "Correct. Lithium dimethylcopper couples with aryl iodides directly, replacing iodine with methyl to give toluene.",
+        "B": "A Grignard reagent does not couple with an aryl chloride on its own. This combination needs a nickel or palladium catalyst, and without one it simply does not react.",
+        "C": "No carbon nucleophile is present. Aqueous hydroxide cannot displace chloride from a benzene ring, and bromomethane would at most be hydrolysed to methanol.",
+        "D": "Methyllithium meets bromobenzene and exchanges lithium for bromine, giving phenyllithium and bromomethane. That is halogen-metal exchange, not coupling, and no toluene results."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1700,13 +1895,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the reduction of alkyl halides using active metals in acidic media.",
-      "process": "Step 1: Zinc metal undergoes oxidative insertion into the C-Br bond of 1-bromobutane to form an organozinc intermediate ($R-Zn-Br$).\nStep 2: Organozinc reagents are polar and basic, and are protonated by the surrounding acid ($HCl$).\nStep 3: Protonation replaces the carbon-metal bond with a carbon-hydrogen bond, yielding butane.",
-      "result": "The reaction reduces the alkyl halide to butane."
+      "context": "Zinc in acid is a dissolving-metal reduction. The metal inserts into the carbon-halogen bond to give an organozinc compound, which the acid then protonates. Net result: the halogen is replaced by hydrogen.",
+      "approach": "Step 1: Let zinc metal reduce the C-Br bond, giving butylzinc bromide as the organometallic intermediate.\nStep 2: Protonate the carbon-zinc bond with the acid. The carbanion-like carbon takes a proton and the zinc departs as Zn(II).\nStep 3: The carbon skeleton is unchanged and the bromine has become a hydrogen: butane.",
+      "note": "This is the same two-step logic as making a Grignard reagent and then quenching it with water, compressed into one flask because the acid is present from the start.",
+      "options": {
+        "A": "Correct. Zinc reduces the C-Br bond to an organozinc intermediate, and acid protonates it to the alkane.",
+        "B": "An alkene would require loss of HBr by elimination, which needs a base. Acidic zinc conditions supply hydrogen, not remove it.",
+        "C": "Chloride is present but is not competing with reduction. Swapping one halide for another is a substitution, and the zinc does not perform one.",
+        "D": "A dialkylzinc is not what forms in aqueous acid; the organozinc intermediate that does form is protonated immediately and never survives to be the product."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched four-carbon chain with a bromine on the terminal carbon."
   },
   {
     "question_id": "ch10_q44_grignard_reduction_stereo",
@@ -1741,13 +1943,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests conceptual understanding of stereochemical outcomes when a stereocenter is destroyed during a chemical reaction.",
-      "process": "Step 1: (R)-2-bromobutane has a stereocenter at C2.\nStep 2: Formation of the Grignard reagent ($RMgBr$) followed by protonation ($H_2O$) replaces the C-MgBr bond with a C-H bond.\nStep 3: The C2 carbon is now bonded to two identical hydrogen atoms, which destroys the stereocenter and yields butane. Butane is achiral and optically inactive.",
-      "result": "The product is achiral butane, which is optically inactive."
+      "context": "A stereocentre exists only while its carbon carries four different groups. Reducing a carbon-halogen bond to a carbon-hydrogen bond can leave that carbon with two identical hydrogens, at which point the question of configuration disappears.",
+      "approach": "Step 1: Form the Grignard reagent from (R)-2-bromobutane; magnesium replaces bromine at C2.\nStep 2: Quench with water. A proton replaces the magnesium, so C2 now carries a hydrogen where the bromine was.\nStep 3: Inspect C2 of the product. It bears a methyl, an ethyl and two hydrogens. Two identical substituents means no stereocentre, so butane is achiral and has no R or S to report.",
+      "note": "The Grignard carbon itself is not configurationally stable and would racemise anyway, but that detail is irrelevant here: whatever happened at the intermediate, the product cannot hold a configuration.",
+      "options": {
+        "A": "Correct. C2 ends with two hydrogens, so butane has no stereocentre and no optical activity is possible.",
+        "B": "Butane has no stereocentre, so there is no (R)-butane. The descriptor cannot be assigned to a carbon carrying two hydrogens.",
+        "C": "There is no (S)-butane for the same reason: the carbon that was a stereocentre now bears two identical substituents.",
+        "D": "A racemic mixture requires a pair of enantiomers to exist. Butane is achiral, so it has no enantiomer and cannot form a racemate."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched four-carbon chain with a bromine on the second carbon, drawn with wedge-and-dash stereochemistry at that carbon."
   },
   {
     "question_id": "ch10_q45_lah_reduction",
@@ -1778,13 +1987,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the substitution reduction of alkyl halides using hydride reagents.",
-      "process": "Step 1: Primary alkyl halides are good substrates for nucleophilic substitution reactions.\nStep 2: Lithium aluminum hydride ($LiAlH_4$) is a powerful nucleophilic source of hydride ($H^-$) ions.\nStep 3: Hydride attacks the primary carbon, displacing the halide leaving group via an $S_N2$ mechanism to yield the reduced alkane. $NaBH_4$ is not nucleophilic enough for this transformation.",
-      "result": "$LiAlH_4$ reduces primary alkyl halides to alkanes via an $S_N2$ pathway."
+      "context": "A primary alkyl halide can be reduced to an alkane by a hydride reagent nucleophilic enough to displace the halide directly. That reagent is lithium aluminium hydride, which delivers hydride as an SN2 nucleophile at the unhindered carbon.",
+      "approach": "Step 1: Ask which reagents supply a nucleophilic hydride. Only LiAlH4 among the four does so with enough strength to attack an sp3 carbon.\nStep 2: Let hydride attack C1 from the back side and expel bromide - a textbook SN2 with H- as the nucleophile.\nStep 3: Reject the others on mechanism. Sodium borohydride is too weak a hydride donor for alkyl halides, zinc in acid works by electron transfer rather than hydride displacement, and hydrogen over palladium operates on the metal surface.",
+      "note": "The same reactivity that lets LiAlH4 attack an alkyl halide is why it must be kept from water and why it is never used on a substrate that carries an acidic proton the hydride would remove first.",
+      "options": {
+        "A": "Correct. LiAlH4 is a strong enough hydride nucleophile to displace bromide from a primary carbon by an SN2 pathway.",
+        "B": "Sodium borohydride reduces aldehydes and ketones but is too weak to displace a halide from an sp3 carbon under ordinary conditions.",
+        "C": "Zinc in acid does reduce alkyl halides, but through an organozinc intermediate formed by electron transfer, not by SN2 attack of a hydride.",
+        "D": "Catalytic hydrogenolysis over palladium can cleave C-halogen bonds, but it does so on the metal surface with no hydride nucleophile and no SN2 mechanism."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched four-carbon chain with a bromine on the terminal carbon."
   },
   {
     "question_id": "ch10_q46_zinc_reduction_mechanism",
@@ -1815,13 +2031,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the electron-transfer mechanism involved in active metal reductions.",
-      "process": "Step 1: Zinc metal ($Zn^0$) is a strong reducing agent.\nStep 2: It transfers two electrons to the C-X bond, inserting into the bond to form an alkylzinc halide ($R-Zn-X$) intermediate.\nStep 3: The C-Zn bond is polarized with a partial negative charge on carbon, allowing rapid protonation by acid.",
-      "result": "Zinc acts as a reducing agent by transferring electrons to form an organozinc intermediate."
+      "context": "A metal used as a reducing agent works by giving away electrons. Zinc has two to give, which is exactly what converting a carbon-halogen bond into a carbon-metal bond requires.",
+      "approach": "Step 1: Zinc metal transfers two electrons to the alkyl halide, inserting itself between carbon and halogen to form an alkylzinc halide, R-Zn-X.\nStep 2: That organozinc carbon is now nucleophilic and basic, the same polarity reversal seen with magnesium.\nStep 3: Hydronium ion protonates the carbon-zinc bond, releasing the alkane and Zn(II). The zinc is consumed as it is oxidised.",
+      "note": "This is stoichiometric in zinc, not catalytic; the metal is a reagent that ends up as a salt, which distinguishes it from the palladium in a catalysed reduction.",
+      "options": {
+        "A": "Correct. Zinc supplies two electrons to the C-X bond, forming an organozinc intermediate whose carbon is then protonated by the acid.",
+        "B": "A Lewis acid role would leave the zinc unchanged and would call for a nucleophile to attack carbon. Water is far too weak a nucleophile for that, and zinc is visibly consumed in the reaction.",
+        "C": "The zinc surface does supply electrons one at a time, but the net transfer is two electrons to form a bound organozinc species, and the reaction shows no radical products.",
+        "D": "Zinc is oxidised, but by transferring electrons to the C-X bond, not to the halide. A halide ion was never going to act as a nucleophile in an acidic reduction."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "An unbranched four-carbon chain with a bromine on the terminal carbon."
   },
   {
     "question_id": "ch10_q47_gilman_structure",
@@ -1852,54 +2075,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the identification and general chemical formulas of organometallic reagents.",
-      "process": "Step 1: Grignard reagents have the general formula $RMgX$.\nStep 2: Organolithium reagents have the general formula $RLi$.\nStep 3: Gilman reagents are lithium dialkylcopper complexes with the general formula $R_2CuLi$.",
-      "result": "The general formula of a Gilman reagent is $R_2CuLi$."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q48_grignard_carboxylation",
-    "topic": "Organometallic reagents",
-    "difficulty_level": "Medium",
-    "question_text": "Reaction of ethylmagnesium bromide with carbon dioxide ($CO_2$), followed by acidic workup, yields which of the following compounds?",
-    "question_smiles": "CC[Mg]Br",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "propanoic acid",
-        "smiles": "CCC(=O)O",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "ethanoic acid",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "butanoic acid",
-        "smiles": "CCCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "propan-1-ol",
-        "smiles": "CCCO",
-        "is_correct": false
+      "context": "Each of the chapter's organometallic reagents has a characteristic formula: R-MgX for a Grignard reagent, R-Li for an organolithium, and R2CuLi for a Gilman reagent, where two organic groups are attached to copper.",
+      "approach": "Step 1: Recall how a Gilman reagent is made - two organolithiums added to one copper(I) iodide.\nStep 2: Write what that produces: a copper carrying two R groups, negatively charged, with lithium as the cation. That is R2CuLi, a lithium diorganocuprate.\nStep 3: Distinguish it from the monoalkylcopper RCu, which is the intermediate after one equivalent, and from the magnesium and lithium reagents, which contain no copper.",
+      "note": "The formula R2CuLi is the composition rather than the structure; in solution the reagent exists as aggregates with ether ligands, but the two-groups-on-copper description is what governs its reactivity.",
+      "options": {
+        "A": "Correct. Two organic groups on a copper centre, balanced by a lithium cation, is the Gilman reagent.",
+        "B": "A single organic group on copper is the monoalkylcopper intermediate. It lacks the second group and the lithium counter-ion that define a cuprate.",
+        "C": "R-MgX contains magnesium and a halogen, not copper. It is a Grignard reagent.",
+        "D": "R-Li is the organolithium used to make a Gilman reagent, but it contains no copper and is not itself one."
       }
-    ],
-    "feedback": {
-      "context": "This question tests the reaction of Grignard reagents with carbon dioxide to synthesize carboxylic acids.",
-      "process": "Step 1: The nucleophilic ethyl group attacks the electrophilic carbon of $CO_2$.\nStep 2: This forms a carboxylate salt intermediate: $CH_3CH_2-COO^- [^+MgBr]$.\nStep 3: Acidic workup protonates the carboxylate to yield propanoic acid, adding one carbon to the original alkyl chain.",
-      "result": "The reaction yields propanoic acid."
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A copper atom bonded to two methyl groups, with a lithium atom associated with it."
   },
   {
     "question_id": "ch10_q49_allylic_chlorination_temp",
@@ -1930,54 +2119,20 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the thermodynamic and kinetic factors governing addition vs substitution reactions in alkenes at different temperatures.",
-      "process": "Step 1: Electrophilic addition of $Cl_2$ to propene combines two molecules into one ($\\Delta S < 0$).\nStep 2: According to $\\Delta G = \\Delta H - T\\Delta S$, at high temperatures ($T$), the $-T\\Delta S$ term becomes large and positive, making addition thermodynamically unfavorable and reversible.\nStep 3: Radical substitution (which has $\\Delta S \\approx 0$) remains favorable, allowing 3-chloropropene to accumulate as the major product.",
-      "result": "High temperatures thermodynamically disfavor addition reactions due to entropy, favoring radical substitution."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q50_grignard_ketone",
-    "topic": "Organometallic reagents",
-    "difficulty_level": "Medium",
-    "question_text": "Treatment of pentan-2-one with phenylmagnesium bromide followed by acidic workup yields which of the following compounds?",
-    "question_smiles": "CCCC(=O)C",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "2-phenylpentan-2-ol",
-        "smiles": "CCCC(O)(C)c1ccccc1",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "2-phenylpentan-3-ol",
-        "smiles": "CCC(O)(c1ccccc1)CC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "1-phenylpentan-2-ol",
-        "smiles": "CCCC(O)Cc1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "pentan-2-ol",
-        "smiles": "CCCC(O)C",
-        "is_correct": false
+      "context": "Addition and substitution compete for an alkene, and temperature can switch the outcome because the two pathways differ in entropy. An addition combines two molecules into one; a substitution keeps the molecule count constant.",
+      "approach": "Step 1: Write the thermodynamics of addition. Two molecules become one, so the entropy change is strongly negative and the T-delta-S term grows with temperature.\nStep 2: At 400 degrees the entropy penalty overwhelms the enthalpy gain, so the free energy of addition turns positive and any dichloride that forms reverts to propene and chlorine.\nStep 3: Substitution has a near-zero entropy change and stays favourable. At the same time, heat homolyses Cl2 to chlorine radicals, which abstract the allylic hydrogen and deliver 3-chloropropene.",
+      "note": "This is how allyl chloride is made industrially, and it is a rare case in which raising the temperature changes which product forms rather than just how fast it forms.",
+      "options": {
+        "A": "Correct. The bimolecular addition loses entropy, so at high temperature it becomes reversible and unfavourable, leaving the radical substitution as the productive pathway.",
+        "B": "Chlorine radicals form readily at room temperature under light. Their existence is not temperature-limited; what changes at 400 degrees is the thermodynamics of the competing addition.",
+        "C": "Bond strengths do not rise with temperature. If anything the allylic C-H is the easiest bond in propene to break, which is why substitution occurs there.",
+        "D": "The chloronium ion is an intermediate of the addition pathway, the one being shut down. Making it more stable would favour addition, the opposite of what is observed."
       }
-    ],
-    "feedback": {
-      "context": "This question tests the addition of Grignard reagents to ketones to synthesize tertiary alcohols.",
-      "process": "Step 1: Phenylmagnesium bromide acts as a phenyl nucleophile ($Ph^-$).\nStep 2: Nucleophilic attack occurs at the carbonyl carbon of pentan-2-one, yielding an alkoxide intermediate.\nStep 3: Protonation of the alkoxide during acidic workup yields the tertiary alcohol 2-phenylpentan-2-ol.",
-      "result": "The product is 2-phenylpentan-2-ol."
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A three-carbon chain with a terminal carbon-carbon double bond."
   },
   {
     "question_id": "ch10_q_dynamic_radical_bromination",
@@ -1991,7 +2146,7 @@ var CH10_QUESTIONS = [
       "reagents": "Br2, light",
       "conditions": "radical pathway",
       "products": [
-        "CC(Br)C"
+        "?"
       ]
     },
     "options": [
@@ -2017,69 +2172,29 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Assessing regiochemistry of radical halogenations.",
-      "process": "Bromine radicals are highly selective. Propane contains primary and secondary hydrogens. Abstraction of secondary hydrogen yields a secondary radical (stable), which reacts with Br2 to give 2-bromopropane.",
-      "result": "The major product is 2-bromopropane."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q1",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
+      "context": "Propane offers two kinds of hydrogen: six primary on the two methyls and two secondary on the central carbon. Statistics favour the primary site three to one; bromine's selectivity overwhelms that.",
+      "approach": "Step 1: Count the hydrogens by type - six primary, two secondary.\nStep 2: Weight for bromination at roughly 1 : 82. Primary scores 6 x 1 = 6; secondary scores 2 x 82 = 164.\nStep 3: The secondary position wins by more than twenty-five to one, so 2-bromopropane is the major product. The secondary radical is the more stable, and bromine's late transition state feels that difference.",
+      "note": "Chlorination of the same substrate at room temperature gives 2-chloropropane and 1-chloropropane in roughly equal amounts - the reagent, not the alkane, sets the selectivity.",
+      "options": {
+        "A": "Correct. The secondary radical is more stable, and the endothermic bromine abstraction has a late enough transition state to select strongly for it.",
+        "B": "Statistics alone would favour the six primary hydrogens, but bromine's roughly 82-fold preference for the secondary position swamps the three-to-one head count.",
+        "C": "A dibromide needs a second substitution or an addition across a double bond. Propane has no double bond, and under monobromination conditions a second bromine is a minor event.",
+        "D": "Radical halogenation substitutes; it does not eliminate. Nothing in the mechanism removes hydrogen from two adjacent carbons to build a double bond."
       }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "The reaction scheme drew the product CC(Br)C beside a question that asks for it - an answer leak. Products are now the placeholder, and reactant_alts is added as every scheme item requires.",
+    "reactant_alts": [
+      "An unbranched three-carbon chain."
+    ]
   },
   {
-    "question_id": "ch10_q2",
+    "question_id": "ch10_q1_isobutane_bromination",
     "topic": "Radical Halogenation",
     "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "question_text": "What is the major monobromination product of 2-methylpropane under the conditions shown?",
     "reaction_scheme": {
       "reactants": [
         "CC(C)C"
@@ -2093,4687 +2208,47 @@ var CH10_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
+        "text": "2-bromo-2-methylpropane",
+        "smiles": "CC(C)(C)Br",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
+        "text": "1-bromo-2-methylpropane",
+        "smiles": "CC(C)CBr",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
+        "text": "1,2-dibromo-2-methylpropane",
+        "smiles": "CC(C)(Br)CBr",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q3",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q4",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q5",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q6",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q7",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q8",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q9",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q10",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q11",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q12",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q13",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q14",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q15",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q16",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q17",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q18",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q19",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q20",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q21",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q22",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q23",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q24",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q25",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q26",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q27",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q28",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q29",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q30",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q31",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q32",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q33",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q34",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q35",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q36",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q37",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q38",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q39",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q40",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q41",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q42",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q43",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q44",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q45",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q46",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q47",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q48",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q49",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q50",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)=C",
+        "text": "2-methylpropene",
         "smiles": "CC(C)=C",
         "is_correct": false
       }
     ],
     "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q51",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
+      "context": "2-methylpropane is the cleanest test of bromine's selectivity: it has nine primary hydrogens and one tertiary hydrogen, and nothing else. If the tertiary product dominates here, the selectivity argument is doing all the work.",
+      "approach": "Step 1: Count the hydrogens - nine primary on three methyls, one tertiary on the central carbon.\nStep 2: Weight for bromination at roughly 1 : 1600 for primary against tertiary. Primary scores 9; tertiary scores 1600.\nStep 3: The tertiary bromide is more than ninety-nine percent of the monobromination product. The single tertiary C-H is the weakest bond in the molecule, and bromine's late transition state selects for the tertiary radical it leads to.",
+      "note": "Chlorination of the same alkane gives about two-thirds primary chloride, because chlorine's early transition state barely notices the difference in radical stability - the substrate is identical; the reagent decides.",
+      "options": {
+        "A": "Correct. The lone tertiary hydrogen is weighted about 1600 to 1 over each primary hydrogen, so bromine ends up on the central carbon almost exclusively.",
+        "B": "This is the primary bromide that statistics alone would predict, nine hydrogens against one. Under bromination the 1600-fold reactivity difference reverses that expectation completely.",
+        "C": "A second bromine requires a second substitution, and with excess alkane and limited bromine the monobromide is the product. This is what an over-reaction, not a selective monobromination, would give.",
+        "D": "Radical bromination substitutes a hydrogen; it does not eliminate two atoms to form a double bond. An alkene would need a base and a leaving group, neither of which is present."
       }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q52",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q53",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q54",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q55",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q56",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q57",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q58",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q59",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "Brc1ccccc1",
-        "smiles": "Brc1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q60",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCCBr",
-        "smiles": "CCCBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q61",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q62",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q63",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q64",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q65",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q66",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q67",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q68",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q69",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q70",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "OS(=O)(=O)c1ccccc1",
-        "smiles": "OS(=O)(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q71",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q72",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q73",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)C(Br)",
-        "smiles": "CC(Br)C(Br)",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q74",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC1OC1",
-        "smiles": "CC1OC1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q75",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCOC(C)=O",
-        "smiles": "CCOC(C)=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q76",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q77",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q78",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCO",
-        "smiles": "CCO",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q79",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "C1CC=CCC1",
-        "smiles": "C1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q80",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q81",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCCO",
-        "smiles": "CCCO",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q82",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q83",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CCC",
-        "smiles": "CCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q84",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)=C",
-        "smiles": "CC(C)=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(=O)c1ccccc1",
-        "smiles": "CC(=O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(=O)O",
-        "smiles": "CC(=O)O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q85",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CCC(=O)O",
-        "smiles": "CCC(=O)O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q86",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q87",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q88",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC=O",
-        "smiles": "CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)=O",
-        "smiles": "CC(C)=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q89",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C)c1ccccc1",
-        "smiles": "CC(C)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)C",
-        "smiles": "CC(O)C",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q90",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(O)CC=O",
-        "smiles": "CC(O)CC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(O)C(Br)",
-        "smiles": "CC(O)C(Br)",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q91",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q92",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "C",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "COCC",
-        "smiles": "COCC",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q93",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "[N+](=O)([O-])c1ccccc1",
-        "smiles": "[N+](=O)([O-])c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "O=CC1CC=CCC1",
-        "smiles": "O=CC1CC=CCC1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q94",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Medium",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CC=C",
-        "smiles": "CC=C",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(C)(O)C",
-        "smiles": "CC(C)(O)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(C#N)C",
-        "smiles": "CC(C#N)C",
-        "is_correct": false
-      },
-      {
-        "option_id": "D",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
-  },
-  {
-    "question_id": "ch10_q95",
-    "topic": "Radical Halogenation",
-    "difficulty_level": "Hard",
-    "question_text": "What is the major organic product formed in the following reaction sequence?",
-    "reaction_scheme": {
-      "reactants": [
-        "CC(C)C"
-      ],
-      "reagents": "Br2, light",
-      "conditions": "hv",
-      "products": [
-        "?"
-      ]
-    },
-    "options": [
-      {
-        "option_id": "A",
-        "text": "CCC=O",
-        "smiles": "CCC=O",
-        "is_correct": false
-      },
-      {
-        "option_id": "B",
-        "text": "CC(O)c1ccccc1",
-        "smiles": "CC(O)c1ccccc1",
-        "is_correct": false
-      },
-      {
-        "option_id": "C",
-        "text": "CC(Br)(C)C",
-        "smiles": "CC(Br)(C)C",
-        "is_correct": true
-      },
-      {
-        "option_id": "D",
-        "text": "C(Br)CBr",
-        "smiles": "C(Br)CBr",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Studying reaction mechanisms: Radical Halogenation.",
-      "process": "Radical bromination of isobutane selectively yields t-butyl bromide at the tertiary C-H position.",
-      "result": "The product is CC(Br)(C)C."
-    },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "The one survivor of the 95-copy isobutane family. Its junk distractors (nitrobenzene, dimethyl ether, a cyclohexene aldehyde) are replaced by the three chemically real ones: the primary bromide, the dibromide from over-reaction, and the alkene a student confuses substitution with. Only two C4H9Br isomers exist on this skeleton, so two distractors necessarily differ in formula.",
+    "reactant_alts": [
+      "A central carbon bearing three methyl groups and one hydrogen."
+    ]
   },
   {
     "question_id": "ch10_q4_ligand_exchange",
@@ -6856,12 +2331,18 @@ var CH10_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests ligand exchange/organometallic mechanisms.",
-      "process": "Step 1: Identify the components: an organometallic donor (e.g. organoboron in Suzuki coupling) and a palladium complex.\nStep 2: The transfer of the organic group from boron to palladium is a ligand exchange between two metals.\nStep 3: This process is known as transmetalation.",
-      "result": "The step is transmetalation."
+      "context": "A palladium-catalysed cross-coupling turns on three named steps. Oxidative addition puts the halide's organic group on palladium, transmetalation brings the second organic group across from a main-group metal, and reductive elimination joins the two and releases the catalyst.",
+      "approach": "Step 1: Identify the two metals involved in the step described - a main-group metal such as boron or tin holding an organic group, and palladium waiting to receive it.\nStep 2: Watch the organic group move from the main-group metal to palladium while the halide moves the other way. Palladium's oxidation state does not change.\nStep 3: A transfer of an organic group between two metals at constant oxidation state is transmetalation - the step that distinguishes a Suzuki or Stille coupling from a simple oxidative addition.",
+      "note": "This is the step the base in a Suzuki reaction accelerates: it converts the boronic acid into a boronate that hands its organic group to palladium far more readily.",
+      "options": {
+        "A": "Oxidative addition is the step that inserts palladium into the aryl-halide bond, raising palladium from zero to plus two. No second metal is involved.",
+        "B": "Reductive elimination is the final step, in which the two organic groups on palladium couple and leave, returning palladium to zero. It creates the product bond rather than moving a group between metals.",
+        "C": "Correct. The organic group is exchanged from boron or tin onto palladium without any change in palladium's oxidation state, which is what the term describes.",
+        "D": "Carbometalation is the insertion of an alkene into a metal-carbon bond, as in the Heck reaction. It builds a new carbon-carbon bond at the metal rather than exchanging groups between two metals."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   }
 ];

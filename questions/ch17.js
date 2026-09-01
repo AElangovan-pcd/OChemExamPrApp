@@ -14376,5 +14376,46 @@ var CH17_QUESTIONS = [
     "key_status": "unverified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q50_grignard_ketone",
+    "topic": "Organometallic reagents",
+    "difficulty_level": "Medium",
+    "question_text": "Treatment of pentan-2-one with phenylmagnesium bromide followed by acidic workup yields which of the following compounds?",
+    "question_smiles": "CCCC(=O)C",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "2-phenylpentan-2-ol",
+        "smiles": "CCCC(O)(C)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "2-phenylpentan-3-ol",
+        "smiles": "CCC(O)(c1ccccc1)CC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "1-phenylpentan-2-ol",
+        "smiles": "CCCC(O)Cc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "pentan-2-ol",
+        "smiles": "CCCC(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "This question tests the addition of Grignard reagents to ketones to synthesize tertiary alcohols.",
+      "process": "Step 1: Phenylmagnesium bromide acts as a phenyl nucleophile ($Ph^-$).\nStep 2: Nucleophilic attack occurs at the carbonyl carbon of pentan-2-one, yielding an alkoxide intermediate.\nStep 3: Protonation of the alkoxide during acidic workup yields the tertiary alcohol 2-phenylpentan-2-ol.",
+      "result": "The product is 2-phenylpentan-2-ol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

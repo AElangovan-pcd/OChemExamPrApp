@@ -47,5 +47,42 @@ var CH19_QUESTIONS = [
     "key_status": "unverified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch19_q41_gilman_vs_grignard_conjugate",
+    "topic": "Organometallic reagents",
+    "difficulty_level": "Hard",
+    "question_text": "Which of the following statements correctly describes the difference in reactivity between a Grignard reagent and a Gilman reagent when reacted with cyclohex-2-en-1-one?",
+    "question_smiles": "O=C1C=CCCC1",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "The Grignard reagent undergoes 1,2-addition to the carbonyl carbon, whereas the Gilman reagent undergoes 1,4-addition to the $\\beta$-carbon.",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "The Grignard reagent undergoes 1,4-addition, whereas the Gilman reagent undergoes 1,2-addition.",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Both reagents undergo 1,2-addition to yield tertiary allylic alcohols.",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Both reagents undergo 1,4-addition to yield saturated ketones.",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "This question tests the differing regiochemistry of organometallic additions to $\\alpha,\\beta$-unsaturated carbonyl systems.",
+      "process": "Step 1: Grignard reagents are highly polar and act as 'hard' nucleophiles, which attack the carbon of the carbonyl group directly (1,2-addition).\nStep 2: Gilman reagents have less polar carbon-copper bonds and act as 'soft' nucleophiles, which selectively attack the conjugate position at the $\\beta$-carbon (1,4-addition).\nStep 3: Thus, Grignard reagents yield allylic alcohols, while Gilman reagents yield substituted ketones.",
+      "result": "Grignard reagents undergo 1,2-addition, whereas Gilman reagents undergo 1,4-addition."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];
