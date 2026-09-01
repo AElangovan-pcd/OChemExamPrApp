@@ -120,6 +120,55 @@ header {
   gap: 0.75rem;
 }
 
+/* Performance readout in the banner. Compact enough to sit beside the mode tabs, so
+   the workspace keeps the width that a roadmap or reaction scheme actually needs. */
+.header-stats {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.3rem 0.75rem;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: 12px;
+}
+
+.header-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.header-stat-val {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.header-stat-label {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.header-stat-reset {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  transition: var(--transition-smooth);
+}
+
+.header-stat-reset:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .btn {
   background: var(--bg-card);
   color: var(--text-primary);
@@ -162,31 +211,12 @@ header {
   padding: 1.5rem 1.5rem;
   display: grid;
   /* minmax(0, 1fr) rather than 1fr: a bare 1fr track has an auto minimum, so a wide
-     structure canvas or spectrum would push the workspace past the viewport. */
-  grid-template-columns: 280px minmax(0, 1fr) 280px;
+     structure canvas or spectrum would push the workspace past the viewport.
+     Performance moved into the header, so there is no third rail competing with the
+     workspace and no breakpoint at which one has to be folded away. */
+  grid-template-columns: 280px minmax(0, 1fr);
   gap: 2.25rem;
   flex: 1;
-}
-
-/* Mock Exam has no Performance panel, so the right column is dropped entirely
-   rather than left as an empty track (an empty track still contributes its gap). */
-.app-container.mock-layout {
-  grid-template-columns: 280px minmax(0, 1fr);
-}
-
-/* Between the mobile stack and a genuinely wide desktop there is not room for two
-   280px rails plus a readable structure canvas - at 1038px the workspace collapsed
-   to 291px. Below 1280px, Performance becomes a full-width band under the question
-   instead of a third rail. */
-@media (min-width: 961px) and (max-width: 1279px) {
-  .app-container {
-    grid-template-columns: 280px minmax(0, 1fr);
-  }
-
-  .sidebar-right {
-    grid-column: 1 / -1;
-    position: static;
-  }
 }
 
 /* Sidebar Dashboard */
@@ -671,8 +701,7 @@ header {
 
 /* Responsive Breakpoints */
 @media (max-width: 960px) {
-  .app-container,
-  .app-container.mock-layout {
+  .app-container {
     grid-template-columns: 1fr;
   }
 
@@ -1285,6 +1314,16 @@ header {
   margin-bottom: 0.25rem;
 }
 
+/* The reagents that produced this node. pre-line so a multi-line sequence
+   ("1. 2 NaNH2, NH3\n2. H3O+") keeps its numbered steps on separate lines. */
+.roadmap-edge-label {
+  font-size: 0.7rem;
+  line-height: 1.3;
+  color: var(--text-secondary);
+  white-space: pre-line;
+  margin-bottom: 0.35rem;
+}
+
 .roadmap-structure {
   background: var(--bg-structure);
   border-radius: 6px;
@@ -1292,6 +1331,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+}
+
+/* drawSMILESCanvas sets the canvas to 320x200 regardless of the width attribute in
+   the markup, which overflowed the node cell. Scale it to whatever the cell allows. */
+.roadmap-structure canvas {
+  max-width: 100%;
+  height: auto;
 }
 
 .btn-sort {

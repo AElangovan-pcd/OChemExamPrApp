@@ -831,14 +831,12 @@ function showToast(message, type = 'success') {
 // ==========================================================================
 
 // Switch app mode between 'practice' and 'mock'
-// The Performance panel lives in the right sidebar and is practice-mode only.
-// Hiding the aside on its own would leave an empty grid track, and an empty track
-// still contributes its gap - so the container drops to two columns at the same time.
+// Performance is practice-mode only and now lives in the header rather than a third
+// grid rail, so hiding it no longer has to change the layout - the workspace is already
+// full width in both modes, which is what a roadmap or reaction scheme needs.
 function setRightSidebarVisible(visible) {
-  const right = document.getElementById('sidebar-right');
-  const container = document.querySelector('.app-container');
-  if (right) right.style.display = visible ? '' : 'none';
-  if (container) container.classList.toggle('mock-layout', !visible);
+  const stats = document.getElementById('header-stats');
+  if (stats) stats.style.display = visible ? '' : 'none';
 }
 
 function setAppMode(mode) {
@@ -2161,8 +2159,11 @@ function drawSyntheticRoadmap(containerId, roadmap) {
   const maxX = Math.max(...xs, 1);
   const maxY = Math.max(...ys, 1);
   
-  grid.style.gridTemplateColumns = `repeat(${maxX}, 160px)`;
-  grid.style.gridTemplateRows = `repeat(${maxY}, 130px)`;
+  // drawSMILESCanvas resizes the canvas to 320x200, so a 160px column left every
+  // roadmap structure overflowing halfway into the next node's cell. The column is
+  // wider now and .roadmap-structure canvas scales the drawing down to fit it.
+  grid.style.gridTemplateColumns = `repeat(${maxX}, 200px)`;
+  grid.style.gridTemplateRows = `repeat(${maxY}, minmax(130px, auto))`;
   
   roadmap.nodes.forEach(node => {
     const nodeEl = document.createElement('div');
@@ -2175,7 +2176,17 @@ function drawSyntheticRoadmap(containerId, roadmap) {
       structureHtml = `<div class="roadmap-structure"><canvas id="${containerId}-node-${node.id}" width="140" height="80"></canvas></div>`;
     }
     
+    // roadmap.edges carries the reagent for each step. It was parsed and never drawn, so
+    // every roadmap in the bank rendered as unlabelled boxes with no transformation between
+    // them - unanswerable except by reading the structures, which on an "identify A, B and C"
+    // item is the answer. Each node now states the step that reached it.
+    const incoming = (roadmap.edges || [])
+      .filter(e => e.to === node.id && e.reagents)
+      .map(e => e.reagents)
+      .join('; ');
+
     nodeEl.innerHTML = `
+      ${incoming ? `<div class="roadmap-edge-label">&#8594; ${incoming}</div>` : ''}
       <div class="roadmap-node-label">${node.label}</div>
       ${structureHtml}
     `;
