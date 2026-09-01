@@ -2800,5 +2800,54 @@ var CH11_QUESTIONS = [
     "feedback_status": "tailored",
     "provenance": "original",
     "_why": "The Ch 6 refiling the instructor said to keep. Drew methanol beside a question about four anions - decorative, dropped. Option C was a scrambled order with no misreading behind it; now the electronegativity order. LaTeX markup replaced with plain text."
+  },
+  {
+    "question_id": "ch11_q57_williamson_route_choice",
+    "topic": "SN2 Mechanism: Williamson Ether Synthesis",
+    "difficulty_level": "Medium",
+    "question_text": "Which combination of reagents is the better route to 2-ethoxy-2-methylpropane (tert-butyl ethyl ether) by the Williamson ether synthesis?",
+    "question_smiles": "CCOC(C)(C)C",
+    "structure_alt": "An oxygen bonded to an ethyl group on one side and to a carbon bearing three methyl groups on the other.",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Sodium tert-butoxide and bromoethane",
+        "smiles": "",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Sodium ethoxide and 2-bromo-2-methylpropane",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Ethanol and 2-methylpropan-2-ol with concentrated sulfuric acid, heated",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Sodium ethoxide and 2-methylpropan-2-ol",
+        "smiles": "",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "The Williamson synthesis is an SN2 reaction, and every rule from this chapter applies to it: the alkoxide is the nucleophile, the halide is the electrophile, and the carbon under attack has to be one a nucleophile can reach. An unsymmetrical ether can be split into alkoxide and halide two ways, and usually only one of them works.",
+      "approach": "Step 1: Disconnect the target at the C-O bond both ways: tert-butoxide plus an ethyl halide, or ethoxide plus a tert-butyl halide.\nStep 2: Apply the SN2 substrate rule. Bromoethane is primary and open to backside attack; 2-bromo-2-methylpropane is tertiary and cannot be attacked at all.\nStep 3: An alkoxide is a strong base, so with the tertiary halide it removes a beta-hydrogen instead and the product is 2-methylpropene. The working route is tert-butoxide with bromoethane, bulky nucleophile and all - the hindrance that matters is on the carbon being attacked, not on the oxygen.",
+      "note": "The alkoxide is made first, from the alcohol with sodium hydride or sodium metal, and the halide is added afterwards. Ch 18 takes the reaction further - intramolecular versions, tosylates as the electrophile, and the alkoxymercuration route to the ethers Williamson cannot make.",
+      "options": {
+        "A": "Correct. Put the leaving group on the primary carbon, where SN2 is fast, and let the hindered tert-butoxide be the nucleophile; a bulky nucleophile still reaches an unhindered CH2.",
+        "B": "Ethoxide meeting a tertiary bromide gives E2, not SN2 - the tertiary carbon is blocked from behind and the alkoxide is a strong base. The product is 2-methylpropene, with almost no ether.",
+        "C": "Acid-catalyzed ether formation works for two molecules of a primary alcohol. A tertiary alcohol in hot sulfuric acid ionizes and loses a proton instead, giving the alkene rather than any ether.",
+        "D": "An alcohol is not an electrophile: hydroxide is far too poor a leaving group to be displaced by an alkoxide. Without converting the tertiary OH to a halide or sulfonate nothing happens, and even then the tertiary carbon would eliminate."
+      }
+    },
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "_why": "Added 2026-09-01 at the instructor's direction: Williamson synthesis is discussed briefly in CHEM 261, so Ch 11 carries the simple route-choice version and Ch 18 keeps the detailed intramolecular item. Distractors: the tertiary-halide pairing that eliminates, the acid route that dehydrates, and the alcohol-as-electrophile misreading."
   }
 ];
