@@ -22,7 +22,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css?v=1.0.13">
+  <link rel="stylesheet" href="style.css?v=1.0.16">
 </head>
 <body>
 
@@ -32,7 +32,7 @@
       <i class="fas fa-flask"></i>
       <div class="logo-text-group">
         <span class="logo-title">OChemStudyBuddy</span>
-        <span class="logo-subtitle">Created by A. Elangovan</span>
+        <span class="logo-subtitle">Organic Chemistry &copy; A. Elangovan, PhD</span>
       </div>
     </div>
     
@@ -46,13 +46,27 @@
       </button>
     </div>
 
+    <!-- Performance lives here rather than in a third rail, so the workspace keeps the
+         full width a reaction scheme or roadmap needs. Practice mode only; app.js hides
+         it during a Mock Exam. Element ids are unchanged from the old sidebar panel. -->
     <div class="nav-controls">
-      <span style="font-size: 0.8rem; background: rgba(99, 102, 241, 0.15); color: #818cf8; padding: 0.35rem 0.75rem; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.3); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;">
-        ACS Standard Mode
-      </span>
-      <button class="btn btn-primary" id="btn-import">
-        <i class="fas fa-file-import"></i> Import Questions
-      </button>
+      <div class="header-stats" id="header-stats">
+        <div class="header-stat">
+          <span class="header-stat-val" id="stat-correct">0</span>
+          <span class="header-stat-label">Correct</span>
+        </div>
+        <div class="header-stat">
+          <span class="header-stat-val" id="stat-attempted">0</span>
+          <span class="header-stat-label">Attempted</span>
+        </div>
+        <div class="header-stat">
+          <span class="header-stat-val" id="stat-accuracy">0%</span>
+          <span class="header-stat-label">Accuracy</span>
+        </div>
+        <button class="header-stat-reset" id="btn-reset" title="Reset statistics" aria-label="Reset statistics">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -166,92 +180,17 @@
 
     </main>
 
-    <!-- Right Sidebar: Performance (practice mode only) -->
-    <aside class="sidebar sidebar-right" id="sidebar-right">
-      <div class="panel-card">
-        <div class="panel-title">
-          <i class="fas fa-chart-line" style="color: var(--accent-color);"></i>
-          <span>Performance</span>
-        </div>
-        <div class="stats-grid">
-          <div class="stat-box">
-            <div class="stat-val" id="stat-correct">0</div>
-            <div class="stat-label">Correct</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-val" id="stat-attempted">0</div>
-            <div class="stat-label">Attempted</div>
-          </div>
-        </div>
-        <div class="stat-box" style="margin-top: 1rem; width: 100%;">
-          <div class="stat-val" id="stat-accuracy">0%</div>
-          <div class="stat-label">Overall Accuracy</div>
-        </div>
-        <button class="btn" id="btn-reset" style="margin-top: 1rem; width: 100%; justify-content: center; font-size: 0.8rem; padding: 0.4rem;">
-          <i class="fas fa-trash-alt"></i> Reset Statistics
-        </button>
-      </div>
-    </aside>
   </div>
 
   <!-- Application Footer -->
   <footer class="app-footer">
     <div class="footer-container">
       <p class="footer-disclaimer">
-        Dr. A. Elangovan teaches general and organic chemistry. This is part of his independent work, created on his own time and resources. It is not affiliated with, sponsored by, or endorsed by any institution. &copy; 2026 A. Elangovan.
+        Dr. A. Elangovan teaches general and organic chemistry. This is part of his independent work, created on his own time and resources. It is not affiliated with, sponsored by, or endorsed by any institution. &copy; 2026 A. Elangovan, PhD.
       </p>
     </div>
   </footer>
 
-  <!-- Custom Question Import Modal -->
-  <div class="modal" id="import-modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">Import ACS-Style JSON Questions</h3>
-        <button class="modal-close" id="modal-close">&times;</button>
-      </div>
-      
-      <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5;">
-        Paste your organic chemistry question(s) below. The format must adhere strictly to the JSON schema. Standard fields include: <code>question_id</code>, <code>topic</code>, <code>difficulty_level</code>, <code>question_text</code>, <code>question_smiles</code>, <code>options</code> (with <code>smiles</code> and <code>is_correct</code>), and <code>feedback</code> (with <code>context</code>, <code>process</code>, <code>result</code>).
-      </p>
-
-      <div class="form-group">
-        <label for="custom-json-input">JSON Question Bank Input</label>
-        <textarea id="custom-json-input" class="form-textarea" placeholder='[
-  {
-    "question_id": "custom_q1",
-    "topic": "Electrophilic Aromatic Substitution",
-    "difficulty_level": "Medium",
-    "question_text": "Identify the major product of the nitration of benzene.",
-    "question_smiles": "c1ccccc1.HNO3.H2SO4",
-    "options": [
-      {
-        "option_id": "A",
-        "text": "Nitrobenzene",
-        "smiles": "c1ccc(cc1)[N+](=O)[O-]",
-        "is_correct": true
-      },
-      {
-        "option_id": "B",
-        "text": "Benzenesulfonic acid",
-        "smiles": "c1ccc(cc1)S(=O)(=O)O",
-        "is_correct": false
-      }
-    ],
-    "feedback": {
-      "context": "Reacting benzene with nitric and sulfuric acid.",
-      "process": "Step 1: Form NO2+ electrophile. Step 2: Benzene attacks. Step 3: Deprotonate to restore aromaticity.",
-      "result": "Nitrobenzene is formed."
-    }
-  }
-]'></textarea>
-      </div>
-
-      <button class="btn btn-primary" id="btn-submit-import" style="width: 100%; justify-content: center;">
-        <i class="fas fa-check"></i> Parse & Load Questions
-      </button>
-    </div>
-  </div>
 
   <!-- Toast Notification Holder -->
   <div class="toast-container" id="toast-container"></div>
@@ -275,6 +214,18 @@
   <script src="questions/ch16.js"></script>
   <script src="questions/ch17.js"></script>
   <script src="questions/ch18.js"></script>
-  <script src="app.js?v=1.0.17"></script>
+  <script src="questions/ch19.js"></script>
+  <script src="questions/ch20.js"></script>
+  <script src="questions/ch21.js"></script>
+  <script src="questions/ch22.js"></script>
+  <script src="questions/ch23.js"></script>
+  <script src="questions/ch24.js"></script>
+  <script src="questions/ch25.js"></script>
+  <script src="questions/ch26.js"></script>
+  <script src="questions/ch27.js"></script>
+  <script src="questions/ch28.js"></script>
+  <script src="questions/ch29.js"></script>
+  <script src="questions/ch30.js"></script>
+  <script src="app.js?v=1.0.21"></script>
 </body>
 </html>

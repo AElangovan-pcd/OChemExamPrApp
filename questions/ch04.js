@@ -34,13 +34,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the lowest-locant and alphabetical tie-breaker rules for naming cycloalkanes with three or more substituents.",
-      "process": "Step 1: Identify all substituents on the cyclohexane ring: two methyl groups and one ethyl group.\nStep 2: Compare possible numbering schemes to obtain the lowest locant set. Starting at either the ethyl group or the C1-methyl group yields an identical set of locants: (1, 2, 4). Other schemes like (1, 2, 5) or (1, 3, 4) are numerically higher and eliminated.\nStep 3: Apply the tie-breaker rule. When two numbering schemes yield the same set of locants, the lower locant is assigned to the substituent cited first alphabetically. Since 'ethyl' comes before 'methyl' alphabetically, the ethyl group receives locant 1.\nStep 4: Numbering starts at the ethyl group (C1) and proceeds towards the closer methyl group (C2), placing the second methyl at C4. This yields 1-ethyl-2,4-dimethylcyclohexane.",
-      "result": "The correct IUPAC name is 1-ethyl-2,4-dimethylcyclohexane."
+      "context": "A ring has no ends, so numbering can start at any substituted carbon and run in either direction. Every one of those options must be compared, and the lowest locant set as a whole decides - not the lowest first number.",
+      "approach": "Step 1: Identify the substituents and their relative spacing round the ring: an ethyl, a methyl adjacent to it, and a second methyl two carbons further on.\nStep 2: Work through the numberings. Starting at each substituted carbon and going both ways gives sets including 1,4,5 and 1,3,4 and 1,2,5 - and, starting at the ethyl and running toward the nearer methyl, 1,2,4.\nStep 3: Compare term by term. 1,2,4 wins at the second term against every alternative, so the ethyl takes C1, one methyl C2 and the other C4. Cite alphabetically: 1-ethyl-2,4-dimethylcyclohexane.",
+      "note": "Twelve numberings exist for a trisubstituted six-ring - six starting points times two directions - and it is worth writing out the plausible ones rather than trusting the first that looks small. A set beginning 1,2 always beats one beginning 1,3, whatever the third number turns out to be.",
+      "options": {
+        "A": "Correct. The locant set 1,2,4 is the lowest available, and ethyl precedes methyl alphabetically in the citation.",
+        "B": "The right molecule under the wrong name. The set 1,2,4 was available but this numbering produces 1,2,4 assigned to the wrong carbons, placing the ethyl at C4 rather than taking the set that starts at the ethyl.",
+        "C": "The right molecule under the wrong name, numbered to give 1,3,4. Compared with 1,2,4 it loses at the second term.",
+        "D": "The right molecule under the wrong name, numbered to give 1,2,5 - which ties 1,2,4 for two terms and then loses at the third."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring carrying an ethyl group, with a methyl group on the ring carbon next to it and a second methyl two positions further round."
   },
   {
     "question_id": "ch04_q2_ring_vs_chain_priority",
@@ -75,13 +82,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the IUPAC naming convention when a cycloalkyl group is attached to an open-chain alkane.",
-      "process": "Step 1: Count the number of carbons in the ring (4 carbons) and the longest continuous carbon chain (6 carbons).\nStep 2: Since the alkyl chain has more carbons than the ring (6 vs 4), the chain is the parent alkane (hexane) and the ring is named as a substituent (cyclobutyl).\nStep 3: Number the chain from the end closer to the substituent to give the lowest locant. Numbering from right to left gives the substituent at C3 (3-cyclobutylhexane), whereas from left to right gives it at C4.",
-      "result": "The correct name is 3-cyclobutylhexane."
+      "context": "When a molecule contains both a ring and a chain, one becomes the parent and the other a substituent. The choice is made by size: whichever has more carbons is the parent.",
+      "approach": "Step 1: Count both. The chain runs to six carbons and the ring has four.\nStep 2: Six beats four, so the chain is the parent - hexane - and the ring becomes a cyclobutyl substituent.\nStep 3: Number the chain for the lowest locant. The ring sits on the third carbon counting from the nearer end, giving 3-cyclobutylhexane.",
+      "note": "The convention differs between sources and older texts sometimes made the ring the parent regardless. The modern rule is the size comparison, so a small ring on a long chain is a substituent, while the same ring carrying a short chain would be the parent instead.",
+      "options": {
+        "A": "Correct. The six-carbon chain outranks the four-membered ring, so hexane is the parent and the ring is a cyclobutyl substituent at C3.",
+        "B": "This makes the smaller ring the parent, which reverses the size rule. It would also require a hexyl substituent, and the chain here attaches through an internal carbon rather than an end.",
+        "C": "This too treats the ring as parent. The chain attaches through its third carbon, so naming it as a 1-ethylbutyl substituent is both awkward and the wrong way round.",
+        "D": "The right molecule under the wrong name. Numbering the chain from the far end gives locant 4 where 3 is available."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-carbon chain with a four-membered carbon ring attached to its third carbon."
   },
   {
     "question_id": "ch04_q3_alphabetical_numbering_tiebreaker",
@@ -116,13 +130,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the tiebreaker rule for numbering disubstituted cycloalkanes when the locant set is identical from either direction.",
-      "process": "Step 1: Numbering from either substituent gives the locant set 1,3.\nStep 2: In a tiebreaker scenario, assign the lower number (1) to the substituent that comes first alphabetically.\nStep 3: Compare 'isopropyl' (alphabetized under 'i') and 'methyl' (alphabetized under 'm'). Since 'i' precedes 'm', the isopropyl group gets C1 and the methyl group gets C3.\nStep 4: Assemble the name as 1-isopropyl-3-methylcyclohexane.",
-      "result": "The correct name is 1-isopropyl-3-methylcyclohexane."
+      "context": "When two substituents can be given the same pair of locants either way round, the locant set cannot decide between them. IUPAC breaks that tie alphabetically: the substituent cited first gets the lower number.",
+      "approach": "Step 1: Establish the locants. The two groups sit in a 1,3 relationship, and that set is the same whichever substituent is called C1.\nStep 2: Since the sets tie, apply the alphabetical tiebreaker.\nStep 3: Isopropyl files under i and methyl under m, so isopropyl is cited first and takes C1, giving 1-isopropyl-3-methylcyclohexane.",
+      "note": "Option C is not simply wrong. It uses the older systematic substituent name 1-methylethyl, which alphabetises under m - and since methyl sorts before methylethyl, that name legitimately assigns C1 to the methyl instead. Both describe the same compound and each is internally consistent; this item expects the retained name isopropyl, and current IUPAC would prefer propan-2-yl over either.",
+      "options": {
+        "A": "Correct. With the locant set tied at 1,3, the alphabetical tiebreaker gives C1 to isopropyl, which precedes methyl.",
+        "B": "The right molecule under the wrong name. The locants are the correct pair but assigned the wrong way round, giving the lower number to methyl rather than to the alphabetically earlier isopropyl.",
+        "C": "Defensible rather than wrong: written as 1-methylethyl the substituent alphabetises under m, and methyl then sorts first and takes C1. The name expected here uses the retained form isopropyl.",
+        "D": "The right molecule under the wrong name. A 1,5 relationship on a six-membered ring is the same as 1,3 counted the other way, and 1,3 is the lower set."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring carrying a methyl group and, two ring carbons away, a three-carbon branched substituent."
   },
   {
     "question_id": "ch04_q4_lowest_locant_dimethyl",
@@ -157,13 +178,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question addresses numbering rules when multiple substituents are present on a single carbon atom of a cycloalkane.",
-      "process": "Step 1: Identify substituents: two methyls at one carbon, one methyl at another carbon. The ring is a cyclopentane.\nStep 2: Compare numbering options. Starting at the carbon with two methyls gives the locant set 1,1,3. Starting at the carbon with one methyl gives 1,3,3.\nStep 3: Compare the sets 1,1,3 and 1,3,3 term-by-term. At the second term, 1 is lower than 3. Thus, 1,1,3-trimethylcyclopentane is the correct locant set.",
-      "result": "The IUPAC name is 1,1,3-trimethylcyclopentane."
+      "context": "Two substituents on the same ring carbon both take that carbon's number, so the locant appears twice. The numbering is still chosen to make the whole set as low as possible.",
+      "approach": "Step 1: Note the arrangement - a carbon bearing two methyls, and a third methyl two positions away round a five-membered ring.\nStep 2: Start numbering at the doubly substituted carbon, since giving it C1 puts two of the three locants at their minimum immediately.\nStep 3: Choose the direction. Going toward the lone methyl reaches it at C3; going the other way reaches it at C4. The set 1,1,3 beats 1,1,4, giving 1,1,3-trimethylcyclopentane.",
+      "note": "Starting at the doubly substituted carbon is not itself a rule - it happens to produce the lowest set here because two locants are fixed at once. The rule remains to compare complete sets, and a case with substituents at 1,1,4 against 2,2,3 would need that comparison made properly rather than assumed.",
+      "options": {
+        "A": "Correct. Numbering from the doubly substituted carbon toward the nearer lone methyl gives the set 1,1,3.",
+        "B": "The right molecule under the wrong name. This starts at the lone methyl, pushing the pair to C3 and giving 1,3,3, which loses at the second term.",
+        "C": "The right molecule under the wrong name. Beginning at an unsubstituted ring carbon wastes C1 entirely, and no substituent should carry a locant higher than necessary.",
+        "D": "The right molecule under the wrong name. Numbering from the doubly substituted carbon in the other direction reaches the lone methyl at C4 rather than C3."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-membered carbon ring with two methyl groups on one ring carbon and a third methyl two carbons away."
   },
   {
     "question_id": "ch04_q5_bicyclo_heptane_norbornane",
@@ -198,12 +226,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the IUPAC rules for naming bridged bicyclic alkanes.",
-      "process": "Step 1: Identify the bridgehead carbon atoms (the two carbons where the rings join). They are C1 and C4 in this 7-carbon system.\nStep 2: Count the number of carbons in each of the three bridges connecting the bridgeheads. The bridges contain 2, 2, and 1 carbon atoms.\nStep 3: Write the name format: Bicyclo[x.y.z]alkane, where x, y, and z are the bridge lengths ordered from largest to smallest. Here, it is [2.2.1].\nStep 4: Count the total number of carbon atoms in the bicyclic system (7 carbons), which corresponds to the parent alkane name 'heptane'. Combine to get Bicyclo[2.2.1]heptane.",
-      "result": "The IUPAC name is Bicyclo[2.2.1]heptane."
+      "context": "A bicyclic name has two parts to get right: the bracketed numbers count the carbons in each bridge between the two bridgehead atoms, and the parent name counts every carbon in the system.",
+      "approach": "Step 1: Count the total carbons. Norbornane has seven, so the parent is heptane and the name ends in heptane.\nStep 2: Identify the bridgeheads - the two carbons shared by both rings - and count the carbons in each bridge connecting them, ignoring the bridgeheads themselves.\nStep 3: The three bridges hold two, two and one carbon, cited in decreasing order, giving bicyclo[2.2.1]heptane. Check the arithmetic: 2 plus 2 plus 1 plus the two bridgeheads is seven.",
+      "note": "That arithmetic check catches most errors: the bracketed numbers plus 2 for the bridgeheads must equal the parent's carbon count. Norbornane's rigid bicyclic cage also makes it a favourite substrate in mechanism studies, since its geometry blocks reaction pathways that are open to ordinary rings.",
+      "options": {
+        "A": "Correct. Bridges of two, two and one carbon plus two bridgeheads gives seven carbons, matching the heptane parent.",
+        "B": "Bicyclo[2.2.2]octane has bridges summing to six, which with two bridgeheads makes eight carbons - one more than norbornane.",
+        "C": "Bicyclo[3.2.0]heptane has the right carbon count but a different arrangement: a zero bridge means the rings are fused at adjacent carbons rather than bridged.",
+        "D": "Bicyclo[2.1.1]hexane sums to four bridge carbons plus two bridgeheads, giving six rather than seven."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -239,13 +273,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests how prefix names like 'tert-' are treated when determining alphabetical priority for numbering cycloalkanes.",
-      "process": "Step 1: Identify the substituents: 'tert-butyl' and 'methyl'.\nStep 2: In alphabetizing, prefixes like 'sec-' and 'tert-' are ignored (except in 'isobutyl', 'isopropyl', etc., where 'iso' is part of the name). Thus, 'tert-butyl' is alphabetized under 'b' for butyl.\nStep 3: Compare 'b' (butyl) and 'm' (methyl). Since 'b' comes first, the carbon bearing the tert-butyl group is numbered C1 and the carbon bearing the methyl group is numbered C3.",
-      "result": "The correct name is 1-tert-butyl-3-methylcyclopentane."
+      "context": "Italicised structural prefixes such as tert- and sec- are ignored when alphabetising, so a tert-butyl group files under b. That is what decides which substituent takes the lower locant when the sets tie.",
+      "approach": "Step 1: Fix the locants. The two groups sit 1,3 to each other on the five-membered ring, and that set is the same either way round.\nStep 2: Alphabetise. Strip the italicised tert- and the group files under b for butyl; methyl files under m. So b precedes m.\nStep 3: The alphabetically earlier substituent takes C1, giving 1-tert-butyl-3-methylcyclopentane.",
+      "note": "Contrast this with isobutyl, where the iso prefix is not italicised and does count, filing the group under i. The distinction is that tert- and sec- describe the attachment carbon while iso- is treated as part of the substituent's name - arbitrary-looking, but it decides cases like this one.",
+      "options": {
+        "A": "Correct. Ignoring the italicised tert-, butyl files under b and precedes methyl, so it takes C1.",
+        "B": "The right molecule under the wrong name. The locants are correct but assigned the wrong way round, giving C1 to methyl when butyl sorts earlier.",
+        "C": "The right molecule under the wrong name. The substituents are cited in the wrong order - tert-butyl alphabetises under b and must be written first.",
+        "D": "This names a different compound. A plain butyl group is an unbranched four-carbon chain, not the branched tert-butyl group shown."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-membered carbon ring carrying a methyl group and, two ring carbons away, a carbon bearing three methyl groups."
   },
   {
     "question_id": "ch04_q7_decalin_iupac",
@@ -280,13 +321,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests naming conventions for fused bicyclic ring systems.",
-      "process": "Step 1: Identify the bridgehead carbons where the two six-membered rings fuse.\nStep 2: Determine the three pathways (bridges) that connect these two bridgeheads. Two of the pathways contain 4 carbons each. The third pathway is the direct bond between the bridgeheads, which contains 0 carbons.\nStep 3: Format the bridge sizes: [4.4.0].\nStep 4: Count the total number of carbon atoms. Decalin has 10 carbons. The parent name is decane. Thus, the name is Bicyclo[4.4.0]decane.",
-      "result": "The systematic name is Bicyclo[4.4.0]decane."
+      "context": "Fused bicyclic systems, where the two rings share an edge rather than a longer bridge, are still named with bicyclo notation. A shared edge means the third bridge contains no carbons at all, which is written as zero.",
+      "approach": "Step 1: Count the total carbons. Decalin has ten, so the parent is decane.\nStep 2: Identify the bridgeheads - the two carbons shared between the rings - and count the bridges between them. Each ring contributes four carbons, and the direct bond between the bridgeheads is the third bridge with zero carbons.\nStep 3: Cite in decreasing order: bicyclo[4.4.0]decane. Check: 4 plus 4 plus 0 plus two bridgeheads makes ten.",
+      "note": "A zero in the brackets is the signature of a fused system as opposed to a bridged one. Decalin also exists as cis and trans ring-fusion isomers that differ markedly in shape and stability, which is where this chapter's conformational analysis of cyclohexane becomes directly useful.",
+      "options": {
+        "A": "Correct. Two four-carbon bridges plus a zero bridge and two bridgeheads gives ten carbons, matching decane.",
+        "B": "Bicyclo[4.4.1]undecane has a one-carbon third bridge, making eleven carbons and a genuinely bridged rather than fused system.",
+        "C": "Bicyclo[3.3.0]octane is the fused system built from two five-membered rings, with eight carbons rather than ten.",
+        "D": "Bicyclo[4.3.0]nonane fuses a six-membered ring to a five-membered one, totalling nine carbons."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two six-membered carbon rings sharing an edge, so that two carbons belong to both rings."
   },
   {
     "question_id": "ch04_q8_ring_assembled_cycloalkyl",
@@ -321,13 +369,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the IUPAC naming rules for assembly systems consisting of two identical rings.",
-      "process": "Step 1: Identify the two rings. They are both cyclobutane rings.\nStep 2: One ring is treated as the parent cycloalkane (cyclobutane) and the other is treated as a substituent (cyclobutyl).\nStep 3: For a single linkage between two identical rings, the locant '1-' is redundant and omitted from the name. Thus, the correct IUPAC name is simply cyclobutylcyclobutane.",
-      "result": "The correct systematic name is cyclobutylcyclobutane."
+      "context": "Two rings joined by a single bond share no atoms at all, which makes this a quite different case from fused or bridged bicyclics. With no shared carbons, bicyclo notation does not apply.",
+      "approach": "Step 1: Check whether any atoms are shared. Here they are not - one carbon of each ring is joined by an ordinary single bond.\nStep 2: Rule out bicyclo naming, which describes systems where two rings share two or more atoms.\nStep 3: Treat one ring as the parent and the other as a substituent on it, giving cyclobutylcyclobutane.",
+      "note": "The count in a bicyclo name refers to atoms in the ring system as a whole, so a bicyclo[n.n.n] name always implies shared atoms. Reserving that notation for genuinely fused or bridged systems keeps the distinction visible in the name itself.",
+      "options": {
+        "A": "Correct. The rings share no atoms, so one is named as a substituent on the other in ordinary substitutive fashion.",
+        "B": "Bicyclobutyl leaves the parent unnamed - a substituent name standing alone rather than a complete compound name.",
+        "C": "The bicyclo prefix implies shared atoms between the rings. These two share none, being joined only by a single bond.",
+        "D": "The locant is superfluous. With only one substituent on the parent ring, there is nothing for the number to distinguish."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "Two four-membered carbon rings joined to each other by a single bond between one carbon of each."
   },
   {
     "question_id": "ch04_q9_cis_trans_naming_cyclobutane",
@@ -362,12 +417,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the stereochemical descriptors 'cis' and 'trans' in cycloalkanes.",
-      "process": "Step 1: Identify the parent ring: cyclobutane.\nStep 2: Identify the substituents and their positions: ethyl groups at C1 and C2.\nStep 3: Determine the relative stereochemistry. Since the two groups point to the same face of the ring, the prefix is 'cis-'.\nStep 4: Combine the components: cis-1,2-diethylcyclobutane.",
-      "result": "The correct systematic name is cis-1,2-diethylcyclobutane."
+      "context": "A ring cannot rotate about its own bonds, so substituents are locked either above or below the mean plane of the ring. That locking creates stereoisomers that a chain of the same connectivity would not have.",
+      "approach": "Step 1: Read the locants from the description - the two ethyl groups sit on adjacent ring carbons, so 1,2.\nStep 2: Read the relative stereochemistry. Both point to the same face of the ring.\nStep 3: Same face is cis and opposite faces is trans, giving cis-1,2-diethylcyclobutane.",
+      "note": "These are genuine stereoisomers, separable and with different physical properties, unlike the conformations of butane that interconvert freely by rotation. Ring closure is what converts a rotational freedom into a fixed stereochemical relationship.",
+      "options": {
+        "A": "Correct. Adjacent carbons give the 1,2 locants and the same face gives cis.",
+        "B": "Trans would put the two ethyl groups on opposite faces of the ring, which is the other stereoisomer of the same constitution.",
+        "C": "A 1,3 relationship places the substituents with one ring carbon between them, not on adjacent carbons.",
+        "D": "This has both the locants and the stereochemistry wrong relative to the description given."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -403,13 +464,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests numbering rules when three substituents are present and we must select the lowest locant set.",
-      "process": "Step 1: Identify substituents: two methyls and one isopropyl.\nStep 2: List potential numbering paths to find the lowest locants:\n- Path 1 (starting at C1 of one methyl and going towards the other): locants 1,2,4.\n- Path 2 (starting at C1 of the other methyl): locants 1,2,5.\n- Path 3 (starting at isopropyl): locants 1,3,4.\nStep 3: The locant set 1,2,4 is the lowest set. The substituents are at positions 1, 2, and 4.\nStep 4: Numbering: methyls at 1 and 2, isopropyl at 4. Alphabetizing: 'isopropyl' comes before 'methyl'. Thus: 4-isopropyl-1,2-dimethylcyclohexane.",
-      "result": "The correct systematic name is 4-isopropyl-1,2-dimethylcyclohexane."
+      "context": "With three substituents on a ring, the lowest locant set is found by testing every starting point and direction. Only after the numbering is settled does alphabetical order come into play, and it governs the citation rather than the numbers.",
+      "approach": "Step 1: Note the arrangement - two methyls on adjacent carbons, and a branched three-carbon group separated from them.\nStep 2: Test the numberings. Starting at one of the adjacent methyls and running toward the other gives methyls at 1 and 2 and the isopropyl at 4, the set 1,2,4. Alternatives give 1,3,4 and 1,2,5, both of which lose on comparison.\nStep 3: With numbering fixed, cite the substituents alphabetically: isopropyl before methyl, giving 4-isopropyl-1,2-dimethylcyclohexane.",
+      "note": "Notice that the alphabetically first substituent here carries the highest locant. Alphabetical order controls only the order of writing; it never overrides a locant set that has already been chosen as the lowest. The two rules operate at different stages.",
+      "options": {
+        "A": "Correct. The set 1,2,4 is the lowest available, and isopropyl is written first because citation order is alphabetical.",
+        "B": "The right molecule under the wrong name, numbered to give 1,3,4, which loses to 1,2,4 at the second term.",
+        "C": "The right molecule under the wrong name, numbered to give 1,2,5. It ties 1,2,4 for two terms and then loses at the third.",
+        "D": "The right molecule under the wrong name. This assigns the methyls 2 and 3 where 1 and 2 are available, giving a higher set overall."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring carrying a three-carbon branched substituent, with two methyl groups on adjacent ring carbons positioned away from it."
   },
   {
     "question_id": "ch04_q11_highest_ring_strain",
@@ -444,12 +512,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests basic understanding of total ring strain in small and common rings.",
-      "process": "Step 1: Review total ring strain values: Cyclopropane (~115 kJ/mol), Cyclobutane (~110 kJ/mol), Cyclopentane (~26 kJ/mol), Cyclohexane (~0 kJ/mol).\nStep 2: Compare values. Cyclopropane has the highest total ring strain due to extreme angle strain (60° bond angles) and high torsional strain (eclipsed C-H bonds).",
-      "result": "Cyclopropane has the highest total ring strain."
+      "context": "Total ring strain combines angle strain, from bond angles forced away from 109.5 degrees, and torsional strain, from eclipsed bonds the ring cannot relieve. Small rings suffer both at once and cannot escape either by puckering.",
+      "approach": "Step 1: Consider angle strain. A planar three-membered ring forces 60 degree internal angles, the largest possible distortion from the tetrahedral ideal.\nStep 2: Consider torsional strain. Cyclopropane must be planar, since three points define a plane, so every pair of C-H bonds on adjacent carbons is fully eclipsed.\nStep 3: Both maxima coincide, giving about 115 kJ/mol - the greatest of the four, ahead of cyclobutane's 110, cyclopentane's 26 and cyclohexane's zero.",
+      "note": "Cyclobutane runs cyclopropane surprisingly close despite its less distorted 90 degree angles, because it has an extra carbon's worth of eclipsing and only a slight pucker to relieve it. Total strain per ring and strain per CH2 group tell different stories, and it is worth being clear which is being compared.",
+      "options": {
+        "A": "Correct. The 60 degree angles are the most distorted possible and the enforced planarity eclipses every adjacent C-H pair, giving about 115 kJ/mol.",
+        "B": "Cyclobutane is close behind at about 110 kJ/mol, its lower angle strain offset by more eclipsing interactions, but it does not exceed cyclopropane.",
+        "C": "Cyclopentane puckers into an envelope that relieves most of its strain, leaving only about 26 kJ/mol.",
+        "D": "Cyclohexane adopts a chair with ideal tetrahedral angles and every bond staggered, so it is essentially strain-free."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -485,13 +559,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relative ring strain normalized per carbon atom, which indicates structural stability.",
-      "process": "Step 1: Calculate strain per CH2 group: \n- Cyclopropane: 115 kJ/mol / 3 = 38.3 kJ/mol\n- Cyclobutane: 110 kJ/mol / 4 = 27.5 kJ/mol\n- Cyclopentane: 26 kJ/mol / 5 = 5.2 kJ/mol\n- Cyclohexane: 0 kJ/mol / 6 = 0 kJ/mol\nStep 2: Order these values from largest to smallest: Cyclopropane > Cyclobutane > Cyclopentane > Cyclohexane.",
-      "result": "The correct order of decreasing ring strain per CH2 group is Cyclopropane > Cyclobutane > Cyclopentane > Cyclohexane."
+      "context": "Strain per methylene group divides a ring's total strain by the number of CH2 units it contains. It answers a different question from total strain: how badly is each carbon compromised, rather than how much strain the whole ring carries.",
+      "approach": "Step 1: Take the total strains - about 115 kJ/mol for cyclopropane, 110 for cyclobutane, 26 for cyclopentane and zero for cyclohexane.\nStep 2: Divide each by its number of carbons: 115 over 3 is about 38, 110 over 4 is about 27.5, 26 over 5 is about 5, and zero over 6 is zero.\nStep 3: The order falls steadily from cyclopropane down to cyclohexane, the same ranking the totals give in this case.",
+      "note": "The two measures agree here but need not in general. Cyclopropane and cyclobutane have nearly equal totals yet clearly different per-CH2 values, because the strain is shared among a different number of carbons - which is why the per-group figure is the fairer comparison of how strained an individual carbon actually is.",
+      "options": {
+        "A": "Correct. Dividing each total by its carbon count gives roughly 38, 27.5, 5 and 0 kJ/mol per CH2, falling steadily with ring size.",
+        "B": "This places cyclobutane first, but its total is slightly lower than cyclopropane's and it is spread over four carbons rather than three, so its per-CH2 figure is clearly smaller.",
+        "C": "This puts cyclopentane ahead of cyclobutane. Cyclopentane puckers to relieve most of its strain and carries only about 5 kJ/mol per CH2 against cyclobutane's 27.5.",
+        "D": "This is the ranking reversed. Cyclohexane is strain-free and cyclopropane the most strained, so it cannot head the list."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A three-membered carbon ring."
   },
   {
     "question_id": "ch04_q13_heat_of_combustion_stability",
@@ -526,12 +607,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relationship between ring strain and the heat of combustion.",
-      "process": "Step 1: Recall that the heat of combustion per CH2 group is a measure of thermodynamic stability. The lower the heat of combustion, the more stable the cycloalkane.\nStep 2: Cyclohexane is non-planar and adopts a chair conformation.\nStep 3: In the chair conformation, C-C-C bond angles are 111.5° (nearly 109.5°), eliminating angle strain, and all adjacent C-H bonds are fully staggered, eliminating torsional strain.",
-      "result": "Cyclohexane has the lowest heat of combustion because it is virtually strain-free."
+      "context": "Heat of combustion per CH2 group is a way of comparing rings of different sizes on equal terms. A ring free of strain releases the least energy per group, since it started from the lowest energy.",
+      "approach": "Step 1: Ask what would make a ring strain-free. Bond angles at the tetrahedral value remove angle strain, and staggered bonds throughout remove torsional strain.\nStep 2: Check whether cyclohexane achieves both. Its chair conformation has C-C-C angles of about 111 degrees, essentially tetrahedral, and every adjacent pair of bonds staggered.\nStep 3: With neither source of strain present, cyclohexane sits at the baseline, which is why its value per CH2 defines the strain-free reference.",
+      "note": "Achieving both at once requires the ring to be non-planar - the chair puckers precisely so that it can hold tetrahedral angles and stagger its bonds simultaneously. A flat six-membered ring would have 120 degree angles and every bond eclipsed, which is far worse.",
+      "options": {
+        "A": "Correct. The chair conformation achieves near-tetrahedral angles and fully staggered bonds at the same time, leaving essentially no strain of either kind.",
+        "B": "Cyclohexane is not planar. Its chair is puckered, and it is precisely that puckering which lets it avoid both angle and torsional strain.",
+        "C": "120 degree angles belong to a planar hexagon, which cyclohexane avoids. Its actual C-C-C angles are close to the tetrahedral 111 degrees.",
+        "D": "Transannular strain is a destabilising interaction across a ring, and in any case cyclohexane is too small to suffer it. Strain never stabilises anything."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -567,13 +654,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the definition and physical origin of torsional strain.",
-      "process": "Step 1: Review the three main components of ring strain: angle strain (deviation from ideal bond angles), torsional strain (eclipsing of bonds on adjacent carbons), and steric strain (spatial crowding of non-bonded atoms).\nStep 2: Identify the strain arising specifically from eclipsed bonds as torsional strain.",
-      "result": "Torsional strain is the strain due to the eclipsing of adjacent bonds."
+      "context": "Three kinds of strain are distinguished in ring chemistry, and each has its own physical origin. Naming them precisely matters because a given ring can suffer from more than one at once.",
+      "approach": "Step 1: Match the description given - bonds on adjacent atoms brought into alignment.\nStep 2: Recall the cause. Aligning filled bonding orbitals on neighbouring carbons brings their electrons into opposition, and the repulsion raises the energy.\nStep 3: That is torsional strain, the same effect that makes eclipsed ethane higher in energy than staggered ethane.",
+      "note": "Torsional strain is about bonds, not atoms - the hydrogens in eclipsed ethane never come close enough to touch. Steric strain, by contrast, requires atoms actually pushed inside their van der Waals radii, which is a separate condition that can occur in staggered arrangements too.",
+      "options": {
+        "A": "Correct. Eclipsing aligns filled bonding orbitals on adjacent carbons, and the resulting electron repulsion is torsional strain.",
+        "B": "Angle strain is distortion of bond angles from the ideal tetrahedral value, which depends on ring size rather than on rotation.",
+        "C": "Steric strain requires non-bonded atoms forced closer than their van der Waals radii allow, which is a different condition from bonds being aligned.",
+        "D": "Transannular strain is crowding between groups on opposite sides of a medium-sized ring, not between adjacent atoms."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-membered carbon ring."
   },
   {
     "question_id": "ch04_q15_baeyer_theory_flaw",
@@ -608,13 +702,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question examines the historical development and limitations of Baeyer's strain theory.",
-      "process": "Step 1: Recall Baeyer's hypothesis: Cycloalkanes are planar polygons.\nStep 2: Under this assumption, cyclopentane would have little angle strain, while cyclohexane (120°) and larger rings would have significant angle strain.\nStep 3: However, rings larger than cyclopropane pucker out of plane to relieve torsional strain, which Baeyer's planar model completely ignored.",
-      "result": "The flaw in Baeyer's theory was the assumption that all rings are planar."
+      "context": "Baeyer's angle strain theory was sound in its central idea - that forcing bond angles away from tetrahedral costs energy - but it rested on a geometric assumption that turns out to be false for all but the smallest rings.",
+      "approach": "Step 1: Identify the assumption. Baeyer calculated internal angles from regular planar polygons, which fixes cyclopentane at 108 degrees and cyclohexane at 120.\nStep 2: Test it against reality. Rings larger than cyclopropane are not planar; they pucker, and puckering changes the angles from the planar values entirely.\nStep 3: Cyclohexane's chair achieves about 111 degrees rather than 120, so it is less strained than cyclopentane rather than more - the opposite of Baeyer's prediction.",
+      "note": "Cyclopropane is the one ring where the assumption holds, since three points necessarily define a plane. That is also why it is the only ring whose strain Baeyer's approach estimates at all well, and it makes a useful check on any theory - the case it gets right shows exactly what it assumed.",
+      "options": {
+        "A": "Correct. Baeyer assumed planar rings, so his angles came from regular polygons. Every ring from cyclobutane upward puckers, which invalidates those angles.",
+        "B": "The tetrahedral angle was well established and Baeyer used 109.5 degrees correctly. His error was in the ring geometry, not in the reference value.",
+        "C": "His estimate for cyclopropane is actually the closest of any, because a three-membered ring genuinely is planar.",
+        "D": "Cycloalkanes are saturated and contain no double bonds. The theory concerned angle strain in saturated rings."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-membered carbon ring."
   },
   {
     "question_id": "ch04_q16_heat_of_combustion_cis_trans",
@@ -649,12 +750,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question relates thermodynamic properties (heat of combustion) to the relative steric stability of cis/trans stereoisomers.",
-      "process": "Step 1: Identify that a higher heat of combustion means the starting compound is less stable (higher in energy).\nStep 2: The cis-isomer is 5 kJ/mol higher in energy than the trans-isomer.\nStep 3: This difference arises because the cis-isomer has two methyl groups pointing to the same face of the rigid cyclopropane ring, causing steric (van der Waals) repulsion. The trans-isomer keeps the methyl groups on opposite faces, minimizing steric clash.",
-      "result": "The cis-isomer has a higher heat of combustion due to steric strain between the cis-methyl groups."
+      "context": "Two stereoisomers of the same ring have identical bond angles and identical numbers of eclipsing interactions, so neither angle nor torsional strain can distinguish them. What differs is how close the substituents sit to one another.",
+      "approach": "Step 1: Compare the values. The cis isomer releases 3293 kJ/mol against the trans isomer's 3288, so cis releases more and therefore starts higher in energy.\nStep 2: Ask what differs structurally. In cis both methyl groups sit on the same face of the ring, adjacent to one another; in trans they are on opposite faces and well separated.\nStep 3: Two methyls crowded on the same face repel, which is steric strain. That extra 5 kJ/mol is the cis isomer's penalty.",
+      "note": "The difference is small in absolute terms - 5 kJ/mol out of nearly 3300 - which is why combustion measurements had to be extremely precise to establish it. Yet the same interaction, scaled up, is what governs substituent preferences on cyclohexane later in this chapter.",
+      "options": {
+        "A": "Correct. Both methyls on the same face are close enough to repel, and that steric strain puts the cis isomer about 5 kJ/mol higher in energy.",
+        "B": "The trans isomer has the lower heat of combustion, so it is the more stable of the two. Its methyls are also further apart, not more strained.",
+        "C": "Both isomers have the same ring geometry and therefore the same torsional strain. If cis were lower in torsional strain it would be the more stable one, which it is not.",
+        "D": "Transannular strain requires a medium-sized ring where groups can reach across the interior. A three-membered ring has no interior to speak of."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -690,12 +797,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the structural conformation of cyclobutane and how it balances different components of ring strain.",
-      "process": "Step 1: If cyclobutane were planar, its internal C-C-C angles would be 90° and all 8 C-H bonds would be eclipsed.\nStep 2: To minimize this severe torsional strain, the molecule adopts a puckered (non-planar) conformation.\nStep 3: Puckering reduces the eclipsing of C-H bonds (dihedral angles become ~25°), but compresses the C-C-C angles to ~88°, which increases angle strain. The final shape is a thermodynamic compromise.",
-      "result": "Cyclobutane puckers to trade off a significant reduction in torsional strain for a minor increase in angle strain."
+      "context": "A ring's shape settles at the compromise that minimises total strain, and the two components can pull in opposite directions. Cyclobutane is the clearest case: relieving one kind of strain costs a little of the other.",
+      "approach": "Step 1: Consider the planar form. A flat four-membered ring would have 90 degree angles and every adjacent C-H pair fully eclipsed.\nStep 2: Consider what puckering does. Folding the ring slightly - about 25 degrees out of plane - rotates the C-H bonds away from full eclipse, relieving torsional strain.\nStep 3: Note the cost. Puckering compresses the internal angles below 90 degrees, adding a little angle strain. The molecule adopts the pucker because the torsional saving outweighs that cost.",
+      "note": "This trade-off is the general principle behind every ring conformation, cyclohexane's chair included. A ring does not minimise angle strain or torsional strain separately; it settles wherever their sum is lowest, which is why predicting shapes from angle strain alone - Baeyer's error - fails.",
+      "options": {
+        "A": "Correct. Puckering rotates the C-H bonds out of full eclipse at the cost of compressing the angles slightly further, and the net effect is stabilising.",
+        "B": "Cyclobutane is not planar. It puckers by roughly 25 degrees, which is what relieves part of its torsional strain.",
+        "C": "The bonds are not staggered even in the puckered form; the pucker only reduces the eclipsing. Substantial torsional strain remains.",
+        "D": "Cyclobutane's angles are near 90 degrees against cyclopentane's near 105, so cyclobutane has considerably more angle strain, not less."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -731,13 +844,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests nomenclature of steric strain specific to medium-sized rings.",
-      "process": "Step 1: Identify that medium rings (C8-C11) have conformations where hydrogen atoms on opposite sides of the ring are forced close to one another.\nStep 2: This steric interaction across a ring is defined as 'transannular' strain (literally 'across the ring').",
-      "result": "The correct term is transannular strain."
+      "context": "Medium-sized rings are large enough to have a genuine interior but too small for the hydrogens pointing inward to avoid one another. That gives them a source of strain that neither small nor large rings share.",
+      "approach": "Step 1: Rule out angle strain. Rings of eight or nine carbons can adopt conformations with near-tetrahedral angles, so that is not the problem.\nStep 2: Look inside the ring. Hydrogens on carbons across the ring from each other point into the same interior space and are forced together.\nStep 3: That crowding across the ring is transannular strain, from the Latin for across the ring.",
+      "note": "It explains a distinctive size dependence: strain falls from cyclopropane to cyclohexane, rises again through the medium rings of about eight to twelve carbons, and falls once more for large rings that are flexible enough to keep their interiors clear.",
+      "options": {
+        "A": "Correct. Transannular means across the ring, and it names exactly this crowding between groups on opposite sides of a medium-sized ring interior.",
+        "B": "Angle strain concerns distorted bond angles. Medium rings can achieve near-tetrahedral angles, so it is not their main difficulty.",
+        "C": "1,3-Diaxial strain is a specific interaction between axial substituents on a cyclohexane chair, not a general medium-ring effect.",
+        "D": "Eclipsing strain is another name for torsional strain, which comes from aligned bonds on adjacent atoms rather than from groups meeting across a ring."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A nine-membered carbon ring."
   },
   {
     "question_id": "ch04_q19_lowest_strain_among_options",
@@ -772,12 +892,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests relative stabilities across a wide range of ring sizes.",
-      "process": "Step 1: Check total ring strain values: Cyclopropane (~115 kJ/mol), Cyclooctane (~41 kJ/mol), Cyclodecane (~50 kJ/mol), Cyclohexane (~0 kJ/mol).\nStep 2: Cyclohexane's chair conformation is exceptionally stable and strain-free. Larger rings cannot achieve complete freedom from strain because of transannular steric interactions.",
-      "result": "Cyclohexane has the lowest total ring strain."
+      "context": "Ring strain does not simply fall as rings get larger. It reaches a minimum at six carbons, rises again through the medium rings, and only falls once more for large flexible rings.",
+      "approach": "Step 1: Take cyclohexane. Its chair achieves tetrahedral angles with every bond staggered, so it is essentially strain-free at zero.\nStep 2: Take the medium rings. Cyclooctane and cyclodecane carry roughly 40 and 50 kJ/mol respectively, mostly transannular crowding between hydrogens across the ring.\nStep 3: Cyclopropane is the most strained of all at about 115 kJ/mol. Cyclohexane is therefore the lowest of the four.",
+      "note": "The non-monotonic pattern is worth remembering because it contradicts the intuition that bigger means more relaxed. Six is a genuinely special case, which is why six-membered rings are so common in nature and why cyclohexane conformational analysis gets a chapter of its own.",
+      "options": {
+        "A": "Correct. Cyclohexane's chair conformation is essentially strain-free, the minimum of the whole series.",
+        "B": "Cyclooctane carries roughly 40 kJ/mol, largely from hydrogens crowding across the ring interior.",
+        "C": "Cyclodecane is more strained still at about 50 kJ/mol, since a ten-membered ring has more inward-pointing hydrogens to accommodate.",
+        "D": "Cyclopropane is the most strained ring of all at about 115 kJ/mol, combining maximum angle strain with enforced eclipsing."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -813,12 +939,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question relates physical ring strain to chemical reactivity and ring-opening reactions.",
-      "process": "Step 1: Recognize that the C-C bonds in cyclopropane are weak and under immense angle strain (60° compared to the tetrahedral 109.5°).\nStep 2: Ring opening releases this 115 kJ/mol of strain energy, acting as a powerful thermodynamic driving force.\nStep 3: Cyclohexane lacks ring strain, so there is no thermodynamic driving force for it to undergo ring-opening hydrogenation under mild conditions.",
-      "result": "The high ring strain in cyclopropane drives its ring-opening reactivity."
+      "context": "Ring strain is stored energy. A reaction that opens a strained ring releases it, which makes the reaction thermodynamically favourable in a way that the same reaction on an unstrained ring is not.",
+      "approach": "Step 1: Compare the starting materials. Cyclopropane carries about 115 kJ/mol of ring strain; cyclohexane carries none.\nStep 2: Consider the products. Both would give an open-chain alkane with no strain, so the strain difference appears directly in the reaction energy.\nStep 3: Opening cyclopropane therefore releases its stored 115 kJ/mol on top of any other energy change, while opening cyclohexane offers no such reward and does not occur under these conditions.",
+      "note": "Cyclopropane's reactivity toward hydrogenation is worth distinguishing from an alkene's. An alkene reacts because it has a pi bond available; cyclopropane has no pi bond and reacts because its sigma bonds are strained and poorly overlapping - the same outcome for a different reason.",
+      "options": {
+        "A": "Correct. Relieving about 115 kJ/mol of stored ring strain makes the ring-opening strongly favourable, where cyclohexane has no strain to release.",
+        "B": "Cyclopropane is saturated, with the formula C3H6 accounted for entirely by the ring. The bent bond description refers to poor sigma overlap, not to a double bond.",
+        "C": "Cyclopropane is the smaller and less hindered of the two. Steric access is not what distinguishes them.",
+        "D": "The carbons are sp3 hybridized. Their C-C bonds do carry increased p character because of the ring geometry, but that is not the same as sp2 hybridization."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -854,13 +986,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the molecular orbital description of the C-C bonds in cyclopropane.",
-      "process": "Step 1: In a regular equilateral triangle, the C-C-C angles are 60°.\nStep 2: If the sp3 orbitals pointed directly at each other, the angle would have to be 109.5°.\nStep 3: The orbitals instead compromise: they point outward at a larger angle (~104°), overlap at an angle, and create 'bent bonds' that are weaker and have more p-character than normal sp3-sp3 sigma bonds.",
-      "result": "Bent bonds result from the inability of hybrid orbitals to overlap directly along the internuclear axis."
+      "context": "A normal sigma bond forms when two hybrid orbitals point directly at each other along the internuclear axis. A three-membered ring makes that impossible, because the 60 degree internal angles are far from what sp3 orbitals can accommodate.",
+      "approach": "Step 1: Note the geometry. The carbons sit at the corners of an equilateral triangle, so the lines joining nuclei meet at 60 degrees.\nStep 2: Note what the orbitals want. sp3 hybrids are directed at about 109.5 degrees to one another and cannot be bent to 60.\nStep 3: The compromise is that the orbitals overlap off-axis, outside the line joining the nuclei. The resulting electron density bulges outward from the ring, which is what bent or banana describes.",
+      "note": "Off-axis overlap is less effective than head-on overlap, so these bonds are weaker and longer than ordinary C-C bonds, and their electron density is unusually exposed on the outside of the ring. That exposure is part of why cyclopropane reacts with electrophiles in ways an ordinary alkane never would.",
+      "options": {
+        "A": "Correct. The 60 degree geometry prevents the sp3 hybrids from pointing at each other, so they overlap off-axis and the electron density bulges outside the ring.",
+        "B": "The carbons remain sp3 hybridized. There is no unhybridized p orbital and no pi bond in cyclopropane.",
+        "C": "The hydrogens point outward, away from the ring, and are far too small to distort the carbon framework. The cause is the ring's own geometry.",
+        "D": "Cyclopropane does not undergo a ring flip - it is rigidly planar. The bent bonds are a consequence of its fixed geometry, not of any conformational change."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A three-membered carbon ring."
   },
   {
     "question_id": "ch04_q22_hybridization_cyclopropane",
@@ -895,12 +1034,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests advanced orbital details of strained rings.",
-      "process": "Step 1: In cyclopropane, the C-C bonds are bent, requiring orbital overlap that utilizes orbitals with greater p-character (close to sp3.5 or sp4) to allow for bending.\nStep 2: Because the carbon uses more p-character for C-C bonding, the remaining orbitals used for C-H bonding must have greater s-character (close to sp2.5).\nStep 3: This explains why C-H bonds in cyclopropane are shorter and more acidic than those in acyclic alkanes.",
-      "result": "Cyclopropane carbons use orbitals with more p-character for C-C bonds and more s-character for C-H bonds."
+      "context": "Hybridization need not be distributed evenly among an atom's four orbitals. When geometry constrains some bonds, an atom can redistribute s and p character between them, keeping the overall sp3 count while making individual bonds differ.",
+      "approach": "Step 1: Establish the baseline. Each cyclopropane carbon forms four sigma bonds and has no lone pairs, so it is sp3 overall.\nStep 2: Consider what the ring demands. The C-C bonds must span 60 degree angles, and orbitals with more p character are directed at smaller angles, so the ring bonds take extra p character.\nStep 3: The s character displaced from those bonds has to go somewhere, so it concentrates in the C-H bonds. Those become shorter and stronger, and their hydrogens more acidic than an ordinary alkane's.",
+      "note": "The consequence is measurable: cyclopropane's C-H bonds behave as though the carbon were closer to sp2, with a coupling constant and an acidity intermediate between an alkane and an alkene. Hybridization is a continuous description rather than a set of four fixed labels.",
+      "options": {
+        "A": "Correct. The carbons remain sp3 overall, but p character concentrates in the strained C-C bonds and s character in the C-H bonds.",
+        "B": "sp2 hybridization would leave an unhybridized p orbital on each carbon and make the compound unsaturated. Cyclopropane is saturated with four sigma bonds per carbon.",
+        "C": "The overlaps are not identical to propane's. Propane's C-C bonds are head-on and unstrained, while cyclopropane's are bent and off-axis.",
+        "D": "Pure p-p overlap would require 90 degree angles between the ring bonds, and the C-H bonds are not sp2. Both descriptions misstate the hybridization."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -936,13 +1081,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests quantitative details of cyclobutane's puckered conformation.",
-      "process": "Step 1: In a planar cyclobutane, the dihedral angle is 0°.\nStep 2: When cyclobutane puckers, one carbon is bent out of the plane of the other three by about 25°.\nStep 3: This value represents the optimal balance between minimizing torsional strain and keeping angle strain manageable.",
-      "result": "The dihedral angle of puckered cyclobutane is approximately 25°."
+      "context": "A ring's shape settles where the sum of its strains is lowest, and for cyclobutane that means bending slightly out of plane. The pucker is a compromise rather than a large distortion.",
+      "approach": "Step 1: Consider the planar alternative. A flat four-membered ring has 90 degree angles and every adjacent C-H pair fully eclipsed, so torsional strain is at its maximum.\nStep 2: Fold the ring about a diagonal. Even a small fold rotates the C-H bonds away from full eclipse, cutting torsional strain sharply.\nStep 3: The fold also compresses the internal angles slightly, adding a little angle strain. The two effects balance at a pucker of about 25 degrees.",
+      "note": "Twenty-five degrees is modest - cyclobutane is nearly flat, and the pucker is easily reversed, so the ring flips rapidly between two equivalent folded forms. That distinguishes it from cyclohexane, whose much deeper chair pucker gives genuinely distinct axial and equatorial positions.",
+      "options": {
+        "A": "Correct. About 25 degrees is where the torsional relief from folding stops outweighing the angle strain it costs.",
+        "B": "Zero degrees is the planar form, which has maximum torsional strain and is not the preferred conformation.",
+        "C": "45 degrees would fold the ring far more than is favourable, compressing the internal angles well past what the torsional saving repays.",
+        "D": "60 degrees is a severe fold that would introduce more angle strain than any torsional relief could justify."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-membered carbon ring."
   },
   {
     "question_id": "ch04_q24_cyclopentane_envelope",
@@ -977,12 +1129,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the geometric description of the envelope conformation of cyclopentane.",
-      "process": "Step 1: Planar cyclopentane has internal angles of 108° (very close to 109.5°), but suffers from severe torsional strain because all 10 hydrogens are eclipsed.\nStep 2: To relieve this, it puckers into the 'envelope' conformation.\nStep 3: In the envelope conformation, four carbons form a plane, and the fifth carbon is out of that plane, resembling the flap of an envelope. This reduces eclipsing of C-H bonds.",
-      "result": "The envelope conformation consists of four coplanar carbons and one out-of-plane carbon."
+      "context": "Cyclopentane's internal angles in a planar pentagon are 108 degrees, almost exactly tetrahedral, so angle strain is nearly absent. Its only real problem is torsional, and the ring puckers to address that.",
+      "approach": "Step 1: Note what is not the problem. At 108 degrees the angles need almost no correction, so the ring is not puckering to fix them.\nStep 2: Note what is. A flat pentagon eclipses every adjacent C-H pair around the ring.\nStep 3: Lifting one carbon out of the plane of the other four rotates the bonds at that carbon and its neighbours away from eclipse. The resulting shape - four coplanar carbons and one raised - is the envelope.",
+      "note": "The raised carbon is not fixed: the pucker migrates rapidly around the ring, so all five carbons take turns being the flap. That motion is called pseudorotation, and it means the five positions are equivalent on any ordinary timescale.",
+      "options": {
+        "A": "Correct. Four carbons stay coplanar while the fifth lifts out of that plane, which relieves the eclipsing without disturbing the near-ideal bond angles.",
+        "B": "This describes a half-chair or twist arrangement rather than an envelope. The envelope displaces one carbon, not two in opposite directions.",
+        "C": "A fully planar ring is exactly what the envelope avoids, since planarity is what causes the eclipsing in the first place.",
+        "D": "Axial and equatorial positions are a feature of the six-membered chair. A five-membered ring has no such distinct sets of positions."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1018,13 +1176,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question addresses the energetic trade-off between angle strain and torsional strain in cyclobutane.",
-      "process": "Step 1: Start with a flat square (planar cyclobutane, angles = 90°).\nStep 2: Bend one corner out of plane. The internal angles must decrease slightly to maintain C-C bond lengths (compressing to ~88°).\nStep 3: This compression increases angle strain. However, the non-planar dihedral angle of ~25° staggers the adjacent C-H bonds, significantly lowering torsional strain. The system lowers its overall free energy.",
-      "result": "The C-C-C angles are smaller than 90° because the system trades increased angle strain for a larger reduction in torsional strain."
+      "context": "It looks perverse for a ring to adopt angles further from tetrahedral than it needs to. The resolution is that angle strain is only one term in the total, and a molecule minimises the sum rather than any single component.",
+      "approach": "Step 1: Compare the two candidates. Planar cyclobutane has 90 degree angles; the puckered form has about 88.\nStep 2: Note that 90 is closer to the tetrahedral 109.5 than 88 is, so on angle strain alone the planar form would win.\nStep 3: But planarity eclipses every adjacent C-H pair. Puckering costs a couple of degrees of angle strain and buys a much larger reduction in torsional strain, so the puckered form is lower in total energy.",
+      "note": "This is the same trade-off Baeyer's theory missed. Judging ring stability by angle strain alone predicts flat rings with ideal angles; real rings give up some angular perfection to escape eclipsing, which is why cyclohexane beats cyclopentane despite the planar-pentagon angles looking better on paper.",
+      "options": {
+        "A": "Correct. The fold costs about two degrees of additional angle strain and repays it with a much larger torsional saving, so the total is lower.",
+        "B": "A four-membered ring has no interior to speak of, and its hydrogens point outward. Transannular interactions require a medium-sized ring.",
+        "C": "The carbons remain sp3, forming four sigma bonds each. sp hybridization would require only two groups per carbon.",
+        "D": "There is nothing special about 88 degrees for angle strain - the ideal remains 109.5, and 88 is worse than 90. The angle is set by the torsional compromise, not by an angular optimum."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A four-membered carbon ring."
   },
   {
     "question_id": "ch04_q26_cyclopentane_planar_vs_envelope",
@@ -1059,12 +1224,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the primary source of instability in a planar cyclopentane model.",
-      "process": "Step 1: A planar cyclopentane has internal C-C-C angles of 108°, which is extremely close to the ideal 109.5° tetrahedral angle. Therefore, angle strain is virtually zero in the planar form.\nStep 2: However, planarity forces all 5 C-C bonds to be fully eclipsed, resulting in 10 pairs of eclipsing H-H interactions.\nStep 3: This creates a large amount of torsional strain (~40 kJ/mol), which forces the ring to pucker.",
-      "result": "Torsional strain would be at its maximum in a planar cyclopentane."
+      "context": "Asking which strain a hypothetical planar ring would maximise means asking which strain the real puckering exists to relieve. For cyclopentane the answer follows from how close its planar angles already are to ideal.",
+      "approach": "Step 1: Evaluate angle strain in a planar pentagon. The internal angles are 108 degrees against a tetrahedral ideal of 109.5, a discrepancy of well under two degrees - essentially negligible.\nStep 2: Evaluate torsional strain. Flatness aligns the C-H bonds on all five pairs of adjacent carbons, so every one is eclipsed.\nStep 3: With angle strain near zero and eclipsing complete, torsional strain is what a planar cyclopentane would maximise - and it is what the envelope pucker relieves.",
+      "note": "This is the case that most directly refutes angle-strain-only reasoning. By Baeyer's measure cyclopentane should be the most stable cycloalkane of all, since 108 degrees is nearer 109.5 than cyclohexane's planar 120. It is not, because the torsional term he ignored dominates.",
+      "options": {
+        "A": "Correct. A flat pentagon has near-ideal angles but eclipses every adjacent C-H pair, so torsional strain is the term at its maximum.",
+        "B": "Angle strain would be almost absent, since 108 degrees is within two degrees of tetrahedral. That is precisely why it is not the answer.",
+        "C": "Steric strain needs non-bonded atoms pushed inside their van der Waals radii. On a five-membered ring the substituents are not forced that close.",
+        "D": "Transannular strain requires a ring large enough for groups to crowd across its interior, which begins around eight carbons."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1100,13 +1271,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question quantitative analyzes eclipsing interactions in a flat cyclopentane model.",
-      "process": "Step 1: Cyclopentane has 5 C-C bonds.\nStep 2: Across each C-C bond, if the ring is flat, the two hydrogens on the front carbon eclipse the two hydrogens on the back carbon.\nStep 3: This results in 2 eclipsing H-H interactions per C-C bond.\nStep 4: Total interactions = 5 bonds * 2 interactions/bond = 10 pairs.",
-      "result": "There are 10 pairs of eclipsing C-H interactions in planar cyclopentane."
+      "context": "Counting eclipsing interactions is a matter of working bond by bond rather than atom by atom. Each carbon-carbon bond in a flat ring generates its own set of eclipsed hydrogen pairs.",
+      "approach": "Step 1: Count the carbon-carbon bonds. A five-membered ring has five.\nStep 2: Count the eclipsed pairs each bond generates. Each ring carbon carries two hydrogens, one above the ring plane and one below, so across any C-C bond the two upper hydrogens eclipse each other and the two lower ones do as well - two pairs per bond.\nStep 3: Multiply: five bonds times two pairs gives ten eclipsing interactions in total.",
+      "note": "At roughly 4 kJ/mol per eclipsed hydrogen pair, ten pairs would cost about 40 kJ/mol - well above cyclopentane's measured 26. The gap is what the envelope pucker recovers, and it shows the counting is doing real work rather than being an exercise.",
+      "options": {
+        "A": "Correct. Five carbon-carbon bonds, each eclipsing an upper and a lower hydrogen pair, gives ten interactions.",
+        "B": "Five counts one pair per bond, which misses that each carbon carries two hydrogens and both eclipse across the bond.",
+        "C": "Eight would correspond to four bonds rather than five. A five-membered ring has five carbon-carbon bonds.",
+        "D": "Twenty double-counts each interaction, most often by counting from both carbons of every bond. Each eclipsing pair should be counted once."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A five-membered carbon ring."
   },
   {
     "question_id": "ch04_q28_cyclopropane_dihedral_angle",
@@ -1141,13 +1319,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the geometric constraint of the three-membered ring.",
-      "process": "Step 1: Any three points in space define a flat plane. Therefore, the three carbon atoms of cyclopropane must lie in a single plane.\nStep 2: In a planar system, all substituents on adjacent carbons are locked in an eclipsed conformation.\nStep 3: Consequently, cyclopropane cannot pucker to relieve torsional strain, locking its dihedral angles at 0°.",
-      "result": "The planar constraint of a three-carbon ring makes eclipsing unavoidable."
+      "context": "Every other cycloalkane can pucker to escape eclipsing. Cyclopropane cannot, and the reason is geometric rather than chemical - it has no choice about being flat.",
+      "approach": "Step 1: Consider what puckering requires. A ring must have at least four atoms for any of them to move out of the plane defined by the others.\nStep 2: Apply that to three carbons. Any three points define a plane, so the three carbons of cyclopropane are necessarily coplanar whatever they might prefer.\nStep 3: With the ring locked flat, the C-H bonds on adjacent carbons are held at a dihedral angle of zero - fully eclipsed, with no conformational escape available.",
+      "note": "This is why cyclopropane carries both maximum angle strain and maximum torsional strain at once, and why its total of about 115 kJ/mol is the highest of any common ring. Every larger ring can trade one strain against the other; cyclopropane can trade nothing.",
+      "options": {
+        "A": "Correct. Three points define a plane, so the ring cannot pucker and its C-H bonds are locked in the fully eclipsed arrangement.",
+        "B": "The bent bonds are a consequence of the same rigid geometry, not a cause of the eclipsing. Bent overlap is in fact less effective, not maximised.",
+        "C": "Hydrogen bonding requires a hydrogen on nitrogen, oxygen or fluorine. Cyclopropane's C-H hydrogens cannot hydrogen bond at all.",
+        "D": "Cyclopropane has no ring flip. It is rigidly planar, which is precisely why the eclipsing cannot be relieved."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A three-membered carbon ring."
   },
   {
     "question_id": "ch04_q29_cyclohexane_conformations_stability",
@@ -1182,13 +1367,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the energy hierarchy of cyclohexane's conformations.",
-      "process": "Step 1: Recall the relative energies of cyclohexane conformations:\n- Chair: 0 kJ/mol (global minimum)\n- Twist-boat: ~23 kJ/mol (local minimum)\n- Boat: ~29 kJ/mol (transition state/local maximum)\n- Half-chair: ~45 kJ/mol (global maximum)\nStep 2: Arrange in order of decreasing stability (lowest energy to highest energy): Chair > Twist-boat > Boat > Half-chair.",
-      "result": "The correct order is Chair > Twist-boat > Boat > Half-chair."
+      "context": "Cyclohexane passes through four named shapes. Two are energy minima the molecule occupies, and two are transition states it crosses, so the ranking mixes stable forms with fleeting ones.",
+      "approach": "Step 1: Place the chair. It achieves tetrahedral angles with every bond staggered and no significant steric crowding, so it is the global minimum at zero.\nStep 2: Place the twist-boat next, about 23 kJ/mol above the chair. It is a genuine shallow minimum, twisted to reduce both eclipsing and flagpole crowding.\nStep 3: The boat sits about 6 kJ/mol above the twist-boat, at roughly 29, with eclipsed bonds and flagpole interactions. The half-chair is the highest at about 45 kJ/mol, the transition state for the ring flip itself.",
+      "note": "Only the chair is meaningfully populated at room temperature - the twist-boat lies far enough above it that fewer than one molecule in ten thousand occupies it. When a problem says cyclohexane, it means the chair unless it says otherwise.",
+      "options": {
+        "A": "Correct. Chair at 0, twist-boat at about 23, boat at about 29 and half-chair at about 45 kJ/mol.",
+        "B": "This puts the boat above the twist-boat in stability. The twist is lower, because twisting relieves some of the boat's eclipsing and flagpole strain.",
+        "C": "The chair is by a wide margin the most stable form; no other conformation approaches it.",
+        "D": "This places the half-chair above the boat. The half-chair is the highest point on the profile, being the transition state for the flip."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring."
   },
   {
     "question_id": "ch04_q30_twist_boat_vs_boat_energy",
@@ -1223,13 +1415,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question examines the conformational differences between the boat and twist-boat structures.",
-      "process": "Step 1: Identify sources of strain in the boat conformation: 1) Eclipsing C-H bonds along the sides of the boat. 2) Flagpole steric interactions between the C1 and C4 hydrogens pointing inward.\nStep 2: When the boat twists to form the twist-boat conformation, the C1 and C4 hydrogens move away from each other, reducing flagpole strain.\nStep 3: Additionally, twisting staggers the side C-H bonds, reducing torsional strain. This lowers the energy by ~6 kJ/mol.",
-      "result": "The twist-boat is more stable because it relieves both flagpole steric interactions and eclipsing torsional strain."
+      "context": "The boat suffers two problems at once, and the twist relieves part of each. Understanding the stabilisation means identifying both, since neither alone accounts for the 6 kJ/mol.",
+      "approach": "Step 1: Identify the boat's steric problem. Its two upward-pointing flagpole hydrogens, on carbons across the ring from one another, are forced uncomfortably close.\nStep 2: Identify its torsional problem. Along the two flat sides of the boat the C-H bonds are eclipsed.\nStep 3: Twisting the ring slightly moves the flagpole hydrogens apart and rotates the eclipsed bonds partly out of alignment. Both improvements together lower the energy by about 6 kJ/mol.",
+      "note": "The twist-boat is a shallow minimum rather than a transition state, so it is a real conformation with a measurable, if tiny, population. It matters chiefly as the intermediate the ring passes through during a chair-to-chair flip.",
+      "options": {
+        "A": "Correct. Twisting separates the flagpole hydrogens and rotates the eclipsed bonds partly out of alignment, relieving steric and torsional strain together.",
+        "B": "No conformation of cyclohexane is planar, and planarity would raise the energy sharply by forcing 120 degree angles and full eclipsing.",
+        "C": "The twist does not increase angle strain to buy staggering. Bond angles stay near tetrahedral throughout; what changes is the torsional and steric arrangement.",
+        "D": "Hydrogen bonding requires a hydrogen bonded to nitrogen, oxygen or fluorine. Cyclohexane is a hydrocarbon and has none."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring."
   },
   {
     "question_id": "ch04_q31_flagpole_interaction_positions",
@@ -1264,13 +1463,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question identifies the specific atoms involved in flagpole interactions.",
-      "process": "Step 1: Visualize the boat conformation of cyclohexane.\nStep 2: The 'bow' and 'stern' of the boat are C1 and C4, which point upward.\nStep 3: The hydrogens attached to C1 and C4 that point inward towards each other are forced within their van der Waals radii, creating steric clash. These are the flagpole hydrogens.",
-      "result": "The flagpole interaction occurs between hydrogens at C1 and C4."
+      "context": "The boat conformation is shaped like its name: four carbons form the base and two are lifted at either end. The hydrogens pointing upward from those two raised carbons are the flagpoles.",
+      "approach": "Step 1: Identify the raised carbons. In a boat, two carbons directly across the ring from one another are both bent upward.\nStep 2: On a six-membered ring, directly across means separated by two carbons in each direction - a 1,4 relationship.\nStep 3: The hydrogens pointing up from C1 and C4 are therefore aimed at each other across the ring's interior, close enough to repel.",
+      "note": "The 1,4 relationship is what makes the interaction possible at all: 1,2 or 1,3 positions cannot both be raised in a boat. The same geometry appears in the chair as the 1,3-diaxial interaction between axial substituents, which is where this idea does most of its work.",
+      "options": {
+        "A": "Correct. The two carbons lifted at either end of the boat are across the ring from each other, in a 1,4 relationship, and their upward hydrogens crowd.",
+        "B": "C1 and C2 are adjacent, so their hydrogens point away from one another rather than converging over the ring.",
+        "C": "A 1,3 relationship in the chair does produce diaxial crowding, but the boat's flagpole interaction is specifically between the two raised prow-and-stern carbons.",
+        "D": "C2 and C5 are also 1,4 to each other, but in the standard boat it is C1 and C4 that are raised; C2 and C5 lie in the flat base."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring."
   },
   {
     "question_id": "ch04_q32_half_chair_transition_state",
@@ -1305,12 +1511,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the quantitative energy barrier of the cyclohexane ring flip.",
-      "process": "Step 1: The ring flip from one chair to the other is a multi-step conformational equilibrium.\nStep 2: The highest-energy point on the potential energy diagram is the half-chair conformation, which is a transition state.\nStep 3: The energy of the half-chair is 45 kJ/mol above the chair conformation, representing the activation energy barrier for the ring-flipping process.",
-      "result": "The activation energy barrier is approximately 45 kJ/mol."
+      "context": "A ring flip converts one chair into the other, exchanging every axial position for an equatorial one. The barrier is the height of the highest point on that path, which is the half-chair.",
+      "approach": "Step 1: Identify the starting point and the summit. The molecule begins in a chair at zero and must reach the half-chair transition state, where five of the six carbons become coplanar.\nStep 2: Read off the half-chair's energy, about 45 kJ/mol above the chair.\nStep 3: That difference is the activation energy for the flip. The twist-boat at 23 kJ/mol is an intermediate along the way, not the barrier.",
+      "note": "Forty-five kJ/mol is low enough that the flip happens roughly a hundred thousand times a second at room temperature, so axial and equatorial positions interconvert far too fast to separate. Cool the sample enough and the flip slows until the two environments can be resolved separately by NMR - which is how the barrier was measured.",
+      "options": {
+        "A": "Correct. The half-chair is the highest point on the flip pathway, about 45 kJ/mol above the chair.",
+        "B": "23 kJ/mol is the twist-boat, an intermediate part-way along the path rather than the summit the molecule must clear.",
+        "C": "6 kJ/mol is the gap between the boat and the twist-boat, a difference between two high-energy forms rather than a barrier from the chair.",
+        "D": "80 kJ/mol would be high enough to slow the flip dramatically at room temperature, which is not what is observed - cyclohexane's conformers interconvert rapidly."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1346,12 +1558,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the conformational basis for cyclohexane's stability.",
-      "process": "Step 1: Look down any C-C bond of a chair cyclohexane in a Newman projection.\nStep 2: Observe that all C-H and C-C bonds on adjacent carbons are perfectly staggered.\nStep 3: Staggered bonds have dihedral angles of 60° (gauche or anti), which minimizes electron-electron repulsion between bond orbitals, resulting in zero torsional strain.",
-      "result": "Staggered C-H bonds with 60° dihedral angles eliminate torsional strain."
+      "context": "Torsional strain is measured by the dihedral angle between bonds on adjacent atoms. Zero degrees is fully eclipsed and costly; sixty degrees is fully staggered and costs nothing.",
+      "approach": "Step 1: Look along any carbon-carbon bond of the chair, as though drawing a Newman projection of it.\nStep 2: Read the arrangement. The bonds on the front carbon sit exactly between those on the back carbon - a dihedral angle of about 60 degrees.\nStep 3: That holds for every one of the six ring bonds simultaneously, which is what the chair's particular pucker achieves. With nothing eclipsed anywhere, torsional strain is essentially zero.",
+      "note": "Achieving this at the same time as near-tetrahedral bond angles is the chair's remarkable feature, and it is why six-membered rings are so common. No smaller ring can satisfy both conditions at once, which is why every one of them carries strain.",
+      "options": {
+        "A": "Correct. Every pair of adjacent carbons is perfectly staggered at about 60 degrees, so no bond anywhere in the ring is eclipsed.",
+        "B": "The chair is decidedly not planar. A planar ring would force 120 degree angles and eclipse every bond, which is the opposite of the chair's situation.",
+        "C": "The chair's angles are about 111.5 degrees, close to tetrahedral. Ninety degrees would introduce severe angle strain.",
+        "D": "Rapid ring flipping exchanges axial and equatorial positions, but that motion is a consequence of the low barrier rather than the reason any single chair is strain-free."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1387,13 +1605,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the dynamic path of a ring flip and its energy coordinates.",
-      "process": "Step 1: Starting at the chair, bending one carbon up yields the high-energy transition state, the half-chair.\nStep 2: The half-chair relaxes into a local minimum, the twist-boat.\nStep 3: Bending the other end up yields the boat conformation (a transition state between two twist-boats).\nStep 4: The boat twists to the other twist-boat, which then passes through a second half-chair transition state to relax into the flipped chair.",
-      "result": "The correct sequence is Chair -> Half-Chair -> Twist-Boat -> Boat -> Twist-Boat -> Half-Chair -> Chair."
+      "context": "A ring flip is a journey across an energy landscape with two summits and a shallow valley between them. The order of the conformations follows from their energies: transition states are crossed and minima are rested in.",
+      "approach": "Step 1: Leave the chair, the global minimum. The first obstacle is the half-chair at about 45 kJ/mol, the highest point and therefore the rate-limiting transition state.\nStep 2: Descend into the twist-boat at about 23 kJ/mol, a shallow minimum, then over the boat at about 29 - a small local maximum - and into the second twist-boat.\nStep 3: Cross the second half-chair and descend into the other chair. The path is symmetric about the boat at its midpoint.",
+      "note": "Reading the sequence tells you which species can be observed. Only the chairs, and marginally the twist-boats, are minima that molecules occupy; the half-chairs and the boat are crossed and never populated. That is why the flip is described as a two-barrier process rather than a single hop.",
+      "options": {
+        "A": "Correct. Half-chair and boat are maxima, twist-boat is a shallow minimum, and the path is symmetric about the boat at its centre.",
+        "B": "This places the boat immediately after the chair. The half-chair is the first barrier, and the boat sits at the midpoint of the path rather than near its start.",
+        "C": "This reaches the twist-boat before the half-chair, but the half-chair is the barrier that must be crossed to leave the chair at all.",
+        "D": "This puts the boat before the twist-boat on the descent. The twist-boat is the lower of the two and is reached first, with the boat as the small maximum between the pair."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring."
   },
   {
     "question_id": "ch04_q35_cyclohexane_angle_strain",
@@ -1428,12 +1653,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relationship between bond angle deviation and angle strain in cyclohexane.",
-      "process": "Step 1: The ideal tetrahedral bond angle for sp3-hybridized carbon is 109.5°.\nStep 2: In chair cyclohexane, the angle is 111.5°, representing a deviation of only 2°.\nStep 3: This minor deviation results in a virtually undetectable amount of angle strain (< 1 kJ/mol), which is why cyclohexane is considered essentially free of angle strain.",
-      "result": "An angle of 111.5° is close enough to 109.5° to result in negligible angle strain."
+      "context": "Angle strain grows with the square of the deviation from the ideal angle, so small departures cost very little. The relevant comparison is always against the tetrahedral 109.5 degrees, not against any ring geometry.",
+      "approach": "Step 1: Take the measured value of 111.5 degrees.\nStep 2: Compare it to the tetrahedral ideal of 109.5, giving a deviation of just 2 degrees.\nStep 3: A deviation that small carries negligible energy cost - compare cyclopropane's 60 degree angles, nearly 50 degrees away from ideal, which cost about 115 kJ/mol.",
+      "note": "The angles open slightly beyond tetrahedral rather than closing below it, which is worth noticing: the chair's pucker is chosen to keep every bond staggered, and the small angular opening is the price. Once again the ring optimises the total rather than any single term.",
+      "options": {
+        "A": "Correct. Two degrees from the tetrahedral ideal is a negligible distortion, which is why the chair is treated as free of angle strain.",
+        "B": "The carbons are sp3, with four sigma bonds each and no pi bonds. An sp2 carbon would prefer 120 degrees and be part of a double bond.",
+        "C": "Cyclohexane is a hydrocarbon with no hydrogen bonded to nitrogen, oxygen or fluorine, so it can form no hydrogen bonds at all.",
+        "D": "The angles are not dynamic in that sense, and 90 degrees would be severely strained. The chair holds its angles near 111.5 degrees throughout."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1469,13 +1700,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the structural consequences of a chair-chair interconversion (ring flip) on substituents.",
-      "process": "Step 1: Define the ring flip. A ring flip converts all axial positions to equatorial and all equatorial positions to axial.\nStep 2: Observe the face of the ring. If a substituent is 'up' (pointing above the average plane of the ring), it must remain 'up' after the flip.\nStep 3: Therefore, an 'up-equatorial' substituent becomes 'up-axial', and a 'down-equatorial' substituent becomes 'down-axial'. The relative face (up/down) is conserved.",
-      "result": "The substituent changes from equatorial to axial (or vice versa) but stays on the same face of the ring."
+      "context": "A ring flip changes conformation, not configuration. It rotates about single bonds only, so it can move a substituent between axial and equatorial but can never move it from one face of the ring to the other.",
+      "approach": "Step 1: Note what the flip does to positions. Every carbon that pointed its substituent axially now points it equatorially, and the reverse.\nStep 2: Note what it cannot do. Moving a group from the top face to the bottom would require breaking and remaking a bond, which rotation cannot achieve.\nStep 3: So an equatorial methyl on the upper face becomes an axial methyl still on the upper face. The orientation changes; the face does not.",
+      "note": "This is exactly why cis and trans disubstituted cyclohexanes are separable compounds while axial and equatorial forms are not. The flip interconverts conformations of one molecule; changing faces would produce a different stereoisomer, which the flip cannot reach.",
+      "options": {
+        "A": "Correct. The flip exchanges axial for equatorial while leaving the substituent on the same face of the ring, since only rotations are involved.",
+        "B": "Switching faces would change the configuration, which no amount of bond rotation can do. That would be a different stereoisomer.",
+        "C": "The flip converts every equatorial position to axial. A substituent cannot remain equatorial through a flip, and the carbons themselves do not move.",
+        "D": "No bond breaks during a ring flip. It is a conformational change achieved entirely by rotation about single bonds."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring bearing a single methyl group."
   },
   {
     "question_id": "ch04_q37_a_value_definition",
@@ -1510,13 +1748,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the thermodynamic definition and sign convention of A-values.",
-      "process": "Step 1: A-values are defined as the free energy difference: A-value = G_axial - G_equatorial.\nStep 2: Because placing a group in the equatorial position avoids 1,3-diaxial interactions, G_equatorial is lower than G_axial.\nStep 3: Therefore, G_axial - G_equatorial is positive. A positive A-value means the equatorial conformation is more stable (lower in energy) than the axial conformation.",
-      "result": "A positive A-value indicates that the equatorial conformation is more stable."
+      "context": "The sign convention follows directly from how the quantity is defined. A-value is the free energy change for moving a substituent from equatorial to axial, so its sign says which direction costs energy.",
+      "approach": "Step 1: Read the definition carefully - delta G measured for the equatorial to axial conversion.\nStep 2: A positive delta G means the change is uphill, so going to axial costs energy.\nStep 3: If axial is uphill from equatorial, then equatorial is the lower-energy conformation and the favoured one at equilibrium.",
+      "note": "Every common substituent has a positive A-value, so equatorial is essentially always preferred. What varies is by how much - from a fraction of a kilojoule for a small linear group up to about 21 for tert-butyl, which is enough to lock the ring in one conformation.",
+      "options": {
+        "A": "Correct. A positive delta G for equatorial to axial means axial is uphill, so equatorial is lower in energy and predominates.",
+        "B": "This reverses the sign convention. If axial were the lower-energy form, the A-value defined this way would be negative.",
+        "C": "Equal energies would give an A-value of zero. A positive value is precisely a statement that they differ.",
+        "D": "The A-value compares two conformational minima. It says nothing about the transition state between them, which is the ring-flip barrier."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring bearing a single methyl group."
   },
   {
     "question_id": "ch04_q38_equilibrium_calculation",
@@ -1551,13 +1796,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question applies the thermodynamic equation delta G = -RT * ln(K) to calculate the equilibrium ratio of cyclohexane chair conformers.",
-      "process": "Step 1: Identify the values: delta G° (axial -> equatorial) = -7300 J/mol. Temperature T = 298 K. R = 8.314 J/(mol*K).\nStep 2: Set up the equation: K = exp(-delta G° / RT) = exp(7300 / (8.314 * 298)).\nStep 3: Calculate the exponent: 7300 / 2477.57 = 2.946.\nStep 4: Calculate K: K = exp(2.946) ≈ 19.0.\nStep 5: The ratio is 19:1 equatorial:axial. Expressed as percentages: 19/(19+1) = 95% equatorial, 5% axial.",
-      "result": "The equilibrium ratio is approximately 95% equatorial to 5% axial."
+      "context": "The link between an energy difference and a population ratio is the standard thermodynamic relation, delta G equals minus RT times the natural log of the equilibrium constant. Rearranged, it converts an A-value directly into a conformer ratio.",
+      "approach": "Step 1: Assemble the quantities. Delta G is 7.3 kJ/mol, or 7300 J/mol; R is 8.314 J per mol per kelvin; T is 298 K.\nStep 2: Compute RT: 8.314 times 298 is about 2478 J/mol.\nStep 3: The equilibrium constant favouring equatorial is the exponential of 7300 divided by 2478, which is the exponential of about 2.95, or roughly 19. A ratio of 19 to 1 is about 95 to 5.",
+      "note": "Worth internalising the scale: at room temperature roughly 5.7 kJ/mol buys a ten-to-one preference, and each further 5.7 multiplies it by ten again. That rule of thumb lets you convert any A-value into an approximate population without a calculator.",
+      "options": {
+        "A": "Correct. RT is about 2478 J/mol, so the constant is exp(7300/2478), roughly 19, giving about 95 to 5.",
+        "B": "A one-to-one ratio would require a delta G of zero. An energy difference of 7.3 kJ/mol is far too large for that.",
+        "C": "A three-to-one ratio corresponds to about 2.7 kJ/mol, well below the methyl group's A-value.",
+        "D": "A thousand-to-one ratio would need roughly 17 kJ/mol - closer to a tert-butyl group than a methyl."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring bearing a single methyl group."
   },
   {
     "question_id": "ch04_q39_largest_a_value",
@@ -1592,12 +1844,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relative steric bulk (A-values) of common organic substituents.",
-      "process": "Step 1: Review the A-values (in kJ/mol):\n- tert-Butyl: ~21 kJ/mol (extremely large steric demand)\n- Methyl: ~7.3 kJ/mol\n- Bromine: ~2.0 kJ/mol\n- Cyano: ~0.8 kJ/mol\nStep 2: The tert-butyl group is so bulky that its axial conformation experiences severe steric clash with C3 and C5 axial hydrogens, locking it almost exclusively in the equatorial position.",
-      "result": "The tert-butyl group has the largest A-value."
+      "context": "An A-value measures how badly a substituent suffers in the axial position, where it points directly at the axial hydrogens on the two carbons across the ring. Bulk close to the ring matters most, since that is where the clash occurs.",
+      "approach": "Step 1: Consider what an axial substituent encounters - two 1,3-diaxial hydrogens aimed straight at it.\nStep 2: Compare how much room each candidate needs at the attachment point. tert-Butyl presents three methyl groups immediately around its attaching carbon, so it cannot avoid those hydrogens by rotating.\nStep 3: Methyl is far smaller, and the halogens and cyano group are smaller still in the relevant direction. tert-Butyl's A-value of about 21 kJ/mol is much the largest.",
+      "note": "That value is large enough to be a synthetic tool. A tert-butyl group is effectively locked equatorial, holding the whole ring in one chair, which lets chemists fix a ring's conformation deliberately in order to study how other substituents behave.",
+      "options": {
+        "A": "Correct. Three methyl groups crowded around the attachment carbon cannot rotate out of the way, giving an A-value near 21 kJ/mol.",
+        "B": "Methyl's A-value is about 7.3 kJ/mol - significant, but roughly a third of tert-butyl's.",
+        "C": "Halogen A-values are small, around 1 to 2.3 kJ/mol, because a single atom on a long bond sits well away from the ring.",
+        "D": "The cyano group is unusually small at about 0.8 kJ/mol, since its linear shape points it away from the 1,3-diaxial hydrogens."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1633,13 +1891,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question correlates the steric strain in cyclohexane chairs to acyclic alkane conformations (butane).",
-      "process": "Step 1: Trace the carbon path in axial methylcyclohexane. The methyl carbon (C_methyl), C1, C2, and C3 form a four-carbon butane unit.\nStep 2: In the axial conformation, the dihedral angle between C_methyl and C3 is 60°, which matches a gauche relationship in butane (3.8 kJ/mol of strain).\nStep 3: Trace the other pathway: C_methyl, C1, C6, and C5 also form a butane unit with a 60° dihedral angle (another gauche interaction).\nStep 4: Thus, the axial methyl group is destabilized by two gauche-butane interactions (2 * 3.8 kJ/mol = 7.6 kJ/mol, which is very close to the measured A-value of 7.3 kJ/mol).",
-      "result": "An axial methyl group experiences steric strain equivalent to two gauche-butane interactions."
+      "context": "The 1,3-diaxial interaction is not a new kind of strain. It is the gauche interaction from open-chain conformational analysis, appearing in a ring where the geometry holds it in place.",
+      "approach": "Step 1: Take an axial methyl and follow the chain of carbons through the ring to one of the axial hydrogens three positions away.\nStep 2: Sight along the relevant carbon-carbon bond. The methyl and that part of the ring are found at a dihedral angle of about 60 degrees - the gauche relationship.\nStep 3: The same holds for the axial hydrogen on the other side, so an axial methyl experiences two such interactions, one on each flank.",
+      "note": "The arithmetic confirms the identification. A single gauche-butane interaction costs about 3.8 kJ/mol, and two of them come to 7.6 - almost exactly methyl's measured A-value of 7.3. The ring is not introducing new physics, only holding an already familiar interaction in a fixed geometry.",
+      "options": {
+        "A": "Correct. Each 1,3-diaxial contact is a gauche-butane relationship, and two of them at about 3.8 kJ/mol each account for methyl's A-value of 7.3.",
+        "B": "Anti is the relaxed 180 degree arrangement and costs nothing. If the interactions were anti there would be no axial penalty at all.",
+        "C": "Eclipsing would require a dihedral angle near zero. The chair is fully staggered everywhere, so nothing in it is eclipsed.",
+        "D": "Both flanks are equivalent by the ring's symmetry, so the two interactions are the same. One cannot be gauche and the other anti."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring bearing a single methyl group."
   },
   {
     "question_id": "ch04_q41_cyano_small_a_value",
@@ -1674,13 +1939,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the impact of substituent geometry (hybridization and shape) on steric strain in chair conformations.",
-      "process": "Step 1: Consider the structure of the cyano group: -C≡N. Both the carbon and nitrogen are sp-hybridized.\nStep 2: This hybridization dictates a linear geometry (180° bond angle).\nStep 3: When in the axial position, the cyano group is oriented vertically, pointing straight away from the ring. This narrow, linear shape prevents it from projecting over the ring toward the C3 and C5 axial hydrogens, resulting in very little steric clash.",
-      "result": "The linear geometry of the cyano group minimizes 1,3-diaxial interactions, resulting in a very low A-value."
+      "context": "Steric bulk is directional. What matters for an axial substituent is not the group's total size but how much of it lies in the path of the two 1,3-diaxial hydrogens, close to the ring.",
+      "approach": "Step 1: Establish the geometry of the group. The cyano carbon is sp hybridized, so the C-C-N unit is perfectly linear.\nStep 2: Consider where that puts the atoms. Attached axially, the group projects straight up along the axis, with the nitrogen furthest away and nothing splayed out to the sides.\nStep 3: The 1,3-diaxial hydrogens point up alongside it rather than into it, so there is almost nothing to clash with. The A-value is accordingly tiny at about 0.8 kJ/mol.",
+      "note": "Compare a methyl group, which has the same one heavy atom at the attachment point but carries three hydrogens splayed outward at tetrahedral angles - and an A-value nine times larger. Shape governs the axial penalty far more than atom count or molecular weight does.",
+      "options": {
+        "A": "Correct. The linear sp geometry projects the group straight along the axial direction, so it presents almost no width where the diaxial hydrogens are.",
+        "B": "A hydrogen bond needs a hydrogen on nitrogen, oxygen or fluorine. The relevant hydrogens here are on carbon and cannot donate one.",
+        "C": "The A-value is a thermodynamic property of a stable molecule at equilibrium. No reaction with solvent is involved.",
+        "D": "Every atom has a finite van der Waals radius. The cyano group's small penalty comes from its shape and orientation, not from having no size."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring bearing a carbon triple bonded to a nitrogen."
   },
   {
     "question_id": "ch04_q42_halogen_a_value_trend",
@@ -1715,13 +1987,20 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question addresses the counter-intuitive trend in halogen A-values by looking at bond length effects.",
-      "process": "Step 1: Identify two competing factors as you go down Group 17: atomic radius increases (increases steric size), and C-X bond length increases (moves the atom further from the ring).\nStep 2: From Cl to Br to I, the bond length increases significantly (C-Cl = 1.78 Å, C-Br = 1.93 Å, C-I = 2.14 Å).\nStep 3: The longer C-I bond places the bulky iodine atom far enough away from the axial hydrogens on C3 and C5 to decrease the steric overlap, resulting in a slightly lower A-value for iodine than for chlorine or bromine.",
-      "result": "The longer C-I bond length projects the iodine atom further away from the ring, reducing steric clash."
+      "context": "Steric strain depends on the distance between the atoms involved, not on atomic size alone. A larger atom held further away can interfere less than a smaller one held close.",
+      "approach": "Step 1: Note the two competing factors as the halogen group is descended - the atom's van der Waals radius grows, but so does the carbon-halogen bond length.\nStep 2: Compare the magnitudes. From chlorine to iodine the bond lengthens from about 1.79 to 2.14 angstroms, a substantial increase.\nStep 3: That extra length carries the iodine further from the 1,3-diaxial hydrogens, and the increased distance more than offsets its greater bulk. The A-value therefore peaks at bromine and falls slightly for iodine.",
+      "note": "This is why the halogen A-values are so tightly bunched, from 0.25 to 0.55 kcal/mol, when the atoms themselves differ enormously in size. Two opposing trends nearly cancel, which is a reminder that steric arguments need geometry and not just a size ranking.",
+      "options": {
+        "A": "Correct. The C-I bond is long enough to carry the iodine clear of the diaxial hydrogens, outweighing its larger radius.",
+        "B": "Dispersion forces are attractive and would lower the axial energy, but they are far too weak to account for the trend and would not explain the peak at bromine.",
+        "C": "Electronegativity governs bond polarity, not steric bulk. A-values measure how much room a group needs, which is a geometric question.",
+        "D": "Iodocyclohexane is a stable, isolable compound. Its C-I bond is the weakest of the carbon-halogen series but does not cleave spontaneously at room temperature."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
-    "provenance": "original"
+    "key_status": "verified",
+    "feedback_status": "tailored",
+    "provenance": "original",
+    "structure_alt": "A six-membered carbon ring bearing an iodine atom."
   },
   {
     "question_id": "ch04_q43_trans_12_dimethyl_chair",
@@ -1756,12 +2035,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests conformational analysis of trans-1,2-disubstituted cyclohexanes.",
-      "process": "Step 1: Understand that 'trans' means the two substituents point to opposite faces of the ring (one up, one down).\nStep 2: On adjacent carbons (1,2-relationship), the orientations are:\n- C1: up is axial, down is equatorial.\n- C2: up is equatorial, down is axial.\nStep 3: Thus, trans can be achieved by having either both groups axial (C1 up-axial, C2 down-axial) OR both groups equatorial (C1 down-equatorial, C2 up-equatorial).\nStep 4: The diequatorial conformation avoids all 1,3-diaxial interactions and is much more stable than the diaxial conformation.",
-      "result": "The most stable chair conformation has both methyl groups in equatorial positions."
+      "context": "For any disubstituted cyclohexane, the cis or trans label fixes which combinations of axial and equatorial are geometrically possible. Only after that is settled does the energy comparison decide between them.",
+      "approach": "Step 1: Work out what trans allows at 1,2. Adjacent carbons alternate their axial directions, so substituents on opposite faces must be either both equatorial or both axial.\nStep 2: Compare those two options energetically. Diaxial puts two methyls each into two 1,3-diaxial interactions; diequatorial puts them into none.\nStep 3: Diequatorial is therefore much more stable, by about 15 kJ/mol, and is overwhelmingly the preferred conformation.",
+      "note": "The pairing rule is worth committing to memory because it inverts with position. At 1,2 and 1,4 it is trans that can be diequatorial; at 1,3 it is cis. Working it out from the alternating axial directions each time is safer than trying to recall which is which.",
+      "options": {
+        "A": "Correct. Adjacent carbons point their axial bonds in opposite directions, so opposite faces means both substituents can be equatorial - and that costs nothing.",
+        "B": "Diaxial is geometrically available for trans-1,2 but is the far worse of the two, carrying four 1,3-diaxial interactions in all.",
+        "C": "One axial and one equatorial is the cis-1,2 arrangement, not trans. The two labels permit different combinations.",
+        "D": "Flagpole positions exist only in the boat conformation. In a chair every substituent is either axial or equatorial."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1797,12 +2082,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question evaluates the chair conformations of cis-1,2-disubstituted cyclohexanes.",
-      "process": "Step 1: 'cis' means both groups point to the same face of the ring (both up or both down).\nStep 2: On adjacent carbons (1,2-relationship):\n- If both are up: C1 is up-axial, C2 is up-equatorial (axial-equatorial).\n- If both are down: C1 is down-equatorial, C2 is down-axial (equatorial-axial).\nStep 3: A ring flip converts one axial-equatorial chair into another equatorial-axial chair. Because both contain exactly one axial and one equatorial methyl group, the two conformations are degenerate (equal in energy).",
-      "result": "Both chair conformations of cis-1,2-dimethylcyclohexane are axial-equatorial and equal in energy."
+      "context": "When a ring flip converts one conformation into an equally strained one, neither is preferred and the molecule spends equal time in each. That happens whenever the two substituents are identical and their positions exchange.",
+      "approach": "Step 1: Determine what cis allows at 1,2. Adjacent carbons alternate axial directions, so the same face requires one substituent axial and the other equatorial.\nStep 2: Consider the ring flip. It converts the axial methyl to equatorial and the equatorial one to axial.\nStep 3: Since both substituents are methyl groups, the result is indistinguishable in energy from the original. The two chairs are equal, and neither predominates.",
+      "note": "Make the two substituents different and the degeneracy breaks immediately - the conformer placing the bulkier group equatorial wins, which is what the tert-butyl and isopropyl items in this chapter turn on. Equal energies here are a consequence of the two groups being identical, not of the cis relationship itself.",
+      "options": {
+        "A": "Correct. Cis at 1,2 forces one axial and one equatorial, and flipping simply swaps which methyl is which - identical groups, identical energy.",
+        "B": "Diequatorial is not available to cis-1,2. It would require the two methyls to be on opposite faces, which is the trans isomer.",
+        "C": "Diaxial is likewise unavailable to cis-1,2, and would in any case be the high-energy arrangement rather than the stable one.",
+        "D": "Neither diequatorial nor diaxial is geometrically possible for cis-1,2, so no such comparison arises."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1838,12 +2129,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the relationship between stereochemical configuration and symmetry in disubstituted cyclohexanes.",
-      "process": "Step 1: Examine the flat representation of cis-1,2-dimethylcyclohexane. A plane of symmetry bisects the C1-C2 bond and C4-C5 bond.\nStep 2: Because it has a plane of symmetry in its planar representation, the molecule is achiral overall (meso).\nStep 3: Note: While individual chair conformations are chiral and enantiomeric to each other, they interconvert via a ring flip so rapidly at room temperature that the compound behaves as an optically inactive meso mixture.",
-      "result": "cis-1,2-Dimethylcyclohexane is a meso compound."
+      "context": "A meso compound contains stereocenters yet is achiral overall, because an internal mirror plane makes one half the reflection of the other. Testing for it means finding the stereocenters and then looking for that internal symmetry.",
+      "approach": "Step 1: Find which isomers have stereocenters at all. The 1,2 and 1,3 dimethylcyclohexanes do; the 1,4 isomers do not, since each substituted carbon has two identical ring paths.\nStep 2: Among those, look for an internal mirror. In cis-1,2-dimethylcyclohexane a plane through the midpoints of the C1-C2 and C4-C5 bonds reflects one methyl onto the other.\nStep 3: That makes the two stereocenters opposite in configuration - R and S - so the molecule is achiral despite having them. The trans isomers are R,R or S,S, genuinely chiral, and trans-1,4 has no stereocenters to begin with.",
+      "note": "There is a subtlety worth knowing: a single frozen chair of cis-1,2-dimethylcyclohexane is actually chiral, since one methyl is axial and the other equatorial. The ring flip interconverts it with its own mirror image thousands of times a second, so the compound is achiral on any observable timescale. The mirror plane is a property of the averaged structure.",
+      "options": {
+        "A": "Correct. The two stereocenters are R and S, related by an internal mirror plane, so the molecule is meso - chiral centers present, molecule achiral.",
+        "B": "trans-1,2-Dimethylcyclohexane is R,R or S,S with no internal mirror, so it is genuinely chiral and resolvable into enantiomers.",
+        "C": "trans-1,3-Dimethylcyclohexane is likewise R,R or S,S and chiral. It is the cis-1,3 isomer that is meso.",
+        "D": "The 1,4 isomers have no stereocenters at all - each substituted carbon carries two identical ring branches - so the question of meso does not arise."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1879,12 +2176,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests conformational analysis of cis-1,3-disubstituted cyclohexanes.",
-      "process": "Step 1: 'cis' means both groups point to the same face (both up or both down).\nStep 2: On C1 and C3:\n- C1: up is axial, down is equatorial.\n- C3: up is axial, down is equatorial.\nStep 3: If both are up, the conformation is diaxial. If both are down, the conformation is diequatorial.\nStep 4: The diequatorial conformation has no 1,3-diaxial interactions and is highly stable, making it the dominant conformation at equilibrium.",
-      "result": "The most stable chair conformation of cis-1,3-dimethylcyclohexane has both methyl groups equatorial."
+      "context": "The 1,3 relationship reverses the pattern seen at 1,2. Carbons two apart point their axial bonds in the same direction, so it is the cis isomer that can place both substituents equatorially.",
+      "approach": "Step 1: Compare the axial directions at C1 and C3. Because they are separated by one carbon, both axial bonds point the same way - both up or both down.\nStep 2: Apply that to cis, where both methyls are on the same face. Both can therefore be equatorial together, or both axial together.\nStep 3: Compare the two. Diaxial costs four 1,3-diaxial interactions, including a severe direct one between the two methyls themselves. Diequatorial costs nothing and is strongly preferred.",
+      "note": "The diaxial form of cis-1,3-dimethylcyclohexane is unusually bad, because the two axial methyls point directly at each other across the ring rather than merely at hydrogens. That single interaction is worth about 15 kJ/mol on its own, and it makes this the most lopsided conformational preference among the dimethylcyclohexanes.",
+      "options": {
+        "A": "Correct. At 1,3 the axial directions coincide, so the cis isomer can place both methyls equatorial - which it does, avoiding all diaxial strain.",
+        "B": "Diaxial is geometrically possible for cis-1,3 but is severely destabilised, since the two axial methyls point straight at one another.",
+        "C": "One axial and one equatorial is the trans-1,3 arrangement. Cis at 1,3 places both substituents alike.",
+        "D": "The twist-boat lies about 23 kJ/mol above the chair and is not adopted when a strain-free diequatorial chair is available."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1920,12 +2223,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the quantitative calculation of energy differences between two chair conformations of a disubstituted cyclohexane.",
-      "process": "Step 1: Draw the two conformations of trans-1,4-dimethylcyclohexane. One chair has both methyls equatorial (diequatorial), and the other has both methyls axial (diaxial).\nStep 2: The diequatorial conformation has 0 kJ/mol of steric strain from the methyls.\nStep 3: The diaxial conformation has two axial methyl groups. Each axial methyl group has two 1,3-diaxial H-methyl interactions.\nStep 4: Total interactions in the diaxial conformer = 4 H-methyl interactions.\nStep 5: Energy cost = 4 * 3.8 kJ/mol = 15.2 kJ/mol (or 4 * 0.9 kcal/mol = 3.6 kcal/mol). Since the diequatorial conformation is 0 kJ/mol, the energy difference is 15.2 kJ/mol.",
-      "result": "The energy difference between the two chairs is 15.2 kJ/mol (3.6 kcal/mol)."
+      "context": "The energy difference between two chairs is found by counting the 1,3-diaxial interactions in each and multiplying by the cost of one. Only axial substituents contribute; equatorial ones cost nothing.",
+      "approach": "Step 1: Establish the two conformations. At 1,4 the axial directions oppose, so trans allows both substituents equatorial in one chair and both axial in the other.\nStep 2: Count interactions in the diaxial chair. Each axial methyl faces two axial hydrogens across the ring, so two interactions per methyl and four in total.\nStep 3: Multiply and subtract. Four interactions at 3.8 kJ/mol each is 15.2 kJ/mol, and the diequatorial chair has none, so the difference is 15.2 kJ/mol.",
+      "note": "Note that both interactions of each methyl are with hydrogens, not with the other methyl - at 1,4 the two axial substituents point in opposite directions and never meet. That is why this figure is exactly twice the methyl A-value, whereas the cis-1,3 diaxial case is much worse than simple doubling.",
+      "options": {
+        "A": "Correct. Four 1,3-diaxial interactions at 3.8 kJ/mol each gives 15.2 kJ/mol, which is exactly twice a single methyl's A-value.",
+        "B": "7.6 kJ/mol counts only one methyl's two interactions. Both methyls are axial in that conformation, so both contribute.",
+        "C": "The two chairs are not degenerate here. Diequatorial and diaxial are very different arrangements, unlike the cis-1,2 case where flipping exchanges identical positions.",
+        "D": "11.4 kJ/mol corresponds to three interactions. Two axial methyls generate four, two apiece."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -1961,12 +2270,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question tests the thermodynamic control of chair conformation stability when two different-sized groups compete.",
-      "process": "Step 1: 'trans' 1,3-relationship means one substituent is 'up' and one is 'down'.\nStep 2: On C1 and C3, one position is axial and the other is equatorial for any trans-1,3 layout:\n- Conformation A: C1 (tert-butyl) is equatorial (down), C3 (methyl) is axial (up).\n- Conformation B: C1 (tert-butyl) is axial (down), C3 (methyl) is equatorial (up).\nStep 3: Compare A-values: tert-butyl = 21 kJ/mol, methyl = 7.3 kJ/mol.\nStep 4: Because the A-value of tert-butyl is much larger, the conformation keeping tert-butyl equatorial (Conformation A) is highly favored, forcing the smaller methyl group into the axial position.",
-      "result": "The most stable conformation has the bulky tert-butyl group equatorial and the methyl group axial."
+      "context": "When the stereochemistry forces one substituent axial, the question is not whether to avoid the axial position but which group should occupy it. The answer follows from comparing A-values.",
+      "approach": "Step 1: Determine what trans permits at 1,3. Carbons two apart point their axial bonds the same way, so substituents on opposite faces must be one axial and one equatorial. Diequatorial is not available.\nStep 2: Identify which arrangement to prefer. One group must go axial, so put the one that suffers least there.\nStep 3: Compare A-values - about 21 kJ/mol for tert-butyl against 7.3 for methyl. Forcing tert-butyl axial would cost roughly three times as much, so tert-butyl takes equatorial and methyl goes axial.",
+      "note": "A tert-butyl group is often described as conformationally locking a ring, and this is what that means in practice: its axial penalty is so large that the ring will accept almost any other strain rather than place it axially. Chemists exploit that to hold a ring in a known conformation while studying something else on it.",
+      "options": {
+        "A": "Correct. Trans-1,3 forces one substituent axial, and the much larger A-value of tert-butyl means methyl takes that position instead.",
+        "B": "This puts the bulkier group axial, costing about 21 kJ/mol where the alternative costs 7.3. It is the less stable of the two chairs by a wide margin.",
+        "C": "Diequatorial is geometrically impossible for trans-1,3. Opposite faces on carbons two apart require one axial and one equatorial.",
+        "D": "Diaxial is likewise unavailable to the trans isomer at 1,3, and would in any case be far worse than either mixed arrangement."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2002,12 +2317,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question addresses the conformation of a cis-1,4-disubstituted cyclohexane with two different alkyl groups.",
-      "process": "Step 1: 'cis' 1,4-relationship means both groups are on the same face (both up or both down).\nStep 2: On C1 and C4, one position must be axial and the other equatorial in a cis relationship:\n- Chair 1: C1 (isopropyl) is equatorial, C4 (methyl) is axial.\n- Chair 2: C1 (isopropyl) is axial, C4 (methyl) is equatorial.\nStep 3: Compare A-values: isopropyl (~8.8 kJ/mol) > methyl (~7.3 kJ/mol).\nStep 4: To minimize energy, the group with the larger A-value (isopropyl) is placed in the equatorial position, which forces the smaller group (methyl) to be axial.",
-      "result": "The more stable conformation places the larger isopropyl group in the equatorial position and the methyl group in the axial position."
+      "context": "The same reasoning applies whenever geometry forces a choice: identify which arrangements are possible, then let the larger A-value decide which substituent gets the equatorial position.",
+      "approach": "Step 1: Determine what cis permits at 1,4. Carbons directly across the ring point their axial bonds in opposite directions, so substituents on the same face must be one axial and one equatorial.\nStep 2: Note that diequatorial is therefore unavailable, and one group must be axial.\nStep 3: Compare A-values - isopropyl at about 9.2 kJ/mol against methyl's 7.3. Isopropyl suffers more when axial, so it takes the equatorial position and methyl goes axial.",
+      "note": "The margin here is far narrower than in the tert-butyl case - about 2 kJ/mol rather than 14 - so the preference is real but modest, and both conformers are appreciably populated. Isopropyl's A-value is only slightly above methyl's because it can rotate to point its own methyls away from the ring, which tert-butyl cannot.",
+      "options": {
+        "A": "Correct. Cis-1,4 forces one group axial, and isopropyl's slightly larger A-value means methyl takes that role.",
+        "B": "This places the larger group axial. The difference is small, so this conformer is populated, but it is the less stable of the two.",
+        "C": "Diequatorial is not geometrically available for cis-1,4. Opposite axial directions across the ring mean the same face requires one of each.",
+        "D": "Diaxial is likewise impossible for the cis isomer at 1,4, and would be the worst arrangement in any case."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2043,12 +2364,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This question applies conformational analysis to a biologically important trisubstituted cyclohexane molecule.",
-      "process": "Step 1: Analyze the structure of menthol. The cyclohexane ring has an -OH group at C1, an isopropyl group at C2, and a methyl group at C5.\nStep 2: Note the stereochemical relationships:\n- The -OH at C1 and the isopropyl at C2 are trans (trans-1,2).\n- The -OH at C1 and the methyl at C5 are trans (trans-1,3, which translates to C1-C5 cis? Let's check: C1-C2-C3-C4-C5 is a 1,3-relationship if we count C1 as 1, C5 as 3. In (1R,2S,5R)-menthol, the substituents are arranged such that all three can simultaneously occupy equatorial positions).\nStep 3: Let's verify: C1-OH (equatorial, e.g., down-equatorial). C2-isopropyl (trans to OH, so it must be up-equatorial). C5-methyl is trans to OH? If OH is down-equatorial, then C5 is C3 if numbering from C1 in opposite direction. Let's trace: C1 (down) -> C6 -> C5 (up is axial, down is equatorial). So if C5 is down, it is down-equatorial. Thus C1-OH (down) and C5-methyl (down) are cis.\nStep 4: Indeed, in this configuration, all three groups (hydroxyl, isopropyl, and methyl) can be equatorial at the same time, making this conformation exceptionally stable.",
-      "result": "In its most stable chair conformation, all three substituents are in equatorial positions."
+      "context": "With three substituents the possible arrangements are constrained by all three stereochemical relationships at once. Occasionally they are mutually compatible with every group equatorial, and menthol is the classic case.",
+      "approach": "Step 1: Take the relationships in turn. In menthol the hydroxyl at C1 and the isopropyl at C2 are trans, which at adjacent carbons permits both equatorial.\nStep 2: Check the third. The methyl at C5 stands in a relationship to the other two that also allows equatorial placement in the same chair.\nStep 3: Since no relationship forces any group axial, all three occupy equatorial positions simultaneously, and the alternative chair would put all three axial - dramatically worse.",
+      "note": "That all-equatorial arrangement is why menthol is so conformationally rigid, and it is a large part of why this particular stereoisomer is the one with the familiar cooling character. Of the eight possible stereoisomers, only this one achieves an all-equatorial chair.",
+      "options": {
+        "A": "Correct. The stereochemistry permits all three substituents to be equatorial in the same chair, which is why menthol is unusually rigid conformationally.",
+        "B": "Putting the hydroxyl axial would be adopted only if the stereochemistry required it. Here it does not - all three can be equatorial together.",
+        "C": "Two axial groups would cost several 1,3-diaxial interactions unnecessarily, since an all-equatorial chair is geometrically available.",
+        "D": "All-axial is the alternative chair reached by flipping, and it is far higher in energy - the least stable arrangement rather than the most."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2099,12 +2426,18 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Understanding cyclohexane ring-flip energetics.",
-      "process": "Chair is the ground state. Half-chair requires severe angle and torsional strain (45 kJ/mol). Twist-boat relieves some eclipsing strain (23 kJ/mol). Boat is a transition state between twist-boats (30 kJ/mol).",
-      "result": "Order of stability: Chair > Twist-Boat > Boat > Half-Chair."
+      "context": "The four cyclohexane conformations split into two kinds. Chair and twist-boat are minima - shapes the molecule rests in - while half-chair and boat are maxima it passes over. The plotted energies distinguish them.",
+      "approach": "Step 1: Read the extremes. The chair is at 0, the reference and global minimum, and the half-chair at 45 kJ/mol is the highest point on the diagram.\nStep 2: Place the twist-boat at 23 kJ/mol. Being a local minimum, it is a genuine conformation with a small population rather than a transition state.\nStep 3: Place the boat at 30 kJ/mol, above the twist-boat. It is a small local maximum sitting between the two twist-boat minima on either side of it.",
+      "note": "Reading a profile means separating minima from maxima, not merely ranking energies. Only the chair and, marginally, the twist-boat can be said to exist as conformations; the half-chair and boat are geometries the molecule passes through and is never found in.",
+      "options": {
+        "A": "Correct. Chair at 0 as the global minimum, half-chair at 45 as the highest transition state, and twist-boat at 23 as a genuine shallow minimum.",
+        "B": "The boat lies about 30 kJ/mol above the chair. Nothing is more stable than the chair.",
+        "C": "The half-chair is the highest point on the diagram, which makes it a transition state rather than an intermediate the molecule can occupy.",
+        "D": "The energies span 45 kJ/mol from chair to half-chair. If they were equal there would be no barrier and no ring flip to describe."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   },
   {
@@ -2152,12 +2485,16 @@ var CH04_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Distinguishing cis/trans isomers in dimethylcyclohexanes.",
-      "process": "Item 1 has both methyls on the same face (wedges/wedges) at 1,3 positions: cis. Item 2 has one wedge and one dash at 1,3: trans. Item 3 has both wedges at 1,2: cis. Item 4 has wedge/dash at 1,2: trans.",
-      "result": "Cis/trans naming depends on whether substituents point to same or opposite faces."
+      "context": "Cis and trans on a ring describe whether two substituents sit on the same face or on opposite faces. Because the ring cannot rotate, that relationship is fixed and gives separable stereoisomers rather than interconverting conformations.",
+      "approach": "Step 1: Locate the two substituted carbons and note their separation - adjacent for 1,2, or one carbon apart for 1,3.\nStep 2: Determine the faces. Two substituents on the same face are cis; on opposite faces, trans.\nStep 3: Cross-check with configurations. In both the 1,2 and 1,3 cases the cis isomer is the meso form, with its two stereocenters opposite in configuration, while the trans isomer is chiral with matching configurations.",
+      "note": "That the cis isomer is meso in both cases is a useful cross-check, but be careful applying it more widely: at 1,4 the substituted carbons are not stereocenters at all, since each carries two identical ring branches, so cis and trans there are diastereomers with no chirality involved.",
+      "options": {
+        "A": "Correct. Each structure's two stereocenters were checked against both their configurations and the geometry of the substituents relative to the ring: the meso pairings are cis and the matching-configuration pairings are trans.",
+        "B": "Read the faces rather than the drawing's orientation. The dependable check is that the cis isomer of a 1,2- or 1,3-dimethylcyclohexane is the meso form, with opposite configurations at its two stereocenters."
+      }
     },
-    "key_status": "unverified",
-    "feedback_status": "unreviewed",
+    "key_status": "verified",
+    "feedback_status": "tailored",
     "provenance": "original"
   }
 ];

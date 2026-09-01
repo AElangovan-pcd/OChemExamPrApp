@@ -2248,5 +2248,12133 @@ var CH17_QUESTIONS = [
     "key_status": "verified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q1",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q2",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q3_2",
+    "topic": "Reduction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q4",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q5",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q6",
+    "topic": "Reduction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q7",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q8",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q9",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q10",
+    "topic": "Reduction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q11",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q12",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q13",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q14",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q15",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q16",
+    "topic": "Reduction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q17",
+    "topic": "Reduction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q18",
+    "topic": "Reduction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q19",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q20",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q21",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q22",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q23",
+    "topic": "Reduction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q24",
+    "topic": "Reduction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q25",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q26",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q27",
+    "topic": "Reduction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q28",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q29",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q30",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q31",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q32",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q33",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q34",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q35",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q36",
+    "topic": "Reduction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q37",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q38_2",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q39",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q40",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q41",
+    "topic": "Reduction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q42",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q43",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q44",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q45",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q46",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q47",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q48",
+    "topic": "Reduction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q49",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q50",
+    "topic": "Reduction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q51",
+    "topic": "Reduction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q52",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q53",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q54",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q55",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q56",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q57",
+    "topic": "Reduction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q58",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q59",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q60",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q61",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q62",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q63",
+    "topic": "Reduction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q64",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q65",
+    "topic": "Reduction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q66",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q67",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q68",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q69",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q70",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q71",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q72",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q73",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q74",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q75",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q76",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q77",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q78",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q79",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q80",
+    "topic": "Reduction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q81",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q82",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q83",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q84",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q85",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q86",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q87",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q88",
+    "topic": "Reduction",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q89",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q90",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q91",
+    "topic": "Oxidation",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q92",
+    "topic": "Reduction",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "NaBH4, MeOH",
+      "conditions": "0 C",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction.",
+      "process": "NaBH4 reduction of acetone yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q93",
+    "topic": "Reduction (LiAlH4)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "LiAlH4",
+      "conditions": "1) THF, 2) H3O+",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Reduction (LiAlH4).",
+      "process": "LiAlH4 reduction of acetaldehyde yields ethanol.",
+      "result": "The product is CCO."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q94",
+    "topic": "Oxidation (Chromic Acid)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "Na2Cr2O7, H2SO4",
+      "conditions": "H2O",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation (Chromic Acid).",
+      "process": "Chromic acid oxidation of 1-propanol yields propanoic acid.",
+      "result": "The product is CCC(=O)O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q95",
+    "topic": "Oxidation",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCO"
+      ],
+      "reagents": "PCC",
+      "conditions": "CH2Cl2",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Oxidation.",
+      "process": "PCC oxidation of primary alcohol ethanol yields acetaldehyde.",
+      "result": "The product is CC=O."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q8_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q12_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q19_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q21_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q22_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q28_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q36_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(=O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "PCC"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: acetone, C: acetaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: 1-propanol, C: propanal",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propane, B: 1-propanol, C: propanoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: 2-propanol, C: acetone",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: 2-propanol, C: acetone.",
+      "result": "The labels correspond to A: propene, B: 2-propanol, C: acetone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q41_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(=O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "PCC"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propene, B: 2-propanol, C: acetone",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: propane, B: 1-propanol, C: propanoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: acetone, C: acetaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: 1-propanol, C: propanal",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: 2-propanol, C: acetone.",
+      "result": "The labels correspond to A: propene, B: 2-propanol, C: acetone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q45_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "c1ccccc1",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "Brc1ccccc1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)(c1ccccc1)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2, FeBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "1) Mg, ether\n2) Acetone\n3) H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: benzene, B: chlorobenzene, C: benzyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: benzene, B: bromobenzene, C: acetophenone",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: toluene, B: bromobenzene, C: benzoic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol.",
+      "result": "The labels correspond to A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q46_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q57_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "c1ccccc1",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "Brc1ccccc1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)(c1ccccc1)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2, FeBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "1) Mg, ether\n2) Acetone\n3) H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: benzene, B: bromobenzene, C: acetophenone",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: toluene, B: bromobenzene, C: benzoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: benzene, B: chlorobenzene, C: benzyl alcohol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol.",
+      "result": "The labels correspond to A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q60_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(=O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "PCC"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propane, B: 1-propanol, C: propanoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: 2-propanol, C: acetone",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: 1-propanol, C: propanal",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propyne, B: acetone, C: acetaldehyde",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: 2-propanol, C: acetone.",
+      "result": "The labels correspond to A: propene, B: 2-propanol, C: acetone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q62_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "c1ccccc1",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "Brc1ccccc1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)(c1ccccc1)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2, FeBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "1) Mg, ether\n2) Acetone\n3) H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: benzene, B: chlorobenzene, C: benzyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: toluene, B: bromobenzene, C: benzoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: benzene, B: bromobenzene, C: acetophenone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol.",
+      "result": "The labels correspond to A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q64_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q70_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q75_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "c1ccccc1",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "Brc1ccccc1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)(c1ccccc1)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2, FeBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "1) Mg, ether\n2) Acetone\n3) H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: benzene, B: chlorobenzene, C: benzyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: toluene, B: bromobenzene, C: benzoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: benzene, B: bromobenzene, C: acetophenone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol.",
+      "result": "The labels correspond to A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q85_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(=O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "PCC"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: acetone, C: acetaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propane, B: 1-propanol, C: propanoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: 2-propanol, C: acetone",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: 1-propanol, C: propanal",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: 2-propanol, C: acetone.",
+      "result": "The labels correspond to A: propene, B: 2-propanol, C: acetone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q87_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "c1ccccc1",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "Brc1ccccc1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)(c1ccccc1)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2, FeBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "1) Mg, ether\n2) Acetone\n3) H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: benzene, B: chlorobenzene, C: benzyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: benzene, B: bromobenzene, C: acetophenone",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: toluene, B: bromobenzene, C: benzoic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol.",
+      "result": "The labels correspond to A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q88_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "c1ccccc1",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "Brc1ccccc1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)(c1ccccc1)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2, FeBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "1) Mg, ether\n2) Acetone\n3) H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: toluene, B: bromobenzene, C: benzoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: benzene, B: bromobenzene, C: acetophenone",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: benzene, B: chlorobenzene, C: benzyl alcohol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol.",
+      "result": "The labels correspond to A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q92_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(=O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "PCC"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propene, B: 2-propanol, C: acetone",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: propyne, B: acetone, C: acetaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: 1-propanol, C: propanal",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propane, B: 1-propanol, C: propanoic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: 2-propanol, C: acetone.",
+      "result": "The labels correspond to A: propene, B: 2-propanol, C: acetone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q1_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q2_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q3_3",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q4_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q5_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q6_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q7_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q8_3",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q9_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q10_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q11_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q12_3",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q13_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q14_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q15_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q16_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q17_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q18_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q19_3",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q20_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q21_3",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q22_3",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q23_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q24_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q25_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q26_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q27_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q28_3",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q29_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q30_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q31_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q32_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q33_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q34_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q35_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q36_3",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q37_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q38_3",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q39_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q40_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q41_3",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q42_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q43_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q44_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q45_3",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q46_3",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q47_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q48_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q49_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q50_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q51_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q52_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q53_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q54_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q55_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q56_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q57_3",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q58_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q59_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q60_3",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q61_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q62_3",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q63_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q64_3",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q65_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q66_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q67_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q68_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q69_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q70_3",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q71_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q72_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q73_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q74_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q75_3",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q76_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q77_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q78_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q79_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q80_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q81_2",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q82_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q83_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q84_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q85_3",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q86_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q87_3",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q88_3",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q89_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q90_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetaldehyde yields propan-2-ol.",
+      "result": "The product is CC(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q91_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q92_3",
+    "topic": "Grignard Addition to Benzaldehyde",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "O=Cc1ccccc1"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition to Benzaldehyde.",
+      "process": "Addition of methylmagnesium bromide to benzaldehyde yields 1-phenylethanol.",
+      "result": "The product is CC(O)c1ccccc1."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q93_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q94_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q95_2",
+    "topic": "Grignard Addition",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)=O"
+      ],
+      "reagents": "1) CH3MgBr, ether\n2) H3O+",
+      "conditions": "THF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Grignard Addition.",
+      "process": "Addition of methylmagnesium bromide to acetone yields t-butyl alcohol after acidic workup.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q4_3",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(=O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "PCC"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propane, B: 1-propanol, C: propanoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propyne, B: acetone, C: acetaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: 2-propanol, C: acetone",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: 1-propanol, C: propanal",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: 2-propanol, C: acetone.",
+      "result": "The labels correspond to A: propene, B: 2-propanol, C: acetone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q12_4",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(=O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "PCC"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propane, B: 1-propanol, C: propanoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: 1-propanol, C: propanal",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: 2-propanol, C: acetone",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: propyne, B: acetone, C: acetaldehyde",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: 2-propanol, C: acetone.",
+      "result": "The labels correspond to A: propene, B: 2-propanol, C: acetone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q25_3",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "c1ccccc1",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "Brc1ccccc1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)(c1ccccc1)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2, FeBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "1) Mg, ether\n2) Acetone\n3) H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: toluene, B: bromobenzene, C: benzoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: benzene, B: chlorobenzene, C: benzyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: benzene, B: bromobenzene, C: acetophenone",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol.",
+      "result": "The labels correspond to A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q26_3",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q27_3",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q29_3",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "c1ccccc1",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "Brc1ccccc1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)(c1ccccc1)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2, FeBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "1) Mg, ether\n2) Acetone\n3) H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: benzene, B: bromobenzene, C: acetophenone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: benzene, B: chlorobenzene, C: benzyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: toluene, B: bromobenzene, C: benzoic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol.",
+      "result": "The labels correspond to A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q41_4",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "c1ccccc1",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "Brc1ccccc1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)(c1ccccc1)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2, FeBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "1) Mg, ether\n2) Acetone\n3) H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: benzene, B: bromobenzene, C: acetophenone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: toluene, B: bromobenzene, C: benzoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: benzene, B: chlorobenzene, C: benzyl alcohol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol.",
+      "result": "The labels correspond to A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q56_3",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q68_3",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "c1ccccc1",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "Brc1ccccc1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)(c1ccccc1)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2, FeBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "1) Mg, ether\n2) Acetone\n3) H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: benzene, B: chlorobenzene, C: benzyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: benzene, B: bromobenzene, C: acetophenone",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: toluene, B: bromobenzene, C: benzoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol.",
+      "result": "The labels correspond to A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q69_3",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q70_4",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "c1ccccc1",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "Brc1ccccc1",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(O)(c1ccccc1)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "Br2, FeBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "1) Mg, ether\n2) Acetone\n3) H3O+"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: toluene, B: bromobenzene, C: benzoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: benzene, B: chlorobenzene, C: benzyl alcohol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: benzene, B: bromobenzene, C: acetophenone",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol.",
+      "result": "The labels correspond to A: benzene, B: bromobenzene, C: 2-phenylpropan-2-ol."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q71_3",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q72_3",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(=O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "PCC"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propane, B: 1-propanol, C: propanoic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: 2-propanol, C: acetone",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: propyne, B: acetone, C: acetaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propene, B: 1-propanol, C: propanal",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: 2-propanol, C: acetone.",
+      "result": "The labels correspond to A: propene, B: 2-propanol, C: acetone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q75_4",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q88_4",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CC=C",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CC(O)C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC(=O)C",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2O, H2SO4"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "PCC"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propyne, B: acetone, C: acetaldehyde",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propene, B: 1-propanol, C: propanal",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propene, B: 2-propanol, C: acetone",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: propane, B: 1-propanol, C: propanoic acid",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: propene, B: 2-propanol, C: acetone.",
+      "result": "The labels correspond to A: propene, B: 2-propanol, C: acetone."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch17_q93_3",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "C=C",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CC",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "H2SO4, heat"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "H2, Pd/C"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: ethanol, B: ethyne, C: ethane",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: acetaldehyde, B: ethylene, C: acetic acid",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: ethanol, B: ethylene, C: ethane",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: diethyl ether, B: ethylene, C: ethanol",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: ethanol, B: ethylene, C: ethane.",
+      "result": "The labels correspond to A: ethanol, B: ethylene, C: ethane."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

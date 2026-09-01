@@ -13,7 +13,6 @@ let state = {
     correct: 0,
     attempted: 0
   },
-  activeFeedbackTab: 'context', // 'context', 'process', 'result'
   appMode: 'practice',          // 'practice' or 'mock',
   topicSortMode: 'chapter',     // 'chapter' or 'alpha'
   mockExam: {
@@ -41,7 +40,7 @@ const OER_CHAPTER_TOPICS = {
   2: "Polar Covalent Bonds; Acids and Bases",
   3: "Organic Compounds: Alkanes and Their Stereochemistry",
   4: "Organic Compounds: Cycloalkanes and Their Stereochemistry",
-  5: "Stereochemistry at Tetrahedron Centers",
+  5: "Stereochemistry at Tetrahedral Centers",
   6: "An Overview of Organic Reactions",
   7: "Alkenes: Structure and Reactivity",
   8: "Alkenes: Reactions and Synthesis",
@@ -111,7 +110,12 @@ const smilesDrawerOptions = {
   fontSizeSmall: 8,
   padding: 10,
   terminalCarbons: true,
-  explicitHydrogens: false
+  explicitHydrogens: false,
+  // SmilesDrawer's compact mode collapses a small molecule into a condensed text
+  // formula - Cl[C@H](F)C renders as the string "CHClFHCH3", with no bonds and no
+  // wedges, which makes every stereochemistry item on a short chain unanswerable.
+  // Larger structures draw identically either way, so this is off everywhere.
+  compactDrawing: false
 };
 
 // Initialize App
@@ -234,30 +238,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Setup Events
 function setupEventListeners() {
-  // Modal toggle
-  const importBtn = document.getElementById('btn-import');
-  const modal = document.getElementById('import-modal');
-  const modalClose = document.getElementById('modal-close');
-  const importSubmit = document.getElementById('btn-submit-import');
-
-  importBtn.addEventListener('click', () => {
-    modal.classList.add('active');
-  });
-
-  modalClose.addEventListener('click', () => {
-    modal.classList.remove('active');
-  });
-
-  // Close modal when clicking backdrop
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.remove('active');
-    }
-  });
-
-  // Custom JSON submit
-  importSubmit.addEventListener('click', handleCustomImport);
-
   // Reset Stats button
   const resetBtn = document.getElementById('btn-reset');
   if (resetBtn) {
@@ -435,12 +415,23 @@ function shuffleQuestionsOptions(questions) {
     
     // If the question has feedback, update option letter references inside feedback strings
     if (clonedQ.feedback) {
-      clonedQ.feedback = {
-        ...clonedQ.feedback,
-        context: replaceOptionLettersInText(clonedQ.feedback.context, optionLetterMap),
-        process: replaceOptionLettersInText(clonedQ.feedback.process, optionLetterMap),
-        result: replaceOptionLettersInText(clonedQ.feedback.result, optionLetterMap)
-      };
+      const fb = { ...clonedQ.feedback };
+      for (const part of ['context', 'process', 'result', 'approach', 'note']) {
+        if (fb[part]) fb[part] = replaceOptionLettersInText(fb[part], optionLetterMap);
+      }
+
+      // Per-option rationales are keyed by the option_id as authored. The shuffle above
+      // has just relabelled the options, so these keys must travel with their option -
+      // leave them alone and every rationale attaches to the wrong answer.
+      if (fb.options) {
+        const remapped = {};
+        for (const [authoredId, text] of Object.entries(fb.options)) {
+          const newLetter = optionLetterMap[authoredId];
+          if (newLetter) remapped[newLetter] = replaceOptionLettersInText(text, optionLetterMap);
+        }
+        fb.options = remapped;
+      }
+      clonedQ.feedback = fb;
     }
     
     return clonedQ;
@@ -500,11 +491,8 @@ function renderQuestion() {
         <i class="fas fa-flask" style="font-size: 3rem; color: var(--text-secondary); margin-bottom: 1rem;"></i>
         <h3>No Questions Loaded</h3>
         <p style="color: var(--text-secondary); margin-top: 0.5rem; margin-bottom: 1.5rem;">
-          Import a batch of questions or select a different topic to begin practicing.
+          Select a different topic to begin practicing.
         </p>
-        <button class="btn btn-primary" onclick="document.getElementById('import-modal').classList.add('active')">
-          <i class="fas fa-plus"></i> Import Questions
-        </button>
       </div>
     `;
     updateProgressBar(0);
@@ -554,18 +542,12 @@ function renderQuestion() {
           <span>${isCorrect ? 'Correct Answer!' : 'Incorrect'}</span>
         </div>
         
-        <div class="feedback-tabs">
-          <button class="feedback-tab ${state.activeFeedbackTab === 'context' ? 'active' : ''}" 
-                  onclick="setFeedbackTab('context')">Context Understanding</button>
-          <button class="feedback-tab ${state.activeFeedbackTab === 'process' ? 'active' : ''}" 
-                  onclick="setFeedbackTab('process')">Pathway & Mechanism</button>
-          <button class="feedback-tab ${state.activeFeedbackTab === 'result' ? 'active' : ''}" 
-                  onclick="setFeedbackTab('result')">Key Result</button>
-        </div>
         
         <div class="feedback-content" id="feedback-content-area">
           ${getFeedbackContent(q.feedback)}
         </div>
+
+        ${getPerOptionFeedback(q, selectedOptionId)}
         
         <div class="feedback-actions">
           ${state.currentQuestionIndex < state.filteredQuestions.length - 1 
@@ -579,8 +561,10 @@ function renderQuestion() {
 
   container.innerHTML = html;
 
-  // Render Chemistry structures, dynamic charts, and KaTeX equations on canvases after inserting to DOM
-  setTimeout(() => {
+  // The canvases exist the moment innerHTML lands, so these draws run now rather than
+  // on a timer. A setTimeout here is clamped to ~1s in a background tab, which made
+  // every automated UAT sweep report blank canvases that a student never sees.
+  {
     // 1. Draw standard question Smiles canvas
     if (q.question_smiles && document.getElementById('q-smiles-canvas')) {
       drawSMILESCanvas(q.question_smiles, 'q-smiles-canvas', 'light', q.structure_alt || '');
@@ -612,7 +596,7 @@ function renderQuestion() {
         throwOnError: false
       });
     }
-  }, 50);
+  }
 }
 
 // Wrapper for SmilesDrawer execution with standard checks
@@ -696,56 +680,64 @@ function formatChemicalText(text) {
 }
 
 // Handle Tab Switching in feedback card
-function setFeedbackTab(tabName) {
-  state.activeFeedbackTab = tabName;
-  
-  // Update UI tabs
-  const tabs = document.querySelectorAll('.feedback-tab');
-  tabs.forEach(tab => {
-    if (tab.getAttribute('onclick').includes(tabName)) {
-      tab.classList.add('active');
-    } else {
-      tab.classList.remove('active');
-    }
-  });
+// Render the whole explanation as one continuous flow rather than behind tabs.
+// Two feedback shapes coexist: items authored in Phase 2 carry approach/note, and the
+// not-yet-reviewed remainder carries the older process/result. Read whichever is present.
+// Headings avoid mechanism-specific wording, since much of the bank is nomenclature,
+// structure and conformational analysis.
+function getFeedbackContent(feedback) {
+  if (!feedback) return '';
+  const section = (heading, body) => body
+    ? `<div style="margin-bottom: 1.1rem;">
+         <div style="font-weight: 700; color: var(--text-primary); font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 0.4rem;">${heading}</div>
+         ${body}
+       </div>`
+    : '';
 
-  // Update content
-  const contentArea = document.getElementById('feedback-content-area');
-  if (contentArea) {
-    const q = state.filteredQuestions[state.currentQuestionIndex];
-    contentArea.innerHTML = getFeedbackContent(q.feedback);
+  const steps = (text) => {
+    const parts = String(text).split('\n').filter(s => s.trim());
+    if (parts.length < 2) return `<p style="line-height: 1.7; color: #cbd5e1;">${text}</p>`;
+    return '<ul style="list-style-position: outside; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.55rem;">'
+      + parts.map(s => `<li style="line-height: 1.7; color: #cbd5e1;">${s}</li>`).join('')
+      + '</ul>';
+  };
 
-    // Re-render KaTeX on tab change
-    if (typeof renderMathInElement !== 'undefined') {
-      renderMathInElement(contentArea, {
-        delimiters: [
-          { left: "$$", right: "$$", display: true },
-          { left: "$", right: "$", display: false }
-        ],
-        throwOnError: false
-      });
-    }
-  }
+  return section('The principle', feedback.context
+        ? `<p style="line-height: 1.7; color: #cbd5e1;">${feedback.context}</p>` : '')
+    + section('Working through it', (feedback.approach || feedback.process)
+        ? steps(feedback.approach || feedback.process) : '')
+    + section(feedback.note ? 'Worth knowing' : 'Takeaway', (feedback.note || feedback.result)
+        ? `<p style="line-height: 1.7; color: #cbd5e1;">${feedback.note || feedback.result}</p>` : '');
 }
 
-// Get raw/formatted explanation based on active tab
-function getFeedbackContent(feedback) {
-  if (state.activeFeedbackTab === 'context') {
-    return `<p>${feedback.context}</p>`;
-  } else if (state.activeFeedbackTab === 'process') {
-    // Format bullet points / steps
-    const steps = feedback.process.split('\n');
-    let html = '<ul style="list-style-position: inside; display: flex; flex-direction: column; gap: 0.65rem;">';
-    steps.forEach(step => {
-      if (step.trim()) {
-        html += `<li style="line-height: 1.6; color: #cbd5e1;">${step}</li>`;
-      }
-    });
-    html += '</ul>';
-    return html;
-  } else {
-    return `<p><strong>Takeaway:</strong> ${feedback.result}</p>`;
-  }
+// Per-option rationales, rendered beside the options themselves rather than behind a
+// tab: the option a student just chose is where they are actually looking. Returns
+// empty for items that have not been authored yet.
+function getPerOptionFeedback(q, selectedOptionId) {
+  const rationales = q.feedback && q.feedback.options;
+  if (!rationales) return '';
+
+  const rows = (q.options || []).map(opt => {
+    const text = rationales[opt.option_id];
+    if (!text) return '';
+    const isKey = opt.is_correct;
+    const isChosen = opt.option_id === selectedOptionId;
+    const accent = isKey ? 'var(--success-color)' : (isChosen ? 'var(--error-color)' : 'var(--border-color)');
+    return `
+      <div style="border-left: 3px solid ${accent}; padding: 0.5rem 0 0.5rem 0.85rem; margin-bottom: 0.85rem;">
+        <div style="font-weight: 700; color: ${isKey ? 'var(--success-color)' : 'var(--text-secondary)'}; font-size: 0.8rem; margin-bottom: 0.25rem;">
+          ${opt.option_id}${isKey ? ' — correct' : ''}${isChosen && !isKey ? ' — your answer' : ''}
+        </div>
+        <div style="line-height: 1.6; color: #cbd5e1;">${formatChemicalText(text)}</div>
+      </div>`;
+  }).join('');
+
+  if (!rows) return '';
+  return `
+    <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+      <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.85rem;">Why each answer</div>
+      ${rows}
+    </div>`;
 }
 
 // Answer Selection Handler
@@ -771,7 +763,6 @@ function handleOptionSelect(optionId) {
 function nextQuestion() {
   if (state.currentQuestionIndex < state.filteredQuestions.length - 1) {
     state.currentQuestionIndex++;
-    state.activeFeedbackTab = 'context'; // Reset active tab
     renderQuestion();
   }
 }
@@ -807,94 +798,6 @@ function restartTopic() {
 }
 
 // Custom JSON Import parsing
-function handleCustomImport() {
-  const textarea = document.getElementById('custom-json-input');
-  if (!textarea) return;
-
-  const rawVal = textarea.value.trim();
-  if (!rawVal) {
-    showToast('Please enter JSON question data', 'error');
-    return;
-  }
-
-  try {
-    let parsedData = JSON.parse(rawVal);
-    
-    // Normalize into array if single object
-    if (!Array.isArray(parsedData)) {
-      parsedData = [parsedData];
-    }
-
-    // Validate Schema
-    const validatedQuestions = [];
-    parsedData.forEach((q, idx) => {
-      const errors = validateQuestionSchema(q);
-      if (errors.length > 0) {
-        throw new Error(`Question ${idx + 1} validation failed: ${errors.join(', ')}`);
-      }
-      validatedQuestions.push(q);
-    });
-
-    // Merge into local database
-    state.questions = [...state.questions, ...validatedQuestions];
-    assignOERChapterNumbers();
-    
-    // Rebuild topic list and select the newly imported topic
-    buildTopicList();
-    
-    // Close modal
-    document.getElementById('import-modal').classList.remove('active');
-    textarea.value = '';
-    
-    // Select the topic of the first imported question
-    if (validatedQuestions.length > 0) {
-      selectTopic(validatedQuestions[0].topic);
-    }
-    
-    showToast(`Successfully imported ${validatedQuestions.length} ACS-style questions!`, 'success');
-  } catch (err) {
-    console.error('Import error:', err);
-    showToast(`Import Failed: ${err.message}`, 'error');
-  }
-}
-
-// Strict schema validation helper
-function validateQuestionSchema(q) {
-  const errors = [];
-  
-  if (!q.question_id) errors.push('Missing "question_id"');
-  if (!q.topic) errors.push('Missing "topic"');
-  if (!q.difficulty_level) errors.push('Missing "difficulty_level"');
-  if (!q.question_text) errors.push('Missing "question_text"');
-  
-  // Options checks
-  if (!q.options || !Array.isArray(q.options) || q.options.length < 2) {
-    errors.push('"options" must be an array of at least 2 choices');
-  } else {
-    let hasCorrect = false;
-    q.options.forEach((opt, oIdx) => {
-      if (!opt.option_id) errors.push(`Option ${oIdx + 1} is missing "option_id"`);
-      if (!opt.text) errors.push(`Option ${opt.option_id || oIdx + 1} is missing "text"`);
-      if (opt.is_correct === undefined) errors.push(`Option ${opt.option_id || oIdx + 1} is missing "is_correct"`);
-      if (opt.is_correct) hasCorrect = true;
-    });
-    if (!hasCorrect) {
-      errors.push('No correct option designated ("is_correct": true)');
-    }
-  }
-
-  // Feedback checks
-  if (!q.feedback) {
-    errors.push('Missing "feedback" block');
-  } else {
-    if (!q.feedback.context) errors.push('Feedback missing "context"');
-    if (!q.feedback.process) errors.push('Feedback missing "process"');
-    if (!q.feedback.result) errors.push('Feedback missing "result"');
-  }
-
-  return errors;
-}
-
 // Toast notification helper
 function showToast(message, type = 'success') {
   const container = document.getElementById('toast-container');
@@ -928,14 +831,12 @@ function showToast(message, type = 'success') {
 // ==========================================================================
 
 // Switch app mode between 'practice' and 'mock'
-// The Performance panel lives in the right sidebar and is practice-mode only.
-// Hiding the aside on its own would leave an empty grid track, and an empty track
-// still contributes its gap - so the container drops to two columns at the same time.
+// Performance is practice-mode only and now lives in the header rather than a third
+// grid rail, so hiding it no longer has to change the layout - the workspace is already
+// full width in both modes, which is what a roadmap or reaction scheme needs.
 function setRightSidebarVisible(visible) {
-  const right = document.getElementById('sidebar-right');
-  const container = document.querySelector('.app-container');
-  if (right) right.style.display = visible ? '' : 'none';
-  if (container) container.classList.toggle('mock-layout', !visible);
+  const stats = document.getElementById('header-stats');
+  if (stats) stats.style.display = visible ? '' : 'none';
 }
 
 function setAppMode(mode) {
@@ -1315,7 +1216,7 @@ function renderMockExamQuestion() {
   container.innerHTML = html;
 
   // Draw structures on canvas
-  setTimeout(() => {
+  {
     if (q.question_smiles && document.getElementById('mock-q-smiles-canvas')) {
       drawSMILESCanvas(q.question_smiles, 'mock-q-smiles-canvas', 'light', q.structure_alt || '');
     }
@@ -1343,7 +1244,7 @@ function renderMockExamQuestion() {
         throwOnError: false
       });
     }
-  }, 50);
+  }
 }
 
 // Option selection handler in mock exam
@@ -1690,15 +1591,12 @@ function reviewMockQuestion(idx) {
 
   html += `
       <div class="feedback-panel" style="margin-top: 1.5rem; background: var(--bg-card);">
-        <div class="feedback-tabs">
-          <button class="feedback-tab active" id="review-tab-context" onclick="setReviewFeedbackTab('context', ${idx})">Context Understanding</button>
-          <button class="feedback-tab" id="review-tab-process" onclick="setReviewFeedbackTab('process', ${idx})">Pathway & Mechanism</button>
-          <button class="feedback-tab" id="review-tab-result" onclick="setReviewFeedbackTab('result', ${idx})">Key Result</button>
-        </div>
         
         <div class="feedback-content" id="review-feedback-content-area" style="padding: 1.25rem 0.5rem 0;">
           ${getFeedbackContent(q.feedback)}
         </div>
+
+        ${getPerOptionFeedback(q, selectedOptionId)}
       </div>
       
       <div style="display: flex; justify-content: flex-end; margin-top: 1rem;">
@@ -1711,7 +1609,7 @@ function reviewMockQuestion(idx) {
   detailContainer.style.display = 'block';
 
   // Draw Smiley canvases
-  setTimeout(() => {
+  {
     if (q.question_smiles && document.getElementById('review-q-smiles-canvas')) {
       drawSMILESCanvas(q.question_smiles, 'review-q-smiles-canvas', 'light', q.structure_alt || '');
     }
@@ -1738,45 +1636,10 @@ function reviewMockQuestion(idx) {
     }
 
     detailContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 50);
-}
-
-// Tab switcher inside the active question review block
-function setReviewFeedbackTab(tabName, idx) {
-  state.activeFeedbackTab = tabName;
-
-  const tabs = ['context', 'process', 'result'];
-  tabs.forEach(t => {
-    const el = document.getElementById(`review-tab-${t}`);
-    if (el) {
-      if (t === tabName) {
-        el.classList.add('active');
-      } else {
-        el.classList.remove('active');
-      }
-    }
-  });
-
-  const contentArea = document.getElementById('review-feedback-content-area');
-  if (contentArea) {
-    const attempt = state.mockExam.activeReviewAttempt;
-    const q = attempt.questions[idx];
-    contentArea.innerHTML = getFeedbackContent(q.feedback);
-
-    if (typeof renderMathInElement !== 'undefined') {
-      renderMathInElement(contentArea, {
-        delimiters: [
-          { left: "$$", right: "$$", display: true },
-          { left: "$", right: "$", display: false },
-          { left: "\\(", right: "\\)", display: false },
-          { left: "\\[", right: "\\]", display: true }
-        ],
-        throwOnError: false
-      });
-    }
   }
 }
 
+// Tab switcher inside the active question review block
 // Function to view a past mock exam attempt directly from dashboard
 function viewPastMockAttempt(historyIndex) {
   loadMockHistory();
@@ -1925,8 +1788,12 @@ function renderVisualEngines(q, prefix = '') {
 function initVisualEngines(q, prefix = '') {
   // 1. Draw scheme reactants and products
   if (q.reaction_scheme) {
+    const reactantAlts = q.reaction_scheme.reactant_alts || [];
     q.reaction_scheme.reactants.forEach((sm, index) => {
-      drawSMILESCanvas(sm, `${prefix}scheme-reactant-${index}`, 'light', `Reactant ${index + 1} structure`);
+      // A generic "Reactant 1 structure" tells a screen reader nothing. Authored chapters
+      // supply reactant_alts; unauthored ones fall back until their own pass reaches them.
+      drawSMILESCanvas(sm, `${prefix}scheme-reactant-${index}`, 'light',
+        reactantAlts[index] || `Reactant ${index + 1} structure`);
     });
     
     const isMockActive = (prefix === 'mock-');
@@ -1943,7 +1810,10 @@ function initVisualEngines(q, prefix = '') {
   // 2. Draw match item structures
   if (q.interaction_type === 'matching-list' || q.interaction_type === 'matching-grid') {
     q.match_items.forEach((item, index) => {
-      drawSMILESCanvas(item.smiles, `${prefix}match-canvas-${index}`, 'light', `Structure ${index + 1} to match`);
+      // Prefer the item's own description; "Structure N to match" names nothing a screen
+      // reader could answer from. Items without one still get the positional fallback.
+      drawSMILESCanvas(item.smiles, `${prefix}match-canvas-${index}`, 'light',
+        item.alt || `Structure ${index + 1} to match`);
     });
   }
 
@@ -2289,8 +2159,11 @@ function drawSyntheticRoadmap(containerId, roadmap) {
   const maxX = Math.max(...xs, 1);
   const maxY = Math.max(...ys, 1);
   
-  grid.style.gridTemplateColumns = `repeat(${maxX}, 160px)`;
-  grid.style.gridTemplateRows = `repeat(${maxY}, 130px)`;
+  // drawSMILESCanvas resizes the canvas to 320x200, so a 160px column left every
+  // roadmap structure overflowing halfway into the next node's cell. The column is
+  // wider now and .roadmap-structure canvas scales the drawing down to fit it.
+  grid.style.gridTemplateColumns = `repeat(${maxX}, 200px)`;
+  grid.style.gridTemplateRows = `repeat(${maxY}, minmax(130px, auto))`;
   
   roadmap.nodes.forEach(node => {
     const nodeEl = document.createElement('div');
@@ -2303,7 +2176,17 @@ function drawSyntheticRoadmap(containerId, roadmap) {
       structureHtml = `<div class="roadmap-structure"><canvas id="${containerId}-node-${node.id}" width="140" height="80"></canvas></div>`;
     }
     
+    // roadmap.edges carries the reagent for each step. It was parsed and never drawn, so
+    // every roadmap in the bank rendered as unlabelled boxes with no transformation between
+    // them - unanswerable except by reading the structures, which on an "identify A, B and C"
+    // item is the answer. Each node now states the step that reached it.
+    const incoming = (roadmap.edges || [])
+      .filter(e => e.to === node.id && e.reagents)
+      .map(e => e.reagents)
+      .join('; ');
+
     nodeEl.innerHTML = `
+      ${incoming ? `<div class="roadmap-edge-label">&#8594; ${incoming}</div>` : ''}
       <div class="roadmap-node-label">${node.label}</div>
       ${structureHtml}
     `;

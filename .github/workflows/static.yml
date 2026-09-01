@@ -2,11 +2,10 @@
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
+  # Manual only. The push trigger was removed on 2026-08-31: Pages was unpublished and
+  # stays down until the Phase 2 gate, and with the trigger in place the next merge to
+  # main would have republished it. Hosting moved to Render, which deploys from the
+  # branch on its own. Restore the push trigger only with an explicit go-ahead.
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages

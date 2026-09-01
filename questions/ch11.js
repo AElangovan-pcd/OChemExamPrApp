@@ -2256,5 +2256,5349 @@ var CH11_QUESTIONS = [
     "key_status": "unverified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q1",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q2",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q3",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q4",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q5",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q6",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q7",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q8",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q9",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q10",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q11",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q12",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q13",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q14",
+    "topic": "Substitution (SN1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(Cl)C"
+      ],
+      "reagents": "H2O",
+      "conditions": "acetone",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN1).",
+      "process": "Solvolysis of t-butyl chloride in water yields t-butyl alcohol via SN1 path.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q15",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q16",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q17",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q18",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q19",
+    "topic": "Substitution (SN1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(Cl)C"
+      ],
+      "reagents": "H2O",
+      "conditions": "acetone",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN1).",
+      "process": "Solvolysis of t-butyl chloride in water yields t-butyl alcohol via SN1 path.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q20",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q21",
+    "topic": "Substitution (SN1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(Cl)C"
+      ],
+      "reagents": "H2O",
+      "conditions": "acetone",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN1).",
+      "process": "Solvolysis of t-butyl chloride in water yields t-butyl alcohol via SN1 path.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q22",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q23",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q24",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q25",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q27",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q28",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q29",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q30",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q31",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q32_2",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q33",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q34",
+    "topic": "Substitution (SN1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(Cl)C"
+      ],
+      "reagents": "H2O",
+      "conditions": "acetone",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN1).",
+      "process": "Solvolysis of t-butyl chloride in water yields t-butyl alcohol via SN1 path.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q35",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q36",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q37",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q38",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q39",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q40",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q41",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q42",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q43",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q44",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q45",
+    "topic": "Substitution (SN1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(Cl)C"
+      ],
+      "reagents": "H2O",
+      "conditions": "acetone",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN1).",
+      "process": "Solvolysis of t-butyl chloride in water yields t-butyl alcohol via SN1 path.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q46",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q47",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q48",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q49",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q51",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q52",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q53",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q54",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q55",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q56",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q57",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q58",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q59",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q60",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q61",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q62",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q63",
+    "topic": "Substitution (SN1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(Cl)C"
+      ],
+      "reagents": "H2O",
+      "conditions": "acetone",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN1).",
+      "process": "Solvolysis of t-butyl chloride in water yields t-butyl alcohol via SN1 path.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q64",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q66",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q67",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q68",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q69",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q70",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q71",
+    "topic": "Substitution (SN1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(Cl)C"
+      ],
+      "reagents": "H2O",
+      "conditions": "acetone",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN1).",
+      "process": "Solvolysis of t-butyl chloride in water yields t-butyl alcohol via SN1 path.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q72",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q73",
+    "topic": "Substitution (SN1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(Cl)C"
+      ],
+      "reagents": "H2O",
+      "conditions": "acetone",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN1).",
+      "process": "Solvolysis of t-butyl chloride in water yields t-butyl alcohol via SN1 path.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q74",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q75",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCCO",
+        "smiles": "CCCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q76",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q77",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CCC=O",
+        "smiles": "CCC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q78",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC1OC1",
+        "smiles": "CC1OC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q79",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q80",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)c1ccccc1",
+        "smiles": "CC(C)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q81",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q82",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q83",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)C",
+        "smiles": "CC(O)C",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q84",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)(C)C",
+        "smiles": "CC(Br)(C)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CCOC(C)=O",
+        "smiles": "CCOC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q85",
+    "topic": "Substitution (SN1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(Cl)C"
+      ],
+      "reagents": "H2O",
+      "conditions": "acetone",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(O)C(Br)",
+        "smiles": "CC(O)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "C(Br)CBr",
+        "smiles": "C(Br)CBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN1).",
+      "process": "Solvolysis of t-butyl chloride in water yields t-butyl alcohol via SN1 path.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q86",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "NaCN",
+      "conditions": "DMF",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "Nucleophilic substitution of 2-bromopropane with NaCN in DMF yields isobutyronitrile via SN2.",
+      "result": "The product is CC(C#N)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q87",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "[N+](=O)([O-])c1ccccc1",
+        "smiles": "[N+](=O)([O-])c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q88",
+    "topic": "Substitution (SN2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CCCO"
+      ],
+      "reagents": "PBr3",
+      "conditions": "ether",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCO",
+        "smiles": "CCO",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CCC",
+        "smiles": "CCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN2).",
+      "process": "PBr3 converts 1-propanol into 1-bromopropane via SN2 substitution.",
+      "result": "The product is CCCBr."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q89",
+    "topic": "Substitution (SN1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(Cl)C"
+      ],
+      "reagents": "H2O",
+      "conditions": "acetone",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(Br)C(Br)",
+        "smiles": "CC(Br)C(Br)",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(O)CC=O",
+        "smiles": "CC(O)CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN1).",
+      "process": "Solvolysis of t-butyl chloride in water yields t-butyl alcohol via SN1 path.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q92",
+    "topic": "Elimination (E1)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(O)C"
+      ],
+      "reagents": "H2SO4",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "OS(=O)(=O)c1ccccc1",
+        "smiles": "OS(=O)(=O)c1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC(C)=C",
+        "smiles": "CC(C)=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "CCC(=O)O",
+        "smiles": "CCC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC(O)c1ccccc1",
+        "smiles": "CC(O)c1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E1).",
+      "process": "Dehydration of t-butyl alcohol under acidic conditions yields isobutylene.",
+      "result": "The product is CC(C)=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q93",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "COCC",
+        "smiles": "COCC",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "C1CC=CCC1",
+        "smiles": "C1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(=O)O",
+        "smiles": "CC(=O)O",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q94",
+    "topic": "Substitution (SN1)",
+    "difficulty_level": "Medium",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(C)(Cl)C"
+      ],
+      "reagents": "H2O",
+      "conditions": "acetone",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC(C#N)C",
+        "smiles": "CC(C#N)C",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CCCBr",
+        "smiles": "CCCBr",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "CC(C)(O)C",
+        "smiles": "CC(C)(O)C",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "CC(C)=O",
+        "smiles": "CC(C)=O",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Substitution (SN1).",
+      "process": "Solvolysis of t-butyl chloride in water yields t-butyl alcohol via SN1 path.",
+      "result": "The product is CC(C)(O)C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q95",
+    "topic": "Elimination (E2)",
+    "difficulty_level": "Hard",
+    "question_text": "What is the major organic product formed in the following reaction sequence?",
+    "reaction_scheme": {
+      "reactants": [
+        "CC(Br)C"
+      ],
+      "reagents": "KOH, EtOH",
+      "conditions": "heat",
+      "products": [
+        "?"
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "CC=O",
+        "smiles": "CC=O",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "CC=C",
+        "smiles": "CC=C",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "O=CC1CC=CCC1",
+        "smiles": "O=CC1CC=CCC1",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Brc1ccccc1",
+        "smiles": "Brc1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Studying reaction mechanisms: Elimination (E2).",
+      "process": "Dehydrohalogenation of 2-bromopropane with strong base KOH yields propene.",
+      "result": "The product is CC=C."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q34_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CCCBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CCCC#N",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "PBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaCN, DMF"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: propionitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: 1-propanol, B: propane, C: butanenitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: butanenitrile",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: propan-2-ol, B: 2-bromopropane, C: isobutyronitrile",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: 1-propanol, B: 1-bromopropane, C: butanenitrile.",
+      "result": "The labels correspond to A: 1-propanol, B: 1-bromopropane, C: butanenitrile."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q48_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CCCBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CCCC#N",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "PBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaCN, DMF"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propan-2-ol, B: 2-bromopropane, C: isobutyronitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: butanenitrile",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: propionitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: 1-propanol, B: propane, C: butanenitrile",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: 1-propanol, B: 1-bromopropane, C: butanenitrile.",
+      "result": "The labels correspond to A: 1-propanol, B: 1-bromopropane, C: butanenitrile."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q63_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CCCBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CCCC#N",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "PBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaCN, DMF"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: butanenitrile",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: propionitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propan-2-ol, B: 2-bromopropane, C: isobutyronitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: 1-propanol, B: propane, C: butanenitrile",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: 1-propanol, B: 1-bromopropane, C: butanenitrile.",
+      "result": "The labels correspond to A: 1-propanol, B: 1-bromopropane, C: butanenitrile."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q69_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CCCBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CCCC#N",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "PBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaCN, DMF"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: propionitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: 1-propanol, B: propane, C: butanenitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propan-2-ol, B: 2-bromopropane, C: isobutyronitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: butanenitrile",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: 1-propanol, B: 1-bromopropane, C: butanenitrile.",
+      "result": "The labels correspond to A: 1-propanol, B: 1-bromopropane, C: butanenitrile."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q81_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CCCBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CCCC#N",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "PBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaCN, DMF"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: 1-propanol, B: propane, C: butanenitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: propionitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propan-2-ol, B: 2-bromopropane, C: isobutyronitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: butanenitrile",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: 1-propanol, B: 1-bromopropane, C: butanenitrile.",
+      "result": "The labels correspond to A: 1-propanol, B: 1-bromopropane, C: butanenitrile."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q82_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CCCBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CCCC#N",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "PBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaCN, DMF"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: propan-2-ol, B: 2-bromopropane, C: isobutyronitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: 1-propanol, B: propane, C: butanenitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: butanenitrile",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: propionitrile",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: 1-propanol, B: 1-bromopropane, C: butanenitrile.",
+      "result": "The labels correspond to A: 1-propanol, B: 1-bromopropane, C: butanenitrile."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q9_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CCCBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CCCC#N",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "PBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaCN, DMF"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: propionitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: butanenitrile",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "A: propan-2-ol, B: 2-bromopropane, C: isobutyronitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: 1-propanol, B: propane, C: butanenitrile",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: 1-propanol, B: 1-bromopropane, C: butanenitrile.",
+      "result": "The labels correspond to A: 1-propanol, B: 1-bromopropane, C: butanenitrile."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q37_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CCCBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CCCC#N",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "PBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaCN, DMF"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: propionitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propan-2-ol, B: 2-bromopropane, C: isobutyronitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: butanenitrile",
+        "is_correct": true
+      },
+      {
+        "option_id": "D",
+        "text": "A: 1-propanol, B: propane, C: butanenitrile",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: 1-propanol, B: 1-bromopropane, C: butanenitrile.",
+      "result": "The labels correspond to A: 1-propanol, B: 1-bromopropane, C: butanenitrile."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q51_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CCCBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CCCC#N",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "PBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaCN, DMF"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: butanenitrile",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: propionitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: 1-propanol, B: propane, C: butanenitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: propan-2-ol, B: 2-bromopropane, C: isobutyronitrile",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: 1-propanol, B: 1-bromopropane, C: butanenitrile.",
+      "result": "The labels correspond to A: 1-propanol, B: 1-bromopropane, C: butanenitrile."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q61_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CCCBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CCCC#N",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "PBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaCN, DMF"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: butanenitrile",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "A: 1-propanol, B: propane, C: butanenitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: propan-2-ol, B: 2-bromopropane, C: isobutyronitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: propionitrile",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: 1-propanol, B: 1-bromopropane, C: butanenitrile.",
+      "result": "The labels correspond to A: 1-propanol, B: 1-bromopropane, C: butanenitrile."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q83_2",
+    "topic": "Synthetic Roadmaps",
+    "difficulty_level": "Hard",
+    "question_text": "Examine the following multi-step synthetic pathway (retrosynthetic roadmap). Determine the correct compounds matching labels A, B, and C.",
+    "synthetic_roadmap": {
+      "nodes": [
+        {
+          "id": "A",
+          "smiles": "CCCO",
+          "label": "Compound A",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "B",
+          "smiles": "CCCBr",
+          "label": "Compound B",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "C",
+          "smiles": "CCCC#N",
+          "label": "Compound C",
+          "x": 3,
+          "y": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "reagents": "PBr3"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "reagents": "NaCN, DMF"
+        }
+      ]
+    },
+    "options": [
+      {
+        "option_id": "A",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: propionitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "A: propan-2-ol, B: 2-bromopropane, C: isobutyronitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "A: 1-propanol, B: propane, C: butanenitrile",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "A: 1-propanol, B: 1-bromopropane, C: butanenitrile",
+        "is_correct": true
+      }
+    ],
+    "feedback": {
+      "context": "Tracing reactions in a multi-step roadmap sequence.",
+      "process": "Verify transformations: A: 1-propanol, B: 1-bromopropane, C: butanenitrile.",
+      "result": "The labels correspond to A: 1-propanol, B: 1-bromopropane, C: butanenitrile."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
+  },
+  {
+    "question_id": "ch11_q46_nucleophilicity_solvent",
+    "topic": "Electrophiles vs Nucleophiles",
+    "difficulty_level": "Hard",
+    "question_text": "In a polar protic solvent such as methanol ($CH_3OH$), what is the correct order of nucleophilicity for the halide anions?",
+    "question_smiles": "CO",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "$F^- > Cl^- > Br^- > I^-$",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "B",
+        "text": "$I^- > Br^- > Cl^- > F^-$",
+        "smiles": "",
+        "is_correct": true
+      },
+      {
+        "option_id": "C",
+        "text": "$Cl^- > F^- > I^- > Br^-$",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "All halides have equal nucleophilicity in protic solvents.",
+        "smiles": "",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "This question tests solvent effects on nucleophilicity.",
+      "process": "Step 1: Polar protic solvents can form strong hydrogen bonds to anions.\nStep 2: Small, highly electronegative anions (like $F^-$) are strongly solvated by hydrogen bonding, which shields their lone pairs and reduces their reactivity.\nStep 3: Large, polarizable anions (like $I^-$) are weakly solvated because their charge is spread over a large volume, leaving them free to react. Thus, in polar protic solvents, nucleophilicity increases down the periodic table: $I^- > Br^- > Cl^- > F^-$.",
+      "result": "The order is $I^- > Br^- > Cl^- > F^-$."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];
