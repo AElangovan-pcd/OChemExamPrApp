@@ -1801,8 +1801,10 @@ function initVisualEngines(q, prefix = '') {
     const showProduct = (!isMockActive && (isAnswered || prefix === 'review-')) || (q.reaction_scheme.products && q.reaction_scheme.products[0] !== '?');
     
     if (showProduct) {
+      const productAlts = q.reaction_scheme.product_alts || [];
       q.reaction_scheme.products.forEach((sm, index) => {
-        drawSMILESCanvas(sm, `${prefix}scheme-product-${index}`, 'light', `Product ${index + 1} structure`);
+        drawSMILESCanvas(sm, `${prefix}scheme-product-${index}`, 'light',
+          productAlts[index] || `Product ${index + 1} structure`);
       });
     }
   }
