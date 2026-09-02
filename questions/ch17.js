@@ -2359,7 +2359,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -2509,7 +2509,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -2709,7 +2709,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -3009,7 +3009,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -3059,7 +3059,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -3109,7 +3109,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -3359,7 +3359,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -3409,7 +3409,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -3559,7 +3559,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -4009,7 +4009,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -4259,7 +4259,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -4609,7 +4609,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -4709,7 +4709,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -4759,7 +4759,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -5059,7 +5059,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -5359,7 +5359,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -5459,7 +5459,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -6209,7 +6209,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -6609,7 +6609,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]
@@ -6809,7 +6809,7 @@ var CH17_QUESTIONS = [
         "CC(C)=O"
       ],
       "reagents": "NaBH4, MeOH",
-      "conditions": "0 C",
+      "conditions": "0 °C",
       "products": [
         "?"
       ]

@@ -104,7 +104,11 @@ const smilesDrawerOptions = {
   width: 320,
   height: 200,
   bondThickness: 1.6,
-  bondLength: 16,
+  // ACS-style fixed geometry (instructor, 2026-09-02): a 28-unit bond with an 11-pt label
+  // keeps atom symbols at ChemDraw proportions, and the updateViewbox patch below stops
+  // SmilesDrawer from enlarging a small molecule to fill its canvas, so a three-carbon
+  // ring and a substituted benzene draw at the same scale with the same symbol size.
+  bondLength: 28,
   shortBondLength: 0.85,
   fontSizeLarge: 11,
   fontSizeSmall: 8,
@@ -148,7 +152,41 @@ document.addEventListener('DOMContentLoaded', () => {
         return origDrawEdge.call(this, edgeId, debug);
       };
 
-      // 2. Mark explicit charges and separate multi-component molecules (e.g. A.B) horizontally
+      // 1b. Never scale a drawing up. SmilesDrawer sets a square viewBox equal to the
+      // molecule's bounds, and toCanvas then stretches that to the canvas, so a small
+      // ion drew its bonds and labels three times larger than a substituted benzene's.
+      // Expanding the viewBox to at least the canvas height after the SVG is drawn pins
+      // the scale at 1:1; molecules larger than the canvas still scale down as before.
+      // (SvgWrapper is not exported, so the hook sits on SvgDrawer.draw.)
+      const origSvgDraw = SmilesDrawer.SvgDrawer.prototype.draw;
+      SmilesDrawer.SvgDrawer.prototype.draw = function(data, target, themeName, infoOnly) {
+        const result = origSvgDraw.call(this, data, target, themeName, infoOnly);
+        const svg = (typeof target === 'string') ? document.getElementById(target) : target;
+        if (svg && !infoOnly && !(this.opts && this.opts.scale > 0)) {
+          const vb = (svg.getAttribute('viewBox') || '').split(' ').map(Number);
+          const min = this.minViewBox || (this.opts && this.opts.height) || 200;
+          if (vb.length === 4 && vb.every(n => !isNaN(n)) && vb[2] < min) {
+            const grow = (min - vb[2]) / 2;
+            svg.setAttributeNS(null, 'viewBox', `${vb[0] - grow} ${vb[1] - grow} ${min} ${min}`);
+          }
+        }
+        return result;
+      };
+
+      // 1c. The viewBox is square and toCanvas maps it to the canvas height, and the app
+      // then displays the canvas at a CSS size (0.7x for a question, 0.47x for an option),
+      // so the minimum has to be the canvas's displayed height for a bond to be the same
+      // number of screen pixels in every canvas. Drawer.draw sees the canvas; stash it.
+      const origDrawerDraw = SmilesDrawer.Drawer.prototype.draw;
+      SmilesDrawer.Drawer.prototype.draw = function(data, target, themeName, infoOnly) {
+        const canvas = (typeof target === 'string') ? document.getElementById(target) : target;
+        // drawSMILESCanvas has already given the element its final attribute size, so the
+        // displayed height is the one the drawing will be shown at.
+        this.svgDrawer.minViewBox = (canvas && canvas.offsetHeight) || 0;
+        return origDrawerDraw.call(this, data, target, themeName, infoOnly);
+      };
+
+      // 2. Mark explicit charges in multi-component molecules (e.g. A.B)
       const origDrawVertices = SmilesDrawer.SvgDrawer.prototype.drawVertices;
       SmilesDrawer.SvgDrawer.prototype.drawVertices = function(debug) {
         if (this.preprocessor && this.preprocessor.graph && this.preprocessor.graph.vertices) {
@@ -163,56 +201,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           });
 
-          // Detect disconnected subgraphs separated by '.' bonds
-          const visited = new Set();
-          const subgraphs = [];
-
-          graph.vertices.forEach(v => {
-            if (visited.has(v.id)) return;
-            const comp = [];
-            const q = [v];
-            visited.add(v.id);
-
-            while (q.length > 0) {
-              const curr = q.shift();
-              comp.push(curr);
-              const connectedEdges = graph.edges.filter(e => (e.sourceId === curr.id || e.targetId === curr.id) && e.bondType !== '.');
-              connectedEdges.forEach(e => {
-                const nextId = (e.sourceId === curr.id) ? e.targetId : e.sourceId;
-                if (!visited.has(nextId)) {
-                  visited.add(nextId);
-                  q.push(graph.vertices[nextId]);
-                }
-              });
-            }
-            subgraphs.push(comp);
-          });
-
-          // Layout disconnected subgraphs horizontally with clean spacing
-          if (subgraphs.length > 1) {
-            const spacing = 45;
-            subgraphs.forEach((sg, idx) => {
-              if (idx === 0) return;
-              const prevSg = subgraphs[idx - 1];
-              const prevMaxX = Math.max(...prevSg.map(v => v.position.x));
-              const currMinX = Math.min(...sg.map(v => v.position.x));
-              const shiftX = (prevMaxX + spacing) - currMinX;
-
-              const prevMinY = Math.min(...prevSg.map(v => v.position.y));
-              const prevMaxY = Math.max(...prevSg.map(v => v.position.y));
-              const prevCenterY = (prevMinY + prevMaxY) / 2;
-
-              const currMinY = Math.min(...sg.map(v => v.position.y));
-              const currMaxY = Math.max(...sg.map(v => v.position.y));
-              const currCenterY = (currMinY + currMaxY) / 2;
-              const shiftY = prevCenterY - currCenterY;
-
-              sg.forEach(v => {
-                v.position.x += shiftX;
-                v.position.y += shiftY;
-              });
-            });
-          }
+          // (An earlier version also shifted later fragments of a dot-disconnected string to
+          // the right. SmilesDrawer 2.0.1 already lays fragments out side by side, so that
+          // shift moved every label of the second fragment one fragment-width past its ring.
+          // Found and removed in the Ch 15 pass.)
         }
         return origDrawVertices.call(this, debug);
       };
@@ -640,7 +632,13 @@ function drawSMILESCanvas(smiles, canvasId, theme = 'light', alt = '') {
   }
 
   if (!smilesDrawer) return;
-  
+
+  // toCanvas resizes the element to the drawer's width and height after drawing. Set them
+  // now, so the size hook on Drawer.draw reads the layout the drawing will be displayed at;
+  // a bare grid or scheme canvas otherwise reports its pre-draw size and draws twice too big.
+  canvas.width = smilesDrawerOptions.width;
+  canvas.height = smilesDrawerOptions.height;
+
   try {
     SmilesDrawer.parse(smiles, function(tree) {
       smilesDrawer.draw(tree, canvasId, theme, false);

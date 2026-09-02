@@ -684,13 +684,13 @@ var CH14_QUESTIONS = [
     ],
     "feedback": {
       "context": "HBr adds to a conjugated diene through an allylic carbocation, and the outcome depends on temperature because the two possible adducts differ in both rate of formation and stability. At low temperature nothing reverses, so the product that forms fastest is the one isolated: the 1,2-adduct, in which bromide bonds to the carbon next to the site of protonation. This is kinetic control.",
-      "approach": "Step 1: Protonate the terminal carbon C1, not C2: protonation at C1 gives the resonance-stabilized allylic cation CH3-CH(+)-CH=CH2, while protonation at C2 would give an unstabilized primary cation.\nStep 2: The cation's charge is shared by C2 (secondary) and C4 (primary). Bromide can bond at either.\nStep 3: At -80 C bonding at C2 is faster: bromide is generated beside C2, and C2 carries more of the positive charge. The 1,2-adduct, 3-bromo-1-butene, is the major product (about 80%), with the rest 1,4-adduct.\nStep 4: The mixture is frozen because at -80 C neither alkyl bromide can re-ionize, so the ratio reflects rates alone.",
-      "note": "The same reaction at 40 C gives mainly the 1,4-adduct, and warming the -80 C mixture in the presence of HBr converts it to the 40 C mixture: the kinetic product is not destroyed, it re-ionizes and re-equilibrates. McMurry's figures are 71:29 (1,2 to 1,4) at 0 C and 15:85 at 40 C. Kinetic and thermodynamic are labels for conditions and refer to the same two compounds.",
+      "approach": "Step 1: Protonate the terminal carbon C1, not C2: protonation at C1 gives the resonance-stabilized allylic cation CH3-CH(+)-CH=CH2, while protonation at C2 would give an unstabilized primary cation.\nStep 2: The cation's charge is shared by C2 (secondary) and C4 (primary). Bromide can bond at either.\nStep 3: At -80 °C bonding at C2 is faster: bromide is generated beside C2, and C2 carries more of the positive charge. The 1,2-adduct, 3-bromo-1-butene, is the major product (about 80%), with the rest 1,4-adduct.\nStep 4: The mixture is frozen because at -80 °C neither alkyl bromide can re-ionize, so the ratio reflects rates alone.",
+      "note": "The same reaction at 40 °C gives mainly the 1,4-adduct, and warming the -80 °C mixture in the presence of HBr converts it to the 40 °C mixture: the kinetic product is not destroyed, it re-ionizes and re-equilibrates. McMurry's figures are 71:29 (1,2 to 1,4) at 0 °C and 15:85 at 40 °C. Kinetic and thermodynamic are labels for conditions and refer to the same two compounds.",
       "options": {
-        "A": "Correct. Protonation at C1 gives the allylic cation; bromide bonds fastest at the adjacent secondary carbon C2, and at -80 C that 1,2-adduct cannot revert, so it predominates.",
-        "B": "(E)-1-Bromo-2-butene is the 1,4-adduct: the more stable isomer (disubstituted internal alkene) and the major product at 40 C, but at -80 C it is the minor product because it forms more slowly and nothing equilibrates.",
+        "A": "Correct. Protonation at C1 gives the allylic cation; bromide bonds fastest at the adjacent secondary carbon C2, and at -80 °C that 1,2-adduct cannot revert, so it predominates.",
+        "B": "(E)-1-Bromo-2-butene is the 1,4-adduct: the more stable isomer (disubstituted internal alkene) and the major product at 40 °C, but at -80 °C it is the minor product because it forms more slowly and nothing equilibrates.",
         "C": "4-Bromo-1-butene would require bromide at C1 after protonation at C2, an unstabilized primary cation, or an anti-Markovnikov radical addition. Neither operates under these ionic conditions.",
-        "D": "(Z)-1-Bromo-2-butene is also a 1,4-adduct, and the minor geometric isomer of one; the allylic cation adopts the extended W shape, so the E alkene dominates the 1,4 fraction, and the 1,4 fraction itself is minor at -80 C."
+        "D": "(Z)-1-Bromo-2-butene is also a 1,4-adduct, and the minor geometric isomer of one; the allylic cation adopts the extended W shape, so the E alkene dominates the 1,4 fraction, and the 1,4 fraction itself is minor at -80 °C."
       }
     },
     "key_status": "verified",
@@ -732,11 +732,11 @@ var CH14_QUESTIONS = [
     ],
     "feedback": {
       "context": "At higher temperature the allylic bromides formed from butadiene re-ionize: the C-Br bond of either adduct heterolyzes back to the same allylic cation, which recaptures bromide at either end. Once that exchange is fast, the mixture reaches equilibrium and its composition is set by product stability, not by how fast each formed. The more stable adduct, the one with the more substituted alkene, predominates: thermodynamic control.",
-      "approach": "Step 1: Both adducts, 3-bromo-1-butene and 1-bromo-2-butene, ionize at 40 C to the same allylic cation, CH3-CH(+)-CH=CH2 with charge shared at C4.\nStep 2: Recombination at C2 or C4 is now reversible, so the adducts interconvert and the ratio drifts toward the lower-energy compound.\nStep 3: Compare stabilities. 3-Bromo-1-butene has a monosubstituted terminal alkene; 1-bromo-2-butene has a disubstituted internal one, and its E isomer has no cis methyl-CH2Br clash. It is the more stable adduct.\nStep 4: At 40 C the mixture is about 85% 1,4-adduct, mostly E, and the same ratio is reached whether one starts from the diene or from the pure 1,2-adduct.",
-      "note": "That the pure 1,2-adduct gives the 40 C mixture on warming with HBr is the experimental proof that the 1,4 preference is thermodynamic rather than kinetic: no new bonds to the diene are formed, only the existing product re-equilibrates. Without HBr, or with the bromide removed, the 1,2-adduct is stable indefinitely at 40 C; ionization is what opens the door to equilibrium.",
+      "approach": "Step 1: Both adducts, 3-bromo-1-butene and 1-bromo-2-butene, ionize at 40 °C to the same allylic cation, CH3-CH(+)-CH=CH2 with charge shared at C4.\nStep 2: Recombination at C2 or C4 is now reversible, so the adducts interconvert and the ratio drifts toward the lower-energy compound.\nStep 3: Compare stabilities. 3-Bromo-1-butene has a monosubstituted terminal alkene; 1-bromo-2-butene has a disubstituted internal one, and its E isomer has no cis methyl-CH2Br clash. It is the more stable adduct.\nStep 4: At 40 °C the mixture is about 85% 1,4-adduct, mostly E, and the same ratio is reached whether one starts from the diene or from the pure 1,2-adduct.",
+      "note": "That the pure 1,2-adduct gives the 40 °C mixture on warming with HBr is the experimental proof that the 1,4 preference is thermodynamic rather than kinetic: no new bonds to the diene are formed, only the existing product re-equilibrates. Without HBr, or with the bromide removed, the 1,2-adduct is stable indefinitely at 40 °C; ionization is what opens the door to equilibrium.",
       "options": {
         "A": "Correct. Under reversible conditions the more stable adduct accumulates, and (E)-1-bromo-2-butene, with a disubstituted trans alkene, is the most stable of the possible products.",
-        "B": "3-Bromo-1-butene is the kinetic product, major at -80 C. At 40 C it re-ionizes and drains into the more stable 1,4-adduct, ending up as about 15% of the mixture.",
+        "B": "3-Bromo-1-butene is the kinetic product, major at -80 °C. At 40 °C it re-ionizes and drains into the more stable 1,4-adduct, ending up as about 15% of the mixture.",
         "C": "(Z)-1-Bromo-2-butene is a 1,4-adduct, but its cis alkene puts the methyl and CH2Br on the same side; the E isomer is lower in energy and dominates once the system equilibrates.",
         "D": "4-Bromo-1-butene has a terminal alkene and a primary bromide; it is neither the fastest-formed nor the most stable adduct, and it is not formed from the allylic cation at all."
       }
@@ -827,7 +827,7 @@ var CH14_QUESTIONS = [
     ],
     "feedback": {
       "context": "The regiochemistry of HBr addition to an unsymmetrical diene is settled in two stages: first, which terminus is protonated (the one giving the more stable allylic cation), and second, which end of that cation bromide bonds to. (E)-1,3-Pentadiene has a special feature: protonating C1 gives a cation that is secondary at both ends and symmetrical, so bromide gives the same compound whichever end it bonds to.",
-      "approach": "Step 1: Protonate C1: CH3-CH(+)-CH=CH-CH3, resonance form CH3-CH=CH-CH(+)-CH3. Both contributors are secondary; the cation is symmetrical.\nStep 2: Protonate C4 instead: CH2=CH-CH(+)-CH2CH3, resonance form (+)CH2-CH=CH-CH2CH3. Secondary plus primary, less stable. C1 protonation wins.\nStep 3: Bromide bonds to either end of the symmetrical cation. Both ends give CH3-CH(Br)-CH=CH-CH3, 4-bromopent-2-ene; the W-shaped cation delivers mainly the E alkene.\nStep 4: So at -80 C, and equally at 40 C, the major product is (E)-4-bromopent-2-ene, formed as a racemate.",
+      "approach": "Step 1: Protonate C1: CH3-CH(+)-CH=CH-CH3, resonance form CH3-CH=CH-CH(+)-CH3. Both contributors are secondary; the cation is symmetrical.\nStep 2: Protonate C4 instead: CH2=CH-CH(+)-CH2CH3, resonance form (+)CH2-CH=CH-CH2CH3. Secondary plus primary, less stable. C1 protonation wins.\nStep 3: Bromide bonds to either end of the symmetrical cation. Both ends give CH3-CH(Br)-CH=CH-CH3, 4-bromopent-2-ene; the W-shaped cation delivers mainly the E alkene.\nStep 4: So at -80 °C, and equally at 40 °C, the major product is (E)-4-bromopent-2-ene, formed as a racemate.",
       "note": "This diene is the case where the kinetic and thermodynamic products are the same compound, which is why the temperature in the stem does not change the answer. The distinction between 1,2- and 1,4-addition is real in the mechanism (bromide bonds at C2 or at C4 of the diene) but invisible in the product. Only the 2,4-dideuterio experiment could tell the two pathways apart.",
       "options": {
         "A": "Correct. Protonation at C1 gives a symmetrical secondary-secondary allylic cation, and bromide at either end gives 4-bromopent-2-ene, mainly as the E isomer.",
@@ -918,11 +918,11 @@ var CH14_QUESTIONS = [
     ],
     "feedback": {
       "context": "Two decisions give the product: the proton goes to the terminus that produces the more stable allylic cation, and at low temperature bromide bonds at the cation carbon that is closest and carries most of the charge, with no later equilibration. For isoprene the first decision is protonation at C1, giving a cation that is tertiary at C2 and primary at C4; the second, under kinetic control, is capture at C2.",
-      "approach": "Step 1: Protonate C1 of CH2=C(CH3)-CH=CH2. The cation is CH3-C(+)(CH3)-CH=CH2 with resonance form CH3-C(CH3)=CH-CH2(+): tertiary and primary contributors.\nStep 2: At -80 C the reaction is irreversible. Bromide bonds where the charge is greatest and where it was generated, the tertiary C2.\nStep 3: The product is (CH3)2C(Br)-CH=CH2, 3-bromo-3-methyl-1-butene: a tertiary bromide with a terminal alkene.\nStep 4: It is the kinetic product only; at 40 C it re-ionizes and the 1,4-adduct, 1-bromo-3-methyl-2-butene, takes over.",
-      "note": "In butadiene the kinetic preference for C2 is modest (about 70:30 at 0 C); in isoprene it is stronger, because C2 is tertiary and holds more of the charge, while C4 is primary. The general rule survives: the 1,2-adduct is the kinetic product, and the 1,4-adduct, with its trisubstituted alkene here, is the thermodynamic one.",
+      "approach": "Step 1: Protonate C1 of CH2=C(CH3)-CH=CH2. The cation is CH3-C(+)(CH3)-CH=CH2 with resonance form CH3-C(CH3)=CH-CH2(+): tertiary and primary contributors.\nStep 2: At -80 °C the reaction is irreversible. Bromide bonds where the charge is greatest and where it was generated, the tertiary C2.\nStep 3: The product is (CH3)2C(Br)-CH=CH2, 3-bromo-3-methyl-1-butene: a tertiary bromide with a terminal alkene.\nStep 4: It is the kinetic product only; at 40 °C it re-ionizes and the 1,4-adduct, 1-bromo-3-methyl-2-butene, takes over.",
+      "note": "In butadiene the kinetic preference for C2 is modest (about 70:30 at 0 °C); in isoprene it is stronger, because C2 is tertiary and holds more of the charge, while C4 is primary. The general rule survives: the 1,2-adduct is the kinetic product, and the 1,4-adduct, with its trisubstituted alkene here, is the thermodynamic one.",
       "options": {
-        "A": "Correct. C1 protonation gives the tertiary allylic cation; at -80 C bromide bonds at the tertiary C2 and the 1,2-adduct is isolated.",
-        "B": "1-Bromo-3-methyl-2-butene is the 1,4-adduct with a trisubstituted alkene, the thermodynamic product and the major product at 40 C; at -80 C it is minor because the mixture cannot equilibrate.",
+        "A": "Correct. C1 protonation gives the tertiary allylic cation; at -80 °C bromide bonds at the tertiary C2 and the 1,2-adduct is isolated.",
+        "B": "1-Bromo-3-methyl-2-butene is the 1,4-adduct with a trisubstituted alkene, the thermodynamic product and the major product at 40 °C; at -80 °C it is minor because the mixture cannot equilibrate.",
         "C": "3-Bromo-2-methyl-1-butene would come from protonating C4 and capturing bromide at C3, through the less stable secondary allylic cation; that cation is not the one that forms.",
         "D": "1-Bromo-2-methyl-2-butene is the 1,4-adduct of the C4-protonated cation. Both its regiochemistry of protonation and its 1,4 mode make it a minor product at low temperature."
       }
@@ -1191,12 +1191,12 @@ var CH14_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "This experiment is the proof that the 1,4-adduct's dominance at higher temperature is thermodynamic. Starting from the pure 1,2-adduct with no diene present, the only way to reach 1-bromo-2-butene is to break the C-Br bond, regenerate the allylic cation, and recapture bromide at the other end. If that happens, the product must be equilibrating, and the 40 C ratio must be an equilibrium ratio.",
-      "approach": "Step 1: 3-Bromo-1-butene is a secondary allylic bromide; its C-Br bond ionizes readily, especially with HBr present to assist and to supply bromide.\nStep 2: Ionization gives CH3-CH(+)-CH=CH2, the same cation formed from butadiene and HBr.\nStep 3: Bromide recaptures at C4 as well as C2. Capture at C4 gives 1-bromo-2-butene, mainly E, which is more stable and accumulates.\nStep 4: The final mixture at 40 C is about 85% 1,4-adduct, identical to the mixture from butadiene and HBr at 40 C.",
-      "note": "McMurry describes exactly this observation: the 1,2-adduct, heated in the presence of HBr, is converted to the equilibrium mixture. The reverse test also works: the 1,4-adduct under the same conditions gives the same mixture from the other side. Neither elimination to the diene nor polymerization competes at 40 C with catalytic HBr.",
+      "context": "This experiment is the proof that the 1,4-adduct's dominance at higher temperature is thermodynamic. Starting from the pure 1,2-adduct with no diene present, the only way to reach 1-bromo-2-butene is to break the C-Br bond, regenerate the allylic cation, and recapture bromide at the other end. If that happens, the product must be equilibrating, and the 40 °C ratio must be an equilibrium ratio.",
+      "approach": "Step 1: 3-Bromo-1-butene is a secondary allylic bromide; its C-Br bond ionizes readily, especially with HBr present to assist and to supply bromide.\nStep 2: Ionization gives CH3-CH(+)-CH=CH2, the same cation formed from butadiene and HBr.\nStep 3: Bromide recaptures at C4 as well as C2. Capture at C4 gives 1-bromo-2-butene, mainly E, which is more stable and accumulates.\nStep 4: The final mixture at 40 °C is about 85% 1,4-adduct, identical to the mixture from butadiene and HBr at 40 °C.",
+      "note": "McMurry describes exactly this observation: the 1,2-adduct, heated in the presence of HBr, is converted to the equilibrium mixture. The reverse test also works: the 1,4-adduct under the same conditions gives the same mixture from the other side. Neither elimination to the diene nor polymerization competes at 40 °C with catalytic HBr.",
       "options": {
         "A": "Correct. Reversible ionization of the allylic C-Br bond returns the delocalized cation, and recapture at the far end funnels the mixture toward the more stable 1,4-adduct.",
-        "B": "A secondary allylic C-Br bond ionizes easily; that is why allylic halides undergo SN1 so readily. At 40 C with HBr present the exchange is fast.",
+        "B": "A secondary allylic C-Br bond ionizes easily; that is why allylic halides undergo SN1 so readily. At 40 °C with HBr present the exchange is fast.",
         "C": "E2 elimination needs a strong base, and HBr is the opposite; moreover elimination would consume the product, whereas the observation is isomerization to another bromide.",
         "D": "Cationic polymerization of a bromoalkene is not what happens under these conditions; the allylic cation is captured by bromide far faster than by another alkene molecule."
       }
@@ -1240,8 +1240,8 @@ var CH14_QUESTIONS = [
     ],
     "feedback": {
       "context": "Temperature does not change which transition state is lower or which product is more stable; those are fixed by the molecules. What it changes is whether the products can go backward. At low temperature the adducts are formed and stay put. At higher temperature the C-Br bonds of the allylic bromides re-ionize, the products interconvert through the cation, and the mixture drifts toward the more stable 1,4-adduct.",
-      "approach": "Step 1: At -80 C, capture of bromide is effectively irreversible; the ratio is set by the two capture rates and favours the 1,2-adduct.\nStep 2: At 40 C, the reverse reaction, ionization of the allylic bromide back to the cation, becomes fast enough to matter.\nStep 3: With ionization and recapture both fast, the system reaches equilibrium, and the equilibrium favours the 1,4-adduct with its more substituted alkene.\nStep 4: Hence a larger 1,4 fraction at higher temperature, not because 1,4-addition became faster but because the 1,2-adduct stopped being permanent.",
-      "note": "The barrier for the reverse step is what distinguishes the two regimes: from the 1,2-adduct back to the cation is uphill by roughly the energy released in forming it, and at -80 C that hill is not climbed on any practical timescale. A useful diagnostic is that the pure 1,2-adduct isomerizes at 40 C with HBr and is stable at -80 C; the temperature acts on the products, not on the addition itself.",
+      "approach": "Step 1: At -80 °C, capture of bromide is effectively irreversible; the ratio is set by the two capture rates and favours the 1,2-adduct.\nStep 2: At 40 °C, the reverse reaction, ionization of the allylic bromide back to the cation, becomes fast enough to matter.\nStep 3: With ionization and recapture both fast, the system reaches equilibrium, and the equilibrium favours the 1,4-adduct with its more substituted alkene.\nStep 4: Hence a larger 1,4 fraction at higher temperature, not because 1,4-addition became faster but because the 1,2-adduct stopped being permanent.",
+      "note": "The barrier for the reverse step is what distinguishes the two regimes: from the 1,2-adduct back to the cation is uphill by roughly the energy released in forming it, and at -80 °C that hill is not climbed on any practical timescale. A useful diagnostic is that the pure 1,2-adduct isomerizes at 40 °C with HBr and is stable at -80 °C; the temperature acts on the products, not on the addition itself.",
       "options": {
         "A": "Correct. Higher temperature makes the products' ionization back to the allylic cation fast, turning an irreversible capture into an equilibrium that favours the more stable 1,4-adduct.",
         "B": "Protonation is rate-determining at both temperatures. Changing the rate-determining step would not, in any case, alter which of two products accumulates from a shared intermediate.",
@@ -1427,12 +1427,12 @@ var CH14_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Under thermodynamic control the question reduces to which of the possible adducts is most stable, and for HBr and isoprene that is decided by alkene substitution. Both adducts come from the cation formed by protonating C1 (tertiary at C2, primary at C4); 1,2-capture gives a terminal alkene, 1,4-capture gives a trisubstituted one. At 40 C the two interconvert through the cation and the trisubstituted alkene wins.",
-      "approach": "Step 1: Protonate C1: CH3-C(+)(CH3)-CH=CH2, resonance form CH3-C(CH3)=CH-CH2(+).\nStep 2: Products from this cation: 3-bromo-3-methyl-1-butene (Br at C2, terminal alkene) and 1-bromo-3-methyl-2-butene (Br at C4, trisubstituted alkene).\nStep 3: At 40 C the tertiary allylic bromide ionizes easily, so the two products equilibrate.\nStep 4: The trisubstituted alkene is more stable than the monosubstituted one by a wide margin, so 1-bromo-3-methyl-2-butene (prenyl bromide) is the thermodynamic product.",
+      "context": "Under thermodynamic control the question reduces to which of the possible adducts is most stable, and for HBr and isoprene that is decided by alkene substitution. Both adducts come from the cation formed by protonating C1 (tertiary at C2, primary at C4); 1,2-capture gives a terminal alkene, 1,4-capture gives a trisubstituted one. At 40 °C the two interconvert through the cation and the trisubstituted alkene wins.",
+      "approach": "Step 1: Protonate C1: CH3-C(+)(CH3)-CH=CH2, resonance form CH3-C(CH3)=CH-CH2(+).\nStep 2: Products from this cation: 3-bromo-3-methyl-1-butene (Br at C2, terminal alkene) and 1-bromo-3-methyl-2-butene (Br at C4, trisubstituted alkene).\nStep 3: At 40 °C the tertiary allylic bromide ionizes easily, so the two products equilibrate.\nStep 4: The trisubstituted alkene is more stable than the monosubstituted one by a wide margin, so 1-bromo-3-methyl-2-butene (prenyl bromide) is the thermodynamic product.",
       "note": "The gap between the two isoprene adducts is larger than for butadiene, because trisubstituted versus monosubstituted is a bigger step than disubstituted versus monosubstituted, and because the tertiary allylic 1,2-adduct ionizes even more readily than a secondary one. Prenyl bromide is the same C5 unit that terpenes are built from, which is why this addition is a standard way to make it.",
       "options": {
         "A": "Correct. Under reversible conditions the adduct with the trisubstituted alkene, 1-bromo-3-methyl-2-butene, is the most stable and predominates.",
-        "B": "3-Bromo-3-methyl-1-butene is the kinetic product, favoured at -80 C; at 40 C its tertiary allylic C-Br bond ionizes and it drains into the 1,4-adduct.",
+        "B": "3-Bromo-3-methyl-1-butene is the kinetic product, favoured at -80 °C; at 40 °C its tertiary allylic C-Br bond ionizes and it drains into the 1,4-adduct.",
         "C": "1-Bromo-2-methyl-2-butene is a 1,4-adduct of the cation formed by protonating C4, the less stable secondary allylic cation. That cation is not the one formed, so this product is minor at any temperature.",
         "D": "3-Bromo-2-methyl-1-butene is the 1,2-adduct of the C4-protonated cation: wrong protonation site and a terminal alkene, so it is neither the kinetic nor the thermodynamic product."
       }
@@ -1758,7 +1758,7 @@ var CH14_QUESTIONS = [
       "options": {
         "A": "Correct. Four conjugated nitrile groups make TCNE's LUMO the lowest of the four, closest to the diene HOMO, and it is among the fastest dienophiles known.",
         "B": "A methoxy group donates electron density by resonance, raising the dienophile LUMO and widening the gap; methyl vinyl ether is a poor dienophile in the normal reaction.",
-        "C": "Ethylene is unhindered but unactivated: its LUMO is high and it reacts with butadiene only at about 200 C under pressure, in low yield.",
+        "C": "Ethylene is unhindered but unactivated: its LUMO is high and it reacts with butadiene only at about 200 °C under pressure, in low yield.",
         "D": "A methyl group is weakly electron-donating and slightly raises the LUMO; propene is, if anything, a marginally worse dienophile than ethylene."
       }
     },
@@ -1897,7 +1897,7 @@ var CH14_QUESTIONS = [
     ],
     "feedback": {
       "context": "The Diels-Alder reaction is reversible, and the reverse reaction is favoured by heat because it turns one molecule into two (an entropy gain) and because the forward reaction is exothermic. A retro-Diels-Alder reaction breaks the two sigma bonds that were formed and regenerates the diene and dienophile exactly. Dicyclopentadiene is the Diels-Alder dimer of cyclopentadiene, so cracking it returns two molecules of cyclopentadiene, which is how the monomer is prepared for use.",
-      "approach": "Step 1: Recognize the structure: one cyclopentadiene acted as the diene and a second, through one of its double bonds, as the dienophile. The product contains a norbornene (the diene's five carbons plus two of the dienophile's) fused to the rest of the dienophile ring.\nStep 2: Find the ring alkene of the cyclohexene formed in the dimerization, and cut the two sigma bonds one bond away from it on either side.\nStep 3: Each half regains a second double bond: two C5H6 molecules of cyclopentadiene. Mass balance: C10H12 gives 2 x C5H6.\nStep 4: Distilling dicyclopentadiene at about 170 C cracks it; the monomer distils out and must be used quickly because it re-dimerizes at room temperature within hours.",
+      "approach": "Step 1: Recognize the structure: one cyclopentadiene acted as the diene and a second, through one of its double bonds, as the dienophile. The product contains a norbornene (the diene's five carbons plus two of the dienophile's) fused to the rest of the dienophile ring.\nStep 2: Find the ring alkene of the cyclohexene formed in the dimerization, and cut the two sigma bonds one bond away from it on either side.\nStep 3: Each half regains a second double bond: two C5H6 molecules of cyclopentadiene. Mass balance: C10H12 gives 2 x C5H6.\nStep 4: Distilling dicyclopentadiene at about 170 °C cracks it; the monomer distils out and must be used quickly because it re-dimerizes at room temperature within hours.",
       "note": "A retro-Diels-Alder always returns a conjugated diene and an alkene (or alkyne); it never gives two saturated fragments or fragments of the wrong total formula. That is a quick test for any proposed answer: the pieces must add up to the starting formula and one of them must be a 1,3-diene. The same fragmentation shows up in mass spectrometry, where cyclohexene rings lose a neutral alkene to give a diene radical cation.",
       "options": {
         "A": "Correct. Breaking the two sigma bonds formed in the dimerization regenerates the diene and the dienophile, both of which are cyclopentadiene.",
@@ -2343,7 +2343,7 @@ var CH14_QUESTIONS = [
     "question_id": "ch14_q_dynamic_addition_14",
     "topic": "Conjugated Dienes: Electrophilic Additions",
     "difficulty_level": "Hard",
-    "question_text": "1,3-Butadiene is treated with one equivalent of HBr, once at 0 C and once at 40 C. The two possible monoaddition products are shown. How does the product distribution differ between the two runs?",
+    "question_text": "1,3-Butadiene is treated with one equivalent of HBr, once at 0 °C and once at 40 °C. The two possible monoaddition products are shown. How does the product distribution differ between the two runs?",
     "reaction_scheme": {
       "reactants": [
         "C=CC=C"
@@ -2352,7 +2352,7 @@ var CH14_QUESTIONS = [
         "1,3-Butadiene, drawn as a four-carbon chain with double bonds at each end."
       ],
       "reagents": "HBr (1 equiv)",
-      "conditions": "0 C, or 40 C",
+      "conditions": "0 °C, or 40 °C",
       "products": [
         "C=CC(C)Br",
         "C/C=C/CBr"
@@ -2365,7 +2365,7 @@ var CH14_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "At 0 C the 1,2-adduct, 3-bromo-1-butene, predominates (kinetic control); at 40 C the 1,4-adduct, 1-bromo-2-butene, predominates (thermodynamic control).",
+        "text": "At 0 °C the 1,2-adduct, 3-bromo-1-butene, predominates (kinetic control); at 40 °C the 1,4-adduct, 1-bromo-2-butene, predominates (thermodynamic control).",
         "is_correct": true
       },
       {
@@ -2380,18 +2380,18 @@ var CH14_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "At 0 C the 1,4-adduct predominates and at 40 C the 1,2-adduct predominates, because heat favours the faster-forming product.",
+        "text": "At 0 °C the 1,4-adduct predominates and at 40 °C the 1,2-adduct predominates, because heat favours the faster-forming product.",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "Electrophilic addition to a conjugated diene goes through an allylic carbocation, and bromide can bond to either end of it. The two adducts form at different rates and have different stabilities, and which one you isolate depends on whether the reaction is allowed to reverse. At low temperature the products cannot re-ionize, so the faster-formed 1,2-adduct accumulates. At higher temperature the C-Br bond of either adduct re-ionizes to the same cation, the mixture equilibrates, and the more stable 1,4-adduct wins.",
-      "approach": "Step 1: Protonation at C1 gives the allylic cation CH3-CH(+)-CH=CH2, whose charge is shared with C4.\nStep 2: Bromide at C2 gives 3-bromo-1-butene (1,2-addition); bromide at C4 gives 1-bromo-2-butene (1,4-addition).\nStep 3: At 0 C the mixture is about 71% 1,2 and 29% 1,4: the 1,2-adduct forms faster, through the lower-energy transition state, and nothing reverses.\nStep 4: At 40 C the mixture is about 15% 1,2 and 85% 1,4, and heating the pure 1,2-adduct with a trace of HBr gives the same ratio. The reaction has become reversible, and the ratio now reflects product stability: a disubstituted internal alkene beats a monosubstituted terminal one.",
+      "approach": "Step 1: Protonation at C1 gives the allylic cation CH3-CH(+)-CH=CH2, whose charge is shared with C4.\nStep 2: Bromide at C2 gives 3-bromo-1-butene (1,2-addition); bromide at C4 gives 1-bromo-2-butene (1,4-addition).\nStep 3: At 0 °C the mixture is about 71% 1,2 and 29% 1,4: the 1,2-adduct forms faster, through the lower-energy transition state, and nothing reverses.\nStep 4: At 40 °C the mixture is about 15% 1,2 and 85% 1,4, and heating the pure 1,2-adduct with a trace of HBr gives the same ratio. The reaction has become reversible, and the ratio now reflects product stability: a disubstituted internal alkene beats a monosubstituted terminal one.",
       "note": "These are McMurry's own figures for HBr and butadiene. The words attach to conditions, not to compounds: the 1,2-adduct is the kinetic product only because it forms faster here, and the 1,4-adduct is the thermodynamic product only because it is more stable here. With 1,3-cyclohexadiene the two pathways give the same compound, and with some substituted dienes the faster-forming product is also the more stable one.",
       "options": {
         "A": "Correct. Low temperature freezes in the faster-formed 1,2-adduct; higher temperature lets the adducts re-ionize and equilibrate to the more stable 1,4-adduct.",
-        "B": "Proximity does favour the 1,2-adduct kinetically, but the allylic cation is a single delocalized intermediate and bromide reaches both ends; the 1,4-adduct is 29% of the mixture even at 0 C and 85% at 40 C.",
-        "C": "The 1,4-adduct is the more stable isomer, but stability only decides the ratio when the reaction can reverse. At 0 C it cannot, and the less stable 1,2-adduct is the major product.",
+        "B": "Proximity does favour the 1,2-adduct kinetically, but the allylic cation is a single delocalized intermediate and bromide reaches both ends; the 1,4-adduct is 29% of the mixture even at 0 °C and 85% at 40 °C.",
+        "C": "The 1,4-adduct is the more stable isomer, but stability only decides the ratio when the reaction can reverse. At 0 °C it cannot, and the less stable 1,2-adduct is the major product.",
         "D": "This assigns the two products to the wrong temperatures. Heat does not favour the faster-forming product; it supplies the energy for the products to re-ionize, which hands control to stability and so to the 1,4-adduct."
       }
     },
@@ -2414,7 +2414,7 @@ var CH14_QUESTIONS = [
         "Methyl vinyl ketone (but-3-en-2-one): a vinyl group attached to a C=O that carries a methyl group."
       ],
       "reagents": "heat",
-      "conditions": "toluene, 100 C",
+      "conditions": "toluene, 100 °C",
       "products": [
         "?"
       ]
@@ -2448,7 +2448,7 @@ var CH14_QUESTIONS = [
     "feedback": {
       "context": "A Diels-Alder reaction joins the two ends of an s-cis diene to the two carbons of a dienophile alkene, making a six-membered ring in one step. Three things happen at once: two new sigma bonds form at the diene termini, the two old pi bonds of the diene become one new pi bond between its middle carbons, and the dienophile pi bond becomes a sigma bond. Every product structure follows from placing those bonds and nothing else.",
       "approach": "Step 1: Number the diene C1 to C4 and the dienophile carbons Ca (bearing the acetyl group) and Cb.\nStep 2: New sigma bonds form C1 to Cb and C4 to Ca. The ring is C1-C2-C3-C4-Ca-Cb.\nStep 3: The diene's two pi bonds are replaced by one pi bond between C2 and C3. The dienophile's pi bond is gone, so Ca and Cb are both sp3 in the product.\nStep 4: Read the product: a cyclohexene whose acetyl group sits on Ca, which is bonded to the allylic CH2 (C4). Counting from the acetyl carbon as C1, the ring alkene is C3=C4: 1-(cyclohex-3-en-1-yl)ethan-1-one.",
-      "note": "The template this item replaced paired butadiene with ethylene at 150 C. McMurry is explicit that ethylene and other simple alkenes are poor dienophiles; that reaction needs about 200 C under pressure and gives low yields. An electron-withdrawing group conjugated to the dienophile alkene, here the ketone, lowers its LUMO and is what makes the cycloaddition practical. The acetyl-bearing carbon is a stereocentre, but the product forms as a racemate from these achiral reactants.",
+      "note": "The template this item replaced paired butadiene with ethylene at 150 °C. McMurry is explicit that ethylene and other simple alkenes are poor dienophiles; that reaction needs about 200 °C under pressure and gives low yields. An electron-withdrawing group conjugated to the dienophile alkene, here the ketone, lowers its LUMO and is what makes the cycloaddition practical. The acetyl-bearing carbon is a stereocentre, but the product forms as a racemate from these achiral reactants.",
       "options": {
         "A": "Correct. Bonds form at both diene termini, the new ring alkene is between the old C2 and C3, and the acetyl group sits on a ring carbon two bonds away from that alkene.",
         "B": "This puts the ring alkene in conjugation with the ketone. A Diels-Alder product's alkene is always between the diene's former C2 and C3, which is never the carbon that came from the dienophile; conjugated products need a separate isomerization.",
@@ -2475,7 +2475,7 @@ var CH14_QUESTIONS = [
         "Propenal (acrolein): a vinyl group bonded directly to an aldehyde carbon."
       ],
       "reagents": "heat",
-      "conditions": "100 C",
+      "conditions": "100 °C",
       "products": [
         "?"
       ]
@@ -2597,7 +2597,7 @@ var CH14_QUESTIONS = [
         "Methyl acrylate: a vinyl group bonded to a methyl ester carbonyl."
       ],
       "reagents": "",
-      "conditions": "25 C",
+      "conditions": "25 °C",
       "products": [
         "?"
       ]

@@ -3315,7 +3315,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -3365,7 +3365,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -3415,7 +3415,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -3865,7 +3865,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -3915,7 +3915,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -4065,7 +4065,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -4215,7 +4215,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -4365,7 +4365,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -4415,7 +4415,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -4515,7 +4515,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -4815,7 +4815,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -5315,7 +5315,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -5465,7 +5465,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -5715,7 +5715,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -5765,7 +5765,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -6265,7 +6265,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -6315,7 +6315,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -6615,7 +6615,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -6665,7 +6665,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -7015,7 +7015,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -7065,7 +7065,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -7165,7 +7165,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -7215,7 +7215,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
@@ -7365,7 +7365,7 @@ var CH16_QUESTIONS = [
         "c1ccccc1"
       ],
       "reagents": "HNO3, H2SO4",
-      "conditions": "50 C",
+      "conditions": "50 °C",
       "products": [
         "?"
       ]
