@@ -133,5 +133,46 @@ var CH24_QUESTIONS = [
     "key_status": "unverified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch24_q48_pyrrole_pyridine_reactivity",
+    "topic": "EAS on Heteroaromatic Compounds",
+    "difficulty_level": "Hard",
+    "question_text": "How do pyrrole and pyridine compare to benzene in terms of their reactivity toward electrophilic aromatic substitution, and what is the primary reason for this difference?",
+    "question_smiles": "c1ccccc1",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "Pyrrole is more reactive than benzene because the nitrogen lone pair is delocalized into the pi system; pyridine is less reactive because the electronegative nitrogen atom withdraws electron density.",
+        "smiles": "",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "Pyridine is more reactive than benzene because the nitrogen atom is highly basic.",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "Pyrrole is less reactive than benzene because it is a 5-membered ring and has less resonance energy.",
+        "smiles": "",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "Both pyrrole and pyridine are more reactive than benzene because they contain nitrogen.",
+        "smiles": "",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "This question evaluates the nucleophilicity of heteroaromatic rings.",
+      "process": "Step 1: Pyrrole is a five-membered ring with 6 pi electrons. The nitrogen lone pair is part of the aromatic system, making the ring electron-rich.\nStep 2: Pyridine is a six-membered ring where the electronegative nitrogen atom withdraws electron density inductively and through resonance, making it electron-deficient.",
+      "result": "Pyrrole is highly reactive (electron-rich), while pyridine is deactivated (electron-deficient)."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];

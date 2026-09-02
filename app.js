@@ -2190,7 +2190,7 @@ function drawSyntheticRoadmap(containerId, roadmap) {
       if (node.smiles) {
         // node.id is the roadmap label ("A", "B", "C"), never the compound's name,
         // so this identifies the structure without answering the question.
-        drawSMILESCanvas(node.smiles, `${containerId}-node-${node.id}`, 'light', `Compound ${node.id} structure`);
+        drawSMILESCanvas(node.smiles, `${containerId}-node-${node.id}`, 'light', node.alt || `Compound ${node.id} structure`);
       }
     });
   }, 20);
