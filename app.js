@@ -1927,26 +1927,16 @@ function drawSpectroscopyChart(ctx, spec) {
       dataPoints.forEach(sig => {
         const xc = sig.x;
         const area = sig.y;
-        const label = sig.label || 'singlet';
-        let peaks = [];
+        // n lines J apart, heights from Pascal's triangle (1:2:1, 1:3:3:1, ...).
+        // A "multiplet" is drawn as a five-line hump; an unknown label draws a singlet.
+        const LINES = { singlet: 1, doublet: 2, triplet: 3, quartet: 4, quintet: 5,
+                        sextet: 6, septet: 7, multiplet: 5 };
+        const n = LINES[sig.label] || 1;
         const J = 0.05;
-
-        if (label === 'singlet') {
-          peaks.push({ x: xc, h: area });
-        } else if (label === 'doublet') {
-          peaks.push({ x: xc - J/2, h: area/2 });
-          peaks.push({ x: xc + J/2, h: area/2 });
-        } else if (label === 'triplet') {
-          peaks.push({ x: xc - J, h: area*0.25 });
-          peaks.push({ x: xc, h: area*0.5 });
-          peaks.push({ x: xc + J, h: area*0.25 });
-        } else if (label === 'quartet') {
-          peaks.push({ x: xc - 1.5*J, h: area*0.125 });
-          peaks.push({ x: xc - 0.5*J, h: area*0.375 });
-          peaks.push({ x: xc + 0.5*J, h: area*0.375 });
-          peaks.push({ x: xc + 1.5*J, h: area*0.125 });
-        } else {
-          peaks.push({ x: xc, h: area });
+        let peaks = [], c = 1;
+        for (let k = 0; k < n; k++) {
+          peaks.push({ x: xc + (k - (n - 1) / 2) * J, h: area * c / Math.pow(2, n - 1) });
+          c = c * (n - 1 - k) / (k + 1);
         }
 
         peaks.forEach(p => {
