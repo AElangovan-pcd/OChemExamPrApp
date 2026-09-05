@@ -92,5 +92,46 @@ var CH20_QUESTIONS = [
     "key_status": "unverified",
     "feedback_status": "unreviewed",
     "provenance": "original"
+  },
+  {
+    "question_id": "ch20_q29_grignard_co2",
+    "topic": "preparation of alcohols (reduction of aldehydes/ketones/esters/carboxylic acids, Grignard reaction mechanisms and synthesis)",
+    "difficulty_level": "Easy",
+    "question_text": "When bromobenzene is treated first with magnesium in ether, then reacted with dry ice (solid carbon dioxide) followed by aqueous acid workup, what is the major organic product?",
+    "question_smiles": "c1ccc(Br)cc1",
+    "options": [
+      {
+        "option_id": "A",
+        "text": "benzoic acid",
+        "smiles": "O=C(O)c1ccccc1",
+        "is_correct": true
+      },
+      {
+        "option_id": "B",
+        "text": "benzyl alcohol",
+        "smiles": "OCc1ccccc1",
+        "is_correct": false
+      },
+      {
+        "option_id": "C",
+        "text": "benzophenone",
+        "smiles": "O=C(c1ccccc1)c2ccccc2",
+        "is_correct": false
+      },
+      {
+        "option_id": "D",
+        "text": "phenol",
+        "smiles": "Oc1ccccc1",
+        "is_correct": false
+      }
+    ],
+    "feedback": {
+      "context": "This question tests the carboxylation of Grignard reagents to yield carboxylic acids.",
+      "process": "Step 1: Bromobenzene reacts with Mg in ether to form phenylmagnesium bromide (PhMgBr).\nStep 2: PhMgBr nucleophilically attacks carbon dioxide (CO2) to form a benzoate salt intermediate.\nStep 3: Acidic workup protonates the carboxylate ion to yield benzoic acid.",
+      "result": "The reaction sequence yields benzoic acid."
+    },
+    "key_status": "unverified",
+    "feedback_status": "unreviewed",
+    "provenance": "original"
   }
 ];
