@@ -1699,7 +1699,7 @@ function selectMockMatchOption(itemIndex, val) {
       const chosen = state.mockExam.matchingAnswers[idx][i];
       return chosen === (item.correctAnswer || item.correct_answer);
     });
-    state.mockExam.answers[idx] = isCorrect ? 'A' : 'B';
+    state.mockExam.answers[idx] = matchingVerdictOptionId(q, isCorrect);
   } else {
     delete state.mockExam.answers[idx];
   }
@@ -1719,8 +1719,17 @@ function submitMatchingAnswer() {
     const chosen = matchingSelections[i];
     return chosen === (item.correctAnswer || item.correct_answer);
   });
-  
-  handleOptionSelect(isCorrect ? 'A' : 'B');
+
+  handleOptionSelect(matchingVerdictOptionId(q, isCorrect));
+}
+
+// A matching item's two options are a verdict pair ("all matched" / "not all matched"),
+// and shuffleQuestionsOptions relabels them like any other options. Hard-coding 'A' for
+// the key therefore marked a fully correct grid "Incorrect" whenever the shuffle had put
+// the key at B (instructor's screenshot, 2026-09-05). Look the verdict up by is_correct.
+function matchingVerdictOptionId(q, isCorrect) {
+  const opt = (q.options || []).find(o => !!o.is_correct === isCorrect);
+  return opt ? opt.option_id : (isCorrect ? 'A' : 'B');
 }
 
 function renderQuestionChemicals(q, prefix = '') {
