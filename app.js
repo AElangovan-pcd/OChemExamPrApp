@@ -551,6 +551,22 @@ function renderQuestion() {
     `;
   }
 
+  // Practice navigation (instructor, 2026-09-05): Previous and Next are always visible, so a
+  // student can go back to an answered item (its answer is kept by index in
+  // state.answersSubmitted) or skip ahead. Mock has its own row in renderMockExamQuestion.
+  const lastIndex = state.filteredQuestions.length - 1;
+  html += `
+    <div class="practice-nav-actions">
+      <button class="btn" onclick="prevQuestion()" ${state.currentQuestionIndex === 0 ? 'disabled' : ''}>
+        <i class="fas fa-chevron-left"></i> Previous
+      </button>
+      <span class="progress-desc">Question ${state.currentQuestionIndex + 1} of ${state.filteredQuestions.length}</span>
+      <button class="btn" onclick="nextQuestion()" ${state.currentQuestionIndex === lastIndex ? 'disabled' : ''}>
+        Next <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  `;
+
   container.innerHTML = html;
 
   // The canvases exist the moment innerHTML lands, so these draws run now rather than
@@ -780,6 +796,14 @@ function handleOptionSelect(optionId) {
   
   saveStats();
   renderQuestion();
+}
+
+// Navigate to Previous Question (Practice)
+function prevQuestion() {
+  if (state.currentQuestionIndex > 0) {
+    state.currentQuestionIndex--;
+    renderQuestion();
+  }
 }
 
 // Navigate to Next Question
