@@ -671,7 +671,23 @@ function formatChemicalText(text) {
       return part;
     } else {
       let res = part.replace(/\bsp(\d)\b/g, 'sp<sup>$1</sup>');
-      res = res.replace(/(?<=[A-Za-z)])\d+/g, '<sub>$&</sub>');
+      // Textbook conventions (instructor, 2026-09-05): SN1, SN2 and SN2' carry a subscript N;
+      // E1, E2 and E1cB do not.
+      res = res.replace(/\bSN([12]'?)/g, 'S<sub>N</sub>$1');
+      // Digits after an element symbol or a closing paren are a formula count: CH3, C4H10O,
+      // (CH3)3C, NaBH4. A bare C<n> that does not run on into another element is a locant
+      // (C2, C4, C2-C3) and stays as written; the bank has about 2,450 of them.
+      // ponytail: N1/O1-style locants are rare enough to leave to the same rule.
+      res = res.replace(/([A-Za-z)\]])(\d+)/g, (m, pre, digits, offset, str) => {
+        if (pre === 'E') return m;
+        const prev = str[offset - 1] || '';
+        const next = str[offset + m.length] || '';
+        if (pre === 'C' && !/[A-Za-z)\]]/.test(prev) && !/[A-Za-z]/.test(next)) return m;
+        return `${pre}<sub>${digits}</sub>`;
+      });
+      // A charge sign closing a formula token is a superscript: H3O+, M+, R3C+, OH+-CH3.
+      // "(+)" and "(+/-)" for optical rotation are preceded by "(" and stay.
+      res = res.replace(/(?<=[A-Za-z0-9)\]>])\+(?!\w)/g, '<sup>+</sup>');
       return res;
     }
   }).join('');
@@ -694,14 +710,14 @@ function getFeedbackContent(feedback) {
 
   const steps = (text) => {
     const parts = String(text).split('\n').filter(s => s.trim());
-    if (parts.length < 2) return `<p style="line-height: 1.7; color: #cbd5e1;">${text}</p>`;
+    if (parts.length < 2) return `<p style="line-height: 1.7; color: #cbd5e1;">${formatChemicalText(text)}</p>`;
     return '<ul style="list-style-position: outside; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.55rem;">'
-      + parts.map(s => `<li style="line-height: 1.7; color: #cbd5e1;">${s}</li>`).join('')
+      + parts.map(s => `<li style="line-height: 1.7; color: #cbd5e1;">${formatChemicalText(s)}</li>`).join('')
       + '</ul>';
   };
 
   return section('The principle', feedback.context
-        ? `<p style="line-height: 1.7; color: #cbd5e1;">${feedback.context}</p>` : '')
+        ? `<p style="line-height: 1.7; color: #cbd5e1;">${formatChemicalText(feedback.context)}</p>` : '')
     + section('Working through it', (feedback.approach || feedback.process)
         ? steps(feedback.approach || feedback.process) : '')
     + (feedback.note
@@ -711,10 +727,10 @@ function getFeedbackContent(feedback) {
         // where the text itself is wrong or thin. It reads last on purpose.
         ? `<div class="feedback-worth-knowing" style="border-left: 3px solid #fbbf24; background: rgba(251, 191, 36, 0.06); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin-bottom: 1.1rem;">
              <div style="font-weight: 700; color: #fbbf24; margin-bottom: 0.35rem;"><i class="fas fa-lightbulb" aria-hidden="true"></i> Worth knowing</div>
-             <p style="line-height: 1.7; color: #cbd5e1; margin: 0;">${feedback.note}</p>
+             <p style="line-height: 1.7; color: #cbd5e1; margin: 0;">${formatChemicalText(feedback.note)}</p>
            </div>`
         : section('Takeaway', feedback.result
-            ? `<p style="line-height: 1.7; color: #cbd5e1;">${feedback.result}</p>` : ''));
+            ? `<p style="line-height: 1.7; color: #cbd5e1;">${formatChemicalText(feedback.result)}</p>` : ''));
 }
 
 // Per-option rationales, rendered beside the options themselves rather than behind a
@@ -1727,18 +1743,15 @@ function renderQuestionChemicals(q, prefix = '') {
     });
 
     let pHtml = '';
-    const isMockActive = (prefix === 'mock-');
-    const isAnswered = state.answersSubmitted.hasOwnProperty(state.currentQuestionIndex);
-    const showProduct = (!isMockActive && (isAnswered || prefix === 'review-')) || (q.reaction_scheme.products && q.reaction_scheme.products[0] !== '?');
-
-    if (!showProduct) {
+    const products = schemeProducts(q);
+    if (!schemeShowsProducts(q, prefix)) {
       pHtml = `<div class="scheme-product-placeholder">?</div>`;
     } else {
-      q.reaction_scheme.products.forEach((sm, index) => {
+      products.forEach((sm, index) => {
         pHtml += `<div class="scheme-product-tile">
           <canvas id="${prefix}scheme-product-${index}" width="160" height="110"></canvas>
         </div>`;
-        if (index < q.reaction_scheme.products.length - 1) {
+        if (index < products.length - 1) {
           pHtml += `<div class="scheme-plus">+</div>`;
         }
       });
@@ -1764,6 +1777,22 @@ function renderQuestionChemicals(q, prefix = '') {
     `;
   }
   return '';
+}
+
+// A scheme whose product is authored as "?" hides it until the item is answered in
+// Practice (or is in Review), then reveals the key option's structure. Drawing the literal
+// "?" as a SMILES string left a blank white tile on every answered card from Ch 8 on.
+// ponytail: a text-only key keeps the "?" placeholder rather than an empty canvas.
+function schemeProducts(q) {
+  const key = (q.options || []).find(o => o.is_correct) || {};
+  return q.reaction_scheme.products.map(sm => sm === '?' ? (key.smiles || '') : sm);
+}
+
+function schemeShowsProducts(q, prefix) {
+  const hidden = q.reaction_scheme.products[0] === '?';
+  const answered = state.answersSubmitted.hasOwnProperty(state.currentQuestionIndex);
+  const revealed = prefix !== 'mock-' && (answered || prefix === 'review-');
+  return (!hidden || revealed) && schemeProducts(q).every(Boolean);
 }
 
 function renderVisualEngines(q, prefix = '') {
@@ -1803,15 +1832,13 @@ function initVisualEngines(q, prefix = '') {
         reactantAlts[index] || `Reactant ${index + 1} structure`);
     });
     
-    const isMockActive = (prefix === 'mock-');
-    const isAnswered = state.answersSubmitted.hasOwnProperty(state.currentQuestionIndex);
-    const showProduct = (!isMockActive && (isAnswered || prefix === 'review-')) || (q.reaction_scheme.products && q.reaction_scheme.products[0] !== '?');
-    
-    if (showProduct) {
+    if (schemeShowsProducts(q, prefix)) {
       const productAlts = q.reaction_scheme.product_alts || [];
-      q.reaction_scheme.products.forEach((sm, index) => {
-        drawSMILESCanvas(sm, `${prefix}scheme-product-${index}`, 'light',
-          productAlts[index] || `Product ${index + 1} structure`);
+      const key = (q.options || []).find(o => o.is_correct) || {};
+      schemeProducts(q).forEach((sm, index) => {
+        // A revealed "?" product is the key, so naming it in the label is no longer a leak.
+        const alt = productAlts[index] || (q.reaction_scheme.products[index] === '?' && key.text) || `Product ${index + 1} structure`;
+        drawSMILESCanvas(sm, `${prefix}scheme-product-${index}`, 'light', alt);
       });
     }
   }
@@ -2185,7 +2212,7 @@ function drawSyntheticRoadmap(containerId, roadmap) {
       .join('; ');
 
     nodeEl.innerHTML = `
-      ${incoming ? `<div class="roadmap-edge-label">&#8594; ${incoming}</div>` : ''}
+      ${incoming ? `<div class="roadmap-edge-label">&#8594; ${formatChemicalText(incoming)}</div>` : ''}
       <div class="roadmap-node-label">${node.label}</div>
       ${structureHtml}
     `;
