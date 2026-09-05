@@ -165,7 +165,53 @@ document.addEventListener('DOMContentLoaded', () => {
         if (svg && !infoOnly && !(this.opts && this.opts.scale > 0)) {
           const vb = (svg.getAttribute('viewBox') || '').split(' ').map(Number);
           const min = this.minViewBox || (this.opts && this.opts.height) || 200;
-          if (vb.length === 4 && vb.every(n => !isNaN(n)) && vb[2] < min) {
+          const wrap = this.svgWrapper;
+          const canvas = this.targetCanvas;
+          const natW = wrap ? wrap.drawingWidth : 0;
+          const natH = wrap ? wrap.drawingHeight : 0;
+          if (canvas && natW > 0 && natH > 0 && (natW > min || natH > min)) {
+            // 1d. A molecule larger than its box (instructor, 2026-09-05: the Ch 27
+            // phosphatidylcholine drew unreadably small). Keep the real, unsquared bounds,
+            // rasterise at the size the box can show, and let the box grow to it. The
+            // scale stays 1:1 until the container's width runs out; only then does the
+            // drawing shrink, and uniformly. Drawer.draw restores opts afterwards.
+            const container = canvas.closest('.matching-structure') || canvas.parentElement;
+            const isOption = /opt-canvas/.test(canvas.id);
+            const isScheme = /scheme-(reactant|product)/.test(canvas.id);
+            const isQuestion = /q-smiles/.test(canvas.id);
+            const maxH = isQuestion ? 320 : isOption ? 180 : 220;
+            let maxW;
+            if (isOption || isScheme) {
+              const row = canvas.closest(isOption ? '.choice-button' : '.reaction-scheme-container') || (container && container.parentElement);
+              maxW = Math.max(180, Math.round((row ? row.clientWidth : 640) * (isOption ? 0.5 : 0.6)));
+            } else {
+              maxW = Math.max(200, (container ? container.clientWidth : 320) - 16);
+            }
+            // The wrapper's bounds stop at atom centres, so a terminal label (CH3, O-) can
+            // overhang them; a margin keeps the last symbol inside the raster.
+            const m = 24;
+            const fw = natW + 2 * m;
+            const fh = natH + 2 * m;
+            const s = Math.min(1, maxW / fw, maxH / fh);
+            const W = Math.max(1, Math.round(fw * s));
+            const H = Math.max(1, Math.round(fh * s));
+            svg.setAttributeNS(null, 'viewBox', `${wrap.minX - m} ${wrap.minY - m} ${fw} ${fh}`);
+            svg.setAttributeNS(null, 'width', String(W));
+            svg.setAttributeNS(null, 'height', String(H));
+            this.opts.width = W;
+            this.opts.height = H;
+            this.fitApplied = true;
+            canvas.style.width = W + 'px';
+            canvas.style.height = H + 'px';
+            canvas.style.maxWidth = 'none';
+            canvas.style.maxHeight = 'none';
+            if (container) {
+              container.style.height = 'auto';
+              if (isOption || isScheme) container.style.width = (W + 8) + 'px';
+              // The question box overlays the SMILES string along its bottom edge.
+              if (isQuestion) canvas.style.marginBottom = '28px';
+            }
+          } else if (vb.length === 4 && vb.every(n => !isNaN(n)) && vb[2] < min) {
             const grow = (min - vb[2]) / 2;
             svg.setAttributeNS(null, 'viewBox', `${vb[0] - grow} ${vb[1] - grow} ${min} ${min}`);
           }
@@ -183,7 +229,17 @@ document.addEventListener('DOMContentLoaded', () => {
         // drawSMILESCanvas has already given the element its final attribute size, so the
         // displayed height is the one the drawing will be shown at.
         this.svgDrawer.minViewBox = (canvas && canvas.offsetHeight) || 0;
-        return origDrawerDraw.call(this, data, target, themeName, infoOnly);
+        this.svgDrawer.targetCanvas = canvas || null;
+        this.svgDrawer.fitApplied = false;
+        const drawn = origDrawerDraw.call(this, data, target, themeName, infoOnly);
+        // toCanvas has captured the fitted width and height by now; put the defaults back
+        // so the next small molecule draws into the usual 320 x 200 raster.
+        if (this.svgDrawer.fitApplied) {
+          this.svgDrawer.opts.width = smilesDrawerOptions.width;
+          this.svgDrawer.opts.height = smilesDrawerOptions.height;
+          this.svgDrawer.fitApplied = false;
+        }
+        return drawn;
       };
 
       // 2. Mark explicit charges in multi-component molecules (e.g. A.B)
