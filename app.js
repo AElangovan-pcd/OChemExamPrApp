@@ -704,8 +704,17 @@ function getFeedbackContent(feedback) {
         ? `<p style="line-height: 1.7; color: #cbd5e1;">${feedback.context}</p>` : '')
     + section('Working through it', (feedback.approach || feedback.process)
         ? steps(feedback.approach || feedback.process) : '')
-    + section(feedback.note ? 'Worth knowing' : 'Takeaway', (feedback.note || feedback.result)
-        ? `<p style="line-height: 1.7; color: #cbd5e1;">${feedback.note || feedback.result}</p>` : '');
+    + (feedback.note
+        // The closing note renders as the "Worth knowing" callout (instructor, 2026-09-05), the
+        // same lightbulb block the CHEM 131 app shows: where the rule stops holding, McMurry's
+        // own framing, the OpenStax section that teaches the point, or a plain statement of
+        // where the text itself is wrong or thin. It reads last on purpose.
+        ? `<div class="feedback-worth-knowing" style="border-left: 3px solid #fbbf24; background: rgba(251, 191, 36, 0.06); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin-bottom: 1.1rem;">
+             <div style="font-weight: 700; color: #fbbf24; margin-bottom: 0.35rem;"><i class="fas fa-lightbulb" aria-hidden="true"></i> Worth knowing</div>
+             <p style="line-height: 1.7; color: #cbd5e1; margin: 0;">${feedback.note}</p>
+           </div>`
+        : section('Takeaway', feedback.result
+            ? `<p style="line-height: 1.7; color: #cbd5e1;">${feedback.result}</p>` : ''));
 }
 
 // Per-option rationales, rendered beside the options themselves rather than behind a
