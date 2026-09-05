@@ -622,6 +622,7 @@ function drawSMILESCanvas(smiles, canvasId, theme = 'light', alt = '') {
   const container = canvas.closest('.matching-structure') || canvas.parentElement;
 
   if (smiles && smiles.startsWith('FISCHER:')) {
+    canvas.dataset.projection = 'fischer';
     if (container) {
       container.style.background = 'transparent';
       container.style.border = 'none';
@@ -632,6 +633,7 @@ function drawSMILESCanvas(smiles, canvasId, theme = 'light', alt = '') {
   }
 
   if (smiles && smiles.startsWith('HAWORTH:')) {
+    canvas.dataset.projection = 'haworth';
     if (container) {
       container.style.background = 'transparent';
       container.style.border = 'none';
@@ -1116,9 +1118,15 @@ function startMockExam() {
     return array;
   };
 
-  // Shuffle pool for each chapter
+  // A retake should not repeat questions the student has already met (instructor,
+  // 2026-09-05). Every finished attempt is in state.mockExam.history with its questions,
+  // so each chapter's pool is shuffled and then ordered with the unseen questions last,
+  // where pop() takes from; seen questions are used only once a chapter runs out of new
+  // ones. History lives in localStorage, so this is per browser.
+  const seenIds = new Set((state.mockExam.history || []).flatMap(a => (a.questions || []).map(q => q.question_id)));
   activeChapters.forEach(ch => {
-    shuffle(questionsByChapter[ch]);
+    const pool = shuffle(questionsByChapter[ch]);
+    questionsByChapter[ch] = [...pool.filter(q => seenIds.has(q.question_id)), ...pool.filter(q => !seenIds.has(q.question_id))];
   });
 
   const selectedQuestions = [];
@@ -1140,7 +1148,7 @@ function startMockExam() {
   // Fallback to top off to exactly 70 questions if needed
   if (selectedQuestions.length < 70) {
     const allUniqueIds = new Set(selectedQuestions.map(q => q.question_id));
-    const generalPool = deduplicatedPool.filter(q => {
+    const generalPool = state.questions.filter(q => {
       return !allUniqueIds.has(q.question_id) &&
              q.interaction_type !== 'matching-list' &&
              q.interaction_type !== 'matching-grid';

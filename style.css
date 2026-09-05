@@ -595,6 +595,16 @@ header {
   max-height: 110px;
 }
 
+/* A Fischer or Haworth projection is read from its labels, so it keeps its drawn size
+   in an option row instead of being squeezed to the 85px structure box. */
+.choice-structure:has(canvas[data-projection]) {
+  height: auto;
+  min-height: 85px;
+}
+.choice-structure canvas[data-projection] {
+  max-height: none;
+}
+
 /* Feedback Section */
 .feedback-panel {
   background: var(--bg-card);
