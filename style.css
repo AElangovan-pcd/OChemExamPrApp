@@ -750,6 +750,24 @@ header {
     flex: 1;
     min-width: 250px;
   }
+
+  /* THE QUESTION COMES FIRST ON A PHONE (mobile audit, 2026-09-06). The sidebar precedes the
+     workspace in the DOM, which is right for the two-column desktop layout and wrong for the
+     single column below it: the 32-chapter topic list stacked above the question, so on an
+     iPhone 14 the question card began 2,303px down a 3,677px page. A student landed on nearly
+     three screens of chapter names before any chemistry, on every load. Reordering the two grid
+     children costs nothing on desktop, where this query does not apply. */
+  .app-container > .workspace { order: 1; }
+  .app-container > .sidebar { order: 2; }
+
+  /* ...and the chapter list is a picker, not a wall. Capped here as it is above 961px, just by
+     viewport fraction rather than by filling the sidebar, since below 961px it is not a column
+     beside the workspace but a block underneath it. */
+  .topic-list {
+    max-height: 45vh;
+    overflow-y: auto;
+    padding-right: 0.25rem;
+  }
 }
 
 /* The header's three groups - logo, mode tabs, nav controls - stop fitting on one row a little
@@ -769,11 +787,34 @@ header {
 }
 
 @media (max-width: 640px) {
+  /* A sticky header costs 180px of a phone screen permanently - 21% of an iPhone 14, 27% of an
+     iPhone SE - because below 640px it stacks into three rows. On a phone it scrolls away instead;
+     the mode tabs and search are a flick back to the top rather than a permanent tax on the
+     reading area. Tablets keep the sticky header, where 103px of 1180 is affordable. */
   header {
+    position: static;
     flex-direction: column;
+    /* flex-wrap: wrap from the 840px rule above must be cancelled here. A wrapping *column* flex
+       container does not wrap lines, it wraps into extra COLUMNS: the three groups were laid out
+       side by side again and the header measured 441px wide inside a 375px phone. Column direction
+       needs no wrapping of its own. */
+    flex-wrap: nowrap;
     gap: 1rem;
     align-items: stretch;
     padding: 1rem;
+  }
+
+  /* These two are flex rows whose contents have no floor - the readout's digits and labels, and the
+     44px touch targets beside them. Let them break onto a second line rather than overflow. */
+  .nav-controls, .header-stats {
+    flex-wrap: wrap;
+  }
+
+  /* The stacked header runs to 265px on a phone once its controls are thumb-sized. The byline is
+     the one line of it a student does not need mid-session, and at 11.5px it was under the legible
+     floor anyway; the same credit is in the footer. It stays on every larger screen. */
+  .logo-subtitle {
+    display: none;
   }
   
   .nav-controls {
@@ -1304,7 +1345,10 @@ header {
 
 .matching-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  /* The item's own grid_columns arrives from app.js as --matching-cols. It used to arrive as a
+     finished grid-template-columns inline, which no stylesheet rule could override; the auto-fit
+     rule that stood here was therefore dead code. */
+  grid-template-columns: repeat(var(--matching-cols, 2), 1fr);
   gap: 1rem;
   margin: 1.5rem 0;
 }
@@ -1581,3 +1625,61 @@ header {
 .search-result:hover { border-color: var(--border-active); background: var(--bg-card-hover); }
 .search-result-meta { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.75rem; font-weight: 600; color: var(--accent-text); margin-bottom: 0.2rem; }
 .search-result-stem { font-size: 0.88rem; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+
+/* ==========================================================================
+   Touch and small screens (mobile audit, 2026-09-06)
+   --------------------------------------------------------------------------
+   Deliberately the LAST block in the file. Every rule here overrides a base rule
+   at equal specificity - .mock-question-grid, .matching-drop and .search-input all
+   sit hundreds of lines below the responsive breakpoints - so placing it earlier
+   meant losing the cascade and reaching for !important. Last wins on its own.
+   Measured at 360x740, 375x667, 390x844, 412x915 and 820x1180.
+   ========================================================================== */
+@media (max-width: 840px) {
+  /* Twenty controls sat under the 44px minimum a finger needs: the mode tabs at 30px tall, the
+     sort buttons at 26px, search and theme at 35x35, the statistics reset at 21x24, Previous and
+     Next at 33px. All fine under a mouse, all fiddly under a thumb. */
+  .tab-btn { min-height: 44px; padding: 0.5rem 0.9rem; }
+  .search-toggle, .theme-toggle, .header-stat-reset { min-width: 44px; min-height: 44px; }
+  .btn { min-height: 44px; }
+  .topic-item { padding: 0.85rem 1rem; }
+  /* The sort buttons carry their padding and font-size inline in index.html, and an inline style
+     beats any stylesheet rule; this is the same !important .btn-sort:hover and .active need. */
+  .btn-sort { min-height: 44px !important; font-size: 0.85rem !important; }
+
+  /* The 70-cell question map was a fixed 7 columns, so each cell was 33px on a phone. Let the
+     column count follow the width, with 44px as the floor; aspect-ratio keeps them square. */
+  .mock-question-grid { grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); }
+
+  /* iOS Safari zooms the whole page when a focused control's text is under 16px, and does not zoom
+     back out. The search box was 15.2px, so opening search on an iPhone left the student on a
+     zoomed page to pinch out of. */
+  input, select, textarea, .search-input, .matching-drop { font-size: 16px; }
+
+  /* Matching items were the worst of it: two columns of 125px card on a 360px phone, each holding
+     a structure drawn at the fixed 28px-bond ACS scale, so molecules up to 152px wide hung outside
+     their own white box. One column gives the card the full 265px and the structures fit at their
+     true scale - the scale is not touched, the layout is. overflow-x on the box is the safety net
+     for a molecule wider still: it scrolls rather than being clipped, because scaling it down is
+     exactly what the ACS-scale rule forbids. */
+  .matching-grid-container { grid-template-columns: 1fr; }
+  .matching-grid-card { padding: 0.75rem; min-width: 0; }
+  .matching-structure { width: 100%; overflow-x: auto; }
+  .matching-drop { min-width: 0; width: 100%; }
+  /* The list layout puts the structure and its pull-down side by side, which squeezed the
+     structure box to 94px on a 390px phone. Stack them so the structure gets the width. */
+  .matching-item { flex-direction: column; align-items: stretch; gap: 0.75rem; }
+
+  /* .question-meta is a three-tag flex row with nowhere to go: at 360px the chapter tag pushed the
+     difficulty tag past the right edge. Let the row break. */
+  .question-meta { flex-wrap: wrap; gap: 0.5rem; }
+
+  /* Same shape, same fix: Previous / counter / Next is a space-between row whose three children
+     have no floor, and at 360px Next hung 16px off the edge. */
+  .mock-nav-actions, .practice-nav-actions { flex-wrap: wrap; row-gap: 0.75rem; }
+
+  /* Three labels sat below the 12px floor for text on a phone. */
+  .header-stat-label { font-size: 0.75rem; }
+  .smiles-string-display { font-size: 0.78rem; }
+  .logo-subtitle { font-size: 0.78rem; }
+}

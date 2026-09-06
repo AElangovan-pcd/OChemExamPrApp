@@ -172,7 +172,13 @@ document.addEventListener('DOMContentLoaded', () => {
           const canvas = this.targetCanvas;
           const natW = wrap ? wrap.drawingWidth : 0;
           const natH = wrap ? wrap.drawingHeight : 0;
-          if (canvas && natW > 0 && natH > 0 && (natW > min || natH > min)) {
+          // The third clause is the phone case (mobile audit, 2026-09-06). The two before it ask
+          // whether the MOLECULE is too big; neither notices that the CANVAS is. Every matching
+          // canvas is created at smilesDrawerOptions.width (320), so on a 390px phone a small
+          // molecule skipped the fit entirely and sat in a 320px canvas inside a 115px box, with
+          // its edges outside the white tile. Ask whether the canvas fits its container too.
+          const boxW = (canvas && (canvas.closest('.matching-structure') || canvas.parentElement) || {}).clientWidth || 0;
+          if (canvas && natW > 0 && natH > 0 && (natW > min || natH > min || (boxW > 0 && smilesDrawerOptions.width > boxW))) {
             // 1d. A molecule larger than its box (instructor, 2026-09-05: the Ch 27
             // phosphatidylcholine drew unreadably small). Keep the real, unsquared bounds,
             // rasterise at the size the box can show, and let the box grow to it. The
@@ -188,7 +194,11 @@ document.addEventListener('DOMContentLoaded', () => {
               const row = canvas.closest(isOption ? '.choice-button' : '.reaction-scheme-container') || (container && container.parentElement);
               maxW = Math.max(180, Math.round((row ? row.clientWidth : 640) * (isOption ? 0.5 : 0.6)));
             } else {
-              maxW = Math.max(200, (container ? container.clientWidth : 320) - 16);
+              // The floor used to be 200px, which on a phone was a guarantee of overflow rather
+              // than a guard against a tiny drawing: a 94px box still got a 200px drawing. It has
+              // to follow the container. No effect above 961px, where every such box is at least
+              // 320px wide and the floor never bound.
+              maxW = Math.max(80, (container ? container.clientWidth : 320) - 16);
             }
             // The wrapper's bounds stop at atom centres, so a terminal label (CH3, O-) can
             // overhang them; a margin keeps the last symbol inside the raster.
@@ -2462,7 +2472,13 @@ function renderChoicesArea(q, selectedOptionId, isAnswered, prefix = '') {
     });
     
     if (isGrid) {
-      html += `<div class="matching-grid-container" style="grid-template-columns: repeat(${q.grid_columns || 2}, 1fr);">${itemsHtml}</div>`;
+      // The column count goes out as a custom property, not as a finished grid-template-columns.
+      // An inline declaration beats every stylesheet rule, so the concrete value this used to write
+      // pinned the grid at two columns on a 360px phone: each card was 125px wide holding a
+      // structure drawn at the fixed ACS scale, and molecules up to 152px hung outside their own
+      // white box. As a variable the item still chooses its layout and the stylesheet can still
+      // collapse it to one column on a narrow screen.
+      html += `<div class="matching-grid-container" style="--matching-cols: ${q.grid_columns || 2};">${itemsHtml}</div>`;
     } else {
       html += `<div class="matching-container">${itemsHtml}</div>`;
     }
