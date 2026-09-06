@@ -17,6 +17,7 @@
   --surface-faint: rgba(255, 255, 255, 0.03); /* the faint boxes app.js used to hard-code */
   --flag-color: #f59e0b; /* flagged questions, the medium difficulty tag, the award icon */
   --accent-color: #6366f1;
+  --accent-text: #818cf8; /* accent as text: #6366f1 reads 4.1:1 on the card, this 6.3:1; light mode redefines it */
   --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
   --success-color: #10b981;
   --success-bg: rgba(16, 185, 129, 0.15);
@@ -359,7 +360,7 @@ header {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--accent-color);
+  color: var(--accent-text);
 }
 
 .progress-desc {
@@ -419,12 +420,12 @@ header {
 
 .tag-difficulty.Hard {
   background: rgba(239, 68, 68, 0.15);
-  color: #ef4444;
+  color: var(--error-color);
 }
 
 .tag-difficulty.Medium {
   background: rgba(99, 102, 241, 0.15);
-  color: #818cf8;
+  color: var(--accent-text);
 }
 
 .tag-topic {
@@ -646,7 +647,7 @@ header {
 .feedback-content {
   font-size: 0.95rem;
   line-height: 1.7;
-  color: #cbd5e1;
+  color: var(--text-body);
   min-height: 100px;
   padding: 0.5rem 0;
 }
@@ -1175,7 +1176,7 @@ header {
 .scheme-product-placeholder {
   width: 160px;
   height: 110px;
-  background: #1e1e2d;
+  background: var(--surface-faint);
   border: 2px dashed var(--accent-color);
   border-radius: 8px;
   color: var(--accent-color);
@@ -1332,7 +1333,7 @@ header {
 .roadmap-node-label {
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--accent-color);
+  color: var(--accent-text);
   margin-bottom: 0.25rem;
 }
 
@@ -1446,6 +1447,7 @@ header {
   --success-color: #047857;
   --error-color: #be123c;
   --flag-color: #92400e; /* amber as text on the amber tint over white: #f59e0b reads at 2.2:1, #b45309 at 4.5:1, this at 6.2:1 */
+  --accent-text: #4f46e5; /* 6.3:1 on white; #6366f1 reads 4.5:1 */
   --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.12), 0 4px 6px -2px rgba(15, 23, 42, 0.05);
   --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.2);
 }

@@ -16,19 +16,19 @@ var CH04_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "4-Ethyl-1,2-dimethylcyclohexane",
+        "text": "4-Ethyl-1,3-dimethylcyclohexane",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "1-Ethyl-3,4-dimethylcyclohexane",
+        "text": "2-Ethyl-1,5-dimethylcyclohexane",
         "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "5-Ethyl-1,2-dimethylcyclohexane",
+        "text": "4-Ethyl-1,2-dimethylcyclohexane",
         "smiles": "",
         "is_correct": false
       }
@@ -39,9 +39,9 @@ var CH04_QUESTIONS = [
       "note": "Twelve numberings exist for a trisubstituted six-ring - six starting points times two directions - and it is worth writing out the plausible ones rather than trusting the first that looks small. A set beginning 1,2 always beats one beginning 1,3, whatever the third number turns out to be.",
       "options": {
         "A": "Correct. The locant set 1,2,4 is the lowest available, and ethyl precedes methyl alphabetically in the citation.",
-        "B": "The right molecule under the wrong name. The set 1,2,4 was available but this numbering produces 1,2,4 assigned to the wrong carbons, placing the ethyl at C4 rather than taking the set that starts at the ethyl.",
-        "C": "The right molecule under the wrong name, numbered to give 1,3,4. Compared with 1,2,4 it loses at the second term.",
-        "D": "The right molecule under the wrong name, numbered to give 1,2,5 - which ties 1,2,4 for two terms and then loses at the third."
+        "B": "The right molecule under the wrong name, numbered from the lone methyl toward the other methyl to give 1,3,4. Compared with 1,2,4 it loses at the second term.",
+        "C": "The right molecule under the wrong name, numbered from the methyl beside the ethyl toward the ethyl to give 1,2,5, which ties 1,2,4 for two terms and then loses at the third.",
+        "D": "A different compound. This name puts the two methyls on adjacent carbons with the ethyl across the ring from both; in the molecule shown the ethyl sits next to one methyl and the methyls are separated by a ring carbon."
       }
     },
     "key_status": "verified",
@@ -84,11 +84,11 @@ var CH04_QUESTIONS = [
     "feedback": {
       "context": "When a molecule contains both a ring and a chain, one becomes the parent and the other a substituent. The choice is made by size: whichever has more carbons is the parent.",
       "approach": "Step 1: Count both. The chain runs to six carbons and the ring has four.\nStep 2: Six beats four, so the chain is the parent - hexane - and the ring becomes a cyclobutyl substituent.\nStep 3: Number the chain for the lowest locant. The ring sits on the third carbon counting from the nearer end, giving 3-cyclobutylhexane.",
-      "note": "The convention differs between sources and older texts sometimes made the ring the parent regardless. The modern rule is the size comparison, so a small ring on a long chain is a substituent, while the same ring carrying a short chain would be the parent instead.",
+      "note": "The convention differs between sources. McMurry, like the 1979 IUPAC rules, compares sizes, so a small ring on a long chain is a substituent while the same ring carrying a short chain would be the parent; the 2013 IUPAC recommendations (P-44.1.2.2) instead make a ring senior to a chain whatever their sizes, which would give (hexan-3-yl)cyclobutane. This item follows McMurry, the course text.",
       "options": {
         "A": "Correct. The six-carbon chain outranks the four-membered ring, so hexane is the parent and the ring is a cyclobutyl substituent at C3.",
         "B": "This makes the smaller ring the parent, which reverses the size rule. It would also require a hexyl substituent, and the chain here attaches through an internal carbon rather than an end.",
-        "C": "This too treats the ring as parent. The chain attaches through its third carbon, so naming it as a 1-ethylbutyl substituent is both awkward and the wrong way round.",
+        "C": "This treats the ring as the parent, which is what the 2013 IUPAC recommendations do; under McMurry's size rule, followed here, the six-carbon chain is the parent instead. (1-Ethylbutyl is the older name for the hexan-3-yl substituent.)",
         "D": "The right molecule under the wrong name. Numbering the chain from the far end gives locant 4 where 3 is available."
       }
     },
@@ -209,7 +209,7 @@ var CH04_QUESTIONS = [
       {
         "option_id": "B",
         "text": "Bicyclo[2.2.2]octane",
-        "smiles": "C1CC2CCC1(CC2)C",
+        "smiles": "C1CC2CCC1CC2",
         "is_correct": false
       },
       {
@@ -374,8 +374,8 @@ var CH04_QUESTIONS = [
       "note": "The count in a bicyclo name refers to atoms in the ring system as a whole, so a bicyclo[n.n.n] name always implies shared atoms. Reserving that notation for genuinely fused or bridged systems keeps the distinction visible in the name itself.",
       "options": {
         "A": "Correct. The rings share no atoms, so one is named as a substituent on the other in ordinary substitutive fashion.",
-        "B": "Bicyclobutyl leaves the parent unnamed - a substituent name standing alone rather than a complete compound name.",
-        "C": "The bicyclo prefix implies shared atoms between the rings. These two share none, being joined only by a single bond.",
+        "B": "Bicyclobutyl is the pre-2013 ring-assembly name (1,1'-bicyclobutyl, on the pattern of the familiar bicyclohexyl); the current recommendations write 1,1'-bi(cyclobutane), and McMurry uses the substitutive name.",
+        "C": "Written with parentheses, 1,1'-bi(cyclobutane) is in fact the 2013 IUPAC preferred name for this ring assembly; without them the name is malformed, and the substitutive name cyclobutylcyclobutane is the acceptable form McMurry uses.",
         "D": "The locant is superfluous. With only one substituent on the parent ring, there is nothing for the number to distinguish."
       }
     },
@@ -406,13 +406,13 @@ var CH04_QUESTIONS = [
       {
         "option_id": "C",
         "text": "cis-1,3-Diethylcyclobutane",
-        "smiles": "CC[C@@H]1C[C@@H](CC)C1",
+        "smiles": "CC[C@H]1C[C@@H](CC)C1",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "trans-1,3-Diethylcyclobutane",
-        "smiles": "CC[C@H]1C[C@@H](CC)C1",
+        "smiles": "CC[C@@H]1C[C@@H](CC)C1",
         "is_correct": false
       }
     ],
@@ -471,7 +471,7 @@ var CH04_QUESTIONS = [
         "A": "Correct. The set 1,2,4 is the lowest available, and isopropyl is written first because citation order is alphabetical.",
         "B": "The right molecule under the wrong name, numbered to give 1,3,4, which loses to 1,2,4 at the second term.",
         "C": "The right molecule under the wrong name, numbered to give 1,2,5. It ties 1,2,4 for two terms and then loses at the third.",
-        "D": "The right molecule under the wrong name. This assigns the methyls 2 and 3 where 1 and 2 are available, giving a higher set overall."
+        "D": "A different compound. This name puts the isopropyl next to a methyl, whereas in the molecule shown the isopropyl carbon has unsubstituted ring neighbours on both sides."
       }
     },
     "key_status": "verified",
@@ -722,30 +722,31 @@ var CH04_QUESTIONS = [
     "topic": "Ring Strain & Heats of Combustion",
     "difficulty_level": "Hard",
     "question_text": "The heat of combustion of cis-1,2-dimethylcyclopropane is 3293 kJ/mol, while that of trans-1,2-dimethylcyclopropane is 3288 kJ/mol. What is the physical basis for this difference?",
-    "question_smiles": "",
+    "question_smiles": "C[C@@H]1C[C@@H]1C.C[C@@H]1C[C@H]1C",
+    "structure_alt": "Two 1,2-dimethylcyclopropanes side by side: on the left the two methyl groups are on the same face of the three-membered ring, on the right they are on opposite faces.",
     "options": [
       {
         "option_id": "A",
         "text": "The cis-isomer possesses additional steric strain due to methyl-methyl repulsion on the same face.",
-        "smiles": "C[C@@H]1C[C@@H]1C",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "The trans-isomer has additional angle strain because the methyl groups are opposite.",
-        "smiles": "C[C@H]1C[C@@H]1C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "The cis-isomer has lower torsional strain.",
-        "smiles": "C[C@@H]1C[C@@H]1C",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The trans-isomer experiences transannular strain.",
-        "smiles": "C[C@H]1C[C@@H]1C",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -911,30 +912,31 @@ var CH04_QUESTIONS = [
     "topic": "Ring Strain & Heats of Combustion",
     "difficulty_level": "Hard",
     "question_text": "Cyclopropane reacts with H2 in the presence of a Pd/C catalyst at 80 °C to yield propane, whereas cyclohexane remains unreactive under these conditions. What drives this difference in chemical reactivity?",
-    "question_smiles": "",
+    "question_smiles": "C1CC1.C1CCCCC1",
+    "structure_alt": "A three-membered carbon ring beside a six-membered carbon ring.",
     "options": [
       {
         "option_id": "A",
         "text": "The high ring strain of cyclopropane (~115 kJ/mol) makes the ring-opening reaction thermodynamically very favorable.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Cyclopropane is an unsaturated hydrocarbon containing bent double bonds.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Cyclohexane has more steric hindrance, preventing the Pd catalyst from coordinating.",
-        "smiles": "C1CCCCC1",
+        "smiles": "",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "The C-C bonds in cyclopropane are weaker because the carbon atoms are sp2-hybridized.",
-        "smiles": "C1CC1",
+        "smiles": "",
         "is_correct": false
       }
     ],
@@ -2036,7 +2038,7 @@ var CH04_QUESTIONS = [
     ],
     "feedback": {
       "context": "For any disubstituted cyclohexane, the cis or trans label fixes which combinations of axial and equatorial are geometrically possible. Only after that is settled does the energy comparison decide between them.",
-      "approach": "Step 1: Work out what trans allows at 1,2. Adjacent carbons alternate their axial directions, so substituents on opposite faces must be either both equatorial or both axial.\nStep 2: Compare those two options energetically. Diaxial puts two methyls each into two 1,3-diaxial interactions; diequatorial puts them into none.\nStep 3: Diequatorial is therefore much more stable, by about 15 kJ/mol, and is overwhelmingly the preferred conformation.",
+      "approach": "Step 1: Work out what trans allows at 1,2. Adjacent carbons alternate their axial directions, so substituents on opposite faces must be either both equatorial or both axial.\nStep 2: Compare those two options energetically. Diaxial puts two methyls each into two 1,3-diaxial interactions; diequatorial has none, though the adjacent equatorial methyls are gauche to each other.\nStep 3: Diequatorial is therefore much more stable, by about 11 kJ/mol (15.2 for the diaxial form minus the 3.8 kJ/mol gauche interaction the diequatorial form retains), and is overwhelmingly the preferred conformation.",
       "note": "The pairing rule is worth committing to memory because it inverts with position. At 1,2 and 1,4 it is trans that can be diequatorial; at 1,3 it is cis. Working it out from the alternating axial directions each time is safer than trying to recall which is which.",
       "options": {
         "A": "Correct. Adjacent carbons point their axial bonds in opposite directions, so opposite faces means both substituents can be equatorial - and that costs nothing.",
@@ -2106,25 +2108,25 @@ var CH04_QUESTIONS = [
       {
         "option_id": "A",
         "text": "cis-1,2-Dimethylcyclohexane",
-        "smiles": "C[C@H]1CCCC[C@@H]1C",
+        "smiles": "C[C@@H]1CCCC[C@@H]1C",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "trans-1,2-Dimethylcyclohexane",
-        "smiles": "C[C@@H]1CCCC[C@@H]1C",
+        "smiles": "C[C@H]1CCCC[C@@H]1C",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "trans-1,3-Dimethylcyclohexane",
-        "smiles": "C[C@@H]1CC[C@H](C)CC1",
+        "smiles": "C[C@@H]1CCC[C@@H](C)C1",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "trans-1,4-Dimethylcyclohexane",
-        "smiles": "C1CC[C@H](C)CC[C@@H]1C",
+        "smiles": "C[C@H]1CC[C@H](C)CC1",
         "is_correct": false
       }
     ],
@@ -2177,7 +2179,7 @@ var CH04_QUESTIONS = [
     ],
     "feedback": {
       "context": "The 1,3 relationship reverses the pattern seen at 1,2. Carbons two apart point their axial bonds in the same direction, so it is the cis isomer that can place both substituents equatorially.",
-      "approach": "Step 1: Compare the axial directions at C1 and C3. Because they are separated by one carbon, both axial bonds point the same way - both up or both down.\nStep 2: Apply that to cis, where both methyls are on the same face. Both can therefore be equatorial together, or both axial together.\nStep 3: Compare the two. Diaxial costs four 1,3-diaxial interactions, including a severe direct one between the two methyls themselves. Diequatorial costs nothing and is strongly preferred.",
+      "approach": "Step 1: Compare the axial directions at C1 and C3. Because they are separated by one carbon, both axial bonds point the same way - both up or both down.\nStep 2: Apply that to cis, where both methyls are on the same face. Both can therefore be equatorial together, or both axial together.\nStep 3: Compare the two. Diaxial costs three 1,3-diaxial interactions: two methyl-hydrogen contacts and one severe direct contact between the two methyls themselves. Diequatorial costs nothing and is strongly preferred.",
       "note": "The diaxial form of cis-1,3-dimethylcyclohexane is unusually bad, because the two axial methyls point directly at each other across the ring rather than merely at hydrogens. That single interaction is worth about 15 kJ/mol on its own, and it makes this the most lopsided conformational preference among the dimethylcyclohexanes.",
       "options": {
         "A": "Correct. At 1,3 the axial directions coincide, so the cis isomer can place both methyls equatorial - which it does, avoiding all diaxial strain.",
@@ -2366,7 +2368,7 @@ var CH04_QUESTIONS = [
     "feedback": {
       "context": "With three substituents the possible arrangements are constrained by all three stereochemical relationships at once. Occasionally they are mutually compatible with every group equatorial, and menthol is the classic case.",
       "approach": "Step 1: Take the relationships in turn. In menthol the hydroxyl at C1 and the isopropyl at C2 are trans, which at adjacent carbons permits both equatorial.\nStep 2: Check the third. The methyl at C5 stands in a relationship to the other two that also allows equatorial placement in the same chair.\nStep 3: Since no relationship forces any group axial, all three occupy equatorial positions simultaneously, and the alternative chair would put all three axial - dramatically worse.",
-      "note": "That all-equatorial arrangement is why menthol is so conformationally rigid, and it is a large part of why this particular stereoisomer is the one with the familiar cooling character. Of the eight possible stereoisomers, only this one achieves an all-equatorial chair.",
+      "note": "That all-equatorial arrangement is why menthol is so conformationally rigid, and it is a large part of why this particular stereoisomer is the one with the familiar cooling character. Of the eight possible stereoisomers, only menthol and its enantiomer achieve an all-equatorial chair; the other six cannot.",
       "options": {
         "A": "Correct. The stereochemistry permits all three substituents to be equatorial in the same chair, which is why menthol is unusually rigid conformationally.",
         "B": "Putting the hydroxyl axial would be adopted only if the stereochemistry required it. Here it does not - all three can be equatorial together.",

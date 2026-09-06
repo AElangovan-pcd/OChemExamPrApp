@@ -504,7 +504,7 @@ var CH06_QUESTIONS = [
     "feedback": {
       "context": "Estimating a reaction enthalpy from bond energies is one subtraction: the energy spent breaking the bonds of the reactants minus the energy released as the bonds of the products form.",
       "approach": "Step 1: Total the bonds broken. One H-H at 436 and one Cl-Cl at 243 gives 679 kJ/mol going in.\nStep 2: Total the bonds formed. Two H-Cl bonds at 432 each gives 864 kJ/mol coming back out.\nStep 3: Subtract. 679 - 864 = -185 kJ/mol, and the negative sign says the reaction gives out heat.",
-      "note": "Two moles of HCl are formed, not one, and failing to double 432 gives -247 kJ/mol, which is the commonest slip on this calculation. Keep the sign convention straight as well: breaking costs energy and enters positive, forming releases it and enters negative.",
+      "note": "Two moles of HCl are formed, not one, and failing to double 432 gives +247 kJ/mol, which is the commonest slip on this calculation. Keep the sign convention straight as well: breaking costs energy and enters positive, forming releases it and enters negative.",
       "options": {
         "A": "Correct. 436 + 243 = 679 kJ/mol goes into breaking bonds, 2 x 432 = 864 kJ/mol comes back out as bonds form, and the difference is -185 kJ/mol.",
         "B": "The magnitude is right but the sign is reversed. Forming two H-Cl bonds releases more than breaking H-H and Cl-Cl costs, so the reaction cannot be endothermic.",
@@ -2032,7 +2032,7 @@ var CH06_QUESTIONS = [
     "question_id": "ch06_q45_metal_cation_electrophile",
     "topic": "Electrophiles vs Nucleophiles",
     "difficulty_level": "Medium",
-    "question_text": "Why do transition metal cations, such as $Fe^{3+}$ or $Al^{3+}$, behave as strong electrophiles in organic reactions like Friedel-Crafts alkylation?",
+    "question_text": "Why do metal cations such as $Fe^{3+}$ or $Al^{3+}$ behave as strong electrophiles in organic reactions like Friedel-Crafts alkylation?",
     "question_smiles": "C1=CC=CC=C1",
     "options": [
       {
@@ -2584,7 +2584,7 @@ var CH06_QUESTIONS = [
     "feedback": {
       "context": "Small barriers and a small overall change make this an easy profile to read quickly, and an easy one to read carelessly, because several of the marked energies lie close together on the axis.",
       "approach": "Step 1: The climb to the first transition state is 64 - 20 = 44 kJ/mol.\nStep 2: The difference between the ends is 5 - 20 = -15 kJ/mol.\nStep 3: Note that both peaks are low, at 64 and 56, so a reaction with this profile would proceed readily without heating.",
-      "note": "Barriers of 44 and 21 kJ/mol are small by the standards of the reactions in this book, where 80 to 100 is more usual. That is worth a moment's thought, because it is the barrier and not the enthalpy change that decides whether a reaction needs warming, and nothing here does.",
+      "note": "Barriers of 44 and 21 kJ/mol are small: McMurry puts most organic activation energies between about 40 and 150 kJ/mol, so 21 is unusually low and 44 sits at the bottom of the range. That is worth a moment's thought, because it is the barrier and not the enthalpy change that decides whether a reaction needs warming, and nothing here does.",
       "options": {
         "A": "15 kJ/mol is the rise from the reactants to the intermediate at 35, which is the valley sitting between the two peaks.",
         "B": "The barrier is right but the sign is inverted. Products at 5 lie below reactants at 20, so energy is given out.",

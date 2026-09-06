@@ -28,3 +28,4 @@ scan_active_smiles.js
 .env.local
 .env.*.local
 
+.reviewer/

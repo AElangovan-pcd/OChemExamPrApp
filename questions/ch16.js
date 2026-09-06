@@ -1113,7 +1113,7 @@ var CH16_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "1,3-dimethyl-4-nitrobenzene",
+        "text": "2,4-dimethyl-1-nitrobenzene",
         "smiles": "Cc1ccc(c(C)c1)[N+](=O)[O-]",
         "is_correct": true
       },
@@ -1138,8 +1138,8 @@ var CH16_QUESTIONS = [
     ],
     "feedback": {
       "context": "Two identical activators reinforce each other where their directing effects coincide. In m-xylene the methyls at C1 and C3 both direct to C2 (ortho to both), to C4 and C6 (ortho to one, para to the other) and away from C5 (meta to both). Electronically C2 is the best position, but it sits between two methyl groups and the nitronium ion cannot reach it easily; C4 and C6 are activated almost as well and are open, so the product is 1,3-dimethyl-4-nitrobenzene.",
-      "approach": "Step 1: Map the ring: CH3 at C1 and C3. C2 is ortho to both; C4 and C6 are ortho to one methyl and para to the other; C5 is meta to both.\nStep 2: Electronics: C2, C4 and C6 are all activated; C5 is not.\nStep 3: Sterics: C2 is flanked by two methyl groups; substitution between two adjacent substituents is strongly disfavoured, and a nitro group is not small.\nStep 4: Product: nitration at C4 (or the equivalent C6): 1,3-dimethyl-4-nitrobenzene, also named 2,4-dimethyl-1-nitrobenzene. Experimentally it is the main product by a wide margin.",
-      "note": "This is the general rule McMurry states for 1,3-disubstituted rings: the position between the two groups is rarely attacked. p-Xylene, by contrast, has only one kind of free position and gives a single mononitration product; o-xylene gives a 3- and 4-nitro mixture. The shipped name numbers the methyls 1,3 to keep a dimethylbenzene parent; with nitro as the reference substituent the same compound is 2,4-dimethylnitrobenzene.",
+      "approach": "Step 1: Map the ring: CH3 at C1 and C3. C2 is ortho to both; C4 and C6 are ortho to one methyl and para to the other; C5 is meta to both.\nStep 2: Electronics: C2, C4 and C6 are all activated; C5 is not.\nStep 3: Sterics: C2 is flanked by two methyl groups; substitution between two adjacent substituents is strongly disfavoured, and a nitro group is not small.\nStep 4: Product: nitration at C4 (or the equivalent C6): 2,4-dimethyl-1-nitrobenzene (4-nitro-m-xylene). Numbered from the nitro group the locant set is {1,2,4}, lower than the {1,3,4} of the methyl-first name. Experimentally it is the main product by a wide margin.",
+      "note": "This is the general rule McMurry states for 1,3-disubstituted rings: the position between the two groups is rarely attacked. p-Xylene, by contrast, has only one kind of free position and gives a single mononitration product; o-xylene gives a 3- and 4-nitro mixture.",
       "options": {
         "A": "Correct. C4 is ortho to one methyl and para to the other and is unhindered; it is where the nitro group goes.",
         "B": "C2 is doubly activated but sits between the two methyl groups, and steric hindrance keeps the nitronium ion out; only a trace of the 2-nitro isomer forms.",
@@ -1540,7 +1540,7 @@ var CH16_QUESTIONS = [
     "question_id": "ch16_q33_nas_benzyne_trapping",
     "topic": "Nucleophilic Aromatic Substitution (Elimination-Addition)",
     "difficulty_level": "Medium",
-    "question_text": "Benzyne is a highly unstable intermediate that cannot be isolated. What is the product when 1,2-bromofluorobenzene is treated with magnesium in the presence of furan?",
+    "question_text": "Benzyne is a highly unstable intermediate that cannot be isolated. What is the product when 1-bromo-2-fluorobenzene is treated with magnesium in the presence of furan?",
     "question_smiles": "Fc1ccccc1Br",
     "options": [
       {
@@ -2181,7 +2181,7 @@ var CH16_QUESTIONS = [
       {
         "option_id": "C",
         "text": "1-indanone",
-        "smiles": "O=C1Cc2ccccc21",
+        "smiles": "O=C1CCc2ccccc21",
         "is_correct": false
       },
       {
@@ -3480,8 +3480,8 @@ var CH16_QUESTIONS = [
     ],
     "feedback": {
       "context": "Rate in electrophilic aromatic substitution follows the electron density the substituent leaves in the ring, and more precisely how well it stabilises the arenium ion. A lone pair that can donate by resonance is the strongest activation, an alkyl group's induction and hyperconjugation a weak one, a halogen's induction a weak deactivation, and a nitro group's combined induction and resonance withdrawal a strong deactivation. Anisole, toluene, chlorobenzene, nitrobenzene is the order from fastest to slowest, spanning many powers of ten.",
-      "approach": "Step 1: Anisole: OCH3 donates its oxygen lone pair into the ring; the ortho/para arenium ions gain an octet-complete oxonium contributor. Strongly activated: about 10,000 times benzene's rate in nitration, and bromination needs no Lewis acid at all.\nStep 2: Toluene: CH3 donates weakly by induction and hyperconjugation; about 25 times benzene's rate.\nStep 3: Chlorobenzene: inductive withdrawal outweighs weak lone-pair donation; about 30 times slower than benzene, though still ortho/para.\nStep 4: Nitrobenzene: strong withdrawal by both mechanisms; roughly a million times slower than benzene, needs heat and a Lewis acid, and substitutes meta. Fastest: anisole.",
-      "note": "The relative nitration rates McMurry tabulates make the scale concrete: anisole 10,000, toluene 25, benzene 1, chlorobenzene 0.033, nitrobenzene 0.000006 or so, a range of over nine orders of magnitude for one reaction. That span is why an activated ring can be substituted selectively in the presence of a deactivated one, and why a strongly deactivated ring cannot be alkylated at all.",
+      "approach": "Step 1: Anisole: OCH3 donates its oxygen lone pair into the ring; the ortho/para arenium ions gain an octet-complete oxonium contributor. Strongly activated: thousands of times benzene's rate in nitration (McMurry gives 1000 for the OH group of phenol), and bromination needs no Lewis acid at all.\nStep 2: Toluene: CH3 donates weakly by induction and hyperconjugation; about 25 times benzene's rate.\nStep 3: Chlorobenzene: inductive withdrawal outweighs weak lone-pair donation; about 30 times slower than benzene, though still ortho/para.\nStep 4: Nitrobenzene: strong withdrawal by both mechanisms; more than ten million times slower than benzene (McMurry's figure), needs heat and a Lewis acid, and substitutes meta. Fastest: anisole.",
+      "note": "The relative nitration rates McMurry gives make the scale concrete: phenol 1000, benzene 1, chlorobenzene 0.033 and nitrobenzene about 0.00000006, a range of over ten orders of magnitude for one reaction; toluene's 25 comes from other compilations. That span is why an activated ring can be substituted selectively in the presence of a deactivated one, and why a strongly deactivated ring cannot be alkylated at all.",
       "options": {
         "A": "Correct. The methoxy group's lone-pair donation makes anisole by far the most reactive of the four; it brominates without a catalyst.",
         "B": "Toluene is activated, but only weakly, by induction and hyperconjugation; it is slower than anisole by a factor of several hundred.",

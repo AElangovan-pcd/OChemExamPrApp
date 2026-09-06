@@ -797,7 +797,7 @@ var CH25_QUESTIONS = [
         "A": "Correct. Galactose is glucose with the C4 OH moved to the left; in the ring that OH points up and sits axial in the chair.",
         "B": "A change at C2 would give D-mannose, not galactose. Both glucose and galactose have the C2 OH on the right.",
         "C": "A change at C3 would give D-allose. Glucose and galactose both have the C3 OH on the left.",
-        "D": "C5 is the D/L reference centre and is on the right in both; changing it would give an L sugar, L-gulose in fact, since inverting C5 of D-glucose alone gives the mirror image of the pattern that names gulose."
+        "D": "C5 is the D/L reference centre and is on the right in both; changing it would give an L sugar, L-idose in fact, since inverting C5 of D-glucose alone gives the mirror image of the idose pattern."
       }
     },
     "key_status": "verified",
@@ -882,7 +882,7 @@ var CH25_QUESTIONS = [
     "feedback": {
       "context": "An L sugar is the enantiomer of the D sugar of the same name, so its Fischer projection is the D projection with every OH moved to the other side, not just the bottom one. D-Galactose is right, left, left, right (C2 to C5); L-galactose is therefore left, right, right, left. Two of the wrong answers are L sugars with a different pattern (L-glucose and L-talose), and one is D-galactose itself, the enantiomer of the answer. Checking only the bottom centre finds the L sugars; checking the other three centres finds the galactose.",
       "approach": "Step 1: Write D-galactose from Fieser's row: C2 right, C3 left, C4 left, C5 right.\nStep 2: Invert every centre for the L enantiomer: left, right, right, left.\nStep 3: The projection reading left, right, right, left matches: that is L-galactose.\nStep 4: Right, left, left, right is the unchanged D-galactose; left, right, left, left is the inversion of glucose's right, left, right, right, so L-glucose; right, right, right, left is the inversion of talose's left, left, left, right, so L-talose.",
-      "note": "McMurry 25.4 (Configurations of the Aldoses), Problem 25-8(b), asks for exactly this projection, and its worked example on drawing L-fructose gives the method: look at the D structure and reverse the configuration at each chirality centre. McMurry 25.3 states that an L sugar is the mirror image of the corresponding D sugar with the opposite configuration at all chirality centres. Inverting only C5 of D-galactose does not give L-galactose; it gives a sugar with the D-talose pattern read upside down, which is why the bottom centre alone is not enough.",
+      "note": "McMurry 25.4 (Configurations of the Aldoses), Problem 25-8(b), asks for exactly this projection, and its worked example on drawing L-fructose gives the method: look at the D structure and reverse the configuration at each chirality centre. McMurry 25.3 states that an L sugar is the mirror image of the corresponding D sugar with the opposite configuration at all chirality centres. Inverting only C5 of D-galactose does not give L-galactose; it gives L-altrose (right, left, left, left), a different diastereomer, which is why the bottom centre alone is not enough.",
       "options": {
         "A": "Correct. Left, right, right, left is D-galactose (right, left, left, right) with every centre inverted, which is the definition of the L enantiomer.",
         "B": "Right, left, left, right is D-galactose itself. Its bottom OH is on the right, so it is a D sugar; L-galactose is its mirror image with every OH on the other side.",

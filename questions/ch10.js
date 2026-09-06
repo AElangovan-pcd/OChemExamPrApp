@@ -592,7 +592,7 @@ var CH10_QUESTIONS = [
     "feedback": {
       "context": "The product distribution from a radical halogenation combines two factors: how many hydrogens of each kind are present, and how reactive each kind is. Leaving out either factor gives a wrong number.",
       "approach": "Step 1: Count the hydrogens by type in 2-methylbutane. Three methyls give nine primary, the CH2 gives two secondary, and the branch CH gives one tertiary - twelve in all.\nStep 2: Weight each count by its relative reactivity: primary 9 x 1.0 = 9.0, secondary 2 x 3.9 = 7.8, tertiary 1 x 5.2 = 5.2.\nStep 3: Add the weighted values to 22.0, then take the tertiary share. 5.2 divided by 22.0 is 0.236, so 2-chloro-2-methylbutane is about 24 percent of the mixture.",
-      "note": "The single tertiary hydrogen accounts for nearly a quarter of the product despite being one hydrogen in twelve - and the same calculation for bromine, with its 1600-to-1 preference, puts that product above 95 percent.",
+      "note": "The single tertiary hydrogen accounts for nearly a quarter of the product despite being one hydrogen in twelve - and the same calculation for bromine, with its 1600-to-1 preference, puts that product at about 90 percent.",
       "options": {
         "A": "Correct. Weighting one tertiary hydrogen at 5.2 against nine primary at 1.0 and two secondary at 3.9 gives 5.2 out of 22.0, which is 24 percent.",
         "B": "This is the combined share of the two primary chlorides, 9.0 out of 22.0. It lumps both primary products together and answers a question that was not asked.",
@@ -639,7 +639,7 @@ var CH10_QUESTIONS = [
     ],
     "feedback": {
       "context": "Bromine radical is far more selective than chlorine radical because its hydrogen abstraction is endothermic and its transition state resembles the alkyl radical. A single tertiary hydrogen therefore outcompetes every other position in the molecule.",
-      "approach": "Step 1: Identify every distinct kind of hydrogen in 2-methylbutane: nine primary, two secondary, one tertiary.\nStep 2: Apply the bromination weighting of 1 : 82 : 1600. The tertiary position scores 1600, the secondary 164, the primary 9.\nStep 3: Bromine ends up on the branch carbon in well over 90 percent of the product, giving 2-bromo-2-methylbutane as the single major product.",
+      "approach": "Step 1: Identify every distinct kind of hydrogen in 2-methylbutane: nine primary, two secondary, one tertiary.\nStep 2: Apply the bromination weighting of 1 : 82 : 1600. The tertiary position scores 1600, the secondary 164, the primary 9.\nStep 3: Bromine ends up on the branch carbon in about 90 percent of the product, giving 2-bromo-2-methylbutane as the single major product.",
       "note": "The same substrate under chlorination gives four products with no majority; the reagent, not the substrate, decides whether radical halogenation is a clean synthesis or a mixture.",
       "options": {
         "A": "Correct. The tertiary C-H is the weakest bond in the molecule and bromine's 1600-fold preference for it makes the tertiary bromide the overwhelming product.",
@@ -1272,19 +1272,19 @@ var CH10_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "3-bromomethylenecyclohexane",
+        "text": "1-bromo-3-methylenecyclohexane",
         "smiles": "C=C1CCCC(Br)C1",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "2-bromomethylenecyclohexane",
+        "text": "1-bromo-2-methylenecyclohexane",
         "smiles": "C=C1CCCCC1Br",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "4-bromomethylenecyclohexane",
+        "text": "1-bromo-4-methylenecyclohexane",
         "smiles": "C=C1CCC(Br)CC1",
         "is_correct": false
       }

@@ -1132,7 +1132,7 @@ var CH23_QUESTIONS = [
       "options": {
         "A": "Correct. The product is a stronger acid than anything else present; its deprotonation consumes the base and pulls the reversible condensation to completion.",
         "B": "Ester enolate formation is fast enough; the equilibrium concentration is small, but that is true in the aldol too. The stoichiometric base is consumed by the product, not needed for rate.",
-        "C": "Ethanol is the conjugate acid of ethoxide and is the solvent; nothing needs to be neutralised. It is the beta-keto ester, not ethanol, that takes the proton from... rather, gives its proton to the ethoxide.",
+        "C": "Ethanol is the conjugate acid of ethoxide and is the solvent; nothing needs to be neutralised. It is the beta-keto ester, not ethanol, that gives up a proton to the ethoxide.",
         "D": "Saponification would require hydroxide and water and would destroy the ester; in dry ethanol with ethoxide no hydrolysis occurs. The ester group survives, as it must for the beta-keto ester to be isolated after acidification."
       }
     },
@@ -1711,7 +1711,7 @@ var CH23_QUESTIONS = [
     ],
     "feedback": {
       "context": "A Michael product is a 1,5-dicarbonyl compound, and the bond to break in planning it is the one between the donor's alpha carbon and the acceptor's beta carbon. On one side of that bond sits the stabilised donor, recognisable as a 1,3-dicarbonyl unit with a hydrogen restored to its central carbon; on the other side sits a chain of two carbons ending in a carbonyl, which becomes the alpha,beta-unsaturated acceptor when the C-C bond is redrawn as a C=C. Both halves must be identifiable in the target for the disconnection to be right.",
-      "approach": "Step 1: Locate the 1,3-dicarbonyl unit: (EtO2C)2CH-, the malonate carbon. The donor is diethyl malonate.\nStep 2: The rest of the molecule, -CH2CH2C(=O)CH3, is a three-carbon chain... a CH2-CH2 attached to an acetyl: put the C=C between the two CH2 carbons and the acceptor is CH2=CH-C(=O)CH3, but-3-en-2-one.\nStep 3: Check the alternatives: an allylic alcohol is not an acceptor (no conjugated carbonyl); butan-2-one has no C=C; ethyl acetoacetate with ethyl acrylate would give a different 1,5-dicarbonyl, ethyl 2-acetyl-pentanedioate.\nStep 4: Diethyl malonate + but-3-en-2-one with catalytic ethoxide gives the target.",
+      "approach": "Step 1: Locate the 1,3-dicarbonyl unit: (EtO2C)2CH-, the malonate carbon. The donor is diethyl malonate.\nStep 2: The rest of the molecule, -CH2CH2C(=O)CH3, is a four-carbon unit, a CH2-CH2 attached to an acetyl: put the C=C between the two CH2 carbons and the acceptor is CH2=CH-C(=O)CH3, but-3-en-2-one.\nStep 3: Check the alternatives: an allylic alcohol is not an acceptor (no conjugated carbonyl); butan-2-one has no C=C; ethyl acetoacetate with ethyl acrylate would give a different 1,5-dicarbonyl, ethyl 2-acetyl-pentanedioate.\nStep 4: Diethyl malonate + but-3-en-2-one with catalytic ethoxide gives the target.",
       "note": "McMurry 23.10 (Conjugate Carbonyl Additions: The Michael Reaction) works a retrosynthesis of this kind in its example, stating that a Michael reaction yields a 1,5-dicarbonyl product and that the C-C bond formed is between the alpha carbon of the acidic donor and the beta carbon of the unsaturated acceptor; Table 23.1 lists diethyl malonate among the donors and 3-buten-2-one among the acceptors. Problems 23-17 and 23-18 ask for the same working backwards.",
       "options": {
         "A": "Correct. The malonate carbon is the donor's alpha carbon and the acetyl-bearing two-carbon chain is the acceptor's C=C: methyl vinyl ketone.",
@@ -1929,7 +1929,7 @@ var CH23_QUESTIONS = [
       },
       {
         "option_id": "D",
-        "text": "4a-Methyl-4,4a,5,6,7,8-hexahydronaphthalene-2(3H),5-dione... the six-ring analogue",
+        "text": "8a-Methyl-3,4,8,8a-tetrahydronaphthalene-1,6(2H,7H)-dione (the six-ring analogue)",
         "smiles": "CC12CCC(=O)C=C1CCCC2=O",
         "is_correct": false
       }

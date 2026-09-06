@@ -1098,7 +1098,7 @@ var CH07_QUESTIONS = [
     "question_id": "ch07_q24_norbornene_naming",
     "topic": "Naming Alkenes",
     "difficulty_level": "Medium",
-    "question_text": "What is the correct IUPAC name of the bicyclic alkene represented by the SMILES \\(C1C2CC1C=C2\\)?",
+    "question_text": "What is the correct IUPAC name of the bicyclic alkene shown?",
     "question_smiles": "C1=CC2CCC1C2",
     "options": [
       {

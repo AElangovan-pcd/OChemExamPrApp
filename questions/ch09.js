@@ -11,6 +11,7 @@ var CH09_QUESTIONS = [
         {
           "id": "A",
           "smiles": "CC=C",
+          "alt": "Propene: a three-carbon chain with a double bond between the first two carbons.",
           "label": "Compound A",
           "x": 1,
           "y": 1
@@ -90,6 +91,7 @@ var CH09_QUESTIONS = [
         {
           "id": "A",
           "smiles": "C#C",
+          "alt": "Ethyne (acetylene): two carbons joined by a triple bond.",
           "label": "Compound A",
           "x": 1,
           "y": 1
@@ -816,9 +818,9 @@ var CH09_QUESTIONS = [
       "note": "The alcohol is tertiary because acetone already carries two alkyl groups on its carbonyl carbon. Run the same reaction on an aldehyde and the product is secondary; run it on formaldehyde and it is primary. The acetylide does not change - the carbonyl decides the class.",
       "options": {
         "A": "Two carbons from the acetylide, three from acetone, and the hydroxyl on the former carbonyl carbon, which was already carrying two methyls.",
-        "B": "Six carbons rather than five. This is what a propynylide would deliver; sodium acetylide brings only acetylene's two carbons to the new bond.",
+        "B": "Six carbons rather than five. This is what a propynide would deliver; sodium acetylide brings only acetylene's two carbons to the new bond.",
         "C": "The right skeleton with a double bond where the triple bond belongs. It is the vinyl anion's product, and nothing in these conditions reduces an alkyne.",
-        "D": "A secondary alcohol on a five-carbon chain, which comes from propynylide adding to acetaldehyde rather than acetylide adding to acetone."
+        "D": "A secondary alcohol on a five-carbon chain, which comes from propynide adding to acetaldehyde rather than acetylide adding to acetone."
       }
     },
     "key_status": "verified",
@@ -830,7 +832,7 @@ var CH09_QUESTIONS = [
     "question_id": "ch09_q15_reaction_epoxide",
     "topic": "Alkyne Acidity & Acetylide Anions",
     "difficulty_level": "Hard",
-    "question_text": "Predict the major organic product when sodium prop-1-yn-1-ylide is reacted with oxirane (ethylene oxide), followed by mild aqueous acid workup.",
+    "question_text": "Predict the major organic product when sodium prop-1-yn-1-ide is reacted with oxirane (ethylene oxide), followed by mild aqueous acid workup.",
     "question_smiles": "C1CO1",
     "options": [
       {
@@ -1172,7 +1174,7 @@ var CH09_QUESTIONS = [
       {
         "option_id": "A",
         "text": "A mixture of (E)- and (Z)-1-bromohex-1-ene",
-        "smiles": "CCCCC=CBr",
+        "smiles": "CCCC/C=C/Br.CCCC/C=C\\Br",
         "is_correct": true
       },
       {
@@ -1651,7 +1653,7 @@ var CH09_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Enolate anion",
-        "smiles": "CC([O-])=C",
+        "smiles": "",
         "is_correct": true
       },
       {

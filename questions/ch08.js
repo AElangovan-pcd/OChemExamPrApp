@@ -504,13 +504,13 @@ var CH08_QUESTIONS = [
       {
         "option_id": "B",
         "text": "A mixture of trans-1,2-dibromocyclohexane and trans-1,2-dichlorocyclohexane",
-        "smiles": "Cl[C@@H]1CCCC[C@H]1Cl",
+        "smiles": "Br[C@@H]1CCCC[C@H]1Br.Cl[C@@H]1CCCC[C@H]1Cl",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "A mixture of trans-1,2-dibromocyclohexane and trans-1-bromo-2-chlorocyclohexane",
-        "smiles": "Br[C@@H]1CCCC[C@H]1Cl",
+        "smiles": "Br[C@@H]1CCCC[C@H]1Br.Br[C@@H]1CCCC[C@H]1Cl",
         "is_correct": true
       },
       {
@@ -924,7 +924,7 @@ var CH08_QUESTIONS = [
     "question_id": "ch08_q14_hydration_hydroboration",
     "topic": "Hydration",
     "difficulty_level": "Medium",
-    "question_text": "Hydroboration-oxidation of 1-methylcyclohexene using $BH_3cdot\text{THF}$ followed by $H_2O_2/\text{NaOH}$ yields which of the following as the major product?",
+    "question_text": "Hydroboration-oxidation of 1-methylcyclohexene using BH3·THF followed by H2O2/NaOH yields which of the following as the major product?",
     "question_smiles": "CC1=CCCCC1",
     "options": [
       {
@@ -1164,7 +1164,7 @@ var CH08_QUESTIONS = [
     "question_id": "ch08_q19_hydration_hydroboration_stoich",
     "topic": "Hydration",
     "difficulty_level": "Hard",
-    "question_text": "Hydroboration of 3 equivalents of 2-methylbut-2-ene with 1 equivalent of borane THF ($BH_3cdot\text{THF}$) proceeds through successive additions to form a trialkylborane. What is the structure of this trialkylborane?",
+    "question_text": "Hydroboration of 3 equivalents of 2-methylbut-2-ene with 1 equivalent of borane THF (BH3·THF) proceeds through successive additions to form a trialkylborane. What is the structure of this trialkylborane?",
     "question_smiles": "CC(C)=CC",
     "options": [
       {
@@ -1271,7 +1271,7 @@ var CH08_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "The bridgehead dimethyl groups sterically block the top face (beta face), directing hydrogen delivery to the less hindered bottom face (alpha face).",
+        "text": "The gem-dimethyl groups on the one-carbon bridge sterically block the top face (beta face), directing hydrogen delivery to the less hindered bottom face (alpha face).",
         "smiles": "",
         "is_correct": true
       },
@@ -2318,13 +2318,13 @@ var CH08_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "cis-3,3-dichloro-1,2-dimethylcyclopropane",
+        "text": "cis-1,1-dichloro-2,3-dimethylcyclopropane",
         "smiles": "C[C@@H]1[C@H](C)C1(Cl)Cl",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "trans-3,3-dichloro-1,2-dimethylcyclopropane",
+        "text": "trans-1,1-dichloro-2,3-dimethylcyclopropane",
         "smiles": "C[C@@H]1[C@@H](C)C1(Cl)Cl",
         "is_correct": false
       },
@@ -2366,13 +2366,13 @@ var CH08_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "cis-3,3-dichloro-1,2-dimethylcyclopropane",
+        "text": "cis-1,1-dichloro-2,3-dimethylcyclopropane",
         "smiles": "C[C@@H]1[C@H](C)C1(Cl)Cl",
         "is_correct": false
       },
       {
         "option_id": "B",
-        "text": "trans-3,3-dichloro-1,2-dimethylcyclopropane",
+        "text": "trans-1,1-dichloro-2,3-dimethylcyclopropane",
         "smiles": "C[C@@H]1[C@@H](C)C1(Cl)Cl",
         "is_correct": true
       },
@@ -2463,7 +2463,7 @@ var CH08_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Carbene cycloaddition, yielding ethyl bicyclo[4.1.0]heptane-7-carboxylate.",
-        "smiles": "CCOC(=O)C1C2CCCCC21",
+        "smiles": "",
         "is_correct": true
       },
       {

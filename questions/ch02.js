@@ -610,7 +610,7 @@ var CH02_QUESTIONS = [
         "A": "Correct. The terminal carbon is sp with 50 percent s character, which holds the resulting lone pair closest to the nucleus and stabilises the anion best.",
         "B": "Ethylene's vinyl carbon is sp2 with 33 percent s character. That stabilises the anion better than an sp3 carbon would, but far less than acetylene's sp carbon, and its pKa of 44 reflects it.",
         "C": "Ethane's carbons are sp3, the lowest s character of the set, giving the least stabilised anion and a pKa of 50 - the weakest acid here.",
-        "D": "Propene's pKa of 43 refers to its vinyl positions, which are sp2 like ethylene's. Its allylic hydrogens are more acidic than an alkane's through resonance, but neither position approaches acetylene."
+        "D": "Propene's tabulated pKa of 43 is for its allylic C-H, whose conjugate base is the resonance-stabilised allyl anion; its vinyl C-H is like ethylene's at about 44. Neither position approaches acetylene."
       }
     },
     "key_status": "verified",
@@ -911,7 +911,7 @@ var CH02_QUESTIONS = [
     "options": [
       {
         "option_id": "A",
-        "text": "A structure with charge separation placing a positive charge on carbon and a double negative charge on one oxygen.",
+        "text": "A charge-separated structure with a positive charge on carbon and a negative charge on each oxygen.",
         "smiles": "",
         "is_correct": true
       },
@@ -937,7 +937,7 @@ var CH02_QUESTIONS = [
     "feedback": {
       "context": "A minor contributor must still be a legal Lewis structure - same atomic positions, same electron count, no second-row atom above an octet - but it is higher in energy, typically because it separates charge or leaves an incomplete octet. An illegal structure is not a minor contributor; it is not a contributor at all.",
       "approach": "Step 1: Establish the major contributors. Acetate has two equivalent ones, each with the double bond to one oxygen and the negative charge on the other.\nStep 2: Rule out the illegal candidates. Moving the charge to the methyl carbon would mean shifting a sigma bond, breaking a C-C sigma bond is not something resonance may do, and a pentavalent carbon cannot exist at all.\nStep 3: What remains is a charge-separated structure, reached by pushing the carbonyl pi electrons entirely onto their oxygen. That leaves the carbon positive with an incomplete octet and additional negative charge on oxygen - legal, but much higher in energy, so it is a genuine minor contributor.",
-      "note": "The wording of this option is loose: pushing the pi bond onto its oxygen gives a positive carbon with a negative charge on each oxygen, not a single doubly charged oxygen. The point being tested is sound - charge separation makes a contributor minor - but read it as describing a charge-separated structure rather than as a precise formula.",
+      "note": "Pushing the C=O pi pair onto its oxygen gives a carbon with only six electrons and a negative charge on each oxygen: three formal charges where the two major contributors carry one. Charge separation and an incomplete octet each cost stability, so this form contributes little, though it is a legitimate contributor: every atom keeps its place and only electrons have moved.",
       "options": {
         "A": "Correct as the intended answer, and the only legal structure offered. Pushing the carbonyl pi electrons onto oxygen separates charge and leaves the carbon short of an octet, which is exactly what makes a contributor minor.",
         "B": "Moving the charge to the methyl carbon would require relocating a sigma bond or a hydrogen. Resonance moves only pi electrons and lone pairs, so this is not a contributor at all.",
@@ -1496,7 +1496,7 @@ var CH02_QUESTIONS = [
       {
         "option_id": "C",
         "text": "Aluminum trichloride (AlCl3, providing Al3+)",
-        "smiles": "Cl[Al](Cl)Cl",
+        "smiles": "",
         "is_correct": true
       },
       {
@@ -2337,7 +2337,7 @@ var CH02_QUESTIONS = [
       {
         "option_id": "A",
         "text": "A Lewis acid-base complex (adduct) with a boron-oxygen coordinate bond.",
-        "smiles": "CO[C+][B-](F)(F)F",
+        "smiles": "",
         "is_correct": true
       },
       {
@@ -2498,6 +2498,14 @@ var CH02_QUESTIONS = [
       ],
       "reagents": "proton transfer",
       "conditions": "equilibrium",
+      "reactant_alts": [
+        "Reactant A: a two-carbon molecule whose second carbon carries a double-bonded oxygen and an O-H group.",
+        "Reactant B: an ethyl group attached to an NH2 group."
+      ],
+      "product_alts": [
+        "A two-carbon fragment whose second carbon carries a double-bonded oxygen and a negatively charged oxygen.",
+        "An ethyl group attached to a positively charged NH3 group."
+      ],
       "products": [
         "CC(=O)[O-]",
         "CC[NH3+]"

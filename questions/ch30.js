@@ -37,7 +37,7 @@ var CH30_QUESTIONS = [
       {
         "option_id": "C",
         "text": "cis-Cyclohex-4-ene-1,2-dicarboxylic acid",
-        "smiles": "O=C(O)[C@@H]1CC=CC[C@H]1C(=O)O",
+        "smiles": "O=C(O)[C@@H]1CC=CC[C@@H]1C(=O)O",
         "is_correct": false
       },
       {

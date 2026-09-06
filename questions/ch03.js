@@ -1057,7 +1057,7 @@ var CH03_QUESTIONS = [
     "topic": "Properties of Alkanes",
     "difficulty_level": "Medium",
     "question_text": "Which of the following alkanes has the highest boiling point?",
-    "question_smiles": "CCCCCC.CC(C)CC.C(C)(C)C",
+    "question_smiles": "",
     "options": [
       {
         "option_id": "A",
@@ -1098,7 +1098,7 @@ var CH03_QUESTIONS = [
     "key_status": "verified",
     "feedback_status": "tailored",
     "provenance": "original",
-    "structure_alt": "Three separate structures shown together: an unbranched six-carbon chain, a four-carbon chain with a methyl branch, and a central carbon bearing three methyl groups."
+    "structure_alt": ""
   },
   {
     "question_id": "ch03_q24_boiling_point_branching",

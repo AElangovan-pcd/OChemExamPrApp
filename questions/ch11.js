@@ -198,37 +198,37 @@ var CH11_QUESTIONS = [
     "question_id": "ch11_q5_deuterium_labeling_sn2",
     "topic": "SN2 Mechanism: Stereochemistry",
     "difficulty_level": "Hard",
-    "question_text": "Predict the major organic product formed when (S)-1-deuteriopropan-1-ol is treated with p-toluenesulfonyl chloride in pyridine, followed by reaction with sodium cyanide in DMSO.",
+    "question_text": "Predict the major organic product formed when (S)-1-deuteriobutan-1-ol is treated with p-toluenesulfonyl chloride in pyridine, followed by reaction with sodium cyanide in DMSO.",
     "question_smiles": "CCC[C@H]([2H])O",
     "options": [
       {
         "option_id": "A",
-        "text": "(R)-2-deuteriobutanenitrile",
+        "text": "(R)-2-deuteriopentanenitrile",
         "smiles": "CCC[C@@H]([2H])C#N",
         "is_correct": true
       },
       {
         "option_id": "B",
-        "text": "(S)-2-deuteriobutanenitrile",
+        "text": "(S)-2-deuteriopentanenitrile",
         "smiles": "CCC[C@H]([2H])C#N",
         "is_correct": false
       },
       {
         "option_id": "C",
-        "text": "Racemic 2-deuteriobutanenitrile",
+        "text": "Racemic 2-deuteriopentanenitrile",
         "smiles": "CCC([2H])C#N",
         "is_correct": false
       },
       {
         "option_id": "D",
-        "text": "(R)-1-deuteriopropan-1-amine",
+        "text": "(R)-1-deuteriobutan-1-amine",
         "smiles": "CCC[C@@H]([2H])N",
         "is_correct": false
       }
     ],
     "feedback": {
       "context": "A primary carbon bearing H, D and two other groups is a stereocentre, and it lets an SN2 reaction's inversion be observed on a substrate that would otherwise be achiral. The tosylation-then-displacement sequence is the same two-step logic as the mesylate route: activate without touching C-O, then invert.",
-      "approach": "Step 1: Tosylation forms O-S and leaves the C-O bond alone, so the (S) tosylate keeps the configuration of the (S) alcohol.\nStep 2: Cyanide in DMSO attacks from behind the C-OTs bond; the centre inverts.\nStep 3: Rank the groups. In the alcohol: OH > CH2CH2CH3 > D > H. In the nitrile: CN > propyl > D > H. The top group swaps for another top group, the order is unchanged, so inversion of geometry is inversion of the label: (R)-2-deuteriobutanenitrile.",
+      "approach": "Step 1: Tosylation forms O-S and leaves the C-O bond alone, so the (S) tosylate keeps the configuration of the (S) alcohol.\nStep 2: Cyanide in DMSO attacks from behind the C-OTs bond; the centre inverts.\nStep 3: Rank the groups. In the alcohol: OH > CH2CH2CH3 > D > H. In the nitrile: CN > propyl > D > H. The top group swaps for another top group, the order is unchanged, so inversion of geometry is inversion of the label: (R)-2-deuteriopentanenitrile.",
       "note": "The product is named as a nitrile, so the numbering starts at the CN carbon and the deuterium sits on C2. The label check in Step 3 is not optional - had cyanide ranked below propyl, an inverted geometry could have kept the letter S.",
       "options": {
         "A": "Correct. Retention on tosylation, inversion on cyanide displacement, and a priority order that is preserved, so (S) becomes (R).",
@@ -240,7 +240,7 @@ var CH11_QUESTIONS = [
     "key_status": "verified",
     "feedback_status": "tailored",
     "provenance": "original",
-    "structure_alt": "A three-carbon chain ending in a carbon that carries a hydroxyl, a deuterium and a hydrogen, drawn with a wedge."
+    "structure_alt": "A four-carbon chain ending in a carbon that carries a hydroxyl, a deuterium and a hydrogen, drawn with a wedge."
   },
   {
     "question_id": "ch11_q6_secondary_halide_inversion",
@@ -1000,7 +1000,7 @@ var CH11_QUESTIONS = [
     ],
     "feedback": {
       "context": "The slow step of an SN1 reaction creates two ions from a neutral molecule, and the transition state on the way already carries most of that charge separation. Anything that stabilizes separated charge lowers the barrier, and solvent polarity is the largest such factor.",
-      "approach": "Step 1: Identify the rate-determining step as ionization of the C-Cl bond.\nStep 2: Compare the media: ethanol has a dielectric constant near 24, water near 80. A 1:1 mixture is far more polar than pure ethanol.\nStep 3: The more polar mixture solvates the developing cation and chloride better, stabilizes the transition state relative to the neutral starting material, and the ionization is faster - by roughly a thousandfold from pure ethanol to pure water.",
+      "approach": "Step 1: Identify the rate-determining step as ionization of the C-Cl bond.\nStep 2: Compare the media: ethanol has a dielectric constant near 24, water near 80. A 1:1 mixture is far more polar than pure ethanol.\nStep 3: The more polar mixture solvates the developing cation and chloride better, stabilizes the transition state relative to the neutral starting material, and the ionization is faster - by about 100,000-fold from pure ethanol to pure water.",
       "note": "This is the opposite of the SN2 solvent effect, where a protic solvent slows the reaction by stabilizing the anionic nucleophile. The two mechanisms respond to the same solvent property in opposite directions, which is one of the ways they are told apart.",
       "options": {
         "A": "Correct. The higher dielectric constant of the water-rich mixture stabilizes the charge-separated transition state of ionization.",
@@ -2394,6 +2394,7 @@ var CH11_QUESTIONS = [
         {
           "id": "A",
           "smiles": "CCCO",
+          "alt": "Propan-1-ol: a three-carbon chain with a hydroxyl group on the end carbon.",
           "label": "Compound A",
           "x": 1,
           "y": 1

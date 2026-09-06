@@ -274,7 +274,7 @@ var CH17_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "These four compounds have almost the same molar mass (86 to 88 g/mol), so dispersion forces are nearly equal and the boiling points are set by the polar forces on top of them. An alcohol hydrogen-bonds to itself; a ketone and an ether have dipoles but no O-H to donate; an alkane has neither. Hydrogen bonding is the strongest of these, so the alcohol boils highest. The measured values are pentan-3-ol 116 °C, pentan-3-one 102 °C, 1-ethoxypropane 64 °C and pentane 36 °C.",
+      "context": "Three of these compounds have almost the same molar mass (86 to 88 g/mol) and pentane is lighter still at 72, so dispersion forces are similar and the boiling points are set by the polar forces on top of them. An alcohol hydrogen-bonds to itself; a ketone and an ether have dipoles but no O-H to donate; an alkane has neither. Hydrogen bonding is the strongest of these, so the alcohol boils highest. The measured values are pentan-3-ol 116 °C, pentan-3-one 102 °C, 1-ethoxypropane 64 °C and pentane 36 °C.",
       "approach": "Step 1: List the intermolecular forces available to each: pentane, dispersion only; 1-ethoxypropane, dispersion plus a small C-O-C dipole; pentan-3-one, dispersion plus the large C=O dipole; pentan-3-ol, all of these plus O-H hydrogen bonds.\nStep 2: Rank the forces: hydrogen bonding > dipole-dipole > dispersion at equal size.\nStep 3: Within the dipolar pair, the ketone's C=O dipole is larger than the ether's bent C-O-C dipole, so the ketone boils higher.\nStep 4: Highest boiling point: pentan-3-ol.",
       "note": "The general pattern, alcohol > ketone or aldehyde > ether > alkane at constant carbon count, holds across the whole chapter and is what makes alcohols such poor solvents to remove on a rotary evaporator compared with ethers. The comparison only works at equal size; a long-chain ether outboils a small alcohol on dispersion alone.",
       "options": {
@@ -677,12 +677,12 @@ var CH17_QUESTIONS = [
       }
     ],
     "feedback": {
-      "context": "Both compounds lose a proton from an oxygen, so the difference in acidity must lie in the stability of the two anions. Cyclohexoxide keeps its negative charge on one oxygen with no way to spread it. Phenoxide's oxygen lone pair is conjugated with the ring, and resonance places the charge on the ortho and para carbons as well as on oxygen; four contributing structures share it. The result is pKa 9.89 for phenol against about 17 for cyclohexanol, a factor of roughly ten million.",
-      "approach": "Step 1: Write both deprotonations and compare the anions.\nStep 2: Cyclohexoxide: sp3 carbon next to the oxygen, no pi system; the charge is localised.\nStep 3: Phenoxide: draw the resonance forms. The oxygen lone pair pushes into the ring and the charge appears at C2, C4 and C6 in turn; three carbons and the oxygen share it.\nStep 4: A delocalised anion is the more stable conjugate base, so phenol is the stronger acid by about seven pKa units.",
+      "context": "Both compounds lose a proton from an oxygen, so the difference in acidity must lie in the stability of the two anions. Cyclohexoxide keeps its negative charge on one oxygen with no way to spread it. Phenoxide's oxygen lone pair is conjugated with the ring, and resonance places the charge on the ortho and para carbons as well as on oxygen; four contributing structures share it. The result is pKa 9.89 for phenol against about 16 to 17 for cyclohexanol, six to seven pKa units, the million-fold or so difference McMurry quotes.",
+      "approach": "Step 1: Write both deprotonations and compare the anions.\nStep 2: Cyclohexoxide: sp3 carbon next to the oxygen, no pi system; the charge is localised.\nStep 3: Phenoxide: draw the resonance forms. The oxygen lone pair pushes into the ring and the charge appears at C2, C4 and C6 in turn; three carbons and the oxygen share it.\nStep 4: A delocalised anion is the more stable conjugate base, so phenol is the stronger acid by six to seven pKa units.",
       "note": "The same resonance forms explain the chemistry of phenoxide as a nucleophile: the charge at the ortho and para carbons is what lets phenoxide attack carbon dioxide at carbon in the Kolbe-Schmitt reaction, and why phenoxide alkylates on oxygen with soft electrophiles but on carbon under other conditions. The ring is not just a spectator that stabilises the charge; it is where much of the charge lives.",
       "options": {
         "A": "Correct. The phenoxide charge is shared between oxygen and the ortho and para ring carbons through resonance, and that delocalisation makes phenoxide the far more stable anion.",
-        "B": "Molecular weight has no bearing on acidity, and the two compounds differ by only six mass units anyway; the ten-million-fold difference in Ka comes from resonance.",
+        "B": "Molecular weight has no bearing on acidity, and the two compounds differ by only six mass units anyway; the million-fold difference in Ka comes from resonance.",
         "C": "Cyclohexane has no pi system and no aromaticity to lose or gain; cyclohexoxide is merely a localised alkoxide, weaker than phenoxide only because it has no delocalisation.",
         "D": "Phenol is not an alcohol of any class: its OH sits on an sp2 ring carbon, and the primary/secondary/tertiary classification applies to sp3 carbinol carbons. Even among true alcohols, that classification barely affects acidity."
       }
@@ -750,7 +750,7 @@ var CH17_QUESTIONS = [
       },
       {
         "option_id": "B",
-        "text": "4-Oxopentan-1-ol",
+        "text": "5-Hydroxypentan-2-one",
         "smiles": "CC(=O)CCCO",
         "is_correct": false
       },
@@ -1125,25 +1125,25 @@ var CH17_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Acetophenone and methylmagnesium bromide",
-        "smiles": "CC(=O)c1ccccc1",
+        "smiles": "CC(=O)c1ccccc1.C[Mg]Br",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Benzaldehyde and methylmagnesium bromide",
-        "smiles": "O=Cc1ccccc1",
+        "smiles": "O=Cc1ccccc1.C[Mg]Br",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "Benzophenone and methylmagnesium bromide",
-        "smiles": "O=C(c1ccccc1)c2ccccc2",
+        "smiles": "O=C(c1ccccc1)c2ccccc2.C[Mg]Br",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Benzyl alcohol and methylmagnesium bromide",
-        "smiles": "OCc1ccccc1",
+        "smiles": "OCc1ccccc1.C[Mg]Br",
         "is_correct": false
       }
     ],
@@ -1316,25 +1316,25 @@ var CH17_QUESTIONS = [
       {
         "option_id": "A",
         "text": "Pentan-3-one and methylmagnesium bromide",
-        "smiles": "CCC(=O)CC",
+        "smiles": "CCC(=O)CC.C[Mg]Br",
         "is_correct": true
       },
       {
         "option_id": "B",
         "text": "Pentan-2-one and ethylmagnesium bromide",
-        "smiles": "CCCC(=O)C",
+        "smiles": "CCCC(=O)C.CC[Mg]Br",
         "is_correct": false
       },
       {
         "option_id": "C",
         "text": "3-Methylpentan-2-one and methylmagnesium bromide",
-        "smiles": "CCC(C)C(=O)C",
+        "smiles": "CCC(C)C(=O)C.C[Mg]Br",
         "is_correct": false
       },
       {
         "option_id": "D",
         "text": "Propan-2-one and ethylmagnesium bromide",
-        "smiles": "CC(=O)C",
+        "smiles": "CC(=O)C.CC[Mg]Br",
         "is_correct": false
       }
     ],

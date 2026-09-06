@@ -802,8 +802,8 @@ function getFeedbackContent(feedback) {
         // same lightbulb block the CHEM 131 app shows: where the rule stops holding, McMurry's
         // own framing, the OpenStax section that teaches the point, or a plain statement of
         // where the text itself is wrong or thin. It reads last on purpose.
-        ? `<div class="feedback-worth-knowing" style="border-left: 3px solid #fbbf24; background: rgba(251, 191, 36, 0.06); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin-bottom: 1.1rem;">
-             <div style="font-weight: 700; color: #fbbf24; margin-bottom: 0.35rem;"><i class="fas fa-lightbulb" aria-hidden="true"></i> Worth knowing</div>
+        ? `<div class="feedback-worth-knowing" style="border-left: 3px solid var(--flag-color); background: rgba(251, 191, 36, 0.06); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin-bottom: 1.1rem;">
+             <div style="font-weight: 700; color: var(--flag-color); margin-bottom: 0.35rem;"><i class="fas fa-lightbulb" aria-hidden="true"></i> Worth knowing</div>
              <p style="line-height: 1.7; color: var(--text-body); margin: 0;">${formatChemicalText(feedback.note)}</p>
            </div>`
         : section('Takeaway', feedback.result
@@ -1290,7 +1290,7 @@ function renderMockExamQuestion() {
   let html = `
     <div class="panel-card question-card" style="animation: fadeIn 0.25s ease-out;">
       <div class="question-meta">
-        <span class="tag tag-topic" style="background: rgba(99, 102, 241, 0.1); color: var(--accent-color); font-weight: 700;">Question ${idx + 1} of 70</span>
+        <span class="tag tag-topic" style="background: rgba(99, 102, 241, 0.1); color: var(--accent-text); font-weight: 700;">Question ${idx + 1} of 70</span>
         <span class="tag tag-difficulty ${q.difficulty_level}">${q.difficulty_level}</span>
         ${isFlagged ? '<span class="tag" style="background: rgba(245, 158, 11, 0.15); color: var(--flag-color); font-weight: 700; display: flex; align-items: center; gap: 0.25rem;"><i class="fas fa-flag"></i> Flagged</span>' : ''}
       </div>
@@ -1620,8 +1620,8 @@ function renderMockExamResults() {
             <span style="font-weight: 600; color: var(--error-color);">${70 - attempt.score}</span>
           </div>
           <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem;">
-            <span style="color: var(--text-secondary);"><i class="fas fa-vial" style="margin-right: 0.5rem; color: #a855f7;"></i> Spectroscopy (SDBS):</span>
-            <span style="font-weight: 600; color: #a855f7;">${sdbsQuestionsCount} Questions Taken</span>
+            <span style="color: var(--text-secondary);"><i class="fas fa-vial" style="margin-right: 0.5rem; color: var(--accent-text);"></i> Spectroscopy (SDBS):</span>
+            <span style="font-weight: 600; color: var(--accent-text);">${sdbsQuestionsCount} Questions Taken</span>
           </div>
         </div>
       </div>

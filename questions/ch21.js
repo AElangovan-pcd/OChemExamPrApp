@@ -114,7 +114,7 @@ var CH21_QUESTIONS = [
       "options": {
         "A": "Correct. Acid-catalysed nucleophilic acyl substitution replaces the acid's OH with OCH2CH3; excess ethanol pushes the equilibrium to the ester.",
         "B": "Acetic anhydride is two acetic acid molecules minus water, and heating acetic acid alone at high temperature can give it. With ethanol present as solvent, the alcohol is the nucleophile that captures the activated acid, and the ester forms instead.",
-        "C": "Diethyl ether is what two ethanol molecules give under H2SO4 at about 140 °C with no acid present. Here the protonated carboxylic acid is a far better electrophile than a protonated alcohol, so ethanol is consumed making the ester.",
+        "C": "Diethyl ether is what two ethanol molecules give under H2SO4 at about 140 °C with no carboxylic acid present. Here the protonated carboxylic acid is a far better electrophile than a protonated alcohol, so ethanol is consumed making the ester.",
         "D": "1,1-Diethoxyethane is the acetal of acetaldehyde with two ethanols. A carboxylic acid carbon carries an OH that leaves after the first alcohol adds, regenerating a C=O; it does not accept a second alcohol the way an aldehyde does."
       }
     },

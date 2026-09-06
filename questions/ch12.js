@@ -163,12 +163,12 @@ var CH12_QUESTIONS = [
     ],
     "feedback": {
       "context": "A molecular ion at an even m/z is compatible only with formulas holding an even number of nitrogens. Checking a candidate formula therefore means two arithmetic tests: does its nominal mass equal 116, and does its nitrogen count have the parity the mass demands?",
-      "approach": "Step 1: Nominal masses. C5H12N2O = 60 + 12 + 28 + 16 = 116. C6H16N2 = 72 + 16 + 28 = 116. C5H14N3 = 60 + 14 + 42 = 116. C6H12O2 = 72 + 12 + 32 = 116. All four match the mass, so mass alone eliminates nothing.\nStep 2: Nitrogen parity. M = 116 is even, so the nitrogen count must be even: zero or two. C5H12N2O (2 N), C6H16N2 (2 N) and C6H12O2 (0 N) pass; C5H14N3 (3 N) fails.\nStep 3: Cross-check C5H14N3 with the unsaturation count: (2 x 5 + 2 + 3 - 14)/2 = 1.5. A non-integer means no closed-shell molecule has that formula at all, which is the nitrogen rule seen from the other side.",
+      "approach": "Step 1: Nominal masses. C5H12N2O = 60 + 12 + 28 + 16 = 116. C6H16N2 = 72 + 16 + 28 = 116. C5H14N3 = 60 + 14 + 42 = 116. C6H12O2 = 72 + 12 + 32 = 116. All four match the mass, so mass alone eliminates nothing.\nStep 2: Nitrogen parity. M = 116 is even, so the nitrogen count must be even: zero or two. C5H12N2O (2 N), C6H16N2 (2 N) and C6H12O2 (0 N) pass; C5H14N3 (3 N) fails.\nStep 3: Cross-check C5H14N3 with the unsaturation count: (2 x 5 + 2 + 3 - 14)/2 = 0.5. A non-integer means no closed-shell molecule has that formula at all, which is the nitrogen rule seen from the other side.",
       "note": "The unsaturation formula (2C + 2 + N - H - X)/2 and the nitrogen rule are the same bookkeeping. Whenever a proposed formula gives a half-integer, its nitrogen and hydrogen counts have the wrong relative parity and the formula can be discarded without computing anything else.",
       "options": {
         "A": "C5H12N2O has two nitrogens and mass 116. Even mass, even nitrogen count: fully consistent, so it is not the answer to a question asking for the inconsistent formula.",
         "B": "C6H16N2 has mass 116, two nitrogens, and (12 + 2 + 2 - 16)/2 = 0 rings or pi bonds: a saturated diamine such as hexane-1,6-diamine. Consistent.",
-        "C": "Correct. Three nitrogens is an odd count, which forces an odd molecular mass; a formula with three nitrogens and mass 116 corresponds to no real molecule, as its unsaturation count of 1.5 confirms.",
+        "C": "Correct. Three nitrogens is an odd count, which forces an odd molecular mass; a formula with three nitrogens and mass 116 corresponds to no real molecule, as its unsaturation count of 0.5 confirms.",
         "D": "C6H12O2 has no nitrogen and mass 116. Zero is an even count, so an even molecular ion is exactly what it should show; an ester such as butyl acetate has this formula."
       }
     },
@@ -2197,18 +2197,12 @@ var CH12_QUESTIONS = [
     "dynamic_spectroscopy": {
       "spec_type": "ms",
       "data_points": [
-        {
-          "x": 35,
-          "y": 12
-        },
+        {"x": 35, "y": 12}, {"x": 37, "y": 4},
         {
           "x": 47,
           "y": 35
         },
-        {
-          "x": 48,
-          "y": 15
-        },
+        {"x": 48, "y": 15}, {"x": 49, "y": 12},
         {
           "x": 83,
           "y": 100
