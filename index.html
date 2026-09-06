@@ -27,7 +27,7 @@
   <script>(function(){try{if(localStorage.getItem('ochem_theme')==='light'){document.documentElement.setAttribute('data-theme','light');}}catch(e){}})();</script>
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css?v=1.0.26">
+  <link rel="stylesheet" href="style.css?v=1.0.27">
 </head>
 <body>
 
@@ -93,11 +93,18 @@
       <div id="sidebar-practice-content">
         <!-- Topics Explorer Sidebar -->
         <div class="panel-card">
-          <div class="panel-title" style="margin-bottom: 0.75rem;">
+          <!-- A native <details> so the chapter list can be one compact row on a phone, where it
+               sits above the question and would otherwise be a wall of 32 chapters (instructor,
+               2026-09-06). It ships open; app.js closes it on load below 961px only, and the
+               summary carries the current selection so a collapsed control still says where you
+               are. Above 961px the summary is inert and the list is always shown. -->
+          <details id="topic-disclosure" open>
+          <summary class="panel-title" style="margin-bottom: 0.75rem;">
             <i class="fas fa-tags" style="color: var(--accent-color);"></i>
             <span>Study Topics</span>
-          </div>
-          
+            <span class="topic-current" id="topic-current">All Topics</span>
+          </summary>
+
           <!-- Topic Sort Controls -->
           <div class="topic-sort-controls" style="display: flex; gap: 0.25rem; margin-bottom: 0.75rem; background: rgba(255,255,255,0.02); padding: 0.25rem; border-radius: 8px; border: 1px solid var(--border-color);">
             <button class="btn btn-sort active" id="sort-by-chapter" style="flex: 1; justify-content: center; font-size: 0.75rem; padding: 0.35rem 0.5rem; background: transparent; border: none; font-weight: 600; color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; gap: 0.25rem;">
@@ -112,6 +119,7 @@
             <!-- Populated dynamically via JS -->
             <li class="topic-item active">All Topics</li>
           </ul>
+          </details>
         </div>
       </div>
 
@@ -255,6 +263,6 @@
   <script src="questions/ch29.js"></script>
   <script src="questions/ch30.js"></script>
   <script src="questions/ch31.js"></script>
-  <script src="app.js?v=1.0.39"></script>
+  <script src="app.js?v=1.0.40"></script>
 </body>
 </html>

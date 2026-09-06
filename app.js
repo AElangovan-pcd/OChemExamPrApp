@@ -295,6 +295,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Select Default Topic
   selectTopic('All Topics');
+
+  // The chapter list sits above the question below 961px, where 32 chapters would be a wall of
+  // scrolling before any chemistry (instructor, 2026-09-06: topics on top, but keep the selection
+  // compact on mobile). It ships open in the markup so the desktop two-column layout needs no
+  // script; here it starts collapsed on a narrow screen, one 44px row deep.
+  const topicDisclosure = document.getElementById('topic-disclosure');
+  if (topicDisclosure && window.matchMedia('(max-width: 960px)').matches) {
+    topicDisclosure.open = false;
+  }
 });
 
 // Setup Events
@@ -515,6 +524,16 @@ function selectTopic(topic) {
   }
   
   state.filteredQuestions = shuffleQuestionsOptions(baseQuestions);
+
+  // Name the selection on the disclosure summary, so the collapsed control on a phone still says
+  // which chapter is loaded, and close it again after a pick so the question is the next thing on
+  // screen. Above 961px the summary is inert and never closes.
+  const topicCurrent = document.getElementById('topic-current');
+  if (topicCurrent) topicCurrent.textContent = topic;
+  const topicDisclosure = document.getElementById('topic-disclosure');
+  if (topicDisclosure && window.matchMedia('(max-width: 960px)').matches) {
+    topicDisclosure.open = false;
+  }
 
   // Update active styling in sidebar
   const items = document.querySelectorAll('.topic-item');

@@ -264,6 +264,61 @@ header {
   list-style: none;
 }
 
+/* The Study Topics disclosure. The <summary> is the existing .panel-title, so it is display: flex,
+   which drops the native marker - hence the explicit chevron. Above 961px the whole control is
+   inert: it ships open, the chevron and the current-selection chip are hidden, and pointer-events
+   are off so a click cannot collapse the desktop sidebar. */
+#topic-disclosure > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+#topic-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+
+.topic-current {
+  margin-left: auto;
+  /* flex: 0 1 auto with min-width: 0 is what lets a long chapter name ellipsise instead of pushing
+     the chevron off the card - "Stereochemistry at Tetrahedral Centers" overflowed a 390px phone by
+     30px when this was a percentage max-width, because a nowrap flex item will not shrink below its
+     content without the explicit zero minimum. */
+  flex: 0 1 auto;
+  min-width: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#topic-disclosure > summary::after {
+  content: "\f078"; /* FontAwesome chevron-down */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+#topic-disclosure[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 961px) {
+  #topic-disclosure > summary {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .topic-current,
+  #topic-disclosure > summary::after {
+    display: none;
+  }
+}
+
 /* The topic list fills the sidebar's height instead of stopping at a fixed one (instructor,
    2026-09-06: the column "appears too compressed"). It used to be max-height: calc(100vh - 430px),
    a number left over from when the practice sidebar carried panels below this card; with the card
@@ -282,6 +337,29 @@ header {
   #sidebar-practice-content > .panel-card {
     display: flex;
     flex-direction: column;
+    min-height: 0;
+  }
+
+  /* The <details> now sits between the card and the list, so it has to carry the stretch too -
+     leave it out and the list stops being a flex child of anything that grows, and the card
+     collapses back to its content height.
+     ...and in a browser that implements ::details-content (Chrome 131+, which CSS.supports reports
+     here) the children of <details> are NOT its flex items: the engine puts them in a generated
+     content slot. Styling the details alone left the list 2,309px tall inside an 820px box - the
+     card scrolled the whole page instead of the list scrolling inside the card. The slot has to be
+     a flex column too. Older engines have no slot, the pseudo-element simply does not match, and
+     the rule above is the one that applies. */
+  #topic-disclosure {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+  }
+
+  #topic-disclosure::details-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     min-height: 0;
   }
 
@@ -737,8 +815,14 @@ header {
 
 /* Responsive Breakpoints */
 @media (max-width: 960px) {
+  /* minmax(0, 1fr), not a bare 1fr, for exactly the reason the desktop rule gives: a 1fr track has
+     an automatic minimum of min-content, so one unbreakable string sizes the whole column. The
+     summary's chapter chip is nowrap, and "Reactions of Alkyl Halides: Nucleophilic Substitutions
+     and Eliminations" stretched the single mobile column to 554px inside a 360px phone - the
+     sidebar, the workspace and every card with it. min-width: 0 on the chip alone cannot help,
+     because the min-content contribution still travels up through the plain blocks above it. */
   .app-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .sidebar {
@@ -751,18 +835,12 @@ header {
     min-width: 250px;
   }
 
-  /* THE QUESTION COMES FIRST ON A PHONE (mobile audit, 2026-09-06). The sidebar precedes the
-     workspace in the DOM, which is right for the two-column desktop layout and wrong for the
-     single column below it: the 32-chapter topic list stacked above the question, so on an
-     iPhone 14 the question card began 2,303px down a 3,677px page. A student landed on nearly
-     three screens of chapter names before any chemistry, on every load. Reordering the two grid
-     children costs nothing on desktop, where this query does not apply. */
-  .app-container > .workspace { order: 1; }
-  .app-container > .sidebar { order: 2; }
-
-  /* ...and the chapter list is a picker, not a wall. Capped here as it is above 961px, just by
-     viewport fraction rather than by filling the sidebar, since below 961px it is not a column
-     beside the workspace but a block underneath it. */
+  /* The chapter picker stays above the question, where a student expects it (instructor,
+     2026-09-06), and #topic-disclosure keeps it to one 44px row until it is opened - app.js
+     collapses it on load below this width and again after a pick. Reordering the two grid children
+     so the question came first was the other way to stop 32 chapters burying it; the instructor
+     chose position over order, and collapsing it costs less scrolling than either.
+     The cap is for the opened list, so it never runs past a screen. */
   .topic-list {
     max-height: 45vh;
     overflow-y: auto;
@@ -1643,6 +1721,14 @@ header {
   .search-toggle, .theme-toggle, .header-stat-reset { min-width: 44px; min-height: 44px; }
   .btn { min-height: 44px; }
   .topic-item { padding: 0.85rem 1rem; }
+  /* The collapsed disclosure is the whole chapter picker on a phone, so it is a tap target. */
+  #topic-disclosure > summary { min-height: 44px; align-items: center; }
+  /* ...and the chapter name in it is capped in VIEWPORT units, not per cent. A nowrap span's
+     min-content contribution is what sizes every block above it, and a percentage max-width
+     resolves against a parent that this span is itself inflating - which is why 55% still let
+     "Reactions of Alkyl Halides: Nucleophilic Substitutions and Eliminations" push the sidebar to
+     554px inside a 390px phone. vw has no such circularity. */
+  .topic-current { max-width: 45vw; }
   /* The sort buttons carry their padding and font-size inline in index.html, and an inline style
      beats any stylesheet rule; this is the same !important .btn-sort:hover and .active need. */
   .btn-sort { min-height: 44px !important; font-size: 0.85rem !important; }
