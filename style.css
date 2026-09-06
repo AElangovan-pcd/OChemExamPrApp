@@ -264,9 +264,30 @@ header {
   list-style: none;
 }
 
+/* The topic list fills the sidebar's height instead of stopping at a fixed one (instructor,
+   2026-09-06: the column "appears too compressed"). It used to be max-height: calc(100vh - 430px),
+   a number left over from when the practice sidebar carried panels below this card; with the card
+   alone, 430px of reserved chrome showed three and a half chapters above a screen of empty space.
+   The card now stretches to whatever is left under the sticky offset and the list scrolls inside it,
+   so there is no magic number to go stale the next time the sidebar changes. min-height: 0 on each
+   flex ancestor is what actually lets the list shrink and scroll -- a flex item's default
+   min-height: auto refuses to go below its content and the overflow lands on the page instead. */
 @media (min-width: 961px) {
+  #sidebar-practice-content {
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 90px);
+  }
+
+  #sidebar-practice-content > .panel-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
   .topic-list {
-    max-height: calc(100vh - 430px);
+    flex: 1;
+    min-height: 0;
     overflow-y: auto;
     padding-right: 0.25rem;
   }

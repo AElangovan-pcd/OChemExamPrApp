@@ -972,7 +972,10 @@ function setAppMode(mode) {
 
   if (practiceSidebar && mockSidebar && practiceWorkspace && mockWorkspace) {
     if (mode === 'practice') {
-      practiceSidebar.style.display = 'block';
+      // Clear the inline display rather than writing 'block': the stylesheet makes this a flex
+      // column above 961px so the topic card can stretch to the sidebar's height, and an inline
+      // 'block' would silently beat it every time the student came back from the Mock tab.
+      practiceSidebar.style.display = '';
       mockSidebar.style.display = 'none';
       practiceWorkspace.style.display = 'block';
       mockWorkspace.style.display = 'none';
