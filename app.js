@@ -1096,7 +1096,7 @@ function renderMockExamHome() {
       <i class="fas fa-stopwatch" style="font-size: 4.5rem; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem; filter: drop-shadow(0 0 15px rgba(99, 102, 241, 0.2));"></i>
       <h2 style="font-size: 2.25rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.75rem;">ACS-Style 70-Question Mock Exam</h2>
       <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6; font-size: 1.05rem;">
-        Test your readiness for the American Chemical Society (ACS) standardized organic chemistry examination. This comprehensive practice exam contains exactly <strong>70 multiple-choice questions</strong> distributed balanced across all chapters, including specialized questions on structural elucidation spectroscopy with <strong>actual spectra from AIST-SDBS & ChemicalBook</strong>.
+        Test your readiness for the American Chemical Society (ACS) standardized organic chemistry examination. This comprehensive practice exam contains exactly <strong>70 multiple-choice questions</strong> drawn from all 31 chapters and <strong>weighted to mirror the ACS exam's coverage</strong>, so substitution and elimination, spectroscopy and carbonyl chemistry carry the weight they carry on the real exam. It includes structure-elucidation questions with <strong>actual spectra from AIST-SDBS & ChemicalBook</strong>.
       </p>
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; max-width: 750px; margin: 0 auto 2.5rem; text-align: left;">
@@ -1131,6 +1131,34 @@ function renderMockExamHome() {
     ${historyHtml}
   `;
 }
+
+// How the Mock Exam's 70 questions are distributed across the 31 McMurry chapters (instructor,
+// 2026-09-06: "It is probably a good idea to adjust the weights to mirror ACS Exams").
+//
+// It used to be a flat round-robin: one question per chapter per lap, which put 14 of the 70 in
+// Ch 25-31 - carbohydrates, lipids, nucleic acids, metabolism, pericyclic reactions and polymers -
+// where the ACS full-year exam asks a handful between them, and correspondingly under-drew
+// substitution/elimination, spectroscopy and carbonyl chemistry, which are the bulk of it.
+//
+// WHERE THESE NUMBERS COME FROM, because it matters for how much they should be trusted: they are
+// derived from the topic structure of the ACS Exams study guide for the full-year organic exam, not
+// copied from a published percentage table - ACS does not publish per-topic item counts. They are
+// therefore an informed estimate, and this object is the single place to change them. Any set that
+// sums to 70 works; a chapter set to 0 never appears.
+//
+// Every chapter has at least 29 mock-eligible items against a maximum quota of 6, so the quotas are
+// always satisfiable and the top-off below is a safety net that does not fire in practice.
+const ACS_MOCK_QUOTA = {
+  1: 2,  2: 2,  3: 2,  4: 2,  5: 4,          // structure, bonding, acid-base, conformation, stereochemistry (12)
+  6: 1,  7: 3,  8: 4,  9: 2, 10: 1, 11: 6,   // reaction basics, alkenes, alkynes, organohalides, SN/E (17)
+  12: 3, 13: 4,                              // MS + IR, NMR (7)
+  14: 3, 15: 2, 16: 4,                       // conjugation/Diels-Alder/UV, aromaticity, EAS (9)
+  17: 3, 18: 2, 19: 4, 20: 2,                // alcohols/phenols, ethers/epoxides, aldehydes/ketones, acids
+  21: 3, 22: 2, 23: 3, 24: 2,                // acyl substitution, alpha-substitution, condensations, amines (21)
+  25: 1, 26: 1, 27: 0, 28: 0, 29: 0,         // biomolecules: carbohydrates and amino acids only (2)
+  30: 1,                                     // pericyclic (1)
+  31: 1                                      // polymers (1)
+};
 
 // Start a new 70-question Mock Exam
 function startMockExam() {
@@ -1189,13 +1217,22 @@ function startMockExam() {
   });
 
   const selectedQuestions = [];
-  let addedAny = true;
 
-  // Round-robin selection until we reach 70
+  // Draw each chapter's ACS quota. pop() takes from the end, which is where the unseen questions
+  // were just moved, so a retake still exhausts a chapter's new questions before repeating any.
+  activeChapters.forEach(ch => {
+    const want = ACS_MOCK_QUOTA[ch] || 0;
+    const pool = questionsByChapter[ch];
+    for (let n = 0; n < want && pool.length > 0; n++) selectedQuestions.push(pool.pop());
+  });
+
+  // If a chapter could not fill its quota, round-robin the shortfall across whatever is left rather
+  // than taking it all from one chapter. Weighted chapters go first so the shape stays close.
+  const byQuotaDesc = activeChapters.slice().sort((a, b) => (ACS_MOCK_QUOTA[b] || 0) - (ACS_MOCK_QUOTA[a] || 0));
+  let addedAny = true;
   while (selectedQuestions.length < 70 && addedAny) {
     addedAny = false;
-    for (let i = 0; i < activeChapters.length; i++) {
-      const ch = activeChapters[i];
+    for (const ch of byQuotaDesc) {
       if (questionsByChapter[ch] && questionsByChapter[ch].length > 0) {
         selectedQuestions.push(questionsByChapter[ch].pop());
         addedAny = true;
