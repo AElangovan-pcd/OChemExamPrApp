@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
+  color-scheme: dark; /* native form controls (select pop-ups, scrollbars) follow the palette */
   --bg-app: #08090f;
   --bg-card: #121422;
   --bg-card-hover: #181b2f;
@@ -1217,7 +1218,7 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--surface-faint);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 1rem;
@@ -1239,7 +1240,9 @@ header {
 }
 
 .matching-drop {
-  background: #1e1f2e;
+  /* Tokens, not a fixed dark colour: the select and its native option list must read in both
+     palettes (instructor, 2026-09-05, screenshot of the Ch 26 matching item in light mode). */
+  background: var(--bg-card-hover);
   color: var(--text-primary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -1253,6 +1256,11 @@ header {
 
 .matching-drop:focus {
   border-color: var(--accent-color);
+}
+
+.matching-drop option {
+  background: var(--bg-card);
+  color: var(--text-primary);
 }
 
 .matching-grid-container {
@@ -1432,10 +1440,15 @@ header {
   --text-secondary: #475569;
   --text-body: #1e293b;
   --surface-faint: rgba(15, 23, 42, 0.04);
+  /* Verdict colours as text on a light surface: the dark-mode green and rose read at 2.4:1 and
+     3.3:1 on white, so light mode uses the deeper shades (5.0:1 and 6.2:1). */
+  --success-color: #047857;
+  --error-color: #be123c;
   --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.12), 0 4px 6px -2px rgba(15, 23, 42, 0.05);
   --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.2);
 }
 [data-theme="light"] header { background: rgba(255, 255, 255, 0.85); }
+[data-theme="light"] .app-footer { background: rgba(255, 255, 255, 0.7); }
 [data-theme="light"] ::-webkit-scrollbar-thumb { background: #cbd5e1; }
 [data-theme="light"] ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
 [data-theme="light"] .header-tabs { background: rgba(15, 23, 42, 0.06); }
@@ -1445,11 +1458,13 @@ header {
 [data-theme="light"] .tag-topic,
 [data-theme="light"] .choice-letter,
 [data-theme="light"] .latex-inline,
-[data-theme="light"] .tab-btn,
+[data-theme="light"] .tab-btn:not(.active),
 [data-theme="light"] .mock-timer,
-[data-theme="light"] .mock-grid-btn,
+[data-theme="light"] .mock-grid-btn:not(.current):not(.answered):not(.flagged),
 [data-theme="light"] .legend-dot.unvisited { background: rgba(15, 23, 42, 0.05); }
-[data-theme="light"] .tab-btn:hover,
-[data-theme="light"] .mock-grid-btn:hover { background: rgba(15, 23, 42, 0.09); }
+/* Scoped with :not() so these overrides, which sit later in the file at equal specificity, never
+   clobber the active tab's gradient or the map's current, answered and flagged colours. */
+[data-theme="light"] .tab-btn:not(.active):hover,
+[data-theme="light"] .mock-grid-btn:not(.current):not(.answered):not(.flagged):hover { background: rgba(15, 23, 42, 0.09); }
 [data-theme="light"] .mock-timer,
-[data-theme="light"] .mock-grid-btn { border-color: var(--border-color); }
+[data-theme="light"] .mock-grid-btn:not(.current):not(.answered):not(.flagged) { border-color: var(--border-color); }
