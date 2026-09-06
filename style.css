@@ -752,6 +752,22 @@ header {
   }
 }
 
+/* The header's three groups - logo, mode tabs, nav controls - stop fitting on one row a little
+   below 840px. The logo and the tabs shrink by wrapping their own text, but .nav-controls cannot
+   shrink at all: the performance readout's digits and labels set its width, and a flex item's
+   default min-width: auto will not go below its content. So it kept its 357px and simply hung off
+   the right edge - 8px at 820px (iPad portrait), 183px at 645px - where body's overflow-x: hidden
+   clipped the search and theme buttons rather than scrolling to them. Letting the header wrap puts
+   the controls on a second row instead, which costs about 46px of sticky header and hides nothing;
+   above this width the row still shrinks to fit exactly as before. The sticky sidebar's top: 70px
+   offset assumes the one-row header, and it only applies above 961px, so the two never meet. */
+@media (max-width: 840px) {
+  header {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+}
+
 @media (max-width: 640px) {
   header {
     flex-direction: column;
