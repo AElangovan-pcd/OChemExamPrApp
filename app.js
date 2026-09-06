@@ -2739,11 +2739,12 @@ function drawHaworthProjection(canvas, dataStr) {
   });
 }
 
-// ---------- Search (instructor, 2026-09-05, "as in the CHEM 131 StudyBuddy"; app.js 1.0.34) ----------
+// ---------- Search (instructor, 2026-09-05, "as in the CHEM 131 StudyBuddy"; app.js 1.0.35) ----------
 // A header button opens a modal. Every word of the query must appear, case-insensitively, in the
 // stem, the chapter title, the topic or an option text of an item. Choosing a result loads the
 // item's own chapter in Practice, so the sidebar and the progress bar agree, and jumps to the item.
-// Escape closes; Enter opens the first result. The haystacks are cached in a Map, not on the items,
+// Escape closes; Enter opens the first result. Result text takes the textbook typography from
+// formatChemicalText after escaping, so SN2 and CH3 read as they do on the card. The haystacks are cached in a Map, not on the items,
 // so the Mock history saved to localStorage stays as it was.
 
 const searchIndex = new Map();
@@ -2819,8 +2820,8 @@ function handleSearchQuery(query) {
   const count = `${matches.length} match${matches.length === 1 ? '' : 'es'}${matches.length > shown.length ? ', showing the first ' + shown.length : ''}`;
   listEl.innerHTML = `<span class="search-count">${count}</span>` + shown.map(m => `
       <button class="search-result" type="button" onclick="selectSearchedQuestion('${m.question_id}')">
-        <div class="search-result-meta"><span>Ch ${m.chapterNum}: ${searchEscape(OER_CHAPTER_TOPICS[m.chapterNum] || '')}</span><span>${searchEscape(m.topic || '')}</span></div>
-        <div class="search-result-stem">${searchEscape(searchPlainText(m.question_text))}</div>
+        <div class="search-result-meta"><span>Ch ${m.chapterNum}: ${searchEscape(OER_CHAPTER_TOPICS[m.chapterNum] || '')}</span><span>${formatChemicalText(searchEscape(m.topic || ''))}</span></div>
+        <div class="search-result-stem">${formatChemicalText(searchEscape(searchPlainText(m.question_text)))}</div>
       </button>`).join('');
 }
 
