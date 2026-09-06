@@ -137,6 +137,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Assign OER chapter numbers to all loaded questions
   assignOERChapterNumbers();
 
+  // Light mode: index.html applied the stored choice before paint; sync the header switch to it.
+  applyTheme(document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
+
   // Initialize Smiles Drawer
   if (typeof SmilesDrawer !== 'undefined') {
     if (SmilesDrawer.SvgDrawer && !SmilesDrawer.SvgDrawer.prototype._customLayoutPatchApplied) {
@@ -559,7 +562,7 @@ function renderQuestion() {
     <div class="panel-card question-card">
       <div class="question-meta">
         <span class="tag tag-topic">Ch ${q.chapterNum}: ${OER_CHAPTER_TOPICS[q.chapterNum] || "General"}</span>
-        <span class="tag tag-subtopic" style="background: rgba(255, 255, 255, 0.04); color: var(--text-secondary); border: 1px solid rgba(255, 255, 255, 0.05);">${q.topic}</span>
+        <span class="tag tag-subtopic" style="background: var(--surface-faint); color: var(--text-secondary); border: 1px solid var(--surface-faint);">${q.topic}</span>
         <span class="tag tag-difficulty ${q.difficulty_level}">${q.difficulty_level}</span>
       </div>
       
@@ -784,14 +787,14 @@ function getFeedbackContent(feedback) {
 
   const steps = (text) => {
     const parts = String(text).split('\n').filter(s => s.trim());
-    if (parts.length < 2) return `<p style="line-height: 1.7; color: #cbd5e1;">${formatChemicalText(text)}</p>`;
+    if (parts.length < 2) return `<p style="line-height: 1.7; color: var(--text-body);">${formatChemicalText(text)}</p>`;
     return '<ul style="list-style-position: outside; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.55rem;">'
-      + parts.map(s => `<li style="line-height: 1.7; color: #cbd5e1;">${formatChemicalText(s)}</li>`).join('')
+      + parts.map(s => `<li style="line-height: 1.7; color: var(--text-body);">${formatChemicalText(s)}</li>`).join('')
       + '</ul>';
   };
 
   return section('The principle', feedback.context
-        ? `<p style="line-height: 1.7; color: #cbd5e1;">${formatChemicalText(feedback.context)}</p>` : '')
+        ? `<p style="line-height: 1.7; color: var(--text-body);">${formatChemicalText(feedback.context)}</p>` : '')
     + section('Working through it', (feedback.approach || feedback.process)
         ? steps(feedback.approach || feedback.process) : '')
     + (feedback.note
@@ -801,10 +804,10 @@ function getFeedbackContent(feedback) {
         // where the text itself is wrong or thin. It reads last on purpose.
         ? `<div class="feedback-worth-knowing" style="border-left: 3px solid #fbbf24; background: rgba(251, 191, 36, 0.06); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; margin-bottom: 1.1rem;">
              <div style="font-weight: 700; color: #fbbf24; margin-bottom: 0.35rem;"><i class="fas fa-lightbulb" aria-hidden="true"></i> Worth knowing</div>
-             <p style="line-height: 1.7; color: #cbd5e1; margin: 0;">${formatChemicalText(feedback.note)}</p>
+             <p style="line-height: 1.7; color: var(--text-body); margin: 0;">${formatChemicalText(feedback.note)}</p>
            </div>`
         : section('Takeaway', feedback.result
-            ? `<p style="line-height: 1.7; color: #cbd5e1;">${formatChemicalText(feedback.result)}</p>` : ''));
+            ? `<p style="line-height: 1.7; color: var(--text-body);">${formatChemicalText(feedback.result)}</p>` : ''));
 }
 
 // Per-option rationales, rendered beside the options themselves rather than behind a
@@ -825,7 +828,7 @@ function getPerOptionFeedback(q, selectedOptionId) {
         <div style="font-weight: 700; color: ${isKey ? 'var(--success-color)' : 'var(--text-secondary)'}; font-size: 0.8rem; margin-bottom: 0.25rem;">
           ${opt.option_id}${isKey ? ' — correct' : ''}${isChosen && !isKey ? ' — your answer' : ''}
         </div>
-        <div style="line-height: 1.6; color: #cbd5e1;">${formatChemicalText(text)}</div>
+        <div style="line-height: 1.6; color: var(--text-body);">${formatChemicalText(text)}</div>
       </div>`;
   }).join('');
 
@@ -885,7 +888,7 @@ function finishQuiz() {
         You answered <strong>${state.score}</strong> out of <strong>${state.filteredQuestions.length}</strong> questions correctly.
       </p>
       
-      <div style="max-width: 300px; margin: 0 auto 2.5rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+      <div style="max-width: 300px; margin: 0 auto 2.5rem; background: var(--surface-faint); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
         <div style="font-size: 2.5rem; font-weight: 800; color: ${percent >= 70 ? 'var(--success-color)' : 'var(--error-color)'}">${percent}%</div>
         <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem; text-transform: uppercase; font-weight: 600;">Accuracy Rate</div>
       </div>
@@ -1089,7 +1092,7 @@ function renderMockExamHome() {
   }
 
   activeArea.innerHTML = `
-    <div class="panel-card text-center" style="padding: 3rem 2rem; animation: fadeIn 0.4s ease-out; background: linear-gradient(145deg, var(--bg-card) 0%, rgba(99, 102, 241, 0.03) 100%); border: 1px solid rgba(255,255,255,0.04);">
+    <div class="panel-card text-center" style="padding: 3rem 2rem; animation: fadeIn 0.4s ease-out; background: linear-gradient(145deg, var(--bg-card) 0%, rgba(99, 102, 241, 0.03) 100%); border: 1px solid var(--surface-faint);">
       <i class="fas fa-stopwatch" style="font-size: 4.5rem; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem; filter: drop-shadow(0 0 15px rgba(99, 102, 241, 0.2));"></i>
       <h2 style="font-size: 2.25rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.75rem;">ACS-Style 70-Question Mock Exam</h2>
       <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6; font-size: 1.05rem;">
@@ -1097,21 +1100,21 @@ function renderMockExamHome() {
       </p>
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; max-width: 750px; margin: 0 auto 2.5rem; text-align: left;">
-        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+        <div style="background: var(--surface-faint); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
           <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
             <i class="fas fa-list-ol" style="color: var(--accent-color); font-size: 1.2rem;"></i>
             <span style="font-weight: 700; font-size: 1rem;">70 Questions</span>
           </div>
           <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Comprehensive coverage spanning Nomenclature, Stereochemistry, Mechanisms, Reactions, and Spectroscopy.</p>
         </div>
-        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+        <div style="background: var(--surface-faint); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
           <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
             <i class="fas fa-hourglass-half" style="color: var(--accent-color); font-size: 1.2rem;"></i>
             <span style="font-weight: 700; font-size: 1rem;">110 Minutes</span>
           </div>
           <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Strict countdown timer simulating official testing conditions. Approximately 94 seconds per question.</p>
         </div>
-        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+        <div style="background: var(--surface-faint); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
           <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
             <i class="fas fa-eye-slash" style="color: var(--accent-color); font-size: 1.2rem;"></i>
             <span style="font-weight: 700; font-size: 1rem;">Blind Feedback</span>
@@ -1595,7 +1598,7 @@ function renderMockExamResults() {
       <!-- Core score metrics grid -->
       <div class="results-header-summary">
         <!-- Circular Dial -->
-        <div style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; display: flex; align-items: center; justify-content: center;">
+        <div style="background: var(--surface-faint); border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; display: flex; align-items: center; justify-content: center;">
           <div class="metric-circle ${isPassed ? 'pass' : 'fail'}" style="--percentage: ${attempt.percentage}">
             <div class="metric-circle-val">${attempt.percentage}%</div>
             <div class="metric-circle-label">${attempt.score} / 70 Correct</div>
@@ -1603,7 +1606,7 @@ function renderMockExamResults() {
         </div>
 
         <!-- Metric Details -->
-        <div style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
+        <div style="background: var(--surface-faint); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
           <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
             <span style="color: var(--text-secondary);"><i class="fas fa-hourglass-half" style="margin-right: 0.5rem;"></i> Time Elapsed:</span>
             <span style="font-weight: 600; color: var(--text-primary);">${durationMin}m ${durationSec}s</span>
@@ -1672,7 +1675,7 @@ function reviewMockQuestion(idx) {
   state.answersSubmitted = {[idx]: selectedOptionId};
 
   let html = `
-    <div class="panel-card" style="border-color: ${isCorrect ? 'var(--success-color)' : selectedOptionId ? 'var(--error-color)' : 'var(--text-secondary)'}; background: rgba(255,255,255,0.01); padding: 1.5rem; margin-top: 1.5rem; animation: slideInUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+    <div class="panel-card" style="border-color: ${isCorrect ? 'var(--success-color)' : selectedOptionId ? 'var(--error-color)' : 'var(--text-secondary)'}; background: var(--surface-faint); padding: 1.5rem; margin-top: 1.5rem; animation: slideInUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
         <span style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem;">Reviewing Question ${idx + 1}</span>
         <span class="tag" style="background: ${isCorrect ? 'var(--success-bg)' : selectedOptionId ? 'var(--error-bg)' : 'rgba(255,255,255,0.05)'}; color: ${isCorrect ? 'var(--success-color)' : selectedOptionId ? 'var(--error-color)' : 'var(--text-secondary)'}; font-weight: 700;">
@@ -1682,7 +1685,7 @@ function reviewMockQuestion(idx) {
 
       <div class="question-meta" style="margin-bottom: 1rem;">
         <span class="tag tag-topic">Ch ${q.chapterNum}: ${OER_CHAPTER_TOPICS[q.chapterNum] || "General"}</span>
-        <span class="tag tag-subtopic" style="background: rgba(255, 255, 255, 0.04); color: var(--text-secondary); border: 1px solid rgba(255, 255, 255, 0.05);">${q.topic}</span>
+        <span class="tag tag-subtopic" style="background: var(--surface-faint); color: var(--text-secondary); border: 1px solid var(--surface-faint);">${q.topic}</span>
         <span class="tag tag-difficulty ${q.difficulty_level}">${q.difficulty_level}</span>
       </div>
 
@@ -1823,8 +1826,8 @@ function matchingVerdictOptionId(q, isCorrect) {
 function renderQuestionChemicals(q, prefix = '') {
   if (q.image) {
     return `
-      <div class="question-image-container" style="text-align: center; margin: 1.5rem 0; padding: 1rem; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; display: flex; justify-content: center; align-items: center;">
-        <img src="${q.image}" alt="Exam Figure / Spectrum" style="max-width: 100%; max-height: 280px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); background: #fdfdfd; padding: 6px; box-shadow: var(--shadow-md);">
+      <div class="question-image-container" style="text-align: center; margin: 1.5rem 0; padding: 1rem; background: var(--surface-faint); border: 1px solid var(--border-color); border-radius: 12px; display: flex; justify-content: center; align-items: center;">
+        <img src="${q.image}" alt="Exam Figure / Spectrum" style="max-width: 100%; max-height: 280px; border-radius: 8px; border: 1px solid var(--border-color); background: #fdfdfd; padding: 6px; box-shadow: var(--shadow-md);">
       </div>
     `;
   }
@@ -2037,14 +2040,14 @@ function drawSpectroscopyChart(ctx, spec) {
           x: {
             title: { display: true, text: 'm/z (Mass-to-Charge Ratio)', color: '#94a3b8' },
             ticks: { color: '#64748b', callback: function(v, i) { return i % 10 === 0 ? i : ''; } },
-            grid: { color: 'rgba(255,255,255,0.03)' }
+            grid: { color: gridColor() }
           },
           y: {
             beginAtZero: true,
             max: 100,
             title: { display: true, text: 'Relative Abundance (%)', color: '#94a3b8' },
             ticks: { color: '#64748b' },
-            grid: { color: 'rgba(255,255,255,0.03)' }
+            grid: { color: gridColor() }
           }
         }
       }
@@ -2128,13 +2131,13 @@ function drawSpectroscopyChart(ctx, spec) {
             reverse: true,
             title: { display: true, text: 'Chemical Shift (ppm)', color: '#94a3b8' },
             ticks: { color: '#64748b' },
-            grid: { color: 'rgba(255,255,255,0.03)' }
+            grid: { color: gridColor() }
           },
           y: {
             beginAtZero: true,
             title: { display: true, text: 'Intensity', color: '#94a3b8' },
             ticks: { color: '#64748b' },
-            grid: { color: 'rgba(255,255,255,0.03)' }
+            grid: { color: gridColor() }
           }
         }
       }
@@ -2184,14 +2187,14 @@ function drawSpectroscopyChart(ctx, spec) {
             reverse: true,
             title: { display: true, text: 'Wavenumber (cm-1)', color: '#94a3b8' },
             ticks: { color: '#64748b' },
-            grid: { color: 'rgba(255,255,255,0.03)' }
+            grid: { color: gridColor() }
           },
           y: {
             min: 0,
             max: 100,
             title: { display: true, text: 'Transmittance (%)', color: '#94a3b8' },
             ticks: { color: '#64748b' },
-            grid: { color: 'rgba(255,255,255,0.03)' }
+            grid: { color: gridColor() }
           }
         }
       }
@@ -2257,12 +2260,12 @@ function drawEnergyChart(ctx, diag) {
               return '';
             }
           },
-          grid: { color: 'rgba(255,255,255,0.03)' }
+          grid: { color: gridColor() }
         },
         y: {
           title: { display: true, text: 'Potential Energy (kJ/mol)', color: '#94a3b8' },
           ticks: { color: '#64748b' },
-          grid: { color: 'rgba(255,255,255,0.03)' }
+          grid: { color: gridColor() }
         }
       }
     }
@@ -2485,6 +2488,43 @@ function renderChoicesArea(q, selectedOptionId, isAnswered, prefix = '') {
   return html;
 }
 
+// ---------- Light mode (instructor, 2026-09-05; app.js 1.0.31) ----------
+// The palette lives in style.css as tokens on :root and [data-theme="light"]. Canvas code cannot
+// read a CSS variable through the 2D context, so the two projection renderers and the Chart.js
+// grids ask for their colours here, at draw time, and a theme change re-renders the visible item.
+function themeToken(name, fallback) {
+  const v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  return v || fallback;
+}
+function inkColor() { return themeToken('--text-primary', '#f8fafc'); }
+function gridColor() {
+  return document.documentElement.getAttribute('data-theme') === 'light' ? 'rgba(15, 23, 42, 0.07)' : 'rgba(255,255,255,0.03)';
+}
+function applyTheme(theme) {
+  const light = theme === 'light';
+  if (light) document.documentElement.setAttribute('data-theme', 'light');
+  else document.documentElement.removeAttribute('data-theme');
+  try { localStorage.setItem('ochem_theme', light ? 'light' : 'dark'); } catch (e) { /* private mode: the choice lasts for this page only */ }
+  const btn = document.getElementById('theme-toggle');
+  if (btn) {
+    const label = light ? 'Switch to dark mode' : 'Switch to light mode';
+    btn.setAttribute('aria-pressed', String(light));
+    btn.title = label;
+    btn.setAttribute('aria-label', label);
+    btn.innerHTML = `<i class="fas ${light ? 'fa-moon' : 'fa-sun'}" aria-hidden="true"></i>`;
+  }
+}
+function toggleTheme() {
+  applyTheme(document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
+  // Redraw whatever is on screen so canvases painted from the palette (Fischer and Haworth ink,
+  // chart grids) pick up the new colours; both renderers restore the recorded answer state.
+  if (state.appMode === 'mock') {
+    if (state.mockExam.active && !state.mockExam.completed && state.mockExam.questions.length) renderMockExamQuestion();
+  } else if (state.filteredQuestions && state.filteredQuestions.length) {
+    renderQuestion();
+  }
+}
+
 function drawFischerProjection(canvas, dataStr) {
   const ctx = canvas.getContext('2d');
   
@@ -2526,7 +2566,7 @@ function drawFischerProjection(canvas, dataStr) {
   const bottomY = canvas.height - 30;
   
   // Draw vertical line
-  ctx.strokeStyle = '#f8fafc';
+  ctx.strokeStyle = inkColor();
   ctx.lineWidth = 2.5;
   ctx.beginPath();
   ctx.moveTo(cx, topY + 12);
@@ -2534,7 +2574,7 @@ function drawFischerProjection(canvas, dataStr) {
   ctx.stroke();
   
   // Draw C1 text
-  ctx.fillStyle = '#f8fafc';
+  ctx.fillStyle = inkColor();
   ctx.font = 'bold 13px Outfit, sans-serif';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
@@ -2620,7 +2660,7 @@ function drawHaworthProjection(canvas, dataStr) {
   const v5 = { x: cx - 30, y: cy - 20 };
   
   // 1. Draw back lines (thin)
-  ctx.strokeStyle = '#f8fafc';
+  ctx.strokeStyle = inkColor();
   ctx.lineWidth = 1.5;
   
   // V4 -> V5
@@ -2655,7 +2695,7 @@ function drawHaworthProjection(canvas, dataStr) {
   ctx.stroke();
   
   // 3. Draw Oxygen label
-  ctx.fillStyle = '#f8fafc';
+  ctx.fillStyle = inkColor();
   ctx.font = 'bold 14px Outfit, sans-serif';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
