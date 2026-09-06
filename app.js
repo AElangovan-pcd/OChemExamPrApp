@@ -2739,3 +2739,99 @@ function drawHaworthProjection(canvas, dataStr) {
   });
 }
 
+// ---------- Search (instructor, 2026-09-05, "as in the CHEM 131 StudyBuddy"; app.js 1.0.34) ----------
+// A header button opens a modal. Every word of the query must appear, case-insensitively, in the
+// stem, the chapter title, the topic or an option text of an item. Choosing a result loads the
+// item's own chapter in Practice, so the sidebar and the progress bar agree, and jumps to the item.
+// Escape closes; Enter opens the first result. The haystacks are cached in a Map, not on the items,
+// so the Mock history saved to localStorage stays as it was.
+
+const searchIndex = new Map();
+
+function toggleSearchModal(forceOpen) {
+  const modal = document.getElementById('search-modal');
+  if (!modal) return;
+  const open = forceOpen !== undefined ? forceOpen : !modal.classList.contains('open');
+  modal.classList.toggle('open', open);
+  const btn = document.getElementById('btn-search-toggle');
+  if (btn) btn.setAttribute('aria-expanded', String(open));
+  if (open) {
+    const input = document.getElementById('search-input');
+    if (input) { input.value = ''; handleSearchQuery(''); input.focus(); }
+    document.addEventListener('keydown', searchKeydown);
+  } else {
+    document.removeEventListener('keydown', searchKeydown);
+    if (btn && document.activeElement && modal.contains(document.activeElement)) btn.focus();
+  }
+}
+
+function searchKeydown(e) {
+  if (e.key === 'Escape') { e.preventDefault(); toggleSearchModal(false); return; }
+  if (e.key === 'Enter' && e.target && e.target.id === 'search-input') {
+    const first = document.querySelector('#search-results-list .search-result');
+    if (first) { e.preventDefault(); first.click(); }
+  }
+}
+
+// Plain text for matching and for a result row: markup, KaTeX delimiters and commands stripped.
+function searchPlainText(s) {
+  return String(s || '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\\\(|\\\)|\$/g, '')
+    .replace(/\\[a-zA-Z]+\{([^}]*)\}/g, '$1')
+    .replace(/\\[a-zA-Z]+/g, '')
+    .replace(/[_^]\{([^}]*)\}/g, '$1')
+    .replace(/[{}]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function searchEscape(s) {
+  return String(s || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+function searchHaystack(q) {
+  let h = searchIndex.get(q.question_id);
+  if (h === undefined) {
+    const chapter = OER_CHAPTER_TOPICS[q.chapterNum] || `Chapter ${q.chapterNum}`;
+    const opts = (q.options || []).map(o => o.text).join(' ');
+    h = searchPlainText([q.question_text, chapter, q.topic, opts].join(' ')).toLowerCase();
+    searchIndex.set(q.question_id, h);
+  }
+  return h;
+}
+
+function handleSearchQuery(query) {
+  const listEl = document.getElementById('search-results-list');
+  if (!listEl) return;
+  const q = (query || '').trim().toLowerCase();
+  if (q.length < 2) {
+    listEl.innerHTML = '<span class="search-hint">Type at least two characters to search all 31 chapters.</span>';
+    return;
+  }
+  const terms = q.split(/\s+/);
+  const matches = state.questions.filter(item => { const h = searchHaystack(item); return terms.every(t => h.includes(t)); });
+  if (!matches.length) {
+    listEl.innerHTML = '<span class="search-hint">No matching questions.</span>';
+    return;
+  }
+  const shown = matches.slice(0, 20);
+  const count = `${matches.length} match${matches.length === 1 ? '' : 'es'}${matches.length > shown.length ? ', showing the first ' + shown.length : ''}`;
+  listEl.innerHTML = `<span class="search-count">${count}</span>` + shown.map(m => `
+      <button class="search-result" type="button" onclick="selectSearchedQuestion('${m.question_id}')">
+        <div class="search-result-meta"><span>Ch ${m.chapterNum}: ${searchEscape(OER_CHAPTER_TOPICS[m.chapterNum] || '')}</span><span>${searchEscape(m.topic || '')}</span></div>
+        <div class="search-result-stem">${searchEscape(searchPlainText(m.question_text))}</div>
+      </button>`).join('');
+}
+
+function selectSearchedQuestion(qId) {
+  toggleSearchModal(false);
+  const q = state.questions.find(x => x.question_id === qId);
+  if (!q) return;
+  if (state.appMode !== 'practice') setAppMode('practice');
+  selectTopic(OER_CHAPTER_TOPICS[q.chapterNum] || `Chapter ${q.chapterNum}`);
+  const idx = state.filteredQuestions.findIndex(x => x.question_id === qId);
+  if (idx > 0) { state.currentQuestionIndex = idx; renderQuestion(); }
+  const area = document.getElementById('question-area');
+  if (area) area.scrollIntoView({ block: 'start', behavior: 'smooth' });
+}
