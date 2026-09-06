@@ -1,6 +1,5 @@
 # Dependencies & Build artifacts
 node_modules/
-package.json
 package-lock.json
 
 # Local Data, Images & Resources

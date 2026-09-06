@@ -1,0 +1,15 @@
+{
+  "name": "ochemstudybuddy",
+  "version": "1.0.0",
+  "description": "Organic chemistry study companion for CHEM 261/262/263 and ACS exam preparation",
+  "author": "A. Elangovan, PhD",
+  "license": "CC-BY-4.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test \"tools/**/*.test.js\" && node tools/validate.js && node tools/validate_rationales.js && node tools/export_bank.js && python tools/smiles_check.py",
+    "status": "node tools/status.js",
+    "serve": "python -m http.server 8000",
+    "start": "node server.js"
+  },
+  "main": "server.js"
+}
