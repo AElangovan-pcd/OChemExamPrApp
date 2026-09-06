@@ -882,7 +882,7 @@ function finishQuiz() {
   
   container.innerHTML = `
     <div class="panel-card text-center" style="padding: 3.5rem 2rem; animation: fadeIn 0.4s ease-out;">
-      <i class="fas fa-award" style="font-size: 4rem; color: #f59e0b; margin-bottom: 1.5rem;"></i>
+      <i class="fas fa-award" style="font-size: 4rem; color: var(--flag-color); margin-bottom: 1.5rem;"></i>
       <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Topic Completed!</h2>
       <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
         You answered <strong>${state.score}</strong> out of <strong>${state.filteredQuestions.length}</strong> questions correctly.
@@ -1292,7 +1292,7 @@ function renderMockExamQuestion() {
       <div class="question-meta">
         <span class="tag tag-topic" style="background: rgba(99, 102, 241, 0.1); color: var(--accent-color); font-weight: 700;">Question ${idx + 1} of 70</span>
         <span class="tag tag-difficulty ${q.difficulty_level}">${q.difficulty_level}</span>
-        ${isFlagged ? '<span class="tag" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b; font-weight: 700; display: flex; align-items: center; gap: 0.25rem;"><i class="fas fa-flag"></i> Flagged</span>' : ''}
+        ${isFlagged ? '<span class="tag" style="background: rgba(245, 158, 11, 0.15); color: var(--flag-color); font-weight: 700; display: flex; align-items: center; gap: 0.25rem;"><i class="fas fa-flag"></i> Flagged</span>' : ''}
       </div>
       
       <div class="question-text" id="mock-q-text-box">
@@ -1316,7 +1316,7 @@ function renderMockExamQuestion() {
           <i class="fas fa-chevron-left"></i> Previous
         </button>
         
-        <button class="btn" style="border-color: #f59e0b; color: #f59e0b;" onclick="toggleMockFlag()">
+        <button class="btn" style="border-color: var(--flag-color); color: var(--flag-color);" onclick="toggleMockFlag()">
           <i class="fas fa-flag"></i> ${isFlagged ? 'Unflag Question' : 'Flag Question'}
         </button>
         
@@ -1551,7 +1551,7 @@ function renderMockExamResults() {
           <span style="color: var(--text-secondary);">${stats.correct} / ${stats.total} (${pct}%)</span>
         </div>
         <div class="topic-breakdown-track">
-          <div class="topic-breakdown-fill" style="width: ${pct}%; background: ${pct >= 60 ? 'var(--success-color)' : pct >= 40 ? '#f59e0b' : 'var(--error-color)'};"></div>
+          <div class="topic-breakdown-fill" style="width: ${pct}%; background: ${pct >= 60 ? 'var(--success-color)' : pct >= 40 ? 'var(--flag-color)' : 'var(--error-color)'};"></div>
         </div>
       </div>
     `;
@@ -1590,7 +1590,7 @@ function renderMockExamResults() {
       
       <!-- Award title banner -->
       <div class="text-center" style="margin-bottom: 2rem;">
-        <i class="fas ${isPassed ? 'fa-award' : 'fa-redo-alt'}" style="font-size: 4rem; color: ${isPassed ? '#f59e0b' : 'var(--text-secondary)'}; margin-bottom: 1rem;"></i>
+        <i class="fas ${isPassed ? 'fa-award' : 'fa-redo-alt'}" style="font-size: 4rem; color: ${isPassed ? 'var(--flag-color)' : 'var(--text-secondary)'}; margin-bottom: 1rem;"></i>
         <h2 style="font-size: 2rem; font-weight: 800; letter-spacing: -0.02em;">${isPassed ? 'Exam Passed!' : 'Exam Completed'}</h2>
         <p style="color: var(--text-secondary); margin-top: 0.25rem;">ACS Standard Organic Chemistry Practice Examination</p>
       </div>

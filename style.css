@@ -15,6 +15,7 @@
   --text-dark: #0f172a;
   --text-body: #cbd5e1; /* feedback prose; light mode redefines it */
   --surface-faint: rgba(255, 255, 255, 0.03); /* the faint boxes app.js used to hard-code */
+  --flag-color: #f59e0b; /* flagged questions, the medium difficulty tag, the award icon */
   --accent-color: #6366f1;
   --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
   --success-color: #10b981;
@@ -413,7 +414,7 @@ header {
 
 .tag-difficulty {
   background: rgba(245, 158, 11, 0.15);
-  color: #f59e0b;
+  color: var(--flag-color);
 }
 
 .tag-difficulty.Hard {
@@ -891,14 +892,14 @@ header {
 }
 
 .mock-grid-btn.flagged {
-  border-color: #f59e0b;
+  border-color: var(--flag-color);
   background: rgba(245, 158, 11, 0.15);
-  color: #f59e0b;
+  color: var(--flag-color);
 }
 
 .mock-grid-btn.flagged.answered {
   background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
-  border-color: #f59e0b;
+  border-color: var(--flag-color);
 }
 
 .mock-grid-legend {
@@ -931,7 +932,7 @@ header {
 .legend-dot.unvisited { background: rgba(255, 255, 255, 0.1); border: 1px solid var(--border-color); }
 .legend-dot.current { background: rgba(99, 102, 241, 0.2); border: 1px solid var(--border-active); }
 .legend-dot.answered { background: var(--success-bg); border: 1px solid var(--success-color); }
-.legend-dot.flagged { background: rgba(245, 158, 11, 0.2); border: 1px solid #f59e0b; }
+.legend-dot.flagged { background: rgba(245, 158, 11, 0.2); border: 1px solid var(--flag-color); }
 
 /* Spectroscopy image display */
 .spectroscopy-img {
@@ -1444,6 +1445,7 @@ header {
      3.3:1 on white, so light mode uses the deeper shades (5.0:1 and 6.2:1). */
   --success-color: #047857;
   --error-color: #be123c;
+  --flag-color: #92400e; /* amber as text on the amber tint over white: #f59e0b reads at 2.2:1, #b45309 at 4.5:1, this at 6.2:1 */
   --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.12), 0 4px 6px -2px rgba(15, 23, 42, 0.05);
   --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.2);
 }
